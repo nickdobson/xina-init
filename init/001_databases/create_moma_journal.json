@@ -1,0 +1,46 @@
+{
+    "action": "create",
+    "create": "database",
+    "team": "MOMA",
+    "database": {
+        "name": "moma_journal",
+        "label": "MOMA Journal",
+        "desc": "MOMA engineering journal.",
+        "enable_lock": false,
+        "enable_log": true,
+        "enable_notify": false,
+        "top_keys": 1,
+        "fields": [
+            {
+                "name": "Date",
+                "type": "date",
+                "key": true
+            },
+            {
+                "name": "Title",
+                "type": "string(64)",
+                "index": true
+            },
+            {
+                "name": "Content",
+                "type": "text",
+                "index": true
+            },
+            {
+                "name": "WOA",
+                "type": "string(64)",
+                "index": true
+            },
+            {
+                "name": "Proc ID",
+                "type": "string(32)",
+                "index": true
+            },
+            {
+                "name": "Hw Config",
+                "type": "string(16)",
+                "index": true
+            }
+        ]
+    }
+}

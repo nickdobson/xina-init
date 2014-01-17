@@ -1,0 +1,8 @@
+{
+	"action":"create",
+	"create":"team",
+	"team": {
+		"name":"SAM",
+		"desc":"Primary team for the Sample Analysis at Mars (SAM) mission."
+	}
+}

@@ -1,0 +1,460 @@
+{
+    "action": "create",
+    "create": "database",
+    "team": "SAM",
+    "database": {
+        "name": "sam_tm",
+        "label": "SAM Telemetry",
+        "desc": "SAM telemetry database.",
+        "entry_format": "{TID}-{TID Text}",
+        "enable_lock": false,
+        "enable_log": true,
+        "enable_notify": true,
+        "top_keys": 1,
+        "objects": {
+            "repo_entry": "{Timestamp:YYYY-MM-dd-HH.mm.ss}-{TID}-{TID Text}",
+            "os_win_repo_path": "{$doc}{$}SAM{$}data",
+            "os_osx_repo_path": "{$home}{$}SAM{$}data",
+            "os_nix_repo_path": "{$home}{$}gse{$}data"
+        },
+        "fields": [
+            {
+                "name": "TID",
+                "type": "int(4)",
+                "key": true
+            },
+            {
+                "name": "TID Text",
+                "type": "string(64)",
+                "index": true,
+                "nul": true
+            },
+            {
+                "name": "Date",
+                "type": "localdate",
+                "index": true,
+                "nul": true
+            },
+            {
+                "name": "Timestamp",
+                "type": "localdatetime",
+                "index": true,
+                "nul": true
+            },
+            {
+                "name": "Hw Phase",
+                "type": "string(8)",
+                "index": true,
+                "nul": true
+            },
+            {
+                "name": "SAM Lib Version",
+                "type": "string(8)",
+                "nul": true
+            },
+            {
+                "name": "Script Name",
+                "type": "string(32)",
+                "index": true,
+                "nul": true
+            },
+            {
+                "name": "Script Version",
+                "type": "string(8)",
+                "nul": true
+            },
+            {
+                "name": "Testbed",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "Cal Data",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "TLS",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "QMS",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "TCD",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "GCMS",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "NIR",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "IC",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "Filament 1",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "Filament 2",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "Detector 1",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "Detector 2",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "Oven 1",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "Oven 2",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "Scrubbers",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "Getter",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "HC Trap",
+                "type": "boolean",
+                "index": true,
+                "def": "false"
+            },
+            {
+                "name": "GC Col",
+                "type": "int(4)",
+                "index": true,
+                "nul": true
+            },
+            {
+                "name": "CPT",
+                "type": "string(4)",
+                "index": true,
+                "nul": true
+            },
+            {
+                "name": "Voltage",
+                "type": "float(8)",
+                "nul": true
+            },
+            {
+                "name": "Start (EST)",
+                "type": "localdatetime",
+                "nul": true
+            },
+            {
+                "name": "End (EST)",
+                "type": "localdatetime",
+                "nul": true
+            },
+            {
+                "name": "Sample Acq Sol",
+                "type": "int(4)",
+                "nul": true
+            },
+            {
+                "name": "Sample SMS Sol",
+                "type": "int(4)",
+                "nul": true
+            },
+            {
+                "name": "Start Sol",
+                "type": "int(4)",
+                "nul": true
+            },
+            {
+                "name": "Start Mars Time",
+                "type": "int(4)",
+                "nul": true
+            },
+            {
+                "name": "End Sol",
+                "type": "int(4)",
+                "nul": true
+            },
+            {
+                "name": "End Mars Time",
+                "type": "int(4)",
+                "nul": true
+            },
+            {
+                "name": "Location",
+                "type": "string(64)",
+                "nul": true
+            },
+            {
+                "name": "Target",
+                "type": "string(64)",
+                "nul": true
+            },
+            {
+                "name": "Scoop/Drill ID",
+                "type": "string(32)",
+                "index": true,
+                "nul": true
+            },
+            {
+                "name": "Sample No",
+                "type": "int(4)",
+                "nul": true
+            },
+            {
+                "name": "Sample Desc",
+                "type": "string",
+                "nul": true
+            },
+            {
+                "name": "Portions",
+                "type": "int(4)",
+                "nul": true
+            },
+            {
+                "name": "Cup No",
+                "type": "int(4)",
+                "nul": true
+            },
+            {
+                "name": "Request No",
+                "type": "int(4)",
+                "nul": true
+            },
+            {
+                "name": "Request Type",
+                "type": "string(4)",
+                "nul": true
+            },
+            {
+                "name": "FSW Version",
+                "type": "string(64)",
+                "nul": true
+            },
+            {
+                "name": "Rover Sw Version",
+                "type": "string(64)",
+                "nul": true
+            },
+            {
+                "name": "Chamber Pressure",
+                "type": "float(8)",
+                "nul": true,
+                "meas": "pressure",
+                "unit": "Torr"
+            },
+            {
+                "name": "Ambient Temp",
+                "type": "float(8)",
+                "nul": true,
+                "meas": "temperature",
+                "unit": "C"
+            },
+            {
+                "name": "Ramp Temp",
+                "type": "float(8)",
+                "nul": true,
+                "meas": "temperature",
+                "unit": "C"
+            },
+            {
+                "name": "GSE He Tank",
+                "type": "string(8)",
+                "nul": true
+            },
+            {
+                "name": "Logbook",
+                "type": "string(8)",
+                "nul": true
+            },
+            {
+                "name": "Logbook Page No",
+                "type": "string(8)",
+                "nul": true
+            },
+            {
+                "name": "WOA #s",
+                "type": "string(64)",
+                "nul": true
+            },
+            {
+                "name": "PROC/PLANs",
+                "type": "string(64)",
+                "nul": true
+            },
+            {
+                "name": "Completion State",
+                "type": "string(64)",
+                "index": true,
+                "nul": true
+            },
+            {
+                "name": "Completion Comments",
+                "type": "text",
+                "nul": true
+            },
+            {
+                "name": "Comments",
+                "type": "text",
+                "nul": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "SMS Cup Log",
+                "fields": [
+                    {
+                        "name": "Time",
+                        "type": "datetime",
+                        "key": true
+                    },
+                    {
+                        "name": "Event",
+                        "type": "string(16)",
+                        "index": true
+                    },
+                    {
+                        "name": "Cup No",
+                        "type": "int(1)",
+                        "index": true
+                    },
+                    {
+                        "name": "Load",
+                        "type": "int(4)",
+                        "nul": true
+                    },
+                    {
+                        "name": "Sample ID",
+                        "type": "string(16)",
+                        "index": true,
+                        "nul": true
+                    },
+                    {
+                        "name": "Aliquots",
+                        "type": "int(4)",
+                        "nul": true
+                    },
+                    {
+                        "name": "Sample Used",
+                        "type": "boolean",
+                        "nul": true
+                    },
+                    {
+                        "name": "Sample Desc",
+                        "type": "string",
+                        "nul": true
+                    }
+                ]
+            },
+            {
+                "name": "SMS Cups",
+                "fields": [
+                    {
+                        "name": "Type",
+                        "type": "string(32)",
+                        "key": true
+                    },
+                    {
+                        "name": "SMS Position No",
+                        "type": "int(4)",
+                        "key": true
+                    },
+                    {
+                        "name": "Fill Type",
+                        "type": "string(16)",
+                        "key": true
+                    }
+                ]
+            },
+            {
+                "name": "Gas Sources",
+                "fields": [
+                    {
+                        "name": "Source",
+                        "type": "string(64)",
+                        "key": true
+                    },
+                    {
+                        "name": "Pressure",
+                        "type": "int(4)",
+                        "nul": true,
+                        "meas": "pressure",
+                        "unit": "Torr"
+                    }
+                ]
+            },
+            {
+                "name": "Seq ID",
+                "fields": [
+                    {
+                        "name": "Category",
+                        "type": "string(4)",
+                        "key": true
+                    },
+                    {
+                        "name": "Seq ID",
+                        "type": "int(4)",
+                        "key": true
+                    },
+                    {
+                        "name": "Flight Version",
+                        "type": "int(4)",
+                        "nul": true
+                    },
+                    {
+                        "name": "Ground Version",
+                        "type": "string(2)",
+                        "nul": true
+                    },
+                    {
+                        "name": "Desc",
+                        "type": "string",
+                        "nul": true
+                    }
+                ]
+            }
+        ]
+    }
+}

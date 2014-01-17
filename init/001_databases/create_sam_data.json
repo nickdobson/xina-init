@@ -1,0 +1,275 @@
+{
+    "action": "create",
+    "create": "database",
+    "team": "SAM",
+    "database": {
+        "name": "sam_data",
+        "label": "SAM Data",
+        "desc": "SAM expanded data database.",
+        "enable_lock": false,
+        "enable_log": false,
+        "enable_notify": false,
+        "top_keys": 1,
+        "fields": [
+            {
+                "name": "TID",
+                "type": "int(4)",
+                "key": true
+            },
+            {
+                "name": "t_utc_start",
+                "type": "int(8)",
+                "index": true,
+                "nul": true
+            },
+            {
+                "name": "t_utc_end",
+                "type": "int(8)",
+                "index": true,
+                "nul": true
+            },
+            {
+                "name": "t_sclk_start",
+                "type": "int(8)",
+                "index": true,
+                "nul": true
+            },
+            {
+                "name": "t_sclk_end",
+                "type": "int(8)",
+                "index": true,
+                "nul": true
+            }
+        ],
+        "groups": [
+            {
+                "name": "Message",
+                "fields": [
+                    {
+                        "name": "t_utc",
+                        "type": "int(8)",
+                        "index": true
+                    },
+                    {
+                        "name": "t_sclk",
+                        "type": "int(8)",
+                        "index": true
+                    },
+                    {
+                        "name": "t_tid",
+                        "type": "int(8)",
+                        "index": true
+                    },
+                    {
+                        "name": "Message",
+                        "type": "string",
+                        "index": true
+                    }
+                ]
+            },
+            {
+                "name": "Marker",
+                "fields": [
+                    {
+                        "name": "t_utc",
+                        "type": "int(8)",
+                        "key": true
+                    },
+                    {
+                        "index": true,
+                        "name": "t_utc_next",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "t_sclk",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "t_sclk_next",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "t_tid",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "t_tid_next",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "dt",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "MK ID",
+                        "type": "int(4)"
+                    },
+                    {
+                        "index": true,
+                        "name": "MK Name",
+                        "type": "string(64)"
+                    },
+                    {
+                        "index": true,
+                        "name": "MK Info",
+                        "type": "string(64)"
+                    }
+                ]
+            },
+            {
+                "name": "hk203_CDH:PS3_Imon_AUX2",
+                "fields": [
+                    {
+                        "name": "t_utc",
+                        "type": "int(8)",
+                        "key": true
+                    },
+                    {
+                        "index": true,
+                        "name": "t_utc_next",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "t_sclk",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "t_sclk_next",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "t_tid",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "t_tid_next",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "dt",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "CDH:PS3_Imon_AUX2 RAW",
+                        "type": "float(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "CDH:PS3_Imon_AUX2 ENG",
+                        "type": "float(8)"
+                    },
+                    {
+                        "unit": "V",
+                        "index": true,
+                        "meas": "voltage",
+                        "name": "CDH:PS3_Imon_AUX2 SCI",
+                        "type": "float(8)"
+                    }
+                ]
+            },
+            {
+                "name": "hk203_CDH:PS3_Imon_AUX2 MK",
+                "fields": [
+                    {
+                        "name": "t_utc",
+                        "type": "int(8)",
+                        "key": true
+                    },
+                    {
+                        "index": true,
+                        "name": "t_utc_next",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "t_sclk",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "t_sclk_next",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "t_tid",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "t_tid_next",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "dt",
+                        "type": "int(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "CDH:PS3_Imon_AUX2 RAW AVG",
+                        "type": "float(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "CDH:PS3_Imon_AUX2 RAW MIN",
+                        "type": "float(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "CDH:PS3_Imon_AUX2 RAW MAX",
+                        "type": "float(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "CDH:PS3_Imon_AUX2 ENG AVG",
+                        "type": "float(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "CDH:PS3_Imon_AUX2 ENG MIN",
+                        "type": "float(8)"
+                    },
+                    {
+                        "index": true,
+                        "name": "CDH:PS3_Imon_AUX2 ENG MAX",
+                        "type": "float(8)"
+                    },
+                    {
+                        "unit": "V",
+                        "index": true,
+                        "meas": "voltage",
+                        "name": "CDH:PS3_Imon_AUX2 SCI AVG",
+                        "type": "float(8)"
+                    },
+                    {
+                        "unit": "V",
+                        "index": true,
+                        "meas": "voltage",
+                        "name": "CDH:PS3_Imon_AUX2 SCI MIN",
+                        "type": "float(8)"
+                    },
+                    {
+                        "unit": "V",
+                        "index": true,
+                        "meas": "voltage",
+                        "name": "CDH:PS3_Imon_AUX2 SCI MAX",
+                        "type": "float(8)"
+                    }
+                ]
+            }
+        ]
+    }
+}
