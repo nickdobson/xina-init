@@ -117,7 +117,8 @@
             {
                 "name": "CEM On",
                 "type": "boolean",
-                "index": true
+                "index": true,
+                "def": "true"
             },
             {
                 "name": "CEM Volt Set",
@@ -131,11 +132,13 @@
                 "type": "float(8)",
                 "index": true,
                 "meas": "voltage",
-                "unit": "V"
+                "unit": "V",
+                "def": "0"
             },
             {
                 "name": "CEM Cur Limit",
                 "type": "float(8)",
+                "nul": true,
                 "meas": "current",
                 "unit": "A"
             },
@@ -163,7 +166,8 @@
             {
                 "name": "Dyn On",
                 "type": "boolean",
-                "index": true
+                "index": true,
+                "def": "true"
             },
             {
                 "name": "Dyn Volt Set",
@@ -177,11 +181,13 @@
                 "type": "float(8)",
                 "index": true,
                 "meas": "voltage",
-                "unit": "V"
+                "unit": "V",
+                "def": "0"
             },
             {
                 "name": "Dyn Cur Limit",
                 "type": "float(8)",
+                "nul": true,
                 "meas": "current",
                 "unit": "A"
             },
