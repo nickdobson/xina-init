@@ -3,9 +3,9 @@
     "create": "database",
     "team": "SAM",
     "database": {
-        "name": "sam_tm",
+        "name": "sam_fm_tm",
         "label": "SAM Telemetry",
-        "desc": "SAM telemetry database.",
+        "desc": "SAM flight model telemetry database.",
         "entry_format": "{TID}-{TID Text}",
         "enable_lock": false,
         "enable_log": true,
@@ -62,12 +62,6 @@
                 "name": "Script Version",
                 "type": "string(8)",
                 "nul": true
-            },
-            {
-                "name": "Testbed",
-                "type": "boolean",
-                "index": true,
-                "def": "false"
             },
             {
                 "name": "Cal Data",

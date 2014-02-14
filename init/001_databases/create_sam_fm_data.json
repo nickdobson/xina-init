@@ -3,9 +3,9 @@
     "create": "database",
     "team": "SAM",
     "database": {
-        "name": "sam_data",
-        "label": "SAM Data",
-        "desc": "SAM expanded data database.",
+        "name": "sam_fm_data",
+        "label": "SAM FM Data",
+        "desc": "SAM flight model housekeeping and science database.",
         "enable_lock": false,
         "enable_log": false,
         "enable_notify": false,
