@@ -10,6 +10,21 @@
         "enable_log": true,
         "enable_notify": false,
         "top_keys": 1,
+        "objects": {
+            "xo_view_conf_journal": {
+                "date": "Date",
+                "title": "Title",
+                "content": "Content",
+                "meta": [
+                    "WOA",
+                    "Proc ID",
+                    "Hw Config"
+                ]
+            },
+            "xo_view_default": {
+                "*": "journal"
+            }
+        },
         "fields": [
             {
                 "name": "Date",
@@ -24,22 +39,26 @@
             {
                 "name": "Content",
                 "type": "text",
-                "index": true
+                "index": true,
+                "nul": true
             },
             {
                 "name": "WOA",
                 "type": "string(64)",
-                "index": true
+                "index": true,
+                "nul": true
             },
             {
                 "name": "Proc ID",
                 "type": "string(32)",
-                "index": true
+                "index": true,
+                "nul": true
             },
             {
                 "name": "Hw Config",
                 "type": "string(16)",
-                "index": true
+                "index": true,
+                "nul": true
             }
         ]
     }
