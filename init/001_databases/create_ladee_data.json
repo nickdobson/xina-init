@@ -5,7 +5,7 @@
     "database": {
         "name": "ladee_data",
         "label": "LADEE Data",
-        "desc": "LADEE expanded data database.",
+        "desc": "LADEE science and housekeeping database.",
         "enable_lock": false,
         "enable_log": false,
         "enable_notify": false,
@@ -360,64 +360,6 @@
                                 "value": "2"
                             }
                         ]
-                    },
-                    {
-                        "name": "Altitude",
-                        "type": "float(4)",
-                        "index": true,
-                        "nul": true
-                    },
-                    {
-                        "name": "Latitude",
-                        "type": "float(4)",
-                        "index": true,
-                        "nul": true
-                    },
-                    {
-                        "name": "Longitude",
-                        "type": "float(4)",
-                        "index": true,
-                        "nul": true
-                    },
-                    {
-                        "name": "Angle i (Roll)",
-                        "type": "float(4)",
-                        "index": true,
-                        "nul": true,
-                        "unit": "degree"
-                    },
-                    {
-                        "name": "Angle j (Pitch)",
-                        "type": "float(4)",
-                        "index": true,
-                        "nul": true,
-                        "unit": "degree"
-                    },
-                    {
-                        "name": "Angle k (Yaw)",
-                        "type": "float(4)",
-                        "index": true,
-                        "nul": true,
-                        "unit": "degree"
-                    },
-                    {
-                        "name": "Solar Ref Longitude",
-                        "type": "float(4)",
-                        "index": true,
-                        "nul": true
-                    },
-                    {
-                        "name": "Phase",
-                        "type": "float(4)",
-                        "index": true,
-                        "nul": true,
-                        "unit": "degree"
-                    },
-                    {
-                        "name": "Ram Velocity",
-                        "type": "float(4)",
-                        "index": true,
-                        "nul": true
                     }
                 ]
             },

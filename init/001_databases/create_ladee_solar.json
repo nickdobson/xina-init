@@ -1,0 +1,53 @@
+{
+    "action": "create",
+    "create": "database",
+    "team": "LADEE",
+    "database": {
+        "name": "ladee_solar",
+        "label": "LADEE Solar",
+        "desc": "LADEE solar coordinate ephemeris data.",
+        "enable_lock": false,
+        "enable_log": false,
+        "enable_notify": false,
+        "top_keys": 1,
+        "fields": [
+            {
+                "name": "t_utc",
+                "type": "int(8)",
+                "key": true
+            },
+            {
+                "name": "t_utc_next",
+                "type": "int(8)",
+                "index": true
+            },
+            {
+                "name": "t_sclk",
+                "type": "int(8)",
+                "index": true
+            },
+            {
+                "name": "t_sclk_next",
+                "type": "int(8)",
+                "index": true
+            },
+            {
+                "name": "dt",
+                "type": "int(8)",
+                "index": true
+            },
+            {
+                "name": "Solar Longitude",
+                "type": "float(8)",
+                "index": true,
+                "unit": "°"
+            },
+            {
+                "name": "Solar Latitude",
+                "type": "float(8)",
+                "index": true,
+                "unit": "°"
+            }
+        ]
+    }
+}
