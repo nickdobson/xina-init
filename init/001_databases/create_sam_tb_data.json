@@ -3,9 +3,9 @@
     "create": "database",
     "team": "SAM",
     "database": {
-        "name": "sam_fm_data",
-        "label": "SAM FM Data",
-        "desc": "SAM flight model housekeeping and science database.",
+        "name": "sam_tb_data",
+        "label": "SAM TB Data",
+        "desc": "SAM testbed model housekeeping and science database.",
         "enable_lock": false,
         "enable_log": false,
         "enable_notify": false,
@@ -76,49 +76,48 @@
                         "key": true
                     },
                     {
-                        "index": true,
                         "name": "t_utc_next",
-                        "type": "int(8)"
+                        "type": "int(8)",
+                        "index": true
                     },
                     {
-                        "index": true,
                         "name": "t_sclk",
-                        "type": "int(8)"
+                        "type": "int(8)",
+                        "index": true
                     },
                     {
-                        "index": true,
                         "name": "t_sclk_next",
-                        "type": "int(8)"
+                        "type": "int(8)",
+                        "index": true
                     },
                     {
-                        "index": true,
                         "name": "t_tid",
-                        "type": "int(8)"
+                        "type": "int(8)",
+                        "index": true
                     },
                     {
-                        "index": true,
                         "name": "t_tid_next",
-                        "type": "int(8)"
+                        "type": "int(8)",
+                        "index": true
                     },
                     {
-                        "index": true,
                         "name": "dt",
                         "type": "int(8)"
                     },
                     {
-                        "index": true,
                         "name": "MK ID",
-                        "type": "int(4)"
+                        "type": "int(4)",
+                        "index": true
                     },
                     {
-                        "index": true,
                         "name": "MK Name",
-                        "type": "string(64)"
+                        "type": "string(64)",
+                        "index": true
                     },
                     {
-                        "index": true,
                         "name": "MK Info",
-                        "type": "string(64)"
+                        "type": "string(64)",
+                        "index": true
                     }
                 ]
             }
