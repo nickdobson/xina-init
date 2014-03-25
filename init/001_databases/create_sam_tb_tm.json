@@ -273,7 +273,7 @@
                 "nul": true
             },
             {
-                "name": "Chamber Pressure",
+                "name": "Pressure",
                 "type": "float(8)",
                 "nul": true,
                 "meas": "pressure",
