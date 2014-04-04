@@ -118,7 +118,8 @@
                     {
                         "index": true,
                         "name": "MK Info",
-                        "type": "string(64)"
+                        "type": "string(64)",
+                        "nul": true
                     }
                 ]
             },

@@ -117,7 +117,8 @@
                     {
                         "name": "MK Info",
                         "type": "string(64)",
-                        "index": true
+                        "index": true,
+                        "nul": true
                     }
                 ]
             },
