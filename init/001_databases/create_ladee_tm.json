@@ -1,18 +1,18 @@
 {
     "action": "create",
     "create": "database",
-    "team": "LADEE",
+    "team":   "LADEE",
     "database": {
-        "name": "ladee_tm",
-        "label": "LADEE Telemetry",
-        "desc": "LADEE telemetry database.",
-        "entry_format": "{TID}-{TID Text}",
-        "enable_lock": false,
-        "enable_log": true,
+        "name":          "ladee_tm",
+        "label":         "LADEE Telemetry",
+        "desc":          "LADEE telemetry database.",
+        "entry_format":  "{TID}-{TID Text}",
+        "enable_lock":   false,
+        "enable_log":    true,
         "enable_notify": true,
-        "top_keys": 1,
+        "top_keys":      1,
         "objects": {
-            "repo_entry": "{Timestamp:YYYY-MM-dd-HH.mm.ss}-{TID}-{TID Text}",
+            "repo_entry":       "{Timestamp}-{TID}-{TID Text}",
             "os_win_repo_path": "{$doc}{$}LADEE{$}data",
             "os_osx_repo_path": "{$home}{$}LADEE{$}data",
             "os_nix_repo_path": "{$home}{$}gse{$}data"
@@ -21,79 +21,130 @@
             {
                 "name": "TID",
                 "type": "int(4)",
-                "key": true
+                "key":  true
             },
             {
-                "name": "TID Text",
-                "type": "string(64)",
+                "name":  "TID Text",
+                "type":  "string(64)",
                 "index": true,
-                "nul": true
+                "nul":   true
             },
             {
-                "name": "Timestamp",
-                "type": "localdatetime",
+                "name":  "Timestamp",
+                "type":  "string(32)",
                 "index": true,
-                "nul": true
+                "nul":   true
             },
             {
-                "name": "Date",
-                "type": "localdate",
+                "name":  "Date",
+                "type":  "localdate",
                 "index": true,
-                "nul": true
+                "nul":   true
             },
             {
-                "name": "DOY",
-                "type": "int(2)",
+                "name":  "DOY",
+                "type":  "int(2)",
                 "index": true,
-                "nul": true
+                "nul":   true
+            },
+            {
+                "name":  "Mission Phase",
+                "type":  "string(8)",
+                "index": true,
+                "nul":   true,
+                "options": [
+                    {
+                        "value": "atlo"
+                    },
+                    {
+                        "value": "cruise"
+                    },
+                    {
+                        "value": "phasing"
+                    },
+                    {
+                        "value": "commis"
+                    },
+                    {
+                        "value": "science"
+                    }
+                ]
+            },
+            {
+                "name":  "Op Type",
+                "type":  "string(4)",
+                "index": true,
+                "nul":   true,
+                "options": [
+                    {
+                        "value": "stby",
+                        "desc":  "standby"
+                    },
+                    {
+                        "value": "sci",
+                        "desc":  "science"
+                    },
+                    {
+                        "value": "eng",
+                        "desc":  "engineering"
+                    },
+                    {
+                        "value": "cal",
+                        "desc":  "calibration"
+                    },
+                    {
+                        "value": "bkg",
+                        "desc":  "background"
+                    }
+                ]
             },
             {
                 "name": "RT TID",
                 "type": "int(4)",
-                "nul": true
+                "nul":  true
             },
             {
-                "name": "Script",
-                "type": "string(64)",
+                "name":  "Script",
+                "type":  "string(64)",
                 "index": true,
-                "nul": true
+                "nul":   true
             },
             {
                 "name": "Script Rev",
                 "type": "string(16)",
-                "nul": true
+                "nul":  true
             },
             {
-                "name": "Cfg Script",
-                "type": "string(64)",
+                "name":  "Cfg Script",
+                "type":  "string(64)",
                 "index": true,
-                "nul": true
+                "nul":   true
             },
             {
                 "name": "Cfg Script Rev",
                 "type": "string(16)",
-                "nul": true
+                "nul":  true
             },
             {
-                "name": "Script Lib",
-                "type": "string(64)",
+                "name":  "Script Lib",
+                "type":  "string(64)",
                 "index": true,
-                "nul": true
+                "nul":  true
             },
             {
                 "name": "Script Lib Rev",
                 "type": "string(16)",
-                "nul": true
+                "nul":  true
             },
             {
                 "name": "RTS",
                 "type": "int(2)",
-                "nul": true
+                "nul":  true
             },
             {
                 "name": "Comments",
                 "type": "text",
-                "nul": true
+                "nul":  true
             }
         ]
     }

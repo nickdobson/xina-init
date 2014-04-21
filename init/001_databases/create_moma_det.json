@@ -1,15 +1,15 @@
 {
     "action": "create",
     "create": "database",
-    "team": "MOMA",
+    "team":   "MOMA",
     "database": {
-        "name": "moma_det",
-        "label": "MOMA Detector Test Stand",
-        "desc": "MOMA detector test stand data.",
-        "enable_lock": false,
-        "enable_log": false,
+        "name":          "moma_det",
+        "label":         "MOMA Detector Test Stand",
+        "desc":          "MOMA detector test stand data.",
+        "enable_lock":   false,
+        "enable_log":    false,
         "enable_notify": false,
-        "top_keys": 1,
+        "top_keys":      1,
         "fields": [
             {
                 "name": "Timestamp",

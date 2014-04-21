@@ -40,13 +40,13 @@
                 "name": "Solar Longitude",
                 "type": "float(8)",
                 "index": true,
-                "unit": "°"
+                "unit": "degrees"
             },
             {
                 "name": "Solar Latitude",
                 "type": "float(8)",
                 "index": true,
-                "unit": "°"
+                "unit": "degrees"
             }
         ]
     }

@@ -1,19 +1,19 @@
 {
     "action": "create",
     "create": "database",
-    "team": "MOMA",
+    "team":   "MOMA",
     "database": {
-        "name": "moma_journal",
-        "label": "MOMA Journal",
-        "desc": "MOMA engineering journal.",
-        "enable_lock": false,
-        "enable_log": true,
+        "name":          "moma_journal",
+        "label":         "MOMA Journal",
+        "desc":          "MOMA engineering journal.",
+        "enable_lock":   false,
+        "enable_log":    true,
         "enable_notify": false,
-        "top_keys": 1,
+        "top_keys":      1,
         "objects": {
             "xo_view_conf_journal": {
-                "date": "Date",
-                "title": "Title",
+                "date":    "Date",
+                "title":   "Title",
                 "content": "Content",
                 "meta": [
                     "WOA",
@@ -29,36 +29,36 @@
             {
                 "name": "Date",
                 "type": "date",
-                "key": true
+                "key":  true
             },
             {
-                "name": "Title",
-                "type": "string(64)",
+                "name":  "Title",
+                "type":  "string(64)",
                 "index": true
             },
             {
-                "name": "Content",
-                "type": "text",
+                "name":  "Content",
+                "type":  "text",
                 "index": true,
-                "nul": true
+                "nul":   true
             },
             {
-                "name": "WOA",
-                "type": "string(64)",
+                "name":  "WOA",
+                "type":  "string(64)",
                 "index": true,
-                "nul": true
+                "nul":   true
             },
             {
-                "name": "Proc ID",
-                "type": "string(32)",
+                "name":  "Proc ID",
+                "type":  "string(32)",
                 "index": true,
-                "nul": true
+                "nul":   true
             },
             {
-                "name": "Hw Config",
-                "type": "string(16)",
+                "name":  "Hw Config",
+                "type":  "string(16)",
                 "index": true,
-                "nul": true
+                "nul":   true
             }
         ]
     }

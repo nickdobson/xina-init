@@ -40,13 +40,13 @@
                 "name": "Selenographic Longitude",
                 "type": "float(8)",
                 "index": true,
-                "unit": "°"
+                "unit": "degrees"
             },
             {
                 "name": "Selenographic Latitude",
                 "type": "float(8)",
                 "index": true,
-                "unit": "°"
+                "unit": "degrees"
             },
             {
                 "name": "Selenographic Altitude",
