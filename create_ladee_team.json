@@ -1,8 +1,0 @@
-{
-	"action":"create",
-	"create":"team",
-	"team": {
-		"name":"LADEE",
-		"desc":"Primary team for the Lunar Atmospher Dust Environment Explorer (LADEE) mission."
-	}
-}
