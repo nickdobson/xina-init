@@ -122,7 +122,8 @@
                     {
                         "name": "MK Name",
                         "type": "string(64)",
-                        "index": true
+                        "index": true,
+                        "nul": true
                     },
                     {
                         "name": "MK Info",

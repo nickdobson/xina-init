@@ -1,25 +1,20 @@
 {
     "action": "create",
     "create": "database",
-    "team": "LADEE",
+    "team":   "LADEE",
     "database": {
-        "name": "ladee_periapsis",
-        "label": "LADEE Periapsis Crossings",
-        "desc": "LADEE periapsis crossing events.",
-        "enable_lock": false,
-        "enable_log": false,
+        "name":          "ladee_periapsis",
+        "label":         "LADEE Periapsis Crossings",
+        "desc":          "LADEE periapsis crossing events.",
+        "enable_lock":   false,
+        "enable_log":    false,
         "enable_notify": false,
-        "top_keys": 1,
+        "top_keys":      1,
         "fields": [
             {
                 "name": "t_utc",
                 "type": "int(8)",
                 "key": true
-            },
-            {
-                "name": "t_sclk",
-                "type": "int(8)",
-                "index": true
             }
         ]
     }

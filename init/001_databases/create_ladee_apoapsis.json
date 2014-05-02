@@ -15,11 +15,6 @@
                 "name": "t_utc",
                 "type": "int(8)",
                 "key": true
-            },
-            {
-                "name": "t_sclk",
-                "type": "int(8)",
-                "index": true
             }
         ]
     }

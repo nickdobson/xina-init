@@ -1,11 +1,11 @@
 {
     "action": "create",
     "create": "database",
-    "team":   "LADEE",
+    "team":   "MAVEN",
     "database": {
-        "name":          "ladee_tm",
-        "label":         "LADEE Telemetry",
-        "desc":          "LADEE telemetry database.",
+        "name":          "maven_fm_tm",
+        "label":         "MAVEN FM Telemetry",
+        "desc":          "MAVEN flight model telemetry database.",
         "entry_format":  "{TID}-{TID Text}",
         "enable_lock":   false,
         "enable_log":    true,
@@ -13,8 +13,8 @@
         "top_keys":      1,
         "objects": {
             "repo_entry":       "{Timestamp}-{TID}-{TID Text}",
-            "os_win_repo_path": "{$doc}{$}LADEE{$}data",
-            "os_osx_repo_path": "{$home}{$}LADEE{$}data",
+            "os_win_repo_path": "{$doc}{$}MAVEN{$}data",
+            "os_osx_repo_path": "{$home}{$}MAVEN{$}data",
             "os_nix_repo_path": "{$home}{$}gse{$}data"
         },
         "fields": [
@@ -112,7 +112,7 @@
                 "name":  "Script Lib",
                 "type":  "string(64)",
                 "index": true,
-                "nul":  true
+                "nul":   true
             },
             {
                 "name": "Script Lib Rev",

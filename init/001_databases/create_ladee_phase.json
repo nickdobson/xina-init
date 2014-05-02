@@ -3,9 +3,9 @@
     "create": "database",
     "team":   "LADEE",
     "database": {
-        "name":          "ladee_selenographic",
-        "label":         "LADEE Selenographic",
-        "desc":          "LADEE selenographic coordinate ephemeris data.",
+        "name":          "ladee_phase",
+        "label":         "LADEE Lunar Phase",
+        "desc":          "LADEE Lunar phase ephemeris data.",
         "enable_lock":   false,
         "enable_log":    false,
         "enable_notify": false,
@@ -27,7 +27,7 @@
                 "index": true
             },
             {
-                "name": "Selenographic Longitude",
+                "name": "Moon Phase",
                 "type": "float(8)",
                 "index": true,
                 "unit": "degrees"
