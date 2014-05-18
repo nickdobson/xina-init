@@ -1,16 +1,16 @@
 {
-    "action": "create",
-    "create": "database",
-    "team":   "MAVEN",
-    "database": {
-        "name":          "maven_fm_tm",
-        "label":         "MAVEN FM Telemetry",
-        "desc":          "MAVEN flight model telemetry database.",
-        "entry_format":  "{TID}-{TID Text}",
-        "enable_lock":   false,
-        "enable_log":    true,
-        "enable_notify": true,
-        "top_keys":      1,
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "MAVEN",
+    "database" : {
+        "name"          : "maven_fm_tm",
+        "label"         : "MAVEN FM Telemetry",
+        "desc"          : "MAVEN flight model telemetry database.",
+        "entry_format"  : "{TID}-{TID Text}",
+        "enable_lock"   : false,
+        "enable_log"    : true,
+        "enable_notify" : true,
+        "top_keys"      : 1,
         "objects": {
             "repo_entry":       "{Timestamp}-{TID}-{TID Text}",
             "os_win_repo_path": "{$doc}{$}MAVEN{$}data",
@@ -122,6 +122,12 @@
             {
                 "name": "RTS",
                 "type": "int(2)",
+                "nul":  true
+            },
+            {
+                "name": "Cal Gas",
+                "type": "string(32)",
+                "index": true,
                 "nul":  true
             },
             {

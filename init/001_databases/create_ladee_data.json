@@ -267,34 +267,40 @@
                         "index": true
                     },
                     {
-                        "name":  "t_lunar_cycle",
+                        "name":  "t_cycle",
                         "type":  "int(8)",
-                        "index": true
+                        "index": true,
+                        "nul":   true
                     },
                     {
                         "name":  "t_orbit",
                         "type":  "int(8)",
-                        "index": true
+                        "index": true,
+                        "nul":   true
                     },
                     {
                         "name":  "t_mn",
                         "type":  "int(8)",
-                        "index": true
+                        "index": true,
+                        "nul":   true
                     },
                     {
                         "name":  "t_sr",
                         "type":  "int(8)",
-                        "index": true
+                        "index": true,
+                        "nul":   true
                     },
                     {
                         "name":  "t_nn",
                         "type":  "int(8)",
-                        "index": true
+                        "index": true,
+                        "nul":   true
                     },
                     {
                         "name":  "t_ss",
                         "type":  "int(8)",
-                        "index": true
+                        "index": true,
+                        "nul":   true
                     },
                     {
                         "name":  "TID",
@@ -330,7 +336,7 @@
                     },
                     {
                         "name":  "Focus Mode",
-                        "type":  "string(4)",
+                        "type":  "string(8)",
                         "index": true,
                         "nul":   true
                     },

@@ -125,6 +125,12 @@
                 "nul":  true
             },
             {
+                "name": "Cal Gas",
+                "type": "string(32)",
+                "index": true,
+                "nul":  true
+            },
+            {
                 "name": "Comments",
                 "type": "text",
                 "nul":  true

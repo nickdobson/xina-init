@@ -1,214 +1,214 @@
 {
-    "action": "create",
-    "create": "database",
-    "team": "SAM",
-    "database": {
-        "name": "sam_roadmap",
-        "label": "SAM Roadmap",
-        "desc": "SAM activity roadmap database.",
-        "enable_lock": false,
-        "enable_log": true,
-        "enable_notify": true,
-        "top_keys": 1,
-        "fields": [
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "SAM",
+    "database" : {
+        "name"          : "sam_roadmap",
+        "label"         : "SAM Roadmap",
+        "desc"          : "SAM activity roadmap database.",
+        "enable_lock"   : false,
+        "enable_log"    : true,
+        "enable_notify" : true,
+        "top_keys"      : 1,
+        "fields"        : [
             {
-                "name": "Activity",
-                "type": "string(64)",
-                "key": true
+                "name"    : "Activity",
+                "type"    : "string(64)",
+                "key"     : true
             },
             {
-                "name": "Complete",
-                "type": "boolean",
-                "index": true,
-                "def": "false"
+                "name"    : "Complete",
+                "type"    : "boolean",
+                "index"   : true,
+                "def"     : "false"
             },
             {
-                "name": "Failed",
-                "type": "boolean",
-                "index": true,
-                "def": "false"
+                "name"    : "Failed",
+                "type"    : "boolean",
+                "index"   : true,
+                "def"     : "false"
             },
             {
-                "name": "Request Type",
-                "type": "string(4)",
-                "index": true,
-                "nul": true,
-                "strict": true,
-                "options": [
+                "name"    : "Request Type",
+                "type"    : "string(4)",
+                "index"   : true,
+                "nul"     : true,
+                "strict"  : true,
+                "options" : [
                     {
-                        "value": "ENG",
-                        "desc": "engineering"
+                        "value" : "ENG",
+                        "desc"  : "engineering"
                     },
                     {
-                        "value": "SCI",
-                        "desc": "science"
+                        "value" : "SCI",
+                        "desc"  : "science"
                     }
                 ]
             },
             {
-                "name": "Request No",
-                "type": "int(2)",
-                "index": true,
-                "nul": true
+                "name"    : "Request No",
+                "type"    : "int(2)",
+                "index"   : true,
+                "nul"     : true
             },
             {
-                "name": "PI Priority",
-                "type": "int(2)",
-                "index": true,
-                "nul": true
+                "name"    : "PI Priority",
+                "type"    : "int(2)",
+                "index"   : true,
+                "nul"     : true
             },
             {
-                "name": "Activity Lead",
-                "type": "string(32)",
-                "nul": true
+                "name"    : "Activity Lead",
+                "type"    : "string(32)",
+                "nul"     : true
             },
             {
-                "name": "STAG Target Date",
-                "type": "date",
-                "nul": true
+                "name"    : "STAG Target Date",
+                "type"    : "date",
+                "nul"     : true
             },
             {
-                "name": "TC Approval Date",
-                "type": "date",
-                "nul": true
+                "name"    : "TC Approval Date",
+                "type"    : "date",
+                "nul"     : true
             },
             {
-                "name": "Script Owner",
-                "type": "string(32)",
-                "nul": true
+                "name"    : "Script Owner",
+                "type"    : "string(32)",
+                "nul"     : true
             },
             {
-                "name": "Description",
-                "type": "text",
-                "nul": true
+                "name"    : "Description",
+                "type"    : "text",
+                "nul"     : true
             },
             {
-                "name": "Verification",
-                "type": "text",
-                "nul": true
+                "name"    : "Verification",
+                "type"    : "text",
+                "nul"     : true
             },
             {
-                "name": "Duration",
-                "type": "int(4)",
-                "nul": true,
-                "meas": "time",
-                "unit": "s"
+                "name"    : "Duration",
+                "type"    : "int(4)",
+                "nul"     : true,
+                "meas"    : "time",
+                "unit"    : "s"
             },
             {
-                "name": "Energy (SIM)",
-                "type": "float(4)",
-                "nul": true,
-                "meas": "energy",
-                "unit": "Whr"
+                "name"    : "Energy (SIM)",
+                "type"    : "float(4)",
+                "nul"     : true,
+                "meas"    : "energy",
+                "unit"    : "Whr"
             },
             {
-                "name": "Margined Energy (SIM)",
-                "type": "float(4)",
-                "nul": true,
-                "meas": "energy",
-                "unit": "Whr",
-                "desc": "20% margin"
+                "name"    : "Margined Energy (SIM)",
+                "type"    : "float(4)",
+                "nul"     : true,
+                "meas"    : "energy",
+                "unit"    : "Whr",
+                "desc"    : "20% margin"
             },
             {
-                "name": "Data Size",
-                "type": "float(4)",
-                "nul": true,
-                "unit": "kB"
+                "name"    : "Data Size",
+                "type"    : "float(4)",
+                "nul"     : true,
+                "unit"    : "kB"
             },
             {
-                "name": "Data Size (SIM)",
-                "type": "float(4)",
-                "nul": true,
-                "unit": "Mb"
+                "name"    : "Data Size (SIM)",
+                "type"    : "float(4)",
+                "nul"     : true,
+                "unit"    : "Mbit"
             },
             {
-                "name": "Margined Data Size (SIM)",
-                "type": "float(4)",
-                "nul": true,
-                "unit": "Mb",
-                "desc": "13% margin"
+                "name"    : "Margined Data Size (SIM)",
+                "type"    : "float(4)",
+                "nul"     : true,
+                "unit"    : "Mbit",
+                "desc"    : "13% margin"
             },
             {
-                "name": "TM Duration",
-                "type": "int(4)",
-                "nul": true,
-                "meas": "time",
-                "unit": "s"
+                "name"    : "TM Duration",
+                "type"    : "int(4)",
+                "nul"     : true,
+                "meas"    : "time",
+                "unit"    : "s"
             },
             {
-                "name": "Activity Duration",
-                "type": "int(4)",
-                "nul": true,
-                "meas": "time",
-                "unit": "s",
-                "desc": "activity duration when using sam_0002"
+                "name"    : "Activity Duration",
+                "type"    : "int(4)",
+                "nul"     : true,
+                "meas"    : "time",
+                "unit"    : "s",
+                "desc"    : "activity duration when using sam_0002"
             },
             {
-                "name": "Simple Cleanup Duration",
-                "type": "int(4)",
-                "nul": true,
-                "meas": "time",
-                "unit": "s",
-                "desc": "margined cleanup duration if not using HCVs or WRPs"
+                "name"    : "Simple Cleanup Duration",
+                "type"    : "int(4)",
+                "nul"     : true,
+                "meas"    : "time",
+                "unit"    : "s",
+                "desc"    : "margined cleanup duration if not using HCVs or WRPs"
             },
             {
-                "name": "Cleanup Duration",
-                "type": "int(4)",
-                "nul": true,
-                "meas": "time",
-                "unit": "s",
-                "desc": "margined cleanup duration"
+                "name"    : "Cleanup Duration",
+                "type"    : "int(4)",
+                "nul"     : true,
+                "meas"    : "time",
+                "unit"    : "s",
+                "desc"    : "margined cleanup duration"
             }
         ]
     },
     "groups": [
         {
-            "name": "Uplink Sol",
-            "fields": [
+            "name"   : "Uplink Sol",
+            "fields" : [
                 {
-                    "name": "Uplink Sol",
-                    "type": "int(4)",
-                    "key": true
+                    "name" : "Uplink Sol",
+                    "type" : "int(4)",
+                    "key"  : true
                 }
             ]
         },
         {
-            "name": "Testbed TIDs",
-            "fields": [
+            "name"   : "Testbed TIDs",
+            "fields" : [
                 {
-                    "name": "Testbed TID",
-                    "type": "int(4)",
-                    "key": true
+                    "name" : "Testbed TID",
+                    "type" : "int(4)",
+                    "key"  : true
                 }
             ]
         },
         {
-            "name": "SAMSIM TIDs",
-            "fields": [
+            "name"   : "SAMSIM TIDs",
+            "fields" : [
                 {
-                    "name": "Testbed TID",
-                    "type": "int(4)",
-                    "key": true
+                    "name" : "Testbed TID",
+                    "type" : "int(4)",
+                    "key"  : true
                 }
             ]
         },
         {
-            "name": "ActIDs",
-            "fields": [
+            "name"   : "ActIDs",
+            "fields" : [
                 {
-                    "name": "ActID",
-                    "type": "string(16)",
-                    "key": true
+                    "name" : "ActID",
+                    "type" : "string(16)",
+                    "key"  : true
                 }
             ]
         },
         {
-            "name": "SeqIDs",
-            "fields": [
+            "name"   : "SeqIDs",
+            "fields" : [
                 {
-                    "name": "SeqID",
-                    "type": "string(16)",
-                    "key": true
+                    "name" : "SeqID",
+                    "type" : "string(16)",
+                    "key"  : true
                 }
             ]
         }

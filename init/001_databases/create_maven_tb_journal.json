@@ -1,11 +1,11 @@
 {
     "action": "create",
     "create": "database",
-    "team":   "MOMA",
+    "team":   "MAVEN",
     "database": {
-        "name":          "moma_journal",
-        "label":         "MOMA Journal",
-        "desc":          "MOMA engineering journal.",
+        "name":          "maven_tb_journal",
+        "label":         "MAVEN TB Journal",
+        "desc":          "MAVEN testbed activity journal.",
         "enable_lock":   false,
         "enable_log":    true,
         "enable_notify": false,
@@ -16,8 +16,6 @@
                 "title":   "Title",
                 "content": "Content",
                 "meta": [
-                    "WOA",
-                    "Proc ID",
                     "Hw Config"
                 ]
             },
@@ -39,18 +37,6 @@
             {
                 "name":  "Content",
                 "type":  "text",
-                "index": true,
-                "nul":   true
-            },
-            {
-                "name":  "WOA",
-                "type":  "string(64)",
-                "index": true,
-                "nul":   true
-            },
-            {
-                "name":  "Proc ID",
-                "type":  "string(32)",
                 "index": true,
                 "nul":   true
             },

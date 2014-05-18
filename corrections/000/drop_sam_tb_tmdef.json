@@ -1,5 +1,0 @@
-{
-    "action": "drop",
-    "drop": "database",
-    "database": "sam_tb_tmdef"
-}

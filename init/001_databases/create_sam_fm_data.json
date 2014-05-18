@@ -1,136 +1,137 @@
 {
-    "action": "create",
-    "create": "database",
-    "team":   "SAM",
-    "database": {
-        "name":          "sam_fm_data",
-        "label":         "SAM FM Data",
-        "desc":          "SAM flight model housekeeping and science database.",
-        "enable_lock":   false,
-        "enable_log":    false,
-        "enable_notify": false,
-        "top_keys":      1,
-        "fields": [
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "SAM",
+    "database" : {
+        "name"          : "sam_fm_data",
+        "label"         : "SAM FM Data",
+        "desc"          : "SAM flight model housekeeping and science database.",
+        "enable_lock"   : false,
+        "enable_log"    : false,
+        "enable_notify" : false,
+        "top_keys"      : 1,
+        "fields"        : [
             {
-                "name": "TID",
-                "type": "int(4)",
-                "key":  true
+                "name"  : "TID",
+                "type"  : "int(4)",
+                "key"   : true
             },
             {
-                "name":  "t_utc_start",
-                "type":  "int(8)",
-                "index": true,
-                "nul":   true
+                "name"  : "t_utc_start",
+                "type"  : "int(8)",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name":  "t_utc_end",
-                "type":  "int(8)",
-                "index": true,
-                "nul":   true
+                "name"  : "t_utc_end",
+                "type"  : "int(8)",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name":  "t_sclk_start",
-                "type":  "int(8)",
-                "index": true,
-                "nul":   true
+                "name"  : "t_sclk_start",
+                "type"  : "int(8)",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name":  "t_sclk_end",
-                "type":  "int(8)",
-                "index": true,
-                "nul":   true
+                "name"  : "t_sclk_end",
+                "type"  : "int(8)",
+                "index" : true,
+                "nul"   : true
             }
         ],
-        "groups": [
+        "groups" : [
             {
-                "name": "Message",
-                "fields": [
+                "name"   : "Message",
+                "fields" : [
                     {
-                        "name":  "t_utc",
-                        "type":  "int(8)",
-                        "index": true
+                        "name"  : "t_utc",
+                        "type"  : "int(8)",
+                        "index" : true
                     },
                     {
-                        "name":  "t_sclk",
-                        "type":  "int(8)",
-                        "index": true
+                        "name"  : "t_sclk",
+                        "type"  : "int(8)",
+                        "index" : true
                     },
                     {
-                        "name":  "t_tid",
-                        "type":  "int(8)",
-                        "index": true
+                        "name"  : "t_tid",
+                        "type"  : "int(8)",
+                        "index" : true
                     },
                     {
-                        "name":  "TID",
-                        "type":  "int(4)",
-                        "index": true
+                        "name"  : "TID",
+                        "type"  : "int(4)",
+                        "index" : true
                     },
                     {
-                        "name":  "Message",
-                        "type":  "string",
-                        "index": true
+                        "name"  : "Message",
+                        "type"  : "string",
+                        "index" : true
                     }
                 ]
             },
             {
-                "name": "Marker",
-                "fields": [
+                "name"        : "Marker",
+                "item_format" : "{MK ID} {MK Name}",
+                "fields"      : [
                     {
-                        "name": "t_utc",
-                        "type": "int(8)",
-                        "key": true
+                        "name"  : "t_utc",
+                        "type"  : "int(8)",
+                        "key"   : true
                     },
                     {
-                        "name": "t_utc_next",
-                        "type": "int(8)",
-                        "index": true
+                        "name"  : "t_utc_next",
+                        "type"  : "int(8)",
+                        "index" : true
                     },
                     {
-                        "name": "t_sclk",
-                        "type": "int(8)",
-                        "index": true
+                        "name"  : "t_sclk",
+                        "type"  : "int(8)",
+                        "index" : true
                     },
                     {
-                        "name": "t_sclk_next",
-                        "type": "int(8)",
-                        "index": true
+                        "name"  : "t_sclk_next",
+                        "type"  : "int(8)",
+                        "index" : true
                     },
                     {
-                        "name":  "t_tid",
-                        "type":  "int(8)",
-                        "index": true
+                        "name"  : "t_tid",
+                        "type"  : "int(8)",
+                        "index" : true
                     },
                     {
-                        "name":  "t_tid_next",
-                        "type":  "int(8)",
-                        "index": true
+                        "name"  : "t_tid_next",
+                        "type"  : "int(8)",
+                        "index" : true
                     },
                     {
-                        "name":  "dt",
-                        "type":  "int(8)",
-                        "index": true
+                        "name"  : "dt",
+                        "type"  : "int(8)",
+                        "index" : true
                     },
                     {
-                        "name":  "TID",
-                        "type":  "int(4)",
-                        "index": true
+                        "name"  : "TID",
+                        "type"  : "int(4)",
+                        "index" : true
                     },
                     {
-                        "name":  "MK ID",
-                        "type":  "int(4)",
-                        "index": true
+                        "name"  : "MK ID",
+                        "type"  : "int(4)",
+                        "index" : true
                     },
                     {
-                        "name":  "MK Name",
-                        "type":  "string(64)",
-                        "index": true,
-                        "nul":   true
+                        "name"  : "MK Name",
+                        "type"  : "string(64)",
+                        "index" : true,
+                        "nul"   : true
                     },
                     {
-                        "name":  "MK Info",
-                        "type":  "string(64)",
-                        "index": true,
-                        "nul":   true
+                        "name"  : "MK Info",
+                        "type"  : "string(64)",
+                        "index" : true,
+                        "nul"   : true
                     }
                 ]
             },
