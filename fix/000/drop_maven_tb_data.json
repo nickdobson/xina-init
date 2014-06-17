@@ -1,5 +1,0 @@
-{
-    "action"   : "drop",
-    "drop"     : "database",
-    "database" : "maven_tb_data"
-}

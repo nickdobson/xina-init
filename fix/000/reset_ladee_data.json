@@ -1,5 +1,5 @@
 {
     "action"   : "reset",
     "reset"    : "database",
-    "database" : ""
+    "database" : "ladee_data"
 }

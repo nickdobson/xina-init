@@ -5,7 +5,7 @@
     "database": {
         "name":          "ladee_phase",
         "label":         "LADEE Lunar Phase",
-        "desc":          "LADEE Lunar phase ephemeris data.",
+        "desc":          "LADEE lunar phase ephemeris data.",
         "enable_lock":   false,
         "enable_log":    false,
         "enable_notify": false,
@@ -27,23 +27,10 @@
                 "index": true
             },
             {
-                "name": "Moon Phase",
+                "name": "Lunar Phase",
                 "type": "float(8)",
                 "index": true,
                 "unit": "degrees"
-            },
-            {
-                "name": "Selenographic Latitude",
-                "type": "float(8)",
-                "index": true,
-                "unit": "degrees"
-            },
-            {
-                "name": "Selenographic Altitude",
-                "type": "float(8)",
-                "index": true,
-                "meas": "length",
-                "unit": "km"
             }
         ]
     }

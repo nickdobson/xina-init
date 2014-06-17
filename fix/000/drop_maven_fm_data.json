@@ -1,5 +1,0 @@
-{
-    "action"   : "drop",
-    "drop"     : "database",
-    "database" : "maven_fm_data"
-}

@@ -4,8 +4,8 @@
     "team":   "LADEE",
     "database": {
         "name":          "ladee_cycle",
-        "label":         "LADEE Moon Cycle",
-        "desc":          "LADEE Moon phase cycle information database.",
+        "label":         "LADEE Lunar Cycle",
+        "desc":          "LADEE lunar phase cycle information database.",
         "enable_lock":   false,
         "enable_log":    false,
         "enable_notify": false,

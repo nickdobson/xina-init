@@ -1,20 +1,35 @@
 {
-    "action": "create",
-    "create": "database",
-    "team":   "LADEE",
-    "database": {
-        "name":          "ladee_periapsis",
-        "label":         "LADEE Periapsis Crossings",
-        "desc":          "LADEE periapsis crossing events.",
-        "enable_lock":   false,
-        "enable_log":    false,
-        "enable_notify": false,
-        "top_keys":      1,
-        "fields": [
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "LADEE",
+    "database" : {
+        "name"          : "ladee_periapsis",
+        "label"         : "LADEE Periapsis Orbit",
+        "desc"          : "LADEE periapsis orbit ephemeris data.",
+        "enable_lock"   : false,
+        "enable_log"    : false,
+        "enable_notify" : false,
+        "top_keys"      : 1,
+        "fields"        : [
             {
-                "name": "t_utc",
-                "type": "int(8)",
-                "key": true
+                "name" : "t_utc_start",
+                "type" : "int(8)",
+                "key"  : true
+            },
+            {
+                "name"  : "t_utc_end",
+                "type"  : "int(8)",
+                "index" : true
+            },
+            {
+                "name"  : "dt",
+                "type"  : "int(8)",
+                "index" : true
+            },
+            {
+                "name"  : "Periapsis Orbit",
+                "type"  : "int(4)",
+                "index" : true
             }
         ]
     }
