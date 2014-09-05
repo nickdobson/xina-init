@@ -11,13 +11,13 @@
         "enable_log"    : true,
         "enable_notify" : true,
         "top_keys"      : 1,
-        "objects": {
-            "repo_entry":       "{Timestamp}-{TID}-{TID Text}",
-            "os_win_repo_path": "{$doc}{$}MOMA{$}data",
-            "os_osx_repo_path": "{$home}{$}MOMA{$}data",
-            "os_nix_repo_path": "{$home}{$}gse{$}data"
+        "objects"       : {
+            "repo_entry"       : "{Timestamp}-{TID}-{TID Text}",
+            "os_win_repo_path" : "{$doc}{$}MOMA{$}data",
+            "os_osx_repo_path" : "{$home}{$}MOMA{$}data",
+            "os_nix_repo_path" : "{$home}{$}gse{$}data"
         },
-        "fields": [
+        "fields" : [
             {
                 "name": "TID",
                 "type": "int(4)",

@@ -307,6 +307,63 @@
                         "type" : "float(8)"
                     }
                 ]
+            },
+            {
+                "name"   : "HK Bin TID",
+                "fields" : [
+                    {
+                        "name" : "t_utc",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "TID",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "Data ID",
+                        "type" : "int(2)"
+                    },
+                    {
+                        "name" : "Samples",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "RAW Avg",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "RAW Min",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "RAW Max",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "ENG Avg",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "ENG Min",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "ENG Max",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "SCI Avg",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "SCI Min",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "SCI Max",
+                        "type" : "float(8)"
+                    }
+                ]
             }
         ]
     }

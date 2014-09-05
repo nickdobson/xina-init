@@ -1,104 +1,89 @@
 {
-    "action": "create",
-    "create": "database",
-    "team":   "MAVEN",
-    "database": {
-        "name":          "maven_tb_data",
-        "label":         "MAVEN TB Data",
-        "desc":          "MAVEN testbed model science and housekeeping database.",
-        "enable_lock":   false,
-        "enable_log":    false,
-        "enable_notify": false,
-        "top_keys":      1,
-        "fields": [
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "MAVEN",
+    "database" : {
+        "name"          : "maven_tb_data",
+        "label"         : "MAVEN TB Data",
+        "desc"          : "MAVEN testbed model science and housekeeping database.",
+        "enable_lock"   : false,
+        "enable_log"    : false,
+        "enable_notify" : false,
+        "top_keys"      : 1,
+        "fields"        : [
             {
-                "name": "TID",
-                "type": "int(4)",
-                "key":  true
+                "name" : "TID",
+                "type" : "int(4)",
+                "key"  : true
             },
             {
-                "name":  "t_utc_start",
-                "type":  "int(8)",
-                "index": true,
-                "nul":   true
+                "name" : "t_utc_start",
+                "type" : "int(8)",
+                "nul"  : true
             },
             {
-                "name":  "t_utc_end",
-                "type":  "int(8)",
-                "index": true,
-                "nul":   true
+                "name" : "t_utc_end",
+                "type" : "int(8)",
+                "nul"  : true
             },
             {
-                "name":  "t_sclk_start",
-                "type":  "int(8)",
-                "index": true,
-                "nul":   true
+                "name" : "t_sclk_start",
+                "type" : "int(8)",
+                "nul"  : true
             },
             {
-                "name":  "t_sclk_end",
-                "type":  "int(8)",
-                "index": true,
-                "nul":   true
+                "name" : "t_sclk_end",
+                "type" : "int(8)",
+                "nul"  : true
             }
         ],
         "groups": [
             {
-                "name": "IP",
-                "fields": [
+                "name"   : "IP",
+                "fields" : [
                     {
-                        "name":  "t_utc_start",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_utc_start",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "t_utc_end",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_utc_end",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "t_sclk_start",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_sclk_start",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "t_sclk_end",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_sclk_end",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "t_tid_start",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_tid_start",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "t_tid_end",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_tid_end",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "dt",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "dt",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "TID",
-                        "type":  "int(4)",
-                        "index": true
+                        "name" : "TID",
+                        "type" : "int(4)"
                     },
                     {
-                        "name":  "Setup Period",
-                        "type":  "int(4)",
-                        "index": true
+                        "name" : "Setup Period",
+                        "type" : "int(4)"
                     },
                     {
-                        "name":  "IP",
-                        "type":  "int(4)",
-                        "index": true
+                        "name" : "IP",
+                        "type" : "int(4)"
                     },
                     {
-                        "name":  "Sample Period",
-                        "type":  "int(4)",
-                        "index": true
+                        "name" : "Sample Period",
+                        "type" : "int(4)"
                     }
                 ]
             },
@@ -106,168 +91,147 @@
                 "name": "Emission",
                 "fields": [
                     {
-                        "name":  "t_utc_start",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_utc_start",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "t_utc_end",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_utc_end",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "t_sclk_start",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_sclk_start",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "t_sclk_end",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_sclk_end",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "t_tid_start",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_tid_start",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "t_tid_end",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_tid_end",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "dt",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "dt",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "TID",
-                        "type":  "int(4)",
-                        "index": true
+                        "name" : "TID",
+                        "type" : "int(4)"
                     },
                     {
-                        "name": "Source",
-                        "type": "string(2)",
-                        "index": true
+                        "name" : "Source",
+                        "type" : "string(2)"
                     },
                     {
-                        "name": "Filament",
-                        "type": "int(1)",
-                        "index": true
+                        "name" : "Filament",
+                        "type" : "int(1)"
                     },
                     {
-                        "name":  "Emission",
-                        "type":  "int(2)",
-                        "index": true,
-                        "meas":  "current",
-                        "unit":  "microamp"
+                        "name" : "Emission",
+                        "type" : "int(2)",
+                        "meas" : "current",
+                        "unit" : "microamp"
                     },
                     {
-                        "name":  "Em Voltage Raw",
-                        "type":  "int(2)",
-                        "index": true,
-                        "unit":  "dac"
+                        "name" : "Em Voltage Raw",
+                        "type" : "int(2)",
+                        "unit" : "dac"
                     },
                     {
-                        "name":  "Em Voltage",
-                        "type":  "float(4)",
-                        "index": true,
-                        "nul":   true,
-                        "meas":  "voltage",
-                        "unit":  "V"
+                        "name" : "Em Voltage",
+                        "type" : "float(4)",
+                        "nul"  : true,
+                        "meas" : "voltage",
+                        "unit" : "V"
                     }
                 ]
             },
             {
-                "name": "Science",
-                "fields": [
+                "name"   : "Science",
+                "fields" : [
                     {
-                        "name":  "t_utc",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_utc",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "t_sclk",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_sclk",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "t_tid",
-                        "type":  "int(8)",
-                        "index": true
+                        "name" : "t_tid",
+                        "type" : "int(8)"
                     },
                     {
-                        "name":  "TID",
-                        "type":  "int(4)",
-                        "index": true
+                        "name" : "TID",
+                        "type" : "int(4)"
                     },
                     {
-                        "name":  "Mass x100",
-                        "type":  "int(4)",
-                        "index": true
+                        "name" : "Mass x100",
+                        "type" : "int(4)"
                     },
                     {
-                        "name":  "Counts Raw",
-                        "type":  "int(4)",
-                        "index": true
+                        "name" : "Counts Raw",
+                        "type" : "int(4)"
                     },
                     {
-                        "name":  "CPS",
-                        "type":  "float(4)",
-                        "index": true
+                        "name" : "CPS",
+                        "type" : "float(4)"
                     },
                     {
-                        "name":  "CPS Corrected",
-                        "type":  "float(4)",
-                        "index": true,
-                        "nul":   true
+                        "name" : "CPS Corrected",
+                        "type" : "float(4)",
+                        "nul"  : true
                     },
                     {
-                        "name":  "Source",
-                        "type":  "string(2)",
-                        "index": true,
-                        "nul":   true
+                        "name" : "Source",
+                        "type" : "string(2)",
+                        "nul"  : true
                     },
                     {
-                        "name":  "Focus Mode",
-                        "type":  "string(8)",
-                        "index": true,
-                        "nul":   true
+                        "name" : "Focus Mode",
+                        "type" : "string(8)",
+                        "nul"  : true
                     },
                     {
-                        "name":  "Filament",
-                        "type":  "int(1)",
-                        "index": true,
-                        "nul":   true
+                        "name" : "Filament",
+                        "type" : "int(1)",
+                        "nul"  : true
                     },
                     {
-                        "name":  "Multiplier",
-                        "type":  "int(1)",
-                        "index": true,
-                        "nul":   true
+                        "name" : "Multiplier",
+                        "type" : "int(1)",
+                        "nul"  : true
                     },
                     {
-                        "name":  "Stabil Ion Gauge 1",
-                        "type":  "float(4)",
-                        "index": true,
-                        "nul":   true,
-                        "meas":  "pressure",
-                        "unit":  "Torr"
+                        "name" : "Stabil Ion Gauge 1",
+                        "type" : "float(4)",
+                        "nul"  : true,
+                        "meas" : "pressure",
+                        "unit" : "Torr"
                     },
                     {
-                        "name":  "Stabil Ion Gauge 2",
-                        "type":  "float(4)",
-                        "index": true,
-                        "nul":   true,
-                        "meas":  "pressure",
-                        "unit":  "Torr"
+                        "name" : "Stabil Ion Gauge 2",
+                        "type" : "float(4)",
+                        "nul"  : true,
+                        "meas" : "pressure",
+                        "unit" : "Torr"
                     },
                     {
-                        "name":  "Pressure Spread",
-                        "type":  "float(4)",
-                        "index": true,
-                        "nul":   true,
-                        "unit":  "%"
+                        "name" : "Pressure Spread",
+                        "type" : "float(4)",
+                        "nul"  : true,
+                        "unit" : "%"
+                    },
+                    {
+                        "name" : "Temperature",
+                        "type" : "float(4)",
+                        "meas" : "temperature",
+                        "unit" : "C",
+                        "nul"  : true
                     }
                 ]
             },
@@ -490,6 +454,63 @@
                     {
                         "name" : "UMKID",
                         "type" : "int(8)"
+                    },
+                    {
+                        "name" : "Data ID",
+                        "type" : "int(2)"
+                    },
+                    {
+                        "name" : "Samples",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "RAW Avg",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "RAW Min",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "RAW Max",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "ENG Avg",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "ENG Min",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "ENG Max",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "SCI Avg",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "SCI Min",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "SCI Max",
+                        "type" : "float(8)"
+                    }
+                ]
+            },
+            {
+                "name"   : "HK Bin TID",
+                "fields" : [
+                    {
+                        "name" : "t_utc",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "TID",
+                        "type" : "int(4)"
                     },
                     {
                         "name" : "Data ID",
