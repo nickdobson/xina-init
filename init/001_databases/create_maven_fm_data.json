@@ -151,10 +151,10 @@
                 ]
             },
             {
-                "name"   : "Science Ground",
+                "name"   : "Science Preflight L1",
                 "fields" : [
                     {
-                        "name" : "t_utc",
+                        "name" : "t_unix",
                         "type" : "int(8)"
                     },
                     {
@@ -166,67 +166,66 @@
                         "type" : "int(8)"
                     },
                     {
-                        "name" : "TID",
+                        "name" : "tid",
                         "type" : "int(4)"
                     },
                     {
-                        "name" : "Mass x100",
+                        "name" : "umkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mass_x100",
                         "type" : "int(4)"
                     },
                     {
-                        "name" : "Counts Raw",
+                        "name" : "counts",
                         "type" : "int(4)"
                     },
                     {
-                        "name" : "CPS",
+                        "name" : "cps_raw",
                         "type" : "float(4)"
                     },
                     {
-                        "name" : "CPS Corrected",
+                        "name" : "cps_dt",
                         "type" : "float(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Source",
-                        "type" : "string(2)",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "Focus Mode",
+                        "name" : "focus_mode",
                         "type" : "string(8)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Filament",
+                        "name" : "filament",
                         "type" : "int(1)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Multiplier",
+                        "name" : "multiplier",
                         "type" : "int(1)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Pressure",
-                        "type" : "float(4)",
-                        "nul"  : true,
-                        "meas" : "pressure",
-                        "unit" : "Torr"
-                    },
-                    {
-                        "name" : "Temperature",
+                        "name" : "temperature",
                         "type" : "float(4)",
                         "meas" : "temperature",
                         "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "pressure",
+                        "type" : "float(4)",
+                        "meas" : "pressure",
+                        "unit" : "Torr",
                         "nul"  : true
                     }
                 ]
             },
             {
-                "name": "Science Flight",
-                "fields": [
+                "name"   : "Science Preflight L2",
+                "fields" : [
                     {
-                        "name" : "t_utc",
+                        "name" : "t_unix",
                         "type" : "int(8)"
                     },
                     {
@@ -238,152 +237,710 @@
                         "type" : "int(8)"
                     },
                     {
-                        "name" : "t_orbit",
-                        "type" : "int(8)",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "TID",
+                        "name" : "tid",
                         "type" : "int(4)"
                     },
                     {
-                        "name" : "Mass x100",
+                        "name" : "umkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mass_x100",
                         "type" : "int(4)"
                     },
                     {
-                        "name" : "Counts Raw",
+                        "name" : "counts",
                         "type" : "int(4)"
                     },
                     {
-                        "name" : "CPS",
+                        "name" : "cps_raw",
                         "type" : "float(4)"
                     },
                     {
-                        "name" : "CPS Corrected",
+                        "name" : "cps_dt",
                         "type" : "float(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Source",
-                        "type" : "string(2)",
+                        "name" : "cps_bkgd",
+                        "type" : "float(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Focus Mode",
+                        "name" : "bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "abundance",
+                        "type" : "float(4)",
+                        "unit" : "part/cc",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
                         "type" : "string(8)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Filament",
+                        "name" : "filament",
                         "type" : "int(1)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Multiplier",
+                        "name" : "multiplier",
                         "type" : "int(1)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Temperature",
+                        "name" : "temperature",
                         "type" : "float(4)",
                         "meas" : "temperature",
                         "unit" : "C",
                         "nul"  : true
                     },
                     {
-                        "name" : "Orbit",
+                        "name" : "pressure",
+                        "type" : "float(4)",
+                        "meas" : "pressure",
+                        "unit" : "Torr",
+                        "nul"  : true
+                    }
+                ]
+            },
+            {
+                "name": "Science L1",
+                "fields": [
+                    {
+                        "name" : "t_unix",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_sclk",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "umkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "counts",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "cps_raw",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "cps_dt",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
+                        "type" : "string(8)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "filament",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "multiplier",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "temperature",
+                        "type" : "float(4)",
+                        "meas" : "temperature",
+                        "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "orbit",
+                        "type" : "int(4)",
+                        "nul"  : true
+                    }
+                ]
+            },
+            {
+                "name": "Science L1b",
+                "fields": [
+                    {
+                        "name" : "t_unix",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_sclk",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "umkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "counts",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "cps_raw",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "cps_dt",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "cps_bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
+                        "type" : "string(8)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "filament",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "multiplier",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "temperature",
+                        "type" : "float(4)",
+                        "meas" : "temperature",
+                        "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "orbit",
                         "type" : "int(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Martian Longitude",
+                        "name" : "alt",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "iau",
+                        "nul"  : true
                     },
                     {
-                        "name" : "Martian Latitude",
+                        "name" : "vsc",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "iau",
+                        "nul"  : true
                     },
                     {
-                        "name" : "Martian Altitude",
+                        "name" : "x",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "meas" : "length",
-                        "unit" : "km"
+                        "unit" : "iau",
+                        "nul"  : true
                     },
                     {
-                        "name" : "Solar Longitude",
+                        "name" : "y",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "iau",
+                        "nul"  : true
                     },
                     {
-                        "name" : "Solar Latitude",
+                        "name" : "z",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "iau",
+                        "nul"  : true
                     },
                     {
-                        "name" : "Topographic Altitude",
+                        "name" : "vx",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "meas" : "length",
-                        "unit" : "km"
+                        "unit" : "iau",
+                        "nul"  : true
                     },
                     {
-                        "name" : "Angle i (Roll)",
+                        "name" : "vy",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "iau",
+                        "nul"  : true
                     },
                     {
-                        "name" : "Angle j (Pitch)",
+                        "name" : "vz",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "iau",
+                        "nul"  : true
                     },
                     {
-                        "name" : "Angle k (Yaw)",
+                        "name" : "lat",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "degrees",
+                        "nul"  : true
                     },
                     {
-                        "name" : "Ram Velocity",
+                        "name" : "long",
+                        "type" : "float(4)",
+                        "unit" : "degrees",
+                        "nul"  : true
+                    }
+                ]
+            },
+            {
+                "name": "Science L1.5",
+                "fields": [
+                    {
+                        "name" : "t_unix",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_sclk",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "umkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "counts",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "cps_raw",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "cps_dt",
                         "type" : "float(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "X",
+                        "name" : "cps_bkgd",
                         "type" : "float(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Y",
+                        "name" : "bkgd",
                         "type" : "float(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Z",
+                        "name" : "focus_mode",
+                        "type" : "string(8)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "filament",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "multiplier",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "temperature",
+                        "type" : "float(4)",
+                        "meas" : "temperature",
+                        "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "orbit",
+                        "type" : "int(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "alt",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vsc",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "x",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "y",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "z",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vx",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vy",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vz",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "lat",
+                        "type" : "float(4)",
+                        "unit" : "degrees",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "long",
+                        "type" : "float(4)",
+                        "unit" : "degrees",
+                        "nul"  : true
+                    }
+                ]
+            },
+            {
+                "name": "Science L2",
+                "fields": [
+                    {
+                        "name" : "t_unix",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_sclk",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "umkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "counts",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "cps_raw",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "cps_dt",
                         "type" : "float(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "VX",
+                        "name" : "cps_bkgd",
                         "type" : "float(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "VY",
+                        "name" : "bkgd",
                         "type" : "float(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "VZ",
+                        "name" : "abundance",
                         "type" : "float(4)",
+                        "unit" : "part/cc",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
+                        "type" : "string(8)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "filament",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "multiplier",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "temperature",
+                        "type" : "float(4)",
+                        "meas" : "temperature",
+                        "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "orbit",
+                        "type" : "int(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "alt",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vsc",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "x",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "y",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "z",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vx",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vy",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vz",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "lat",
+                        "type" : "float(4)",
+                        "unit" : "degrees",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "long",
+                        "type" : "float(4)",
+                        "unit" : "degrees",
+                        "nul"  : true
+                    }
+                ]
+            },
+            {
+                "name": "Science L2kp",
+                "fields": [
+                    {
+                        "name" : "t_unix",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_sclk",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "umkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "counts",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "cps_raw",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "cps_dt",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "cps_bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "abundance",
+                        "type" : "float(4)",
+                        "unit" : "part/cc",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
+                        "type" : "string(8)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "filament",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "multiplier",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "temperature",
+                        "type" : "float(4)",
+                        "meas" : "temperature",
+                        "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "orbit",
+                        "type" : "int(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "alt",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vsc",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "x",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "y",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "z",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vx",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vy",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vz",
+                        "type" : "float(4)",
+                        "unit" : "iau",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "lat",
+                        "type" : "float(4)",
+                        "unit" : "degrees",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "long",
+                        "type" : "float(4)",
+                        "unit" : "degrees",
                         "nul"  : true
                     }
                 ]

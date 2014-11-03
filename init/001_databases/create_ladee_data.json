@@ -3,8 +3,8 @@
     "create"   : "database",
     "team"     : "LADEE",
     "database" : {
-        "name"          : "ladee_fm_data",
-        "label"         : "LADEE FM Data",
+        "name"          : "ladee_data",
+        "label"         : "LADEE Data",
         "desc"          : "LADEE flight model science and housekeeping database.",
         "enable_lock"   : false,
         "enable_log"    : false,
@@ -270,6 +270,11 @@
                         "type" : "int(4)"
                     },
                     {
+                        "name"  : "UMKID",
+                        "type"  : "int(8)",
+                        "index" : true
+                    },
+                    {
                         "name" : "Mass x100",
                         "type" : "int(2)"
                     },
@@ -284,11 +289,6 @@
                     {
                         "name" : "CPS Corrected",
                         "type" : "float(4)",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "Source",
-                        "type" : "string(2)",
                         "nul"  : true
                     },
                     {
@@ -307,7 +307,14 @@
                         "nul"  : true
                     },
                     {
-                        "name" : "Temperature",
+                        "name" : "CS Temp",
+                        "type" : "float(4)",
+                        "meas" : "temperature",
+                        "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "OS Temp",
                         "type" : "float(4)",
                         "meas" : "temperature",
                         "unit" : "C",
@@ -352,8 +359,8 @@
                     {
                         "name" : "Terminator Offset",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "degrees",
+                        "nul"  : true
                     },
                     {
                         "name" : "Apoapsis Orbit",
@@ -368,58 +375,58 @@
                     {
                         "name" : "Selenographic Longitude",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "degrees",
+                        "nul"  : true
                     },
                     {
                         "name" : "Selenographic Latitude",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "degrees",
+                        "nul"  : true
                     },
                     {
                         "name" : "Selenographic Altitude",
                         "type" : "float(4)",
-                        "nul"  : true,
                         "meas" : "length",
-                        "unit" : "km"
+                        "unit" : "km",
+                        "nul"  : true
                     },
                     {
                         "name" : "Solar Longitude",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "degrees",
+                        "nul"  : true
                     },
                     {
                         "name" : "Solar Latitude",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "degrees",
+                        "nul"  : true
                     },
                     {
                         "name" : "Topographic Altitude",
                         "type" : "float(4)",
-                        "nul"  : true,
                         "meas" : "length",
-                        "unit" : "km"
+                        "unit" : "km",
+                        "nul"  : true
                     },
                     {
                         "name" : "Angle i (Roll)",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "degrees",
+                        "nul"  : true
                     },
                     {
                         "name" : "Angle j (Pitch)",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "degrees",
+                        "nul"  : true
                     },
                     {
                         "name" : "Angle k (Yaw)",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "degrees",
+                        "nul"  : true
                     },
                     {
                         "name" : "Ram Velocity",
@@ -429,14 +436,14 @@
                     {
                         "name" : "Ram Sun Angle",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "degrees",
+                        "nul"  : true
                     },
                     {
                         "name" : "SEP Angle",
                         "type" : "float(4)",
-                        "nul"  : true,
-                        "unit" : "degrees"
+                        "unit" : "degrees",
+                        "nul"  : true
                     }
                 ]
             },

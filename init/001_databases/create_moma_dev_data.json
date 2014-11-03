@@ -1,339 +1,47 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "team"     : "MAVEN",
+    "team"     : "MOMA",
     "database" : {
-        "name"          : "maven_tb_data",
-        "label"         : "MAVEN TB Data",
-        "desc"          : "MAVEN testbed model science and housekeeping database.",
+        "name"          : "moma_dev_data",
+        "label"         : "MOMA Development Data",
+        "desc"          : "MOMA development models science and housekeeping database.",
         "enable_lock"   : false,
         "enable_log"    : false,
         "enable_notify" : false,
         "top_keys"      : 1,
         "fields"        : [
             {
-                "name" : "TID",
-                "type" : "int(4)",
-                "key"  : true
+                "name"  : "TID",
+                "type"  : "int(4)",
+                "key"   : true
             },
             {
-                "name" : "t_utc_start",
-                "type" : "int(8)",
-                "nul"  : true
+                "name"  : "t_utc_start",
+                "type"  : "int(8)",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name" : "t_utc_end",
-                "type" : "int(8)",
-                "nul"  : true
+                "name"  : "t_utc_end",
+                "type"  : "int(8)",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name" : "t_sclk_start",
-                "type" : "int(8)",
-                "nul"  : true
+                "name"  : "t_sclk_start",
+                "type"  : "int(8)",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name" : "t_sclk_end",
-                "type" : "int(8)",
-                "nul"  : true
+                "name"  : "t_sclk_end",
+                "type"  : "int(8)",
+                "index" : true,
+                "nul"   : true
             }
         ],
-        "groups": [
-            {
-                "name"   : "IP",
-                "fields" : [
-                    {
-                        "name" : "t_utc_start",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_utc_end",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_sclk_start",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_sclk_end",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_tid_start",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_tid_end",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "dt",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "TID",
-                        "type" : "int(4)"
-                    },
-                    {
-                        "name" : "Setup Period",
-                        "type" : "int(4)"
-                    },
-                    {
-                        "name" : "IP",
-                        "type" : "int(4)"
-                    },
-                    {
-                        "name" : "Sample Period",
-                        "type" : "int(4)"
-                    }
-                ]
-            },
-            {
-                "name": "Emission",
-                "fields": [
-                    {
-                        "name" : "t_utc_start",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_utc_end",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_sclk_start",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_sclk_end",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_tid_start",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_tid_end",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "dt",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "TID",
-                        "type" : "int(4)"
-                    },
-                    {
-                        "name" : "Source",
-                        "type" : "string(2)"
-                    },
-                    {
-                        "name" : "Filament",
-                        "type" : "int(1)"
-                    },
-                    {
-                        "name" : "Emission",
-                        "type" : "int(2)",
-                        "meas" : "current",
-                        "unit" : "microamp"
-                    },
-                    {
-                        "name" : "Em Voltage Raw",
-                        "type" : "int(2)",
-                        "unit" : "dac"
-                    },
-                    {
-                        "name" : "Em Voltage",
-                        "type" : "float(4)",
-                        "nul"  : true,
-                        "meas" : "voltage",
-                        "unit" : "V"
-                    }
-                ]
-            },
-            {
-                "name"   : "Science L1",
-                "fields" : [
-                    {
-                        "name" : "t_unix",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_sclk",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_tid",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "tid",
-                        "type" : "int(4)"
-                    },
-                    {
-                        "name" : "umkid",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "mass_x100",
-                        "type" : "int(4)"
-                    },
-                    {
-                        "name" : "counts",
-                        "type" : "int(4)"
-                    },
-                    {
-                        "name" : "cps_raw",
-                        "type" : "float(4)"
-                    },
-                    {
-                        "name" : "cps_dt",
-                        "type" : "float(4)",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "focus_mode",
-                        "type" : "string(8)",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "filament",
-                        "type" : "int(1)",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "multiplier",
-                        "type" : "int(1)",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "ion_gauge_1",
-                        "type" : "float(4)",
-                        "meas" : "pressure",
-                        "unit" : "Torr",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "ion_gauge_2",
-                        "type" : "float(4)",
-                        "meas" : "pressure",
-                        "unit" : "Torr",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "pressure_spread",
-                        "type" : "float(4)",
-                        "unit" : "%",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "temperature",
-                        "type" : "float(4)",
-                        "meas" : "temperature",
-                        "unit" : "C",
-                        "nul"  : true
-                    }
-                ]
-            },
-            {
-                "name"   : "Science L2",
-                "fields" : [
-                    {
-                        "name" : "t_unix",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_sclk",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_tid",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "tid",
-                        "type" : "int(4)"
-                    },
-                    {
-                        "name" : "umkid",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "mass_x100",
-                        "type" : "int(4)"
-                    },
-                    {
-                        "name" : "counts",
-                        "type" : "int(4)"
-                    },
-                    {
-                        "name" : "cps_raw",
-                        "type" : "float(4)"
-                    },
-                    {
-                        "name" : "cps_dt",
-                        "type" : "float(4)",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "cps_bkgd",
-                        "type" : "float(4)",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "bkgd",
-                        "type" : "float(4)",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "abundance",
-                        "type" : "float(4)",
-                        "unit" : "part/cc",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "focus_mode",
-                        "type" : "string(8)",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "filament",
-                        "type" : "int(1)",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "multiplier",
-                        "type" : "int(1)",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "ion_gauge_1",
-                        "type" : "float(4)",
-                        "meas" : "pressure",
-                        "unit" : "Torr",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "ion_gauge_2",
-                        "type" : "float(4)",
-                        "meas" : "pressure",
-                        "unit" : "Torr",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "pressure_spread",
-                        "type" : "float(4)",
-                        "unit" : "%",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "temperature",
-                        "type" : "float(4)",
-                        "meas" : "temperature",
-                        "unit" : "C",
-                        "nul"  : true
-                    }
-                ]
-            },
+        "groups" : [
             {
                 "name"   : "Message",
                 "fields" : [
