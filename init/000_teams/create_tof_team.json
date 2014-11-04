@@ -1,0 +1,8 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name" : "TOF",
+		"desc" : "Primary team for the time-of-flight (TOF) mass spectrometer databases."
+	}
+}

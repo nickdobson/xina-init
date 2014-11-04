@@ -60,188 +60,187 @@
             {
                 "name" : "Stub",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "voltage",
                 "unit" : "V",
-                "desc" : "sample holder voltage"
+                "desc" : "sample holder voltage",
+                "nul"  : true
             },
             {
                 "name" : "Inlet",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "voltage",
                 "unit" : "V",
-                "desc" : "MS inlet voltage"
+                "desc" : "MS inlet voltage",
+                "nul"  : true
             },
             {
                 "name" : "Lens",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "voltage",
                 "unit" : "V",
-                "desc" : "einzel lens voltage"
+                "desc" : "einzel lens voltage",
+                "nul"  : true
             },
             {
                 "name" : "Drift/MCP",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "voltage",
                 "unit" : "V",
-                "desc" : "drift tube and MCP voltage"
+                "desc" : "drift tube and MCP voltage",
+                "nul"  : true
             },
             {
                 "name" : "Reflector",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "voltage",
                 "unit" : "V",
-                "desc" : "reflector voltage"
+                "desc" : "reflector voltage",
+                "nul"  : true
             },
             {
                 "name" : "Gate Voltage",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "voltage",
                 "unit" : "V",
-                "desc" : "gate electrode voltage"
+                "desc" : "gate electrode voltage",
+                "nul"  : true
             },
             {
                 "name" : "Gate Timing",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "time",
                 "unit" : "us",
-                "desc" : "gate timing delay"
+                "desc" : "gate timing delay",
+                "nul"  : true
             },
             {
-                "name"  : "L1 Model",
-                "type"  : "string(64)",
-                "nul"   : true
+                "name" : "L1 Model",
+                "type" : "string(64)",
+                "nul"  : true
             },
             {
                 "name" : "L1 Pulse Energy",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "energy",
                 "unit" : "mJ",
-                "desc" : "desorption and/or ionization laser pulse energy"
+                "desc" : "desorption and/or ionization laser pulse energy",
+                "nul"  : true
             },
             {
                 "name" : "L1 Intensity",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "intensity",
                 "unit" : "W/cm2",
-                "desc" : "desorption and/or ionization laser intensity at the sample"
+                "desc" : "desorption and/or ionization laser intensity at the sample",
+                "nul"  : true
             },
             {
                 "name" : "L1 Area",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "area",
                 "unit" : "cm2",
-                "desc" : "illumination area on the sample, 1/e2 value"
+                "desc" : "illumination area on the sample, 1/e2 value",
+                "nul"  : true
             },
             {
                 "name" : "L1 Repetition Rate",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "frequency",
                 "unit" : "Hz",
-                "desc" : "desorption and/or ionization laser rep rate; 0Hz = continuous light source"
+                "desc" : "desorption and/or ionization laser rep rate; 0Hz = continuous light source",
+                "nul"  : true
             },
             {
                 "name" : "L1 Wavelength",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "length",
                 "unit" : "nm",
-                "desc" : "desorption and/or ionization laser wavelength"
+                "desc" : "desorption and/or ionization laser wavelength",
+                "nul"  : true
             },
             {
                 "name" : "L1 Q Switch Delay",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "time",
                 "unit" : "us",
                 "desc" : "delay between the laser flashlamp and Q-switch fire"
             },
             {
-                "name"  : "L2 Model",
-                "type"  : "string(64)",
-                "nul"   : true
+                "name" : "L2 Model",
+                "type" : "string(64)",
+                "nul"  : true
             },
             {
                 "name" : "L2 Pulse Energy",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "energy",
                 "unit" : "mJ",
-                "desc" : "ionization laser pulse energy"
+                "desc" : "ionization laser pulse energy",
+                "nul"  : true
             },
             {
                 "name" : "L2 Intensity",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "intensity",
                 "unit" : "W/cm2",
-                "desc" : "ionization laser intensity at the sample"
+                "desc" : "ionization laser intensity at the sample",
+                "nul"  : true
             },
             {
                 "name" : "L2 Area",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "area",
                 "unit" : "cm2",
-                "desc" : "illumination area on the sample, 1/e2 value"
+                "desc" : "illumination area on the sample, 1/e2 value",
+                "nul"  : true
             },
             {
                 "name" : "L2 Repetition Rate",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "frequency",
                 "unit" : "Hz",
-                "desc" : "ionization laser rep rate; 0Hz = continuous light source"
+                "desc" : "ionization laser rep rate; 0Hz = continuous light source",
+                "nul"  : true
             },
             {
                 "name" : "L2 Wavelength",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "length",
                 "unit" : "nm",
-                "desc" : "desorption and/or ionization laser wavelength"
+                "desc" : "desorption and/or ionization laser wavelength",
+                "nul"  : true
             },
             {
                 "name" : "L2 Q Switch Delay",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "time",
                 "unit" : "us",
-                "desc" : "delay between the laser flashlamp and Q-switch fire"
+                "desc" : "delay between the laser flashlamp and Q-switch fire",
+                "nul"  : true
             },
             {
                 "name" : "L2 Time Delay",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "time",
                 "unit" : "us",
-                "desc" : "delay between the desorption and ionization laser"
+                "desc" : "delay between the desorption and ionization laser",
+                "nul"  : true
             },
             {
                 "name" : "Pressure",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "pressure",
                 "unit" : "Torr",
-                "desc" : "pressure in the source region"
+                "desc" : "pressure in the source region",
+                "nul"  : true
             },
             {
                 "name" : "Temperature",
                 "type" : "float(8)",
-                "nul"  : true,
                 "meas" : "temperature",
                 "unit" : "K",
-                "desc" : "sample temperature"
+                "desc" : "sample temperature",
+                "nul"  : true
             },
             {
                 "name"    : "Cal Type",
@@ -332,7 +331,7 @@
             },
             {
                 "name"        : "Spectrum",
-                "item_format" : "{Name}",
+                "item_format" : "{Mass}, {Count}",
                 "fields"      : [
                     {
                         "name" : "Mass",

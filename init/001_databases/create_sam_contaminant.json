@@ -1,0 +1,131 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "SAM",
+    "database" : {
+        "name"          : "sam_contaminant",
+        "label"         : "SAM Contaminant Library",
+        "desc"          : "SAM contaminant and terrestrial background compound library.",
+        "entry_format"  : "{Name}",
+        "enable_lock"   : false,
+        "enable_log"    : true,
+        "enable_notify" : false,
+        "top_keys"      : 1,
+        "fields": [
+            {
+                "name"  : "Path",
+                "type"  : "string(64)",
+                "key"   : true
+            },
+            {
+                "name"  : "Name",
+                "type"  : "string(64)",
+                "key"   : true
+            },
+            {
+                "name"  : "Sample Name",
+                "type"  : "string(64)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "Sample Type",
+                "type"  : "string(32)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "Acquisition Date",
+                "type"  : "datetime",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "Method",
+                "type"  : "string(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Process",
+                "type"  : "string(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Start Temp",
+                "type"  : "float(8)",
+                "meas"  : "temperature",
+                "unit"  : "C",
+                "nul"   : true
+            },
+            {
+                "name"  : "Ramp Temp Rate",
+                "type"  : "string(32)",
+                "meas"  : "temperature/time",
+                "unit"  : "C/min",
+                "nul"   : true
+            },
+            {
+                "name"  : "Final Temp",
+                "type"  : "string(32)",
+                "meas"  : "temperature",
+                "unit"  : "C",
+                "nul"   : true
+            },
+            {
+                "name"  : "Report",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Comments",
+                "type"  : "text",
+                "nul"   : true
+            }
+        ],
+        "groups" : [
+            {
+                "name"        : "Compounds",
+                "item_format" : "{Name}",
+                "fields"      : [
+
+                    {
+                        "name"  : "Name",
+                        "type"  : "string"
+                    },
+                    {
+                        "name"  : "Retention Time",
+                        "type"  : "float(8)",
+                        "nul"   : true
+                    },
+                    {
+                        "name"  : "Compound Name",
+                        "type"  : "string",
+                        "index" : true,
+                        "nul"   : true
+                    },
+                    {
+                        "name"  : "Formula",
+                        "type"  : "string(32)",
+                        "index" : true,
+                        "nul"   : true
+                    },
+                    {
+                        "name"  : "Match",
+                        "type"  : "int(2)",
+                        "nul"   : true
+                    },
+                    {
+                        "name"  : "R.match",
+                        "type"  : "int(2)",
+                        "nul"   : true
+                    },
+                    {
+                        "name"  : "Probability",
+                        "type"  : "float(8)",
+                        "nul"   : true
+                    }
+                ]
+            }
+        ]
+    }
+}
