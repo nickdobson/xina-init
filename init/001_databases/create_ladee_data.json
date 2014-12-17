@@ -15,26 +15,6 @@
                 "name" : "TID",
                 "type" : "int(4)",
                 "key"  : true
-            },
-            {
-                "name" : "t_utc_start",
-                "type" : "int(8)",
-                "nul"  : true
-            },
-            {
-                "name" : "t_utc_end",
-                "type" : "int(8)",
-                "nul"  : true
-            },
-            {
-                "name" : "t_sclk_start",
-                "type" : "int(8)",
-                "nul"  : true
-            },
-            {
-                "name" : "t_sclk_end",
-                "type" : "int(8)",
-                "nul"  : true
             }
         ],
         "groups": [
@@ -151,10 +131,10 @@
                 ]
             },
             {
-                "name": "Science Ground",
-                "fields": [
+                "name"   : "Science Preflight",
+                "fields" : [
                     {
-                        "name" : "t_utc",
+                        "name" : "t_unix",
                         "type" : "int(8)"
                     },
                     {
@@ -166,48 +146,69 @@
                         "type" : "int(8)"
                     },
                     {
-                        "name" : "TID",
+                        "name" : "tid",
                         "type" : "int(4)"
                     },
                     {
-                        "name" : "Mass x100",
+                        "name" : "umkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(2)"
+                    },
+                    {
+                        "name" : "counts",
                         "type" : "int(4)"
                     },
                     {
-                        "name" : "Counts Raw",
-                        "type" : "int(4)"
-                    },
-                    {
-                        "name" : "CPS",
+                        "name" : "cps_raw",
                         "type" : "float(4)"
                     },
                     {
-                        "name" : "CPS Corrected",
+                        "name" : "cps_raw_bkgd",
                         "type" : "float(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Source",
-                        "type" : "string(2)",
+                        "name" : "cps_dt",
+                        "type" : "float(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Focus Mode",
+                        "name" : "cps_dt_bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
                         "type" : "string(8)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Filament",
+                        "name" : "filament",
                         "type" : "int(1)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Multiplier",
+                        "name" : "multiplier",
                         "type" : "int(1)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Temperature",
+                        "name" : "cs_temp",
+                        "type" : "float(4)",
+                        "meas" : "temperature",
+                        "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "os_temp",
                         "type" : "float(4)",
                         "meas" : "temperature",
                         "unit" : "C",
@@ -219,7 +220,7 @@
                 "name": "Science Flight",
                 "fields": [
                     {
-                        "name" : "t_utc",
+                        "name" : "t_unix",
                         "type" : "int(8)"
                     },
                     {
@@ -236,12 +237,12 @@
                         "nul"  : true
                     },
                     {
-                        "name" : "t_apoapsis_orbit",
+                        "name" : "t_apo_orbit",
                         "type" : "int(8)",
                         "nul"  : true
                     },
                     {
-                        "name" : "t_periapsis_orbit",
+                        "name" : "t_peri_orbit",
                         "type" : "int(8)",
                         "nul"  : true
                     },
@@ -266,181 +267,195 @@
                         "nul"  : true
                     },
                     {
-                        "name" : "TID",
+                        "name" : "tid",
                         "type" : "int(4)"
                     },
                     {
-                        "name"  : "UMKID",
-                        "type"  : "int(8)",
-                        "index" : true
+                        "name" : "umkid",
+                        "type" : "int(8)"
                     },
                     {
-                        "name" : "Mass x100",
+                        "name" : "mass_x100",
                         "type" : "int(2)"
                     },
                     {
-                        "name" : "Counts Raw",
+                        "name" : "counts",
                         "type" : "int(4)"
                     },
                     {
-                        "name" : "CPS",
+                        "name" : "cps_raw",
                         "type" : "float(4)"
                     },
                     {
-                        "name" : "CPS Corrected",
+                        "name" : "cps_raw_bkgd",
                         "type" : "float(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Focus Mode",
+                        "name" : "cps_dt",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "cps_dt_bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
                         "type" : "string(8)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Filament",
+                        "name" : "filament",
                         "type" : "int(1)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Multiplier",
+                        "name" : "multiplier",
                         "type" : "int(1)",
                         "nul"  : true
                     },
                     {
-                        "name" : "CS Temp",
+                        "name" : "cs_temp",
                         "type" : "float(4)",
                         "meas" : "temperature",
                         "unit" : "C",
                         "nul"  : true
                     },
                     {
-                        "name" : "OS Temp",
+                        "name" : "os_temp",
                         "type" : "float(4)",
                         "meas" : "temperature",
                         "unit" : "C",
                         "nul"  : true
                     },
                     {
-                        "name" : "Lunar Cycle",
+                        "name" : "lunar_cycle",
                         "type" : "int(1)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Lunar Phase",
+                        "name" : "lunar_phase",
                         "type" : "float(4)",
                         "nul"  : true,
                         "unit" : "degrees"
                     },
                     {
-                        "name" : "Midnight Cycle",
+                        "name" : "mn_cycle",
                         "type" : "int(2)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Sunrise Cycle",
+                        "name" : "sr_cycle",
                         "type" : "int(2)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Noon Cycle",
+                        "name" : "nn_cycle",
                         "type" : "int(2)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Sunset Cycle",
+                        "name" : "ss_cycle",
                         "type" : "int(2)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Terminator",
+                        "name" : "term",
                         "type" : "string(2)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Terminator Offset",
+                        "name" : "term_ofset",
                         "type" : "float(4)",
                         "unit" : "degrees",
                         "nul"  : true
                     },
                     {
-                        "name" : "Apoapsis Orbit",
+                        "name" : "apo_orbit",
                         "type" : "int(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Periapsis Orbit",
+                        "name" : "peri_orbit",
                         "type" : "int(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Selenographic Longitude",
+                        "name" : "selen_lon",
                         "type" : "float(4)",
                         "unit" : "degrees",
                         "nul"  : true
                     },
                     {
-                        "name" : "Selenographic Latitude",
+                        "name" : "selen_lat",
                         "type" : "float(4)",
                         "unit" : "degrees",
                         "nul"  : true
                     },
                     {
-                        "name" : "Selenographic Altitude",
+                        "name" : "selen_alt",
                         "type" : "float(4)",
                         "meas" : "length",
                         "unit" : "km",
                         "nul"  : true
                     },
                     {
-                        "name" : "Solar Longitude",
+                        "name" : "sol_lon",
                         "type" : "float(4)",
                         "unit" : "degrees",
                         "nul"  : true
                     },
                     {
-                        "name" : "Solar Latitude",
+                        "name" : "sol_lat",
                         "type" : "float(4)",
                         "unit" : "degrees",
                         "nul"  : true
                     },
                     {
-                        "name" : "Topographic Altitude",
+                        "name" : "topo_alt",
                         "type" : "float(4)",
                         "meas" : "length",
                         "unit" : "km",
                         "nul"  : true
                     },
                     {
-                        "name" : "Angle i (Roll)",
+                        "name" : "i_roll",
                         "type" : "float(4)",
                         "unit" : "degrees",
                         "nul"  : true
                     },
                     {
-                        "name" : "Angle j (Pitch)",
+                        "name" : "j_pitch",
                         "type" : "float(4)",
                         "unit" : "degrees",
                         "nul"  : true
                     },
                     {
-                        "name" : "Angle k (Yaw)",
+                        "name" : "k_yaw",
                         "type" : "float(4)",
                         "unit" : "degrees",
                         "nul"  : true
                     },
                     {
-                        "name" : "Ram Velocity",
+                        "name" : "ram_vel",
                         "type" : "float(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "Ram Sun Angle",
+                        "name" : "ram_sun_angle",
                         "type" : "float(4)",
                         "unit" : "degrees",
                         "nul"  : true
                     },
                     {
-                        "name" : "SEP Angle",
+                        "name" : "sep_angle",
                         "type" : "float(4)",
                         "unit" : "degrees",
                         "nul"  : true
@@ -456,12 +471,12 @@
                         "index" : true
                     },
                     {
-                        "name" : "t_sclk",
-                        "type" : "int(8)"
+                        "name"  : "t_sclk",
+                        "type"  : "int(8)"
                     },
                     {
-                        "name" : "t_tid",
-                        "type" : "int(8)"
+                        "name"  : "t_tid",
+                        "type"  : "int(8)"
                     },
                     {
                         "name"  : "TID",
@@ -470,6 +485,11 @@
                     },
                     {
                         "name"  : "UMKID",
+                        "type"  : "int(8)",
+                        "index" : true
+                    },
+                    {
+                        "name"  : "UMID",
                         "type"  : "int(8)",
                         "index" : true
                     },
@@ -490,28 +510,28 @@
                         "index" : true
                     },
                     {
-                        "name" : "t_utc_next",
-                        "type" : "int(8)"
+                        "name"  : "t_utc_next",
+                        "type"  : "int(8)"
                     },
                     {
-                        "name" : "t_sclk",
-                        "type" : "int(8)"
+                        "name"  : "t_sclk",
+                        "type"  : "int(8)"
                     },
                     {
-                        "name" : "t_sclk_next",
-                        "type" : "int(8)"
+                        "name"  : "t_sclk_next",
+                        "type"  : "int(8)"
                     },
                     {
-                        "name" : "t_tid",
-                        "type" : "int(8)"
+                        "name"  : "t_tid",
+                        "type"  : "int(8)"
                     },
                     {
-                        "name" : "t_tid_next",
-                        "type" : "int(8)"
+                        "name"  : "t_tid_next",
+                        "type"  : "int(8)"
                     },
                     {
-                        "name" : "dt",
-                        "type" : "int(8)"
+                        "name"  : "dt",
+                        "type"  : "int(8)"
                     },
                     {
                         "name"  : "TID",
@@ -550,10 +570,6 @@
                         "type" : "int(8)"
                     },
                     {
-                        "name" : "t_sclk",
-                        "type" : "int(8)"
-                    },
-                    {
                         "name" : "t_tid",
                         "type" : "int(8)"
                     },
@@ -585,17 +601,18 @@
                         "name" : "SCI",
                         "type" : "float(8)"
                     }
+                ],
+                "indexes" : [
+                    ["t_utc", "Data ID"],
+                    ["TID"  , "Data ID"],
+                    ["UMKID", "Data ID"]
                 ]
             },
             {
-                "name"   : "HK Bin Time",
+                "name"   : "HK Bin Time UTC",
                 "fields" : [
                     {
                         "name" : "t_utc",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_sclk",
                         "type" : "int(8)"
                     },
                     {
@@ -650,6 +667,75 @@
                         "name" : "SCI Max",
                         "type" : "float(8)"
                     }
+                ],
+                "indexes" : [
+                    ["t_utc", "Data ID", "Samples"],
+                    ["TID"  , "Data ID", "Samples"]
+                ]
+            },
+            {
+                "name"   : "HK Bin Time TID",
+                "fields" : [
+                    {
+                        "name" : "t_utc",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "TID",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "Data ID",
+                        "type" : "int(2)"
+                    },
+                    {
+                        "name" : "Samples",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "RAW Avg",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "RAW Min",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "RAW Max",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "ENG Avg",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "ENG Min",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "ENG Max",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "SCI Avg",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "SCI Min",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "SCI Max",
+                        "type" : "float(8)"
+                    }
+                ],
+                "indexes" : [
+                    ["t_tid", "Data ID", "Samples"],
+                    ["TID"  , "Data ID", "Samples"]
                 ]
             },
             {
@@ -657,6 +743,10 @@
                 "fields" : [
                     {
                         "name" : "t_utc",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
                         "type" : "int(8)"
                     },
                     {
@@ -711,6 +801,11 @@
                         "name" : "SCI Max",
                         "type" : "float(8)"
                     }
+                ],
+                "indexes" : [
+                    ["t_utc", "Data ID", "Samples"],
+                    ["TID"  , "Data ID", "Samples"],
+                    ["UMKID", "Data ID", "Samples"]
                 ]
             },
             {
@@ -768,6 +863,10 @@
                         "name" : "SCI Max",
                         "type" : "float(8)"
                     }
+                ],
+                "indexes" : [
+                    ["t_utc", "Data ID", "Samples"],
+                    ["TID"  , "Data ID", "Samples"]
                 ]
             }
         ]

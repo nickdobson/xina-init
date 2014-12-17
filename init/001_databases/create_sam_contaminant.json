@@ -3,10 +3,10 @@
     "create"   : "database",
     "team"     : "SAM",
     "database" : {
-        "name"          : "sam_contaminant",
-        "label"         : "SAM Contaminant Library",
+        "name"          : "sam_compound",
+        "label"         : "SAM Compound Library",
         "desc"          : "SAM contaminant and terrestrial background compound library.",
-        "entry_format"  : "{Name}",
+        "entry_format"  : "{Path} / {Name}",
         "enable_lock"   : false,
         "enable_log"    : true,
         "enable_notify" : false,
@@ -32,6 +32,11 @@
                 "name"  : "Sample Type",
                 "type"  : "string(32)",
                 "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "Location",
+                "type"  : "string(64)",
                 "nul"   : true
             },
             {

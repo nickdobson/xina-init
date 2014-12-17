@@ -15,30 +15,6 @@
                 "name"  : "TID",
                 "type"  : "int(4)",
                 "key"   : true
-            },
-            {
-                "name"  : "t_utc_start",
-                "type"  : "int(8)",
-                "index" : true,
-                "nul"   : true
-            },
-            {
-                "name"  : "t_utc_end",
-                "type"  : "int(8)",
-                "index" : true,
-                "nul"   : true
-            },
-            {
-                "name"  : "t_sclk_start",
-                "type"  : "int(8)",
-                "index" : true,
-                "nul"   : true
-            },
-            {
-                "name"  : "t_sclk_end",
-                "type"  : "int(8)",
-                "index" : true,
-                "nul"   : true
             }
         ],
         "groups" : [
@@ -51,12 +27,12 @@
                         "index" : true
                     },
                     {
-                        "name" : "t_sclk",
-                        "type" : "int(8)"
+                        "name"  : "t_sclk",
+                        "type"  : "int(8)"
                     },
                     {
-                        "name" : "t_tid",
-                        "type" : "int(8)"
+                        "name"  : "t_tid",
+                        "type"  : "int(8)"
                     },
                     {
                         "name"  : "TID",
@@ -65,6 +41,11 @@
                     },
                     {
                         "name"  : "UMKID",
+                        "type"  : "int(8)",
+                        "index" : true
+                    },
+                    {
+                        "name"  : "UMID",
                         "type"  : "int(8)",
                         "index" : true
                     },
@@ -85,28 +66,28 @@
                         "index" : true
                     },
                     {
-                        "name" : "t_utc_next",
-                        "type" : "int(8)"
+                        "name"  : "t_utc_next",
+                        "type"  : "int(8)"
                     },
                     {
-                        "name" : "t_sclk",
-                        "type" : "int(8)"
+                        "name"  : "t_sclk",
+                        "type"  : "int(8)"
                     },
                     {
-                        "name" : "t_sclk_next",
-                        "type" : "int(8)"
+                        "name"  : "t_sclk_next",
+                        "type"  : "int(8)"
                     },
                     {
-                        "name" : "t_tid",
-                        "type" : "int(8)"
+                        "name"  : "t_tid",
+                        "type"  : "int(8)"
                     },
                     {
-                        "name" : "t_tid_next",
-                        "type" : "int(8)"
+                        "name"  : "t_tid_next",
+                        "type"  : "int(8)"
                     },
                     {
-                        "name" : "dt",
-                        "type" : "int(8)"
+                        "name"  : "dt",
+                        "type"  : "int(8)"
                     },
                     {
                         "name"  : "TID",
@@ -145,10 +126,6 @@
                         "type" : "int(8)"
                     },
                     {
-                        "name" : "t_sclk",
-                        "type" : "int(8)"
-                    },
-                    {
                         "name" : "t_tid",
                         "type" : "int(8)"
                     },
@@ -180,17 +157,18 @@
                         "name" : "SCI",
                         "type" : "float(8)"
                     }
+                ],
+                "indexes" : [
+                    ["t_utc", "Data ID"],
+                    ["TID"  , "Data ID"],
+                    ["UMKID", "Data ID"]
                 ]
             },
             {
-                "name"   : "HK Bin Time",
+                "name"   : "HK Bin Time UTC",
                 "fields" : [
                     {
                         "name" : "t_utc",
-                        "type" : "int(8)"
-                    },
-                    {
-                        "name" : "t_sclk",
                         "type" : "int(8)"
                     },
                     {
@@ -245,6 +223,75 @@
                         "name" : "SCI Max",
                         "type" : "float(8)"
                     }
+                ],
+                "indexes" : [
+                    ["t_utc", "Data ID", "Samples"],
+                    ["TID"  , "Data ID", "Samples"]
+                ]
+            },
+            {
+                "name"   : "HK Bin Time TID",
+                "fields" : [
+                    {
+                        "name" : "t_utc",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "TID",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "Data ID",
+                        "type" : "int(2)"
+                    },
+                    {
+                        "name" : "Samples",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "RAW Avg",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "RAW Min",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "RAW Max",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "ENG Avg",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "ENG Min",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "ENG Max",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "SCI Avg",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "SCI Min",
+                        "type" : "float(8)"
+                    },
+                    {
+                        "name" : "SCI Max",
+                        "type" : "float(8)"
+                    }
+                ],
+                "indexes" : [
+                    ["t_tid", "Data ID", "Samples"],
+                    ["TID"  , "Data ID", "Samples"]
                 ]
             },
             {
@@ -252,6 +299,10 @@
                 "fields" : [
                     {
                         "name" : "t_utc",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
                         "type" : "int(8)"
                     },
                     {
@@ -306,6 +357,11 @@
                         "name" : "SCI Max",
                         "type" : "float(8)"
                     }
+                ],
+                "indexes" : [
+                    ["t_utc", "Data ID", "Samples"],
+                    ["TID"  , "Data ID", "Samples"],
+                    ["UMKID", "Data ID", "Samples"]
                 ]
             },
             {
@@ -363,6 +419,10 @@
                         "name" : "SCI Max",
                         "type" : "float(8)"
                     }
+                ],
+                "indexes" : [
+                    ["t_utc", "Data ID", "Samples"],
+                    ["TID"  , "Data ID", "Samples"]
                 ]
             }
         ]

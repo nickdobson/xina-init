@@ -1,11 +1,11 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "team"     : "LADEE",
+    "team"     : "MOMA",
     "database" : {
-        "name"          : "ladee_tm",
-        "label"         : "LADEE Telemetry",
-        "desc"          : "LADEE telemetry database.",
+        "name"          : "moma_etu_tm",
+        "label"         : "MOMA ETU Telemetry",
+        "desc"          : "MOMA ETU model telemetry database.",
         "entry_format"  : "{TID}-{TID Text}",
         "enable_lock"   : false,
         "enable_log"    : true,
@@ -13,8 +13,8 @@
         "top_keys"      : 1,
         "objects"       : {
             "repo_entry"       : "{Timestamp}-{TID}-{TID Text}",
-            "os_win_repo_path" : "{$doc}{$}LADEE{$}data",
-            "os_osx_repo_path" : "{$home}{$}LADEE{$}data",
+            "os_win_repo_path" : "{$doc}{$}MOMA{$}data",
+            "os_osx_repo_path" : "{$home}{$}MOMA{$}data",
             "os_nix_repo_path" : "{$home}{$}gse{$}data"
         },
         "fields" : [
@@ -48,8 +48,8 @@
                 "nul"   : true
             },
             {
-                "name"  : "Mission Phase",
-                "type"  : "string(8)",
+                "name"  : "Model",
+                "type"  : "string(16)",
                 "index" : true,
                 "nul"   : true
             },
@@ -82,11 +82,6 @@
                 ]
             },
             {
-                "name"  : "RT TID",
-                "type"  : "int(4)",
-                "nul"   :  true
-            },
-            {
                 "name"  : "Script",
                 "type"  : "string(64)",
                 "index" : true,
@@ -109,39 +104,14 @@
                 "nul"   : true
             },
             {
-                "name"  : "Lib Script",
+                "name"  : "Script Lib",
                 "type"  : "string(64)",
                 "index" : true,
                 "nul"   : true
             },
             {
-                "name"  : "Lib Script Rev",
+                "name"  : "Script Lib Rev",
                 "type"  : "string(16)",
-                "nul"   : true
-            },
-            {
-                "name"  : "FSW Version",
-                "type"  : "string(32)",
-                "nul"   : true
-            },
-            {
-                "name"  : "FSW Build",
-                "type"  : "string(32)",
-                "nul"   : true
-            },
-            {
-                "name"  : "RTS",
-                "type"  : "int(2)",
-                "nul"   : true
-            },
-            {
-                "name"  : "Start Time",
-                "type"  : "datetime",
-                "nul"   : true
-            },
-            {
-                "name"  : "End Time",
-                "type"  : "datetime",
                 "nul"   : true
             },
             {

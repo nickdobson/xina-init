@@ -1,11 +1,11 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "team"     : "SAM",
+    "team"     : "MOMA",
     "database" : {
-        "name"          : "sam_fm_data",
-        "label"         : "SAM FM Data",
-        "desc"          : "SAM flight model housekeeping and science database.",
+        "name"          : "moma_etu_data",
+        "label"         : "MOMA ETU Data",
+        "desc"          : "MOMA ETU model science and housekeeping database.",
         "enable_lock"   : false,
         "enable_log"    : false,
         "enable_notify" : false,

@@ -1,139 +1,184 @@
 {
-    "action": "create",
-    "create": "database",
-    "team":   "MAVEN",
-    "database": {
-        "name":          "maven_tb_tm",
-        "label":         "MAVEN TB Telemetry",
-        "desc":          "MAVEN testbed model telemetry database.",
-        "entry_format":  "{TID}-{TID Text}",
-        "enable_lock":   false,
-        "enable_log":    true,
-        "enable_notify": true,
-        "top_keys":      1,
-        "objects": {
-            "repo_entry":       "{Timestamp}-{TID}-{TID Text}",
-            "os_win_repo_path": "{$doc}{$}MAVEN{$}data",
-            "os_osx_repo_path": "{$home}{$}MAVEN{$}data",
-            "os_nix_repo_path": "{$home}{$}gse{$}data"
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "MAVEN",
+    "database" : {
+        "name"          : "maven_tb_tm",
+        "label"         : "MAVEN TB Telemetry",
+        "desc"          : "MAVEN testbed model telemetry database.",
+        "entry_format"  : "{TID}-{TID Text}",
+        "enable_lock"   : false,
+        "enable_log"    : true,
+        "enable_notify" : true,
+        "top_keys"      : 1,
+        "objects"       : {
+            "repo_entry"       : "{Timestamp}-{TID}-{TID Text}",
+            "os_win_repo_path" : "{$doc}{$}MAVEN{$}data",
+            "os_osx_repo_path" : "{$home}{$}MAVEN{$}data",
+            "os_nix_repo_path" : "{$home}{$}gse{$}data"
         },
-        "fields": [
+        "fields" : [
             {
-                "name": "TID",
-                "type": "int(4)",
-                "key":  true
+                "name"  : "TID",
+                "type"  : "int(4)",
+                "key"   : true
             },
             {
-                "name":  "TID Text",
-                "type":  "string(64)",
-                "index": true,
-                "nul":   true
+                "name"  : "TID Text",
+                "type"  : "string(64)",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name":  "Timestamp",
-                "type":  "string(32)",
-                "index": true,
-                "nul":   true
+                "name"  : "Timestamp",
+                "type"  : "string(32)",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name":  "Date",
-                "type":  "localdate",
-                "index": true,
-                "nul":   true
+                "name"  : "Date",
+                "type"  : "localdate",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name":  "DOY",
-                "type":  "int(2)",
-                "index": true,
-                "nul":   true
+                "name"  : "DOY",
+                "type"  : "int(2)",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name":  "Mission Phase",
-                "type":  "string(8)",
-                "index": true,
-                "nul":   true
+                "name"  : "Mission Phase",
+                "type"  : "string(8)",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name":  "Op Type",
-                "type":  "string(4)",
-                "index": true,
-                "nul":   true,
-                "options": [
+                "name"    : "Op Type",
+                "type"    : "string(4)",
+                "index"   : true,
+                "nul"     : true,
+                "options" : [
                     {
-                        "value": "stby",
-                        "desc":  "standby"
+                        "value" : "stby",
+                        "desc"  : "standby"
                     },
                     {
-                        "value": "sci",
-                        "desc":  "science"
+                        "value" : "sci",
+                        "desc"  : "science"
                     },
                     {
-                        "value": "eng",
-                        "desc":  "engineering"
+                        "value" : "eng",
+                        "desc"  : "engineering"
                     },
                     {
-                        "value": "cal",
-                        "desc":  "calibration"
+                        "value" : "cal",
+                        "desc"  : "calibration"
                     },
                     {
-                        "value": "bkg",
-                        "desc":  "background"
+                        "value" : "bkg",
+                        "desc"  : "background"
                     }
                 ]
             },
             {
-                "name": "RT TID",
-                "type": "int(4)",
-                "nul":  true
+                "name"  : "RT TID",
+                "type"  : "int(4)",
+                "nul"   : true
             },
             {
-                "name":  "Script",
-                "type":  "string(64)",
-                "index": true,
-                "nul":   true
+                "name"  : "Script",
+                "type"  : "string(64)",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name": "Script Rev",
-                "type": "string(16)",
-                "nul":  true
+                "name"  : "Script Rev",
+                "type"  : "string(16)",
+                "nul"   : true
             },
             {
-                "name":  "Cfg Script",
-                "type":  "string(64)",
-                "index": true,
-                "nul":   true
+                "name"  : "Cfg Script",
+                "type"  : "string(64)",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name": "Cfg Script Rev",
-                "type": "string(16)",
-                "nul":  true
+                "name"  : "Cfg Script Rev",
+                "type"  : "string(16)",
+                "nul"   : true
             },
             {
-                "name":  "Script Lib",
-                "type":  "string(64)",
-                "index": true,
-                "nul":   true
+                "name"  : "Lib Script",
+                "type"  : "string(64)",
+                "index" : true,
+                "nul"   : true
             },
             {
-                "name": "Script Lib Rev",
-                "type": "string(16)",
-                "nul":  true
+                "name"  : "Lib Script Rev",
+                "type"  : "string(16)",
+                "nul"   : true
             },
             {
-                "name": "RTS",
-                "type": "int(2)",
-                "nul":  true
+                "name"  : "FSW Version",
+                "type"  : "string(32)",
+                "nul"   : true
             },
             {
-                "name": "Cal Gas",
-                "type": "string(32)",
-                "index": true,
-                "nul":  true
+                "name"  : "FSW Build",
+                "type"  : "string(32)",
+                "nul"   : true
             },
             {
-                "name": "Comments",
-                "type": "text",
-                "nul":  true
+                "name"  : "RTS",
+                "type"  : "int(2)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Cal Gas",
+                "type"  : "string(32)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "Start Time",
+                "type"  : "datetime",
+                "nul"   : true
+            },
+            {
+                "name"  : "End Time",
+                "type"  : "datetime",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_utc_start",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_utc_end",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_sclk_start",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_sclk_end",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "dt",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Comments",
+                "type"  : "text",
+                "nul"   : true
             }
         ]
     }

@@ -330,6 +330,31 @@
                 "nul"   : true
             },
             {
+                "name"  : "t_utc_start",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_utc_end",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_sclk_start",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_sclk_end",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "dt",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
                 "name"  : "Comments",
                 "type"  : "text",
                 "nul"   : true
