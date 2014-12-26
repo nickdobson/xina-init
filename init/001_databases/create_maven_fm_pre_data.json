@@ -3,9 +3,9 @@
     "create"   : "database",
     "team"     : "MAVEN",
     "database" : {
-        "name"          : "maven_tb_data",
-        "label"         : "MAVEN TB Data",
-        "desc"          : "MAVEN testbed model science and housekeeping database.",
+        "name"          : "maven_fm_pre_data",
+        "label"         : "MAVEN FM Data (Preflight)",
+        "desc"          : "MAVEN flight model preflight science and housekeeping database.",
         "enable_lock"   : false,
         "enable_log"    : false,
         "enable_notify" : false,
@@ -186,30 +186,17 @@
                         "nul"  : true
                     },
                     {
-                        "name" : "ion_gauge_1",
-                        "type" : "float(4)",
-                        "meas" : "pressure",
-                        "unit" : "uTorr",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "ion_gauge_2",
-                        "type" : "float(4)",
-                        "meas" : "pressure",
-                        "unit" : "uTorr",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "pressure_spread",
-                        "type" : "float(4)",
-                        "unit" : "%",
-                        "nul"  : true
-                    },
-                    {
                         "name" : "temperature_s",
                         "type" : "float(4)",
                         "meas" : "temperature",
                         "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "pressure",
+                        "type" : "float(4)",
+                        "meas" : "pressure",
+                        "unit" : "Torr",
                         "nul"  : true
                     }
                 ],
@@ -265,7 +252,7 @@
                         "nul"  : true
                     },
                     {
-                        "name" : "cps_bkgd",
+                        "name" : "cps_dt_bkgd",
                         "type" : "float(4)",
                         "nul"  : true
                     },
@@ -296,30 +283,17 @@
                         "nul"  : true
                     },
                     {
-                        "name" : "ion_gauge_1",
-                        "type" : "float(4)",
-                        "meas" : "pressure",
-                        "unit" : "uTorr",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "ion_gauge_2",
-                        "type" : "float(4)",
-                        "meas" : "pressure",
-                        "unit" : "uTorr",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "pressure_spread",
-                        "type" : "float(4)",
-                        "unit" : "%",
-                        "nul"  : true
-                    },
-                    {
                         "name" : "temperature_s",
                         "type" : "float(4)",
                         "meas" : "temperature",
                         "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "pressure",
+                        "type" : "float(4)",
+                        "meas" : "pressure",
+                        "unit" : "Torr",
                         "nul"  : true
                     }
                 ],

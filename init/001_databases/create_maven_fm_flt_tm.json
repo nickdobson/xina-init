@@ -3,9 +3,9 @@
     "create"   : "database",
     "team"     : "MAVEN",
     "database" : {
-        "name"          : "maven_tb_tm",
-        "label"         : "MAVEN TB Telemetry",
-        "desc"          : "MAVEN testbed model telemetry database.",
+        "name"          : "maven_fm_flt_tm",
+        "label"         : "MAVEN FM Telemetry (Flight)",
+        "desc"          : "MAVEN flight model flight telemetry database.",
         "entry_format"  : "{TID}-{TID Text}",
         "enable_lock"   : false,
         "enable_log"    : true,
@@ -17,11 +17,11 @@
             "os_osx_repo_path" : "{$home}{$}MAVEN{$}data",
             "os_nix_repo_path" : "{$home}{$}gse{$}data"
         },
-        "fields" : [
+        "fields": [
             {
-                "name"  : "TID",
-                "type"  : "int(4)",
-                "key"   : true
+                "name" : "TID",
+                "type" : "int(4)",
+                "key"  : true
             },
             {
                 "name"  : "TID Text",
@@ -82,9 +82,9 @@
                 ]
             },
             {
-                "name"  : "RT TID",
-                "type"  : "int(4)",
-                "nul"   : true
+                "name" : "RT TID",
+                "type" : "int(4)",
+                "nul"  : true
             },
             {
                 "name"  : "Script",
@@ -151,12 +151,52 @@
                 "nul"   : true
             },
             {
+                "name"  : "L1b Version",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "L1b Revision",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "L1.5 Version",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "L1.5 Revision",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
                 "name"  : "L2 Version",
                 "type"  : "int(4)",
                 "nul"   : true
             },
             {
                 "name"  : "L2 Revision",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "L2kp Version",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "L2kp Revision",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "L3 Version",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "L3 Revision",
                 "type"  : "int(4)",
                 "nul"   : true
             },
@@ -195,6 +235,7 @@
                 "type"  : "int(8)",
                 "nul"   : true
             },
+
             {
                 "name"  : "Comments",
                 "type"  : "text",

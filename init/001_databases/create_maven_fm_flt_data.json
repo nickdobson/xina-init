@@ -3,9 +3,9 @@
     "create"   : "database",
     "team"     : "MAVEN",
     "database" : {
-        "name"          : "maven_tb_data",
-        "label"         : "MAVEN TB Data",
-        "desc"          : "MAVEN testbed model science and housekeeping database.",
+        "name"          : "maven_fm_flt_data",
+        "label"         : "MAVEN FM Data (Flight)",
+        "desc"          : "MAVEN flight model flight science and housekeeping database.",
         "enable_lock"   : false,
         "enable_log"    : false,
         "enable_notify" : false,
@@ -131,8 +131,8 @@
                 ]
             },
             {
-                "name"   : "Science L1",
-                "fields" : [
+                "name": "Science L1",
+                "fields": [
                     {
                         "name" : "t_unix",
                         "type" : "int(8)"
@@ -186,30 +186,15 @@
                         "nul"  : true
                     },
                     {
-                        "name" : "ion_gauge_1",
-                        "type" : "float(4)",
-                        "meas" : "pressure",
-                        "unit" : "uTorr",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "ion_gauge_2",
-                        "type" : "float(4)",
-                        "meas" : "pressure",
-                        "unit" : "uTorr",
-                        "nul"  : true
-                    },
-                    {
-                        "name" : "pressure_spread",
-                        "type" : "float(4)",
-                        "unit" : "%",
-                        "nul"  : true
-                    },
-                    {
                         "name" : "temperature_s",
                         "type" : "float(4)",
                         "meas" : "temperature",
                         "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "orbit",
+                        "type" : "int(4)",
                         "nul"  : true
                     }
                 ],
@@ -220,8 +205,8 @@
                 ]
             },
             {
-                "name"   : "Science L2",
-                "fields" : [
+                "name": "Science L1b",
+                "fields": [
                     {
                         "name" : "t_unix",
                         "type" : "int(8)"
@@ -265,12 +250,368 @@
                         "nul"  : true
                     },
                     {
-                        "name" : "cps_bkgd",
+                        "name" : "cps_dt_bkgd",
                         "type" : "float(4)",
                         "nul"  : true
                     },
                     {
                         "name" : "bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
+                        "type" : "string(8)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "filament",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "multiplier",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "temperature_s",
+                        "type" : "float(4)",
+                        "meas" : "temperature",
+                        "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "orbit",
+                        "type" : "int(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "sol_lat",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "sol_lon",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "lst",
+                        "type" : "string(32)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "alt_iau",
+                        "type" : "float(4)",
+                        "meas" : "altitude",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vsc_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "ram1",
+                        "type" : "float(4)",
+                        "meas" : "angle",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "ram2_rot_angle",
+                        "type" : "float(4)",
+                        "meas" : "angle",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "x_iau",
+                        "type" : "float(4)",
+                        "meas" : "position",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "y_iau",
+                        "type" : "float(4)",
+                        "meas" : "position",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "z_iau",
+                        "type" : "float(4)",
+                        "meas" : "position",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vx_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vy_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vz_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "lat",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "long",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    }
+                ],
+                "indexes" : [
+                    ["multiplier", "focus_mode", "mass_x100"],
+                    ["multiplier", "focus_mode", "tid", "mass_x100"],
+                    ["multiplier", "focus_mode", "umkid", "mass_x100"]
+                ]
+            },
+            {
+                "name": "Science L1.5",
+                "fields": [
+                    {
+                        "name" : "t_unix",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_sclk",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "umkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "counts",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "cps_raw",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "cps_dt",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "cps_dt_bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
+                        "type" : "string(8)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "filament",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "multiplier",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "temperature_s",
+                        "type" : "float(4)",
+                        "meas" : "temperature",
+                        "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "orbit",
+                        "type" : "int(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "alt_iau",
+                        "type" : "float(4)",
+                        "meas" : "altitude",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vsc_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "ram1",
+                        "type" : "float(4)",
+                        "meas" : "angle",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "ram2_rot_angle",
+                        "type" : "float(4)",
+                        "meas" : "angle",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "sol_lat",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "sol_lon",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "lst",
+                        "type" : "string(32)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "x_iau",
+                        "type" : "float(4)",
+                        "meas" : "position",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "y_iau",
+                        "type" : "float(4)",
+                        "meas" : "position",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "z_iau",
+                        "type" : "float(4)",
+                        "meas" : "position",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vx_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vy_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vz_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "lat",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "long",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    }
+                ],
+                "indexes" : [
+                    ["multiplier", "focus_mode", "mass_x100"],
+                    ["multiplier", "focus_mode", "tid", "mass_x100"],
+                    ["multiplier", "focus_mode", "umkid", "mass_x100"]
+                ]
+            },
+            {
+                "name": "Science L2",
+                "fields": [
+                    {
+                        "name" : "t_unix",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_sclk",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "umkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "counts",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "cps_raw",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "cps_dt",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "cps_dt_bkgd",
                         "type" : "float(4)",
                         "nul"  : true
                     },
@@ -296,23 +637,187 @@
                         "nul"  : true
                     },
                     {
-                        "name" : "ion_gauge_1",
+                        "name" : "temperature_s",
                         "type" : "float(4)",
-                        "meas" : "pressure",
-                        "unit" : "uTorr",
+                        "meas" : "temperature",
+                        "unit" : "C",
                         "nul"  : true
                     },
                     {
-                        "name" : "ion_gauge_2",
-                        "type" : "float(4)",
-                        "meas" : "pressure",
-                        "unit" : "uTorr",
+                        "name" : "orbit",
+                        "type" : "int(4)",
                         "nul"  : true
                     },
                     {
-                        "name" : "pressure_spread",
+                        "name" : "alt_iau",
                         "type" : "float(4)",
-                        "unit" : "%",
+                        "meas" : "altitude",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vsc_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "ram1",
+                        "type" : "float(4)",
+                        "meas" : "angle",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "ram2_rot_angle",
+                        "type" : "float(4)",
+                        "meas" : "angle",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "sol_lat",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "sol_lon",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "lst",
+                        "type" : "string(32)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "x_iau",
+                        "type" : "float(4)",
+                        "meas" : "position",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "y_iau",
+                        "type" : "float(4)",
+                        "meas" : "position",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "z_iau",
+                        "type" : "float(4)",
+                        "meas" : "position",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vx_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vy_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vz_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "lat",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "long",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    }
+                ],
+                "indexes" : [
+                    ["multiplier", "focus_mode", "mass_x100"],
+                    ["multiplier", "focus_mode", "tid", "mass_x100"],
+                    ["multiplier", "focus_mode", "umkid", "mass_x100"]
+                ]
+            },
+            {
+                "name": "Science L2kp",
+                "fields": [
+                    {
+                        "name" : "t_unix",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_sclk",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "umkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "counts",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "cps_raw",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "cps_dt",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "cps_dt_bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "abundance",
+                        "type" : "float(4)",
+                        "unit" : "part/cc",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
+                        "type" : "string(8)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "filament",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "multiplier",
+                        "type" : "int(1)",
                         "nul"  : true
                     },
                     {
@@ -320,6 +825,110 @@
                         "type" : "float(4)",
                         "meas" : "temperature",
                         "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "orbit",
+                        "type" : "int(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "alt_iau",
+                        "type" : "float(4)",
+                        "meas" : "altitude",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vsc_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "ram1",
+                        "type" : "float(4)",
+                        "meas" : "angle",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "ram2_rot_angle",
+                        "type" : "float(4)",
+                        "meas" : "angle",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "sol_lat",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "sol_lon",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "lst",
+                        "type" : "string(32)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "x_iau",
+                        "type" : "float(4)",
+                        "meas" : "position",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "y_iau",
+                        "type" : "float(4)",
+                        "meas" : "position",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "z_iau",
+                        "type" : "float(4)",
+                        "meas" : "position",
+                        "unit" : "km",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vx_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vy_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "vz_iau",
+                        "type" : "float(4)",
+                        "meas" : "velocity",
+                        "unit" : "km/s",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "lat",
+                        "type" : "float(4)",
+                        "unit" : "deg",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "long",
+                        "type" : "float(4)",
+                        "unit" : "deg",
                         "nul"  : true
                     }
                 ],
