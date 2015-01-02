@@ -104,13 +104,13 @@
                 "nul"   : true
             },
             {
-                "name"  : "Script Lib",
+                "name"  : "Lib Script",
                 "type"  : "string(64)",
                 "index" : true,
                 "nul"   : true
             },
             {
-                "name"  : "Script Lib Rev",
+                "name"  : "Lib Script Rev",
                 "type"  : "string(16)",
                 "nul"   : true
             },
