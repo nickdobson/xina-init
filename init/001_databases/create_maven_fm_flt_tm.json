@@ -48,6 +48,12 @@
                 "nul"   : true
             },
             {
+                "name"  : "Orbit",
+                "type"  : "int(4)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
                 "name"  : "Mission Phase",
                 "type"  : "string(8)",
                 "index" : true,

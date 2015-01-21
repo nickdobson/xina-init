@@ -1,0 +1,6 @@
+{
+    "action"   : "reset",
+    "reset"    : "group",
+    "database" : "maven_fm_flt_data",
+    "group"    : "Science L1b"
+}

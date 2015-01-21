@@ -622,6 +622,11 @@
                         "nul"  : true
                     },
                     {
+                        "name" : "sensitivity",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
                         "name" : "focus_mode",
                         "type" : "string(8)",
                         "nul"  : true
@@ -803,6 +808,11 @@
                         "name" : "abundance",
                         "type" : "float(4)",
                         "unit" : "part/cc",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "sensitivity",
+                        "type" : "float(4)",
                         "nul"  : true
                     },
                     {
