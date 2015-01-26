@@ -3,9 +3,9 @@
     "create"   : "database",
     "team"     : "SAM",
     "database" : {
-        "name"          : "sam_fm_cup_log",
-        "label"         : "SAM FM Cup Log",
-        "desc"          : "SAM flight model cup activity log database.",
+        "name"          : "sam_tb_cup_log",
+        "label"         : "SAM TB Cup Log",
+        "desc"          : "SAM testbed model cup activity log database.",
         "enable_lock"   : false,
         "enable_log"    : true,
         "enable_notify" : false,
