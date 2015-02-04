@@ -1,0 +1,82 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "MOMA",
+    "database" : {
+        "name"          : "moma_sample",
+        "label"         : "MOMA Sample Information",
+        "desc"          : "MOMA calibration sample information database.",
+        "entry_format"  : "{Instrument} / {Carousel No} / {Samples} / {Form}",
+        "enable_lock"   : false,
+        "enable_log"    : true,
+        "enable_notify" : false,
+        "top_keys"      : 4,
+        "fields": [
+            {
+                "name"  : "Instrument",
+                "type"  : "string(16)",
+                "key"   : true
+            },
+            {
+                "name"  : "Carousel No",
+                "type"  : "int(4)",
+                "key"   : true
+            },
+            {
+                "name"  : "Samples",
+                "type"  : "string(64)",
+                "key"   : true
+            },
+            {
+                "name"  : "Form",
+                "type"  : "string(64)",
+                "key"   : true
+            },
+            {
+                "name"  : "Preparation",
+                "type"  : "string",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sample Holder",
+                "type"  : "string(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Prepared By",
+                "type"  : "string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Prepared On",
+                "type"  : "date",
+                "nul"   : true
+            },
+            {
+                "name"  : "Loaded By",
+                "type"  : "string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Loaded On",
+                "type"  : "date",
+                "nul"   : true
+            },
+            {
+                "name"  : "Tested By",
+                "type"  : "string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Tested On",
+                "type"  : "date",
+                "nul"   : true
+            },
+            {
+                "name"  : "Notes",
+                "type"  : "text",
+                "nul"   : true
+            }
+        ]
+    }
+}
