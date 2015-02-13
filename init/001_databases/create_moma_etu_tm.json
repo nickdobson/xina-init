@@ -54,34 +54,6 @@
                 "nul"   : true
             },
             {
-                "name"    : "Op Type",
-                "type"    : "string(4)",
-                "index"   : true,
-                "nul"     : true,
-                "options" : [
-                    {
-                        "value" : "stby",
-                        "desc"  : "standby"
-                    },
-                    {
-                        "value" : "sci",
-                        "desc"  : "science"
-                    },
-                    {
-                        "value" : "eng",
-                        "desc"  : "engineering"
-                    },
-                    {
-                        "value" : "cal",
-                        "desc"  : "calibration"
-                    },
-                    {
-                        "value" : "bkg",
-                        "desc"  : "background"
-                    }
-                ]
-            },
-            {
                 "name"  : "Script",
                 "type"  : "string(64)",
                 "index" : true,
