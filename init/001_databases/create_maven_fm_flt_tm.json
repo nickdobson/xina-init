@@ -257,8 +257,36 @@
                 "nul"   : true
             },
             {
-                "name"  : "t_utc_start",
+                "name"  : "Length",
+                "type"  : "float(8)",
+                "nul"   : true,
+                "meas"  : "time",
+                "unit"  : "s"
+            },
+            {
+                "name"  : "Size",
                 "type"  : "int(8)",
+                "nul"   : true,
+                "unit"  : "bytes"
+            },
+            {
+                "name"  : "Markers",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Messages",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Bin HK",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Full HK",
+                "type"  : "int(4)",
                 "nul"   : true
             },
             {
