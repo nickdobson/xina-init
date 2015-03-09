@@ -330,13 +330,6 @@
                 "nul"   : true
             },
             {
-                "name"  : "Length",
-                "type"  : "float(8)",
-                "nul"   : true,
-                "meas"  : "time",
-                "unit"  : "s"
-            },
-            {
                 "name"  : "Size",
                 "type"  : "int(8)",
                 "nul"   : true,
@@ -353,12 +346,27 @@
                 "nul"   : true
             },
             {
-                "name"  : "Bin HK",
+                "name"  : "HK Bin Time (UTC)",
                 "type"  : "int(4)",
                 "nul"   : true
             },
             {
-                "name"  : "Full HK",
+                "name"  : "HK Bin Time (TID)",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "HK Bin Mk",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "HK Bin TID",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "HK Full",
                 "type"  : "int(4)",
                 "nul"   : true
             },
