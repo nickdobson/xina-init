@@ -3,9 +3,9 @@
     "create"   : "database",
     "team"     : "MOMA",
     "database" : {
-        "name"          : "moma_etu_data",
-        "label"         : "MOMA ETU Data",
-        "desc"          : "MOMA ETU model science and housekeeping database.",
+        "name"          : "moma_fm_data",
+        "label"         : "MOMA FM Data",
+        "desc"          : "MOMA flight model science and housekeeping database.",
         "enable_lock"   : false,
         "enable_log"    : false,
         "enable_notify" : false,

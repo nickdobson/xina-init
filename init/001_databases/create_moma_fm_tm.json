@@ -3,9 +3,9 @@
     "create"   : "database",
     "team"     : "MOMA",
     "database" : {
-        "name"          : "moma_etu_tm",
-        "label"         : "MOMA ETU Telemetry",
-        "desc"          : "MOMA ETU model telemetry database.",
+        "name"          : "moma_fm_tm",
+        "label"         : "MOMA FM Telemetry",
+        "desc"          : "MOMA flight model telemetry database.",
         "entry_format"  : "{TID}-{TID Text}",
         "enable_lock"   : false,
         "enable_log"    : true,
