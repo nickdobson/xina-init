@@ -1,0 +1,100 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "SAM",
+    "database" : {
+        "name"          : "sam_uplink",
+        "label"         : "SAM Payload Uplink Activity",
+        "desc"          : "SAM payload uplink activity tracker.",
+        "entry_format"  : "{Script Name} {Revision}",
+        "enable_lock"   : false,
+        "enable_log"    : true,
+        "enable_notify" : true,
+        "top_keys"      : 1,
+        "fields": [
+            {
+                "name"  : "Script Name",
+                "type"  : "string(32)",
+                "key"   : true
+            },
+            {
+                "name"  : "Script Purpose",
+                "type"  : "text"
+            },
+            {
+                "name"  : "Revision",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Bugzilla Ticket",
+                "type"  : "string(16)"
+            },
+            {
+                "name"  : "Script Review Meeting",
+                "type"  : "date"
+            },
+            {
+                "name"  : "BasicYY Check",
+                "type"  : "boolean"
+            },
+            {
+                "name"  : "Brassboard Test TID",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Testbed TID",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Testbed Notes",
+                "type"  : "text",
+                "nul"   : true
+            },
+            {
+                "name"  : "Testbed Run Links",
+                "type"  : "text",
+                "nul"   : true
+            },
+            {
+                "name"  : "Eng 1",
+                "type"  : "string(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Eng 1 Approval",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Eng 2",
+                "type"  : "string(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Eng 2 Approval",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sci 1",
+                "type"  : "string(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sci 1 Approval",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sci 2",
+                "type"  : "string(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sci 2 Approval",
+                "type"  : "boolean",
+                "nul"   : true
+            }
+        ]
+    }
+}
