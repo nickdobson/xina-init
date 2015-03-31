@@ -167,16 +167,6 @@
                 "nul"   : true
             },
             {
-                "name"  : "L1c Version",
-                "type"  : "int(4)",
-                "nul"   : true
-            },
-            {
-                "name"  : "L1c Revision",
-                "type"  : "int(4)",
-                "nul"   : true
-            },
-            {
                 "name"  : "L2_csn Version",
                 "type"  : "int(4)",
                 "nul"   : true
@@ -203,36 +193,6 @@
             },
             {
                 "name"  : "L2_ion Revision",
-                "type"  : "int(4)",
-                "nul"   : true
-            },
-            {
-                "name"  : "L2KP_csn Version",
-                "type"  : "int(4)",
-                "nul"   : true
-            },
-            {
-                "name"  : "L2KP_csn Revision",
-                "type"  : "int(4)",
-                "nul"   : true
-            },
-            {
-                "name"  : "L2KP_cso Version",
-                "type"  : "int(4)",
-                "nul"   : true
-            },
-            {
-                "name"  : "L2KP_cso Revision",
-                "type"  : "int(4)",
-                "nul"   : true
-            },
-            {
-                "name"  : "L2KP_ion Version",
-                "type"  : "int(4)",
-                "nul"   : true
-            },
-            {
-                "name"  : "L2KP_ion Revision",
                 "type"  : "int(4)",
                 "nul"   : true
             },
@@ -317,7 +277,6 @@
                 "type"  : "int(8)",
                 "nul"   : true
             },
-
             {
                 "name"  : "Comments",
                 "type"  : "text",
