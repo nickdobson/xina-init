@@ -13,19 +13,24 @@
         "top_keys"      : 1,
         "fields" : [
             {
-                "name" : "Timestamp",
-                "type" : "datetime",
-                "key"  : true
+                "name"  : "Prepared Date",
+                "type"  : "date",
+                "key"   : true
             },
             {
-                "name" : "Instrument",
-                "type" : "string(16)",
-                "key"  : true
+                "name"  : "Instrument",
+                "type"  : "string(16)",
+                "key"   : true
+            },
+            {
+                "name"  : "WOA",
+                "type"  : "string(16)",
+                "key"   : true
             },
             {
                 "name"  : "Carousel Number",
                 "type"  : "int(2)",
-                "index" : true
+                "key"   : true
             },
             {
                 "name"  : "Samples",
@@ -41,7 +46,7 @@
             },
             {
                 "name"  : "Preparation",
-                "type"  : "string",
+                "type"  : "text",
                 "index" : true,
                 "nul"   : true
             },
@@ -56,27 +61,12 @@
                 "nul"  : true
             },
             {
-                "name" : "Prepared Date",
-                "type" : "date",
-                "nul"  : true
-            },
-            {
                 "name" : "Loaded By",
                 "type" : "string(64)",
                 "nul"  : true
             },
             {
                 "name" : "Loaded Date",
-                "type" : "date",
-                "nul"  : true
-            },
-            {
-                "name" : "Tested By",
-                "type" : "string(64)",
-                "nul"  : true
-            },
-            {
-                "name" : "Tested Date",
                 "type" : "date",
                 "nul"  : true
             },
