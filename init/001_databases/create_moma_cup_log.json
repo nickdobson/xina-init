@@ -6,7 +6,7 @@
         "name"          : "moma_cup_log",
         "label"         : "MOMA Cup Log",
         "desc"          : "MOMA cup activity log database.",
-        "entry_format"  : "{Instrument} {Carousel Number} {Samples}",
+        "entry_format"  : "{Loaded Date} / {Instrument} / {Carousel Number} / {Samples}",
         "enable_lock"   : false,
         "enable_log"    : true,
         "enable_notify" : true,
@@ -16,6 +16,11 @@
                 "name"  : "Prepared Date",
                 "type"  : "date",
                 "key"   : true
+            },
+            {
+                "name"  : "Loaded Date",
+                "type"  : "date",
+                "nul"   : true
             },
             {
                 "name"  : "Instrument",
@@ -56,6 +61,16 @@
                 "nul"  : true
             },
             {
+                "name" : "Laser Config",
+                "type" : "string(64)",
+                "nul"  : true
+            },
+            {
+                "name" : "TID(s)",
+                "type" : "string",
+                "nul"  : true
+            },
+            {
                 "name" : "Prepared By",
                 "type" : "string(64)",
                 "nul"  : true
@@ -63,11 +78,6 @@
             {
                 "name" : "Loaded By",
                 "type" : "string(64)",
-                "nul"  : true
-            },
-            {
-                "name" : "Loaded Date",
-                "type" : "date",
                 "nul"  : true
             },
             {
