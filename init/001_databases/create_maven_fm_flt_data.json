@@ -432,6 +432,16 @@
                         "nul"  : true
                     },
                     {
+                        "name" : "precision",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "quality",
+                        "type" : "string(4)",
+                        "nul"  : true
+                    },
+                    {
                         "name" : "focus_mode",
                         "type" : "string(8)",
                         "nul"  : true
@@ -492,6 +502,16 @@
                         "name" : "abundance",
                         "type" : "float(4)",
                         "unit" : "part/cc",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "precision",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "quality",
+                        "type" : "string(4)",
                         "nul"  : true
                     },
                     {
@@ -558,6 +578,16 @@
                         "nul"  : true
                     },
                     {
+                        "name" : "precision",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "quality",
+                        "type" : "string(4)",
+                        "nul"  : true
+                    },
+                    {
                         "name" : "focus_mode",
                         "type" : "string(8)",
                         "nul"  : true
@@ -577,6 +607,127 @@
                 ],
                 "indexes" : [
                     ["mass_x100", "alt_iau"],
+                    ["tid", "mass_x100"]
+                ]
+            },
+            {
+                "name": "Science L3_res_den",
+                "fields": [
+                    {
+                        "name" : "t_unix",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_sclk",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "species",
+                        "type" : "string(16)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "averaged_density",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
+                        "type" : "string(8)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "orbit",
+                        "type" : "int(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "alt",
+                        "type" : "float(4)",
+                        "meas" : "altitude",
+                        "unit" : "km",
+                        "nul"  : true
+                    }
+                ],
+                "indexes" : [
+                    ["mass_x100", "alt"],
+                    ["species", "alt"],
+                    ["tid", "mass_x100"]
+                ]
+            },
+            {
+                "name": "Science L3_res_sht",
+                "fields": [
+                    {
+                        "name" : "t_unix",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_sclk",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "species",
+                        "type" : "string(16)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "scale_height",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "temperature",
+                        "type" : "float(4)",
+                        "meas" : "temperature",
+                        "unit" : "C",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
+                        "type" : "string(8)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "orbit",
+                        "type" : "int(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "alt",
+                        "type" : "float(4)",
+                        "meas" : "altitude",
+                        "unit" : "km",
+                        "nul"  : true
+                    }
+                ],
+                "indexes" : [
+                    ["mass_x100", "alt"],
+                    ["species", "alt"],
                     ["tid", "mass_x100"]
                 ]
             },

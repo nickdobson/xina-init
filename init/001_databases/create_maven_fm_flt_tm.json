@@ -197,12 +197,22 @@
                 "nul"   : true
             },
             {
-                "name"  : "L3 Version",
+                "name"  : "L3_res_den Version",
                 "type"  : "int(4)",
                 "nul"   : true
             },
             {
-                "name"  : "L3 Revision",
+                "name"  : "L3_res_den Revision",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "L3_res_sht Version",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "L3_res_sht Revision",
                 "type"  : "int(4)",
                 "nul"   : true
             },
