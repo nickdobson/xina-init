@@ -146,7 +146,35 @@
                 "nul"   : true
             },
             {
+                "name"  : "Filament 1 On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
+                "nul"   : true
+            },
+            {
+                "name"  : "Filament 2 On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
+                "nul"   : true
+            },
+            {
                 "name"  : "EM On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 1 On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 2 On Time",
                 "type"  : "float(8)",
                 "meas"  : "time",
                 "unit"  : "s",

@@ -15,51 +15,29 @@
                 "name"  : "TID",
                 "type"  : "int(4)",
                 "key"   : true
+            },
+            {
+                "name"  : "Pressure",
+                "type"  : "text",
+                "meas"  : "pressure",
+                "unit"  : "mTorr",
+                "nul"   : true
+            },
+            {
+                "name"  : "Current",
+                "type"  : "text",
+                "meas"  : "current",
+                "unit"  : "A",
+                "nul"   : true
+            },
+            {
+                "name"  : "Chromatograph",
+                "type"  : "text",
+                "unit"  : "ions/scan",
+                "nul"   : true
             }
         ],
         "groups" : [
-            {
-                "name"   : "Sci Bins",
-                "fields" : [
-                    {
-                        "name"  : "t_utc",
-                        "type"  : "int(8)",
-                        "index" : true
-                    },
-                    {
-                        "name"  : "t_sclk",
-                        "type"  : "int(8)"
-                    },
-                    {
-                        "name"  : "t_tid",
-                        "type"  : "int(8)"
-                    },
-                    {
-                        "name"  : "TID",
-                        "type"  : "int(4)",
-                        "index" : true
-                    },
-                    {
-                        "name"  : "UMKID",
-                        "type"  : "int(8)",
-                        "index" : true
-                    },
-                    {
-                        "name"  : "BID",
-                        "type"  : "int(8)",
-                        "index" : true
-                    },
-                    {
-                        "name"  : "Sum",
-                        "type"  : "int(8)",
-                        "index" : true
-                    },
-                    {
-                        "name"  : "Bins",
-                        "type"  : "text"
-                    }
-                ]
-            },
             {
                 "name"   : "Message",
                 "fields" : [

@@ -241,17 +241,17 @@
                     },
                     {
                         "name" : "cps_raw_bkgd",
-                        "type" : "float(4)",
+                        "type" : "float(8)",
                         "nul"  : true
                     },
                     {
                         "name" : "cps_dt",
-                        "type" : "float(4)",
+                        "type" : "float(8)",
                         "nul"  : true
                     },
                     {
                         "name" : "cps_dt_bkgd",
-                        "type" : "float(4)",
+                        "type" : "float(8)",
                         "nul"  : true
                     },
                     {
@@ -422,12 +422,12 @@
                     },
                     {
                         "name" : "cps_dt_bkgd",
-                        "type" : "float(4)",
+                        "type" : "float(8)",
                         "nul"  : true
                     },
                     {
                         "name" : "abundance",
-                        "type" : "float(4)",
+                        "type" : "float(8)",
                         "unit" : "part/cc",
                         "nul"  : true
                     },
@@ -438,7 +438,7 @@
                     },
                     {
                         "name" : "quality",
-                        "type" : "string(4)",
+                        "type" : "string(2)",
                         "nul"  : true
                     },
                     {
@@ -495,12 +495,12 @@
                     },
                     {
                         "name" : "cps_dt_bkgd",
-                        "type" : "float(4)",
+                        "type" : "float(8)",
                         "nul"  : true
                     },
                     {
                         "name" : "abundance",
-                        "type" : "float(4)",
+                        "type" : "float(8)",
                         "unit" : "part/cc",
                         "nul"  : true
                     },
@@ -511,7 +511,7 @@
                     },
                     {
                         "name" : "quality",
-                        "type" : "string(4)",
+                        "type" : "string(2)",
                         "nul"  : true
                     },
                     {
@@ -563,12 +563,12 @@
                     },
                     {
                         "name" : "cps_dt",
-                        "type" : "float(4)",
+                        "type" : "float(8)",
                         "nul"  : true
                     },
                     {
                         "name" : "abundance",
-                        "type" : "float(4)",
+                        "type" : "float(8)",
                         "unit" : "part/cc",
                         "nul"  : true
                     },
@@ -584,7 +584,7 @@
                     },
                     {
                         "name" : "quality",
-                        "type" : "string(4)",
+                        "type" : "string(2)",
                         "nul"  : true
                     },
                     {
