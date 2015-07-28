@@ -3,19 +3,24 @@
     "create"   : "database",
     "team"     : "MOMA",
     "database" : {
-        "name"          : "moma_uplink",
+        "name"          : "moma_activity",
         "label"         : "MOMA Payload Uplink Activity",
         "desc"          : "MOMA payload uplink activity tracker.",
-        "entry_format"  : "{Name}",
+        "entry_format"  : "{ID} {Name}",
         "enable_lock"   : false,
         "enable_log"    : true,
         "enable_notify" : true,
         "top_keys"      : 1,
         "fields": [
             {
+                "name"    : "ID",
+                "type"    : "string(4)",
+                "key"     : true
+            },
+            {
                 "name"    : "Name",
                 "type"    : "string(32)",
-                "key"     : true
+                "index"   : true
             },
             {
                 "name"    : "Status",
