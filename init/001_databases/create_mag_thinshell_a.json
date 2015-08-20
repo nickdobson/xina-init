@@ -1,0 +1,109 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "MAG",
+    "database" : {
+        "name"          : "mag_thinshell_portA",
+        "label"         : "MAG Thinshell Port A",
+        "desc"          : "MAG thinshell port A database.",
+        "enable_lock"   : false,
+        "enable_log"    : false,
+        "enable_notify" : false,
+        "top_keys"      : 1,
+        "fields"        : [
+            {
+                "name"  : "Timestamp",
+                "type"  : "datetime",
+                "key"   : true
+            },
+            {
+                "name"  : "Year",
+                "type"  : "int(2)",
+                "index" : true
+            },
+            {
+                "name"  : "Day",
+                "type"  : "int(2)",
+                "index" : true
+            },
+            {
+                "name"  : "Hour",
+                "type"  : "int(2)"
+            },
+            {
+                "name"  : "Minute",
+                "type"  : "int(2)"
+            },
+            {
+                "name"  : "Second",
+                "type"  : "int(2)"
+            },
+            {
+                "name"  : "MSec",
+                "type"  : "int(2)"
+            },
+            {
+                "name"  : "DDay",
+                "type"  : "float(4)"
+            },
+            {
+                "name"  : "Time_F3",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Time_F2",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Time_F1",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Pkt_Seq",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "10_Pkt_X",
+                "type"  : "float(8)"
+            },
+            {
+                "name"  : "10_Pkt_Y",
+                "type"  : "float(8)"
+            },
+            {
+                "name"  : "10_Pkt_Z",
+                "type"  : "float(8)"
+            },
+            {
+                "name"  : "Range",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "B_Field",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "PP1_Field",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "PP1_Quality",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "PP2_Field",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "PP2_Quality",
+                "type"  : "float(8)",
+                "nul"   : true
+            }
+        ]
+    }
+}

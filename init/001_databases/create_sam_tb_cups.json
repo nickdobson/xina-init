@@ -1,0 +1,30 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "SAM",
+    "database" : {
+        "name"          : "sam_tb_cups",
+        "label"         : "SAM TB Cups",
+        "desc"          : "SAM testbed model cup database.",
+        "enable_lock"   : false,
+        "enable_log"    : true,
+        "enable_notify" : false,
+        "entry_format"  : "{Cup No} ({Type})",
+        "fields"        : [
+            {
+                "name"  : "Cup No",
+                "type"  : "int(1)",
+                "key"   : true
+            },
+            {
+                "name"  : "Type",
+                "type"  : "string(2)"
+            },
+            {
+                "name"  : "Notes",
+                "type"  : "string",
+                "nul"   : true
+            }
+        ]
+    }
+}

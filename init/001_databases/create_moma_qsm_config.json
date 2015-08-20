@@ -1,0 +1,38 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "MOMA",
+    "database" : {
+        "name"          : "moma_qsm_config",
+        "label"         : "MOMA QSM Configuration",
+        "desc"          : "MOMA QSM model configuration database.",
+        "entry_format"  : "{Start Time}-{End Time} {Description}",
+        "enable_lock"   : false,
+        "enable_log"    : true,
+        "enable_notify" : false,
+        "top_keys"      : 1,
+        "fields": [
+            {
+                "name"  : "Start Time",
+                "type"  : "datetime",
+                "key"   : true
+            },
+            {
+                "name"  : "End Time",
+                "type"  : "datetime",
+                "nul"   : true
+            },
+            {
+                "name"  : "Instant",
+                "type"  : "boolean",
+                "nul"   : true,
+                "def"   : "false"
+            },
+            {
+                "name"  : "Description",
+                "type"  : "string(64)",
+                "key"   : true
+            }
+        ]
+    }
+}

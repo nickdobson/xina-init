@@ -1,0 +1,8 @@
+{
+	"action":"create",
+	"create":"team",
+	"team": {
+		"name":"MAG",
+		"desc":"Magnetic testing site data."
+	}
+}

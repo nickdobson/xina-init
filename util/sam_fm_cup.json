@@ -1,0 +1,894 @@
+{
+    "action"   : "insert",
+    "database" : "sam_fm_cups",
+    "entries"  : [
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 1
+                },
+                {
+                    "field": "Type",
+                    "value": "m"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 2
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 3
+                },
+                {
+                    "field": "Type",
+                    "value": "m"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 4
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 5
+                },
+                {
+                    "field": "Type",
+                    "value": "t"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 6
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 7
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 8
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 9
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 10
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 11
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 12
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 13
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 14
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 15
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 16
+                },
+                {
+                    "field": "Type",
+                    "value": "c"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 17
+                },
+                {
+                    "field": "Type",
+                    "value": "c"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 18
+                },
+                {
+                    "field": "Type",
+                    "value": "c"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 19
+                },
+                {
+                    "field": "Type",
+                    "value": "c"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 20
+                },
+                {
+                    "field": "Type",
+                    "value": "c"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 21
+                },
+                {
+                    "field": "Type",
+                    "value": "c"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 22
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 23
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 24
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 25
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 26
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 27
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 28
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 29
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 30
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 31
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 32
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 33
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 34
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 35
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 36
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 37
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 38
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 39
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 40
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 41
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 42
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 43
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 44
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 45
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 46
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 47
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 48
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 49
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 50
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 51
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 52
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 53
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 54
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 55
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 56
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 57
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 58
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 59
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 60
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 61
+                },
+                {
+                    "field": "Type",
+                    "value": "t"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 62
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 63
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 64
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 65
+                },
+                {
+                    "field": "Type",
+                    "value": "m"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 66
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 67
+                },
+                {
+                    "field": "Type",
+                    "value": "m"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 68
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 69
+                },
+                {
+                    "field": "Type",
+                    "value": "m"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 70
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 71
+                },
+                {
+                    "field": "Type",
+                    "value": "m"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 72
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 73
+                },
+                {
+                    "field": "Type",
+                    "value": "m"
+                }
+            ]
+        },
+        {
+            "fields": [
+                {
+                    "field": "Cup No",
+                    "value": 74
+                },
+                {
+                    "field": "Type",
+                    "value": "q"
+                }
+            ]
+        }
+    ]
+}
