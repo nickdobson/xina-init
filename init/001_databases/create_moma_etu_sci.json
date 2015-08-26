@@ -1,0 +1,236 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "MOMA",
+    "database" : {
+        "name"          : "moma_etu_sci",
+        "label"         : "MOMA ETU Science",
+        "desc"          : "MOMA ETU science scan database.",
+        "entry_format"  : "{TID} {Scan ID}",
+        "enable_lock"   : false,
+        "enable_log"    : false,
+        "enable_notify" : false,
+        "top_keys"      : 2,
+        "fields" : [
+            {
+                "name"  : "TID",
+                "type"  : "int(4)",
+                "key"   : true
+            },
+            {
+                "name"  : "Scan ID",
+                "type"  : "int(4)",
+                "key"   : true
+            },
+            {
+                "name"  : "t_utc",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "t_tid",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "Bin Count",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Bin Time",
+                "type"  : "int(8)",
+                "meas"  : "time",
+                "unit"  : "us"
+            },
+            {
+                "name"  : "Total Time",
+                "type"  : "float(4)",
+                "meas"  : "time",
+                "unit"  : "s"
+            },
+            {
+                "name"  : "Peak CPS",
+                "type"  : "float(4)"
+            },
+            {
+                "name"  : "Highest Count",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "RF Amp Start",
+                "type"  : "float(4)",
+                "meas"  : "voltage",
+                "unit"  : "V"
+            },
+            {
+                "name"  : "RF Amp End",
+                "type"  : "float(4)",
+                "meas"  : "voltage",
+                "unit"  : "V"
+            },
+            {
+                "name"  : "RF Amp DAC Start",
+                "type"  : "float(4)"
+            },
+            {
+                "name"  : "RF Amp DAC End",
+                "type"  : "float(4)"
+            },
+            {
+                "name"  : "AUX Amp DAC Start",
+                "type"  : "float(4)"
+            },
+            {
+                "name"  : "AUX Amp DAC End",
+                "type"  : "float(4)"
+            },
+            {
+                "name"  : "Total Ion Count",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "Special Scan ID",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Scan Value",
+                "type"  : "float(4)",
+                "meas"  : "voltage",
+                "unit"  : "V"
+            },
+            {
+                "name"  : "RF Freq",
+                "type"  : "float(4)",
+                "meas"  : "frequency",
+                "unit"  : "Hz"
+            },
+            {
+                "name"  : "Last RF Amp Mon",
+                "type"  : "float(4)"
+            },
+            {
+                "name"  : "Counter Sel",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Bin Count Set",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Bin Count Reg",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "RF Step Set",
+                "type"  : "float(4)",
+                "meas"  : "voltage",
+                "unit"  : "V"
+            },
+            {
+                "name"  : "RF Step Reg",
+                "type"  : "float(4)",
+                "meas"  : "voltage",
+                "unit"  : "V"
+            },
+            {
+                "name"  : "AUX Step Set",
+                "type"  : "float(4)",
+                "meas"  : "voltage",
+                "unit"  : "V"
+            },
+            {
+                "name"  : "AUX Step Reg",
+                "type"  : "float(4)",
+                "meas"  : "voltage",
+                "unit"  : "V"
+            },
+            {
+                "name"  : "IS_EMON_A",
+                "type"  : "float(4)",
+                "meas"  : "current",
+                "unit"  : "uA"
+            },
+            {
+                "name"  : "IS_EMON_B",
+                "type"  : "float(4)",
+                "meas"  : "current",
+                "unit"  : "uA"
+            },
+            {
+                "name"  : "SRC_A_FOC_A_set",
+                "type"  : "float(4)",
+                "meas"  : "voltage",
+                "unit"  : "V"
+            },
+            {
+                "name"  : "SRC_A_FOC_A_reg",
+                "type"  : "float(4)",
+                "meas"  : "voltage",
+                "unit"  : "V"
+            },
+            {
+                "name"  : "SRC_B_FOC_A_set",
+                "type"  : "float(4)",
+                "meas"  : "voltage",
+                "unit"  : "V"
+            },
+            {
+                "name"  : "SRC_B_FOC_A_reg",
+                "type"  : "float(4)",
+                "meas"  : "voltage",
+                "unit"  : "V"
+            },
+            {
+                "name"  : "Ionization Time",
+                "type"  : "int(8)",
+                "meas"  : "time",
+                "unit"  : "ms"
+            },
+            {
+                "name"  : "SCN_EM1",
+                "type"  : "float(4)"
+            },
+            {
+                "name"  : "SCN_EM2",
+                "type"  : "float(4)"
+            },
+            {
+                "name"  : "Source Packet Type",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Phase Cycle Readback",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Control Value",
+                "type"  : "float(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Mass Value",
+                "type"  : "float(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Coefficient 1",
+                "type"  : "float(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Coefficient 2",
+                "type"  : "float(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Coefficient 3",
+                "type"  : "float(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Coefficient 4",
+                "type"  : "float(4)",
+                "nul"   : true
+            }
+        ]
+    }
+}

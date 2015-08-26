@@ -3,9 +3,9 @@
     "create"   : "database",
     "team"     : "MOMA",
     "database" : {
-        "name"          : "moma_etu_tm_def",
-        "label"         : "MOMA ETU TM Definition",
-        "desc"          : "MOMA ETU model telemetry definition information.",
+        "name"          : "moma_fm_tm_def",
+        "label"         : "MOMA FM TM Definition",
+        "desc"          : "MOMA FM model telemetry definition information.",
         "entry_format"  : "hk{Data ID}_{Sub System}:{Name}",
         "enable_lock"   : false,
         "enable_log"    : true,
