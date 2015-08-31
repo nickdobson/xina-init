@@ -1,0 +1,8 @@
+{
+    "action": "insert",
+    "database":"sam_compound",
+    "entries": {
+        "type": "tsv",
+        "object_id": "{local}/entries.tsv"
+    }
+}

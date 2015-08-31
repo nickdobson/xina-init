@@ -1,0 +1,21 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "MOMA",
+    "database" : {
+        "name"          : "moma_fm_sci_data",
+        "label"         : "MOMA FM Science Data",
+        "desc"          : "MOMA FM model science data database.",
+        "enable_lock"   : false,
+        "enable_log"    : false,
+        "enable_notify" : false,
+        "top_keys"      : 1,
+        "fields"        : [
+            {
+                "name"  : "TID",
+                "type"  : "int(4)",
+                "key"   : true
+            }
+        ]
+    }
+}
