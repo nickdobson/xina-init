@@ -28,6 +28,11 @@
                 "nul"   : true,
                 "def"   : "false"
             },
+			{
+				"name"  : "Reset",
+				"type"  : "string(32)",
+				"nul"   : true
+			},
             {
                 "name"  : "Description",
                 "type"  : "string(64)",
