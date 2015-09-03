@@ -87,14 +87,21 @@
                 "type"  : "int(8)"
             },
             {
+                "name"  : "Bins Per RF Entry",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
                 "name"  : "Special Scan ID",
-                "type"  : "int(4)"
+                "type"  : "int(4)",
+                "nul"   : true
             },
             {
                 "name"  : "Scan Value",
                 "type"  : "float(4)",
                 "meas"  : "voltage",
-                "unit"  : "V"
+                "unit"  : "V",
+                "nul"   : true
             },
             {
                 "name"  : "RF Freq",
