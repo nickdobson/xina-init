@@ -3,9 +3,9 @@
 	"create"   : "database",
 	"team"     : "SAM",
 	"database" : {
-		"name"          : "sam_fm_limitchk",
-		"label"         : "SAM FM Limit Check",
-		"desc"          : "SAM flight model limit check report database.",
+		"name"          : "sam_tb_limitchk",
+		"label"         : "SAM TB Limit Check",
+		"desc"          : "SAM testbed model limit check report database.",
 		"enable_lock"   : false,
 		"enable_log"    : false,
 		"enable_notify" : false,
@@ -48,7 +48,8 @@
             },
             {
                 "name"  : "C-Value",
-                "type"  : "float(8)"
+                "type"  : "float(8)",
+                "nul"   : true
             },
             {
                 "name"  : "C-Value Type",
@@ -89,7 +90,8 @@
             },
             {
                 "name"  : "Sci",
-                "type"  : "float(8)"
+                "type"  : "float(8)",
+                "nul"   : true
             },
             {
                 "name"  : "Sci Unit",
