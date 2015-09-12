@@ -81,7 +81,7 @@
             },
             {
                 "name" : "Sci Units",
-                "type" : "string(8)",
+                "type" : "string(16)",
                 "nul"  : true
             },
             {
@@ -135,7 +135,7 @@
             },
             {
                 "name" : "Limit Type 1",
-                "type" : "int(1)"
+                "type" : "string(16)"
             },
             {
                 "name" : "Yellow Limit 1",
@@ -147,7 +147,7 @@
             },
             {
                 "name" : "Limit Type 2",
-                "type" : "int(1)"
+                "type" : "string(16)"
             },
             {
                 "name" : "Yellow Limit 2",

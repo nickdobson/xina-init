@@ -94,6 +94,16 @@
                 "name"  : "Sci 2 Approval",
                 "type"  : "boolean",
                 "nul"   : true
+            },
+            {
+                "name"  : "Notes",
+                "type"  : "text",
+                "nul"   : true
+            },
+            {
+                "name"  : "Restrictions",
+                "type"  : "text",
+                "nul"   : true
             }
         ]
     }

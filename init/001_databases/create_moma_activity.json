@@ -185,6 +185,16 @@
                 "name"    : "Rover Tasks",
                 "type"    : "text",
                 "nul"     : true
+            },
+            {
+                "name"    : "Notes",
+                "type"    : "text",
+                "nul"     : true
+            },
+            {
+                "name"    : "Restrictions",
+                "type"    : "text",
+                "nul"     : true
             }
         ]
     }
