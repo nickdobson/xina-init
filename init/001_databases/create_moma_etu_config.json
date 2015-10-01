@@ -6,20 +6,20 @@
         "name"          : "moma_etu_config",
         "label"         : "MOMA ETU Configuration",
         "desc"          : "MOMA ETU model configuration database.",
-        "entry_format"  : "{Start Time}-{End Time} {Description}",
+        "entry_format"  : "{Start TID}-{End TID} {Description}",
         "enable_lock"   : false,
         "enable_log"    : true,
         "enable_notify" : false,
         "top_keys"      : 1,
         "fields": [
             {
-                "name"  : "Start Time",
-                "type"  : "datetime",
+                "name"  : "Start TID",
+                "type"  : "int(4)",
                 "key"   : true
             },
             {
-                "name"  : "End Time",
-                "type"  : "datetime",
+                "name"  : "End TID",
+                "type"  : "int(4)",
                 "nul"   : true
             },
             {
@@ -30,12 +30,12 @@
             },
 			{
 				"name"  : "Reset",
-				"type"  : "string(32)",
+				"type"  : "text",
 				"nul"   : true
 			},
             {
                 "name"  : "Description",
-                "type"  : "string(64)",
+                "type"  : "text",
                 "key"   : true
             }
         ]

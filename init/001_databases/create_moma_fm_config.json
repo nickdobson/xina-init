@@ -5,21 +5,21 @@
     "database" : {
         "name"          : "moma_fm_config",
         "label"         : "MOMA FM Configuration",
-        "desc"          : "MOMA flight model configuration database.",
-        "entry_format"  : "{Start Time}-{End Time} {Description}",
+        "desc"          : "MOMA FM model configuration database.",
+        "entry_format"  : "{Start TID}-{End TID} {Description}",
         "enable_lock"   : false,
         "enable_log"    : true,
         "enable_notify" : false,
         "top_keys"      : 1,
         "fields": [
             {
-                "name"  : "Start Time",
-                "type"  : "datetime",
+                "name"  : "Start TID",
+                "type"  : "int(4)",
                 "key"   : true
             },
             {
-                "name"  : "End Time",
-                "type"  : "datetime",
+                "name"  : "End TID",
+                "type"  : "int(4)",
                 "nul"   : true
             },
             {
@@ -28,14 +28,14 @@
                 "nul"   : true,
                 "def"   : "false"
             },
-			{
-				"name"  : "Reset",
-				"type"  : "string(32)",
-				"nul"   : true
-			},
+            {
+                "name"  : "Reset",
+                "type"  : "text",
+                "nul"   : true
+            },
             {
                 "name"  : "Description",
-                "type"  : "string(64)",
+                "type"  : "text",
                 "key"   : true
             }
         ]
