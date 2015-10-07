@@ -54,6 +54,10 @@
                 "nul"   : true
             },
             {
+                "name"  : "Valid Time",
+                "type"  : "boolean"
+            },
+            {
                 "name"  : "Contains MOMA Data",
                 "type"  : "boolean",
                 "nul"   : true
@@ -172,6 +176,26 @@
             {
                 "name"  : "EM 2 Counts",
                 "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 1 Soft Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 2 Soft Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 1 Hard Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 2 Hard Cycles",
+                "type"  : "int(4)",
                 "nul"   : true
             },
             {

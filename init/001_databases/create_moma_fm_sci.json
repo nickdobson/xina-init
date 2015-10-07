@@ -18,7 +18,7 @@
                 "key"   : true
             },
             {
-                "name"  : "Scan ID",
+                "name"  : "Scan Index",
                 "type"  : "int(4)",
                 "key"   : true
             },
@@ -29,6 +29,23 @@
             {
                 "name"  : "t_tid",
                 "type"  : "int(8)"
+            },
+            {
+                "name"  : "UMKID",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "MK ID",
+                "type"  : "int(4)",
+                "nul"   : true,
+                "index" : true
+            },
+            {
+                "name"  : "MK Name",
+                "type"  : "string(64)",
+                "nul"   : true,
+                "index" : true
             },
             {
                 "name"  : "Bin Count",
