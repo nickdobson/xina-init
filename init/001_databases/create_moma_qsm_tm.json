@@ -189,12 +189,12 @@
                 "nul"   : true
             },
             {
-                "name"  : "EM 1 Hard Cycles",
+                "name"  : "EM 1 Full Cycles",
                 "type"  : "int(4)",
                 "nul"   : true
             },
             {
-                "name"  : "EM 2 Hard Cycles",
+                "name"  : "EM 2 Full Cycles",
                 "type"  : "int(4)",
                 "nul"   : true
             },
