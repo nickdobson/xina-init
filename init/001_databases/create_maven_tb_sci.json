@@ -1,0 +1,322 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "MAVEN",
+    "database" : {
+        "name"          : "maven_tb_sci",
+        "label"         : "MAVEN Testbed Science Data",
+        "desc"          : "MAVEN testbed model science database.",
+        "enable_lock"   : false,
+        "enable_log"    : false,
+        "enable_notify" : false,
+        "top_keys"      : 1,
+        "fields"        : [
+            {
+                "name" : "TID",
+                "type" : "int(4)",
+                "key"  : true
+            }
+        ],
+        "groups": [
+            {
+                "name"   : "Science L1",
+                "fields" : [
+                    {
+                        "name" : "t_unix",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_sclk",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "umkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "counts",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "cps_raw",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "cps_dt",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
+                        "type" : "string(8)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "filament",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "multiplier",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "ion_gauge_1",
+                        "type" : "float(4)",
+                        "meas" : "pressure",
+                        "unit" : "uTorr",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "ion_gauge_2",
+                        "type" : "float(4)",
+                        "meas" : "pressure",
+                        "unit" : "uTorr",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "pressure_spread",
+                        "type" : "float(4)",
+                        "unit" : "%",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "temperature_s",
+                        "type" : "float(4)",
+                        "meas" : "temperature",
+                        "unit" : "C",
+                        "nul"  : true
+                    }
+                ],
+                "indexes" : [
+                    ["multiplier", "focus_mode", "mass_x100"],
+                    ["multiplier", "focus_mode", "tid", "mass_x100"],
+                    ["multiplier", "focus_mode", "umkid", "mass_x100"]
+                ]
+            },
+            {
+                "name"   : "Science L2",
+                "fields" : [
+                    {
+                        "name" : "t_unix",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_sclk",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "umkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "counts",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "cps_raw",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "cps_raw_bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "cps_dt",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "cps_bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "bkgd",
+                        "type" : "float(4)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "abundance",
+                        "type" : "float(4)",
+                        "unit" : "part/cc",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "focus_mode",
+                        "type" : "string(8)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "filament",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "multiplier",
+                        "type" : "int(1)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "ion_gauge_1",
+                        "type" : "float(4)",
+                        "meas" : "pressure",
+                        "unit" : "uTorr",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "ion_gauge_2",
+                        "type" : "float(4)",
+                        "meas" : "pressure",
+                        "unit" : "uTorr",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "pressure_spread",
+                        "type" : "float(4)",
+                        "unit" : "%",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "temperature_s",
+                        "type" : "float(4)",
+                        "meas" : "temperature",
+                        "unit" : "C",
+                        "nul"  : true
+                    }
+                ],
+                "indexes" : [
+                    ["multiplier", "focus_mode", "mass_x100"],
+                    ["multiplier", "focus_mode", "tid", "mass_x100"],
+                    ["multiplier", "focus_mode", "umkid", "mass_x100"]
+                ]
+            },
+            {
+                "name"   : "Science Stats",
+                "fields" : [
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mktxt",
+                        "type" : "string(64)"
+                    },
+                    {
+                        "name" : "pump",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "inlet",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "cs_temp",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "cps",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "std_dev",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "count",
+                        "type" : "int(4)"
+                    }
+                ],
+                "indexes" : [
+                    ["tid", "mass_x100"],
+                    ["mktxt", "mass_x100"],
+                    ["mass_x100"]
+                ]
+            },
+            {
+                "name"   : "Science Frac",
+                "fields" : [
+                    {
+                        "name" : "tid",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "t_tid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mkid",
+                        "type" : "int(8)"
+                    },
+                    {
+                        "name" : "mktxt",
+                        "type" : "string(64)"
+                    },
+                    {
+                        "name" : "pump",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "inlet",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "cs_temp",
+                        "type" : "float(4)"
+                    },
+                    {
+                        "name" : "mass_x100",
+                        "type" : "int(4)"
+                    },
+                    {
+                        "name" : "cps",
+                        "type" : "float(4)"
+                    }
+                ],
+                "indexes" : [
+                    ["tid", "mass_x100"],
+                    ["mktxt", "mass_x100"],
+                    ["mass_x100"]
+                ]
+            }
+        ]
+    }
+}
