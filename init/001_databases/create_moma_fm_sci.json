@@ -6,7 +6,7 @@
         "name"          : "moma_fm_sci",
         "label"         : "MOMA FM Science",
         "desc"          : "MOMA FM science scan database.",
-        "entry_format"  : "{TID} {Scan ID}",
+        "entry_format"  : "{TID} {Scan Index}",
         "enable_lock"   : false,
         "enable_log"    : false,
         "enable_notify" : false,
