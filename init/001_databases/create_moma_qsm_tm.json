@@ -55,7 +55,8 @@
             },
             {
                 "name"  : "Valid Time",
-                "type"  : "boolean"
+                "type"  : "boolean",
+                "nul"   : true
             },
             {
                 "name"  : "Contains MOMA Data",
