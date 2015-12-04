@@ -1,0 +1,67 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "sam.tb.data",
+    "database" : {
+        "name"      : "cup_log",
+        "label"     : "Cup Log",
+        "desc"      : "SAM testbed model cup activity log database.",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "format"    : "{Time} {Event} {Cup No}",
+        "fields"        : [
+            {
+                "name"  : "Time",
+                "type"  : "datetime",
+                "key"   : true
+            },
+            {
+                "name"  : "Event",
+                "type"  : "utf8string(16)",
+                "index" : true
+            },
+            {
+                "name"  : "Cup No",
+                "type"  : "int(1)",
+                "index" : true
+            },
+            {
+                "name"  : "TID",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Load",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sample ID",
+                "type"  : "utf8string(16)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Aliquots",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sample Used",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sample Desc",
+                "type"  : "utf8string",
+                "nul"   : true
+            }
+        ]
+    }
+}

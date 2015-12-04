@@ -1,0 +1,13 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "sam",
+	"group"  : {
+		"name"    : "fm",
+        "label"   : "Flight Model",
+		"desc"    : "SAM flight model group.",
+        "objects" : {
+            "xo_struct_model" : {}
+        }
+	}
+}

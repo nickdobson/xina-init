@@ -1,0 +1,9 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"group"  : {
+		"name"  : "ladee",
+        "label" : "LADEE",
+		"desc"  : "Primary group for the Lunar Atmosphere Dust Environment Explorer (LADEE) mission."
+	}
+}

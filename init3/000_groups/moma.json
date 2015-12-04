@@ -1,0 +1,9 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"group"  : {
+		"name"  : "moma",
+        "label" : "MOMA",
+		"desc"  : "Primary group for the Mars Organic Molecule Analyzer (MOMA) mission."
+	}
+}

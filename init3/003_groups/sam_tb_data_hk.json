@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "sam.tb.data",
+    "group"  : {
+        "name"    : "hk",
+        "label"   : "Housekeeping",
+        "desc"    : "SAM testbed model housekeeping data group."
+    }
+}

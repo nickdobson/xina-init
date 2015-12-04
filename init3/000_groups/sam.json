@@ -1,0 +1,9 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"group"  : {
+		"name"  : "sam",
+        "label" : "SAM",
+		"desc"  : "Primary group for the Sample Analysis at Mars (SAM) mission."
+	}
+}

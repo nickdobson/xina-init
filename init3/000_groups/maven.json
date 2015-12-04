@@ -1,0 +1,9 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"group"  : {
+		"name"  : "maven",
+        "label" : "MAVEN",
+		"desc"  : "Primary group for the Mars Atmosphere and Volatile EvolutioN (MAVEN) mission."
+	}
+}

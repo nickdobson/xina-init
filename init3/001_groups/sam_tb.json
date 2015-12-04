@@ -1,0 +1,13 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "sam",
+	"group"  : {
+		"name"    : "tb",
+        "label"   : "Testbed Model",
+		"desc"    : "SAM testbed model group.",
+        "objects" : {
+            "xo_struct_model" : {}
+        }
+	}
+}

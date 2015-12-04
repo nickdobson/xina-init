@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "maven",
+    "group"  : {
+        "name"  : "fm",
+        "label" : "Flight Model",
+        "desc"  : "MAVEN flight model group."
+    }
+}

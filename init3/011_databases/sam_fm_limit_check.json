@@ -1,0 +1,106 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "sam.fm.data",
+	"database" : {
+		"name"      : "limit_check",
+		"label"     : "Limit Check",
+		"desc"      : "SAM flight model limit check report database.",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+		"fields"    : [
+			{
+				"name"  : "TID",
+				"type"  : "int(4)",
+				"key"   : true
+			},
+			{
+				"name"  : "Section ID",
+				"type"  : "int(4)",
+				"key"   : true
+			},
+			{
+				"name"  : "Section Name",
+				"type"  : "utf8string(64)"
+			},
+            {
+                "name"  : "Check ID",
+                "type"  : "int(4)",
+                "key"   : true
+            },
+            {
+                "name"  : "Time",
+                "type"  : "float(8)"
+            },
+            {
+                "name"  : "TMID",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "MKID",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Name",
+                "type"  : "utf8string(32)"
+            },
+            {
+                "name"  : "C-Value",
+                "type"  : "float(8)"
+            },
+            {
+                "name"  : "C-Value Type",
+                "type"  : "utf8string(2)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Low",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "High",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Avg",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Limit Low",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Limit High",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "R-Value",
+                "type"  : "float(8)"
+            },
+            {
+                "name"  : "R-ID",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Sci",
+                "type"  : "float(8)"
+            },
+            {
+                "name"  : "Sci Unit",
+                "type"  : "utf8string(8)",
+                "nul"   : true
+            }
+		]
+	}
+}

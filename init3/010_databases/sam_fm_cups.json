@@ -1,0 +1,38 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "sam.fm",
+    "database" : {
+        "name"      : "cups",
+        "label"     : "Cups",
+        "desc"      : "SAM flight model cup database.",
+        "format"    : "{Cup No} ({Type})",
+        "singular"  : "cup",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "order"     : [ [ "Cup No", "asc" ] ],
+        "fields"    : [
+            {
+                "name"  : "Cup No",
+                "type"  : "int(1)",
+                "key"   : true
+            },
+            {
+                "name"  : "Type",
+                "type"  : "utf8string(2)"
+            },
+            {
+                "name"  : "Notes",
+                "type"  : "utf8string",
+                "nul"   : true
+            }
+        ]
+    }
+}

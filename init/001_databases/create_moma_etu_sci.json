@@ -6,7 +6,7 @@
         "name"          : "moma_etu_sci",
         "label"         : "MOMA ETU Science",
         "desc"          : "MOMA ETU science scan database.",
-        "entry_format"  : "{TID} {Scan Index}",
+        "entry_format"  : "{TID} {Scan Index} ({MK Name})",
         "enable_lock"   : false,
         "enable_log"    : false,
         "enable_notify" : false,
