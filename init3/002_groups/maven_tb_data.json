@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "maven.tb",
+	"group"  : {
+		"name"    : "data",
+        "label"   : "Data",
+		"desc"    : "MAVEN testbed model data group."
+	}
+}

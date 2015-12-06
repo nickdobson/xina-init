@@ -1,0 +1,41 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "moma.etu",
+    "database" : {
+        "name"      : "component",
+        "label"     : "Component",
+        "desc"      : "MOMA ETU model component database.",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "fields": [
+            {
+                "name"  : "Name",
+                "type"  : "utf8string(64)",
+                "key"   : true
+            },
+            {
+                "name"  : "Category",
+                "type"  : "utf8string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Part No",
+                "type"  : "utf8string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Description",
+                "type"  : "utf8text",
+                "nul"   : true
+            }
+        ]
+    }
+}

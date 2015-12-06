@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "moma",
+    "group"  : {
+        "name"  : "qsm",
+        "label" : "QSM Model",
+        "desc"  : "MOMA QSM model group."
+    }
+}

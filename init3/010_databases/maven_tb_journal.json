@@ -1,0 +1,52 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "maven.tb",
+    "database" : {
+        "name"      : "journal",
+        "label"     : "Journal",
+        "desc"      : "MAVEN testbed activity journal.",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "objects"   : {
+            "xo_view_conf_note" : {
+                "date"      : "Date",
+                "timestamp" : "Timestamp",
+                "content"   : "Content",
+                "meta"      : [ "Hw Config" ]
+            },
+            "xo_view_default" : {
+                "*" : "note"
+            }
+        },
+        "fields" : [
+            {
+                "name"  : "Date",
+                "type"  : "date",
+                "index" : true
+            },
+            {
+                "name" : "Timestamp",
+                "type" : "datetime",
+                "key"  :  true
+            },
+            {
+                "name"  : "Content",
+                "type"  : "utf8text",
+                "nul"   : true
+            },
+            {
+                "name"  : "Hw Config",
+                "type"  : "utf8string(16)",
+                "nul"   : true
+            }
+        ]
+    }
+}

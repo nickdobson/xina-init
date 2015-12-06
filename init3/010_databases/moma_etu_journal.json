@@ -1,0 +1,70 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "moma.etu",
+    "database" : {
+        "name"      : "journal",
+        "label"     : "Journal",
+        "desc"      : "MOMA ETU activity journal.",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "objects"   : {
+            "xo_view_conf_note" : {
+                "date"      : "Date",
+                "timestamp" : "Timestamp",
+                "content"   : "Content",
+                "meta"      : [
+                    "WOA",
+                    "Proc ID",
+                    "Hw Config"
+                ]
+            },
+            "xo_view_default": {
+                "*" : "note"
+            }
+        },
+        "fields" : [
+            {
+                "name"  : "Date",
+                "type"  : "date",
+                "index" : true
+            },
+            {
+                "name" : "Timestamp",
+                "type" : "datetime",
+                "key"  :  true
+            },
+            {
+                "name"  : "Content",
+                "type"  : "text",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "WOA",
+                "type"  : "string(64)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "Proc ID",
+                "type"  : "string(32)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "Hw Config",
+                "type"  : "string(16)",
+                "index" : true,
+                "nul"   : true
+            }
+        ]
+    }
+}

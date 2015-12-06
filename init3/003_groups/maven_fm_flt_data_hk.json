@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "maven.fm_flt.data",
+	"group"  : {
+		"name"    : "hk",
+        "label"   : "Housekeeping",
+		"desc"    : "MAVEN flight model flight housekeeping data group."
+	}
+}

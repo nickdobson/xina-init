@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "ladee",
+    "group"  : {
+        "name"  : "fm",
+        "label" : "Flight Model",
+        "desc"  : "LADEE flight model group."
+    }
+}

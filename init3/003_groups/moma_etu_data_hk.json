@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "moma.etu.data",
+	"group"  : {
+		"name"    : "hk",
+        "label"   : "Housekeeping",
+		"desc"    : "MOMA ETU model housekeeping data group."
+	}
+}

@@ -1,0 +1,21 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "team"     : "MOMA",
+    "database" : {
+        "name"          : "moma_etu_sci_data",
+        "label"         : "MOMA ETU Science Data",
+        "desc"          : "MOMA ETU model science data database.",
+        "enable_lock"   : false,
+        "enable_log"    : false,
+        "enable_notify" : false,
+        "top_keys"      : 1,
+        "fields"        : [
+            {
+                "name"  : "TID",
+                "type"  : "int(4)",
+                "key"   : true
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "moma",
+    "group"  : {
+        "name"  : "etu",
+        "label" : "ETU Model",
+        "desc"  : "MOMA ETU model group."
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "maven.fm_flt",
+	"group"  : {
+		"name"    : "data",
+        "label"   : "Data",
+		"desc"    : "MAVEN flight model flight data group."
+	}
+}

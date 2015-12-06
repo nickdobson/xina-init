@@ -7,7 +7,7 @@
         "label"    : "TM Definition",
         "desc"     : "SAM testbed model telemetry definition information.",
         "format"   : "hk{Data ID}_{Sub System}:{Name}",
-        "singular" : "definition",
+        "singular" : "field",
         "link"     : true,
         "wall"     : true,
         "order"    : [ [ "Data ID", "asc" ] ],

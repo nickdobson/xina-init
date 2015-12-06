@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "maven.fm_pre.data",
+	"group"  : {
+		"name"    : "hk",
+        "label"   : "Housekeeping",
+		"desc"    : "MAVEN flight model preflight housekeeping data group."
+	}
+}

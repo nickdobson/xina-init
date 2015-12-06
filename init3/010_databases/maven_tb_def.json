@@ -1,17 +1,17 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "parent"   : "sam.fm",
+    "parent"   : "maven.tb",
     "database" : {
         "name"     : "def",
         "label"    : "TM Definition",
-        "desc"     : "SAM flight model telemetry definition information.",
+        "desc"     : "MAVEN testbed model telemetry definition information.",
         "format"   : "hk{Data ID}_{Sub System}:{Name}",
         "singular" : "field",
         "link"     : true,
         "wall"     : true,
         "order"    : [ [ "Data ID", "asc" ] ],
-        "fields"   : [
+        "fields": [
             {
                 "name" : "Data ID",
                 "type" : "int(4)",
@@ -94,6 +94,10 @@
             {
                 "name" : "Sci Eq Type",
                 "type" : "int(1)"
+            },
+            {
+                "name" : "Sci From Eng",
+                "type" : "boolean"
             },
             {
                 "name" : "Sci K1",

@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "moma",
+    "group"  : {
+        "name"  : "sfm",
+        "label" : "Spare Flight Model",
+        "desc"  : "MOMA spare flight model group."
+    }
+}
