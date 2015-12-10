@@ -1,0 +1,214 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "sam",
+    "database" : {
+        "name"      : "compound",
+        "label"     : "Compound Library",
+        "desc"      : "SAM contaminant and terrestrial background compound library.",
+        "format"    : "{Path} / {Name}",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "order"     : [
+            [ "Path", "asc" ],
+            [ "Name", "asc" ]
+        ],
+        "fields": [
+            {
+                "name"  : "Path",
+                "type"  : "utf8string(64)",
+                "key"   : true
+            },
+            {
+                "name"  : "Name",
+                "type"  : "utf8string(64)",
+                "key"   : true
+            },
+            {
+                "name"  : "Sample Name",
+                "type"  : "utf8string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sample Type",
+                "type"  : "utf8string(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Location",
+                "type"  : "utf8string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Acquisition Date",
+                "type"  : "datetime",
+                "nul"   : true
+            },
+            {
+                "name"  : "Method",
+                "type"  : "utf8string(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Process",
+                "type"  : "utf8string(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Start Temp",
+                "type"  : "float(8)",
+                "meas"  : "temperature",
+                "unit"  : "C",
+                "nul"   : true
+            },
+            {
+                "name"  : "Ramp Temp Rate",
+                "type"  : "utf8string(32)",
+                "meas"  : "temperature/time",
+                "unit"  : "C/min",
+                "nul"   : true
+            },
+            {
+                "name"  : "Final Temp",
+                "type"  : "utf8string(32)",
+                "meas"  : "temperature",
+                "unit"  : "C",
+                "nul"   : true
+            },
+            {
+                "name"  : "Report",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Comments",
+                "type"  : "utf8text",
+                "nul"   : true
+            }
+        ],
+        "databases" : [
+            {
+                "name"        : "compounds",
+                "label"       : "Compounds",
+                "desc"        : "SAM contaminant and terrestrial background compound library compounds.",
+                "format"      : "{Full Name}",
+                "singular"    : "compound",
+                "event"       : true,
+                "link"        : true,
+                "log"         : true,
+                "notify"      : true,
+                "subscribe"   : true,
+                "tag"         : true,
+                "track"       : true,
+                "trash"       : true,
+                "wall"        : true,
+                "order" : [
+                    ["Retention Time", "asc"]
+                ],
+                "fields" : [
+                    {
+                        "name" : "Path",
+                        "type" : "utf8string(64)",
+                        "ref"  : "Path"
+                    },
+                    {
+                        "name" : "Name",
+                        "type" : "utf8string(64)",
+                        "ref"  : "Name"
+                    },
+                    {
+                        "name" : "Full Name",
+                        "type" : "utf8string"
+                    },
+                    {
+                        "name" : "Retention Time",
+                        "type" : "float(8)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "Compound Name",
+                        "type" : "utf8string",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "Formula",
+                        "type" : "utf8string",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "Match",
+                        "type" : "int(2)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "R.match",
+                        "type" : "int(2)",
+                        "nul"  : true
+                    },
+                    {
+                        "name" : "Probability",
+                        "type" : "float(8)",
+                        "nul"  : true
+                    }
+                ]
+            },
+            {
+                "name"        : "file",
+                "label"       : "File",
+                "desc"        : "SAM contaminant and terrestrial background compound library files.",
+                "format"      : "{Path} / {Name} / {File Name}",
+                "file_format" : "{Name}",
+                "singular"    : "file",
+                "event"       : true,
+                "file"        : true,
+                "link"        : true,
+                "log"         : true,
+                "notify"      : true,
+                "subscribe"   : true,
+                "tag"         : true,
+                "track"       : true,
+                "trash"       : true,
+                "wall"        : true,
+                "order" : [
+                    [ "TID",      "desc" ],
+                    [ "Priority", "asc"  ],
+                    [ "Name",     "asc"  ]
+                ],
+                "fields" : [
+                    {
+                        "name" : "Path",
+                        "type" : "utf8string(64)",
+                        "ref"  : "Path"
+                    },
+                    {
+                        "name" : "Name",
+                        "type" : "utf8string(64)",
+                        "ref"  : "Name"
+                    },
+                    {
+                        "name" : "File Name",
+                        "type" : "utf8string(128)",
+                        "key"  : true
+                    },
+                    {
+                        "name" : "Priority",
+                        "type" : "int(4)",
+                        "def"  : "3"
+                    },
+                    {
+                        "name" : "Desc",
+                        "type" : "utf8string",
+                        "nul"  : true
+                    }
+                ]
+            }
+        ]
+    }
+}

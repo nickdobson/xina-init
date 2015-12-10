@@ -3,8 +3,8 @@
 	"create" : "group",
     "parent" : "sam.fm.data",
 	"group"  : {
-		"name"    : "hk",
-        "label"   : "Housekeeping",
-		"desc"    : "SAM flight model housekeeping data group."
+		"name"  : "hk",
+        "label" : "Housekeeping",
+		"desc"  : "SAM flight model housekeeping data group."
 	}
 }

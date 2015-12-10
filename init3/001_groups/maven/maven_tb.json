@@ -1,0 +1,13 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "maven",
+    "group"  : {
+        "name"    : "tb",
+        "label"   : "Testbed Model",
+        "desc"    : "MAVEN testbed model group.",
+        "objects" : {
+            "xo_struct_model" : {}
+        }
+    }
+}

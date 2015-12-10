@@ -3,8 +3,8 @@
 	"create" : "group",
     "parent" : "moma.sfm",
 	"group"  : {
-		"name"    : "data",
-        "label"   : "Data",
-		"desc"    : "MOMA spare flight model data group."
+		"name"  : "data",
+        "label" : "Data",
+		"desc"  : "MOMA spare flight model data group."
 	}
 }

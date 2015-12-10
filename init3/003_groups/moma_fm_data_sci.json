@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "moma.fm.data",
+	"group"  : {
+		"name"  : "sci",
+        "label" : "Science",
+		"desc"  : "MOMA flight model science data group."
+	}
+}

@@ -1,10 +1,10 @@
 {
 	"action" : "create",
 	"create" : "group",
-    "parent" : "maven.pre_flt",
+    "parent" : "maven.fm_pre",
 	"group"  : {
-		"name"    : "data",
-        "label"   : "Data",
-		"desc"    : "MAVEN flight model preflight data group."
+		"name"  : "data",
+        "label" : "Data",
+		"desc"  : "MAVEN flight model (preflight) data group."
 	}
 }

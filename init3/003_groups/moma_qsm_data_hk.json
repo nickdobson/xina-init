@@ -3,8 +3,8 @@
 	"create" : "group",
     "parent" : "moma.qsm.data",
 	"group"  : {
-		"name"    : "hk",
-        "label"   : "Housekeeping",
-		"desc"    : "MOMA QSM model housekeeping data group."
+		"name"  : "hk",
+        "label" : "Housekeeping",
+		"desc"  : "MOMA QSM model housekeeping data group."
 	}
 }

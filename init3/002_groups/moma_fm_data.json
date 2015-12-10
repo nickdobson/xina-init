@@ -3,8 +3,8 @@
 	"create" : "group",
     "parent" : "moma.fm",
 	"group"  : {
-		"name"    : "data",
-        "label"   : "Data",
-		"desc"    : "MOMA flight model data group."
+		"name"  : "data",
+        "label" : "Data",
+		"desc"  : "MOMA flight model data group."
 	}
 }

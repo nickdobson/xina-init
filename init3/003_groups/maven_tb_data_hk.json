@@ -3,8 +3,8 @@
 	"create" : "group",
     "parent" : "maven.tb.data",
 	"group"  : {
-		"name"    : "hk",
-        "label"   : "Housekeeping",
-		"desc"    : "MAVEN testbed model housekeeping data group."
+		"name"  : "hk",
+        "label" : "Housekeeping",
+		"desc"  : "MAVEN testbed model housekeeping data group."
 	}
 }

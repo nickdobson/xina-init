@@ -1,0 +1,438 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "sam.fm",
+    "database" : {
+        "name"      : "tm",
+        "label"     : "Telemetry",
+        "desc"      : "SAM flight model telemetry database.",
+        "format"    : "{TID}-{TID Text}",
+        "singular"  : "TID",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "objects"   : {
+            "repo_entry"       : "{Timestamp}-{TID}-{TID Text}",
+            "os_win_repo_path" : "{$doc}{$}SAM{$}data",
+            "os_osx_repo_path" : "{$home}{$}SAM{$}data",
+            "os_nix_repo_path" : "{$home}{$}gse{$}data"
+        },
+        "order" : [
+            [ "TID", "desc" ]
+        ],
+        "fields" : [
+            {
+                "name"  : "TID",
+                "type"  : "int(4)",
+                "key"   : true
+            },
+            {
+                "name"  : "TID Text",
+                "type"  : "utf8string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Date",
+                "type"  : "localdate",
+                "nul"   : true
+            },
+            {
+                "name"  : "Timestamp",
+                "type"  : "asciistring(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Hw Phase",
+                "type"  : "utf8string(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "SAM Lib Version",
+                "type"  : "utf8string(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Script Name",
+                "type"  : "utf8string(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Script Version",
+                "type"  : "utf8string(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Cal Data",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "TLS",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "QMS",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "TCD",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "GCMS",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "NIR",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "IC",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Filament 1",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Filament 2",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Detector 1",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Detector 2",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Oven 1",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Oven 2",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Scrubbers",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Getter",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "HC Trap",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "GC Col",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "CPT",
+                "type"  : "asciistring(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Start Sol",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "End Sol",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Start Mars Time",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "End Mars Time",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sample Acq Sol",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sample SMS Sol",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Location",
+                "type"  : "utf8string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Target",
+                "type"  : "utf8string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Scoop/Drill ID",
+                "type"  : "utf8string(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sample No",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sample Desc",
+                "type"  : "utf8string",
+                "nul"   : true
+            },
+            {
+                "name"  : "Portions",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Cup No",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Request No",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Request Type",
+                "type"  : "utf8string(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "FSW Version",
+                "type"  : "utf8string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Rover Sw Version",
+                "type"  : "utf8string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Voltage",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Pressure",
+                "type"  : "float(8)",
+                "nul"   : true,
+                "meas"  : "pressure",
+                "unit"  : "Torr"
+            },
+            {
+                "name"  : "Ambient Temp",
+                "type"  : "float(8)",
+                "nul"   : true,
+                "meas"  : "temperature",
+                "unit"  : "C"
+            },
+            {
+                "name"  : "Ramp Temp",
+                "type"  : "float(8)",
+                "nul"   : true,
+                "meas"  : "temperature",
+                "unit"  : "C"
+            },
+            {
+                "name"  : "GSE He Tank",
+                "type"  : "utf8string(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Logbook",
+                "type"  : "utf8string(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Logbook Page No",
+                "type"  : "utf8string(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "WOA",
+                "type"  : "utf8string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "PROC/PLANs",
+                "type"  : "utf8string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Completion State",
+                "type"  : "utf8string(64)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "Completion Comments",
+                "type"  : "utf8text",
+                "nul"   : true
+            },
+            {
+                "name"  : "Start Time",
+                "type"  : "datetime",
+                "nul"   : true
+            },
+            {
+                "name"  : "End Time",
+                "type"  : "datetime",
+                "nul"   : true
+            },
+            {
+                "name"  : "Size",
+                "type"  : "int(8)",
+                "nul"   : true,
+                "unit"  : "bytes"
+            },
+            {
+                "name"  : "Markers",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Messages",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "HK Bin UTC",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "HK Bin Relative",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "HK Bin Marker",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "HK Bin TID",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "HK Full",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_utc_start",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_utc_end",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_sclk_start",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_sclk_end",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "dt",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Comments",
+                "type"  : "utf8text",
+                "nul"   : true
+            }
+        ],
+        "databases" : [
+            {
+                "name"        : "file",
+                "label"       : "File",
+                "desc"        : "SAM flight model telemetry files database.",
+                "format"      : "{TID} {Name}",
+                "file_format" : "{Name}",
+                "singular"    : "file",
+                "event"       : true,
+                "file"        : true,
+                "link"        : true,
+                "log"         : true,
+                "notify"      : true,
+                "subscribe"   : true,
+                "tag"         : true,
+                "track"       : true,
+                "trash"       : true,
+                "wall"        : true,
+                "order" : [
+                    [ "TID",      "desc" ],
+                    [ "Priority", "asc"  ],
+                    [ "Name",     "asc"  ]
+                ],
+                "fields" : [
+                    {
+                        "name"  : "TID",
+                        "type"  : "int(4)",
+                        "ref"   : "TID",
+                        "key"   : true
+                    },
+                    {
+                        "name"  : "Name",
+                        "type"  : "utf8string(128)",
+                        "key"   : true
+                    },
+                    {
+                        "name"  : "Priority",
+                        "type"  : "int(4)",
+                        "def"   : "3"
+                    },
+                    {
+                        "name"  : "Desc",
+                        "type"  : "utf8string",
+                        "nul"   : true
+                    }
+                ]
+            }
+        ]
+    }
+}

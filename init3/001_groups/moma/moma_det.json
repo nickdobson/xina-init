@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "moma",
+    "group"  : {
+        "name"  : "det",
+        "label" : "Detector Test Stand",
+        "desc"  : "MOMA detector test stand group."
+    }
+}

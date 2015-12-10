@@ -3,8 +3,8 @@
 	"create" : "group",
     "parent" : "ladee.fm",
 	"group"  : {
-		"name"    : "data",
-        "label"   : "Data",
-		"desc"    : "LADEE flight model data group."
+		"name"  : "data",
+        "label" : "Data",
+		"desc"  : "LADEE flight model data group."
 	}
 }

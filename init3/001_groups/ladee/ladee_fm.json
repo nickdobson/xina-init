@@ -1,0 +1,13 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "ladee",
+    "group"  : {
+        "name"    : "fm",
+        "label"   : "Flight Model",
+        "desc"    : "LADEE flight model group.",
+        "objects" : {
+            "xo_struct_model" : {}
+        }
+    }
+}

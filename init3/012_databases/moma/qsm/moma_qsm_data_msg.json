@@ -1,0 +1,41 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "moma.qsm.data",
+    "database" : {
+        "name"   : "msg",
+        "label"  : "Message",
+        "desc"   : "MOMA QSM model message database.",
+        "format" : "{t_rel} {Message}",
+        "fields" : [
+            {
+                "name"  : "t_utc",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "t_sclk",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "t_rel",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "TID",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "UMKID",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "UMID",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "Message",
+                "type"  : "utf8string"
+            }
+        ]
+    }
+}

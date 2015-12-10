@@ -1,0 +1,13 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "moma",
+    "group"  : {
+        "name"    : "fm",
+        "label"   : "Flight Model",
+        "desc"    : "MOMA flight model group.",
+        "objects" : {
+            "xo_struct_model" : {}
+        }
+    }
+}

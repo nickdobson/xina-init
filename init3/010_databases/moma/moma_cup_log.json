@@ -1,0 +1,93 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "moma",
+    "database" : {
+        "name"      : "cup_log",
+        "label"     : "Cup Log",
+        "desc"      : "MOMA cup activity log database.",
+        "format"    : "{Loaded Date} / {Instrument} / {Carousel Number} / {Samples}",
+        "singular"  : "event",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "fields"    : [
+            {
+                "name" : "Prepared Date",
+                "type" : "date",
+                "key"  : true
+            },
+            {
+                "name" : "Loaded Date",
+                "type" : "date",
+                "nul"  : true
+            },
+            {
+                "name" : "Instrument",
+                "type" : "utf8string(16)",
+                "key"  : true
+            },
+            {
+                "name" : "WOA",
+                "type" : "utf8string(16)",
+                "key"  : true
+            },
+            {
+                "name" : "Carousel Number",
+                "type" : "int(2)",
+                "key"  : true
+            },
+            {
+                "name" : "Samples",
+                "type" : "utf8string",
+                "nul"  : true
+            },
+            {
+                "name" : "Form",
+                "type" : "utf8string",
+                "nul"  : true
+            },
+            {
+                "name" : "Preparation",
+                "type" : "utf8text",
+                "nul"  : true
+            },
+            {
+                "name" : "Sample Holder",
+                "type" : "utf8string(64)",
+                "nul"  : true
+            },
+            {
+                "name" : "Laser Config",
+                "type" : "utf8string(64)",
+                "nul"  : true
+            },
+            {
+                "name" : "TID(s)",
+                "type" : "utf8string",
+                "nul"  : true
+            },
+            {
+                "name" : "Prepared By",
+                "type" : "utf8string(64)",
+                "nul"  : true
+            },
+            {
+                "name" : "Loaded By",
+                "type" : "utf8string(64)",
+                "nul"  : true
+            },
+            {
+                "name" : "Notes",
+                "type" : "utf8text",
+                "nul"  : true
+            }
+        ]
+    }
+}

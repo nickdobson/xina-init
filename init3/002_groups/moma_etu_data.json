@@ -3,8 +3,8 @@
 	"create" : "group",
     "parent" : "moma.etu",
 	"group"  : {
-		"name"    : "data",
-        "label"   : "Data",
-		"desc"    : "MOMA ETU model data group."
+		"name"  : "data",
+        "label" : "Data",
+		"desc"  : "MOMA ETU model data group."
 	}
 }

@@ -1,0 +1,65 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "moma.fm",
+    "database" : {
+        "name"      : "journal",
+        "label"     : "Journal",
+        "desc"      : "MOMA flight model activity journal.",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "objects"   : {
+            "xo_view_conf_note" : {
+                "date"      : "Date",
+                "timestamp" : "Timestamp",
+                "content"   : "Content",
+                "meta"      : [
+                    "WOA",
+                    "Proc ID",
+                    "Hw Config"
+                ]
+            },
+            "xo_view_default": {
+                "*" : "note"
+            }
+        },
+        "fields" : [
+            {
+                "name" : "Date",
+                "type" : "date"
+            },
+            {
+                "name" : "Timestamp",
+                "type" : "datetime",
+                "key"  :  true
+            },
+            {
+                "name" : "Content",
+                "type" : "html",
+                "nul"  : true
+            },
+            {
+                "name" : "WOA",
+                "type" : "utf8string(64)",
+                "nul"  : true
+            },
+            {
+                "name" : "Proc ID",
+                "type" : "utf8string(32)",
+                "nul"  : true
+            },
+            {
+                "name" : "Hw Config",
+                "type" : "utf8string(16)",
+                "nul"  : true
+            }
+        ]
+    }
+}

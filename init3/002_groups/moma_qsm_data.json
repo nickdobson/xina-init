@@ -3,8 +3,8 @@
 	"create" : "group",
     "parent" : "moma.qsm",
 	"group"  : {
-		"name"    : "data",
-        "label"   : "Data",
-		"desc"    : "MOMA QSM model data group."
+		"name"  : "data",
+        "label" : "Data",
+		"desc"  : "MOMA QSM model data group."
 	}
 }
