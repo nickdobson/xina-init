@@ -18,11 +18,14 @@
         "trash"     : true,
         "wall"      : true,
         "objects"   : {
-            "repo_entry"       : "{Timestamp}-{TID}-{TID Text}",
+            "repo_record"      : "{Timestamp}-{TID}-{TID Text}",
             "os_win_repo_path" : "{$doc}{$}MOMA{$}data",
             "os_osx_repo_path" : "{$home}{$}MOMA{$}data",
             "os_nix_repo_path" : "{$home}{$}gse{$}data"
         },
+        "order" : [
+            [ "TID", "desc" ]
+        ],
         "fields" : [
             {
                 "name"  : "TID",
@@ -213,6 +216,11 @@
             {
                 "name"  : "Sum Scans",
                 "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Scans Mined",
+                "type"  : "int(4)",
                 "nul"   : true
             },
             {

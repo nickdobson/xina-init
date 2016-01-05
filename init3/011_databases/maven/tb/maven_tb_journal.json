@@ -28,9 +28,8 @@
         },
         "fields" : [
             {
-                "name"  : "Date",
-                "type"  : "date",
-                "index" : true
+                "name" : "Date",
+                "type" : "localdate"
             },
             {
                 "name" : "Timestamp",

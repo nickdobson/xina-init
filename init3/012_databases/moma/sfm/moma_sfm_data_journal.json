@@ -1,0 +1,25 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "moma.sfm.data",
+    "database" : {
+        "name"   : "journal",
+        "label"  : "journal.txt",
+        "desc"   : "MOMA spare flight model journal.txt database.",
+        "format" : "{TID} {Line}",
+        "fields" : [
+            {
+                "name"  : "TID",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Line Number",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Line",
+                "type"  : "utf8string"
+            }
+        ]
+    }
+}

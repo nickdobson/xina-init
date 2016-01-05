@@ -1,0 +1,8 @@
+{
+  "action": "set",
+  "database": "sam.fm.components",
+  "records": {
+      "type": "csv",
+      "$object_id": "{local}/sam_fm_components.csv"
+  }
+}

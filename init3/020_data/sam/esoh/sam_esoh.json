@@ -1,0 +1,8 @@
+{
+    "action"   : "set",
+    "database" : "sam.esoh",
+    "records"  : {
+        "type"       : "tsv",
+        "$object_id" : "{local}/sam_esoh.txt"
+    }
+}

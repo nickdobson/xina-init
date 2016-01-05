@@ -33,12 +33,12 @@
         "fields" : [
             {
                 "name" : "Date",
-                "type" : "date"
+                "type" : "localdate"
             },
             {
                 "name" : "Timestamp",
                 "type" : "datetime",
-                "key"  :  true
+                "key"  : true
             },
             {
                 "name" : "Content",

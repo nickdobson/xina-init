@@ -1,0 +1,65 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "maven.fm_flt.data.sci",
+    "database" : {
+        "name"   : "l3_res_den",
+        "label"  : "L3_res_den",
+        "desc"   : "MAVEN flight model (flight) L3_res_den science data.",
+        "format" : "{t_unix} {mass_x100} {averaged_density}",
+        "fields": [
+            {
+                "name" : "t_unix",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_sclk",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_tid",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "tid",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "mass_x100",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "species",
+                "type" : "asciistring(16)",
+                "nul"  : true
+            },
+            {
+                "name" : "averaged_density",
+                "type" : "float(4)",
+                "nul"  : true
+            },
+            {
+                "name" : "focus_mode",
+                "type" : "asciistring(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "orbit",
+                "type" : "int(4)",
+                "nul"  : true
+            },
+            {
+                "name" : "alt",
+                "type" : "float(4)",
+                "meas" : "altitude",
+                "unit" : "km",
+                "nul"  : true
+            }
+        ],
+        "indexes" : [
+            ["mass_x100", "alt"],
+            ["species", "alt"],
+            ["tid", "mass_x100"]
+        ]
+    }
+}

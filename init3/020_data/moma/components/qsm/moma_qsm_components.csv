@@ -1,0 +1,220 @@
+Category,Name
+background,ALD
+background,UCZ
+background,GC
+chamber,MN 1
+chamber,MN 2
+chamber,WRP
+chamber,Oven
+chamber,ITMS
+chamber,RF
+chamber,Laser
+chamber,µ-Pirani
+chamber,Det Board
+chamber,ALD Cold Finger
+chamber,Valves Plate
+chamber,Sample Carousel
+chamber,Trap 1
+chamber,Trap 2
+chamber,TCD 1
+chamber,TCD 2
+chamber,TCD 3
+chamber,TCD 4
+chamber,Col 1
+chamber,Col 2
+chamber,Col 3
+chamber,Col 4
+chamber,Gas Split
+gastank,He
+gastank,Cal
+heater,H1
+heater,H2
+heater,H3
+heater,H4
+heater,H5
+heater,H6
+heater,H7
+heater,H8
+heater,H9
+heater,H10
+heater,H11
+heater,H12
+heater,H13
+heater,H14
+heater,H15
+heater,H16
+heater,H17
+heater,H18
+heater,H19
+heater,H20
+heater,H21
+heater,H22
+heater,H23
+heater,H23
+heater,HCLM1
+heater,HCLM2
+heater,HCLM3
+heater,HCLM4
+heater,HTCD1
+heater,HTCD2
+heater,HTCD3
+heater,HTCD4
+heater,HCPL1
+heater,HCPL2
+heater,HCPL3
+heater,HCPL4
+heater,HVP1
+heater,HVP2
+heater,HVP3
+heater,HVP4
+heater,HTRP1
+heater,HTRP2
+heater,HCPL5
+heater,HCPL6
+heater,HCPL7
+heater,HCPL8
+heater,HCPL9 (TSO)
+heater,HOVN (TSO)
+pipe,IntakeToGC
+pipe,GCToM1
+pipe,T2ToPSIN
+pipe,M1ToJ4
+pipe,J1ToIV1
+pipe,M4ToM5
+pipe,M5ToM7
+pipe,M7ToJ7
+pipe,M8ToJ6
+pipe,M8ToM6
+pipe,M6ToJ4
+pipe,J9ToM19
+pipe,J8ToJ14Loop
+pipe,DV3ToM9
+pipe,DV15ToDV17
+pipe,DV16ToDV18
+pipe,DV19ToDV21
+pipe,DV20ToDV22
+pipe,M2ToJ1
+pipe,J11ToPSOUT
+pipe,J5ToJ8
+pipe,HeTankToJ1
+pipe,M3ToOven
+pipe,M4ToOven
+pipe,PSCLIMToCoupling
+pipe,DV15ToDV16
+pipe,DV18ToDV17
+pipe,DV19ToDV20
+pipe,DV22ToDV21
+pipe,J11ToPortA
+pipe,CalGasToPortB
+pipe,PSOUTToJ11
+pipe,GasSplitToWRP
+pipe,RoverExhaust
+pipe,P1toP2
+pipe,P1P2toITMS
+pipe,ITMStoAperture
+prt,T1
+prt,T2
+prt,T3
+prt,T4
+prt,T5
+prt,T6
+prt,T7
+prt,T8
+prt,T9
+prt,T10
+prt,T11
+prt,TTCD1
+prt,TTCD2
+prt,TTCD3
+prt,TTCD4
+prt,TCLM1
+prt,TCLM2
+prt,TCLM3
+prt,TCLM4
+prt,TCPL1
+prt,TCPL2
+prt,TCPL3
+prt,TCPL4
+prt,TCPL5
+prt,TCPL6
+prt,TCPL7
+prt,TCPL8
+prt,TCPL9 (TSO)
+prt,TTP
+prt,TTRP1
+prt,TTRP2
+prt,TVP1
+prt,TVP2
+prt,TVP3
+prt,TVP4
+prt,TOVN (TSO)
+pressure,PSIN
+pressure,PSCLM
+pressure,PSOUT
+tappingstation,Tapping Station
+valve,PCV
+valve,DV1
+valve,DV2
+valve,DV3
+valve,DV4
+valve,DV5
+valve,DV6
+valve,DV7
+valve,DV8
+valve,DV9
+valve,DV10
+valve,DV11
+valve,DV12
+valve,DV13
+valve,DV14
+valve,DV15
+valve,DV16
+valve,DV17
+valve,DV18
+valve,DV19
+valve,DV20
+valve,IV1
+valve,IV2
+valve,V1
+valve,V2
+valve,V3
+valve,V4
+junction,J1
+junction,J2
+junction,J3
+junction,J4
+junction,J5
+junction,J6
+junction,J7
+junction,J8
+junction,J9
+junction,J10
+junction,J11
+junction,J12
+junction,J13
+junction,J14
+junction,J15
+junction,C1
+junction,C2
+junction,C3
+junction,T1
+junction,T2
+coupling,M1
+coupling,M2
+coupling,M3
+coupling,M4
+coupling,M5
+coupling,M6
+coupling,M7
+coupling,M8
+coupling,M9
+coupling,M10
+coupling,M11
+coupling,M12
+coupling,M13
+coupling,M14
+coupling,M15
+coupling,M16
+coupling,M17
+coupling,M18
+coupling,M19

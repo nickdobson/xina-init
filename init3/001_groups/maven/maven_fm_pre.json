@@ -7,7 +7,8 @@
         "label"   : "Flight Model (Preflight)",
         "desc"    : "MAVEN flight model (preflight) group.",
         "objects" : {
-            "xo_struct_model" : {}
+            "xo_struct_model" : {"esoh": "maven.esoh"},
+            "xo_view_default" : {"*": "tid"}
         }
     }
 }

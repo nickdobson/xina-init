@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "maven.fm_pre.data",
+	"group"  : {
+		"name"  : "sci",
+        "label" : "Science",
+		"desc"  : "MAVEN flight model (preflight) science data group."
+	}
+}

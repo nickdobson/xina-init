@@ -4,6 +4,9 @@
 	"group"  : {
 		"name"  : "sam",
         "label" : "SAM",
-		"desc"  : "Primary group for the Sample Analysis at Mars (SAM) mission."
+		"desc"  : "Primary group for the Sample Analysis at Mars (SAM) mission.",
+        "objects" : {
+            "xo_view_default" : {"*": "tid"}
+        }
 	}
 }

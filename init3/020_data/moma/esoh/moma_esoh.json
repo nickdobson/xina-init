@@ -1,0 +1,8 @@
+{
+    "action"   : "set",
+    "database" : "moma.esoh",
+    "records"  : {
+        "type"       : "tsv",
+        "$object_id" : "{local}/moma_esoh.txt"
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "action": "set",
+  "database": "sam.tb.def",
+  "records": {
+      "type": "tsv",
+      "$object_id": "{local}/sam_tb_def.txt"
+  }
+}

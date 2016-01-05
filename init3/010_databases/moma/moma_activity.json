@@ -179,7 +179,7 @@
             },
             {
                 "name"    : "Review Meeting Date",
-                "type"    : "date",
+                "type"    : "localdate",
                 "nul"     : true
             },
             {

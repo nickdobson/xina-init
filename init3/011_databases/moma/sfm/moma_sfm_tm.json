@@ -1,0 +1,401 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "moma.sfm",
+    "database" : {
+        "name"      : "tm",
+        "label"     : "Telemetry",
+        "desc"      : "MOMA spare flight model telemetry database.",
+        "format"    : "{TID}-{TID Text}",
+        "singular"  : "TID",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "objects"   : {
+            "repo_record"      : "{Timestamp}-{TID}-{TID Text}",
+            "os_win_repo_path" : "{$doc}{$}MOMA{$}data",
+            "os_osx_repo_path" : "{$home}{$}MOMA{$}data",
+            "os_nix_repo_path" : "{$home}{$}gse{$}data"
+        },
+        "order" : [
+            [ "TID", "desc" ]
+        ],
+        "fields" : [
+            {
+                "name"  : "TID",
+                "type"  : "int(4)",
+                "key"   : true
+            },
+            {
+                "name"  : "TID Text",
+                "type"  : "utf8string(64)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "Timestamp",
+                "type"  : "asciistring(32)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "Date",
+                "type"  : "localdate",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "DOY",
+                "type"  : "int(2)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "Model",
+                "type"  : "utf8string(16)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "Valid Time",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Contains MOMA Data",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Scripts",
+                "type"  : "jsonarray",
+                "nul"   : true
+            },
+            {
+                "name"  : "Tables",
+                "type"  : "jsonarray",
+                "nul"   : true
+            },
+            {
+                "name"  : "momlib Version",
+                "type"  : "utf8string(16)",
+                "nul"   : true
+            },
+            {
+                "name"  : "gclib Version",
+                "type"  : "utf8string(16)",
+                "nul"   : true
+            },
+            {
+                "name"  : "laserlib Version",
+                "type"  : "utf8string(16)",
+                "nul"   : true
+            },
+            {
+                "name"  : "FSW Version",
+                "type"  : "utf8string(16)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Mass Cal",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Mass Cal Slope",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Mass Cal Offset",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Energy",
+                "type"  : "float(8)",
+                "meas"  : "energy",
+                "unit"  : "Wh",
+                "nul"   : true
+            },
+            {
+                "name"  : "WRP On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
+                "nul"   : true
+            },
+            {
+                "name"  : "Filament On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
+                "nul"   : true
+            },
+            {
+                "name"  : "Filament 1 On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
+                "nul"   : true
+            },
+            {
+                "name"  : "Filament 2 On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 1 On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 2 On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM Counts",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 1 Counts",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 2 Counts",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 1 Soft Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 2 Soft Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 1 Full Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "EM 2 Full Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Scans",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Sum Scans",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Scans Mined",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Laser Shots",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "APV Operations",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Ambient Pressure",
+                "type"  : "float(8)",
+                "meas"  : "pressure",
+                "unit"  : "mTorr",
+                "nul"   : true
+            },
+            {
+                "name"  : "Ambient Temp",
+                "type"  : "float(8)",
+                "meas"  : "temperature",
+                "unit"  : "C",
+                "nul"   : true
+            },
+            {
+                "name"  : "Pressure",
+                "type"  : "utf8text",
+                "meas"  : "pressure",
+                "unit"  : "mTorr",
+                "nul"   : true
+            },
+            {
+                "name"  : "Current",
+                "type"  : "utf8text",
+                "meas"  : "current",
+                "unit"  : "A",
+                "nul"   : true
+            },
+            {
+                "name"  : "Chromatograph",
+                "type"  : "utf8text",
+                "unit"  : "ions/scan",
+                "nul"   : true
+            },
+            {
+                "name"  : "Start Time",
+                "type"  : "datetime",
+                "nul"   : true
+            },
+            {
+                "name"  : "End Time",
+                "type"  : "datetime",
+                "nul"   : true
+            },
+            {
+                "name"  : "Size",
+                "type"  : "int(8)",
+                "nul"   : true,
+                "unit"  : "bytes"
+            },
+            {
+                "name"  : "Markers",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Messages",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "HK Bin UTC",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "HK Bin Relative",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "HK Bin Marker",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "HK Bin TID",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "HK Full",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_utc_start",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_utc_end",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_sclk_start",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "t_sclk_end",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "dt",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Comments",
+                "type"  : "utf8text",
+                "nul"   : true
+            }
+        ],
+        "databases" : [
+            {
+                "name"        : "file",
+                "label"       : "File",
+                "desc"        : "MOMA spare flight model telemetry file database.",
+                "format"      : "{TID} {Name}",
+                "file_format" : "{Name}",
+                "singular"    : "file",
+                "event"       : true,
+                "file"        : true,
+                "link"        : true,
+                "log"         : true,
+                "notify"      : true,
+                "subscribe"   : true,
+                "tag"         : true,
+                "track"       : true,
+                "trash"       : true,
+                "wall"        : true,
+                "order" : [
+                    [ "TID",      "desc" ],
+                    [ "Priority", "asc"  ],
+                    [ "Name",     "asc"  ]
+                ],
+                "fields" : [
+                    {
+                        "name"  : "TID",
+                        "type"  : "int(4)",
+                        "ref"   : "TID",
+                        "key"   : true
+                    },
+                    {
+                        "name"  : "Name",
+                        "type"  : "utf8string(128)",
+                        "key"   : true
+                    },
+                    {
+                        "name"  : "Priority",
+                        "type"  : "int(4)",
+                        "def"   : "3"
+                    },
+                    {
+                        "name"  : "Desc",
+                        "type"  : "utf8string",
+                        "nul"   : true
+                    }
+                ]
+            }
+        ]
+    }
+}

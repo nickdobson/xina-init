@@ -1,0 +1,8 @@
+{
+  "action": "set",
+  "database": "moma.etu.component",
+  "records": {
+      "type": "csv",
+      "$object_id": "{local}/moma_etu_components.csv"
+  }
+}

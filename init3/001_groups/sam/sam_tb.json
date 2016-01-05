@@ -7,7 +7,8 @@
         "label"   : "Testbed Model",
 		"desc"    : "SAM testbed model group.",
         "objects" : {
-            "xo_struct_model" : {}
+            "xo_struct_model" : {"esoh": "sam.esoh"},
+            "xo_view_default" : {"*": "tid"}
         }
 	}
 }

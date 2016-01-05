@@ -1,0 +1,8 @@
+{
+    "action": "set",
+    "database": "moma.qsm.component",
+    "records": {
+        "type": "csv",
+        "$object_id": "{local}/moma_qsm_components.csv"
+    }
+}

@@ -20,12 +20,17 @@
         "fields"    : [
             {
                 "name" : "Prepared Date",
-                "type" : "date",
+                "type" : "localdate",
                 "key"  : true
             },
             {
                 "name" : "Loaded Date",
-                "type" : "date",
+                "type" : "localdate",
+                "nul"  : true
+            },
+            {
+                "name" : "Unoaded Date",
+                "type" : "localdate",
                 "nul"  : true
             },
             {
@@ -80,6 +85,11 @@
             },
             {
                 "name" : "Loaded By",
+                "type" : "utf8string(64)",
+                "nul"  : true
+            },
+            {
+                "name" : "Unloaded By",
                 "type" : "utf8string(64)",
                 "nul"  : true
             },

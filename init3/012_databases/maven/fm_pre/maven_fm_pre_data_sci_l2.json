@@ -1,0 +1,105 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "maven.fm_pre.data.sci",
+    "database" : {
+        "name"   : "l2",
+        "label"  : "L2",
+        "desc"   : "MAVEN flight model (preflight) L2 science data.",
+        "format" : "{t_unix} {mass_x100} {cps_raw}",
+        "fields" : [
+            {
+                "name" : "t_unix",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_sclk",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_tid",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "tid",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "umkid",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "mass_x100",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "counts",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "cps_raw",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "cps_raw_bkgd",
+                "type" : "float(4)",
+                "nul"  : true
+            },
+            {
+                "name" : "cps_dt",
+                "type" : "float(4)",
+                "nul"  : true
+            },
+            {
+                "name" : "cps_dt_bkgd",
+                "type" : "float(4)",
+                "nul"  : true
+            },
+            {
+                "name" : "bkgd",
+                "type" : "float(4)",
+                "nul"  : true
+            },
+            {
+                "name" : "abundance",
+                "type" : "float(4)",
+                "unit" : "part/cc",
+                "nul"  : true
+            },
+            {
+                "name" : "focus_mode",
+                "type" : "asciistring(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "filament",
+                "type" : "int(1)",
+                "nul"  : true
+            },
+            {
+                "name" : "multiplier",
+                "type" : "int(1)",
+                "nul"  : true
+            },
+            {
+                "name" : "temperature_s",
+                "type" : "float(4)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "pressure",
+                "type" : "float(4)",
+                "meas" : "pressure",
+                "unit" : "Torr",
+                "nul"  : true
+            }
+        ],
+        "indexes" : [
+            ["multiplier", "focus_mode", "mass_x100"],
+            ["multiplier", "focus_mode", "tid", "mass_x100"],
+            ["multiplier", "focus_mode", "umkid", "mass_x100"]
+        ]
+    }
+}

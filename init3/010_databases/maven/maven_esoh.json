@@ -1,0 +1,40 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "maven",
+    "database" : {
+        "name"      : "esoh",
+        "label"     : "ESOH",
+        "desc"      : "MAVEN ESOH (engineering state of health) database.",
+        "format"    : "{Name}",
+        "singular"  : "ESOH",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "order"     : [
+            [ "Name", "asc" ]
+        ],
+        "fields" : [
+            {
+                "name"  : "Name",
+                "type"  : "asciistring(32)",
+                "key"   : true
+            },
+            {
+                "name"  : "HKs",
+                "type"  : "jsonarray"
+            },
+            {
+                "name"  : "Zoom",
+                "type"  : "jsonarray",
+                "nul"   : true
+            }
+        ]
+    }
+}

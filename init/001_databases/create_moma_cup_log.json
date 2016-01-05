@@ -23,6 +23,11 @@
                 "nul"   : true
             },
             {
+                "name"  : "Unoaded Date",
+                "type"  : "date",
+                "nul"   : true
+            },
+            {
                 "name"  : "Instrument",
                 "type"  : "string(16)",
                 "key"   : true
@@ -77,6 +82,11 @@
             },
             {
                 "name" : "Loaded By",
+                "type" : "string(64)",
+                "nul"  : true
+            },
+            {
+                "name" : "Unloaded By",
                 "type" : "string(64)",
                 "nul"  : true
             },

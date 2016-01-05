@@ -1,0 +1,12 @@
+Name	HKs	Zoom
+MAIF IMONs 1	"[824, 827]"	
+MAIF IMONs 2	"[820, 828]"	
+MAIF VMONs 1	"[812, 813]"	
+MAIF VMONs 2	"[814, 815]"	
+MAIF VMONs 3	"[816, 817]"	
+MAIF Temps - Boards	"[805, 806, 811]"	
+"MAIF Temps - WRP, MP"	"[807, 851, 854]"	
+"MAIF Temps - Manfs, Housing"	"[808, 820, 821, 826]"	
+"MAIF Temps - Lens, Shields"	"[819, 823, 809]"	
+"MAIF Temps - Lines, Elbow"	"[810, 825, 822]"	
+RSIM Currents	"[909, 929, 930, 931]"

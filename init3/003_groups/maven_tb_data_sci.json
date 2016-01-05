@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "maven.tb.data",
+	"group"  : {
+		"name"  : "sci",
+        "label" : "Science",
+		"desc"  : "MAVEN testbed model science data group."
+	}
+}

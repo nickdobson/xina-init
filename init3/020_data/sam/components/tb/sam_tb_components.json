@@ -1,0 +1,8 @@
+{
+  "action": "set",
+  "database": "sam.tb.components",
+  "records": {
+      "type": "csv",
+      "$object_id": "{local}/sam_tb_components.csv"
+  }
+}

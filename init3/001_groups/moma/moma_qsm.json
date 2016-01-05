@@ -7,7 +7,8 @@
         "label"   : "QSM Model",
         "desc"    : "MOMA QSM model group.",
         "objects" : {
-            "xo_struct_model" : {}
+            "xo_struct_model" : {"esoh": "moma.esoh"},
+            "xo_view_default" : {"*": "tid"}
         }
     }
 }

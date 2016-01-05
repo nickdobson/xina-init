@@ -1,0 +1,48 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "sam.fm",
+    "database" : {
+        "name"      : "config",
+        "label"     : "Configuration",
+        "desc"      : "SAM flight model configuration database.",
+        "format"    : "{Start TID}-{End TID} {Description}",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "fields"    : [
+            {
+                "name"  : "Start TID",
+                "type"  : "int(4)",
+                "key"   : true
+            },
+            {
+                "name"  : "End TID",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Instant",
+                "type"  : "boolean",
+                "nul"   : true,
+                "def"   : "false"
+            },
+            {
+                "name"  : "Reset",
+                "type"  : "jsonarray",
+                "nul"   : true
+            },
+            {
+                "name"  : "Description",
+                "type"  : "utf8text",
+                "nul"   : true
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "maven.tb.data.sci",
+    "database" : {
+        "name"   : "l1",
+        "label"  : "L1",
+        "desc"   : "MAVEN testbed model L1 science data.",
+        "format" : "{t_unix} {mass_x100} {cps_raw}",
+        "fields" : [
+            {
+                "name" : "t_unix",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_sclk",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_tid",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "tid",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "umkid",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "mass_x100",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "counts",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "cps_raw",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "cps_dt",
+                "type" : "float(4)",
+                "nul"  : true
+            },
+            {
+                "name" : "focus_mode",
+                "type" : "asciistring(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "filament",
+                "type" : "int(1)",
+                "nul"  : true
+            },
+            {
+                "name" : "multiplier",
+                "type" : "int(1)",
+                "nul"  : true
+            },
+            {
+                "name" : "ion_gauge_1",
+                "type" : "float(4)",
+                "meas" : "pressure",
+                "unit" : "uTorr",
+                "nul"  : true
+            },
+            {
+                "name" : "ion_gauge_2",
+                "type" : "float(4)",
+                "meas" : "pressure",
+                "unit" : "uTorr",
+                "nul"  : true
+            },
+            {
+                "name" : "pressure_spread",
+                "type" : "float(4)",
+                "unit" : "%",
+                "nul"  : true
+            },
+            {
+                "name" : "temperature_s",
+                "type" : "float(4)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            }
+        ],
+        "indexes" : [
+            ["multiplier", "focus_mode", "mass_x100"],
+            ["multiplier", "focus_mode", "tid", "mass_x100"],
+            ["multiplier", "focus_mode", "umkid", "mass_x100"]
+        ]
+    }
+}

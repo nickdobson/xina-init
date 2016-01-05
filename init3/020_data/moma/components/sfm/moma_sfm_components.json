@@ -1,0 +1,8 @@
+{
+  "action": "set",
+  "database": "moma.sfm.component",
+  "records": {
+      "type": "csv",
+      "$object_id": "{local}/moma_sfm_components.csv"
+  }
+}

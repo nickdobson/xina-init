@@ -1,0 +1,54 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "maven.tb.data.sci",
+    "database" : {
+        "name"   : "frac",
+        "label"  : "Frac",
+        "desc"   : "MAVEN testbed model science frac data.",
+        "format" : "{tid} {t_tid} {mass_x100} {cps}",
+        "fields" : [
+            {
+                "name" : "tid",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "t_tid",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "mkid",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "mktxt",
+                "type" : "utf8string(64)"
+            },
+            {
+                "name" : "pump",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "inlet",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "cs_temp",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "mass_x100",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "cps",
+                "type" : "float(4)"
+            }
+        ],
+        "indexes" : [
+            ["tid", "mass_x100"],
+            ["mktxt", "mass_x100"],
+            ["mass_x100"]
+        ]
+    }
+}

@@ -18,7 +18,7 @@
         "trash"     : true,
         "wall"      : true,
         "objects"   : {
-            "repo_entry"       : "{Timestamp}-{TID}-{TID Text}",
+            "repo_record"      : "{Timestamp}-{TID}-{TID Text}",
             "os_win_repo_path" : "{$doc}{$}MAVEN{$}data",
             "os_osx_repo_path" : "{$home}{$}MAVEN{$}data",
             "os_nix_repo_path" : "{$home}{$}gse{$}data"

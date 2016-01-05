@@ -1,0 +1,8 @@
+{
+  "action": "set",
+  "database": "sam.fm.def",
+  "records": {
+      "type": "tsv",
+      "$object_id": "{local}/sam_fm_def.txt"
+  }
+}

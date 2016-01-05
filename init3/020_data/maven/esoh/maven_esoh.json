@@ -1,0 +1,8 @@
+{
+    "action"   : "set",
+    "database" : "maven.esoh",
+    "records"  : {
+        "type"       : "tsv",
+        "$object_id" : "{local}/maven_esoh.txt"
+    }
+}

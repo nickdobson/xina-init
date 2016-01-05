@@ -1,0 +1,8 @@
+{
+  "action": "set",
+  "database": "moma.etu.def",
+  "records": {
+      "type": "tsv",
+      "$object_id": "{local}/moma_etu_def.txt"
+  }
+}

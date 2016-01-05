@@ -1,0 +1,8 @@
+{
+  "action": "set",
+  "database": "maven.fm_flt.def",
+  "entries": {
+      "type": "tsv",
+      "$object_id": "{local}/maven_def.txt"
+  }
+}

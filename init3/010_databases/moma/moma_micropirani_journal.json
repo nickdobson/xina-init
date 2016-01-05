@@ -33,7 +33,7 @@
         "fields" : [
             {
                 "name" : "Date",
-                "type" : "date"
+                "type" : "localdate"
             },
             {
                 "name" : "Timestamp",
