@@ -101,6 +101,9 @@
                 "type"  : "utf8string(8)",
                 "nul"   : true
             }
+        ],
+        "indexes" : [
+            ["MKID"]
         ]
     }
 }

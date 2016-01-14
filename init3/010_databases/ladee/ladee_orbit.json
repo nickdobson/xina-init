@@ -1,0 +1,32 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "ladee",
+    "database" : {
+        "name"     : "orbit",
+        "label"    : "Orbit",
+        "desc"     : "LADEE orbit information database.",
+        "singular" : "orbit",
+        "link"     : true,
+        "wall"     : true,
+        "fields"   : [
+            {
+                "name" : "t_utc_start",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_utc_end",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "dt",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "orbit",
+                "type" : "int(4)",
+                "key"  : true
+            }
+        ]
+    }
+}

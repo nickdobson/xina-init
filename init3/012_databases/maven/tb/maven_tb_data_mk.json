@@ -58,6 +58,15 @@
                 "type"  : "utf8string(64)",
                 "nul"   : true
             }
+        ],
+        "indexes" : [
+            ["t_utc"],
+            ["t_rel"],
+            ["TID", "MK ID"],
+            ["TID", "MK Name"],
+            ["UMKID"],
+            ["MK ID"],
+            ["MK Name"]
         ]
     }
 }

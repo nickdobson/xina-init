@@ -36,6 +36,14 @@
                 "name"  : "Message",
                 "type"  : "utf8string"
             }
+        ],
+        "indexes" : [
+            ["t_utc"],
+            ["t_rel"],
+            ["TID", "Message"],
+            ["UMKID"],
+            ["UMID"],
+            ["Message"]
         ]
     }
 }
