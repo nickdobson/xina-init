@@ -8,6 +8,7 @@
         "desc"      : "MAVEN flight model (flight) meta-marker database.",
         "format"    : "{TID} {Text}",
         "singular"  : "marker",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

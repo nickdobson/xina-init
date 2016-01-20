@@ -7,6 +7,9 @@
         "label"  : "Orbit",
         "desc"   : "MAVEN orbit ephemeris data.",
         "format" : "{orbit}",
+        "backup" : true,
+        "link"   : true,
+        "wall"   : true,
         "fields" : [
             {
                 "name"  : "orbit",

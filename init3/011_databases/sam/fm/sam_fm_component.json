@@ -8,6 +8,7 @@
         "desc"      : "SAM flight model components database.",
         "format"    : "{Name}",
         "singular"  : "component",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

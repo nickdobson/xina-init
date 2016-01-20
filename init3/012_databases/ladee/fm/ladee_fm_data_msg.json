@@ -1,11 +1,11 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "parent"   : "maven.fm_pre.data",
+    "parent"   : "ladee.fm.data",
     "database" : {
         "name"   : "msg",
         "label"  : "Message",
-        "desc"   : "MAVEN flight model (preflight) message database.",
+        "desc"   : "LADEE flight model message database.",
         "format" : "{t_rel} {Message}",
         "fields" : [
             {

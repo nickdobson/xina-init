@@ -7,6 +7,7 @@
         "label"     : "Configuration",
         "desc"      : "MOMA ETU model configuration database.",
         "format"    : "{Start TID}-{End TID} {Description}",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

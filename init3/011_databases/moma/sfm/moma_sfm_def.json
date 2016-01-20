@@ -8,6 +8,7 @@
         "desc"     : "MOMA spare flight model telemetry definition information.",
         "format"   : "hk{Data ID}_{Sub System}:{Name}",
         "singular" : "field",
+        "backup"    : true,
         "link"     : true,
         "wall"     : true,
         "order"    : [ [ "Data ID", "asc" ] ],

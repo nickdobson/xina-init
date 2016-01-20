@@ -8,6 +8,7 @@
         "desc"      : "MAVEN testbed model telemetry database.",
         "format"    : "{TID}-{TID Text}",
         "singular"  : "TID",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

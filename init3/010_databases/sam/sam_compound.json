@@ -7,6 +7,7 @@
         "label"     : "Compound Library",
         "desc"      : "SAM contaminant and terrestrial background compound library.",
         "format"    : "{Path} / {Name}",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

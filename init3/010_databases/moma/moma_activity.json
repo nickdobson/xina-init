@@ -8,6 +8,7 @@
         "desc"      : "MOMA payload uplink activity tracker.",
         "format"    : "{ID} {Name}",
         "singular"  : "uplink",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

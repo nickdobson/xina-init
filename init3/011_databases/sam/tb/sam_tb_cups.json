@@ -8,6 +8,7 @@
         "desc"      : "SAM testbed model cup database.",
         "format"    : "{Cup No} ({Type})",
         "singular"  : "cup",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

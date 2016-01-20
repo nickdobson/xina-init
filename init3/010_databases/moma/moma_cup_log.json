@@ -8,6 +8,7 @@
         "desc"      : "MOMA cup activity log database.",
         "format"    : "{Loaded Date} / {Instrument} / {Carousel Number} / {Samples}",
         "singular"  : "event",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

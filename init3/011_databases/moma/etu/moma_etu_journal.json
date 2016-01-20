@@ -6,6 +6,7 @@
         "name"      : "journal",
         "label"     : "Journal",
         "desc"      : "MOMA ETU activity journal.",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

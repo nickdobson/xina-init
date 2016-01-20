@@ -8,6 +8,7 @@
         "desc"      : "MOMA housekeeping expected values database.",
         "format"    : "{HK ID} {MK ID}",
         "singular"  : "value",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

@@ -8,6 +8,7 @@
         "desc"      : "SAM ESOH (engineering state of health) database.",
         "format"    : "{Name}",
         "singular"  : "ESOH",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

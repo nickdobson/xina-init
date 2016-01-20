@@ -6,6 +6,7 @@
         "name"      : "component",
         "label"     : "Component",
         "desc"      : "MOMA ETU model component database.",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

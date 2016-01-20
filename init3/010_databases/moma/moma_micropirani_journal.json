@@ -6,6 +6,7 @@
         "name"      : "micropirani_journal",
         "label"     : "MicroPirani Journal",
         "desc"      : "MOMA MicroPirani activity journal.",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

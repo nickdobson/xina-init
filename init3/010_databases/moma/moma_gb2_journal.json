@@ -6,6 +6,7 @@
         "name"      : "gb2_journal",
         "label"     : "GB2 Journal",
         "desc"      : "MOMA GB2 activity journal.",
+        "backup"    : true,
         "event"     : true,
         "link"      : true,
         "log"       : true,

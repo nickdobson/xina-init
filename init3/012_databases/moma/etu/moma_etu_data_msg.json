@@ -40,10 +40,10 @@
         "indexes" : [
             ["t_utc"],
             ["t_rel"],
-            ["TID", "Message"],
+            ["TID", ["Message", 128]],
             ["UMKID"],
             ["UMID"],
-            ["Message"]
+            [["Message", 128]]
         ]
     }
 }
