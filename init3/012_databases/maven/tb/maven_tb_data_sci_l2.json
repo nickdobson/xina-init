@@ -110,6 +110,7 @@
             }
         ],
         "indexes" : [
+            ["tid"],
             ["multiplier", "focus_mode", "mass_x100"],
             ["multiplier", "focus_mode", "tid", "mass_x100"],
             ["multiplier", "focus_mode", "umkid", "mass_x100"]

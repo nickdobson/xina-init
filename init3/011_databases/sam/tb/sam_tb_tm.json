@@ -386,6 +386,54 @@
                 "type"  : "utf8text",
                 "nul"   : true
             }
+        ],
+        "databases" : [
+            {
+                "name"        : "file",
+                "label"       : "File",
+                "desc"        : "SAM testbed model telemetry files database.",
+                "format"      : "{TID} {Name}",
+                "file_format" : "{Name}",
+                "singular"    : "file",
+                "event"       : true,
+                "file"        : true,
+                "link"        : true,
+                "log"         : true,
+                "notify"      : true,
+                "subscribe"   : true,
+                "tag"         : true,
+                "track"       : true,
+                "trash"       : true,
+                "wall"        : true,
+                "order" : [
+                    [ "TID",      "desc" ],
+                    [ "Priority", "asc"  ],
+                    [ "Name",     "asc"  ]
+                ],
+                "fields" : [
+                    {
+                        "name"  : "TID",
+                        "type"  : "int(4)",
+                        "ref"   : "TID",
+                        "key"   : true
+                    },
+                    {
+                        "name"  : "Name",
+                        "type"  : "utf8string(128)",
+                        "key"   : true
+                    },
+                    {
+                        "name"  : "Priority",
+                        "type"  : "int(4)",
+                        "def"   : "3"
+                    },
+                    {
+                        "name"  : "Desc",
+                        "type"  : "utf8string",
+                        "nul"   : true
+                    }
+                ]
+            }
         ]
     }
 }
