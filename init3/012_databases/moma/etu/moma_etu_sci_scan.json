@@ -100,7 +100,7 @@
                 "type" : "int(8)"
             },
             {
-                "name" : "Bins Per RF Entry",
+                "name" : "Highest Peak Bin",
                 "type" : "int(4)",
                 "nul"  : true
             },
@@ -166,13 +166,15 @@
                 "name" : "IS_EMON_A",
                 "type" : "float(4)",
                 "meas" : "current",
-                "unit" : "uA"
+                "unit" : "uA",
+                "nul"  : true
             },
             {
                 "name" : "IS_EMON_B",
                 "type" : "float(4)",
                 "meas" : "current",
-                "unit" : "uA"
+                "unit" : "uA",
+                "nul"  : true
             },
             {
                 "name" : "SRC_A_FOC_A_set",
