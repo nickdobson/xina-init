@@ -1,0 +1,9 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "group"  : {
+        "name"  : "magsite",
+        "label" : "MAG Site",
+        "desc"  : "Primary group for magnetic testing site data."
+    }
+}

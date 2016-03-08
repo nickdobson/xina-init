@@ -1,0 +1,131 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "magsite",
+    "database" : {
+        "name"   : "longterm1",
+        "label"  : "Longterm 1",
+        "desc"   : "Magnetic long term test data.",
+        "format" : "{Timestamp}",
+        "fields" : [
+            {
+                "name" : "timestamp",
+                "type" : "datetime",
+                "key"  : true
+            },
+            {
+                "name" : "sample_id",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "port",
+                "type" : "asciistring(2)"
+            },
+            {
+                "name" : "instr_type",
+                "type" : "asciistring(16)"
+            },
+            {
+                "name" : "sec",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "subsec",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "range",
+                "type" : "float(8)"
+            },
+            {
+                "name" : "x",
+                "type" : "float(8)"
+            },
+            {
+                "name" : "y",
+                "type" : "float(8)"
+            },
+            {
+                "name" : "z",
+                "type" : "float(8)"
+            },
+            {
+                "name" : "pp1_field_strength",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pp1_quality",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pp2_field_strength",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pp2_quality",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "mag-12v_volts",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "mag-12v_curr",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "mag+12v_volts",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "mag+12v_curr",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "zest-12v_volts",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "zest-12v_curr",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "zest+12v_volts",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "zest+12v_curr",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "heater_volts",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "heater_curr",
+                "type" : "float(8)",
+                "nul"  : true
+            }
+        ],
+        "indexes" : [
+            ["port"],
+            ["instr_type"],
+            ["x"],
+            ["y"],
+            ["z"]
+        ]
+    }
+}

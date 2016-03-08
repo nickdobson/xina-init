@@ -6,7 +6,7 @@
         "name"   : "mk",
         "label"  : "Marker",
         "desc"   : "LADEE flight model marker database.",
-        "format" : "{MK ID} {MK Name}",
+        "format" : "{TID} {MK ID} {MK Name}",
         "fields" : [
             {
                 "name"  : "t_utc",

@@ -100,11 +100,6 @@
                 "type" : "int(8)"
             },
             {
-                "name" : "Bins Per RF Entry",
-                "type" : "int(4)",
-                "nul"  : true
-            },
-            {
                 "name" : "Special Scan ID",
                 "type" : "int(4)",
                 "nul"  : true
@@ -202,7 +197,7 @@
             },
             {
                 "name" : "Ionization Time",
-                "type" : "int(8)",
+                "type" : "float(8)",
                 "meas" : "time",
                 "unit" : "ms"
             },

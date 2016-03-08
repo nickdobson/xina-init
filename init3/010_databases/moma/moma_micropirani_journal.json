@@ -61,6 +61,48 @@
                 "type" : "utf8string(16)",
                 "nul"  : true
             }
+        ],
+        "databases" : [
+            {
+                "name"        : "file",
+                "label"       : "File",
+                "desc"        : "MOMA MicroPirani activity journal file database.",
+                "format"      : "{Timestamp} {Name}",
+                "file_format" : "{Name}",
+                "singular"    : "file",
+                "event"       : true,
+                "file"        : true,
+                "link"        : true,
+                "log"         : true,
+                "notify"      : true,
+                "subscribe"   : true,
+                "tag"         : true,
+                "track"       : true,
+                "trash"       : true,
+                "wall"        : true,
+                "order" : [
+                    [ "Timestamp", "desc" ],
+                    [ "Name",      "asc"  ]
+                ],
+                "fields" : [
+                    {
+                        "name" : "Timestamp",
+                        "type" : "datetime",
+                        "ref"  : "Timestamp",
+                        "key"  : true
+                    },
+                    {
+                        "name" : "Name",
+                        "type" : "utf8string(128)",
+                        "key"  : true
+                    },
+                    {
+                        "name" : "Desc",
+                        "type" : "utf8string",
+                        "nul"  : true
+                    }
+                ]
+            }
         ]
     }
 }

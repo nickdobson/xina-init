@@ -1,0 +1,108 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "magsite",
+    "database" : {
+        "name"   : "thinshell_c",
+        "label"  : "Thinshell Port C",
+        "desc"   : "MAG thinshell port C database.",
+        "format" : "{Timestamp}",
+        "fields" : [
+            {
+                "name" : "timestamp",
+                "type" : "datetime",
+                "key"  : true
+            },
+            {
+                "name" : "instr_type",
+                "type" : "asciistring(16)"
+            },
+            {
+                "name" : "year",
+                "type" : "int(2)"
+            },
+            {
+                "name" : "day",
+                "type" : "int(2)"
+            },
+            {
+                "name" : "hour",
+                "type" : "int(2)"
+            },
+            {
+                "name" : "minute",
+                "type" : "int(2)"
+            },
+            {
+                "name" : "second",
+                "type" : "int(2)"
+            },
+            {
+                "name" : "msec",
+                "type" : "int(2)"
+            },
+            {
+                "name" : "dday",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "time_f3",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "time_f2",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "time_f1",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "pkt_seq",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "10_pkt_x",
+                "type" : "float(8)"
+            },
+            {
+                "name" : "10_pkt_y",
+                "type" : "float(8)"
+            },
+            {
+                "name" : "10_pkt_z",
+                "type" : "float(8)"
+            },
+            {
+                "name" : "range",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "b_field",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pp1_field",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pp1_quality",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pp2_field",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pp2_quality",
+                "type" : "float(8)",
+                "nul"  : true
+            }
+        ]
+    }
+}

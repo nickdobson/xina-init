@@ -7,7 +7,7 @@
         "label"   : "Spare Flight Model",
         "desc"    : "MOMA spare flight model group.",
         "objects" : {
-            "xo_struct_model" : {"esoh": "moma.esoh"},
+            "xo_struct_model" : {"esoh": "moma.esoh", "expected": "moma.expected"},
             "xo_view_default" : {"*": "tid"}
         }
     }

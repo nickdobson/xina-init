@@ -1,0 +1,35 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "maven",
+    "database" : {
+        "name"      : "photo",
+        "label"     : "Photo",
+        "desc"      : "MAVEN photo database.",
+        "format"    : "{Name}",
+        "singular"  : "photo",
+        "backup"    : true,
+        "event"     : true,
+        "file"      : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "fields"    : [
+            {
+                "name" : "Name",
+                "type" : "utf8string(128)",
+                "key"  : true
+            },
+            {
+                "name" : "Description",
+                "type" : "utf8string",
+                "nul"  : true
+            }
+        ]
+    }
+}

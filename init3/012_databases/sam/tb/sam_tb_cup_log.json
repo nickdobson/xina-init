@@ -16,21 +16,18 @@
         "trash"     : true,
         "wall"      : true,
         "format"    : "{Time} {Event} {Cup No}",
-        "fields"        : [
+        "fields"    : [
             {
                 "name"  : "Time",
-                "type"  : "datetime",
-                "key"   : true
+                "type"  : "datetime"
             },
             {
                 "name"  : "Event",
-                "type"  : "utf8string(16)",
-                "index" : true
+                "type"  : "utf8string(16)"
             },
             {
                 "name"  : "Cup No",
-                "type"  : "int(1)",
-                "index" : true
+                "type"  : "int(1)"
             },
             {
                 "name"  : "TID",
@@ -62,6 +59,11 @@
                 "type"  : "utf8string",
                 "nul"   : true
             }
+        ],
+        "indexes" : [
+            ["Time"],
+            ["Event"],
+            ["Cup No"]
         ]
     }
 }

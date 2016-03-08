@@ -25,7 +25,7 @@
             "os_nix_repo_path" : "{$home}{$}gse{$}data"
         },
         "order" : [
-            [ "TID", "desc" ]
+            [ "Timestamp", "desc" ]
         ],
         "fields": [
             {

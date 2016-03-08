@@ -78,7 +78,7 @@
             },
             {
                 "name"        : "Marker",
-                "item_format" : "{MK ID} {MK Name}",
+                "item_format" : "{TID} {MK ID} {MK Name}",
                 "fields"      : [
                     {
                         "name"  : "t_utc",

@@ -6,7 +6,7 @@
         "name"   : "msg",
         "label"  : "Message",
         "desc"   : "MOMA flight model message database.",
-        "format" : "{t_rel} {Message}",
+        "format" : "{TID} {t_rel} {Message}",
         "fields" : [
             {
                 "name"  : "t_utc",

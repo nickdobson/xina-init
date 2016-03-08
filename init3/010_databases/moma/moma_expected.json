@@ -20,9 +20,28 @@
         "wall"      : true,
         "fields"    : [
             {
-                "name" : "Models",
-                "type" : "jsonarray",
-                "nul"  : true
+                "name" : "etu",
+                "type" : "boolean",
+                "key"  : true,
+                "def"  : false
+            },
+            {
+                "name" : "fm",
+                "type" : "boolean",
+                "key"  : true,
+                "def"  : false
+            },
+            {
+                "name" : "qsm",
+                "type" : "boolean",
+                "key"  : true,
+                "def"  : false
+            },
+            {
+                "name" : "sfm",
+                "type" : "boolean",
+                "key"  : true,
+                "def"  : false
             },
             {
                 "name" : "HK ID",
