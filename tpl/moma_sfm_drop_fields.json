@@ -1,0 +1,7 @@
+{
+    "action": "alter",
+    "alter": "database",
+    "database": "moma.sfm.tm",
+    "op": "drop_fields",
+    "fields": ["Laser Shots"]
+}

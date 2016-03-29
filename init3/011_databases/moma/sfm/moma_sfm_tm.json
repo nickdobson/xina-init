@@ -200,6 +200,41 @@
                 "nul"   : true
             },
             {
+                "name"  : "Filament A Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Filament B Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "PWM Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Valve 1 Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Valve 2 Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Valve 3 Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Valve 4 Cycles",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
                 "name"  : "Scans",
                 "type"  : "int(8)",
                 "nul"   : true
@@ -215,7 +250,12 @@
                 "nul"   : true
             },
             {
-                "name"  : "Laser Shots",
+                "name"  : "Laser Pre",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Laser Main",
                 "type"  : "int(8)",
                 "nul"   : true
             },

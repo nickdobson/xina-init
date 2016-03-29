@@ -1,0 +1,47 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "magsite",
+    "database" : {
+        "name"   : "longterm_full",
+        "label"  : "Longterm Full",
+        "desc"   : "Magnetic test site long term full vector data.",
+        "format" : "{port} {t}",
+        "fields" : [
+            {
+                "name" : "port",
+                "type" : "asciistring(1)"
+            },
+            {
+                "name" : "t",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_packet",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "sample_id",
+                "type" : "int(2)"
+            },
+            {
+                "name" : "x",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "y",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "z",
+                "type" : "float(4)"
+            }
+        ],
+        "indexes" : [
+            ["port", "t"],
+            ["port", "t_packet"],
+            ["t"],
+            ["t_packet"]
+        ]
+    }
+}

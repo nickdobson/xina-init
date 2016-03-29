@@ -1,0 +1,38 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "magsite",
+    "database" : {
+        "name"   : "hk_def",
+        "label"  : "Housekeeping Definition",
+        "desc"   : "Magnetic testing site housekeeping field definitions.",
+        "format" : "{data_id} {label}",
+        "fields" : [
+            {
+                "name" : "data_id",
+                "type" : "int(4)",
+                "key"  : true
+            },
+            {
+                "name" : "name",
+                "type" : "utf8string(64)"
+            },
+            {
+                "name" : "label",
+                "type" : "utf8string(64)"
+            },
+            {
+                "name" : "unit",
+                "type" : "utf8string(16)"
+            },
+            {
+                "name" : "notes",
+                "type" : "utf8string"
+            },
+            {
+                "name" : "aliases",
+                "type" : "jsonarray"
+            }
+        ]
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "action": "alter",
+    "alter": "database",
+    "database": "sam.tb.tm",
+    "op": "add_fields",
+    "fields": [
+        {
+            "name"  : "WRP1 On Time",
+            "type"  : "int(8)",
+            "nul"   : true,
+            "meas"  : "time",
+            "unit"  : "us"
+        },
+        {
+            "name"  : "WRP2 On Time",
+            "type"  : "int(8)",
+            "nul"   : true,
+            "meas"  : "time",
+            "unit"  : "us"
+        },
+        {
+            "name"  : "He 1 Tank Pressure",
+            "type"  : "float(8)",
+            "nul"   : true,
+            "meas"  : "pressure",
+            "unit"  : "psia"
+        },
+        {
+            "name"  : "He 2 Tank Pressure",
+            "type"  : "float(8)",
+            "nul"   : true,
+            "meas"  : "pressure",
+            "unit"  : "psia"
+        },
+        {
+            "name"  : "O2 Open",
+            "type"  : "int(8)",
+            "nul"   : true,
+            "meas"  : "time",
+            "unit"  : "us"
+        },
+        {
+            "name"  : "Cal Gas Open",
+            "type"  : "int(8)",
+            "nul"   : true,
+            "meas"  : "time",
+            "unit"  : "us"
+        },
+        {
+            "name"  : "TEC A On Time",
+            "type"  : "int(8)",
+            "nul"   : true,
+            "meas"  : "time",
+            "unit"  : "us"
+        },
+        {
+            "name"  : "TEC A Cycles",
+            "type"  : "int(8)",
+            "nul"   : true
+        },
+        {
+            "name"  : "TEC B On Time",
+            "type"  : "int(8)",
+            "nul"   : true,
+            "meas"  : "time",
+            "unit"  : "us"
+        },
+        {
+            "name"  : "TEC B Cycles",
+            "type"  : "int(8)",
+            "nul"   : true
+        }
+    ]
+}

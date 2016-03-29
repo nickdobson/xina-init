@@ -1,0 +1,41 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "magsite",
+    "database" : {
+        "name"   : "hk_bin",
+        "label"  : "Housekeeping Bins",
+        "desc"   : "Magnetic testing site binned housekeeping data.",
+        "format" : "{t} {data_id}",
+        "fields" : [
+            {
+                "name" : "t",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "data_id",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "samples",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "avg",
+                "type" : "float(8)"
+            },
+            {
+                "name" : "min",
+                "type" : "float(8)"
+            },
+            {
+                "name" : "max",
+                "type" : "float(8)"
+            }
+        ],
+        "indexes" : [
+            ["t", "data_id"],
+            ["data_id", "t"]
+        ]
+    }
+}

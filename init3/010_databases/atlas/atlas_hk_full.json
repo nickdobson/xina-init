@@ -1,0 +1,29 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "atlas",
+    "database" : {
+        "name"   : "hk_full",
+        "label"  : "Housekeeping Full",
+        "desc"   : "ATLAS demo housekeeping database.",
+        "format" : "{t} {data_id} {value}",
+        "fields" : [
+            {
+                "name" : "t",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "data_id",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "value",
+                "type" : "float(8)"
+            }
+        ],
+        "indexes" : [
+            ["t", "data_id", "value"],
+            ["data_id", "value"]
+        ]
+    }
+}

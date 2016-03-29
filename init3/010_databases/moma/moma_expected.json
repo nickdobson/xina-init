@@ -23,25 +23,25 @@
                 "name" : "etu",
                 "type" : "boolean",
                 "key"  : true,
-                "def"  : false
+                "def"  : "false"
             },
             {
                 "name" : "fm",
                 "type" : "boolean",
                 "key"  : true,
-                "def"  : false
+                "def"  : "false"
             },
             {
                 "name" : "qsm",
                 "type" : "boolean",
                 "key"  : true,
-                "def"  : false
+                "def"  : "false"
             },
             {
                 "name" : "sfm",
                 "type" : "boolean",
                 "key"  : true,
-                "def"  : false
+                "def"  : "false"
             },
             {
                 "name" : "HK ID",
