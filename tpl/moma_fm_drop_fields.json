@@ -1,7 +1,0 @@
-{
-    "action": "alter",
-    "alter": "database",
-    "database": "moma.fm.tm",
-    "op": "drop_fields",
-    "fields": ["Laser Shots"]
-}

@@ -200,12 +200,12 @@
                 "nul"   : true
             },
             {
-                "name"  : "Filament A Cycles",
+                "name"  : "Filament 1 Cycles",
                 "type"  : "int(4)",
                 "nul"   : true
             },
             {
-                "name"  : "Filament B Cycles",
+                "name"  : "Filament 2 Cycles",
                 "type"  : "int(4)",
                 "nul"   : true
             },
