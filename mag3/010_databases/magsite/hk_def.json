@@ -23,15 +23,18 @@
             },
             {
                 "name" : "unit",
-                "type" : "utf8string(16)"
+                "type" : "utf8string(16)",
+                "nul"  : true
             },
             {
                 "name" : "notes",
-                "type" : "utf8string"
+                "type" : "utf8string",
+                "nul"  : true
             },
             {
                 "name" : "aliases",
-                "type" : "jsonarray"
+                "type" : "jsonarray",
+                "nul"  : true
             }
         ]
     }

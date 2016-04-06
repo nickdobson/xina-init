@@ -1,0 +1,8 @@
+{
+  "action": "set",
+  "database": "magsite.hk_def",
+  "records": {
+      "type": "tsv",
+      "$object_id": "{local}/mag_hk_def.txt"
+  }
+}

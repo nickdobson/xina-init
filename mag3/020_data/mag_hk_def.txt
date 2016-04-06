@@ -1,0 +1,34 @@
+data_id	name	label	unit
+1	pp1_field_strength	PP1 Field Strength	
+2	pp1_quality	PP1 Quality	
+3	pp2_field_strength	PP2 Field Strength	
+4	pp2_quality	PP2 Quality	
+5	mag-12v_volts	Mag -12V Volts	V
+6	mag-12v_curr	Mag -12V Curr	A
+7	mag+12v_volts	Mag +12V Volts	V
+8	mag+12v_curr	Mag +12V Curr	A
+9	zest-12v_volts	Zest -12V Volts	V
+10	zest-12v_curr	Zest -12V Curr	A
+11	zest+12v_volts	Zest +12V Volts	V
+12	zest+12v_curr	Zest +12V Curr	A
+13	heater_volts	Heater Volts	V
+14	heater_curr	Heater Curr	A
+200	iongauge	Ion Gauge	Torr
+201	cg1	CG1	Torr
+202	cg2	CG2	Torr
+203	main_tank	Main Tank	C
+204	guard_tank	Guard Tank	C
+205	guard_shield	Guard Shield	C
+206	coldplate	Cold Plate	C
+207	mag_cover_top	Mag Cover Top	C
+208	mount_alum	Mount Alum	C
+209	mag_base	Mag Base	C
+210	v1	V1	V
+211	i1	I1	A
+212	pwr1	Pwr1	W
+213	v2	V2	V
+214	i2	I2	A
+215	pwr2	Pwr2	W
+216	v3	V3	V
+217	i3	I3	A
+218	pwr3	Pwr3	W
