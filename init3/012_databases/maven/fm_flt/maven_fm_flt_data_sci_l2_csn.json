@@ -51,7 +51,7 @@
             },
             {
                 "name" : "quality",
-                "type" : "asciistring(2)",
+                "type" : "asciistring(8)",
                 "nul"  : true
             },
             {

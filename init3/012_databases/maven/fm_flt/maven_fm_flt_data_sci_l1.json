@@ -13,7 +13,11 @@
                 "type" : "int(8)"
             },
             {
-                "name" : "t_sclk",
+                "name" : "t_sclk_raw",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_sclk_cor",
                 "type" : "int(8)"
             },
             {

@@ -61,6 +61,11 @@
                 "meas" : "altitude",
                 "unit" : "km",
                 "nul"  : true
+            },
+            {
+                "name" : "quality",
+                "type" : "asciistring(8)",
+                "nul"  : true
             }
         ],
         "indexes" : [
