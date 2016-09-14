@@ -36,7 +36,7 @@
             },
             {
                 "name"  : "Reset",
-                "type"  : "jsonarray",
+                "type"  : "jsonobject",
                 "nul"   : true
             },
             {

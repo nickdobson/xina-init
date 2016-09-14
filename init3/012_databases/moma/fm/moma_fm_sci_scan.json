@@ -21,6 +21,10 @@
                 "key"  : true
             },
             {
+                "name" : "MDV Scan Index",
+                "type" : "int(4)"
+            },
+            {
                 "name" : "t_utc",
                 "type" : "int(8)"
             },
@@ -96,8 +100,33 @@
                 "type" : "float(4)"
             },
             {
-                "name" : "Total Ion Count",
+                "name" : "TIC",
                 "type" : "int(8)"
+            },
+            {
+                "name" : "Corrected TIC",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "Corrected TIC Factor",
+                "type" : "float(8)"
+            },
+            {
+                "name" : "Sci Packet Version",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "Highest Peak Bin",
+                "type" : "int(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "Scan Status Packet",
+                "type" : "boolean"
+            },
+            {
+                "name" : "SEB HK Packet",
+                "type" : "boolean"
             },
             {
                 "name" : "Special Scan ID",
@@ -115,47 +144,56 @@
                 "name" : "RF Freq",
                 "type" : "float(4)",
                 "meas" : "frequency",
-                "unit" : "Hz"
+                "unit" : "Hz",
+                "nul"  : true
             },
             {
                 "name" : "Last RF Amp Mon",
-                "type" : "float(4)"
+                "type" : "float(4)",
+                "nul"  : true
             },
             {
                 "name" : "Counter Sel",
-                "type" : "int(4)"
+                "type" : "int(4)",
+                "nul"  : true
             },
             {
                 "name" : "Bin Count Set",
-                "type" : "int(4)"
+                "type" : "int(4)",
+                "nul"  : true
             },
             {
                 "name" : "Bin Count Reg",
-                "type" : "int(4)"
+                "type" : "int(4)",
+                "nul"  : true
             },
             {
                 "name" : "RF Step Set",
                 "type" : "float(4)",
                 "meas" : "voltage",
-                "unit" : "V"
+                "unit" : "V",
+                "nul"  : true
             },
             {
                 "name" : "RF Step Reg",
                 "type" : "float(4)",
                 "meas" : "voltage",
-                "unit" : "V"
+                "unit" : "V",
+                "nul"  : true
             },
             {
                 "name" : "AUX Step Set",
                 "type" : "float(4)",
                 "meas" : "voltage",
-                "unit" : "V"
+                "unit" : "V",
+                "nul"  : true
             },
             {
                 "name" : "AUX Step Reg",
                 "type" : "float(4)",
                 "meas" : "voltage",
-                "unit" : "V"
+                "unit" : "V",
+                "nul"  : true
             },
             {
                 "name" : "IS_EMON_A",
@@ -172,51 +210,77 @@
                 "nul"  : true
             },
             {
+                "name" : "Fil A On",
+                "type" : "boolean",
+                "nul"  : true
+            },
+            {
+                "name" : "Fil B On",
+                "type" : "boolean",
+                "nul"  : true
+            },
+            {
+                "name" : "Scan Mode",
+                "type" : "asciistring(8)",
+                "nul"  : true
+            },
+            {
                 "name" : "SRC_A_FOC_A_set",
                 "type" : "float(4)",
                 "meas" : "voltage",
-                "unit" : "V"
+                "unit" : "V",
+                "nul"  : true
             },
             {
                 "name" : "SRC_A_FOC_A_reg",
                 "type" : "float(4)",
                 "meas" : "voltage",
-                "unit" : "V"
+                "unit" : "V",
+                "nul"  : true
             },
             {
                 "name" : "SRC_B_FOC_A_set",
                 "type" : "float(4)",
                 "meas" : "voltage",
-                "unit" : "V"
+                "unit" : "V",
+                "nul"  : true
             },
             {
                 "name" : "SRC_B_FOC_A_reg",
                 "type" : "float(4)",
                 "meas" : "voltage",
-                "unit" : "V"
+                "unit" : "V",
+                "nul"  : true
             },
             {
                 "name" : "Ionization Time",
                 "type" : "float(8)",
                 "meas" : "time",
-                "unit" : "ms"
+                "unit" : "ms",
+                "nul"  : true
             },
             {
                 "name" : "SCN_EM1",
-                "type" : "float(4)"
+                "type" : "float(4)",
+                "nul"  : true
             },
             {
                 "name" : "SCN_EM2",
-                "type" : "float(4)"
+                "type" : "float(4)",
+                "nul"  : true
+            },
+            {
+                "name" : "Phase Cycle Readback",
+                "type" : "int(4)",
+                "nul"  : true
             },
             {
                 "name" : "Source Packet Type",
                 "type" : "int(4)"
             },
             {
-                "name" : "Phase Cycle Readback",
-                "type" : "int(4)",
-                "nul"  : true
+                "name" : "Dark Count Scan",
+                "type" : "boolean"
             },
             {
                 "name" : "Control Value",

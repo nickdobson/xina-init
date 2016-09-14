@@ -244,6 +244,87 @@
                         "nul"   : true
                     }
                 ]
+            },
+            {
+                "name"      : "sci_signoff",
+                "label"     : "Science Signoffs",
+                "desc"      : "MOMA activity science signoffs.",
+                "format"    : "{insert_at} {insert_by} {Notes}",
+                "singular"  : "signoff",
+                "backup"    : true,
+                "event"     : true,
+                "log"       : true,
+                "notify"    : true,
+                "subscribe" : true,
+                "track"     : true,
+                "trash"     : true,
+                "wall"      : true,
+                "fields"    : [
+                    {
+                        "name" : "ID",
+                        "type" : "utf8string(8)",
+                        "ref"  : "ID"
+                    },
+                    {
+                        "name" : "Notes",
+                        "type" : "utf8text",
+                        "nul"  : true
+                    }
+                ]
+            },
+            {
+                "name"      : "sw_signoff",
+                "label"     : "Software Signoffs",
+                "desc"      : "MOMA activity software signoffs.",
+                "format"    : "{insert_at} {insert_by} {Notes}",
+                "singular"  : "signoff",
+                "backup"    : true,
+                "event"     : true,
+                "log"       : true,
+                "notify"    : true,
+                "subscribe" : true,
+                "track"     : true,
+                "trash"     : true,
+                "wall"      : true,
+                "fields"    : [
+                    {
+                        "name" : "ID",
+                        "type" : "utf8string(8)",
+                        "ref"  : "ID"
+                    },
+                    {
+                        "name" : "Notes",
+                        "type" : "utf8text",
+                        "nul"  : true
+                    }
+                ]
+            },
+            {
+                "name"      : "sys_signoff",
+                "label"     : "System Signoffs",
+                "desc"      : "MOMA activity system signoffs.",
+                "format"    : "{insert_at} {insert_by} {Notes}",
+                "singular"  : "signoff",
+                "backup"    : true,
+                "event"     : true,
+                "log"       : true,
+                "notify"    : true,
+                "subscribe" : true,
+                "track"     : true,
+                "trash"     : true,
+                "wall"      : true,
+                "fields"    : [
+                    {
+                        "name" : "ID",
+                        "type" : "utf8string(8)",
+                        "ref"  : "ID"
+                    },
+                    {
+                        "name" : "Notes",
+                        "type" : "utf8text",
+                        "nul"  : true
+                    }
+                ]
             }
         ]
     }
