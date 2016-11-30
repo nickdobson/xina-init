@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "magsite",
+    "group"  : {
+        "name"  : "goes",
+        "label" : "GOES",
+        "desc"  : "Primary group for magnetic testing site GOES data."
+    }
+}

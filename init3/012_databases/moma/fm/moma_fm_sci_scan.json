@@ -6,7 +6,7 @@
         "name"   : "scan",
         "label"  : "Scan",
         "desc"   : "MOMA Flight science scan database.",
-        "format" : "{TID} {Scan Index} ({MK Name})",
+        "format" : "{TID} {MDV Scan Index} ({MK Name})",
         "link"   : true,
         "wall"   : true,
         "fields" : [

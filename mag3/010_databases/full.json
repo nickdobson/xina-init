@@ -1,0 +1,228 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "magsite.goes",
+    "database" : {
+        "name"   : "full",
+        "label"  : "Full",
+        "desc"   : "Magnetic test site GOES full data.",
+        "format" : "{port} {timestamp}",
+        "fields" : [
+            {
+                "name" : "t",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_100",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_10000",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "x",
+                "type" : "jsonarray"
+            },
+            {
+                "name" : "x_avg",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "x_min",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "x_max",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "x_sdev",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "y",
+                "type" : "jsonarray"
+            },
+            {
+                "name" : "y_avg",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "y_min",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "y_max",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "y_sdev",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "z",
+                "type" : "jsonarray"
+            },
+            {
+                "name" : "z_avg",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "z_min",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "z_max",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "z_sdev",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "range",
+                "type" : "int(2)"
+            },
+            {
+                "name" : "pps_count",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "err_count",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "pp1_strength",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pp1_quality",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pp2_strength",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pp2_quality",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "X Test Out",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "Y Test Out",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "Z Test Out",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "+28V Voltage",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "+28V Current",
+                "type" : "float(8)",
+                "meas" : "current",
+                "unit" : "A",
+                "nul"  : true
+            },
+            {
+                "name" : "+13V Voltage",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "+13V Current",
+                "type" : "float(8)",
+                "meas" : "current",
+                "unit" : "A",
+                "nul"  : true
+            },
+            {
+                "name" : "-13V Voltage",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "-13V Current",
+                "type" : "float(8)",
+                "meas" : "current",
+                "unit" : "A",
+                "nul"  : true
+            },
+            {
+                "name" : "+5V Monitor",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "-5V Monitor",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "+2.5V Monitor",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "VRef Monitor",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "Pwr",
+                "type" : "float(8)",
+                "meas" : "power",
+                "unit" : "W",
+                "nul"  : true
+            },
+            {
+                "name" : "Sensor Temperature",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "PCB Temperature",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            }
+        ],
+        "indexes" : [
+            ["port", "t"],
+            ["t"],
+            ["instr_type"]
+        ]
+    }
+}

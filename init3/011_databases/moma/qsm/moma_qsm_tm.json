@@ -116,6 +116,34 @@
                 "nul"   : true
             },
             {
+                "name"  : "Bus 1 Energy",
+                "type"  : "float(8)",
+                "meas"  : "energy",
+                "unit"  : "Wh",
+                "nul"   : true
+            },
+            {
+                "name"  : "Bus 2 Energy",
+                "type"  : "float(8)",
+                "meas"  : "energy",
+                "unit"  : "Wh",
+                "nul"   : true
+            },
+            {
+                "name"  : "Bus 3 Energy",
+                "type"  : "float(8)",
+                "meas"  : "energy",
+                "unit"  : "Wh",
+                "nul"   : true
+            },
+            {
+                "name"  : "Bus 4 Energy",
+                "type"  : "float(8)",
+                "meas"  : "energy",
+                "unit"  : "Wh",
+                "nul"   : true
+            },
+            {
                 "name"  : "WRP On Time",
                 "type"  : "float(8)",
                 "meas"  : "time",
@@ -210,7 +238,7 @@
                 "nul"   : true
             },
             {
-                "name"  : "PWM Cycles",
+                "name"  : "WRP Cycles",
                 "type"  : "int(4)",
                 "nul"   : true
             },
