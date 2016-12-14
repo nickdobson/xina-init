@@ -1,7 +1,7 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "parent"   : "magsite.goes",
+    "parent"   : "goes",
     "database" : {
         "name"   : "full",
         "label"  : "Full",
