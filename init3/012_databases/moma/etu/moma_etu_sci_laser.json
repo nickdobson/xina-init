@@ -1,0 +1,61 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "moma.etu.data.sci",
+    "database" : {
+        "name"   : "laser",
+        "label"  : "Laser",
+        "desc"   : "MOMA ETU laser burst database.",
+        "format" : "{TID} {Burst ID}",
+        "link"   : true,
+        "wall"   : true,
+        "fields" : [
+            {
+                "name" : "TID",
+                "type" : "int(4)",
+                "key"  : true
+            },
+            {
+                "name" : "Burst ID",
+                "type" : "int(4)",
+                "key"  : true
+            },
+            {
+                "name" : "t_utc",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_rel",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "Energy Avg",
+                "type" : "float(4)",
+                "meas" : "energy",
+                "unit" : "microjoules"
+            },
+            {
+                "name" : "Energy Min",
+                "type" : "float(4)",
+                "meas" : "energy",
+                "unit" : "microjoules"
+            },
+            {
+                "name" : "Energy Max",
+                "type" : "float(4)",
+                "meas" : "energy",
+                "unit" : "microjoules"
+            },
+            {
+                "name" : "Energy Std Dev",
+                "type" : "float(4)",
+                "meas" : "energy",
+                "unit" : "microjoules"
+            },
+            {
+                "name" : "Pulses",
+                "type" : "jsonarray"
+            }
+        ]
+    }
+}

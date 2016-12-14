@@ -1,0 +1,189 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "gedi",
+    "database" : {
+        "name"   : "laser",
+        "label"  : "Laser",
+        "desc"   : "GEDI laser database.",
+        "format" : "{Time}",
+        "link"   : true,
+        "wall"   : true,
+        "fields" : [
+            {
+                "name" : "Time",
+                "type" : "int(4)",
+                "key"  : true
+            },
+            {
+                "name" : "NV-2 804344 NOVA2",
+                "type" : "float(4)",
+                "meas" : "energy",
+                "unit" : "mJ"
+            },
+            {
+                "name" : "LAS_HV_MON",
+                "type" : "float(4)",
+                "meas" : "voltage",
+                "unit" : "V"
+            },
+            {
+                "name" : "LAS_PRES_SENSOR_1",
+                "type" : "float(4)",
+                "meas" : "voltage",
+                "unit" : "V"
+            },
+            {
+                "name" : "LAS_PRES_SENSOR_2",
+                "type" : "float(4)",
+                "meas" : "voltage",
+                "unit" : "V"
+            },
+            {
+                "name" : "LAS_QSD_PCB_TEMP_MON",
+                "type" : "float(4)",
+                "meas" : "voltage",
+                "unit" : "V"
+            },
+            {
+                "name" : "LAS_QS_TEMP_MON",
+                "type" : "float(4)",
+                "meas" : "voltage",
+                "unit" : "V"
+            },
+            {
+                "name" : "LAS_T_A",
+                "type" : "float(4)",
+                "meas" : "temperature",
+                "unit" : "C"
+            },
+            {
+                "name" : "LAS_T_B",
+                "type" : "float(4)",
+                "meas" : "temperature",
+                "unit" : "C"
+            },
+            {
+                "name" : "LAS_T_C",
+                "type" : "float(4)",
+                "meas" : "temperature",
+                "unit" : "C"
+            },
+            {
+                "name" : "LAS_T_D",
+                "type" : "float(4)",
+                "meas" : "temperature",
+                "unit" : "C"
+            },
+            {
+                "name" : "LAS_T_DIODES",
+                "type" : "float(4)",
+                "meas" : "temperature",
+                "unit" : "C"
+            },
+            {
+                "name" : "LAS_T_E",
+                "type" : "float(4)",
+                "meas" : "temperature",
+                "unit" : "C"
+            },
+            {
+                "name" : "LAS_T_GRM_SIDE",
+                "type" : "float(4)",
+                "meas" : "temperature",
+                "unit" : "C"
+            },
+            {
+                "name" : "LAS_T_HR_SIDE",
+                "type" : "float(4)",
+                "meas" : "temperature",
+                "unit" : "C"
+            },
+            {
+                "name" : "LAS_T_PEDESTAL",
+                "type" : "float(4)",
+                "meas" : "temperature",
+                "unit" : "C"
+            },
+            {
+                "name" : "LAS_T_SLAB_BRIDGE",
+                "type" : "float(4)",
+                "meas" : "temperature",
+                "unit" : "C"
+            },
+            {
+                "name" : "LC Temperature",
+                "type" : "float(4)",
+                "meas" : "temperature",
+                "unit" : "C"
+            },
+            {
+                "name" : "LC Voltage",
+                "type" : "float(4)",
+                "meas" : "voltage",
+                "unit" : "V"
+            },
+            {
+                "name" : "LC DC Voltage",
+                "type" : "float(4)",
+                "meas" : "voltage",
+                "unit" : "V"
+            },
+            {
+                "name" : "LC Amp",
+                "type" : "float(4)",
+                "meas" : "current",
+                "unit" : "A"
+            },
+            {
+                "name" : "LC Current",
+                "type" : "float(4)",
+                "meas" : "current",
+                "unit" : "A"
+            },
+            {
+                "name" : "LC QPW",
+                "type" : "float(4)",
+                "meas" : "current",
+                "unit" : "A"
+            },
+            {
+                "name" : "LC Standby I",
+                "type" : "float(4)",
+                "meas" : "current",
+                "unit" : "A"
+            },
+            {
+                "name" : "LC Freq",
+                "type" : "float(4)",
+                "meas" : "frequency",
+                "unit" : "Hz"
+            },
+            {
+                "name" : "LC QPoffset",
+                "type" : "float(4)",
+                "meas" : "time",
+                "unit" : "us"
+            },
+            {
+                "name" : "LC Shotcount",
+                "type" : "float(4)",
+                "unit" : "kshots"
+            },
+            {
+                "name" : "LC ShotcountK LDA",
+                "type" : "float(4)",
+                "unit" : "kshots"
+            },
+            {
+                "name" : "LC ShotcountK QS",
+                "type" : "float(4)",
+                "unit" : "kshots"
+            },
+            {
+                "name" : "LC State",
+                "type" : "int(1)"
+            }
+        ]
+    }
+}
