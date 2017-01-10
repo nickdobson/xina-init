@@ -64,7 +64,7 @@
             },
             {
                 "name" : "quality",
-                "type" : "asciistring(8)",
+                "type" : "asciistring(16)",
                 "nul"  : true
             }
         ],

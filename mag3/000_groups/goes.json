@@ -1,7 +1,6 @@
 {
     "action" : "create",
     "create" : "group",
-    "parent" : "magsite",
     "group"  : {
         "name"  : "goes",
         "label" : "GOES",

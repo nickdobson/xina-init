@@ -6,7 +6,7 @@
         "name"   : "full",
         "label"  : "Full",
         "desc"   : "Magnetic test site GOES full data.",
-        "format" : "{port} {timestamp}",
+        "format" : "{t}",
         "fields" : [
             {
                 "name" : "t",
@@ -220,9 +220,7 @@
             }
         ],
         "indexes" : [
-            ["port", "t"],
-            ["t"],
-            ["instr_type"]
+            ["t"]
         ]
     }
 }

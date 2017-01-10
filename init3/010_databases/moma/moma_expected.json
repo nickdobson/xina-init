@@ -72,6 +72,11 @@
                 "name" : "High",
                 "type" : "float(8)",
                 "nul"  : true
+            },
+            {
+                "name" : "Temp Dependent",
+                "type" : "boolean",
+                "def"  : "false"
             }
         ]
     }

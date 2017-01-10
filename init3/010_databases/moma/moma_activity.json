@@ -22,7 +22,7 @@
         "fields"    : [
             {
                 "name"    : "ID",
-                "type"    : "utf8string(4)",
+                "type"    : "utf8string(8)",
                 "key"     : true
             },
             {

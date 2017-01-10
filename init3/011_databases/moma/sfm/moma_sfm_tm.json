@@ -109,6 +109,21 @@
                 "nul"   : true
             },
             {
+                "name"  : "Alerts",
+                "type"  : "jsonobject",
+                "nul"   : true
+            },
+            {
+                "name"  : "Alert Levels",
+                "type"  : "jsonobject",
+                "nul"   : true
+            },
+            {
+                "name"  : "Laser Bursts",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
                 "name"  : "Energy",
                 "type"  : "float(8)",
                 "meas"  : "energy",
