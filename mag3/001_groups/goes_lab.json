@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "goes",
+    "group"  : {
+        "name"  : "lab",
+        "label" : "Lab",
+        "desc"  : "Primary group for lab GOES data."
+    }
+}

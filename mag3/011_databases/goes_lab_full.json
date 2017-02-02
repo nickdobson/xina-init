@@ -1,11 +1,11 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "parent"   : "goes",
+    "parent"   : "goes.lab",
     "database" : {
         "name"   : "full",
         "label"  : "Full",
-        "desc"   : "Magnetic test site GOES full data.",
+        "desc"   : "GOES lab full data.",
         "format" : "{t}",
         "fields" : [
             {

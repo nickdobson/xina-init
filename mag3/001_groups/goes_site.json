@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "goes",
+    "group"  : {
+        "name"  : "site",
+        "label" : "Site",
+        "desc"  : "Primary group for GOES data from the test site."
+    }
+}
