@@ -42,6 +42,11 @@
                 "type" : "int(4)",
                 "nul"  : true
             },
+			{
+				"name" : "MK Time",
+				"type" : "int(8)",
+				"nul"  : true
+			},
             {
                 "name" : "MK Name",
                 "type" : "utf8string(64)",
