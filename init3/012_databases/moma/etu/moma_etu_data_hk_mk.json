@@ -25,6 +25,10 @@
                 "type" : "int(8)"
             },
             {
+                "name" : "MK ID",
+                "type" : "int(4)"
+            },
+            {
                 "name" : "Data ID",
                 "type" : "int(2)"
             },

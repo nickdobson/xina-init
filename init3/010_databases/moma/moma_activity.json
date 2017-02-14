@@ -22,7 +22,7 @@
         "fields"    : [
             {
                 "name"    : "ID",
-                "type"    : "utf8string(8)",
+                "type"    : "int(4)",
                 "key"     : true
             },
             {
@@ -35,6 +35,11 @@
                 "def"     : "Incomplete",
                 "strict"  : true,
                 "options" : [ { "value" : "Incomplete" }, { "value" : "Under Review" }, { "value" : "Approved" } ]
+            },
+            {
+                "name"    : "Decommissioned",
+                "type"    : "boolean",
+                "def"     : "false"
             },
             {
                 "name"    : "Summary",
