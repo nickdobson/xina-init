@@ -1,7 +1,7 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "parent"   : "etu.data.hk.full",
+    "parent"   : "etu.data.hk",
     "database" : {
         "name"   : "full",
         "label"  : "Full",

@@ -14,7 +14,7 @@
         "fields" : [
             {
                 "name"  : "marker_id",
-                "type"  : "int(4)",
+                "type"  : "int(4)"
             },
             {
                 "name"  : "label",
