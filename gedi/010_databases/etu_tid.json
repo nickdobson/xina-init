@@ -1,0 +1,95 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "etu",
+    "database" : {
+        "name"      : "tid",
+        "label"     : "TID",
+        "desc"      : "GEDI ETU model TID database.",
+        "format"    : "{tid}-{label}",
+        "singular"  : "TID",
+        "backup"    : true,
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "order" : [
+            [ "t_start", "desc" ]
+        ],
+        "fields" : [
+            {
+                "name"  : "tid",
+                "type"  : "int(4)",
+                "key"   : true
+            },
+            {
+                "name"  : "label",
+                "type"  : "utf8string(64)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "t_start",
+                "type"  : "datetime",
+                "index" : true
+            },
+            {
+                "name"  : "t_end",
+                "type"  : "datetime",
+                "index" : true
+            },
+            {
+                "name"  : "notes",
+                "type"  : "utf8text",
+                "nul"   : true
+            }
+        ],
+        "databases" : [
+            {
+                "name"        : "file",
+                "label"       : "File",
+                "desc"        : "GEDI ETU model TID file database.",
+                "format"      : "{tid} {name}",
+                "file_format" : "{name}",
+                "singular"    : "file",
+                "event"       : true,
+                "file"        : true,
+                "link"        : true,
+                "log"         : true,
+                "notify"      : true,
+                "subscribe"   : true,
+                "tag"         : true,
+                "track"       : true,
+                "trash"       : true,
+                "wall"        : true,
+                "order" : [
+                    [ "tid",  "desc" ],
+                    [ "name", "asc"  ]
+                ],
+                "fields" : [
+                    {
+                        "name"  : "tid",
+                        "type"  : "int(4)",
+                        "ref"   : "tid",
+                        "key"   : true
+                    },
+                    {
+                        "name"  : "name",
+                        "type"  : "utf8string(128)",
+                        "key"   : true
+                    },
+                    {
+                        "name"  : "desc",
+                        "type"  : "utf8string",
+                        "nul"   : true
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "etu",
+	"group"  : {
+		"name"  : "data",
+        "label" : "Data",
+		"desc"  : "GEDI ETU model data group."
+	}
+}

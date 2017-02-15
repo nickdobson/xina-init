@@ -1,0 +1,31 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "etu.data",
+    "database" : {
+        "name"      : "msg",
+        "label"     : "Message",
+        "desc"      : "GEDI ETU model message database.",
+        "format"    : "{time} {message}",
+        "singular"  : "message",
+        "order" : [
+            [ "time", "desc" ]
+        ],
+        "fields" : [
+            {
+                "name"  : "time",
+                "type"  : "datetime"
+            },
+            {
+                "name"  : "source_id",
+                "type"  : "int(4)",
+                "index" : true
+            },
+            {
+                "name"  : "message",
+                "type"  : "utf8text",
+                "nul"   : true
+            }
+        ]
+    }
+}

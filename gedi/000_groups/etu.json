@@ -1,0 +1,9 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "group"  : {
+        "name"  : "etu",
+        "label" : "GEDI ETU",
+        "desc"  : "GEDI ETU model group."
+    }
+}

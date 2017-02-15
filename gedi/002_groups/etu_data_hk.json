@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "etu.data",
+	"group"  : {
+		"name"  : "hk",
+        "label" : "Housekeeping",
+		"desc"  : "GEDI ETU model housekeeping data group."
+	}
+}

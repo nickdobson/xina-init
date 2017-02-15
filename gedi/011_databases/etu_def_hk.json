@@ -1,0 +1,86 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "etu.def",
+    "database" : {
+        "name"     : "hk",
+        "label"    : "Housekeeping",
+        "desc"     : "GEDI ETU model housekeeping definition information.",
+        "format"   : "hk{hk_id}:{label}",
+        "singular" : "field",
+        "backup"   : true,
+        "link"     : true,
+        "wall"     : true,
+        "order"    : [ [ "hk_id", "asc" ] ],
+        "fields"   : [
+            {
+                "name" : "source_id",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "hk_id",
+                "type" : "int(4)",
+                "key"  : true
+            },
+            {
+                "name" : "label",
+                "type" : "utf8string(64)"
+            },
+            {
+                "name" : "measure",
+                "type" : "utf8string(32)",
+                "nul"  : true
+            },
+            {
+                "name" : "unit",
+                "type" : "utf8string(32)",
+                "nul"  : true
+            },
+            {
+                "name" : "scaling",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "offset",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "digits",
+                "type" : "int(4)",
+                "nul"  : true
+            },
+            {
+                "name" : "limit",
+                "type" : "boolean",
+                "nul"  : true
+            },
+            {
+                "name" : "lo_limit",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "lolo_limit",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "hi_limit",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "hihi_limit",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "notes",
+                "type" : "utf8text",
+                "nul"  : true
+            }
+        ]
+    }
+}
