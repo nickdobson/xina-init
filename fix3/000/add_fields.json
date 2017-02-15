@@ -1,0 +1,10 @@
+{
+    "action": "alter",
+    "alter": "database",
+    "database": "moma.etu.data.hk.mk",
+    "op": "add_fields",
+    "fields": [{
+        "name" : "MK ID",
+        "type" : "int(4)"
+    }]
+}
