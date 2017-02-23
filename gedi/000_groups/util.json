@@ -1,0 +1,9 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "group"  : {
+        "name"  : "util",
+        "label" : "GEDI Utilities",
+        "desc"  : "GEDI utility databases group."
+    }
+}
