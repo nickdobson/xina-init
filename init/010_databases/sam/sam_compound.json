@@ -111,7 +111,9 @@
                 "trash"       : true,
                 "wall"        : true,
                 "order" : [
-                    ["Retention Time", "asc"]
+                    [ "Path",           "asc" ],
+                    [ "Name",           "asc" ],
+                    [ "Retention Time", "asc" ]
                 ],
                 "fields" : [
                     {
@@ -178,20 +180,22 @@
                 "trash"       : true,
                 "wall"        : true,
                 "order" : [
-                    [ "TID",      "desc" ],
-                    [ "Priority", "asc"  ],
-                    [ "Name",     "asc"  ]
+                    [ "Path",      "asc" ],
+                    [ "Name",      "asc" ],
+                    [ "File Name", "asc" ]
                 ],
                 "fields" : [
                     {
                         "name" : "Path",
                         "type" : "utf8string(64)",
-                        "ref"  : "Path"
+                        "ref"  : "Path",
+                        "key"  : true
                     },
                     {
                         "name" : "Name",
                         "type" : "utf8string(64)",
-                        "ref"  : "Name"
+                        "ref"  : "Name",
+                        "key"  : true
                     },
                     {
                         "name" : "File Name",

@@ -37,6 +37,11 @@
                 "nul"  : true
             },
             {
+                "name" : "mined",
+                "type" : "boolean",
+                "nul"  : true
+            },
+            {
                 "name" : "scaling",
                 "type" : "float(8)",
                 "nul"  : true
@@ -52,7 +57,7 @@
                 "nul"  : true
             },
             {
-                "name" : "limit",
+                "name" : "alarm_enable",
                 "type" : "boolean",
                 "nul"  : true
             },
@@ -74,6 +79,21 @@
             {
                 "name" : "hihi_limit",
                 "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "warn_enable",
+                "type" : "boolean",
+                "nul"  : true
+            },
+            {
+                "name" : "average",
+                "type" : "boolean",
+                "nul"  : true
+            },
+            {
+                "name" : "deadband",
+                "type" : "int(4)",
                 "nul"  : true
             },
             {

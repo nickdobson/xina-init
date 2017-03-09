@@ -44,6 +44,26 @@
                 "index" : true
             },
             {
+                "name"  : "pulse_energy_scaling",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "focal_length",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "camera_distance",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "reflectivity",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
                 "name"  : "notes",
                 "type"  : "utf8text",
                 "nul"   : true

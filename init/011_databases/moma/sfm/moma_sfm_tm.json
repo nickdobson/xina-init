@@ -74,6 +74,11 @@
                 "nul"   : true
             },
             {
+                "name"  : "Contains GC Data",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
                 "name"  : "Scripts",
                 "type"  : "jsonarray",
                 "nul"   : true
@@ -319,6 +324,13 @@
                 "type"  : "float(8)",
                 "meas"  : "temperature",
                 "unit"  : "C",
+                "nul"   : true
+            },
+            {
+                "name"  : "Average Voltage",
+                "type"  : "float(8)",
+                "meas"  : "voltage",
+                "unit"  : "V",
                 "nul"   : true
             },
             {
