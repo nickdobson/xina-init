@@ -23,9 +23,14 @@
                 "key"  : true
             },
             {
-                "name" : "label",
-                "type" : "utf8string(64)"
-            },
+				"name" : "name",
+				"type" : "utf8string(64)"
+			},
+			{
+				"name" : "alias",
+				"type" : "utf8string(64)",
+				"nul"  : true
+			},
             {
                 "name" : "measure",
                 "type" : "utf8string(32)",
@@ -39,27 +44,27 @@
             {
                 "name" : "mined",
                 "type" : "boolean",
-                "nul"  : true
+                "def"  : "false"
             },
             {
                 "name" : "scaling",
                 "type" : "float(8)",
-                "nul"  : true
+				"def"  : "1"
             },
             {
                 "name" : "offset",
                 "type" : "float(8)",
-                "nul"  : true
+				"def"  : "0"
             },
             {
                 "name" : "digits",
                 "type" : "int(4)",
-                "nul"  : true
+				"def"  : "0"
             },
             {
                 "name" : "alarm_enable",
                 "type" : "boolean",
-                "nul"  : true
+				"def"  : "false"
             },
             {
                 "name" : "lo_limit",
@@ -84,18 +89,58 @@
             {
                 "name" : "warn_enable",
                 "type" : "boolean",
-                "nul"  : true
+				"def"  : "false"
             },
             {
                 "name" : "average",
                 "type" : "boolean",
-                "nul"  : true
+				"def"  : "false"
             },
             {
                 "name" : "deadband",
                 "type" : "int(4)",
-                "nul"  : true
+				"def"  : "0"
             },
+			{
+				"name" : "alarm_actions",
+				"type" : "int(4)",
+				"def"  : "0"
+			},
+			{
+				"name" : "alarm_action_1",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "alarm_action_2",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "alarm_action_3",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "warn_actions",
+				"type" : "int(4)",
+				"def"  : "0"
+			},
+			{
+				"name" : "warn_action_1",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "warn_action_2",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "warn_action_3",
+				"type" : "int(4)",
+				"nul"  : true
+			},
             {
                 "name" : "notes",
                 "type" : "utf8text",
