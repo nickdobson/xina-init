@@ -21,16 +21,17 @@
                 "key"  : true
             },
             {
-                "name" : "MDV Scan Index",
-                "type" : "int(4)"
-            },
-            {
                 "name" : "t_utc",
                 "type" : "int(8)"
             },
             {
                 "name" : "t_rel",
                 "type" : "int(8)"
+            },
+            {
+                "name" : "t_mk_rel",
+                "type" : "int(8)",
+                "nul"  : true
             },
             {
                 "name" : "UMKID",
