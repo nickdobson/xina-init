@@ -6,7 +6,7 @@
         "name"   : "scan",
         "label"  : "Scan",
         "desc"   : "MOMA Flight science scan database.",
-        "format" : "{TID} {MDV Scan Index} ({MK Name})",
+        "format" : "{TID} {Scan Index} ({MK Name})",
         "link"   : true,
         "wall"   : true,
         "fields" : [
@@ -19,6 +19,10 @@
                 "name" : "Scan Index",
                 "type" : "int(4)",
                 "key"  : true
+            },
+            {
+                "name" : "USID",
+                "type" : "int(8)"
             },
             {
                 "name" : "t_utc",

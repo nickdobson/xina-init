@@ -1,0 +1,37 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "moma.etu.data.sci",
+    "database" : {
+        "name"   : "sic",
+        "label"  : "SIC",
+        "desc"   : "MOMA ETU model science SIC database.",
+        "format" : "{TID} {Scan Index} {Range} {SIC}",
+        "fields" : [
+            {
+                "name" : "TID",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "Scan Index",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "USID",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "Range",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "SIC",
+                "type" : "int(4)"
+            }
+        ],
+        "indexes" : [
+            ["TID"],
+            ["USID", "Range", "SIC"]
+        ]
+    }
+}
