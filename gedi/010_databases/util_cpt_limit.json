@@ -1,0 +1,107 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "util",
+    "database" : {
+        "name"      : "cpt_limit",
+        "label"     : "CPT Limit Requirements",
+        "desc"      : "GEDI CPT Limit requirements database.",
+        "format"    : "{ID} {Name}",
+        "singular"  : "limit",
+        "backup"    : true,
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "fields"    : [
+            {
+                "name" : "etu",
+                "type" : "boolean",
+                "key"  : true,
+                "def"  : "false"
+            },
+            {
+                "name" : "lsr1",
+                "type" : "boolean",
+                "key"  : true,
+                "def"  : "false"
+            },
+            {
+                "name" : "lsr2",
+                "type" : "boolean",
+                "key"  : true,
+                "def"  : "false"
+            },
+            {
+                "name" : "lsr3",
+                "type" : "boolean",
+                "key"  : true,
+                "def"  : "false"
+            },
+            {
+                "name" : "ID",
+                "type" : "int(4)",
+                "key"  : true
+            },
+            {
+                "name" : "Name",
+                "type" : "utf8string(64)"
+            },
+            {
+                "name" : "Desc",
+                "type" : "utf8string",
+                "nul"  : true
+            },
+            {
+                "name" : "Unit",
+                "type" : "utf8string(16)",
+                "nul"  : true
+            },
+            {
+                "name" : "Red High",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "Yellow High",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "Green High",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "Green Low",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "Yellow Low",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "Red Low",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "Yellow Percentage",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "Red Percentage",
+                "type" : "float(8)",
+                "nul"  : true
+            }
+        ]
+    }
+}
