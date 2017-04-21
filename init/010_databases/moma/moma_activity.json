@@ -34,7 +34,17 @@
                 "type"    : "utf8string(16)",
                 "def"     : "Incomplete",
                 "strict"  : true,
-                "options" : [ { "value" : "Incomplete" }, { "value" : "Under Review" }, { "value" : "Approved" } ]
+                "options" : [
+                    {"value" : "0 None"},
+                    {"value" : "1 Definition"},
+                    {"value" : "2 Development"},
+                    {"value" : "3 Ready for Review"},
+                    {"value" : "4 Approved ETU"},
+                    {"value" : "5 Approved Flight"},
+                    {"value" : "5 Approved QSM"},
+                    {"value" : "6 Run on Flight"},
+                    {"value" : "6 Run on QSM"}
+                ]
             },
             {
                 "name"    : "Decommissioned",

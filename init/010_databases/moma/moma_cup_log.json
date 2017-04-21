@@ -35,9 +35,11 @@
                 "nul"  : true
             },
             {
-                "name" : "Instrument",
-                "type" : "utf8string(16)",
-                "key"  : true
+                "name"    : "Instrument",
+                "type"    : "utf8string(16)",
+                "key"     : true,
+                "strict"  : true,
+                "options" : [{"value": "ETU"}, {"value": "FM"}]
             },
             {
                 "name" : "WOA",
@@ -65,9 +67,10 @@
                 "nul"  : true
             },
             {
-                "name" : "Sample Holder",
-                "type" : "utf8string(64)",
-                "nul"  : true
+                "name"    : "Sample Holder",
+                "type"    : "utf8string(64)",
+                "strict"  : true,
+                "options" : [{"value": "Stub"}, {"value": "Cup"}, {"value": "Other"}]
             },
             {
                 "name" : "Laser Config",
