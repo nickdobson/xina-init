@@ -54,6 +54,16 @@
                 "nul"   : true
             },
             {
+                "name"  : "laser_11_req",
+                "type"  : "utf8string(32)",
+                "nul"   : true
+            },
+            {
+                "name"  : "laser_12_req",
+                "type"  : "utf8string(32)",
+                "nul"   : true
+            },
+            {
                 "name"  : "camera_distance",
                 "type"  : "float(8)",
                 "nul"   : true
