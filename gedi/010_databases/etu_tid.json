@@ -55,12 +55,12 @@
             },
             {
                 "name"  : "laser_11_req",
-                "type"  : "utf8string(32)",
+                "type"  : "float(8)",
                 "nul"   : true
             },
             {
                 "name"  : "laser_12_req",
-                "type"  : "utf8string(32)",
+                "type"  : "float(8)",
                 "nul"   : true
             },
             {
