@@ -54,6 +54,20 @@
                 "nul"   : true
             },
             {
+                "name"  : "laser_7_req",
+                "type"  : "float(8)",
+                "nul"   : true,
+                "meas"  : "mrads",
+                "unit"  : "mrads"
+            },
+            {
+                "name"  : "laser_8_req",
+                "type"  : "float(8)",
+                "nul"   : true,
+                "meas"  : "inches",
+                "unit"  : "in"
+            },
+            {
                 "name"  : "laser_11_req",
                 "type"  : "float(8)",
                 "nul"   : true,
