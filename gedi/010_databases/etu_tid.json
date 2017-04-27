@@ -56,12 +56,16 @@
             {
                 "name"  : "laser_11_req",
                 "type"  : "float(8)",
-                "nul"   : true
+                "nul"   : true,
+                "meas"  : "percent",
+                "unit"  : "%"
             },
             {
                 "name"  : "laser_12_req",
                 "type"  : "float(8)",
-                "nul"   : true
+                "nul"   : true,
+                "meas"  : "percent",
+                "unit"  : "%"
             },
             {
                 "name"  : "camera_distance",
