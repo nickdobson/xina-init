@@ -26,6 +26,12 @@
                 "def"  : "false"
             },
             {
+                "name" : "bdu",
+                "type" : "boolean",
+                "key"  : true,
+                "def"  : "false"
+            },
+            {
                 "name" : "lsr1",
                 "type" : "boolean",
                 "key"  : true,
