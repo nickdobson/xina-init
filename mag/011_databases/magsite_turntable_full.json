@@ -1,0 +1,101 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "magsite.turntable",
+    "database" : {
+        "name"   : "full",
+        "label"  : "Full",
+        "desc"   : "Test site full turntable data.",
+        "format" : "{t}",
+        "fields" : [
+            {
+                "name" : "t",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_100",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_10000",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "motor_v",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "motor_i",
+                "type" : "float(8)",
+                "meas" : "current",
+                "unit" : "A",
+                "nul"  : true
+            },
+            {
+                "name" : "motor_pwr",
+                "type" : "float(8)",
+                "meas" : "power",
+                "unit" : "W",
+                "nul"  : true
+            },
+            {
+                "name" : "act_pos_deg",
+                "type" : "float(8)",
+                "meas" : "angle",
+                "unit" : "degrees",
+                "nul"  : true
+            },
+            {
+                "name" : "des_pos_deg",
+                "type" : "float(8)",
+                "meas" : "angle",
+                "unit" : "degrees",
+                "nul"  : true
+            },
+            {
+                "name" : "arc_sec_err",
+                "type" : "float(8)",
+                "meas" : "angle",
+                "unit" : "arcsec",
+                "nul"  : true
+            },
+            {
+                "name" : "arc_sec_mean_err",
+                "type" : "float(8)",
+                "meas" : "angle",
+                "unit" : "arcsec",
+                "nul"  : true
+            },
+            {
+                "name" : "arc_sec_std_dev",
+                "type" : "float(8)",
+                "meas" : "angle",
+                "unit" : "arcsec",
+                "nul"  : true
+            },
+            {
+                "name" : "rotations",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "moving",
+                "type" : "int(1)",
+                "nul"  : true
+            },
+            {
+                "name" : "extra",
+                "type" : "jsonobject",
+                "nul"  : true
+            }
+        ],
+        "indexes" : [
+            ["t"],
+            ["t_100"],
+            ["t_10000"]
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "magsite",
+    "group"  : {
+        "name"  : "multimag",
+        "label" : "MultiMag",
+        "desc"  : "Test site multi-mag data group."
+    }
+}

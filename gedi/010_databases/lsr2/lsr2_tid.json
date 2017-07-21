@@ -1,0 +1,143 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "lsr2",
+    "database" : {
+        "name"      : "tid",
+        "label"     : "TID",
+        "desc"      : "GEDI Laser 2 TID database.",
+        "format"    : "{tid}-{label}",
+        "singular"  : "TID",
+        "backup"    : true,
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "order" : [
+            [ "t_start", "desc" ]
+        ],
+        "fields" : [
+            {
+                "name"  : "tid",
+                "type"  : "int(4)",
+                "key"   : true
+            },
+            {
+                "name"  : "label",
+                "type"  : "utf8string(64)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "t_start",
+                "type"  : "datetime",
+                "index" : true
+            },
+            {
+                "name"  : "t_end",
+                "type"  : "datetime",
+                "index" : true
+            },
+            {
+                "name"  : "pulse_energy_scaling",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "focal_length",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "laser_7_req",
+                "type"  : "float(8)",
+                "nul"   : true,
+                "meas"  : "angle",
+                "unit"  : "mrads"
+            },
+            {
+                "name"  : "laser_8_req",
+                "type"  : "float(8)",
+                "nul"   : true,
+                "meas"  : "length",
+                "unit"  : "in"
+            },
+            {
+                "name"  : "laser_11_req",
+                "type"  : "float(8)",
+                "nul"   : true,
+                "meas"  : "percent",
+                "unit"  : "%"
+            },
+            {
+                "name"  : "laser_12_req",
+                "type"  : "float(8)",
+                "nul"   : true,
+                "meas"  : "percent",
+                "unit"  : "%"
+            },
+            {
+                "name"  : "camera_distance",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "reflectivity",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "notes",
+                "type"  : "utf8text",
+                "nul"   : true
+            }
+        ],
+        "databases" : [
+            {
+                "name"        : "file",
+                "label"       : "File",
+                "desc"        : "GEDI Laser 2 TID file database.",
+                "format"      : "{tid} {name}",
+                "file_format" : "{name}",
+                "singular"    : "file",
+                "event"       : true,
+                "file"        : true,
+                "link"        : true,
+                "log"         : true,
+                "notify"      : true,
+                "subscribe"   : true,
+                "tag"         : true,
+                "track"       : true,
+                "trash"       : true,
+                "wall"        : true,
+                "order" : [
+                    [ "tid",  "desc" ],
+                    [ "name", "asc"  ]
+                ],
+                "fields" : [
+                    {
+                        "name"  : "tid",
+                        "type"  : "int(4)",
+                        "ref"   : "tid",
+                        "key"   : true
+                    },
+                    {
+                        "name"  : "name",
+                        "type"  : "utf8string(128)",
+                        "key"   : true
+                    },
+                    {
+                        "name"  : "desc",
+                        "type"  : "utf8string",
+                        "nul"   : true
+                    }
+                ]
+            }
+        ]
+    }
+}

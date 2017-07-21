@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "magsite",
+    "group"  : {
+        "name"  : "turntable",
+        "label" : "Turntable",
+        "desc"  : "Test site turntable data group."
+    }
+}

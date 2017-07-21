@@ -3,6 +3,6 @@
   "database": "moma.qsm.def",
   "records": {
       "type": "tsv",
-      "$object_id": "{local}/moma_qsm_def.txt"
+      "$object_id": "{local}/moma_def.txt"
   }
 }

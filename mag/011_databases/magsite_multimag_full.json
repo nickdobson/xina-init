@@ -1,0 +1,142 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "magsite.multimag",
+    "database" : {
+        "name"   : "full",
+        "label"  : "Full",
+        "desc"   : "Test site full multi-mag data.",
+        "format" : "{t} {port}",
+        "fields" : [
+            {
+                "name" : "port",
+                "type" : "asciistring(1)"
+            },
+            {
+                "name" : "t",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_100",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_10000",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "instr_type",
+                "type" : "asciistring(16)"
+            },
+            {
+                "name" : "sec",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "subsec",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "samples",
+                "type" : "int(2)"
+            },
+            {
+                "name" : "x",
+                "type" : "jsonarray"
+            },
+            {
+                "name" : "x_avg",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "x_min",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "x_max",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "x_sdev",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "y",
+                "type" : "jsonarray"
+            },
+            {
+                "name" : "y_avg",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "y_min",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "y_max",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "y_sdev",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "z",
+                "type" : "jsonarray"
+            },
+            {
+                "name" : "z_avg",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "z_min",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "z_max",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "z_sdev",
+                "type" : "float(4)"
+            },
+            {
+                "name" : "range",
+                "type" : "int(2)"
+            },
+            {
+                "name" : "pp1_field_strength",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pp1_quality",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pp2_field_strength",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pp2_quality",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "extra",
+                "type" : "jsonobject",
+                "nul"  : true
+            }
+        ],
+        "indexes" : [
+            ["port", "t"],
+            ["port", "t_100"],
+            ["port", "t_10000"],
+            ["t"],
+            ["t_100"],
+            ["t_10000"]
+        ]
+    }
+}

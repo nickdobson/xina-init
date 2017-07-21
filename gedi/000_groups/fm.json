@@ -1,0 +1,9 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "group"  : {
+        "name"  : "fm",
+        "label" : "GEDI FM",
+        "desc"  : "GEDI flight model group."
+    }
+}

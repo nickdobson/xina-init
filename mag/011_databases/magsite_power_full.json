@@ -1,0 +1,133 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "magsite.power",
+    "database" : {
+        "name"   : "full",
+        "label"  : "Full",
+        "desc"   : "Test site full power supply data.",
+        "format" : "{t}",
+        "fields" : [
+            {
+                "name" : "t",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_100",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_10000",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "mag+12v_volts",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "mag+12v_curr",
+                "type" : "float(8)",
+                "meas" : "current",
+                "unit" : "A",
+                "nul"  : true
+            },
+            {
+                "name" : "mag-12v_volts",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "mag-12v_curr",
+                "type" : "float(8)",
+                "meas" : "current",
+                "unit" : "A",
+                "nul"  : true
+            },
+            {
+                "name" : "zest+12v_volts",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "zest+12v_curr",
+                "type" : "float(8)",
+                "meas" : "current",
+                "unit" : "A",
+                "nul"  : true
+            },
+            {
+                "name" : "zest-12v_volts",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "zest-12v_curr",
+                "type" : "float(8)",
+                "meas" : "current",
+                "unit" : "A",
+                "nul"  : true
+            },
+            {
+                "name" : "heater1_volts",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "heater1_curr",
+                "type" : "float(8)",
+                "meas" : "current",
+                "unit" : "A",
+                "nul"  : true
+            },
+            {
+                "name" : "heater2_volts",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "heater2_curr",
+                "type" : "float(8)",
+                "meas" : "current",
+                "unit" : "A",
+                "nul"  : true
+            },
+            {
+                "name" : "spare_pwr_volts",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "spare_pwr_curr",
+                "type" : "float(8)",
+                "meas" : "current",
+                "unit" : "A",
+                "nul"  : true
+            },
+            {
+                "name" : "extra",
+                "type" : "jsonobject",
+                "nul"  : true
+            }
+        ],
+        "indexes" : [
+            ["t"],
+            ["t_100"],
+            ["t_10000"]
+        ]
+    }
+}

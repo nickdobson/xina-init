@@ -1,0 +1,14 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "moma",
+    "group"  : {
+        "name"    : "gcemi",
+        "label"   : "GCEMI Model",
+        "desc"    : "MOMA GCEMI model group.",
+        "objects" : {
+            "xo_struct_model" : {"esoh": "moma.esoh", "expected": "moma.expected"},
+            "xo_view_default" : {"*": "tid"}
+        }
+    }
+}

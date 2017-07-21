@@ -3,6 +3,6 @@
   "database": "moma.fm.def",
   "records": {
       "type": "tsv",
-      "$object_id": "{local}/moma_fm_def.txt"
+      "$object_id": "{local}/moma_def.txt"
   }
 }

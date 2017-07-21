@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "magsite",
+    "group"  : {
+        "name"  : "chamber",
+        "label" : "Chamber",
+        "desc"  : "Test site vacuum chamber data group."
+    }
+}

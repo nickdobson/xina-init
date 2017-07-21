@@ -1,0 +1,34 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "bdu3.data.hk",
+    "database" : {
+        "name"   : "full",
+        "label"  : "Full",
+        "desc"   : "GEDI BDU 3 full housekeeping database.",
+        "format" : "{time} {hk_id} {value}",
+        "fields" : [
+            {
+                "name" : "time",
+                "type" : "datetime"
+            },
+            {
+                "name" : "source_id",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "hk_id",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "value",
+                "type" : "float(8)"
+            }
+        ],
+        "indexes" : [
+            ["time", "hk_id"],
+            ["source_id"],
+            ["hk_id"]
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "moma.gcemi.data",
+	"group"  : {
+		"name"  : "sci",
+        "label" : "Science",
+		"desc"  : "MOMA GCEMI model science data group."
+	}
+}

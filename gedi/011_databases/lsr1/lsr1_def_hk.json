@@ -1,0 +1,151 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "lsr1.def",
+    "database" : {
+        "name"     : "hk",
+        "label"    : "Housekeeping",
+        "desc"     : "GEDI Laser 1 housekeeping definition information.",
+        "format"   : "hk{hk_id}:{label}",
+        "singular" : "field",
+        "backup"   : true,
+        "link"     : true,
+        "wall"     : true,
+        "order"    : [ [ "hk_id", "asc" ] ],
+        "fields"   : [
+            {
+                "name" : "source_id",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "hk_id",
+                "type" : "int(4)",
+                "key"  : true
+            },
+            {
+				"name" : "name",
+				"type" : "utf8string(64)"
+			},
+			{
+				"name" : "alias",
+				"type" : "utf8string(64)",
+				"nul"  : true
+			},
+            {
+                "name" : "measure",
+                "type" : "utf8string(32)",
+                "nul"  : true
+            },
+            {
+                "name" : "unit",
+                "type" : "utf8string(32)",
+                "nul"  : true
+            },
+            {
+                "name" : "mined",
+                "type" : "boolean",
+                "def"  : "false"
+            },
+            {
+                "name" : "scaling",
+                "type" : "float(8)",
+				"def"  : "1"
+            },
+            {
+                "name" : "offset",
+                "type" : "float(8)",
+				"def"  : "0"
+            },
+            {
+                "name" : "digits",
+                "type" : "int(4)",
+				"def"  : "0"
+            },
+            {
+                "name" : "alarm_enable",
+                "type" : "boolean",
+				"def"  : "false"
+            },
+            {
+                "name" : "lo_limit",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "lolo_limit",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "hi_limit",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "hihi_limit",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "warn_enable",
+                "type" : "boolean",
+				"def"  : "false"
+            },
+            {
+                "name" : "average",
+                "type" : "boolean",
+				"def"  : "false"
+            },
+            {
+                "name" : "deadband",
+                "type" : "int(4)",
+				"def"  : "0"
+            },
+			{
+				"name" : "alarm_actions",
+				"type" : "int(4)",
+				"def"  : "0"
+			},
+			{
+				"name" : "alarm_action_1",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "alarm_action_2",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "alarm_action_3",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "warn_actions",
+				"type" : "int(4)",
+				"def"  : "0"
+			},
+			{
+				"name" : "warn_action_1",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "warn_action_2",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "warn_action_3",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+            {
+                "name" : "notes",
+                "type" : "utf8text",
+                "nul"  : true
+            }
+        ]
+    }
+}

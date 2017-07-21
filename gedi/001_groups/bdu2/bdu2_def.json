@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "bdu2",
+	"group"  : {
+		"name"  : "def",
+        "label" : "Definitions",
+		"desc"  : "GEDI BDU 2 definitions group."
+	}
+}

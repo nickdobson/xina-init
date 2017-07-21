@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "lsr1.data",
+	"group"  : {
+		"name"  : "hk",
+        "label" : "Housekeeping",
+		"desc"  : "GEDI Laser 1 housekeeping data group."
+	}
+}

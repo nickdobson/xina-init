@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "fm",
+	"group"  : {
+		"name"  : "def",
+        "label" : "Definitions",
+		"desc"  : "GEDI flight model definitions group."
+	}
+}

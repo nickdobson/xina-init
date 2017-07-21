@@ -1,0 +1,32 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "fm.def",
+    "database" : {
+        "name"     : "source",
+        "label"    : "Source",
+        "desc"     : "GEDI flight model data source definition information.",
+        "format"   : "src{source_id}:{label}",
+        "singular" : "source",
+        "backup"   : true,
+        "link"     : true,
+        "wall"     : true,
+        "order"    : [ [ "source_id", "asc" ] ],
+        "fields"   : [
+            {
+                "name" : "source_id",
+                "type" : "int(4)",
+                "key"  : true
+            },
+            {
+                "name" : "label",
+                "type" : "utf8string(64)"
+            },
+            {
+                "name" : "notes",
+                "type" : "utf8text",
+                "nul"  : true
+            }
+        ]
+    }
+}

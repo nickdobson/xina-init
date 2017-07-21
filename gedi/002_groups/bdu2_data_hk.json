@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "bdu2.data",
+	"group"  : {
+		"name"  : "hk",
+        "label" : "Housekeeping",
+		"desc"  : "GEDI BDU 2 housekeeping data group."
+	}
+}

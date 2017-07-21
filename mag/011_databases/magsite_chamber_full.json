@@ -1,0 +1,175 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "magsite.chamber",
+    "database" : {
+        "name"   : "full",
+        "label"  : "Full",
+        "desc"   : "Test site full chamber data.",
+        "format" : "{t}",
+        "fields" : [
+            {
+                "name" : "t",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_100",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_10000",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "main_tank",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "guard_tank",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "guard_shield",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "horiz_bobbin",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "vert_bobbin",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "ultem_base",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "alum_adapter",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "cold_plate",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "mag_cover_top",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "mount_alum",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "mag_base",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "ion_gauge",
+                "type" : "float(8)",
+                "meas" : "pressure",
+                "unit" : "Torr",
+                "nul"  : true
+            },
+            {
+                "name" : "cg1",
+                "type" : "float(8)",
+                "meas" : "pressure",
+                "unit" : "Torr",
+                "nul"  : true
+            },
+            {
+                "name" : "cg2",
+                "type" : "float(8)",
+                "meas" : "pressure",
+                "unit" : "Torr",
+                "nul"  : true
+            },
+            {
+                "name" : "v1",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "i1",
+                "type" : "float(8)",
+                "meas" : "current",
+                "unit" : "A",
+                "nul"  : true
+            },
+            {
+                "name" : "pwr1",
+                "type" : "float(8)",
+                "meas" : "power",
+                "unit" : "W",
+                "nul"  : true
+            },
+            {
+                "name" : "v2",
+                "type" : "float(8)",
+                "meas" : "voltage",
+                "unit" : "V",
+                "nul"  : true
+            },
+            {
+                "name" : "i2",
+                "type" : "float(8)",
+                "meas" : "current",
+                "unit" : "A",
+                "nul"  : true
+            },
+            {
+                "name" : "pwr2",
+                "type" : "float(8)",
+                "meas" : "power",
+                "unit" : "W",
+                "nul"  : true
+            },
+            {
+                "name" : "extra",
+                "type" : "jsonobject",
+                "nul"  : true
+            }
+        ],
+        "indexes" : [
+            ["t"],
+            ["t_100"],
+            ["t_10000"]
+        ]
+    }
+}

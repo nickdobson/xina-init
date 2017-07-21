@@ -1,0 +1,42 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "bdu3.data",
+    "database" : {
+        "name"      : "mk",
+        "label"     : "Marker",
+        "desc"      : "GEDI BDU 3 marker database.",
+        "format"    : "{t_start} {marker_id} {label}",
+        "singular"  : "marker",
+        "order" : [
+            [ "t_start", "desc" ]
+        ],
+        "fields" : [
+            {
+                "name"  : "marker_id",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "label",
+                "type"  : "utf8string(64)",
+                "index" : true,
+                "nul"   : true
+            },
+            {
+                "name"  : "t_start",
+                "type"  : "datetime",
+                "index" : true
+            },
+            {
+                "name"  : "t_end",
+                "type"  : "datetime",
+                "index" : true
+            },
+            {
+                "name"  : "notes",
+                "type"  : "utf8text",
+                "nul"   : true
+            }
+        ]
+    }
+}

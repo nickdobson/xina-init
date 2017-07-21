@@ -1,0 +1,9 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "group"  : {
+        "name"  : "bdu3",
+        "label" : "GEDI BDU 3",
+        "desc"  : "GEDI BDU 3 group."
+    }
+}
