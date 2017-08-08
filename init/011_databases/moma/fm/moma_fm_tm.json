@@ -79,6 +79,16 @@
                 "nul"   : true
             },
             {
+                "name"  : "Contains GC Sci Data",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Contains LDI Sci Data",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
                 "name"  : "Scripts",
                 "type"  : "jsonarray",
                 "nul"   : true
@@ -161,6 +171,83 @@
                 "type"  : "float(8)",
                 "meas"  : "energy",
                 "unit"  : "Wh",
+                "nul"   : true
+            },
+            {
+                "name"  : "Bus 1 Peak Power",
+                "type"  : "float(8)",
+                "meas"  : "power",
+                "unit"  : "W",
+                "nul"   : true
+            },
+            {
+                "name"  : "Bus 1 Avg Power",
+                "type"  : "float(8)",
+                "meas"  : "power",
+                "unit"  : "W",
+                "nul"   : true
+            },
+            {
+                "name"  : "Bus 2 Peak Power",
+                "type"  : "float(8)",
+                "meas"  : "power",
+                "unit"  : "W",
+                "nul"   : true
+            },
+            {
+                "name"  : "Bus 2 Avg Power",
+                "type"  : "float(8)",
+                "meas"  : "power",
+                "unit"  : "W",
+                "nul"   : true
+            },
+            {
+                "name"  : "Bus 3 Peak Power",
+                "type"  : "float(8)",
+                "meas"  : "power",
+                "unit"  : "W",
+                "nul"   : true
+            },
+            {
+                "name"  : "Bus 3 Avg Power",
+                "type"  : "float(8)",
+                "meas"  : "power",
+                "unit"  : "W",
+                "nul"   : true
+            },
+            {
+                "name"  : "Bus 4 Peak Power",
+                "type"  : "float(8)",
+                "meas"  : "power",
+                "unit"  : "W",
+                "nul"   : true
+            },
+            {
+                "name"  : "Bus 4 Avg Power",
+                "type"  : "float(8)",
+                "meas"  : "power",
+                "unit"  : "W",
+                "nul"   : true
+            },
+            {
+                "name"  : "Laser On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
+                "nul"   : true
+            },
+            {
+                "name"  : "GC On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
+                "nul"   : true
+            },
+            {
+                "name"  : "SEB On Time",
+                "type"  : "float(8)",
+                "meas"  : "time",
+                "unit"  : "s",
                 "nul"   : true
             },
             {

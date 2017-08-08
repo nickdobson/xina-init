@@ -230,6 +230,21 @@
                 "nul"  : true
             },
             {
+                "name" : "GC Ion Source",
+                "type" : "boolean",
+                "nul"  : true
+            },
+            {
+                "name" : "LDI Ion Source",
+                "type" : "boolean",
+                "nul"  : true
+            },
+            {
+                "name" : "Fil B On",
+                "type" : "boolean",
+                "nul"  : true
+            },
+            {
                 "name" : "Scan Mode",
                 "type" : "asciistring(8)",
                 "nul"  : true

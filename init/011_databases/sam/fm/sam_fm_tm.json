@@ -60,7 +60,7 @@
             },
             {
                 "name"  : "Script Name",
-                "type"  : "utf8string(32)",
+                "type"  : "utf8string(64)",
                 "nul"   : true
             },
             {
