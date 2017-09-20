@@ -1,0 +1,54 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "sam",
+    "database" : {
+        "name"   : "rems",
+        "label"  : "REMS",
+        "desc"   : "SAM REMS database.",
+        "format" : "{timestamp}",
+        "fields" : [
+            {
+                "name" : "timestamp",
+                "type" : "datetime"
+            },
+            {
+                "name" : "t_utc",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "h_wind_speed",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "v_wind_speed",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "wind_dir",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "ambient_temp",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "humidity",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "pressure",
+                "type" : "float(8)",
+                "nul"  : true
+            }
+        ],
+        "indexes" : [
+            ["t_utc"]
+        ]
+    }
+}

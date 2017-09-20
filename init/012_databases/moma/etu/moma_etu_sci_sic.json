@@ -27,6 +27,11 @@
             {
                 "name" : "SIC",
                 "type" : "int(4)"
+            },
+            {
+                "name" : "cSIC",
+                "type" : "int(4)",
+                "nul"  : true
             }
         ],
         "indexes" : [

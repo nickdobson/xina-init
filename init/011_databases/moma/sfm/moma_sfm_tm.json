@@ -421,6 +421,11 @@
                 "nul"   : true
             },
             {
+                "name"  : "Packet Summary",
+                "type"  : "jsonobject",
+                "nul"   : true
+            },
+            {
                 "name"  : "Pressure",
                 "type"  : "utf8text",
                 "meas"  : "pressure",

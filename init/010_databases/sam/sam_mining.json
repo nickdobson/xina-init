@@ -1,0 +1,30 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "sam",
+    "database" : {
+        "name"   : "mining",
+        "label"  : "Mining",
+        "desc"   : "SAM mining status database.",
+        "format" : "{status} {time} {message}",
+        "fields" : [
+            {
+                "name" : "status",
+                "type" : "boolean"
+            },
+            {
+                "name" : "time",
+                "type" : "datetime"
+            },
+            {
+                "name" : "message",
+                "type" : "utf8string",
+                "nul"  : true
+            }
+        ],
+        "indexes" : [
+            ["status", "time"],
+            ["time"]
+        ]
+    }
+}
