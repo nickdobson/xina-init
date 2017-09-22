@@ -82,6 +82,13 @@
                 "unit"  : "%"
             },
             {
+                "name"  : "bdu_3_req",
+                "type"  : "float(8)",
+                "nul"   : true,
+                "meas"  : "percent",
+                "unit"  : "%"
+            },
+            {
                 "name"  : "camera_distance",
                 "type"  : "float(8)",
                 "nul"   : true

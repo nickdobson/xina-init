@@ -6,7 +6,7 @@
         "name"     : "hk",
         "label"    : "Housekeeping",
         "desc"     : "GEDI BDU 2 housekeeping definition information.",
-        "format"   : "hk{hk_id}:{label}",
+        "format"   : "hk{hk_id}:{name}",
         "singular" : "field",
         "backup"   : true,
         "link"     : true,
