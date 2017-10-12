@@ -1,0 +1,317 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "dev",
+    "database" : {
+        "name"   : "field",
+        "label"  : "Field Tests",
+        "desc"   : "Database for testing field types.",
+        "format" : "{key}",
+        "fields" : [
+            {
+                "name" : "key",
+                "type" : "int(8)"
+            },
+            {
+                "name"   : "utf8_string_64_ops",
+                "type"   : "utf8string(64)",
+                "options" : [
+                    { "value" : "alpha", "desc" : "first option"  },
+                    { "value" : "beta",  "desc" : "second option" },
+                    { "value" : "delta", "desc" : "third option"  }
+                ]
+            },
+            {
+                "name"   : "utf8_string_64_ops_nul",
+                "type"   : "utf8string(64)",
+                "nul"    : true,
+                "options" : [
+                    { "value" : "alpha", "desc" : "first option"  },
+                    { "value" : "beta",  "desc" : "second option" },
+                    { "value" : "delta", "desc" : "third option"  }
+                ]
+            },
+            {
+                "name"   : "utf8_string_64_strict",
+                "type"   : "utf8string(64)",
+                "strict" : true,
+                "options" : [
+                    { "value" : "alpha", "desc" : "first option"  },
+                    { "value" : "beta",  "desc" : "second option" },
+                    { "value" : "delta", "desc" : "third option"  }
+                ]
+            },
+            {
+                "name"   : "utf8_string_64_strict_nul",
+                "type"   : "utf8string(64)",
+                "nul"    : true,
+                "strict" : true,
+                "options" : [
+                    { "value" : "alpha", "desc" : "first option"  },
+                    { "value" : "beta",  "desc" : "second option" },
+                    { "value" : "delta", "desc" : "third option"  }
+                ]
+            },
+            {
+                "name"   : "utf8_text_ops",
+                "type"   : "utf8text",
+                "options" : [
+                    { "value" : "alpha", "desc" : "first option"  },
+                    { "value" : "beta",  "desc" : "second option" },
+                    { "value" : "delta", "desc" : "third option"  }
+                ]
+            },
+            {
+                "name"   : "utf8_text_ops_nul",
+                "type"   : "utf8text",
+                "nul"    : true,
+                "options" : [
+                    { "value" : "alpha", "desc" : "first option"  },
+                    { "value" : "beta",  "desc" : "second option" },
+                    { "value" : "delta", "desc" : "third option"  }
+                ]
+            },
+            {
+                "name"   : "utf8_text_strict",
+                "type"   : "utf8text",
+                "strict" : true,
+                "options" : [
+                    { "value" : "alpha", "desc" : "first option"  },
+                    { "value" : "beta",  "desc" : "second option" },
+                    { "value" : "delta", "desc" : "third option"  }
+                ]
+            },
+            {
+                "name"   : "utf8_text_strict_nul",
+                "type"   : "utf8text",
+                "nul"    : true,
+                "strict" : true,
+                "options" : [
+                    { "value" : "alpha", "desc" : "first option"  },
+                    { "value" : "beta",  "desc" : "second option" },
+                    { "value" : "delta", "desc" : "third option"  }
+                ]
+            },
+            {
+                "name"   : "datetime_ops",
+                "type"   : "datetime",
+                "options" : [
+                    { "value" : "1987-09-21T00:00:00.000Z", "desc" : "first option"  },
+                    { "value" : "2000-01-01T00:00:00.000Z", "desc" : "second option" },
+                    { "value" : "2017-10-02T14:02:00.000Z", "desc" : "third option"  }
+                ]
+            },
+            {
+                "name"   : "datetime_ops_nul",
+                "type"   : "datetime",
+                "nul"    : true,
+                "options" : [
+                    { "value" : "1987-09-21T00:00:00.000Z", "desc" : "first option"  },
+                    { "value" : "2000-01-01T00:00:00.000Z", "desc" : "second option" },
+                    { "value" : "2017-10-02T14:02:00.000Z", "desc" : "third option"  }
+                ]
+            },
+            {
+                "name"   : "datetime_strict",
+                "type"   : "datetime",
+                "strict" : true,
+                "options" : [
+                    { "value" : "1987-09-21T00:00:00.000Z", "desc" : "first option"  },
+                    { "value" : "2000-01-01T00:00:00.000Z", "desc" : "second option" },
+                    { "value" : "2017-10-02T14:02:00.000Z", "desc" : "third option"  }
+                ]
+            },
+            {
+                "name"   : "datetime_strict_nul",
+                "type"   : "datetime",
+                "nul"    : true,
+                "strict" : true,
+                "options" : [
+                    { "value" : "1987-09-21T00:00:00.000Z", "desc" : "first option"  },
+                    { "value" : "2000-01-01T00:00:00.000Z", "desc" : "second option" },
+                    { "value" : "2017-10-02T14:02:00.000Z", "desc" : "third option"  }
+                ]
+            },
+            {
+                "name" : "boolean",
+                "type" : "boolean",
+                "nul"  : true
+            },
+            {
+                "name" : "int_1",
+                "type" : "int(1)",
+                "nul"  : true
+            },
+            {
+                "name" : "int_2",
+                "type" : "int(2)",
+                "nul"  : true
+            },
+            {
+                "name" : "int_4",
+                "type" : "int(4)",
+                "nul"  : true
+            },
+            {
+                "name" : "int_8",
+                "type" : "int(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "float_4",
+                "type" : "float(4)",
+                "nul"  : true
+            },
+            {
+                "name" : "float_8",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "datetime",
+                "type" : "datetime",
+                "nul"  : true
+            },
+            {
+                "name" : "date",
+                "type" : "date",
+                "nul"  : true
+            },
+            {
+                "name" : "local_datetime",
+                "type" : "localdatetime",
+                "nul"  : true
+            },
+            {
+                "name" : "local_date",
+                "type" : "localdate",
+                "nul"  : true
+            },
+            {
+                "name" : "json",
+                "type" : "json",
+                "nul"  : true
+            },
+            {
+                "name" : "json_array",
+                "type" : "jsonarray",
+                "nul"  : true
+            },
+            {
+                "name" : "json_object",
+                "type" : "jsonobject",
+                "nul"  : true
+            },
+            {
+                "name" : "ascii_string_1",
+                "type" : "asciistring(1)",
+                "nul"  : true
+            },
+            {
+                "name" : "ascii_string_2",
+                "type" : "asciistring(2)",
+                "nul"  : true
+            },
+            {
+                "name" : "ascii_string_4",
+                "type" : "asciistring(4)",
+                "nul"  : true
+            },
+            {
+                "name" : "ascii_string_8",
+                "type" : "asciistring(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "ascii_string_16",
+                "type" : "asciistring(16)",
+                "nul"  : true
+            },
+            {
+                "name" : "ascii_string_32",
+                "type" : "asciistring(32)",
+                "nul"  : true
+            },
+            {
+                "name" : "ascii_string_64",
+                "type" : "asciistring(64)",
+                "nul"  : true
+            },
+            {
+                "name" : "ascii_string_128",
+                "type" : "asciistring(128)",
+                "nul"  : true
+            },
+            {
+                "name" : "ascii_string",
+                "type" : "asciistring",
+                "nul"  : true
+            },
+            {
+                "name" : "ascii_text",
+                "type" : "asciitext",
+                "nul"  : true
+            },
+            {
+                "name" : "utf8_string_1",
+                "type" : "utf8string(1)",
+                "nul"  : true
+            },
+            {
+                "name" : "utf8_string_2",
+                "type" : "utf8string(2)",
+                "nul"  : true
+            },
+            {
+                "name" : "utf8_string_4",
+                "type" : "utf8string(4)",
+                "nul"  : true
+            },
+            {
+                "name" : "utf8_string_8",
+                "type" : "utf8string(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "utf8_string_16",
+                "type" : "utf8string(16)",
+                "nul"  : true
+            },
+            {
+                "name" : "utf8_string_32",
+                "type" : "utf8string(32)",
+                "nul"  : true
+            },
+            {
+                "name" : "utf8_string_64",
+                "type" : "utf8string(64)",
+                "nul"  : true
+            },
+            {
+                "name" : "utf8_string_128",
+                "type" : "utf8string(128)",
+                "nul"  : true
+            },
+            {
+                "name" : "utf8_string",
+                "type" : "utf8string",
+                "nul"  : true
+            },
+            {
+                "name" : "utf8_text",
+                "type" : "utf8text",
+                "nul"  : true
+            },
+            {
+                "name" : "html",
+                "type" : "html",
+                "nul"  : true
+            },
+            {
+                "name" : "xml",
+                "type" : "xml",
+                "nul"  : true
+            }
+        ]
+    }
+}

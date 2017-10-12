@@ -1,11 +1,12 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "parent"   : "gedi",
+    "parent"   : "moma.gctvac",
     "database" : {
-        "name"      : "component",
-        "label"     : "Component",
-        "desc"      : "GEDI instrument component database.",
+        "name"      : "config",
+        "label"     : "Configuration",
+        "desc"      : "MOMA GC TVAC model configuration database.",
+        "format"    : "{Start TID}-{End TID} {Description}",
         "backup"    : true,
         "event"     : true,
         "link"      : true,
@@ -16,20 +17,26 @@
         "track"     : true,
         "trash"     : true,
         "wall"      : true,
-        "fields": [
+        "fields"    : [
             {
-                "name"  : "Name",
-                "type"  : "utf8string(64)",
+                "name"  : "Start TID",
+                "type"  : "int(4)",
                 "key"   : true
             },
             {
-                "name"  : "Category",
-                "type"  : "utf8string(64)",
+                "name"  : "End TID",
+                "type"  : "int(4)",
                 "nul"   : true
             },
             {
-                "name"  : "Part No",
-                "type"  : "utf8string(64)",
+                "name"  : "Instant",
+                "type"  : "boolean",
+                "nul"   : true,
+                "def"   : "false"
+            },
+            {
+                "name"  : "Reset",
+                "type"  : "jsonobject",
                 "nul"   : true
             },
             {

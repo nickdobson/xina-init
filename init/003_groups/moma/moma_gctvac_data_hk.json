@@ -1,10 +1,10 @@
 {
 	"action" : "create",
 	"create" : "group",
-    "parent" : "moma.gcemi.data",
+    "parent" : "moma.gctvac.data",
 	"group"  : {
 		"name"  : "hk",
         "label" : "Housekeeping",
-		"desc"  : "MOMA GC EMI model housekeeping data group."
+		"desc"  : "MOMA GC TVAC model housekeeping data group."
 	}
 }

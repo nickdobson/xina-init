@@ -3,9 +3,9 @@
     "create" : "group",
     "parent" : "moma",
     "group"  : {
-        "name"    : "gcemi",
-        "label"   : "GC EMI Model",
-        "desc"    : "MOMA GC EMI model group.",
+        "name"    : "gctvac",
+        "label"   : "GC TVAC Model",
+        "desc"    : "MOMA GC TVAC model group.",
         "objects" : {
             "xo_struct_model" : {
                 "esoh"     : "moma.esoh",

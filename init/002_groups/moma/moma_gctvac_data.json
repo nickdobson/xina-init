@@ -1,10 +1,10 @@
 {
 	"action" : "create",
 	"create" : "group",
-    "parent" : "moma.gcemi",
+    "parent" : "moma.gctvac",
 	"group"  : {
 		"name"  : "data",
         "label" : "Data",
-		"desc"  : "MOMA GC EMI model data group."
+		"desc"  : "MOMA GC TVAC model data group."
 	}
 }

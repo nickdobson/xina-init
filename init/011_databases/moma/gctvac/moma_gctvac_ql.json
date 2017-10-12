@@ -1,11 +1,11 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "parent"   : "moma.gcemi",
+    "parent"   : "moma.gctvac",
     "database" : {
         "name"   : "ql",
         "label"  : "Quicklook",
-        "desc"   : "MOMA GC EMI model quicklook database.",
+        "desc"   : "MOMA GC TVAC model quicklook database.",
         "format" : "{TID}",
         "fields" : [
             {

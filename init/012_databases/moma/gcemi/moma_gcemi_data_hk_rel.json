@@ -1,0 +1,49 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "moma.gcemi.data.hk",
+    "database" : {
+        "name"   : "rel",
+        "label"  : "Bin Relative",
+        "desc"   : "MOMA GC EMI model relative time binned housekeeping database.",
+        "format" : "{t_rel} {Data ID} {SCI Avg} ({SCI Min}, {SCI Max})",
+        "fields" : [
+            {
+                "name" : "t_utc",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_rel",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "TID",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "Data ID",
+                "type" : "int(2)"
+            },
+            {
+                "name" : "Samples",
+                "type" : "int(4)"
+            },
+            {
+                "name" : "SCI Avg",
+                "type" : "float(8)"
+            },
+            {
+                "name" : "SCI Min",
+                "type" : "float(8)"
+            },
+            {
+                "name" : "SCI Max",
+                "type" : "float(8)"
+            }
+        ],
+        "indexes" : [
+            ["t_rel", "Data ID", "Samples"],
+            ["TID"  , "Data ID", "Samples"]
+        ]
+    }
+}

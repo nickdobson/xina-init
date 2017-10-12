@@ -5,7 +5,7 @@
     "database" : {
         "name"      : "meta",
         "label"     : "Meta-Marker",
-        "desc"      : "MOMA GCEMI model meta-marker database.",
+        "desc"      : "MOMA GC EMI model meta-marker database.",
         "format"    : "{TID} {Text}",
         "singular"  : "marker",
         "backup"    : true,

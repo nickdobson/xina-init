@@ -1,9 +1,0 @@
-{
-	"action" : "create",
-	"create" : "group",
-	"group"  : {
-		"name"  : "gedi",
-        "label" : "GEDI",
-		"desc"  : "Primary group for the Global Ecosystem Dynamics Investigation (GEDI) mission."
-	}
-}

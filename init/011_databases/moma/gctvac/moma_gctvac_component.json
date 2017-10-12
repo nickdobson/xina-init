@@ -1,11 +1,11 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "parent"   : "moma.gcemi",
+    "parent"   : "moma.gctvac",
     "database" : {
         "name"      : "component",
         "label"     : "Component",
-        "desc"      : "MOMA GC EMI model component database.",
+        "desc"      : "MOMA GC TVAC model component database.",
         "backup"    : true,
         "event"     : true,
         "link"      : true,

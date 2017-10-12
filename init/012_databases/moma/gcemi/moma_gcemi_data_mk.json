@@ -1,0 +1,72 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "moma.gcemi.data",
+    "database" : {
+        "name"   : "mk",
+        "label"  : "Marker",
+        "desc"   : "MOMA GC EMI model marker database.",
+        "format" : "{TID} {MK ID} {MK Name}",
+        "fields" : [
+            {
+                "name"  : "t_utc",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "t_utc_next",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "t_sclk",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "t_sclk_next",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "t_rel",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "t_rel_next",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "dt",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "TID",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "UMKID",
+                "type"  : "int(8)"
+            },
+            {
+                "name"  : "MK ID",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "MK Name",
+                "type"  : "utf8string(64)",
+                "nul"   : true
+            },
+            {
+                "name"  : "MK Info",
+                "type"  : "utf8string(64)",
+                "nul"   : true
+            }
+        ],
+        "indexes" : [
+            ["t_utc"],
+            ["t_rel"],
+            ["TID", "MK ID"],
+            ["TID", "MK Name"],
+            ["UMKID"],
+            ["MK ID"],
+            ["MK Name"]
+        ]
+    }
+}

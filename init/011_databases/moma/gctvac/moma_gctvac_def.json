@@ -1,11 +1,11 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "parent"   : "moma.gcemi",
+    "parent"   : "moma.gctvac",
     "database" : {
         "name"     : "def",
         "label"    : "TM Definition",
-        "desc"     : "MOMA GC EMI model telemetry definition information.",
+        "desc"     : "MOMA GC TVAC model telemetry definition information.",
         "format"   : "hk{Data ID}_{Sub System}:{Name}",
         "singular" : "field",
         "backup"    : true,

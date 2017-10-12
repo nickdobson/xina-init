@@ -1,0 +1,8 @@
+{
+  "action": "set",
+  "database": "moma.sfm.def",
+  "records": {
+      "type": "tsv",
+      "$object_id": "{local}/moma_def.txt"
+  }
+}

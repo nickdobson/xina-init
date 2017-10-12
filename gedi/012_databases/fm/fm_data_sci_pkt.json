@@ -1,0 +1,22 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "fm.data.sci",
+    "database" : {
+        "name"   : "pkt",
+        "label"  : "Packet",
+        "desc"   : "GEDI flight model science packet database.",
+        "format" : "{time} {hk_id} {value}",
+        "fields" : [
+            {
+                "name" : "time",
+                "type" : "datetime"
+            }
+        ],
+        "indexes" : [
+            ["time", "hk_id"],
+            ["source_id"],
+            ["hk_id"]
+        ]
+    }
+}

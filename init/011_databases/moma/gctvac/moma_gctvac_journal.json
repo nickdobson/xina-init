@@ -1,11 +1,11 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "parent"   : "moma.gcemi",
+    "parent"   : "moma.gctvac",
     "database" : {
         "name"      : "journal",
         "label"     : "Journal",
-        "desc"      : "MOMA GC EMI model activity journal.",
+        "desc"      : "MOMA GC TVAC model activity journal.",
         "backup"    : true,
         "event"     : true,
         "link"      : true,

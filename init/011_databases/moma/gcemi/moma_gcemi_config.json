@@ -5,7 +5,7 @@
     "database" : {
         "name"      : "config",
         "label"     : "Configuration",
-        "desc"      : "MOMA GCEMI model configuration database.",
+        "desc"      : "MOMA GC EMI model configuration database.",
         "format"    : "{Start TID}-{End TID} {Description}",
         "backup"    : true,
         "event"     : true,

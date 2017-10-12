@@ -1,11 +1,11 @@
 {
     "action"   : "create",
     "create"   : "database",
-    "parent"   : "moma.gcemi",
+    "parent"   : "moma.gctvac",
     "database" : {
         "name"      : "anno",
         "label"     : "Annotations",
-        "desc"      : "MOMA GC EMI model annotations database.",
+        "desc"      : "MOMA GC TVAC model annotations database.",
         "format"    : "{TID} {t_rel} {Text}",
         "singular"  : "annotation",
         "backup"    : true,
