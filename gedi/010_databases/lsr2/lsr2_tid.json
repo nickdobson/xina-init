@@ -19,7 +19,8 @@
         "trash"     : true,
         "wall"      : true,
         "order" : [
-            [ "t_start", "desc" ]
+            [ "t_start", "desc" ],
+            [ "t_end",   "desc" ]
         ],
         "fields" : [
             {

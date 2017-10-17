@@ -1,0 +1,127 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "moma.sms",
+    "database" : {
+        "name"      : "event",
+        "label"     : "Event",
+        "desc"      : "MOMA science sample event database.",
+        "format"    : "{Model} {Holder ID} {Sample ID} {Station ID} {Event}",
+        "singular"  : "event",
+        "backup"    : true,
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "order" : [
+            [ "Name", "desc" ]
+        ],
+        "fields" : [
+            {
+                "name"  : "Event ID",
+                "type"  : "int(4)",
+                "key"   : true
+            },
+            {
+                "name"  : "Sample ID",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Holder ID",
+                "type"  : "int(4)"
+            },
+            {
+                "name"  : "Station ID",
+                "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"    : "Model",
+                "type"    : "asciistring(8)",
+                "index"   : true,
+                "strict"  : true,
+                "options" : [
+                    { "value" : "fm"  },
+                    { "value" : "etu" }
+                ]
+            },
+            {
+                "name"    : "Event",
+                "type"    : "asciistring(16)",
+                "index"   : true,
+                "strict"  : true,
+                "options" : [
+                    { "value" : "loaded"      },
+                    { "value" : "unloaded"    },
+                    { "value" : "installed"   },
+                    { "value" : "uninstalled" }
+                ]
+            },
+            {
+                "name"  : "WOA",
+                "type"  : "utf8string",
+                "nul"   : true
+            },
+            {
+                "name"  : "Performed By",
+                "type"  : "utf8string(64)"
+            },
+            {
+                "name"  : "Performed At",
+                "type"  : "datetime"
+            },
+            {
+                "name"  : "Notes",
+                "type"  : "utf8text",
+                "nul"   : true
+            }
+        ],
+        "databases" : [
+            {
+                "name"        : "file",
+                "label"       : "File",
+                "desc"        : "MOMA science sample event file database.",
+                "format"      : "{Event ID} {Name}",
+                "file_format" : "{Name}",
+                "singular"    : "file",
+                "event"       : true,
+                "file"        : true,
+                "link"        : true,
+                "log"         : true,
+                "notify"      : true,
+                "subscribe"   : true,
+                "tag"         : true,
+                "track"       : true,
+                "trash"       : true,
+                "wall"        : true,
+                "order" : [
+                    [ "Event ID", "desc" ],
+                    [ "Name",     "asc"  ]
+                ],
+                "fields" : [
+                    {
+                        "name" : "Event ID",
+                        "type" : "int(4)",
+                        "ref"  : "Event ID",
+                        "key"  : true
+                    },
+                    {
+                        "name" : "Name",
+                        "type" : "utf8string(128)",
+                        "key"  : true
+                    },
+                    {
+                        "name" : "Desc",
+                        "type" : "utf8string",
+                        "nul"  : true
+                    }
+                ]
+            }
+        ]
+    }
+}

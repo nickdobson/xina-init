@@ -355,8 +355,33 @@
                 "nul"   : true
             },
             {
+                "name"  : "Valve 1 Start",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Valve 1 End",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
                 "name"  : "Valve 2 Cycles",
                 "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Valve 2 Open Time",
+                "type"  : "float(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Valve 2 Start",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Valve 2 End",
+                "type"  : "boolean",
                 "nul"   : true
             },
             {
@@ -365,8 +390,28 @@
                 "nul"   : true
             },
             {
+                "name"  : "Valve 3 Start",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Valve 3 End",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
                 "name"  : "Valve 4 Cycles",
                 "type"  : "int(4)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Valve 4 Start",
+                "type"  : "boolean",
+                "nul"   : true
+            },
+            {
+                "name"  : "Valve 4 End",
+                "type"  : "boolean",
                 "nul"   : true
             },
             {
@@ -391,6 +436,11 @@
             },
             {
                 "name"  : "Laser Main",
+                "type"  : "int(8)",
+                "nul"   : true
+            },
+            {
+                "name"  : "Laser Shots",
                 "type"  : "int(8)",
                 "nul"   : true
             },

@@ -1,0 +1,18 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "fm.data.sci",
+    "database" : {
+        "name"   : "samp",
+        "label"  : "Sample",
+        "desc"   : "GEDI flight model science sample database.",
+        "file"   : true,
+        "fields" : [
+            {
+                "name"  : "gps_time",
+                "type"  : "int(4)",
+                "key"   : true
+            }
+        ]
+    }
+}

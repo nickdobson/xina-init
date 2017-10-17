@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+    "parent" : "fm.data",
+	"group"  : {
+		"name"  : "sci",
+        "label" : "Science",
+		"desc"  : "GEDI flight model science data group."
+	}
+}

@@ -1,0 +1,41 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "moma.sms",
+    "database" : {
+        "name"      : "carousel",
+        "label"     : "Carousel",
+        "desc"      : "MOMA carousel configuration database.",
+        "format"    : "{Station ID} {Angle}",
+        "singular"  : "station",
+        "backup"    : true,
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "order" : [
+            [ "Name", "desc" ]
+        ],
+        "fields" : [
+            {
+                "name"  : "Station ID",
+                "type"  : "int(1)",
+                "key"   : true
+            },
+            {
+                "name"  : "Angle",
+                "type"  : "float(8)"
+            },
+            {
+                "name"  : "Notes",
+                "type"  : "utf8text",
+                "nul"   : true
+            }
+        ]
+    }
+}
