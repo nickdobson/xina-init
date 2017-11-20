@@ -1,41 +1,56 @@
 {
-    "action"   : "create",
-    "create"   : "database",
-    "parent"   : "moma.sms",
-    "database" : {
-        "name"      : "carousel",
-        "label"     : "Carousel",
-        "desc"      : "MOMA carousel configuration database.",
-        "format"    : "{Station ID} {Angle}",
-        "singular"  : "station",
-        "backup"    : true,
-        "event"     : true,
-        "link"      : true,
-        "log"       : true,
-        "notify"    : true,
-        "subscribe" : true,
-        "tag"       : true,
-        "track"     : true,
-        "trash"     : true,
-        "wall"      : true,
-        "order" : [
-            [ "Name", "desc" ]
-        ],
-        "fields" : [
-            {
-                "name"  : "Station ID",
-                "type"  : "int(1)",
-                "key"   : true
-            },
-            {
-                "name"  : "Angle",
-                "type"  : "float(8)"
-            },
-            {
-                "name"  : "Notes",
-                "type"  : "utf8text",
-                "nul"   : true
-            }
-        ]
-    }
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.sms",
+	"database" : {
+		"name"      : "carousel",
+		"label"     : "Carousel",
+		"desc"      : "MOMA carousel configuration database.",
+		"format"    : "{Model} {Time} {Station ID} {Angle}",
+		"singular"  : "station",
+		"backup"    : true,
+		"event"     : true,
+		"link"      : true,
+		"log"       : true,
+		"notify"    : true,
+		"subscribe" : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"order" : [
+			[ "Name", "desc" ]
+		],
+		"fields" : [
+			{
+				"name"    : "Model",
+				"type"    : "asciistring(8)",
+				"key"     : true,
+				"strict"  : true,
+				"options" : [
+					{ "value" : "fm"  },
+					{ "value" : "etu" }
+				]
+			},
+			{
+				"name"  : "Time",
+				"type"  : "datetime",
+				"key"   : true
+			},
+			{
+				"name"  : "Station ID",
+				"type"  : "int(1)",
+				"key"   : true
+			},
+			{
+				"name"  : "Angle",
+				"type"  : "float(8)"
+			},
+			{
+				"name"  : "Notes",
+				"type"  : "utf8text",
+				"nul"   : true
+			}
+		]
+	}
 }

@@ -1,0 +1,44 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "magsite.bldg",
+    "database" : {
+        "name"   : "full",
+        "label"  : "Full",
+        "desc"   : "Test site full building data.",
+        "format" : "{t}",
+        "fields" : [
+            {
+                "name" : "t",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_100",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "t_10000",
+                "type" : "int(8)"
+            },
+            {
+                "name" : "temperature",
+                "type" : "float(8)",
+                "meas" : "temperature",
+                "unit" : "C",
+                "nul"  : true
+            },
+            {
+                "name" : "humidity",
+                "type" : "float(8)",
+                "meas" : "percent",
+                "unit" : "%",
+                "nul"  : true
+            }
+        ],
+        "indexes" : [
+            ["t"],
+            ["t_100"],
+            ["t_10000"]
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "magsite",
+    "group"  : {
+        "name"  : "bldg",
+        "label" : "Building",
+        "desc"  : "Test site building data group."
+    }
+}
