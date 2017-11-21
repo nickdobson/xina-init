@@ -19,7 +19,7 @@
         "trash"     : true,
         "wall"      : true,
         "order" : [
-            [ "Name", "desc" ]
+	        [ "Event", "desc" ]
         ],
         "fields" : [
             {

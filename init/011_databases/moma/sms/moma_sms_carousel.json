@@ -19,7 +19,9 @@
 		"trash"     : true,
 		"wall"      : true,
 		"order" : [
-			[ "Name", "desc" ]
+			[ "Model", "asc" ],
+			[ "Station ID", "asc" ],
+			[ "Time", "desc" ]
 		],
 		"fields" : [
 			{
