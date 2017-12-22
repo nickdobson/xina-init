@@ -1,83 +1,88 @@
 {
-    "action"   : "create",
-    "create"   : "database",
-    "parent"   : "moma",
-    "database" : {
-        "name"      : "expected",
-        "label"     : "Expected",
-        "desc"      : "MOMA housekeeping expected values database.",
-        "format"    : "{HK ID} {MK ID}",
-        "singular"  : "value",
-        "backup"    : true,
-        "event"     : true,
-        "link"      : true,
-        "log"       : true,
-        "notify"    : true,
-        "subscribe" : true,
-        "tag"       : true,
-        "track"     : true,
-        "trash"     : true,
-        "wall"      : true,
-        "fields"    : [
-            {
-                "name" : "etu",
-                "type" : "boolean",
-                "key"  : true,
-                "def"  : "false"
-            },
-            {
-                "name" : "fm",
-                "type" : "boolean",
-                "key"  : true,
-                "def"  : "false"
-            },
-            {
-                "name" : "qsm",
-                "type" : "boolean",
-                "key"  : true,
-                "def"  : "false"
-            },
-            {
-                "name" : "sfm",
-                "type" : "boolean",
-                "key"  : true,
-                "def"  : "false"
-            },
-            {
-                "name" : "HK ID",
-                "type" : "int(4)",
-                "key"  : true
-            },
-            {
-                "name" : "MK ID",
-                "type" : "int(4)",
-                "key"  : true
-            },
-            {
-                "name" : "Relative",
-                "type" : "boolean",
-                "key"  : true
-            },
-            {
-                "name" : "Relative MK ID",
-                "type" : "int(4)",
-                "nul"  : true
-            },
-            {
-                "name" : "Low",
-                "type" : "float(8)",
-                "nul"  : true
-            },
-            {
-                "name" : "High",
-                "type" : "float(8)",
-                "nul"  : true
-            },
-            {
-                "name" : "Temp Dependent",
-                "type" : "boolean",
-                "def"  : "false"
-            }
-        ]
-    }
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma",
+	"database" : {
+		"name"      : "expected",
+		"label"     : "Expected",
+		"desc"      : "MOMA housekeeping expected values database.",
+		"format"    : "{HK ID} {MK ID}",
+		"singular"  : "value",
+		"backup"    : true,
+		"event"     : true,
+		"link"      : true,
+		"log"       : true,
+		"notify"    : true,
+		"subscribe" : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"fields"    : [
+			{
+				"name" : "etu",
+				"type" : "boolean",
+				"key"  : true,
+				"def"  : "false"
+			},
+			{
+				"name" : "fm",
+				"type" : "boolean",
+				"key"  : true,
+				"def"  : "false"
+			},
+			{
+				"name" : "qsm",
+				"type" : "boolean",
+				"key"  : true,
+				"def"  : "false"
+			},
+			{
+				"name" : "sfm",
+				"type" : "boolean",
+				"key"  : true,
+				"def"  : "false"
+			},
+			{
+				"name" : "HK ID",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "MK ID",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "Relative",
+				"type" : "boolean",
+				"key"  : true
+			},
+			{
+				"name" : "Relative MK ID",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Low",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "High",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Temp Dependent",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "Comments",
+				"type" : "utf8string",
+				"nul"  : true
+			}
+		]
+	}
 }

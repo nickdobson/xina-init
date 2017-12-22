@@ -1,0 +1,118 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "util",
+	"database" : {
+		"name"      : "expected",
+		"label"     : "Expected",
+		"desc"      : "GEDI expected housekeeping ranges database.",
+		"format"    : "{HK ID} {Test ID}",
+		"singular"  : "limit",
+		"backup"    : true,
+		"event"     : true,
+		"link"      : true,
+		"log"       : true,
+		"notify"    : true,
+		"subscribe" : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"fields"    : [
+			{
+				"name" : "etu",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "fm",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "lsr1",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "lsr2",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "lsr3",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "bdu1",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "bdu2",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "bdu3",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "Test ID",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "HK ID",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "Red High",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Yellow High",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Green High",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Green Low",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Yellow Low",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Red Low",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Yellow Percentage",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Red Percentage",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Notes",
+				"type" : "utf8string",
+				"nul"  : true
+			}
+		]
+	}
+}

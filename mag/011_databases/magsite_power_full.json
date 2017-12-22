@@ -77,14 +77,14 @@
                 "nul"  : true
             },
             {
-                "name" : "heater1_volts",
+                "name" : "heater_volts",
                 "type" : "float(8)",
                 "meas" : "voltage",
                 "unit" : "V",
                 "nul"  : true
             },
             {
-                "name" : "heater1_curr",
+                "name" : "heater_curr",
                 "type" : "float(8)",
                 "meas" : "current",
                 "unit" : "A",

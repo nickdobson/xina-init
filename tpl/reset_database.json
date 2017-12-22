@@ -1,5 +1,5 @@
 {
-    "action"   : "reset",
-    "reset"    : "database",
-    "database" : ""
+	"action"   : "reset",
+	"reset"    : "database",
+	"database" : ""
 }

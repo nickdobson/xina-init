@@ -1,7 +1,7 @@
 {
-    "action": "alter",
-    "alter": "database",
-    "database": "",
-    "op": "set",
-    "set": {}
+	"action": "alter",
+	"alter": "database",
+	"database": "",
+	"op": "set",
+	"set": {}
 }

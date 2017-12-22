@@ -1,7 +1,7 @@
 {
-    "action": "alter",
-    "alter": "database",
-    "database": "",
-    "op": "add_fields",
-    "fields": []
+	"action": "alter",
+	"alter": "database",
+	"database": "",
+	"op": "add_fields",
+	"fields": []
 }

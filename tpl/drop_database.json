@@ -1,5 +1,5 @@
 {
-    "action"   : "drop",
-    "drop"     : "database",
-    "database" : ""
+	"action"   : "drop",
+	"drop"     : "database",
+	"database" : ""
 }

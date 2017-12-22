@@ -1,28 +1,28 @@
 {
-    "action"   : "create",
-    "create"   : "database",
-    "parent"   : "lsr2.def",
-    "database" : {
-        "name"     : "hk",
-        "label"    : "Housekeeping",
-        "desc"     : "GEDI Laser 2 housekeeping definition information.",
-        "format"   : "hk{hk_id}:{name}",
-        "singular" : "field",
-        "backup"   : true,
-        "link"     : true,
-        "wall"     : true,
-        "order"    : [ [ "hk_id", "asc" ] ],
-        "fields"   : [
-            {
-                "name" : "source_id",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "hk_id",
-                "type" : "int(4)",
-                "key"  : true
-            },
-            {
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "lsr2.def",
+	"database" : {
+		"name"     : "hk",
+		"label"    : "Housekeeping",
+		"desc"     : "GEDI Laser 2 housekeeping definition information.",
+		"format"   : "hk{hk_id}:{name}",
+		"singular" : "field",
+		"backup"   : true,
+		"link"     : true,
+		"wall"     : true,
+		"order"    : [ [ "hk_id", "asc" ] ],
+		"fields"   : [
+			{
+				"name" : "source_id",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "hk_id",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
 				"name" : "name",
 				"type" : "utf8string(64)"
 			},
@@ -31,76 +31,76 @@
 				"type" : "utf8string(64)",
 				"nul"  : true
 			},
-            {
-                "name" : "measure",
-                "type" : "utf8string(32)",
-                "nul"  : true
-            },
-            {
-                "name" : "unit",
-                "type" : "utf8string(32)",
-                "nul"  : true
-            },
-            {
-                "name" : "mined",
-                "type" : "boolean",
-                "def"  : "false"
-            },
-            {
-                "name" : "scaling",
-                "type" : "float(8)",
+			{
+				"name" : "measure",
+				"type" : "utf8string(32)",
+				"nul"  : true
+			},
+			{
+				"name" : "unit",
+				"type" : "utf8string(32)",
+				"nul"  : true
+			},
+			{
+				"name" : "mined",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "scaling",
+				"type" : "float(8)",
 				"def"  : "1"
-            },
-            {
-                "name" : "offset",
-                "type" : "float(8)",
+			},
+			{
+				"name" : "offset",
+				"type" : "float(8)",
 				"def"  : "0"
-            },
-            {
-                "name" : "digits",
-                "type" : "int(4)",
+			},
+			{
+				"name" : "digits",
+				"type" : "int(4)",
 				"def"  : "0"
-            },
-            {
-                "name" : "alarm_enable",
-                "type" : "boolean",
+			},
+			{
+				"name" : "alarm_enable",
+				"type" : "boolean",
 				"def"  : "false"
-            },
-            {
-                "name" : "lo_limit",
-                "type" : "float(8)",
-                "nul"  : true
-            },
-            {
-                "name" : "lolo_limit",
-                "type" : "float(8)",
-                "nul"  : true
-            },
-            {
-                "name" : "hi_limit",
-                "type" : "float(8)",
-                "nul"  : true
-            },
-            {
-                "name" : "hihi_limit",
-                "type" : "float(8)",
-                "nul"  : true
-            },
-            {
-                "name" : "warn_enable",
-                "type" : "boolean",
+			},
+			{
+				"name" : "lo_limit",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "lolo_limit",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "hi_limit",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "hihi_limit",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "warn_enable",
+				"type" : "boolean",
 				"def"  : "false"
-            },
-            {
-                "name" : "average",
-                "type" : "boolean",
+			},
+			{
+				"name" : "average",
+				"type" : "boolean",
 				"def"  : "false"
-            },
-            {
-                "name" : "deadband",
-                "type" : "int(4)",
+			},
+			{
+				"name" : "deadband",
+				"type" : "int(4)",
 				"def"  : "0"
-            },
+			},
 			{
 				"name" : "alarm_actions",
 				"type" : "int(4)",
@@ -141,11 +141,11 @@
 				"type" : "int(4)",
 				"nul"  : true
 			},
-            {
-                "name" : "notes",
-                "type" : "utf8text",
-                "nul"  : true
-            }
-        ]
-    }
+			{
+				"name" : "notes",
+				"type" : "utf8text",
+				"nul"  : true
+			}
+		]
+	}
 }
