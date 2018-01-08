@@ -1,163 +1,183 @@
 {
-    "action"   : "create",
-    "create"   : "database",
-    "parent"   : "fm.data.sci",
-    "database" : {
-        "name"   : "pkt",
-        "label"  : "Packet",
-        "desc"   : "GEDI flight model science packet database.",
-        "format" : "{gps_time} {sci_ch} {gps_pps_sync}",
-        "fields" : [
-            {
-                "name" : "packet_id",
-                "type" : "asciistring(16)"
-            },
-            {
-                "name" : "byte_count",
-                "type" : "int(2)"
-            },
-            {
-                "name" : "tx_size",
-                "type" : "int(2)"
-            },
-            {
-                "name" : "pers_fine",
-                "type" : "boolean"
-            },
-            {
-                "name" : "pers_coarse",
-                "type" : "boolean"
-            },
-            {
-                "name" : "th_override",
-                "type" : "boolean"
-            },
-            {
-                "name" : "dithered",
-                "type" : "boolean"
-            },
-            {
-                "name" : "slot",
-                "type" : "int(1)"
-            },
-            {
-                "name" : "i_q",
-                "type" : "int(1)"
-            },
-            {
-                "name" : "sci_ch",
-                "type" : "int(1)"
-            },
-            {
-                "name" : "hw_pos",
-                "type" : "asciistring"
-            },
-            {
-                "name" : "pkt_count_fpga",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "minor_frame",
-                "type" : "int(2)"
-            },
-            {
-                "name" : "iss_time",
-                "type" : "int(8)"
-            },
-            {
-                "name" : "gps_time",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "iss_pps_sync",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "gps_pps_sync",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "hz_sync",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "sample_sum",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "noise_mean",
-                "type" : "int(2)"
-            },
-            {
-                "name" : "noise_std_dev",
-                "type" : "int(2)"
-            },
-            {
-                "name" : "thresh_mul_coarse",
-                "type" : "float(8)"
-            },
-            {
-                "name" : "thresh_mul_fine_left",
-                "type" : "float(8)"
-            },
-            {
-                "name" : "thresh_mul_fine_right",
-                "type" : "float(8)"
-            },
-            {
-                "name" : "thresh_coarse_used",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "thresh_fine_left_used",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "thresh_fine_right_used",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "x_box_stretch",
-                "type" : "int(1)"
-            },
-            {
-                "name" : "y_box_stretch",
-                "type" : "int(1)"
-            },
-            {
-                "name" : "rx_surpressed",
-                "type" : "boolean"
-            },
-            {
-                "name" : "rx_sample_count_algo",
-                "type" : "int(2)"
-            },
-            {
-                "name" : "tx_window_open",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "tx_offset_index",
-                "type" : "int(2)"
-            },
-            {
-                "name" : "rx_window_open",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "rx_offset_index",
-                "type" : "int(2)"
-            },
-            {
-                "name" : "crc",
-                "type" : "int(2)"
-            }
-        ],
-        "indexes" : [
-            ["packet_id"],
-            ["gps_time"],
-            ["iss_time"],
-            ["sci_ch"]
-        ]
-    }
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "fm.data.sci",
+	"database" : {
+		"name"   : "pkt",
+		"label"  : "Packet",
+		"desc"   : "GEDI flight model science packet database.",
+		"format" : "{tid} {packet_id}",
+		"fields" : [
+			{
+				"name" : "tid",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "packet_id",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "file_id",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "ch_count",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "unix_time",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "byte_count",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "tx_size",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "pers_fine",
+				"type" : "boolean"
+			},
+			{
+				"name" : "pers_coarse",
+				"type" : "boolean"
+			},
+			{
+				"name" : "th_override",
+				"type" : "boolean"
+			},
+			{
+				"name" : "dithered",
+				"type" : "boolean"
+			},
+			{
+				"name" : "slot",
+				"type" : "int(1)"
+			},
+			{
+				"name" : "i_q",
+				"type" : "int(1)"
+			},
+			{
+				"name" : "sci_ch",
+				"type" : "int(1)"
+			},
+			{
+				"name" : "hw_pos",
+				"type" : "asciistring"
+			},
+			{
+				"name" : "pkt_count_fpga",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "minor_frame",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "iss_time",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "gps_time",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "iss_pps_sync",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "gps_pps_sync",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "hz_sync",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "sample_sum",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "noise_mean",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "noise_std_dev",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "noise_sum_sq",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "thresh_mul_coarse",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "thresh_mul_fine_left",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "thresh_mul_fine_right",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "thresh_coarse_used",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "thresh_fine_left_used",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "thresh_fine_right_used",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "x_box_stretch",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "y_box_stretch",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "rx_surpressed",
+				"type" : "boolean"
+			},
+			{
+				"name" : "rx_sample_count_algo",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "tx_window_open",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "tx_offset_index",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "rx_window_open",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "rx_offset_index",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "crc",
+				"type" : "int(2)"
+			}
+		],
+		"indexes" : [
+			["tid", "packet_id", "ch_count"],
+			["packet_id"],
+			["unix_time"],
+			["sci_ch"]
+		]
+	}
 }

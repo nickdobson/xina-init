@@ -1,18 +1,35 @@
 {
-    "action"   : "create",
-    "create"   : "database",
-    "parent"   : "fm.data.sci",
-    "database" : {
-        "name"   : "samp",
-        "label"  : "Sample",
-        "desc"   : "GEDI flight model science sample database.",
-        "file"   : true,
-        "fields" : [
-            {
-                "name"  : "gps_time",
-                "type"  : "int(4)",
-                "key"   : true
-            }
-        ]
-    }
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "fm.data.sci",
+	"database" : {
+		"name"   : "samp",
+		"label"  : "Sample",
+		"desc"   : "GEDI flight model science sample database.",
+		"file"   : true,
+		"format" : "{name}",
+		"fields" : [
+			{
+				"name"  : "name",
+				"type"  : "asciistring(32)"
+			},
+			{
+				"name"  : "file_id",
+				"type"  : "int(8)"
+			},
+			{
+				"name"  : "tid",
+				"type"  : "int(4)"
+			},
+			{
+				"name"  : "unix_time",
+				"type"  : "int(4)"
+			}
+		],
+		"indexes" : [
+			["tid", "unix_time"],
+			["file_id"],
+			["unix_time"]
+		]
+	}
 }
