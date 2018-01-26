@@ -3,10 +3,10 @@
 	"create" : "group",
 	"group"  : {
 		"name"  : "moma",
-        "label" : "MOMA",
+		"label" : "MOMA",
 		"desc"  : "Primary group for the Mars Organic Molecule Analyzer (MOMA) mission.",
-        "objects" : {
-            "xo_view_default" : {"*": "tid"}
-        }
+		"objects" : {
+			"xo_view_default" : {"*": "tid"}
+		}
 	}
 }

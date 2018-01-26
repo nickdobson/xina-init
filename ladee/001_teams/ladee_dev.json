@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"parent" : "ladee",
+	"team"   : {
+		"name"                : "dev",
+		"label"               : "Dev",
+		"desc"                : "Team for active LADEE developers.",
+		"database_privileges" : ["update", "insert", "trash"]
+	}
+}

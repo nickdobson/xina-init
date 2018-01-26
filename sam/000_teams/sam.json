@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "sam",
+		"label"               : "SAM",
+		"desc"                : "Primary team for the Sample Analysis at Mars (SAM) mission.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply"]
+	}
+}

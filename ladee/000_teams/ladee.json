@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "ladee",
+		"label"               : "LADEE",
+		"desc"                : "Primary team for the Lunar Atmosphere Dust Environment Explorer (LADEE) mission.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply"]
+	}
+}

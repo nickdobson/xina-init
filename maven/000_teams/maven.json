@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "maven",
+		"label"               : "MAVEN",
+		"desc"                : "Primary team for the Mars Atmosphere and Volatile EvolutioN (MAVEN) mission.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply"]
+	}
+}

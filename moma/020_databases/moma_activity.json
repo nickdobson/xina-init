@@ -31,7 +31,7 @@
             },
             {
                 "name"    : "Status",
-                "type"    : "utf8string(16)",
+                "type"    : "utf8string(32)",
                 "def"     : "Incomplete",
                 "strict"  : true,
                 "options" : [

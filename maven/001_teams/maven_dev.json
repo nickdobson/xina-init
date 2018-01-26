@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"parent" : "maven",
+	"team"   : {
+		"name"                : "dev",
+		"label"               : "Dev",
+		"desc"                : "Team for active MAVEN developers.",
+		"database_privileges" : ["update", "insert", "trash"]
+	}
+}

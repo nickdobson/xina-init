@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "moma",
+		"label"               : "MOMA",
+		"desc"                : "Primary team for the Mars Organic Molecule Analyzer (MOMA) mission.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply"]
+	}
+}
