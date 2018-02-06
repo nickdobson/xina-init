@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"parent" : "lsr3_bdu2",
+	"group"  : {
+		"name"  : "data",
+		"label" : "Data",
+		"desc"  : "GEDI Laser 3 - BDU 2 data group."
+	}
+}

@@ -316,11 +316,17 @@
 				"nul"  : true
 			},
 			{
+				"name" : "Station ID",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
 				"name" : "Control Value",
 				"type" : "float(4)",
 				"nul"  : true
 			},
 			{
+				"name" : "Mass Value",
 				"type" : "float(4)",
 				"nul"  : true
 			},

@@ -1,10 +1,10 @@
 {
 	"action" : "create",
 	"create" : "group",
-	"parent" : "bdu1.data",
+	"parent" : "lsr2_bdu3.data",
 	"group"  : {
 		"name"  : "hk",
 		"label" : "Housekeeping",
-		"desc"  : "GEDI BDU 1 housekeeping data group."
+		"desc"  : "GEDI Laser 2 - BDU 3 housekeeping data group."
 	}
 }

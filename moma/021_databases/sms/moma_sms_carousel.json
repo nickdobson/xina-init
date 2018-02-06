@@ -35,23 +35,31 @@
 				]
 			},
 			{
-				"name"  : "Time",
-				"type"  : "datetime",
-				"key"   : true
+				"name" : "Time",
+				"type" : "datetime",
+				"key"  : true
 			},
 			{
-				"name"  : "Station ID",
-				"type"  : "int(1)",
-				"key"   : true
+				"name" : "Station ID",
+				"type" : "int(1)",
+				"key"  : true
 			},
 			{
-				"name"  : "Angle",
-				"type"  : "float(8)"
+				"name" : "Angle",
+				"type" : "float(8)",
+				"meas" : "angle",
+				"unit" : "degrees"
 			},
 			{
-				"name"  : "Notes",
-				"type"  : "utf8text",
-				"nul"   : true
+				"name" : "Width",
+				"type" : "float(8)",
+				"meas" : "angle",
+				"unit" : "degrees"
+			},
+			{
+				"name" : "Notes",
+				"type" : "utf8text",
+				"nul"  : true
 			}
 		]
 	}

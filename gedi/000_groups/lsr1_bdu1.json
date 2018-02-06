@@ -1,0 +1,9 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "group"  : {
+        "name"  : "lsr1_bdu1",
+        "label" : "GEDI Laser 1 - BDU 1",
+        "desc"  : "GEDI laser 1 - BDU 1 pair group."
+    }
+}
