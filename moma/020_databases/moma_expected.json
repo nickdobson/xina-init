@@ -1,6 +1,7 @@
 {
 	"action"   : "create",
 	"create"   : "database",
+	"teams"    : ["moma", "moma.dev"],
 	"parent"   : "moma",
 	"database" : {
 		"name"      : "expected",
@@ -22,41 +23,44 @@
 			{
 				"name" : "etu",
 				"type" : "boolean",
-				"key"  : true,
 				"def"  : "false"
 			},
 			{
 				"name" : "fm",
 				"type" : "boolean",
-				"key"  : true,
 				"def"  : "false"
 			},
 			{
 				"name" : "qsm",
 				"type" : "boolean",
-				"key"  : true,
 				"def"  : "false"
 			},
 			{
 				"name" : "sfm",
 				"type" : "boolean",
-				"key"  : true,
+				"def"  : "false"
+			},
+			{
+				"name" : "gcemi",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "gctvac",
+				"type" : "boolean",
 				"def"  : "false"
 			},
 			{
 				"name" : "HK ID",
-				"type" : "int(4)",
-				"key"  : true
+				"type" : "int(4)"
 			},
 			{
 				"name" : "MK ID",
-				"type" : "int(4)",
-				"key"  : true
+				"type" : "int(4)"
 			},
 			{
 				"name" : "Relative",
-				"type" : "boolean",
-				"key"  : true
+				"type" : "boolean"
 			},
 			{
 				"name" : "Relative MK ID",
@@ -77,6 +81,18 @@
 				"name" : "Temp Dependent",
 				"type" : "boolean",
 				"def"  : "false"
+			},
+			{
+				"name"    : "Environment",
+				"type"    : "utf8string(16)",
+				"nul"     : true,
+				"strict"  : true,
+				"options" : [
+					{"value" : "ambient"},
+					{"value" : "cold"},
+					{"value" : "vacuum"},
+					{"value" : "mars"}
+				]
 			},
 			{
 				"name" : "Comments",
