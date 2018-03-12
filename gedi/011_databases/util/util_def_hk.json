@@ -42,6 +42,23 @@
 				"nul"  : true
 			},
 			{
+				"name" : "prefix",
+				"type" : "asciistring(16)",
+				"nul"  : true
+			},
+			{
+				"name" : "bdu_name",
+				"type" : "utf8string(64)",
+				"nul"  : true
+			},
+			{
+				"name" : "rate",
+				"type" : "float(4)",
+				"nul"  : true,
+				"meas" : "frequency",
+				"unit" : "Hz"
+			},
+			{
 				"name" : "mined",
 				"type" : "boolean",
 				"def"  : "false"

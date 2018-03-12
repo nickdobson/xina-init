@@ -1,0 +1,22 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "dev",
+	"database" : {
+		"name"   : "basic",
+		"label"  : "Basic Tests",
+		"desc"   : "Database for basic tests.",
+		"format" : "{key} {value}",
+		"fields" : [
+			{
+				"name" : "key",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "value",
+				"type" : "utf8string(64)",
+				"nul"   : true
+			}
+		]
+	}
+}

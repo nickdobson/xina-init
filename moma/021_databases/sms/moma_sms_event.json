@@ -63,22 +63,46 @@
                 ]
             },
             {
-                "name"  : "WOA",
-                "type"  : "utf8string",
-                "nul"   : true
+                "name" : "WOA",
+                "type" : "utf8string",
+                "nul"  : true
             },
             {
-                "name"  : "Performed By",
-                "type"  : "utf8string(64)"
+                "name" : "Performed By",
+                "type" : "utf8string(64)"
             },
             {
-                "name"  : "Performed At",
-                "type"  : "datetime"
+                "name" : "Performed At",
+                "type" : "datetime"
             },
             {
-                "name"  : "Notes",
-                "type"  : "utf8text",
-                "nul"   : true
+                "name" : "Dilution",
+                "type" : "float(8)",
+                "nul"  : true
+            },
+            {
+                "name" : "Loop Volume",
+                "type" : "float(8)",
+                "meas" : "volume",
+                "unit" : "uL",
+                "nul"  : true
+            },
+            {
+                "name" : "TS",
+                "type" : "boolean",
+                "nul"  : true
+            },
+            {
+                "name" : "TS Pres",
+                "type" : "float(8)",
+                "meas" : "pressure",
+                "unit" : "Torr",
+                "nul"  : true
+            },
+            {
+                "name" : "Notes",
+                "type" : "utf8text",
+                "nul"  : true
             }
         ],
         "databases" : [

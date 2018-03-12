@@ -95,6 +95,17 @@
 				]
 			},
 			{
+				"name"    : "Check",
+				"type"    : "asciistring(4)",
+				"nul"     : true,
+				"strict"  : true,
+				"options" : [
+					{"value" : "avg"},
+					{"value" : "min"},
+					{"value" : "max"}
+				]
+			},
+			{
 				"name" : "Comments",
 				"type" : "utf8string",
 				"nul"  : true

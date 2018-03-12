@@ -6,7 +6,7 @@
 		"name"      : "expected",
 		"label"     : "Expected",
 		"desc"      : "GEDI expected housekeeping ranges database.",
-		"format"    : "{HK ID} {Test ID}",
+		"format"    : "{HK ID} {Notes}",
 		"singular"  : "limit",
 		"backup"    : true,
 		"event"     : true,

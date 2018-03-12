@@ -43,7 +43,7 @@
 				"nul"   : true
 			},
 			{
-				"name"    : "Type",
+				"name"    : "Phase",
 				"type"    : "asciistring(16)",
 				"strict"  : true,
 				"def"     : "solid",
