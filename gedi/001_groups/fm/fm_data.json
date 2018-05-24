@@ -1,6 +1,7 @@
 {
 	"action" : "create",
 	"create" : "group",
+	"teams"  : ["gedi"],
     "parent" : "fm",
 	"group"  : {
 		"name"  : "data",

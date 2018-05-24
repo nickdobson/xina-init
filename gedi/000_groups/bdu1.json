@@ -1,6 +1,7 @@
 {
     "action" : "create",
     "create" : "group",
+    "teams"  : ["gedi"],
     "group"  : {
         "name"  : "bdu1",
         "label" : "GEDI BDU 1",

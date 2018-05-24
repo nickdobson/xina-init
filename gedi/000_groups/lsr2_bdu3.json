@@ -1,6 +1,7 @@
 {
     "action" : "create",
     "create" : "group",
+    "teams"  : ["gedi"],
     "group"  : {
         "name"  : "lsr2_bdu3",
         "label" : "GEDI Laser 2 - BDU 3",

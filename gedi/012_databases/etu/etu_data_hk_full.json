@@ -1,6 +1,7 @@
 {
     "action"   : "create",
     "create"   : "database",
+    "teams"    : ["gedi"],
     "parent"   : "etu.data.hk",
     "database" : {
         "name"   : "full",

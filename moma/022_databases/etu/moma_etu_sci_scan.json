@@ -82,6 +82,13 @@
 				"type" : "int(8)"
 			},
 			{
+				"name" : "Num Scans Summed",
+				"type" : "int(4)",
+				"meas" : "count",
+				"unit" : "scans",
+				"def"  : "1"
+			},
+			{
 				"name" : "RF Amp Start",
 				"type" : "float(4)",
 				"meas" : "voltage",

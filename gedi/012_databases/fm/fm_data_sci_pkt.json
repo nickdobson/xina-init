@@ -1,6 +1,7 @@
 {
 	"action"   : "create",
 	"create"   : "database",
+	"teams"    : ["gedi"],
 	"parent"   : "fm.data.sci",
 	"database" : {
 		"name"   : "pkt",
@@ -17,24 +18,36 @@
 				"type" : "int(8)"
 			},
 			{
+				"name" : "packet_index",
+				"type" : "int(4)"
+			},
+			{
 				"name" : "file_id",
 				"type" : "int(8)"
 			},
 			{
-				"name" : "ch_count",
-				"type" : "int(2)"
+				"name" : "unix_time",
+				"type" : "int(8)"
 			},
 			{
-				"name" : "unix_time",
-				"type" : "int(4)"
+				"name" : "unix_time_s",
+				"type" : "int(8)"
 			},
 			{
 				"name" : "byte_count",
-				"type" : "int(2)"
+				"type" : "int(2)",
+				"meas" : "count",
+				"unit" : "bytes"
 			},
 			{
-				"name" : "tx_size",
-				"type" : "int(2)"
+				"name" : "tx_sample_count",
+				"type" : "int(2)",
+				"meas" : "count",
+				"unit" : "samples"
+			},
+			{
+				"name" : "crc_override",
+				"type" : "boolean"
 			},
 			{
 				"name" : "pers_fine",
@@ -65,12 +78,10 @@
 				"type" : "int(1)"
 			},
 			{
-				"name" : "hw_pos",
-				"type" : "asciistring"
-			},
-			{
 				"name" : "pkt_count_fpga",
-				"type" : "int(4)"
+				"type" : "int(4)",
+				"meas" : "count",
+				"unit" : "packets"
 			},
 			{
 				"name" : "minor_frame",
@@ -86,31 +97,33 @@
 			},
 			{
 				"name" : "iss_pps_sync",
-				"type" : "int(8)"
+				"type" : "int(8)",
+				"meas" : "time",
+				"unit" : "ns"
 			},
 			{
 				"name" : "gps_pps_sync",
-				"type" : "int(8)"
+				"type" : "int(8)",
+				"meas" : "time",
+				"unit" : "ns"
 			},
 			{
 				"name" : "hz_sync",
-				"type" : "int(8)"
+				"type" : "int(8)",
+				"meas" : "time",
+				"unit" : "ns"
 			},
 			{
-				"name" : "sample_sum",
-				"type" : "int(8)"
+				"name" : "all_rx_sample_mean",
+				"type" : "float(8)"
 			},
 			{
 				"name" : "noise_mean",
 				"type" : "int(2)"
 			},
 			{
-				"name" : "noise_std_dev",
-				"type" : "int(2)"
-			},
-			{
-				"name" : "noise_sum_sq",
-				"type" : "int(2)"
+				"name" : "noise_calc_std_dev",
+				"type" : "float(8)"
 			},
 			{
 				"name" : "thresh_mul_coarse",
@@ -141,7 +154,15 @@
 				"type" : "int(2)"
 			},
 			{
+				"name" : "x_select_stretch",
+				"type" : "int(2)"
+			},
+			{
 				"name" : "y_box_stretch",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "y_select_stretch",
 				"type" : "int(2)"
 			},
 			{
@@ -149,24 +170,50 @@
 				"type" : "boolean"
 			},
 			{
-				"name" : "rx_sample_count_algo",
-				"type" : "int(2)"
+				"name" : "rx_sample_count",
+				"type" : "int(2)",
+				"meas" : "count",
+				"unit" : "samples"
+			},
+			{
+				"name" : "rx_sample_mean",
+				"type" : "float(4)"
+			},
+			{
+				"name" : "rx_sample_std_dev",
+				"type" : "float(4)"
+			},
+			{
+				"name" : "tx_sample_mean",
+				"type" : "float(4)"
+			},
+			{
+				"name" : "tx_sample_std_dev",
+				"type" : "float(4)"
 			},
 			{
 				"name" : "tx_window_open",
-				"type" : "int(4)"
+				"type" : "int(4)",
+				"meas" : "time",
+				"unit" : "ns"
 			},
 			{
 				"name" : "tx_offset_index",
-				"type" : "int(2)"
+				"type" : "int(2)",
+				"meas" : "time",
+				"unit" : "ns"
 			},
 			{
 				"name" : "rx_window_open",
-				"type" : "int(4)"
+				"type" : "int(4)",
+				"meas" : "time",
+				"unit" : "ns"
 			},
 			{
 				"name" : "rx_offset_index",
-				"type" : "int(2)"
+				"type" : "int(2)",
+				"meas" : "time",
+				"unit" : "ns"
 			},
 			{
 				"name" : "crc",
@@ -174,10 +221,11 @@
 			}
 		],
 		"indexes" : [
-			["tid", "packet_id", "ch_count"],
-			["packet_id"],
-			["unix_time"],
-			["sci_ch"]
+			["packet_id", "sci_ch"],
+			["tid", "packet_index", "sci_ch"],
+			["file_id", "sci_ch"],
+			["unix_time", "sci_ch"],
+			["unix_time_s", "sci_ch"]
 		]
 	}
 }

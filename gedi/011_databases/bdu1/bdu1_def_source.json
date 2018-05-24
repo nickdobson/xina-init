@@ -1,6 +1,7 @@
 {
     "action"   : "create",
     "create"   : "database",
+    "teams"    : ["gedi"],
     "parent"   : "bdu1.def",
     "database" : {
         "name"     : "source",

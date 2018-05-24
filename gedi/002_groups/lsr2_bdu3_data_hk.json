@@ -1,6 +1,7 @@
 {
 	"action" : "create",
 	"create" : "group",
+	"teams"  : ["gedi"],
 	"parent" : "lsr2_bdu3.data",
 	"group"  : {
 		"name"  : "hk",

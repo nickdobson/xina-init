@@ -1,6 +1,7 @@
 {
     "action" : "create",
     "create" : "group",
+    "teams"  : ["gedi"],
     "group"  : {
         "name"  : "fm",
         "label" : "GEDI FM",

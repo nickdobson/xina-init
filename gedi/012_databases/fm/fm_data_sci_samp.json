@@ -1,6 +1,7 @@
 {
 	"action"   : "create",
 	"create"   : "database",
+	"teams"    : ["gedi"],
 	"parent"   : "fm.data.sci",
 	"database" : {
 		"name"   : "samp",
@@ -23,7 +24,7 @@
 			},
 			{
 				"name"  : "unix_time",
-				"type"  : "int(4)"
+				"type"  : "int(8)"
 			}
 		],
 		"indexes" : [

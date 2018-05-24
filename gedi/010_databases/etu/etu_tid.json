@@ -1,6 +1,7 @@
 {
 	"action"   : "create",
 	"create"   : "database",
+	"teams"    : ["gedi"],
 	"parent"   : "etu",
 	"database" : {
 		"name"      : "tid",

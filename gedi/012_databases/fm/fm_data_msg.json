@@ -1,6 +1,7 @@
 {
     "action"   : "create",
     "create"   : "database",
+    "teams"    : ["gedi"],
     "parent"   : "fm.data",
     "database" : {
         "name"      : "msg",

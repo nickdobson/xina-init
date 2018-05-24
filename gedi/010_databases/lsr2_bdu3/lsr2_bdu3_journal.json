@@ -1,6 +1,7 @@
 {
     "action"   : "create",
     "create"   : "database",
+    "teams"    : ["gedi"],
     "parent"   : "lsr2_bdu3",
     "database" : {
         "name"      : "journal",

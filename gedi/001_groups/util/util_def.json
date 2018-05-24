@@ -1,6 +1,7 @@
 {
 	"action" : "create",
 	"create" : "group",
+	"teams"  : ["gedi"],
     "parent" : "util",
 	"group"  : {
 		"name"  : "def",

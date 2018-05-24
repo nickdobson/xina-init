@@ -1,6 +1,7 @@
 {
 	"action"   : "create",
 	"create"   : "database",
+	"teams"    : ["gedi"],
 	"parent"   : "util.def",
 	"database" : {
 		"name"     : "hk",
@@ -156,6 +157,156 @@
 			{
 				"name" : "warn_action_3",
 				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "packet_type",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "packet_subtype",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "decode_type",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "decode_id1",
+				"type" : "int(2)",
+				"nul"  : true
+			},
+			{
+				"name" : "decode_id2",
+				"type" : "int(1)",
+				"nul"  : true
+			},
+			{
+				"name" : "decode_id3",
+				"type" : "asciistring(64)",
+				"nul"  : true
+			},
+			{
+				"name" : "decode_id4",
+				"type" : "int(1)",
+				"nul"  : true
+			},
+			{
+				"name" : "raw_fmt",
+				"type" : "asciistring(16)",
+				"nul"  : true
+			},
+			{
+				"name" : "eng_fmt",
+				"type" : "asciistring(16)",
+				"nul"  : true
+			},
+			{
+				"name" : "eng_eq_type",
+				"type" : "int(1)",
+				"nul"  : true
+			},
+			{
+				"name" : "eng_k1",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "eng_k2",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "sci_fmt",
+				"type" : "asciistring(16)",
+				"nul"  : true
+			},
+			{
+				"name" : "sci_eq_type",
+				"type" : "int(1)",
+				"nul"  : true
+			},
+			{
+				"name" : "sci_from_eng",
+				"type" : "int(1)",
+				"nul"  : true
+			},
+			{
+				"name" : "sci_k1",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "sci_k2",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "sci_k3",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "sci_k4",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "sci_k5",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "sci_k6",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "sci_k7",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "sci_k8",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "mux_ch",
+				"type" : "int(2)",
+				"nul"  : true
+			},
+			{
+				"name" : "limit_type_1",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "yellow_limit_1",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "red_limit_1",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "limit_type_2",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "yellow_limit_2",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "red_limit_2",
+				"type" : "float(8)",
 				"nul"  : true
 			},
 			{

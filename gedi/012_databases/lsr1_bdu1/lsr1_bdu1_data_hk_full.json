@@ -1,6 +1,7 @@
 {
     "action"   : "create",
     "create"   : "database",
+    "teams"    : ["gedi"],
     "parent"   : "lsr1_bdu1.data.hk",
     "database" : {
         "name"   : "full",
