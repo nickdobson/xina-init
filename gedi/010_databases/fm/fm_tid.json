@@ -36,14 +36,28 @@
 				"nul"   : true
 			},
 			{
+				"name"  : "timestamp",
+				"type"  : "asciistring(32)",
+				"index" : true,
+				"nul"   : true
+			},
+			{
+				"name"  : "date",
+				"type"  : "localdate",
+				"index" : true,
+				"nul"   : true
+			},
+			{
 				"name"  : "t_start",
 				"type"  : "datetime",
-				"index" : true
+				"index" : true,
+				"nul"   : true
 			},
 			{
 				"name"  : "t_end",
 				"type"  : "datetime",
-				"index" : true
+				"index" : true,
+				"nul"   : true
 			},
 			{
 				"name"  : "pulse_energy_scaling",
@@ -98,6 +112,11 @@
 			{
 				"name"  : "reflectivity",
 				"type"  : "float(8)",
+				"nul"   : true
+			},
+			{
+				"name"  : "sci_packets",
+				"type"  : "int(8)",
 				"nul"   : true
 			},
 			{

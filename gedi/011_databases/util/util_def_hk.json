@@ -7,7 +7,7 @@
 		"name"     : "hk",
 		"label"    : "Housekeeping",
 		"desc"     : "GEDI housekeeping definition information.",
-		"format"   : "hk{hk_id}:{name}",
+		"format"   : "{hk_id} {prefix}:{name}",
 		"singular" : "field",
 		"backup"   : true,
 		"link"     : true,
@@ -28,11 +28,6 @@
 				"type" : "utf8string(64)"
 			},
 			{
-				"name" : "alias",
-				"type" : "utf8string(64)",
-				"nul"  : true
-			},
-			{
 				"name" : "measure",
 				"type" : "utf8string(32)",
 				"nul"  : true
@@ -44,12 +39,16 @@
 			},
 			{
 				"name" : "prefix",
-				"type" : "asciistring(16)",
-				"nul"  : true
+				"type" : "asciistring(16)"
 			},
 			{
 				"name" : "bdu_name",
 				"type" : "utf8string(64)",
+				"nul"  : true
+			},
+			{
+				"name" : "sci_name",
+				"type" : "asciistring(32)",
 				"nul"  : true
 			},
 			{

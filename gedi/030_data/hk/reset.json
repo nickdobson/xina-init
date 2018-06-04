@@ -1,0 +1,5 @@
+{
+	"action"   : "reset",
+	"reset"    : "database",
+	"database" : "util.def.hk"
+}

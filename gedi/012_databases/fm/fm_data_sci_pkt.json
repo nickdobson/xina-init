@@ -79,7 +79,7 @@
 			},
 			{
 				"name" : "pkt_count_fpga",
-				"type" : "int(4)",
+				"type" : "int(8)",
 				"meas" : "count",
 				"unit" : "packets"
 			},
@@ -119,7 +119,7 @@
 			},
 			{
 				"name" : "noise_mean",
-				"type" : "int(2)"
+				"type" : "int(4)"
 			},
 			{
 				"name" : "noise_calc_std_dev",
@@ -127,27 +127,27 @@
 			},
 			{
 				"name" : "thresh_mul_coarse",
-				"type" : "int(2)"
+				"type" : "float(8)"
 			},
 			{
 				"name" : "thresh_mul_fine_left",
-				"type" : "int(2)"
+				"type" : "float(8)"
 			},
 			{
 				"name" : "thresh_mul_fine_right",
-				"type" : "int(2)"
+				"type" : "float(8)"
 			},
 			{
 				"name" : "thresh_coarse_used",
-				"type" : "int(2)"
+				"type" : "int(4)"
 			},
 			{
 				"name" : "thresh_fine_left_used",
-				"type" : "int(2)"
+				"type" : "int(4)"
 			},
 			{
 				"name" : "thresh_fine_right_used",
-				"type" : "int(2)"
+				"type" : "int(4)"
 			},
 			{
 				"name" : "x_box_stretch",
@@ -155,7 +155,7 @@
 			},
 			{
 				"name" : "x_select_stretch",
-				"type" : "int(2)"
+				"type" : "int(4)"
 			},
 			{
 				"name" : "y_box_stretch",
@@ -163,7 +163,7 @@
 			},
 			{
 				"name" : "y_select_stretch",
-				"type" : "int(2)"
+				"type" : "int(4)"
 			},
 			{
 				"name" : "rx_surpressed",
@@ -199,7 +199,7 @@
 			},
 			{
 				"name" : "tx_offset_index",
-				"type" : "int(2)",
+				"type" : "int(4)",
 				"meas" : "time",
 				"unit" : "ns"
 			},
@@ -211,21 +211,23 @@
 			},
 			{
 				"name" : "rx_offset_index",
-				"type" : "int(2)",
+				"type" : "int(4)",
 				"meas" : "time",
 				"unit" : "ns"
 			},
 			{
 				"name" : "crc",
-				"type" : "int(2)"
+				"type" : "int(4)"
 			}
 		],
 		"indexes" : [
 			["packet_id", "sci_ch"],
 			["tid", "packet_index", "sci_ch"],
+			["tid", "unix_time"],
 			["file_id", "sci_ch"],
 			["unix_time", "sci_ch"],
-			["unix_time_s", "sci_ch"]
+			["unix_time_s", "sci_ch"],
+			["sci_ch", "unix_time"]
 		]
 	}
 }
