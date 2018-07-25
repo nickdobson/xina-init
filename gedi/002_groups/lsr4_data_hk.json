@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["gedi"],
+    "parent" : "lsr4.data",
+	"group"  : {
+		"name"  : "hk",
+        "label" : "Housekeeping",
+		"desc"  : "GEDI Laser 4 housekeeping data group."
+	}
+}

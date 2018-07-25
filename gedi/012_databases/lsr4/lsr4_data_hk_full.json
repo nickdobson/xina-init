@@ -2,11 +2,11 @@
     "action"   : "create",
     "create"   : "database",
     "teams"    : ["gedi"],
-    "parent"   : "fm.data.hk",
+    "parent"   : "lsr4.data.hk",
     "database" : {
         "name"   : "full",
         "label"  : "Full",
-        "desc"   : "GEDI flight model full housekeeping database.",
+        "desc"   : "GEDI Laser 4 full housekeeping database.",
         "format" : "{time} {hk_id} {value}",
         "fields" : [
             {
@@ -15,10 +15,6 @@
             },
             {
                 "name" : "source_id",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "tid",
                 "type" : "int(4)"
             },
             {
@@ -33,8 +29,7 @@
         "indexes" : [
             ["time", "hk_id"],
             ["source_id"],
-            ["hk_id"],
-            ["tid"]
+            ["hk_id"]
         ]
     }
 }

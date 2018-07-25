@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "oci",
+		"label"               : "OCI",
+		"desc"                : "Primary team for the Ocean Color Instrument (OCI) instrument.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply"]
+	}
+}

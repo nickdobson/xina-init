@@ -1,8 +1,0 @@
-{
-  "action": "insert",
-  "database": "util.def.hk",
-  "records": {
-      "type": "tsv",
-      "$object_id": "{local}/hk2.tsv"
-  }
-}

@@ -1,0 +1,10 @@
+{
+    "action" : "create",
+    "create" : "group",
+    "parent" : "oci",
+    "group"  : {
+        "name"  : "ddc",
+        "label" : "DDC",
+        "desc"  : "OCI DDC model group."
+    }
+}

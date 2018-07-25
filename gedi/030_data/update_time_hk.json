@@ -1,0 +1,102 @@
+{
+    "action": "update_expression",
+    "database": "fm.tid",
+    "set": {
+        "t_start": {
+            "type": "select",
+            "select": {
+                "columns": [
+                    {
+                        "e": {
+                            "type": "function",
+                            "function": "min",
+                            "args": [
+                                {
+                                    "type": "column",
+                                    "table": "record",
+                                    "column": "time",
+                                    "database": "fm.data.hk.full"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "from": {
+                    "type": "td",
+                    "database": "fm.data.hk.full",
+                    "table": "record"
+                },
+                "where": {
+                    "type": "binary",
+                    "op": "=",
+                    "e1": {
+                        "type": "column",
+                        "table": "record",
+                        "column": "tid",
+                        "database": "fm.data.hk.full"
+                    },
+                    "e2": {
+                        "type": "column",
+                        "table": "record",
+                        "column": "tid",
+                        "database": "fm.tid"
+                    }
+                }
+            }
+        },
+        "t_end": {
+            "type": "select",
+            "select": {
+                "columns": [
+                    {
+                        "e": {
+                            "type": "function",
+                            "function": "max",
+                            "args": [
+                                {
+                                    "type": "column",
+                                    "table": "record",
+                                    "column": "time",
+                                    "database": "fm.data.hk.full"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "from": {
+                    "type": "td",
+                    "database": "fm.data.hk.full",
+                    "table": "record"
+                },
+                "where": {
+                    "type": "binary",
+                    "op": "=",
+                    "e1": {
+                        "type": "column",
+                        "table": "record",
+                        "column": "tid",
+                        "database": "fm.data.hk.full"
+                    },
+                    "e2": {
+                        "type": "column",
+                        "table": "record",
+                        "column": "tid",
+                        "database": "fm.tid"
+                    }
+                }
+            }
+        }
+    },
+    "records": {
+        "type": "where",
+        "where": {
+            "type": "is_null",
+            "e": {
+                "type": "column",
+                "table": "record",
+                "column": "t_start",
+                "database": "fm.tid"
+            }
+        }
+    }
+}

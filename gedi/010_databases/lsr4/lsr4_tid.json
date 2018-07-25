@@ -2,11 +2,11 @@
 	"action"   : "create",
 	"create"   : "database",
 	"teams"    : ["gedi"],
-	"parent"   : "fm",
+	"parent"   : "lsr4",
 	"database" : {
 		"name"      : "tid",
 		"label"     : "TID",
-		"desc"      : "GEDI flight model TID database.",
+		"desc"      : "GEDI Laser 4 TID database.",
 		"format"    : "{tid}-{label}",
 		"singular"  : "TID",
 		"backup"    : true,
@@ -36,28 +36,14 @@
 				"nul"   : true
 			},
 			{
-				"name"  : "timestamp",
-				"type"  : "asciistring(32)",
-				"index" : true,
-				"nul"   : true
-			},
-			{
-				"name"  : "date",
-				"type"  : "localdate",
-				"index" : true,
-				"nul"   : true
-			},
-			{
 				"name"  : "t_start",
 				"type"  : "datetime",
-				"index" : true,
-				"nul"   : true
+				"index" : true
 			},
 			{
 				"name"  : "t_end",
 				"type"  : "datetime",
-				"index" : true,
-				"nul"   : true
+				"index" : true
 			},
 			{
 				"name"  : "pulse_energy_scaling",
@@ -115,16 +101,6 @@
 				"nul"   : true
 			},
 			{
-				"name"  : "hk_points",
-				"type"  : "int(8)",
-				"nul"   : true
-			},
-			{
-				"name"  : "sci_packets",
-				"type"  : "int(8)",
-				"nul"   : true
-			},
-			{
 				"name"  : "notes",
 				"type"  : "utf8text",
 				"nul"   : true
@@ -134,7 +110,7 @@
 			{
 				"name"        : "file",
 				"label"       : "File",
-				"desc"        : "GEDI flight model TID file database.",
+				"desc"        : "GEDI Laser 4 TID file database.",
 				"format"      : "{tid} {name}",
 				"file_format" : "{name}",
 				"singular"    : "file",

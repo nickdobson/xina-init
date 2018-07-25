@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["oci"],
+	"group"  : {
+		"name"  : "oci",
+		"label" : "OCI",
+		"desc"  : "Primary group for the Ocean Color Instrument (OCI) instrument."
+	}
+}

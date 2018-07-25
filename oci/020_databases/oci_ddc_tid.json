@@ -2,11 +2,11 @@
 	"action"   : "create",
 	"create"   : "database",
 	"teams"    : ["gedi"],
-	"parent"   : "fm",
+	"parent"   : "oci.ddc",
 	"database" : {
 		"name"      : "tid",
 		"label"     : "TID",
-		"desc"      : "GEDI flight model TID database.",
+		"desc"      : "OCI DDC TID database.",
 		"format"    : "{tid}-{label}",
 		"singular"  : "TID",
 		"backup"    : true,
@@ -60,71 +60,6 @@
 				"nul"   : true
 			},
 			{
-				"name"  : "pulse_energy_scaling",
-				"type"  : "float(8)",
-				"nul"   : true
-			},
-			{
-				"name"  : "focal_length",
-				"type"  : "float(8)",
-				"nul"   : true
-			},
-			{
-				"name"  : "laser_7_req",
-				"type"  : "float(8)",
-				"nul"   : true,
-				"meas"  : "angle",
-				"unit"  : "mrads"
-			},
-			{
-				"name"  : "laser_8_req",
-				"type"  : "float(8)",
-				"nul"   : true,
-				"meas"  : "length",
-				"unit"  : "in"
-			},
-			{
-				"name"  : "laser_11_req",
-				"type"  : "float(8)",
-				"nul"   : true,
-				"meas"  : "percent",
-				"unit"  : "%"
-			},
-			{
-				"name"  : "laser_12_req",
-				"type"  : "float(8)",
-				"nul"   : true,
-				"meas"  : "percent",
-				"unit"  : "%"
-			},
-			{
-				"name"  : "bdu_3_req",
-				"type"  : "float(8)",
-				"nul"   : true,
-				"meas"  : "percent",
-				"unit"  : "%"
-			},
-			{
-				"name"  : "camera_distance",
-				"type"  : "float(8)",
-				"nul"   : true
-			},
-			{
-				"name"  : "reflectivity",
-				"type"  : "float(8)",
-				"nul"   : true
-			},
-			{
-				"name"  : "hk_points",
-				"type"  : "int(8)",
-				"nul"   : true
-			},
-			{
-				"name"  : "sci_packets",
-				"type"  : "int(8)",
-				"nul"   : true
-			},
-			{
 				"name"  : "notes",
 				"type"  : "utf8text",
 				"nul"   : true
@@ -134,7 +69,7 @@
 			{
 				"name"        : "file",
 				"label"       : "File",
-				"desc"        : "GEDI flight model TID file database.",
+				"desc"        : "OCI DDC TID file database.",
 				"format"      : "{tid} {name}",
 				"file_format" : "{name}",
 				"singular"    : "file",
@@ -163,11 +98,6 @@
 						"name"  : "name",
 						"type"  : "utf8string(128)",
 						"key"   : true
-					},
-					{
-						"name"  : "cpt_test",
-						"type"  : "int(4)",
-						"nul"   : true
 					},
 					{
 						"name"  : "desc",

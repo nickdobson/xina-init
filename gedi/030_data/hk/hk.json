@@ -1,5 +1,5 @@
 {
-  "action": "insert",
+  "action": "set",
   "database": "util.def.hk",
   "records": {
       "type": "tsv",
