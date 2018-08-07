@@ -184,12 +184,28 @@
 				"type" : "float(4)"
 			},
 			{
+				"name" : "rx_sample_max",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "rx_sample_min",
+				"type" : "int(4)"
+			},
+			{
 				"name" : "tx_sample_mean",
 				"type" : "float(4)"
 			},
 			{
 				"name" : "tx_sample_std_dev",
 				"type" : "float(4)"
+			},
+			{
+				"name" : "tx_sample_max",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "tx_sample_min",
+				"type" : "int(4)"
 			},
 			{
 				"name" : "tx_window_open",
