@@ -1,0 +1,187 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.ddc",
+	"database" : {
+		"name"      : "noise",
+		"label"     : "Noise Test",
+		"desc"      : "OCI DDC noise test database.",
+		"format"    : "{timestamp} {name}",
+		"singular"  : "test",
+		"backup"    : true,
+		"event"     : true,
+		"link"      : true,
+		"log"       : true,
+		"notify"    : true,
+		"subscribe" : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"order" : [
+			[ "timestamp", "desc" ]
+		],
+		"fields" : [
+			{
+				"name"  : "timestamp",
+				"type"  : "localdatetime",
+				"key"   : true
+			},
+			{
+				"name"  : "name",
+				"type"  : "asciistring(64)",
+				"key"   : true
+			},
+			{
+				"name"  : "date",
+				"type"  : "localdate",
+				"index" : true
+			},
+			{
+				"name"  : "samples",
+				"type"  : "int(4)",
+				"index" : true,
+				"nul"   : true
+			},
+			{
+				"name"  : "mean",
+				"type"  : "float(8)",
+				"nul"   : true
+			},
+			{
+				"name"  : "min",
+				"type"  : "int(4)",
+				"nul"   : true
+			},
+			{
+				"name"  : "max",
+				"type"  : "int(4)",
+				"nul"   : true
+			},
+			{
+				"name"  : "std_dev",
+				"type"  : "float(8)",
+				"nul"   : true
+			},
+			{
+				"name"  : "snr",
+				"type"  : "float(8)",
+				"nul"   : true
+			},
+			{
+				"name"  : "enob",
+				"type"  : "float(8)",
+				"nul"   : true
+			},
+			{
+				"name"  : "max_neg_dev",
+				"type"  : "float(8)",
+				"nul"   : true
+			},
+			{
+				"name"  : "max_pos_dev",
+				"type"  : "float(8)",
+				"nul"   : true
+			}
+		],
+		"databases" : [
+			{
+				"name"        : "wfm",
+				"label"       : "Waveform",
+				"desc"        : "OCI DDC noise test waveform database.",
+				"format"      : "{timestamp} {name}",
+				"file_format" : "{file_name}",
+				"singular"    : "waveform",
+				"event"       : true,
+				"file"        : true,
+				"link"        : true,
+				"log"         : true,
+				"notify"      : true,
+				"subscribe"   : true,
+				"tag"         : true,
+				"track"       : true,
+				"trash"       : true,
+				"wall"        : true,
+				"order" : [
+					[ "timestamp",  "desc" ]
+				],
+				"fields" : [
+					{
+						"name"  : "timestamp",
+						"type"  : "localdatetime",
+						"key"   : true,
+						"ref"   : "timestamp"
+					},
+					{
+						"name"  : "name",
+						"type"  : "asciistring(64)",
+						"key"   : true,
+						"ref"   : "name"
+					},
+					{
+						"name"  : "file_name",
+						"type"  : "asciistring(128)",
+						"key"   : true
+					},
+					{
+						"name"  : "index",
+						"type"  : "int(4)",
+						"key"   : true
+					},
+					{
+						"name"  : "date",
+						"type"  : "localdate",
+						"index" : true
+					},
+					{
+						"name"  : "samples",
+						"type"  : "int(4)",
+						"index" : true,
+						"nul"   : true
+					},
+					{
+						"name"  : "mean",
+						"type"  : "float(8)",
+						"nul"   : true
+					},
+					{
+						"name"  : "min",
+						"type"  : "int(4)",
+						"nul"   : true
+					},
+					{
+						"name"  : "max",
+						"type"  : "int(4)",
+						"nul"   : true
+					},
+					{
+						"name"  : "std_dev",
+						"type"  : "float(8)",
+						"nul"   : true
+					},
+					{
+						"name"  : "snr",
+						"type"  : "float(8)",
+						"nul"   : true
+					},
+					{
+						"name"  : "enob",
+						"type"  : "float(8)",
+						"nul"   : true
+					},
+					{
+						"name"  : "max_neg_dev",
+						"type"  : "float(8)",
+						"nul"   : true
+					},
+					{
+						"name"  : "max_pos_dev",
+						"type"  : "float(8)",
+						"nul"   : true
+					}
+				]
+			}
+		]
+	}
+}

@@ -3,6 +3,6 @@
   "database": "util.def.hk",
   "records": {
       "type": "tsv",
-      "$object_id": "{local}/hk.tsv"
+      "$object_id": "{local}/hk.txt"
   }
 }

@@ -119,7 +119,7 @@
 			},
 			{
 				"name" : "noise_mean",
-				"type" : "int(4)"
+				"type" : "float(8)"
 			},
 			{
 				"name" : "noise_calc_std_dev",
@@ -233,6 +233,22 @@
 			},
 			{
 				"name" : "crc",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "stale_cue_pt_used",
+				"type" : "boolean"
+			},
+			{
+				"name" : "cue_pt_func_disabled",
+				"type" : "boolean"
+			},
+			{
+				"name" : "byte_start",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "byte_end",
 				"type" : "int(4)"
 			}
 		],
