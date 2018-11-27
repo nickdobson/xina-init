@@ -54,6 +54,16 @@
 				]
 			},
 			{
+				"name"  : "Deriv Agent",
+				"type"  : "utf8string(128)",
+				"nul"   : true
+			},
+			{
+				"name"  : "Deriv Agent Volume",
+				"type"  : "float(8)",
+				"nul"   : true
+			},
+			{
 				"name"  : "Prepared By",
 				"type"  : "utf8string(64)"
 			},

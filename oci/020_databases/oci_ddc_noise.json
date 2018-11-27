@@ -181,6 +181,50 @@
 						"nul"   : true
 					}
 				]
+			},
+			{
+				"name"        : "file",
+				"label"       : "File",
+				"desc"        : "OCI DDC noise test file database.",
+				"format"      : "{file_name}",
+				"file_format" : "{file_name}",
+				"singular"    : "file",
+				"event"       : true,
+				"file"        : true,
+				"link"        : true,
+				"log"         : true,
+				"notify"      : true,
+				"subscribe"   : true,
+				"tag"         : true,
+				"track"       : true,
+				"trash"       : true,
+				"wall"        : true,
+				"order" : [
+					[ "file_name",  "desc" ]
+				],
+				"fields" : [
+					{
+						"name"  : "timestamp",
+						"type"  : "localdatetime",
+						"key"   : true,
+						"ref"   : "timestamp"
+					},
+					{
+						"name"  : "name",
+						"type"  : "asciistring(64)",
+						"key"   : true,
+						"ref"   : "name"
+					},
+					{
+						"name"  : "file_name",
+						"type"  : "asciistring(128)",
+						"key"   : true
+					},
+					{
+						"name"  : "date",
+						"type"  : "localdate"
+					}
+				]
 			}
 		]
 	}
