@@ -1,0 +1,58 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.def",
+	"database" : {
+		"name"     : "hk",
+		"label"    : "Housekeeping",
+		"desc"     : "OCI housekeeping definition information.",
+		"format"   : "{hk_id} {prefix}:{name}",
+		"singular" : "field",
+		"backup"   : true,
+		"link"     : true,
+		"wall"     : true,
+		"order"    : [ [ "hk_id", "asc" ] ],
+		"fields"   : [
+			{
+				"name" : "source_id",
+				"type" : "int(1)"
+			},
+			{
+				"name" : "hk_id",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "prefix",
+				"type" : "asciistring(16)"
+			},
+			{
+				"name" : "name",
+				"type" : "utf8string(64)"
+			},
+			{
+				"name" : "measure",
+				"type" : "utf8string(32)",
+				"nul"  : true
+			},
+			{
+				"name" : "unit",
+				"type" : "utf8string(32)",
+				"nul"  : true
+			},
+			{
+				"name" : "rate",
+				"type" : "float(4)",
+				"nul"  : true,
+				"meas" : "frequency",
+				"unit" : "Hz"
+			},
+			{
+				"name" : "notes",
+				"type" : "utf8text",
+				"nul"  : true
+			}
+		]
+	}
+}

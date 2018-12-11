@@ -1,0 +1,15 @@
+{
+  "action"   : "insert",
+  "database" : "oci.def.hk",
+  "records"  : [
+    {
+      "source_id": 0,
+      "hk_id" : 1,
+      "prefix": "fake",
+      "name": "housekeeping",
+      "measure": "voltage",
+      "unit": "V",
+      "rate": 1
+    }
+  ]
+}

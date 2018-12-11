@@ -1,13 +1,13 @@
 {
 	"action"   : "create",
 	"create"   : "database",
-	"teams"    : ["gedi"],
-	"parent"   : "oci.ddc",
+	"teams"    : ["oci"],
+	"parent"   : "oci.fm",
 	"database" : {
-		"name"      : "tid",
-		"label"     : "TID",
-		"desc"      : "OCI DDC TID database.",
-		"format"    : "{tid}-{label}",
+		"name"      : "tm",
+		"label"     : "Telemetry",
+		"desc"      : "OCI flight model telemetry database.",
+		"format"    : "{timestamp}-{label}",
 		"singular"  : "TID",
 		"backup"    : true,
 		"event"     : true,
@@ -20,12 +20,11 @@
 		"trash"     : true,
 		"wall"      : true,
 		"order" : [
-			[ "t_start", "desc" ],
-			[ "t_end",   "desc" ]
+			[ "t_id", "desc" ]
 		],
 		"fields" : [
 			{
-				"name"  : "tid",
+				"name"  : "t_id",
 				"type"  : "int(4)",
 				"key"   : true
 			},
@@ -37,25 +36,17 @@
 			},
 			{
 				"name"  : "timestamp",
-				"type"  : "asciistring(32)",
-				"index" : true,
-				"nul"   : true
+				"type"  : "localdatetime",
+				"index" : true
 			},
 			{
 				"name"  : "date",
 				"type"  : "localdate",
-				"index" : true,
-				"nul"   : true
+				"index" : true
 			},
 			{
-				"name"  : "t_start",
-				"type"  : "datetime",
-				"index" : true,
-				"nul"   : true
-			},
-			{
-				"name"  : "t_end",
-				"type"  : "datetime",
+				"name"  : "t",
+				"type"  : "int(8)",
 				"index" : true,
 				"nul"   : true
 			},
@@ -69,8 +60,8 @@
 			{
 				"name"        : "file",
 				"label"       : "File",
-				"desc"        : "OCI DDC TID file database.",
-				"format"      : "{tid} {name}",
+				"desc"        : "OCI flight model telemetry file database.",
+				"format"      : "{t_id} {name}",
 				"file_format" : "{name}",
 				"singular"    : "file",
 				"event"       : true,
@@ -84,14 +75,14 @@
 				"trash"       : true,
 				"wall"        : true,
 				"order" : [
-					[ "tid",  "desc" ],
+					[ "t_id",  "desc" ],
 					[ "name", "asc"  ]
 				],
 				"fields" : [
 					{
-						"name"  : "tid",
+						"name"  : "t_id",
 						"type"  : "int(4)",
-						"ref"   : "tid",
+						"ref"   : "t_id",
 						"key"   : true
 					},
 					{

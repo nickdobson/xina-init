@@ -1,0 +1,90 @@
+{
+  "action"   : "insert",
+  "database" : "oci.fm.data.ins",
+  "records"  : [
+    {
+      "t_id"     : 15444715,
+      "u_ins_id" : 15444715000000000,
+      "ins_id"   : 100000000,
+      "pri_id"   : 100,
+      "sec_id"   : 0,
+      "t"        : 1544471500000000,
+      "type"     : 0,
+      "content"  : "a message with primary ID 100"
+    },
+    {
+      "t_id"     : 15444715,
+      "u_ins_id" : 15444715000000010,
+      "ins_id"   : 100000001,
+      "pri_id"   : 100,
+      "sec_id"   : 1,
+      "t"        : 1544471500000000,
+      "type"     : 0,
+      "content"  : "a message with primary ID 100, secondary ID 1"
+    },
+    {
+      "t_id"     : 15444715,
+      "u_ins_id" : 15444715010000001,
+      "ins_id"   : 0,
+      "pri_id"   : 0,
+      "sec_id"   : 0,
+      "t"        : 1544471501000000,
+      "type"     : 1,
+      "level"    : 0,
+      "content"  : "an alert with level 0"
+    },
+    {
+      "t_id"     : 15444715,
+      "u_ins_id" : 15444715020000001,
+      "ins_id"   : 0,
+      "pri_id"   : 0,
+      "sec_id"   : 0,
+      "t"        : 1544471502000000,
+      "type"     : 1,
+      "level"    : 1,
+      "content"  : "an alert with level 1"
+    },
+    {
+      "t_id"     : 15444715,
+      "u_ins_id" : 15444715030000001,
+      "ins_id"   : 0,
+      "pri_id"   : 0,
+      "sec_id"   : 0,
+      "t"        : 1544471503000000,
+      "type"     : 1,
+      "level"    : 1,
+      "content"  : "an alert with level 2"
+    },
+    {
+      "t_id"     : 15444715,
+      "u_ins_id" : 15444715040000001,
+      "ins_id"   : 0,
+      "pri_id"   : 0,
+      "sec_id"   : 0,
+      "t"        : 1544471504000000,
+      "type"     : 1,
+      "level"    : 1,
+      "content"  : "an alert with level 3"
+    },
+    {
+      "t_id"     : 15444715,
+      "u_ins_id" : 15444715050000001,
+      "ins_id"   : 0,
+      "pri_id"   : 0,
+      "sec_id"   : 0,
+      "t"        : 1544471505000000,
+      "type"     : 1,
+      "level"    : 1,
+      "content"  : "an alert with level 4"
+    },
+    {
+      "u_ins_id" : 2,
+      "ins_id"   : 0,
+      "pri_id"   : 0,
+      "sec_id"   : 0,
+      "t"        : 1544471506000000,
+      "type"     : 2,
+      "content"  : "an annotation"
+    }
+  ]
+}

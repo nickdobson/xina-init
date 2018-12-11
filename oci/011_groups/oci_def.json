@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["oci"],
+	"parent" : "oci",
+	"group"  : {
+		"name"  : "def",
+		"label" : "Definitions",
+		"desc"  : "OCI definitions group."
+	}
+}
