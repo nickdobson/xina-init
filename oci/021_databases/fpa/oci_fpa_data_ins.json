@@ -2,11 +2,11 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fm.data",
+  "parent"   : "oci.fpa.data",
   "database" : {
     "name"   : "ins",
     "label"  : "Instant",
-    "desc"   : "OCI flight model instant database.",
+    "desc"   : "OCI FPA model instant database.",
     "format" : "{u_ins_id} {content}",
     "fields" : [
       {

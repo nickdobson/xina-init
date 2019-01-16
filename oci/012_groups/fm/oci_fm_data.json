@@ -1,0 +1,11 @@
+{
+  "action" : "create",
+  "create" : "group",
+  "teams"  : ["oci"],
+  "parent" : "oci.fm",
+  "group"  : {
+    "name"  : "data",
+    "label" : "Data",
+    "desc"  : "OCI flight model data group."
+  }
+}

@@ -1,0 +1,42 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.def",
+	"database" : {
+		"name"     : "preset",
+		"label"    : "Preset",
+		"desc"     : "OCI housekeeping presets.",
+		"format"   : "{name}",
+		"singular" : "preset",
+		"backup"   : true,
+		"wall"     : true,
+		"order"    : [ [ "name", "asc" ] ],
+		"fields"   : [
+			{
+				"name" : "name",
+				"type" : "utf8string(64)",
+				"key"  : true
+			},
+			{
+				"name" : "notes",
+				"type" : "utf8string",
+				"nul"  : true
+			},
+			{
+				"name" : "models",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
+				"name" : "hks",
+				"type" : "jsonarray"
+			},
+			{
+				"name" : "options",
+				"type" : "jsonobject",
+				"nul"  : true
+			}
+		]
+	}
+}

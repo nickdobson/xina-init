@@ -1,0 +1,11 @@
+{
+  "action" : "create",
+  "create" : "group",
+  "teams"  : ["oci"],
+  "parent" : "oci.fpa.data",
+  "group"  : {
+    "name"  : "hk",
+    "label" : "Housekeeping",
+    "desc"  : "OCI FPA model housekeeping data group."
+  }
+}

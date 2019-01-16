@@ -1,49 +1,47 @@
 {
-    "action"   : "create",
-    "create"   : "database",
-    "parent"   : "moma.qsm",
-    "database" : {
-        "name"      : "config",
-        "label"     : "Configuration",
-        "desc"      : "MOMA QSM model configuration database.",
-        "format"    : "{Start TID}-{End TID} {Description}",
-        "backup"    : true,
-        "event"     : true,
-        "link"      : true,
-        "log"       : true,
-        "notify"    : true,
-        "subscribe" : true,
-        "tag"       : true,
-        "track"     : true,
-        "trash"     : true,
-        "wall"      : true,
-        "fields"    : [
-            {
-                "name"  : "Start TID",
-                "type"  : "int(4)",
-                "key"   : true
-            },
-            {
-                "name"  : "End TID",
-                "type"  : "int(4)",
-                "nul"   : true
-            },
-            {
-                "name"  : "Instant",
-                "type"  : "boolean",
-                "nul"   : true,
-                "def"   : "false"
-            },
-            {
-                "name"  : "Reset",
-                "type"  : "jsonobject",
-                "nul"   : true
-            },
-            {
-                "name"  : "Description",
-                "type"  : "utf8text",
-                "nul"   : true
-            }
-        ]
-    }
+  "action"   : "create",
+  "create"   : "database",
+  "teams"    : ["moma"],
+  "parent"   : "moma.qsm",
+  "database" : {
+    "name"      : "config",
+    "label"     : "Configuration",
+    "desc"      : "MOMA QSM model configuration database.",
+    "format"    : "{Start TID}-{End TID} {Label}",
+    "backup"    : true,
+    "event"     : true,
+    "link"      : true,
+    "log"       : true,
+    "notify"    : true,
+    "subscribe" : true,
+    "tag"       : true,
+    "track"     : true,
+    "trash"     : true,
+    "wall"      : true,
+    "fields"    : [
+      {
+        "name" : "Start TID",
+        "type" : "int(4)"
+      },
+      {
+        "name" : "End TID",
+        "type" : "int(4)",
+        "nul"  : true
+      },
+      {
+        "name" : "Reset",
+        "type" : "jsonobject",
+        "nul"  : true
+      },
+      {
+        "name" : "Label",
+        "type" : "utf8string(64)"
+      },
+      {
+        "name" : "Description",
+        "type" : "utf8text",
+        "nul"  : true
+      }
+    ]
+  }
 }

@@ -2,15 +2,13 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fm.data.hk",
+  "parent"   : "oci.fpa.data.hk",
   "database" : {
-    "name"        : "file",
-    "label"       : "File",
-    "desc"        : "OCI flight model file housekeeping database.",
-    "file"        : true,
-    "file_format" : "{name}",
-    "format"      : "{t} {hk_id}",
-    "fields"      : [
+    "name"   : "full",
+    "label"  : "Full",
+    "desc"   : "OCI FPA model full housekeeping database.",
+    "format" : "{t} {hk_id} {value}",
+    "fields" : [
       {
         "name" : "t_id",
         "type" : "int(4)"
@@ -24,13 +22,14 @@
         "type" : "int(4)"
       },
       {
-        "name" : "name",
-        "type" : "utf8string"
+        "name" : "value",
+        "type" : "float(8)"
       }
     ],
     "indexes" : [
       ["t_id"],
-      ["hk_id", "t"]
+      ["hk_id", "t"],
+      ["hk_id", "value"]
     ]
   }
 }

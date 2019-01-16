@@ -2,12 +2,12 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fm.data",
+  "parent"   : "oci.fpa.data",
   "database" : {
-    "name"   : "ins",
-    "label"  : "Instant",
-    "desc"   : "OCI flight model instant database.",
-    "format" : "{u_ins_id} {content}",
+    "name"   : "int",
+    "label"  : "Interval",
+    "desc"   : "OCI FPA model interval database.",
+    "format" : "{int_id} {content}",
     "fields" : [
       {
         "name" : "t_id",
@@ -15,11 +15,11 @@
         "nul"  : true
       },
       {
-        "name" : "u_ins_id",
+        "name" : "u_int_id",
         "type" : "int(8)"
       },
       {
-        "name" : "ins_id",
+        "name" : "int_id",
         "type" : "int(4)"
       },
       {
@@ -31,17 +31,21 @@
         "type" : "int(2)"
       },
       {
-        "name" : "t",
+        "name" : "t_start",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "t_end",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "duration",
         "type" : "int(8)"
       },
       {
         "name" : "type",
-        "type" : "int(1)"
-      },
-      {
-        "name" : "level",
         "type" : "int(1)",
-        "nul"  : true
+        "def"  : "0"
       },
       {
         "name" : "content",
@@ -54,7 +58,10 @@
       }
     ],
     "indexes" : [
-      ["t_id"]
+      ["t_id"],
+      ["u_int_id"],
+      ["int_id"],
+      ["pri_id", "sec_id"]
     ]
   }
 }

@@ -4,8 +4,8 @@
   "teams"  : ["oci"],
   "parent" : "oci",
   "group"  : {
-    "name"  : "fm",
-    "label" : "Flight Model",
-    "desc"  : "OCI flight model group."
+    "name"  : "fpa",
+    "label" : "FPA Model",
+    "desc"  : "OCI FPA model group."
   }
 }
