@@ -12,7 +12,7 @@
       "t_end"    : 1544471530000000,
       "duration" : 30000000,
       "type"     : 0,
-      "content"  : "first test"
+      "label"    : "first test"
     },
     {
       "t_id"     : 15444715,
@@ -24,7 +24,7 @@
       "t_end"    : 1544471560000000,
       "duration" : 30000000,
       "type"     : 0,
-      "content"  : "second test"
+      "label"    : "second test"
     },
     {
       "u_int_id" : 10000500,
@@ -35,7 +35,7 @@
       "t_end"    : 1544471545000000,
       "duration" : 30000000,
       "type"     : 0,
-      "content"  : "intermediate test"
+      "label"    : "intermediate test"
     },
     {
       "t_id"     : 15444715,
@@ -47,7 +47,7 @@
       "t_end"    : 1544471520000000,
       "duration" : 10000000,
       "type"     : 1,
-      "content"  : "marker 50,0"
+      "label"    : "marker 50,0"
     },
     {
       "t_id"     : 15444715,
@@ -59,7 +59,7 @@
       "t_end"    : 1544471530000000,
       "duration" : 10000000,
       "type"     : 1,
-      "content"  : "marker 60,1"
+      "label"    : "marker 60,1"
     },
     {
       "u_int_id" : 2,
@@ -70,7 +70,7 @@
       "t_end"    : 1544471525000000,
       "duration" : 10000000,
       "type"     : 1,
-      "content"  : "marker 100,0"
+      "label"    : "marker 100,0"
     }
   ]
 }

@@ -2,10 +2,10 @@
   "action" : "create",
   "create" : "group",
   "teams"  : ["oci"],
-  "parent" : "oci.fpa",
+  "parent" : "oci.fpa102",
   "group"  : {
     "name"  : "data",
     "label" : "Data",
-    "desc"  : "OCI FPA model data group."
+    "desc"  : "OCI FPA SN102 model data group."
   }
 }

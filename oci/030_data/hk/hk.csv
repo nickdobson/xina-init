@@ -1,0 +1,343 @@
+source_id,hk_id,category,prefix,name,unit,measure,mined
+1,1,FPA,EGSE,SPI Box V,V,voltage,1
+1,2,FPA,EGSE,SPI Box I,mA,current,1
+1,3,FPA,EGSE,P2V3 Analog V,V,voltage,1
+1,4,FPA,EGSE,P2V3 Analog I,mA,current,1
+1,5,FPA,EGSE,P5V Analog V,V,voltage,1
+1,6,FPA,EGSE,P5V Analog I,mA,current,1
+1,7,FPA,EGSE,N5V Analog V,V,voltage,1
+1,8,FPA,EGSE,N5V Analog I,mA,current,1
+1,9,FPA,EGSE,N1V2 Analog V,V,voltage,1
+1,10,FPA,EGSE,N1V2 Analog I,mA,current,1
+1,11,FPA,EGSE,P3V3 Analog V,V,voltage,1
+1,12,FPA,EGSE,P3V3 Analog I,mA,current,1
+1,13,FPA,EGSE,P3V3 Digital V,V,voltage,1
+1,14,FPA,EGSE,P3V3 Digital I,mA,current,1
+1,15,FPA,EGSE,RD_1 V,V,voltage,1
+1,16,FPA,EGSE,RD_1 I,mA,current,1
+1,17,FPA,EGSE,RD_2 V,V,voltage,1
+1,18,FPA,EGSE,RD_2 I,mA,current,1
+1,19,FPA,EGSE,RD_3 V,V,voltage,1
+1,20,FPA,EGSE,RD_3 I,mA,current,1
+1,21,FPA,EGSE,SC_DD V,V,voltage,1
+1,22,FPA,EGSE,SC_DD I,mA,current,1
+1,23,FPA,EGSE,OTG V,V,voltage,1
+1,24,FPA,EGSE,OTG I,mA,current,1
+1,25,FPA,EGSE,DG_L V,V,voltage,1
+1,26,FPA,EGSE,DG_L I,mA,current,1
+1,27,FPA,EGSE,RTN V,V,voltage,1
+1,28,FPA,EGSE,RTN I,mA,current,1
+1,29,FPA,EGSE,A_I_H V,V,voltage,1
+1,30,FPA,EGSE,A_I_H I,mA,current,1
+1,31,FPA,EGSE,A_I_L V,V,voltage,1
+1,32,FPA,EGSE,A_I_L I,mA,current,1
+1,33,FPA,EGSE,A_I_MAG V,V,voltage,1
+1,34,FPA,EGSE,A_I_MAG I,mA,current,1
+1,35,FPA,EGSE,S_H_SW_H V,V,voltage,1
+1,36,FPA,EGSE,S_H_SW_H I,mA,current,1
+1,37,FPA,EGSE,S_L_SW_L V,V,voltage,1
+1,38,FPA,EGSE,S_L_SW_L I,mA,current,1
+1,39,FPA,EGSE,S_MAG_SW_MAG V,V,voltage,1
+1,40,FPA,EGSE,S_MAG_SW_MAG I,mA,current,1
+1,41,FPA,EGSE,RG1_L V,V,voltage,1
+1,42,FPA,EGSE,RG1_L I,mA,current,1
+1,43,FPA,EGSE,RG2_L V,V,voltage,1
+1,44,FPA,EGSE,RG2_L I,mA,current,1
+1,45,FPA,EGSE,RG3_L V,V,voltage,1
+1,46,FPA,EGSE,RG3_L I,mA,current,1
+1,47,FPA,EGSE,RG1_MAG V,V,voltage,1
+1,48,FPA,EGSE,RG1_MAG I,mA,current,1
+1,49,FPA,EGSE,RG2_MAG V,V,voltage,1
+1,50,FPA,EGSE,RG2_MAG I,mA,current,1
+1,51,FPA,EGSE,RG3_MAG V,V,voltage,1
+1,52,FPA,EGSE,RG3_MAG I,mA,current,1
+1,53,FPA,EGSE,OD V,V,voltage,1
+1,54,FPA,EGSE,OD I,mA,current,1
+1,55,FPA,FPA,TEMP RTD_CAL Raw V,V,voltage,1
+1,56,FPA,FPA,TEMP_CCD_LEFT Raw V,V,voltage,1
+1,57,FPA,FPA,TEMP_CCD_RIGHT Raw V,V,voltage,1
+1,58,FPA,FPA,TEMP_PREAMP_TOLEFT Raw V,V,voltage,1
+1,59,FPA,FPA,TEMP_PREAMP_BORIGHT Raw V,V,voltage,1
+1,60,FPA,FPA,TEMP_ADC_LOW Raw V,V,voltage,1
+1,61,FPA,FPA,TEMP_ADC_HIGH Raw V,V,voltage,1
+1,62,FPA,FPA,TEMP_DRV_BOT Raw V,V,voltage,1
+1,63,FPA,FPA,VCM2_VMON Raw V,V,voltage,1
+1,64,FPA,FPA,VCM1_VMON Raw V,V,voltage,1
+1,65,FPA,FPA,P5V_VMON Raw V,V,voltage,1
+1,66,FPA,FPA,N5V_VMON Raw V,V,voltage,1
+1,67,FPA,FPA,N1V2_VMON Raw V,V,voltage,1
+1,68,FPA,FPA,P3V3_DIGITAL_VMON Raw V,V,voltage,1
+1,69,FPA,FPA,VREF_VMON Raw V,V,voltage,1
+1,70,FPA,FPA,P2V3_IMON Raw V,V,voltage,1
+1,71,FPA,FPA,P3V3_ANALOG_IMON Raw V,V,voltage,1
+1,72,FPA,FPA,P2V3_VMON Raw V,V,voltage,1
+1,73,FPA,FPA,REF_GND Raw V,V,voltage,1
+1,74,FPA,FPA,P5V_IMON Raw V,V,voltage,1
+1,75,FPA,FPA,N5V_IMON Raw V,V,voltage,1
+1,76,FPA,FPA,P3V3_DIGITAL_IMON Raw V,V,voltage,1
+1,77,FPA,FPA,N1V2_IMON Raw V,V,voltage,1
+1,78,FPA,FPA,P3V3_ANALOG_VMON Raw V,V,voltage,1
+1,79,FPA,FPA,Board Revision Analog ID Raw V,V,voltage,1
+1,80,FPA,FPA,TEMP RTD_CAL V,V,voltage,1
+1,81,FPA,FPA,TEMP_CCD_LEFT,C,temperature,1
+1,82,FPA,FPA,TEMP_CCD_RIGHT,C,temperature,1
+1,83,FPA,FPA,TEMP_PREAMP_TOLEFT,C,temperature,1
+1,84,FPA,FPA,TEMP_PREAMP_BORIGHT,C,temperature,1
+1,85,FPA,FPA,TEMP_ADC_LOW,C,temperature,1
+1,86,FPA,FPA,TEMP_ADC_HIGH,C,temperature,1
+1,87,FPA,FPA,TEMP_DRV_BOT,C,temperature,1
+1,88,FPA,FPA,VCM2_VMON V,V,voltage,1
+1,89,FPA,FPA,VCM1_VMON V,V,voltage,1
+1,90,FPA,FPA,P5V_VMON V,V,voltage,1
+1,91,FPA,FPA,N5V_VMON V,V,voltage,1
+1,92,FPA,FPA,N1V2_VMON V,V,voltage,1
+1,93,FPA,FPA,P3V3_DIGITAL_VMON V,V,voltage,1
+1,94,FPA,FPA,VREF_VMON V,V,voltage,1
+1,95,FPA,FPA,P2V3_IMON V,A,current,1
+1,96,FPA,FPA,P3V3_ANALOG_IMON V,A,current,1
+1,97,FPA,FPA,P2V3_VMON V,V,voltage,1
+1,98,FPA,FPA,REF_GND V,V,voltage,1
+1,99,FPA,FPA,P5V_IMON V,A,current,1
+1,100,FPA,FPA,N5V_IMON V,A,current,1
+1,101,FPA,FPA,P3V3_DIGITAL_IMON V,A,current,1
+1,102,FPA,FPA,N1V2_IMON V,A,current,1
+1,103,FPA,FPA,P3V3_ANALOG_VMON V,V,voltage,1
+1,104,FPA,FPA,Board Revision Analog ID V,V,voltage,1
+1,105,FPA,TBAL,LN2 Pri Vlv Pos,,,1
+1,106,FPA,TBAL,LN2 Pri Vlv Alm,,,1
+1,107,FPA,TBAL,LN2 Sec Vlv Pos,,,1
+1,108,FPA,TBAL,LN2 Sec Vlv Alm,,,1
+1,109,FPA,TBAL,CCD Heat Strap SP T,C,temperature,1
+1,110,FPA,TBAL,CCD Heat Strap T,C,temperature,1
+1,111,FPA,TBAL,CCD Heat Strap Out,%,percent,1
+1,112,FPA,TBAL,Wire Harness Heaters SP T,C,temperature,1
+1,113,FPA,TBAL,Wire Harness Heaters T,C,temperature,1
+1,114,FPA,TBAL,Wire Harness Heaters Out,%,percent,1
+1,115,FPA,TBAL,FPA Mount Face Plate SP T,C,temperature,1
+1,116,FPA,TBAL,FPA Mount Face Plate T,C,temperature,1
+1,117,FPA,TBAL,FPA Mount Face Plate Out,%,percent,1
+1,118,FPA,TBAL,LN2 Cold Plate SP T,C,temperature,1
+1,119,FPA,TBAL,LN2 Cold Plate T,C,temperature,1
+1,120,FPA,TBAL,LN2 Cold Plate Out,%,percent,1
+1,121,FPA,TBAL,Shroud Guard Heaters SP T,C,temperature,1
+1,122,FPA,TBAL,Shroud Guard Heaters T,C,temperature,1
+1,123,FPA,TBAL,Shroud Guard Heaters Out,%,percent,1
+1,124,FPA,TBAL,Shroud Heaters SP T,C,temperature,1
+1,125,FPA,TBAL,Shroud Heaters T,C,temperature,1
+1,126,FPA,TBAL,Shroud Heaters Out,%,percent,1
+1,127,FPA,TBAL,Lens SP T,C,temperature,1
+1,128,FPA,TBAL,Lens T,C,temperature,1
+1,129,FPA,TBAL,Lens Out,%,percent,1
+1,130,FPA,TBAL,Translation Stages SP T,C,temperature,1
+1,131,FPA,TBAL,Translation StagesT,C,temperature,1
+1,132,FPA,TBAL,Translation Stages Out,%,percent,1
+1,133,FPA,TBAL,LN2-Primary SP T,C,temperature,1
+1,134,FPA,TBAL,LN2-Primary T,C,temperature,1
+1,135,FPA,TBAL,LN2-Primary Out,%,percent,1
+1,136,FPA,TBAL,LN2-Secondary SP T,C,temperature,1
+1,137,FPA,TBAL,LN2-Secondary T,C,temperature,1
+1,138,FPA,TBAL,LN2-Secondary Out,%,percent,1
+1,139,FPA,TBAL,FPA HSG NEAR CCD END PLATE,C,temperature,1
+1,140,FPA,TBAL,FPA HSG TOP,C,temperature,1
+1,141,FPA,TBAL,FPA HSG SIDE,C,temperature,1
+1,142,FPA,TBAL,FPA HSG BOTTOM,C,temperature,1
+1,143,FPA,TBAL,FPA HSG CONNECTOR END PLATE,C,temperature,1
+1,144,FPA,TBAL,GSE CCD HEAT STRAP END COLD PLATE I_F,C,temperature,1
+1,145,FPA,TBAL,GSE CCD HEAT STRAP END WINDOW I_F,C,temperature,1
+1,146,FPA,TBAL,GSE CCD HEAT STRAP COLD PLATE ,C,temperature,1
+1,147,FPA,TBAL,PARE,C,temperature,1
+1,148,FPA,TBAL,HROUD TOP,C,temperature,1
+1,149,FPA,TBAL,HROUD WALL 1,C,temperature,1
+1,150,FPA,TBAL,HROUD WALL 2,C,temperature,1
+1,151,FPA,TBAL,HROUD WALL 3,C,temperature,1
+1,152,FPA,TBAL,HROUD WALL 4,C,temperature,1
+1,153,FPA,TBAL,TRANSLATON STAGE COLD,C,temperature,1
+1,154,FPA,TBAL,TRANSLATON STAGE HOT,C,temperature,1
+1,155,FPA,TBAL,COLD PLATE A STAGES,C,temperature,1
+1,156,FPA,TBAL,COLD PLATE B LENS MOUNT,C,temperature,1
+1,157,FPA,TBAL,T-STRAP 1 BIRDCAGE END,C,temperature,1
+1,158,FPA,TBAL,T-STRAP 1 MIDDLE,C,temperature,1
+1,159,FPA,TBAL,T-STRAP 1 CCD END,C,temperature,1
+1,160,FPA,TBAL,T-STRAP 2 CONN END,C,temperature,1
+1,161,FPA,TBAL,T-STRAP 2 MIDDLE,C,temperature,1
+1,162,FPA,TBAL,T-STRAP 2 BIRDCAGE END,C,temperature,1
+1,163,FPA,TBAL,BIRDCAGE 1,C,temperature,1
+1,164,FPA,TBAL,BIRDCAGE 2,C,temperature,1
+1,165,FPA,TBAL,BIRDCAGE 3,C,temperature,1
+1,166,FPA,TBAL,XFRAME 1,C,temperature,1
+1,167,FPA,TBAL,XFRAME 2,C,temperature,1
+1,168,FPA,TBAL,CCD,C,temperature,1
+1,169,FPA,TBAL,PARE,C,temperature,1
+1,170,FPA,TBAL,PARE,C,temperature,1
+1,171,FPA,TBAL,TEMP RTD_CAL V,V,voltage,1
+1,172,FPA,TBAL,TEMP_DRV_BOT T,C,temperature,1
+1,173,FPA,TBAL,TEMP_ADC_HIGH T,C,temperature,1
+1,174,FPA,TBAL,TEMP_ADC_LOW T,C,temperature,1
+1,175,FPA,TBAL,TEMP_PREAMP_BORIGHT T,C,temperature,1
+1,176,FPA,TBAL,TEMP_PREAMP_TOLEFT T,C,temperature,1
+1,177,FPA,TBAL,TEMP_CCD_RIGHT T,C,temperature,1
+1,178,FPA,TBAL,TEMP_CCD_LEFT T,C,temperature,1
+1,179,FPA,TBAL,SPI Box V,V,voltage,1
+1,180,FPA,TBAL,SPI Box I,mA,current,1
+1,181,FPA,TBAL,SPI Box Trip,,,1
+1,182,FPA,TBAL,P2V3 Analog V,V,voltage,1
+1,183,FPA,TBAL,P2V3 Analog I,mA,current,1
+1,184,FPA,TBAL,P2V3 Analog Trip,,,1
+1,185,FPA,TBAL,P5V Analog V,V,voltage,1
+1,186,FPA,TBAL,P5V Analog I,mA,current,1
+1,187,FPA,TBAL,P5V Analog Trip,,,1
+1,188,FPA,TBAL,N5V Analog V,V,voltage,1
+1,189,FPA,TBAL,N5V Analog I,mA,current,1
+1,190,FPA,TBAL,N5V Analog Trip,,,1
+1,191,FPA,TBAL,N1V2 Analog V,V,voltage,1
+1,192,FPA,TBAL,N1V2 Analog I,mA,current,1
+1,193,FPA,TBAL,N1V2 Analog Trip,,,1
+1,194,FPA,TBAL,P3V3 Analog V,V,voltage,1
+1,195,FPA,TBAL,P3V3 Analog I,mA,current,1
+1,196,FPA,TBAL,P3V3 Analog Trip,,,1
+1,197,FPA,TBAL,P3V3 Digital V,V,voltage,1
+1,198,FPA,TBAL,P3V3 Digital I,mA,current,1
+1,199,FPA,TBAL,P3V3 Digital Trip,,,1
+1,200,FPA,TBAL,RD_1 V,V,voltage,1
+1,201,FPA,TBAL,RD_1 I,mA,current,1
+1,202,FPA,TBAL,RD_1 Trip,,,1
+1,203,FPA,TBAL,RD_2 V,V,voltage,1
+1,204,FPA,TBAL,RD_2 I,mA,current,1
+1,205,FPA,TBAL,RD_2 Trip,,,1
+1,206,FPA,TBAL,RD_3 V,V,voltage,1
+1,207,FPA,TBAL,RD_3 I,mA,current,1
+1,208,FPA,TBAL,RD_3 Trip,,,1
+1,209,FPA,TBAL,SC_DD V,V,voltage,1
+1,210,FPA,TBAL,SC_DD I,mA,current,1
+1,211,FPA,TBAL,SC_DD Trip,,,1
+1,212,FPA,TBAL,OTG V,V,voltage,1
+1,213,FPA,TBAL,OTG I,mA,current,1
+1,214,FPA,TBAL,OTG Trip,,,1
+1,215,FPA,TBAL,DG_L V,V,voltage,1
+1,216,FPA,TBAL,DG_L I,mA,current,1
+1,217,FPA,TBAL,DG_L Trip,,,1
+1,218,FPA,TBAL,RTN V,V,voltage,1
+1,219,FPA,TBAL,RTN I,mA,current,1
+1,220,FPA,TBAL,RTN Trip,,,1
+1,221,FPA,TBAL,A_I_H V,V,voltage,1
+1,222,FPA,TBAL,A_I_H I,mA,current,1
+1,223,FPA,TBAL,A_I_H Trip,,,1
+1,224,FPA,TBAL,A_I_L V,V,voltage,1
+1,225,FPA,TBAL,A_I_L I,mA,current,1
+1,226,FPA,TBAL,A_I_L Trip,,,1
+1,227,FPA,TBAL,A_I_MAG V,V,voltage,1
+1,228,FPA,TBAL,A_I_MAG I,mA,current,1
+1,229,FPA,TBAL,A_I_MAG Trip,,,1
+1,230,FPA,TBAL,S_H_SW_H V,V,voltage,1
+1,231,FPA,TBAL,S_H_SW_H I,mA,current,1
+1,232,FPA,TBAL,S_H_SW_H Trip,,,1
+1,233,FPA,TBAL,S_L_SW_L V,V,voltage,1
+1,234,FPA,TBAL,S_L_SW_L I,mA,current,1
+1,235,FPA,TBAL,S_L_SW_L Trip,,,1
+1,236,FPA,TBAL,S_MAG_SW_MAG V,V,voltage,1
+1,237,FPA,TBAL,S_MAG_SW_MAG I,mA,current,1
+1,238,FPA,TBAL,S_MAG_SW_MAG Trip,,,1
+1,239,FPA,TBAL,RG1_L V,V,voltage,1
+1,240,FPA,TBAL,RG1_L I,mA,current,1
+1,241,FPA,TBAL,RG1_L Trip,,,1
+1,242,FPA,TBAL,RG2_L V,V,voltage,1
+1,243,FPA,TBAL,RG2_L I,mA,current,1
+1,244,FPA,TBAL,RG2_L Trip,,,1
+1,245,FPA,TBAL,RG3_L V,V,voltage,1
+1,246,FPA,TBAL,RG3_L I,mA,current,1
+1,247,FPA,TBAL,RG3_L Trip,,,1
+1,248,FPA,TBAL,RG1_MAG V,V,voltage,1
+1,249,FPA,TBAL,RG1_MAG I,mA,current,1
+1,250,FPA,TBAL,RG1_MAG Trip,,,1
+1,251,FPA,TBAL,RG2_MAG V,V,voltage,1
+1,252,FPA,TBAL,RG2_MAG I,mA,current,1
+1,253,FPA,TBAL,RG2_MAG Trip,,,1
+1,254,FPA,TBAL,RG3_MAG V,V,voltage,1
+1,255,FPA,TBAL,RG3_MAG I,mA,current,1
+1,256,FPA,TBAL,RG3_MAG Trip,,,1
+1,257,FPA,TBAL,OD V,V,voltage,1
+1,258,FPA,TBAL,OD I,mA,current,1
+1,259,FPA,TBAL,OD Trip,,,1
+1,260,FPA,EGSE,1 Set,C,temperature,1
+1,261,FPA,EGSE,1 Temp,C,temperature,1
+1,262,FPA,EGSE,1 Out,%,percent,1
+1,263,FPA,EGSE,1 Soak,,,1
+1,264,FPA,EGSE,1 EN,,,1
+1,265,FPA,EGSE,2 Set,C,temperature,1
+1,266,FPA,EGSE,2 Temp,C,temperature,1
+1,267,FPA,EGSE,2 Out,%,percent,1
+1,268,FPA,EGSE,2 Soak,,,1
+1,269,FPA,EGSE,2 EN,,,1
+1,270,FPA,EGSE,3 Set,C,temperature,1
+1,271,FPA,EGSE,3 Temp,C,temperature,1
+1,272,FPA,EGSE,3 Out,%,percent,1
+1,273,FPA,EGSE,3 Soak,,,1
+1,274,FPA,EGSE,3 EN,,,1
+1,275,FPA,EGSE,4 Set,C,temperature,1
+1,276,FPA,EGSE,4 Temp,C,temperature,1
+1,277,FPA,EGSE,4 Out,%,percent,1
+1,278,FPA,EGSE,4 Soak,,,1
+1,279,FPA,EGSE,4 EN,,,1
+1,280,FPA,EGSE,5 Set,C,temperature,1
+1,281,FPA,EGSE,5 Temp,C,temperature,1
+1,282,FPA,EGSE,5 Out,%,percent,1
+1,283,FPA,EGSE,5 Soak,,,1
+1,284,FPA,EGSE,5 EN,,,1
+1,285,FPA,EGSE,6 Set,C,temperature,1
+1,286,FPA,EGSE,6 Temp,C,temperature,1
+1,287,FPA,EGSE,6 Out,%,percent,1
+1,288,FPA,EGSE,6 Soak,,,1
+1,289,FPA,EGSE,6 EN,,,1
+1,290,FPA,EGSE,7 Set,C,temperature,1
+1,291,FPA,EGSE,7 Temp,C,temperature,1
+1,292,FPA,EGSE,7 Out,%,percent,1
+1,293,FPA,EGSE,7 Soak,,,1
+1,294,FPA,EGSE,7 EN,,,1
+1,295,FPA,EGSE,8 Set,C,temperature,1
+1,296,FPA,EGSE,8 Temp,C,temperature,1
+1,297,FPA,EGSE,8 Out,%,percent,1
+1,298,FPA,EGSE,8 Soak,,,1
+1,299,FPA,EGSE,8 EN,,,1
+1,300,FPA,EGSE,1 LN2 Set,C,temperature,1
+1,301,FPA,EGSE,1 LN2 Temp,C,temperature,1
+1,302,FPA,EGSE,1 LN2 Out,%,percent,1
+1,303,FPA,EGSE,1 LN2 Valve Pos,,,1
+1,304,FPA,EGSE,2 LN2 Set,C,temperature,1
+1,305,FPA,EGSE,2 LN2 Temp,C,temperature,1
+1,306,FPA,EGSE,2 LN2 Out,%,percent,1
+1,307,FPA,EGSE,2 LN2 Valve Pos,,,1
+1,308,FPA,EGSE,TC01 FPA Housing Left Side at Front Edge,C,temperature,1
+1,309,FPA,EGSE,TC02 FPA Housing Top,C,temperature,1
+1,310,FPA,EGSE,TC03 FPA Housing Left Side,C,temperature,1
+1,311,FPA,EGSE,TC04 FPA Housing Bottom,C,temperature,1
+1,312,FPA,EGSE,TC05 FPA Housing Rear,C,temperature,1
+1,313,FPA,EGSE,TC06 GSE Heat Strap at I_F with Pedestal,C,temperature,1
+1,314,FPA,EGSE,TC07 SPARE,C,temperature,1
+1,315,FPA,EGSE,TC08 GSE Heat Strap Pedestal,C,temperature,1
+1,316,FPA,EGSE,TC09 Shroud Top,C,temperature,1
+1,317,FPA,EGSE,TC10 Shroud East Side,C,temperature,1
+1,318,FPA,EGSE,TC11 Shroud West Side,C,temperature,1
+1,319,FPA,EGSE,TC12 FPA mount lower RH corner,C,temperature,1
+1,320,FPA,EGSE,TC13 FPA mount lower LH corner,C,temperature,1
+1,321,FPA,EGSE,TC14 CP HEATER NORTH,C,temperature,1
+1,322,FPA,EGSE,TC15 CP HEATER SOUTH,C,temperature,1
+1,323,FPA,EGSE,TC16 CP HEATER EAST,C,temperature,1
+1,324,FPA,EGSE,TC17 CP HEATER WEST,C,temperature,1
+1,325,FPA,EGSE,TC18 FPA Internal FEE PWB near C376,C,temperature,1
+1,326,FPA,EGSE,TC19 FPA Internal FEE PWB near C724,C,temperature,1
+1,327,FPA,EGSE,TC20 FPA Internal FEE PWB near R674,C,temperature,1
+1,328,FPA,EGSE,TC21 FPA Internal FEE Frame at Bottom Front Left,C,temperature,1
+1,329,FPA,EGSE,TC22 FPA Internal FEE Frame at Top Middle Center,C,temperature,1
+1,330,FPA,EGSE,TC23 FPA Internal FEE Frame at Top Rear Center,C,temperature,1
+1,331,FPA,EGSE,TC24 FPA Internal HS-2 Header at LHP End,C,temperature,1
+1,332,FPA,EGSE,TC25 FPA Internal HS-2 Header at FEE Frame End,C,temperature,1
+1,333,FPA,EGSE,TC26 FPA Internal HS-1 Header at FEE Frame End,C,temperature,1
+1,334,FPA,EGSE,TC27 FPA Internal HS-1 Header at CDD Carrier End,C,temperature,1
+1,335,FPA,EGSE,TC28 FPA Internal X-Frame Inside,C,temperature,1
+1,336,FPA,EGSE,TC29 FPA Internal X-Frame Outside,C,temperature,1
+1,337,FPA,EGSE,TC30 GSE Heat Strap at I_F with FPA,C,temperature,1
+1,338,FPA,EGSE,TC31 FPA Housing Right Side at Front Edge,C,temperature,1
+1,339,FPA,EGSE,Pressure 1,Torr,pressure,1
+1,340,FPA,EGSE,Status 1,,,1
+1,341,FPA,EGSE,Pressure 2,Torr,pressure,1
+1,342,FPA,EGSE,Status 2,,,1

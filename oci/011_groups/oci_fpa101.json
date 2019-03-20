@@ -4,8 +4,8 @@
   "teams"  : ["oci"],
   "parent" : "oci",
   "group"  : {
-    "name"  : "fpa",
-    "label" : "FPA Model",
-    "desc"  : "OCI FPA model group."
+    "name"  : "fpa101",
+    "label" : "FPA SN101 Model",
+    "desc"  : "OCI FPA SN101 model group."
   }
 }

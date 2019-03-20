@@ -1,0 +1,39 @@
+{
+  "action"   : "insert",
+  "database" : "oci.fpa.data.int",
+  "records"  : [
+    {
+      "u_int_id" : 10000000,
+      "int_id"   : 10000000,
+      "pri_id"   : 10000,
+      "sec_id"   : 0,
+      "t_start"  : 1543993556000000,
+      "t_end"    : 1544105994000000,
+      "duration" : 112438000000,
+      "type"     : 0,
+      "label"    : "FPA Test 1 WOA 514"
+    },
+    {
+      "u_int_id" : 10001000,
+      "int_id"   : 10001000,
+      "pri_id"   : 10001,
+      "sec_id"   : 0,
+      "t_start"  : 1544133864000000,
+      "t_end"    : 1544261470000000,
+      "duration" : 127606000000,
+      "type"     : 0,
+      "label"    : "FPA Test 2 WOA 514"
+    },
+    {
+      "u_int_id" : 10002000,
+      "int_id"   : 10002000,
+      "pri_id"   : 10002,
+      "sec_id"   : 0,
+      "t_start"  : 1544503477000000,
+      "t_end"    : 1544561413000000,
+      "duration" : 57936000000,
+      "type"     : 0,
+      "label"    : "FPA Test 3 WOA 514"
+    }
+  ]
+}

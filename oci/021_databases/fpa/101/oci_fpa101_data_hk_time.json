@@ -2,11 +2,11 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fm.data.hk",
+  "parent"   : "oci.fpa101.data.hk",
   "database" : {
     "name"   : "time",
     "label"  : "Bin Time",
-    "desc"   : "OCI flight model time binned housekeeping database.",
+    "desc"   : "OCI FPA SN101 model time binned housekeeping database.",
     "format" : "{t} {hk_id} {avg} ({min}, {max})",
     "fields" : [
       {

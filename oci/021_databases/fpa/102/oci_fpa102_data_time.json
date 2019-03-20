@@ -1,0 +1,29 @@
+{
+  "action"   : "create",
+  "create"   : "database",
+  "teams"    : ["oci"],
+  "parent"   : "oci.fpa102.data",
+  "database" : {
+    "name"   : "time",
+    "label"  : "Time",
+    "desc"   : "OCI FPA SN102 model time database.",
+    "format" : "{t}",
+    "fields" : [
+      {
+        "name" : "t",
+        "type" : "int(8)",
+        "key"  : true
+      },
+      {
+        "name" : "t_g",
+        "type" : "int(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "t_s",
+        "type" : "int(8)",
+        "nul"  : true
+      }
+    ]
+  }
+}

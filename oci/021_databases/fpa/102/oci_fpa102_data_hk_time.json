@@ -2,34 +2,13 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fpa.data.hk",
+  "parent"   : "oci.fpa102.data.hk",
   "database" : {
-    "name"   : "int",
-    "label"  : "Bin Interval",
-    "desc"   : "OCI FPA model interval binned housekeeping database.",
-    "format" : "{u_id} {hk_id} {avg} ({min}, {max})",
+    "name"   : "time",
+    "label"  : "Bin Time",
+    "desc"   : "OCI FPA SN102 model time binned housekeeping database.",
+    "format" : "{t} {hk_id} {avg} ({min}, {max})",
     "fields" : [
-      {
-        "name" : "t_id",
-        "type" : "int(4)",
-        "nul"  : true
-      },
-      {
-        "name" : "u_int_id",
-        "type" : "int(8)"
-      },
-      {
-        "name" : "int_id",
-        "type" : "int(4)"
-      },
-      {
-        "name" : "pri_id",
-        "type" : "int(4)"
-      },
-      {
-        "name" : "sec_id",
-        "type" : "int(2)"
-      },
       {
         "name" : "t_start",
         "type" : "int(8)"
@@ -63,6 +42,8 @@
         "type" : "float(8)"
       }
     ],
-    "indexes" : []
+    "indexes" : [
+      ["hk_id", "t_start", "samples"]
+    ]
   }
 }

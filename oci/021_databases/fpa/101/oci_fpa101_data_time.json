@@ -2,11 +2,11 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fpa.data",
+  "parent"   : "oci.fpa101.data",
   "database" : {
     "name"   : "time",
     "label"  : "Time",
-    "desc"   : "OCI FPA model time database.",
+    "desc"   : "OCI FPA SN101 model time database.",
     "format" : "{t}",
     "fields" : [
       {

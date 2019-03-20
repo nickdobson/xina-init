@@ -2,11 +2,11 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fpa.data.hk",
+  "parent"   : "oci.fpa102.data.hk",
   "database" : {
     "name"        : "file",
     "label"       : "File",
-    "desc"        : "OCI FPA model file housekeeping database.",
+    "desc"        : "OCI FPA SN102 model file housekeeping database.",
     "file"        : true,
     "file_format" : "{name}",
     "format"      : "{t} {hk_id}",

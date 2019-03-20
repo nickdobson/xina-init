@@ -7,7 +7,7 @@
 		"name"     : "hk",
 		"label"    : "Housekeeping",
 		"desc"     : "OCI housekeeping definition information.",
-		"format"   : "{hk_id} {prefix}:{name}",
+		"format"   : "{hk_id} {category}:{prefix}:{name}",
 		"singular" : "field",
 		"backup"   : true,
 		"link"     : true,
@@ -22,6 +22,10 @@
 				"name" : "hk_id",
 				"type" : "int(4)",
 				"key"  : true
+			},
+			{
+				"name" : "category",
+				"type" : "asciistring(16)"
 			},
 			{
 				"name" : "prefix",
@@ -47,6 +51,11 @@
 				"nul"  : true,
 				"meas" : "frequency",
 				"unit" : "Hz"
+			},
+			{
+				"name" : "mined",
+				"type" : "boolean",
+				"def"  : "false"
 			},
 			{
 				"name" : "notes",

@@ -2,11 +2,11 @@
 	"action"   : "create",
 	"create"   : "database",
 	"teams"    : ["oci"],
-	"parent"   : "oci.fpa",
+	"parent"   : "oci.fpa102",
 	"database" : {
 		"name"      : "tm",
 		"label"     : "Telemetry",
-		"desc"      : "OCI FPA model telemetry database.",
+		"desc"      : "OCI FPA SN102 model telemetry database.",
 		"format"    : "{timestamp}-{label}",
 		"singular"  : "TID",
 		"backup"    : true,
@@ -60,7 +60,7 @@
 			{
 				"name"        : "file",
 				"label"       : "File",
-				"desc"        : "OCI FPA model telemetry file database.",
+				"desc"        : "OCI FPA SN102 model telemetry file database.",
 				"format"      : "{t_id} {name}",
 				"file_format" : "{name}",
 				"singular"    : "file",

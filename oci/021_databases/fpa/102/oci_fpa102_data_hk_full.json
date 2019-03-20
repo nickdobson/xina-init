@@ -2,11 +2,11 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fm.data.hk",
+  "parent"   : "oci.fpa102.data.hk",
   "database" : {
     "name"   : "full",
     "label"  : "Full",
-    "desc"   : "OCI flight model full housekeeping database.",
+    "desc"   : "OCI FPA SN102 model full housekeeping database.",
     "format" : "{t} {hk_id} {value}",
     "fields" : [
       {

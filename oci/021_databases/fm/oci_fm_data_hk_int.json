@@ -7,7 +7,7 @@
     "name"   : "int",
     "label"  : "Bin Interval",
     "desc"   : "OCI flight model interval binned housekeeping database.",
-    "format" : "{u_id} {hk_id} {avg} ({min}, {max})",
+    "format" : "{u_int_id} {hk_id} {avg} ({min}, {max})",
     "fields" : [
       {
         "name" : "t_id",
@@ -63,6 +63,9 @@
         "type" : "float(8)"
       }
     ],
-    "indexes" : []
+    "indexes" : [
+      ["t_id"],
+      ["hk_id", "pri_id", "samples"]
+    ]
   }
 }

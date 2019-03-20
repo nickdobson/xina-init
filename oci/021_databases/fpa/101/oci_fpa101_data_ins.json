@@ -2,12 +2,12 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fpa.data",
+  "parent"   : "oci.fpa101.data",
   "database" : {
-    "name"   : "int",
-    "label"  : "Interval",
-    "desc"   : "OCI FPA model interval database.",
-    "format" : "{int_id} {content}",
+    "name"   : "ins",
+    "label"  : "Instant",
+    "desc"   : "OCI FPA SN101 model instant database.",
+    "format" : "{u_ins_id} {content}",
     "fields" : [
       {
         "name" : "t_id",
@@ -15,11 +15,11 @@
         "nul"  : true
       },
       {
-        "name" : "u_int_id",
+        "name" : "u_ins_id",
         "type" : "int(8)"
       },
       {
-        "name" : "int_id",
+        "name" : "ins_id",
         "type" : "int(4)"
       },
       {
@@ -31,21 +31,17 @@
         "type" : "int(2)"
       },
       {
-        "name" : "t_start",
-        "type" : "int(8)"
-      },
-      {
-        "name" : "t_end",
-        "type" : "int(8)"
-      },
-      {
-        "name" : "duration",
+        "name" : "t",
         "type" : "int(8)"
       },
       {
         "name" : "type",
+        "type" : "int(1)"
+      },
+      {
+        "name" : "level",
         "type" : "int(1)",
-        "def"  : "0"
+        "nul"  : true
       },
       {
         "name" : "content",
@@ -59,9 +55,9 @@
     ],
     "indexes" : [
       ["t_id"],
-      ["u_int_id"],
-      ["int_id"],
-      ["pri_id", "sec_id"]
+      ["t"],
+      ["type", "t"],
+      ["pri_id"]
     ]
   }
 }

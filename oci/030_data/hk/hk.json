@@ -1,0 +1,8 @@
+{
+  "action": "set",
+  "database": "oci.def.hk",
+  "records": {
+    "type": "csv",
+    "$object_id": "{local}/hk.csv"
+  }
+}
