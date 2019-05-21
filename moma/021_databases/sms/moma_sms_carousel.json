@@ -19,9 +19,9 @@
 		"trash"     : true,
 		"wall"      : true,
 		"order" : [
-			[ "Model", "asc" ],
-			[ "Station ID", "asc" ],
-			[ "Time", "desc" ]
+			[ "Model",      "asc"  ],
+			[ "Station ID", "asc"  ],
+			[ "Time",       "desc" ]
 		],
 		"fields" : [
 			{
@@ -30,8 +30,10 @@
 				"key"     : true,
 				"strict"  : true,
 				"options" : [
-					{ "value" : "fm"  },
-					{ "value" : "etu" }
+					{ "value" : "fm_ops" },
+					{ "value" : "sfm"    },
+					{ "value" : "fm_gnd" },
+					{ "value" : "etu"    }
 				]
 			},
 			{

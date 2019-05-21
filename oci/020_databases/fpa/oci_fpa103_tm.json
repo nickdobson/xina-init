@@ -1,0 +1,102 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.fpa103",
+	"database" : {
+		"name"      : "tm",
+		"label"     : "Telemetry",
+		"desc"      : "OCI FPA SN103 model telemetry database.",
+		"format"    : "{timestamp}-{label}",
+		"singular"  : "TID",
+		"backup"    : true,
+		"event"     : true,
+		"link"      : true,
+		"log"       : true,
+		"notify"    : true,
+		"subscribe" : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"order" : [
+			[ "t_id", "desc" ]
+		],
+		"fields" : [
+			{
+				"name"  : "t_id",
+				"type"  : "int(4)",
+				"key"   : true
+			},
+			{
+				"name"  : "label",
+				"type"  : "utf8string(64)",
+				"index" : true,
+				"nul"   : true
+			},
+			{
+				"name"  : "timestamp",
+				"type"  : "localdatetime",
+				"index" : true
+			},
+			{
+				"name"  : "date",
+				"type"  : "localdate",
+				"index" : true
+			},
+			{
+				"name"  : "t",
+				"type"  : "int(8)",
+				"index" : true,
+				"nul"   : true
+			},
+			{
+				"name"  : "notes",
+				"type"  : "utf8text",
+				"nul"   : true
+			}
+		],
+		"databases" : [
+			{
+				"name"        : "file",
+				"label"       : "File",
+				"desc"        : "OCI FPA SN102 model telemetry file database.",
+				"format"      : "{t_id} {name}",
+				"file_format" : "{name}",
+				"singular"    : "file",
+				"event"       : true,
+				"file"        : true,
+				"link"        : true,
+				"log"         : true,
+				"notify"      : true,
+				"subscribe"   : true,
+				"tag"         : true,
+				"track"       : true,
+				"trash"       : true,
+				"wall"        : true,
+				"order" : [
+					[ "t_id",  "desc" ],
+					[ "name", "asc"  ]
+				],
+				"fields" : [
+					{
+						"name"  : "t_id",
+						"type"  : "int(4)",
+						"ref"   : "t_id",
+						"key"   : true
+					},
+					{
+						"name"  : "name",
+						"type"  : "utf8string(128)",
+						"key"   : true
+					},
+					{
+						"name"  : "desc",
+						"type"  : "utf8string",
+						"nul"   : true
+					}
+				]
+			}
+		]
+	}
+}

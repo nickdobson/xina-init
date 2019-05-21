@@ -1,0 +1,11 @@
+{
+  "action" : "create",
+  "create" : "group",
+  "teams"  : ["oci"],
+  "parent" : "oci.fpa103",
+  "group"  : {
+    "name"  : "data",
+    "label" : "Data",
+    "desc"  : "OCI FPA SN103 model data group."
+  }
+}

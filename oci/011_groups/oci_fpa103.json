@@ -1,0 +1,11 @@
+{
+  "action" : "create",
+  "create" : "group",
+  "teams"  : ["oci"],
+  "parent" : "oci",
+  "group"  : {
+    "name"  : "fpa103",
+    "label" : "FPA SN103 Model",
+    "desc"  : "OCI FPA SN103 model group."
+  }
+}

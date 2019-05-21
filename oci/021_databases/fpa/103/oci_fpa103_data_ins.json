@@ -2,11 +2,11 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fm.data",
+  "parent"   : "oci.fpa103.data",
   "database" : {
     "name"   : "ins",
     "label"  : "Instant",
-    "desc"   : "OCI flight model instant database.",
+    "desc"   : "OCI FPA SN103 model instant database.",
     "format" : "{u_ins_id} {content}",
     "fields" : [
       {
@@ -20,15 +20,15 @@
       },
       {
         "name" : "ins_id",
-        "type" : "int(8)"
+        "type" : "int(4)"
       },
       {
         "name" : "pri_id",
-        "type" : "int(8)"
+        "type" : "int(4)"
       },
       {
         "name" : "sec_id",
-        "type" : "int(4)"
+        "type" : "int(2)"
       },
       {
         "name" : "t",
@@ -57,9 +57,7 @@
       ["t_id"],
       ["t"],
       ["type", "t"],
-      ["u_ins_id"],
-      ["ins_id"],
-      ["pri_id", "sec_id"]
+      ["pri_id"]
     ]
   }
 }

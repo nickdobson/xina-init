@@ -2,12 +2,12 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fm.data",
+  "parent"   : "oci.fpa103.data.hk",
   "database" : {
     "name"   : "int",
-    "label"  : "Interval",
-    "desc"   : "OCI flight model interval database.",
-    "format" : "{pri_id},{sec_id} {label}",
+    "label"  : "Bin Interval",
+    "desc"   : "OCI FPA SN103 model interval binned housekeeping database.",
+    "format" : "{u_int_id} {hk_id} {avg} ({min}, {max})",
     "fields" : [
       {
         "name" : "t_id",
@@ -20,7 +20,7 @@
       },
       {
         "name" : "int_id",
-        "type" : "int(8)"
+        "type" : "int(4)"
       },
       {
         "name" : "pri_id",
@@ -43,30 +43,29 @@
         "type" : "int(8)"
       },
       {
-        "name" : "type",
-        "type" : "int(1)",
-        "def"  : "0"
+        "name" : "hk_id",
+        "type" : "int(4)"
       },
       {
-        "name" : "label",
-        "type" : "utf8string(64)"
+        "name" : "samples",
+        "type" : "int(4)"
       },
       {
-        "name" : "desc",
-        "type" : "utf8text",
-        "nul"  : true
+        "name" : "avg",
+        "type" : "float(8)"
       },
       {
-        "name" : "meta",
-        "type" : "json",
-        "nul"  : true
+        "name" : "min",
+        "type" : "float(8)"
+      },
+      {
+        "name" : "max",
+        "type" : "float(8)"
       }
     ],
     "indexes" : [
       ["t_id"],
-      ["u_int_id"],
-      ["int_id"],
-      ["pri_id", "sec_id"]
+      ["hk_id", "pri_id", "samples"]
     ]
   }
 }

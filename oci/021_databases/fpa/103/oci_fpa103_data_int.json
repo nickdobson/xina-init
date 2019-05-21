@@ -2,11 +2,11 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fm.data",
+  "parent"   : "oci.fpa103.data",
   "database" : {
     "name"   : "int",
     "label"  : "Interval",
-    "desc"   : "OCI flight model interval database.",
+    "desc"   : "OCI FPA SN103 model interval database.",
     "format" : "{pri_id},{sec_id} {label}",
     "fields" : [
       {
@@ -20,7 +20,7 @@
       },
       {
         "name" : "int_id",
-        "type" : "int(8)"
+        "type" : "int(4)"
       },
       {
         "name" : "pri_id",

@@ -46,7 +46,9 @@
                 "index"   : true,
                 "strict"  : true,
                 "options" : [
-                    { "value" : "fm"  },
+                    { "value" : "fm_ops" },
+                    { "value" : "sfm"    },
+                    { "value" : "fm_gnd" },
                     { "value" : "etu" }
                 ]
             },
