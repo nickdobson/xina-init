@@ -1,0 +1,50 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.def",
+	"database" : {
+		"name"     : "profile",
+		"label"    : "Profile",
+		"desc"     : "OCI housekeeping export profile database.",
+		"format"   : "{name}",
+		"singular" : "profile",
+		"backup"   : true,
+		"link"     : true,
+		"log"      : true,
+		"tag"      : true,
+		"track"    : true,
+		"trash"    : true,
+		"wall"     : true,
+		"order"    : [ "name" ],
+		"fields"   : [
+			{
+				"name" : "name",
+				"type" : "asciistring(32)",
+				"key"  : true
+			},
+			{
+				"name" : "ids",
+				"type" : "jsonarray"
+			},
+			{
+				"name" : "columns",
+				"type" : "jsonobject"
+			},
+			{
+				"name" : "join",
+				"type" : "boolean"
+			},
+			{
+				"name" : "bin",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "desc",
+				"type" : "utf8text",
+				"nul"  : true
+			}
+		]
+	}
+}

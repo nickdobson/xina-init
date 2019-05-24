@@ -10,16 +10,12 @@
     "format" : "{t} {hk_id} {avg} ({min}, {max})",
     "fields" : [
       {
-        "name" : "t_start",
-        "type" : "int(8)"
-      },
-      {
-        "name" : "t_end",
+        "name" : "t",
         "type" : "int(8)"
       },
       {
         "name" : "duration",
-        "type" : "int(8)"
+        "type" : "int(4)"
       },
       {
         "name" : "hk_id",
@@ -40,10 +36,19 @@
       {
         "name" : "max",
         "type" : "float(8)"
+      },
+      {
+        "name" : "var",
+        "type" : "float(8)"
+      },
+      {
+        "name" : "std",
+        "type" : "float(8)"
       }
     ],
     "indexes" : [
-      ["hk_id", "t_start", "samples"]
+      ["duration", "hk_id", "samples", "t"],
+      ["duration", "hk_id", "t"]
     ]
   }
 }

@@ -73,7 +73,7 @@
       },
       {
         "name" : "profile",
-        "type" : "asciistring(16)",
+        "type" : "asciistring(32)",
         "nul"  : true
       },
       {
@@ -90,7 +90,7 @@
     "indexes" : [
       ["t_start", "t_end", "label"],
       ["label"],
-      ["profile"],
+      ["profile", "version"],
       ["u_int_id"]
     ]
   }
