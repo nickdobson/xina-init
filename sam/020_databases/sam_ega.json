@@ -1,0 +1,81 @@
+{
+  "action"   : "create",
+  "create"   : "database",
+  "parent"   : "sam",
+  "database" : {
+    "name"        : "ega",
+    "label"       : "EGA",
+    "desc"        : "SAM EGA database.",
+    "file_format" : "{Name}",
+    "format"      : "{Name}",
+    "singular"    : "EGA file",
+    "backup"      : true,
+    "event"       : true,
+    "file"        : true,
+    "link"        : true,
+    "log"         : true,
+    "notify"      : true,
+    "subscribe"   : true,
+    "tag"         : true,
+    "track"       : true,
+    "trash"       : true,
+    "wall"        : true,
+    "fields"      : [
+      {
+        "name" : "Name",
+        "type" : "asciistring(128)",
+        "key"  : true
+      },
+      {
+        "name" : "User",
+        "type" : "utf8string(64)"
+      },
+      {
+        "name" : "TID",
+        "type" : "int(4)",
+        "nul"  : true
+      },
+      {
+        "name" : "Run ID",
+        "type" : "int(4)",
+        "nul"  : true
+      },
+      {
+        "name" : "Background Subtraction",
+        "type" : "float(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "DT Correction",
+        "type" : "float(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "Mineral",
+        "type" : "asciistring(128)",
+        "nul"  : true
+      },
+      {
+        "name" : "Location",
+        "type" : "asciistring(128)",
+        "nul"  : true
+      },
+      {
+        "name" : "Elevation",
+        "type" : "float(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "Notes",
+        "type" : "utf8text",
+        "nul"  : true
+      }
+    ],
+    "indexes" : [
+      ["User"],
+      ["TID"],
+      ["Run ID"],
+      ["Mineral"]
+    ]
+  }
+}

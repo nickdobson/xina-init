@@ -1,0 +1,11 @@
+{
+  "action" : "create",
+  "create" : "group",
+  "teams"  : ["oci"],
+  "parent" : "oci",
+  "group"  : {
+    "name"  : "sim",
+    "label" : "Sim Model",
+    "desc"  : "OCI simulated model group."
+  }
+}

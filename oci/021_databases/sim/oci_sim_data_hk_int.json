@@ -2,20 +2,40 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fm.data.hk",
+  "parent"   : "oci.sim.data.hk",
   "database" : {
-    "name"   : "time",
-    "label"  : "Bin Time",
-    "desc"   : "OCI flight model time binned housekeeping database.",
-    "format" : "{t} {hk_id} {avg} ({min}, {max})",
+    "name"   : "int",
+    "label"  : "Bin Interval",
+    "desc"   : "OCI simulated model interval binned housekeeping database.",
+    "format" : "{u_int_id} {hk_id} {avg} ({min}, {max})",
     "fields" : [
       {
-        "name" : "t",
+        "name" : "u_int_id",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "int_id",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "pri_id",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "sec_id",
+        "type" : "int(4)"
+      },
+      {
+        "name" : "t_start",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "t_end",
         "type" : "int(8)"
       },
       {
         "name" : "duration",
-        "type" : "int(4)"
+        "type" : "int(8)"
       },
       {
         "name" : "hk_id",
@@ -47,7 +67,8 @@
       }
     ],
     "indexes" : [
-      ["duration", "hk_id", "t"]
+      ["hk_id", "pri_id"],
+      ["hk_id", "u_int_id"]
     ]
   }
 }

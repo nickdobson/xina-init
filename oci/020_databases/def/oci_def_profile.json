@@ -41,6 +41,11 @@
 				"nul"  : true
 			},
 			{
+				"name" : "markers",
+				"type" : "asciistring(128)",
+				"nul"  : true
+			},
+			{
 				"name" : "desc",
 				"type" : "utf8text",
 				"nul"  : true

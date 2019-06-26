@@ -48,6 +48,11 @@
         "def"  : "0"
       },
       {
+        "name" : "quality",
+        "type" : "int(1)",
+        "def"  : "0"
+      },
+      {
         "name" : "label",
         "type" : "utf8string(64)"
       },
@@ -64,6 +69,8 @@
     ],
     "indexes" : [
       ["t_id"],
+      ["t_start"],
+      ["type", "t_start"],
       ["u_int_id"],
       ["int_id"],
       ["pri_id", "sec_id"]

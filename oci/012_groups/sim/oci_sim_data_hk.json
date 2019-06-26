@@ -1,0 +1,11 @@
+{
+  "action" : "create",
+  "create" : "group",
+  "teams"  : ["oci"],
+  "parent" : "oci.sim.data",
+  "group"  : {
+    "name"  : "hk",
+    "label" : "Housekeeping",
+    "desc"  : "OCI simulated model housekeeping data group."
+  }
+}
