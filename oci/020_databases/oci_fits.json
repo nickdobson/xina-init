@@ -1,0 +1,133 @@
+{
+  "action"   : "create",
+  "create"   : "database",
+  "teams"    : [
+    "oci"
+  ],
+  "parent"   : "oci",
+  "database" : {
+    "name"        : "fits",
+    "label"       : "FITS",
+    "desc"        : "OCI FITS file database.",
+    "format"      : "{name}",
+    "file_format" : "{name}",
+    "singular"    : "file",
+    "backup"      : true,
+    "event"       : true,
+    "file"        : true,
+    "link"        : true,
+    "log"         : true,
+    "notify"      : true,
+    "subscribe"   : true,
+    "tag"         : true,
+    "track"       : true,
+    "trash"       : true,
+    "wall"        : true,
+    "fields"      : [
+      {
+        "name" : "name",
+        "type" : "asciistring(128)",
+        "key"  : true
+      },
+      {
+        "name" : "notes",
+        "type" : "utf8text",
+        "nul"  : true
+      }
+    ],
+    "databases" : [
+      {
+        "name"      : "hdu",
+        "label"     : "HDU",
+        "desc"      : "OCI FITS file HDU database.",
+        "format"    : "{name} {index} {extname}",
+        "singular"  : "HDU",
+        "event"     : true,
+        "link"      : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "tag"       : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "order"     : [
+          [ "name",  "asc" ],
+          [ "index", "asc" ]
+        ],
+        "fields" : [
+          {
+            "name" : "name",
+            "type" : "asciistring(128)",
+            "ref"  : "name",
+            "key"  : true
+          },
+          {
+            "name" : "index",
+            "type" : "int(2)",
+            "key"  : true
+          },
+          {
+            "name" : "extname",
+            "type" : "utf8string(64)"
+          },
+          {
+            "name" : "test",
+            "type" : "utf8string(64)"
+          },
+          {
+            "name" : "temp",
+            "type" : "int(2)",
+            "meas" : "temperature",
+            "unit" : "C",
+            "nul"  : true
+          },
+          {
+            "name" : "level",
+            "type" : "int(2)",
+            "meas" : "voltage",
+            "unit" : "kE",
+            "nul"  : true
+          },
+          {
+            "name" : "origin",
+            "type" : "utf8string(64)"
+          },
+          {
+            "name" : "date",
+            "type" : "localdate"
+          },
+          {
+            "name" : "xtension",
+            "type" : "asciistring(32)"
+          },
+          {
+            "name" : "bitpix",
+            "type" : "int(1)"
+          },
+          {
+            "name" : "naxis",
+            "type" : "int(1)"
+          },
+          {
+            "name" : "prodver",
+            "type" : "asciistring(32)"
+          },
+          {
+            "name" : "header",
+            "type" : "jsonobject"
+          },
+          {
+            "name" : "data",
+            "type" : "jsonarray"
+          }
+        ],
+        "indexes" : [
+          ["extname"],
+          ["temp"],
+          ["level"]
+        ]
+      }
+    ]
+  }
+}

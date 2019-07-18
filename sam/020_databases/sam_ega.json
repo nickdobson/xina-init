@@ -3,24 +3,22 @@
   "create"   : "database",
   "parent"   : "sam",
   "database" : {
-    "name"        : "ega",
-    "label"       : "EGA",
-    "desc"        : "SAM EGA database.",
-    "file_format" : "{Name}",
-    "format"      : "{Name}",
-    "singular"    : "EGA file",
-    "backup"      : true,
-    "event"       : true,
-    "file"        : true,
-    "link"        : true,
-    "log"         : true,
-    "notify"      : true,
-    "subscribe"   : true,
-    "tag"         : true,
-    "track"       : true,
-    "trash"       : true,
-    "wall"        : true,
-    "fields"      : [
+    "name"      : "ega",
+    "label"     : "EGA",
+    "desc"      : "SAM EGA database.",
+    "format"    : "{Name}",
+    "singular"  : "EGA file",
+    "backup"    : true,
+    "event"     : true,
+    "link"      : true,
+    "log"       : true,
+    "notify"    : true,
+    "subscribe" : true,
+    "tag"       : true,
+    "track"     : true,
+    "trash"     : true,
+    "wall"      : true,
+    "fields"    : [
       {
         "name" : "Name",
         "type" : "asciistring(128)",
@@ -38,6 +36,11 @@
       {
         "name" : "Run ID",
         "type" : "int(4)",
+        "nul"  : true
+      },
+      {
+        "name" : "Mass",
+        "type" : "float(4)",
         "nul"  : true
       },
       {
@@ -66,16 +69,32 @@
         "nul"  : true
       },
       {
+        "name" : "Method",
+        "type" : "utf8text",
+        "nul"  : true
+      },
+      {
         "name" : "Notes",
         "type" : "utf8text",
         "nul"  : true
       }
     ],
-    "indexes" : [
-      ["User"],
-      ["TID"],
-      ["Run ID"],
-      ["Mineral"]
+    "indexes"   : [
+      [
+        "User"
+      ],
+      [
+        "Mass"
+      ],
+      [
+        "TID"
+      ],
+      [
+        "Run ID"
+      ],
+      [
+        "Mineral"
+      ]
     ]
   }
 }

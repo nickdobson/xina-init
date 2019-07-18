@@ -25,7 +25,7 @@
 			},
 			{
 				"name" : "ids",
-				"type" : "jsonarray"
+				"type" : "asciistring"
 			},
 			{
 				"name" : "columns",
@@ -42,7 +42,7 @@
 			},
 			{
 				"name" : "markers",
-				"type" : "asciistring(128)",
+				"type" : "asciistring",
 				"nul"  : true
 			},
 			{

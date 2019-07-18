@@ -40,7 +40,7 @@
       },
       {
         "name" : "ids",
-        "type" : "jsonarray"
+        "type" : "asciistring"
       },
       {
         "name" : "columns",
