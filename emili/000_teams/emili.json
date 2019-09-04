@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "emili",
+		"label"               : "EMILI",
+		"desc"                : "Primary team for the Europan Molecular Indicators of Life Investigation (EMILI) project.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply"]
+	}
+}

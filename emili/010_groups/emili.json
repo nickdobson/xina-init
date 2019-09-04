@@ -1,0 +1,9 @@
+{
+  "action" : "create",
+  "create" : "group",
+  "group"  : {
+    "name"  : "emili",
+    "label" : "EMILI",
+    "desc"  : "Primary group for the Europan Molecular Indicators of Life Investigation (EMILI) project."
+  }
+}

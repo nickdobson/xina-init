@@ -2,12 +2,12 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : ["oci"],
-  "parent"   : "oci.fm.data",
+  "parent"   : "oci.@{model}.data.hk",
   "database" : {
     "name"   : "int",
-    "label"  : "Interval",
-    "desc"   : "OCI flight model interval database.",
-    "format" : "{t_start%*us} {pri_id},{sec_id} {label}",
+    "label"  : "Bin Interval",
+    "desc"   : "OCI @{desc} interval binned housekeeping database.",
+    "format" : "{u_int_id} {hk_id} {avg} ({min}, {max})",
     "fields" : [
       {
         "name" : "t_id",
@@ -24,11 +24,11 @@
       },
       {
         "name" : "pri_id",
-        "type" : "int(4)"
+        "type" : "int(8)"
       },
       {
         "name" : "sec_id",
-        "type" : "int(2)"
+        "type" : "int(4)"
       },
       {
         "name" : "t_start",
@@ -43,37 +43,38 @@
         "type" : "int(8)"
       },
       {
-        "name" : "type",
-        "type" : "int(1)",
-        "def"  : "0"
+        "name" : "hk_id",
+        "type" : "int(4)"
       },
       {
-        "name" : "quality",
-        "type" : "int(1)",
-        "def"  : "0"
+        "name" : "samples",
+        "type" : "int(4)"
       },
       {
-        "name" : "label",
-        "type" : "utf8string(64)"
+        "name" : "avg",
+        "type" : "float(8)"
       },
       {
-        "name" : "desc",
-        "type" : "utf8text",
-        "nul"  : true
+        "name" : "min",
+        "type" : "float(8)"
       },
       {
-        "name" : "meta",
-        "type" : "json",
-        "nul"  : true
+        "name" : "max",
+        "type" : "float(8)"
+      },
+      {
+        "name" : "var",
+        "type" : "float(8)"
+      },
+      {
+        "name" : "std",
+        "type" : "float(8)"
       }
     ],
     "indexes" : [
       ["t_id"],
-      ["t_start"],
-      ["type", "t_start"],
-      ["u_int_id"],
-      ["int_id"],
-      ["pri_id", "sec_id"]
+      ["hk_id", "pri_id"],
+      ["hk_id", "u_int_id"]
     ]
   }
 }

@@ -1,17 +1,12 @@
 {
   "action"   : "create",
   "create"   : "database",
-  "teams"    : {
-    "oci": {
-      "update" : true,
-      "insert" : true
-    }
-  },
-  "parent"   : "oci.fm.data",
+  "teams"    : ["oci"],
+  "parent"   : "oci.lptd.data",
   "database" : {
     "name"   : "ins",
     "label"  : "Instant",
-    "desc"   : "OCI flight model instant database.",
+    "desc"   : "OCI LPT dry run instant database.",
     "format" : "{u_ins_id} {content}",
     "fields" : [
       {
@@ -49,6 +44,11 @@
         "nul"  : true
       },
       {
+        "name" : "alert",
+        "type" : "int(1)",
+        "nul"  : true
+      },
+      {
         "name" : "content",
         "type" : "utf8string"
       },
@@ -62,6 +62,7 @@
       ["t_id"],
       ["t"],
       ["type", "t"],
+      ["type", "level", "t"],
       ["u_ins_id"],
       ["ins_id"],
       ["pri_id", "sec_id"]

@@ -1,0 +1,96 @@
+{
+  "action"   : "create",
+  "create"   : "database",
+  "teams"    : ["oci"],
+  "parent"   : "oci.@{model}.data.hk",
+  "database" : {
+    "name"        : "pkg",
+    "label"       : "Package",
+    "desc"        : "OCI @{desc} housekeeping package database.",
+    "file"        : true,
+    "file_format" : "{name}",
+    "format"      : "{ts_start} - {ts_end} {label}",
+    "fields"      : [
+      {
+        "name" : "t_start",
+        "type" : "int(8)",
+        "key"  : true
+      },
+      {
+        "name" : "t_end",
+        "type" : "int(8)",
+        "key"  : true
+      },
+      {
+        "name" : "label",
+        "type" : "utf8string(64)",
+        "key"  : true
+      },
+      {
+        "name" : "ts_start",
+        "type" : "datetime"
+      },
+      {
+        "name" : "ts_end",
+        "type" : "datetime"
+      },
+      {
+        "name" : "name",
+        "type" : "utf8string(128)"
+      },
+      {
+        "name" : "ids",
+        "type" : "asciistring"
+      },
+      {
+        "name" : "columns",
+        "type" : "jsonobject"
+      },
+      {
+        "name" : "u_int_id",
+        "type" : "int(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "int_id",
+        "type" : "int(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "pri_id",
+        "type" : "int(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "sec_id",
+        "type" : "int(4)",
+        "nul"  : true
+      },
+      {
+        "name" : "int_label",
+        "type" : "utf8string(64)",
+        "nul"  : true
+      },
+      {
+        "name" : "profile",
+        "type" : "asciistring(32)",
+        "nul"  : true
+      },
+      {
+        "name" : "version",
+        "type" : "int(2)",
+        "nul"  : true
+      },
+      {
+        "name" : "desc",
+        "type" : "utf8text",
+        "nul"  : true
+      }
+    ],
+    "indexes" : [
+      ["label"],
+      ["profile", "version"],
+      ["u_int_id"]
+    ]
+  }
+}

@@ -2,17 +2,17 @@
   "action"   : "create",
   "create"   : "database",
   "teams"    : {
-    "oci": {
+    "oci" : {
       "update" : true,
       "insert" : true
     }
   },
-  "parent"   : "oci.fm.data",
+  "parent"   : "oci.@{model}.data",
   "database" : {
     "name"   : "ins",
     "label"  : "Instant",
-    "desc"   : "OCI flight model instant database.",
-    "format" : "{u_ins_id} {content}",
+    "desc"   : "OCI @{desc} instant database.",
+    "format" : "{t%*us} {pri_id},{sec_id} {content}",
     "fields" : [
       {
         "name" : "t_id",
@@ -44,6 +44,11 @@
         "type" : "int(1)"
       },
       {
+        "name" : "alert",
+        "type" : "int(1)",
+        "nul"  : true
+      },
+      {
         "name" : "level",
         "type" : "int(1)",
         "nul"  : true
@@ -62,6 +67,7 @@
       ["t_id"],
       ["t"],
       ["type", "t"],
+      ["type", "level", "t"],
       ["u_ins_id"],
       ["ins_id"],
       ["pri_id", "sec_id"]

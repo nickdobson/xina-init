@@ -1,0 +1,37 @@
+{
+  "action"   : "create",
+  "create"   : "database",
+  "teams"    : ["oci"],
+  "parent"   : "oci.lptd.data.hk",
+  "database" : {
+    "name"        : "file",
+    "label"       : "File",
+    "desc"        : "OCI LPT dry run file housekeeping database.",
+    "file"        : true,
+    "file_format" : "{name}",
+    "format"      : "{t} {hk_id}",
+    "fields"      : [
+      {
+        "name" : "t_id",
+        "type" : "int(4)"
+      },
+      {
+        "name" : "t",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "hk_id",
+        "type" : "int(4)"
+      },
+      {
+        "name" : "name",
+        "type" : "utf8string"
+      }
+    ],
+    "indexes" : [
+      ["t_id"],
+      ["hk_id", "t"],
+      ["t"]
+    ]
+  }
+}

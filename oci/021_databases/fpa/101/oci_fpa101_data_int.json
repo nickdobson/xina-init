@@ -7,7 +7,7 @@
     "name"   : "int",
     "label"  : "Interval",
     "desc"   : "OCI FPA SN101 model interval database.",
-    "format" : "{pri_id},{sec_id} {label}",
+    "format" : "{t_start%*us} {pri_id},{sec_id} {label}",
     "fields" : [
       {
         "name" : "t_id",

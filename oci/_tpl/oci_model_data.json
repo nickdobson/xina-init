@@ -1,0 +1,11 @@
+{
+  "action" : "create",
+  "create" : "group",
+  "teams"  : ["oci"],
+  "parent" : "oci.@{model}",
+  "group"  : {
+    "name"  : "data",
+    "label" : "Data",
+    "desc"  : "OCI @{desc} data group."
+  }
+}

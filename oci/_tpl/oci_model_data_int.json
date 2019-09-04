@@ -1,12 +1,17 @@
 {
   "action"   : "create",
   "create"   : "database",
-  "teams"    : ["oci"],
-  "parent"   : "oci.fm.data",
+  "teams"    : {
+    "oci" : {
+      "update" : true,
+      "insert" : true
+    }
+  },
+  "parent"   : "oci.@{model}.data",
   "database" : {
     "name"   : "int",
     "label"  : "Interval",
-    "desc"   : "OCI flight model interval database.",
+    "desc"   : "OCI @{desc} interval database.",
     "format" : "{t_start%*us} {pri_id},{sec_id} {label}",
     "fields" : [
       {
@@ -69,8 +74,8 @@
     ],
     "indexes" : [
       ["t_id"],
-      ["t_start"],
-      ["type", "t_start"],
+      ["t_start", "t_end"],
+      ["type", "t_start", "t_end"],
       ["u_int_id"],
       ["int_id"],
       ["pri_id", "sec_id"]

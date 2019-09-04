@@ -4,8 +4,8 @@
   "teams"  : ["oci"],
   "parent" : "oci",
   "group"  : {
-    "name"  : "ddc",
-    "label" : "DDC",
-    "desc"  : "OCI DDC model group."
+    "name"  : "@{model}",
+    "label" : "@{label}",
+    "desc"  : "OCI @{desc} group."
   }
 }
