@@ -13,6 +13,9 @@
     "label"  : "Instant",
     "desc"   : "OCI @{desc} instant database.",
     "format" : "{t%*us} {pri_id},{sec_id} {content}",
+    "order" : [
+      [ "t", "desc" ]
+    ],
     "fields" : [
       {
         "name" : "t_id",

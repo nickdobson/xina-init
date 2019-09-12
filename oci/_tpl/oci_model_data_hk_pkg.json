@@ -9,7 +9,11 @@
     "desc"        : "OCI @{desc} housekeeping package database.",
     "file"        : true,
     "file_format" : "{name}",
-    "format"      : "{ts_start} - {ts_end} {label}",
+    "format"      : "{t_start%*us} - {t_end%*us} {label}",
+    "order" : [
+      [ "t_start", "desc" ],
+      [ "name",    "asc" ]
+    ],
     "fields"      : [
       {
         "name" : "t_start",

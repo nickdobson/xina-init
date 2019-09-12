@@ -51,10 +51,35 @@
 				"def"  : "false"
 			},
 			{
+				"name" : "active",
+				"type" : "boolean",
+				"def"  : "true"
+			},
+			{
+				"name" : "ended",
+				"type" : "datetime",
+				"nul"  : true
+			},
+			{
+				"name" : "type",
+				"type" : "asciistring(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "bundle",
+				"type" : "asciistring(64)",
+				"nul"  : true
+			},
+			{
 				"name" : "notes",
 				"type" : "utf8text",
 				"nul"  : true
 			}
+		],
+		"indexes" : [
+			["bundle"],
+			["active"],
+			["ended"]
 		]
 	}
 }
