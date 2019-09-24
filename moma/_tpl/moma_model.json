@@ -1,0 +1,11 @@
+{
+  "action" : "create",
+  "create" : "group",
+  "teams"  : ["moma"],
+  "parent" : "moma",
+  "group"  : {
+    "name"  : "@{model}",
+    "label" : "@{label}",
+    "desc"  : "MOMA @{desc} group."
+  }
+}

@@ -1,0 +1,362 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.@{model}.data.sci",
+	"database" : {
+		"name"   : "scan",
+		"label"  : "Scan",
+		"desc"   : "MOMA @{desc} scan database.",
+		"format" : "{TID} {Scan Index} ({MK Name})",
+		"link"   : true,
+		"wall"   : true,
+		"fields" : [
+			{
+				"name" : "TID",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "Scan Index",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "USID",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "t_utc",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "t_rel",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "t_mk_rel",
+				"type" : "int(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "UMKID",
+				"type" : "int(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "MK ID",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "MK Time",
+				"type" : "int(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "MK Name",
+				"type" : "utf8string(64)",
+				"nul"  : true
+			},
+			{
+				"name" : "Bin Count",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "Bin Time",
+				"type" : "int(8)",
+				"meas" : "time",
+				"unit" : "us"
+			},
+			{
+				"name" : "Total Time",
+				"type" : "float(4)",
+				"meas" : "time",
+				"unit" : "s"
+			},
+			{
+				"name" : "Peak CPS",
+				"type" : "float(4)"
+			},
+			{
+				"name" : "Highest Count",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "Num Scans Summed",
+				"type" : "int(4)",
+				"meas" : "count",
+				"unit" : "scans",
+				"def"  : "1"
+			},
+			{
+				"name" : "RF Amp Start",
+				"type" : "float(4)",
+				"meas" : "voltage",
+				"unit" : "V"
+			},
+			{
+				"name" : "RF Amp End",
+				"type" : "float(4)",
+				"meas" : "voltage",
+				"unit" : "V"
+			},
+			{
+				"name" : "RF Amp DAC Start",
+				"type" : "float(4)"
+			},
+			{
+				"name" : "RF Amp DAC End",
+				"type" : "float(4)"
+			},
+			{
+				"name" : "AUX Amp DAC Start",
+				"type" : "float(4)"
+			},
+			{
+				"name" : "AUX Amp DAC End",
+				"type" : "float(4)"
+			},
+			{
+				"name" : "TIC",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "Corrected TIC",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "Corrected TIC Factor",
+				"type" : "float(8)"
+			},
+			{
+				"name" : "Sci Packet Version",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "Highest Peak Bin",
+				"type" : "int(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Scan Status Packet",
+				"type" : "boolean"
+			},
+			{
+				"name" : "SEB HK Packet",
+				"type" : "boolean"
+			},
+			{
+				"name" : "Special Scan ID",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Scan Value",
+				"type" : "float(4)",
+				"meas" : "voltage",
+				"unit" : "V",
+				"nul"  : true
+			},
+			{
+				"name" : "RF Freq",
+				"type" : "float(4)",
+				"meas" : "frequency",
+				"unit" : "Hz",
+				"nul"  : true
+			},
+			{
+				"name" : "Last RF Amp Mon",
+				"type" : "float(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Counter Sel",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Bin Count Set",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Bin Count Reg",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "RF Step Set",
+				"type" : "float(4)",
+				"meas" : "voltage",
+				"unit" : "V",
+				"nul"  : true
+			},
+			{
+				"name" : "RF Step Reg",
+				"type" : "float(4)",
+				"meas" : "voltage",
+				"unit" : "V",
+				"nul"  : true
+			},
+			{
+				"name" : "AUX Step Set",
+				"type" : "float(4)",
+				"meas" : "voltage",
+				"unit" : "V",
+				"nul"  : true
+			},
+			{
+				"name" : "AUX Step Reg",
+				"type" : "float(4)",
+				"meas" : "voltage",
+				"unit" : "V",
+				"nul"  : true
+			},
+			{
+				"name" : "IS_EMON_A",
+				"type" : "float(4)",
+				"meas" : "current",
+				"unit" : "uA",
+				"nul"  : true
+			},
+			{
+				"name" : "IS_EMON_B",
+				"type" : "float(4)",
+				"meas" : "current",
+				"unit" : "uA",
+				"nul"  : true
+			},
+			{
+				"name" : "Fil A On",
+				"type" : "boolean",
+				"nul"  : true
+			},
+			{
+				"name" : "Fil B On",
+				"type" : "boolean",
+				"nul"  : true
+			},
+			{
+				"name" : "GC Ion Source",
+				"type" : "boolean",
+				"nul"  : true
+			},
+			{
+				"name" : "LDI Ion Source",
+				"type" : "boolean",
+				"nul"  : true
+			},
+			{
+				"name" : "Scan Mode",
+				"type" : "asciistring(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "SRC_A_FOC_A_set",
+				"type" : "float(4)",
+				"meas" : "voltage",
+				"unit" : "V",
+				"nul"  : true
+			},
+			{
+				"name" : "SRC_A_FOC_A_reg",
+				"type" : "float(4)",
+				"meas" : "voltage",
+				"unit" : "V",
+				"nul"  : true
+			},
+			{
+				"name" : "SRC_B_FOC_A_set",
+				"type" : "float(4)",
+				"meas" : "voltage",
+				"unit" : "V",
+				"nul"  : true
+			},
+			{
+				"name" : "SRC_B_FOC_A_reg",
+				"type" : "float(4)",
+				"meas" : "voltage",
+				"unit" : "V",
+				"nul"  : true
+			},
+			{
+				"name" : "Ionization Time",
+				"type" : "float(8)",
+				"meas" : "time",
+				"unit" : "ms",
+				"nul"  : true
+			},
+			{
+				"name" : "SCN_EM1",
+				"type" : "float(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "SCN_EM2",
+				"type" : "float(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Phase Cycle Readback",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Source Packet Type",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "Dark Count Scan",
+				"type" : "boolean"
+			},
+			{
+				"name" : "GC Ion Source",
+				"type" : "boolean"
+			},
+			{
+				"name" : "LDI Ion Source",
+				"type" : "boolean"
+			},
+			{
+				"name" : "Carousel Angle",
+				"type" : "float(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Station ID",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Control Value",
+				"type" : "float(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Mass Value",
+				"type" : "float(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Coefficient 1",
+				"type" : "float(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Coefficient 2",
+				"type" : "float(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Coefficient 3",
+				"type" : "float(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Coefficient 4",
+				"type" : "float(4)",
+				"nul"  : true
+			}
+		]
+	}
+}

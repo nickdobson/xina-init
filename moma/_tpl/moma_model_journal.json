@@ -1,11 +1,11 @@
 {
   "action"   : "create",
   "create"   : "database",
-  "parent"   : "moma",
+  "parent"   : "moma.@{model}",
   "database" : {
-    "name"      : "sw_tb_journal",
-    "label"     : "Software Testbed Journal",
-    "desc"      : "MOMA software testbed activity journal.",
+    "name"      : "journal",
+    "label"     : "Journal",
+    "desc"      : "MOMA @{desc} activity journal.",
     "backup"    : true,
     "event"     : true,
     "link"      : true,
@@ -60,7 +60,7 @@
       {
         "name"        : "file",
         "label"       : "File",
-        "desc"        : "MOMA software testbed activity journal file database.",
+        "desc"        : "MOMA @{desc} activity journal file database.",
         "format"      : "{Timestamp} {Name}",
         "file_format" : "{Name}",
         "singular"    : "file",

@@ -3,9 +3,9 @@
   "create"   : "database",
   "parent"   : "moma",
   "database" : {
-    "name"      : "sw_tb_journal",
-    "label"     : "Software Testbed Journal",
-    "desc"      : "MOMA software testbed activity journal.",
+    "name"      : "eis_journal",
+    "label"     : "EIS Journal",
+    "desc"      : "MOMA EIS model activity journal.",
     "backup"    : true,
     "event"     : true,
     "link"      : true,
@@ -17,12 +17,18 @@
     "trash"     : true,
     "wall"      : true,
     "objects"   : {
-      "xo_view_default"   : { "*" : "note" },
       "xo_view_conf_note" : {
         "date"      : "Date",
         "timestamp" : "Timestamp",
         "content"   : "Content",
-        "meta"      : [ "WOA", "Proc ID", "Hw Config" ]
+        "meta"      : [
+          "WOA",
+          "Proc ID",
+          "Hw Config"
+        ]
+      },
+      "xo_view_default"   : {
+        "*" : "note"
       }
     },
     "fields"    : [
@@ -60,7 +66,7 @@
       {
         "name"        : "file",
         "label"       : "File",
-        "desc"        : "MOMA software testbed activity journal file database.",
+        "desc"        : "MOMA EIS model activity journal file database.",
         "format"      : "{Timestamp} {Name}",
         "file_format" : "{Name}",
         "singular"    : "file",
@@ -74,7 +80,16 @@
         "track"       : true,
         "trash"       : true,
         "wall"        : true,
-        "order"       : [ [ "Timestamp", "desc" ], [ "Name", "asc" ] ],
+        "order"       : [
+          [
+            "Timestamp",
+            "desc"
+          ],
+          [
+            "Name",
+            "asc"
+          ]
+        ],
         "fields"      : [
           {
             "name" : "Timestamp",

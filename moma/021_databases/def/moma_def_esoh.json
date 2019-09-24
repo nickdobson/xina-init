@@ -1,16 +1,15 @@
 {
   "action"   : "create",
   "create"   : "database",
-  "parent"   : "moma",
+  "parent"   : "moma.def",
   "database" : {
-    "name"      : "photo",
-    "label"     : "Photo",
-    "desc"      : "MOMA photo database.",
+    "name"      : "esoh",
+    "label"     : "ESOH",
+    "desc"      : "MOMA ESOH (engineering state of health) definitions database.",
     "format"    : "{Name}",
-    "singular"  : "photo",
+    "singular"  : "ESOH",
     "backup"    : true,
     "event"     : true,
-    "file"      : true,
     "link"      : true,
     "log"       : true,
     "notify"    : true,
@@ -19,15 +18,25 @@
     "track"     : true,
     "trash"     : true,
     "wall"      : true,
+    "order"     : [
+      [
+        "Name",
+        "asc"
+      ]
+    ],
     "fields"    : [
       {
         "name" : "Name",
-        "type" : "asciistring(128)",
+        "type" : "asciistring(32)",
         "key"  : true
       },
       {
-        "name" : "Description",
-        "type" : "utf8string",
+        "name" : "HKs",
+        "type" : "jsonarray"
+      },
+      {
+        "name" : "Zoom",
+        "type" : "jsonarray",
         "nul"  : true
       }
     ]

@@ -1,19 +1,19 @@
 {
-    "action" : "create",
-    "create" : "group",
-    "parent" : "moma",
-    "group"  : {
-        "name"    : "gcemi",
-        "label"   : "GC EMI Model",
-        "desc"    : "MOMA GC EMI model group.",
-        "objects" : {
-            "xo_struct_model" : {
-                "esoh"     : "moma.esoh",
-                "expected" : "moma.expected"
-            },
-            "xo_view_default" : {
-                "*": "tid"
-            }
-        }
+  "action" : "create",
+  "create" : "group",
+  "parent" : "moma",
+  "group"  : {
+    "name"    : "gcemi",
+    "label"   : "GC EMI Model",
+    "desc"    : "MOMA GC EMI model group.",
+    "objects" : {
+      "xo_view_default" : {
+        "*" : "tid"
+      },
+      "xo_struct_model" : {
+        "esoh"     : "moma.esoh",
+        "expected" : "moma.expected"
+      }
     }
+  }
 }

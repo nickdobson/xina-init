@@ -1,0 +1,9 @@
+{
+  "action" : "create",
+  "create" : "group",
+  "group"  : {
+    "name"  : "litms",
+    "label" : "LITMS",
+    "desc"  : "Primary group for the Linear Ion Trap Mass Spectrometer (LITMS) project."
+  }
+}

@@ -1,16 +1,13 @@
 {
   "action"   : "create",
   "create"   : "database",
-  "parent"   : "moma",
+  "parent"   : "moma.@{model}",
   "database" : {
-    "name"      : "photo",
-    "label"     : "Photo",
-    "desc"      : "MOMA photo database.",
-    "format"    : "{Name}",
-    "singular"  : "photo",
+    "name"      : "component",
+    "label"     : "Component",
+    "desc"      : "MOMA @{desc} component database.",
     "backup"    : true,
     "event"     : true,
-    "file"      : true,
     "link"      : true,
     "log"       : true,
     "notify"    : true,
@@ -22,12 +19,22 @@
     "fields"    : [
       {
         "name" : "Name",
-        "type" : "asciistring(128)",
+        "type" : "utf8string(64)",
         "key"  : true
       },
       {
+        "name" : "Category",
+        "type" : "utf8string(64)",
+        "nul"  : true
+      },
+      {
+        "name" : "Part No",
+        "type" : "utf8string(64)",
+        "nul"  : true
+      },
+      {
         "name" : "Description",
-        "type" : "utf8string",
+        "type" : "utf8text",
         "nul"  : true
       }
     ]

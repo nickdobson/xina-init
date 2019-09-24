@@ -1,0 +1,58 @@
+{
+  "action"   : "create",
+  "create"   : "database",
+  "parent"   : "moma.@{model}.data.hk",
+  "database" : {
+    "name"    : "mk",
+    "label"   : "Bin Marker",
+    "desc"    : "MOMA @{desc} marker binned housekeeping database.",
+    "format"  : "{UMKID} {Data ID} {SCI Avg} ({SCI Min}, {SCI Max})",
+    "fields"  : [
+      {
+        "name" : "t_utc",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "t_rel",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "TID",
+        "type" : "int(4)"
+      },
+      {
+        "name" : "UMKID",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "MK ID",
+        "type" : "int(4)"
+      },
+      {
+        "name" : "Data ID",
+        "type" : "int(2)"
+      },
+      {
+        "name" : "Samples",
+        "type" : "int(4)"
+      },
+      {
+        "name" : "SCI Avg",
+        "type" : "float(8)"
+      },
+      {
+        "name" : "SCI Min",
+        "type" : "float(8)"
+      },
+      {
+        "name" : "SCI Max",
+        "type" : "float(8)"
+      }
+    ],
+    "indexes" : [
+      [ "t_utc", "Data ID", "Samples" ],
+      [ "TID",   "Data ID", "Samples" ],
+      [ "UMKID", "Data ID", "Samples" ]
+    ]
+  }
+}

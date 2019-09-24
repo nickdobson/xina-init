@@ -1,0 +1,115 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["moma"],
+	"parent"   : "moma.def",
+	"database" : {
+		"name"      : "expected",
+		"label"     : "Expected",
+		"desc"      : "MOMA housekeeping expected values database.",
+		"format"    : "{HK ID} {MK ID}",
+		"singular"  : "value",
+		"backup"    : true,
+		"event"     : true,
+		"link"      : true,
+		"log"       : true,
+		"notify"    : true,
+		"subscribe" : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"fields"    : [
+			{
+				"name" : "etu",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "fm",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "qsm",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "sfm",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "gcemi",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "gctvac",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "HK ID",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "MK ID",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "Relative",
+				"type" : "boolean"
+			},
+			{
+				"name" : "Relative MK ID",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Low",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "High",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Temp Dependent",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name"    : "Environment",
+				"type"    : "utf8string(16)",
+				"nul"     : true,
+				"strict"  : true,
+				"options" : [
+					{"value" : "ambient"},
+					{"value" : "cold"},
+					{"value" : "vacuum"},
+					{"value" : "mars"}
+				]
+			},
+			{
+				"name"    : "Check",
+				"type"    : "asciistring(4)",
+				"nul"     : true,
+				"strict"  : true,
+				"options" : [
+					{"value" : "avg"},
+					{"value" : "min"},
+					{"value" : "max"}
+				]
+			},
+			{
+				"name" : "Comments",
+				"type" : "utf8string",
+				"nul"  : true
+			}
+		]
+	}
+}

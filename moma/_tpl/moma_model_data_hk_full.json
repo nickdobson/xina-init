@@ -1,0 +1,46 @@
+{
+  "action"   : "create",
+  "create"   : "database",
+  "parent"   : "moma.@{model}.data.hk",
+  "database" : {
+    "name"    : "full",
+    "label"   : "Full",
+    "desc"    : "MOMA @{desc} full housekeeping database.",
+    "format"  : "{t_rel} {Data ID} {SCI}",
+    "fields"  : [
+      {
+        "name" : "t_utc",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "t_rel",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "dt",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "TID",
+        "type" : "int(4)"
+      },
+      {
+        "name" : "UMKID",
+        "type" : "int(8)"
+      },
+      {
+        "name" : "Data ID",
+        "type" : "int(2)"
+      },
+      {
+        "name" : "SCI",
+        "type" : "float(8)"
+      }
+    ],
+    "indexes" : [
+      [ "t_utc", "Data ID" ],
+      [ "TID",   "Data ID" ],
+      [ "UMKID", "Data ID" ]
+    ]
+  }
+}

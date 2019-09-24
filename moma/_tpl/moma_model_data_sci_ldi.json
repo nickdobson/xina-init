@@ -1,0 +1,76 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.@{model}.data.sci",
+	"database" : {
+		"name"   : "ldi",
+		"label"  : "LDI AGC Stats",
+		"desc"   : "MOMA @{desc} science LDI AGC stats database.",
+		"format" : "{TID} {Start Scan Index} {End Scan Index} {MK Name}",
+		"fields" : [
+			{
+				"name" : "TID",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "t_utc",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "t_rel",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "Start Scan Index",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "End Scan Index",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "MK ID",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "MK Name",
+				"type" : "utf8string(64)",
+				"nul"  : true
+			},
+			{
+				"name" : "Avg Charge Control Duration",
+				"type" : "float(4)",
+				"meas" : "time",
+				"unit" : "ms"
+			},
+			{
+				"name" : "Avg Laser Shots",
+				"type" : "float(4)",
+				"meas" : "count",
+				"unit" : "shots"
+			},
+			{
+				"name" : "Avg Laser Energy",
+				"type" : "float(4)",
+				"meas" : "energy",
+				"unit" : "uJ"
+			},
+			{
+				"name" : "Carousel Angle",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Station ID",
+				"type" : "int(4)",
+				"nul"  : true
+			}
+		],
+		"indexes" : [
+			["TID"],
+			["MK ID"],
+			["Station ID"]
+		]
+	}
+}
