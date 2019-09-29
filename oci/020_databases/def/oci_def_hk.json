@@ -46,9 +46,8 @@
 			},
 			{
 				"name" : "mined",
-				"type" : "boolean",
-				"nul"  : true,
-				"def"  : "false"
+				"type" : "int(4)",
+				"nul"  : true
 			},
 			{
 				"name" : "active",

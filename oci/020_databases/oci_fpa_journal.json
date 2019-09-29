@@ -10,9 +10,9 @@
     }
   },
   "database" : {
-    "name"      : "journal",
-    "label"     : "Journal",
-    "desc"      : "OCI activity journal.",
+    "name"      : "fpa_journal",
+    "label"     : "FPA Journal",
+    "desc"      : "OCI FPA activity journal.",
     "backup"    : true,
     "event"     : true,
     "link"      : true,
@@ -57,7 +57,7 @@
       {
         "name"        : "file",
         "label"       : "File",
-        "desc"        : "OCI activity journal file database.",
+        "desc"        : "OCI FPA activity journal file database.",
         "format"      : "{Timestamp} {Name}",
         "file_format" : "{Name}",
         "singular"    : "file",

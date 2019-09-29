@@ -1,7 +1,7 @@
 {
   "action"   : "create",
   "create"   : "database",
-  "parent"   : "oci",
+  "parent"   : "oci.@{model}",
   "teams"    : {
     "oci": {
       "update" : true,
@@ -12,7 +12,7 @@
   "database" : {
     "name"      : "journal",
     "label"     : "Journal",
-    "desc"      : "OCI activity journal.",
+    "desc"      : "OCI @{desc} activity journal.",
     "backup"    : true,
     "event"     : true,
     "link"      : true,
@@ -57,7 +57,7 @@
       {
         "name"        : "file",
         "label"       : "File",
-        "desc"        : "OCI activity journal file database.",
+        "desc"        : "OCI @{desc} activity journal file database.",
         "format"      : "{Timestamp} {Name}",
         "file_format" : "{Name}",
         "singular"    : "file",
