@@ -1,0 +1,50 @@
+{
+  "action"   : "create",
+  "create"   : "database",
+  "parent"   : "oci",
+  "teams"    : {
+    "oci": {
+      "update" : true,
+      "insert" : true,
+      "trash"  : true
+    }
+  },
+  "database" : {
+    "name"        : "fpa_file",
+    "label"       : "FPA File",
+    "desc"        : "OCI FPA file database.",
+    "format"      : "{name}",
+    "file_format" : "{name}",
+    "singular"    : "file",
+    "backup"      : true,
+    "file"        : true,
+    "link"        : true,
+    "log"         : true,
+    "tag"         : true,
+    "track"       : true,
+    "trash"       : true,
+    "wall"        : true,
+    "fields"      : [
+      {
+        "name" : "name",
+        "type" : "asciistring(128)",
+        "key"  : true
+      },
+      {
+        "name" : "model",
+        "type" : "asciistring(32)",
+        "nul"  : true
+      },
+      {
+        "name" : "mined",
+        "type" : "boolean",
+        "def"  : "false"
+      },
+      {
+        "name" : "notes",
+        "type" : "utf8text",
+        "nul"  : true
+      }
+    ]
+  }
+}
