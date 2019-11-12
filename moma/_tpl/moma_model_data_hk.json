@@ -1,0 +1,11 @@
+{
+  "action" : "create",
+  "create" : "group",
+  "teams"  : ["moma"],
+  "parent" : "moma.@{model}.data",
+  "group"  : {
+    "name"  : "hk",
+    "label" : "Housekeeping",
+    "desc"  : "MOMA @{desc} housekeeping data group."
+  }
+}

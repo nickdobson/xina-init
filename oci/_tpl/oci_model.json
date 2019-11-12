@@ -6,6 +6,6 @@
   "group"  : {
     "name"  : "@{model}",
     "label" : "@{label}",
-    "desc"  : "OCI @{desc} group."
+    "desc"  : "OCI @{desc} group@{info}."
   }
 }

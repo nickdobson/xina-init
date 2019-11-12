@@ -1,0 +1,29 @@
+{
+  "alias" : "_alias/moma_fm.json",
+  "path"  : [
+    "_tpl/moma_model.json",
+    "_tpl/moma_model_alert_ignore.json",
+    "_tpl/moma_model_anno.json",
+    "_tpl/moma_model_component.json",
+    "_tpl/moma_model_config.json",
+    "_tpl/moma_model_journal.json",
+    "_tpl/moma_model_meta.json",
+    "_tpl/moma_model_ql.json",
+    "_tpl/moma_model_tm.json",
+    "_tpl/moma_model_data.json",
+    "_tpl/moma_model_data_mk.json",
+    "_tpl/moma_model_data_msg.json",
+    "_tpl/moma_model_data_hk.json",
+    "_tpl/moma_model_data_hk_full.json",
+    "_tpl/moma_model_data_hk_mk.json",
+    "_tpl/moma_model_data_hk_rel.json",
+    "_tpl/moma_model_data_hk_tid.json",
+    "_tpl/moma_model_data_hk_utc.json",
+    "_tpl/moma_model_data_sci.json",
+    "_tpl/moma_model_data_sci_file.json",
+    "_tpl/moma_model_data_sci_laser.json",
+    "_tpl/moma_model_data_sci_ldi.json",
+    "_tpl/moma_model_data_sci_scan.json",
+    "_tpl/moma_model_data_sci_sic.json"
+  ]
+}

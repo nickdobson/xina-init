@@ -1,0 +1,11 @@
+{
+  "action" : "create",
+  "create" : "group",
+  "teams"  : ["moma"],
+  "parent" : "moma.@{model}.data",
+  "group"  : {
+    "name"  : "sci",
+    "label" : "Science",
+    "desc"  : "MOMA @{desc} science data group."
+  }
+}
