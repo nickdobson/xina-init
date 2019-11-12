@@ -1,6 +1,7 @@
 {
   "action": "load",
   "database": "oci.def.hk",
-  "$object_id": "{local}/hk.csv",
-  "columns": true
+  "$object_id": "{local}/out.tsv",
+  "columns": true,
+  "delimit": "\t"
 }

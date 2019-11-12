@@ -22,8 +22,13 @@
         "type" : "int(4)"
       },
       {
+        "name" : "samples",
+        "type" : "int(2)"
+      },
+      {
         "name" : "value",
-        "type" : "float(8)"
+        "type" : "float(8)",
+        "nul"  : true
       }
     ],
     "indexes" : [

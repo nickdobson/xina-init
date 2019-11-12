@@ -60,6 +60,16 @@
 				"nul"  : true
 			},
 			{
+				"name" : "discrete",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "labels",
+				"type" : "jsonobject",
+				"nul"  : true
+			},
+			{
 				"name" : "type",
 				"type" : "asciistring(4)",
 				"nul"  : true
