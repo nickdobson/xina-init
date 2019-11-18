@@ -1,19 +1,19 @@
 {
-  "alias" : "_alias/oci_fpa101.json",
+  "alias" : "oci/_alias/oci_fpa101.json",
   "path"  : [
-    "_tpl/oci_model.json",
-    "_tpl/oci_model_tm.json",
-    "_tpl/oci_model_journal.json",
-    "_tpl/oci_model_data.json",
-    "_tpl/oci_model_data_ins.json",
-    "_tpl/oci_model_data_int.json",
-    "_tpl/oci_model_data_intb.json",
-    "_tpl/oci_model_data_time.json",
-    "_tpl/oci_model_data_hk.json",
-    "_tpl/oci_model_data_hk_file.json",
-    "_tpl/oci_model_data_hk_full.json",
-    "_tpl/oci_model_data_hk_int.json",
-    "_tpl/oci_model_data_hk_pkg.json",
-    "_tpl/oci_model_data_hk_time.json"
+    "oci/_tpl/oci_model.json",
+    "oci/_tpl/oci_model_tm.json",
+    "oci/_tpl/oci_model_journal.json",
+    "oci/_tpl/oci_model_data.json",
+    "oci/_tpl/oci_model_data_ins.json",
+    "oci/_tpl/oci_model_data_int.json",
+    "oci/_tpl/oci_model_data_intb.json",
+    "oci/_tpl/oci_model_data_time.json",
+    "oci/_tpl/oci_model_data_hk.json",
+    "oci/_tpl/oci_model_data_hk_file.json",
+    "oci/_tpl/oci_model_data_hk_full_indexed.json",
+    "oci/_tpl/oci_model_data_hk_int.json",
+    "oci/_tpl/oci_model_data_hk_pkg.json",
+    "oci/_tpl/oci_model_data_hk_time.json"
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "alias" : "oci/_alias/oci_debug.json",
+  "alias" : "oci/_alias/oci_dau_b11_a.json",
   "path"  : [
     "oci/_tpl/oci_model.json",
     "oci/_tpl/oci_model_tm.json",

@@ -38,25 +38,36 @@
 				"nul"  : true
 			},
 			{
-				"name" : "rate",
-				"type" : "float(4)",
-				"nul"  : true,
-				"meas" : "frequency",
-				"unit" : "Hz"
-			},
-			{
-				"name" : "mined",
-				"type" : "int(4)",
+				"name" : "raw_fmt",
+				"type" : "asciistring(16)",
 				"nul"  : true
 			},
 			{
-				"name" : "active",
-				"type" : "boolean",
-				"def"  : "true"
+				"name" : "eng_fmt",
+				"type" : "asciistring(16)",
+				"nul"  : true
 			},
 			{
-				"name" : "ended",
-				"type" : "datetime",
+				"name" : "sci_fmt",
+				"type" : "asciistring(16)",
+				"nul"  : true
+			},
+			{
+				"name" : "type",
+				"type" : "asciistring(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "mine_type",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "decode_type",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "bundle_id",
+				"type" : "int(4)",
 				"nul"  : true
 			},
 			{
@@ -70,14 +81,11 @@
 				"nul"  : true
 			},
 			{
-				"name" : "type",
-				"type" : "asciistring(4)",
-				"nul"  : true
-			},
-			{
-				"name" : "bundle",
-				"type" : "asciistring(64)",
-				"nul"  : true
+				"name" : "rate",
+				"type" : "float(4)",
+				"nul"  : true,
+				"meas" : "frequency",
+				"unit" : "Hz"
 			},
 			{
 				"name" : "notes",
@@ -86,9 +94,8 @@
 			}
 		],
 		"indexes" : [
-			["bundle"],
-			["active"],
-			["ended"]
+			["mine_type"],
+			["bundle_id"]
 		]
 	}
 }
