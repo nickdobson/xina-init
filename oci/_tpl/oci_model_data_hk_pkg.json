@@ -43,8 +43,19 @@
         "type" : "utf8string(128)"
       },
       {
-        "name" : "ids",
-        "type" : "asciistring"
+        "name" : "converted",
+        "type" : "asciistring",
+        "nul"  : true
+      },
+      {
+        "name" : "raw",
+        "type" : "asciistring",
+        "nul"  : true
+      },
+      {
+        "name" : "discrete",
+        "type" : "asciistring",
+        "nul"  : true
       },
       {
         "name" : "columns",

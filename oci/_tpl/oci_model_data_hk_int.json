@@ -61,16 +61,6 @@
       {
         "name" : "max",
         "type" : "float(8)"
-      },
-      {
-        "name" : "var",
-        "type" : "float(8)",
-        "nul"  : true
-      },
-      {
-        "name" : "std",
-        "type" : "float(8)",
-        "nul"  : true
       }
     ],
     "indexes" : [

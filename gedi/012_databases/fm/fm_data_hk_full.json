@@ -1,40 +1,38 @@
 {
-    "action"   : "create",
-    "create"   : "database",
-    "teams"    : ["gedi"],
-    "parent"   : "fm.data.hk",
-    "database" : {
-        "name"   : "full",
-        "label"  : "Full",
-        "desc"   : "GEDI flight model full housekeeping database.",
-        "format" : "{time} {hk_id} {value}",
-        "fields" : [
-            {
-                "name" : "time",
-                "type" : "datetime"
-            },
-            {
-                "name" : "source_id",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "tid",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "hk_id",
-                "type" : "int(4)"
-            },
-            {
-                "name" : "value",
-                "type" : "float(8)"
-            }
-        ],
-        "indexes" : [
-            ["time", "hk_id"],
-            ["source_id"],
-            ["hk_id"],
-            ["tid"]
-        ]
-    }
+  "action"   : "create",
+  "create"   : "database",
+  "teams"    : ["gedi"],
+  "parent"   : "fm.data.hk",
+  "database" : {
+    "name"    : "full",
+    "label"   : "Full",
+    "desc"    : "GEDI flight model full housekeeping database.",
+    "format"  : "{time} {hk_id} {value}",
+    "fields"  : [
+      {
+        "name" : "time",
+        "type" : "datetime"
+      },
+      {
+        "name" : "source_id",
+        "type" : "int(1)"
+      },
+      {
+        "name" : "tid",
+        "type" : "int(1)"
+      },
+      {
+        "name" : "hk_id",
+        "type" : "int(4)"
+      },
+      {
+        "name" : "value",
+        "type" : "float(8)"
+      }
+    ],
+    "indexes" : [
+      [ "time", "hk_id" ],
+      [ "hk_id", "time" ]
+    ]
+  }
 }

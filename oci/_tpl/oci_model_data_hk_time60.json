@@ -46,10 +46,6 @@
         "type" : "float(8)"
       },
       {
-        "name" : "var",
-        "type" : "float(8)"
-      },
-      {
         "name" : "std",
         "type" : "float(8)"
       }
