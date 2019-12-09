@@ -28,6 +28,10 @@
 				"type" : "asciistring"
 			},
 			{
+				"name" : "ids",
+				"type" : "asciistring"
+			},
+			{
 				"name" : "columns",
 				"type" : "jsonobject"
 			},

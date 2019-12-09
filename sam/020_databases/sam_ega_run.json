@@ -1,0 +1,188 @@
+{
+  "action"   : "create",
+  "create"   : "database",
+  "teams"    : [ "sam" ],
+  "parent"   : "sam",
+  "database" : {
+    "name"     : "ega_run",
+    "label"    : "EGA Sample Runs",
+    "desc"     : "SAM EGA sample run tracking database.",
+    "format"   : "{Run ID} {Inst} {Sample ID} {Sample Name}",
+    "singular" : "run",
+    "backup"   : true,
+    "link"     : true,
+    "wall"     : true,
+    "order"    : [ [ "Run ID", "asc" ] ],
+    "fields"   : [
+      {
+        "name" : "Run ID",
+        "type" : "int(4)",
+        "key"  : true
+      },
+      {
+        "name" : "Inst",
+        "type" : "asciistring(1)"
+      },
+      {
+        "name" : "Sample ID",
+        "type" : "int(4)"
+      },
+      {
+        "name" : "Sample Name",
+        "type" : "utf8string(128)",
+        "nul"  : true
+      },
+      {
+        "name" : "Position",
+        "type" : "int(2)",
+        "nul"  : true
+      },
+      {
+        "name" : "Empty Pre",
+        "type" : "float(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "Full Pre",
+        "type" : "float(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "Full Post",
+        "type" : "float(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "Empty Post",
+        "type" : "float(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "Initial Mass",
+        "type" : "float(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "Final Mass",
+        "type" : "float(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "Percent Lost",
+        "type" : "float(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "Date Run",
+        "type" : "localdate",
+        "nul"  : true
+      },
+      {
+        "name" : "Ramp Rate",
+        "type" : "int(4)",
+        "nul"  : true
+      },
+      {
+        "name" : "Pressure",
+        "type" : "int(4)",
+        "nul"  : true,
+        "meas" : "pressure",
+        "unit" : "mbar"
+      },
+      {
+        "name" : "Gas",
+        "type" : "asciistring(16)",
+        "nul"  : true
+      },
+      {
+        "name" : "Flow Rate",
+        "type" : "float(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "Max T",
+        "type" : "int(4)",
+        "nul"  : true
+      },
+      {
+        "name" : "Additional Info",
+        "type" : "utf8string",
+        "nul"  : true
+      },
+      {
+        "name" : "Run Directory Name",
+        "type" : "utf8string",
+        "nul"  : true
+      },
+      {
+        "name" : "Experiment Start Time",
+        "type" : "localdatetime",
+        "nul"  : true
+      },
+      {
+        "name" : "Prior Zone Duration",
+        "type" : "float(8)",
+        "nul"  : true
+      },
+      {
+        "name" : "Zone of Interest Start Time",
+        "type" : "localdatetime",
+        "nul"  : true
+      },
+      {
+        "name" : "TGDSC",
+        "type" : "int(1)",
+        "nul"  : true
+      },
+      {
+        "name" : "TGDSC Label",
+        "type" : "asciistring(16)",
+        "nul"  : true
+      },
+      {
+        "name" : "EGA",
+        "type" : "int(1)",
+        "nul"  : true
+      },
+      {
+        "name" : "EGA Label",
+        "type" : "asciistring(16)",
+        "nul"  : true
+      },
+      {
+        "name" : "TGDSC File Name",
+        "type" : "asciistring",
+        "nul"  : true
+      },
+      {
+        "name" : "EGA File Name",
+        "type" : "asciistring",
+        "nul"  : true
+      },
+      {
+        "name" : "EGA Directory",
+        "type" : "asciistring",
+        "nul"  : true
+      },
+      {
+        "name" : "TGDSC Directory",
+        "type" : "asciistring",
+        "nul"  : true
+      },
+      {
+        "name" : "Output Directory",
+        "type" : "asciistring",
+        "nul"  : true
+      },
+      {
+        "name" : "Exp",
+        "type" : "boolean"
+      },
+      {
+        "name" : "Comments",
+        "type" : "utf8string",
+        "nul"  : true
+      }
+    ]
+  }
+}

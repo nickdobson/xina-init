@@ -1,0 +1,8 @@
+{
+  "action": "set",
+  "database": "sam.ega_run",
+  "records": {
+      "type": "csv",
+      "$object_id": "{local}/run.csv"
+  }
+}
