@@ -12,7 +12,7 @@
 		"backup"   : true,
 		"link"     : true,
 		"wall"     : true,
-		"order"    : [ [ "hk_id", "asc" ] ],
+		"order"    : [["hk_id", "asc"]],
 		"fields"   : [
 			{
 				"name" : "source_id",
@@ -93,7 +93,7 @@
 				"nul"  : true
 			}
 		],
-		"indexes" : [
+		"indexes"  : [
 			["mine_type"],
 			["bundle_id"]
 		]

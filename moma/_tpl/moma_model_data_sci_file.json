@@ -1,23 +1,23 @@
 {
-  "action"   : "create",
-  "create"   : "database",
-  "parent"   : "moma.@{model}.data.sci",
-  "database" : {
-    "name"   : "file",
-    "label"  : "File",
-    "desc"   : "MOMA @{desc} science files database.",
-    "file"   : true,
-    "fields" : [
-      {
-        "name" : "TID",
-        "type" : "int(4)",
-        "key"  : true
-      },
-      {
-        "name" : "Name",
-        "type" : "asciistring(64)",
-        "key"  : true
-      }
-    ]
-  }
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.@{model}.data.sci",
+	"database" : {
+		"name"   : "file",
+		"label"  : "File",
+		"desc"   : "MOMA @{desc} science files database.",
+		"file"   : true,
+		"fields" : [
+			{
+				"name" : "TID",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "Name",
+				"type" : "asciistring(64)",
+				"key"  : true
+			}
+		]
+	}
 }

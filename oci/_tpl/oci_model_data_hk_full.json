@@ -1,39 +1,39 @@
 {
-  "action"   : "create",
-  "create"   : "database",
-  "teams"    : ["oci"],
-  "parent"   : "oci.@{model}.data.hk",
-  "database" : {
-    "name"   : "full",
-    "label"  : "Full",
-    "desc"   : "OCI @{desc} full housekeeping database.",
-    "format" : "{t} {hk_id} {value}",
-    "fields" : [
-      {
-        "name" : "t_id",
-        "type" : "int(4)"
-      },
-      {
-        "name" : "t",
-        "type" : "int(8)"
-      },
-      {
-        "name" : "hk_id",
-        "type" : "int(4)"
-      },
-      {
-        "name" : "samples",
-        "type" : "int(2)"
-      },
-      {
-        "name" : "value",
-        "type" : "float(8)",
-        "nul"  : true
-      }
-    ],
-    "indexes" : [
-      ["t_id"],
-      ["hk_id", "t"]
-    ]
-  }
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.@{model}.data.hk",
+	"database" : {
+		"name"    : "full",
+		"label"   : "Full",
+		"desc"    : "OCI @{desc} full housekeeping database.",
+		"format"  : "{t} {hk_id} {value}",
+		"fields"  : [
+			{
+				"name" : "t_id",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "t",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "hk_id",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "samples",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "value",
+				"type" : "float(8)",
+				"nul"  : true
+			}
+		],
+		"indexes" : [
+			["t_id"],
+			["hk_id", "t"]
+		]
+	}
 }

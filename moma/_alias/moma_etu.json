@@ -1,5 +1,5 @@
 {
-  "model" : "etu",
-  "label" : "ETU Model",
-  "desc"  : "ETU model"
+	"model" : "etu",
+	"label" : "ETU Model",
+	"desc"  : "ETU model"
 }

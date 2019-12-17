@@ -1,11 +1,11 @@
 {
-  "action" : "create",
-  "create" : "group",
-  "teams"  : ["oci"],
-  "parent" : "oci",
-  "group"  : {
-    "name"  : "@{model}",
-    "label" : "@{label}",
-    "desc"  : "OCI @{desc} group@{info}."
-  }
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["oci"],
+	"parent" : "oci",
+	"group"  : {
+		"name"  : "@{model}",
+		"label" : "@{label}",
+		"desc"  : "OCI @{desc} group@{info}."
+	}
 }

@@ -1,35 +1,35 @@
 {
-  "action"   : "create",
-  "create"   : "database",
-  "parent"   : "moma",
-  "database" : {
-    "name"      : "photo",
-    "label"     : "Photo",
-    "desc"      : "MOMA photo database.",
-    "format"    : "{Name}",
-    "singular"  : "photo",
-    "backup"    : true,
-    "event"     : true,
-    "file"      : true,
-    "link"      : true,
-    "log"       : true,
-    "notify"    : true,
-    "subscribe" : true,
-    "tag"       : true,
-    "track"     : true,
-    "trash"     : true,
-    "wall"      : true,
-    "fields"    : [
-      {
-        "name" : "Name",
-        "type" : "asciistring(128)",
-        "key"  : true
-      },
-      {
-        "name" : "Description",
-        "type" : "utf8string",
-        "nul"  : true
-      }
-    ]
-  }
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma",
+	"database" : {
+		"name"      : "photo",
+		"label"     : "Photo",
+		"desc"      : "MOMA photo database.",
+		"format"    : "{Name}",
+		"singular"  : "photo",
+		"backup"    : true,
+		"event"     : true,
+		"file"      : true,
+		"link"      : true,
+		"log"       : true,
+		"notify"    : true,
+		"subscribe" : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"fields"    : [
+			{
+				"name" : "Name",
+				"type" : "asciistring(128)",
+				"key"  : true
+			},
+			{
+				"name" : "Description",
+				"type" : "utf8string",
+				"nul"  : true
+			}
+		]
+	}
 }

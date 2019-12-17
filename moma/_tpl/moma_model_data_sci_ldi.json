@@ -3,11 +3,11 @@
 	"create"   : "database",
 	"parent"   : "moma.@{model}.data.sci",
 	"database" : {
-		"name"   : "ldi",
-		"label"  : "LDI AGC Stats",
-		"desc"   : "MOMA @{desc} science LDI AGC stats database.",
-		"format" : "{TID} {Start Scan Index} {End Scan Index} {MK Name}",
-		"fields" : [
+		"name"    : "ldi",
+		"label"   : "LDI AGC Stats",
+		"desc"    : "MOMA @{desc} science LDI AGC stats database.",
+		"format"  : "{TID} {Start Scan Index} {End Scan Index} {MK Name}",
+		"fields"  : [
 			{
 				"name" : "TID",
 				"type" : "int(4)"

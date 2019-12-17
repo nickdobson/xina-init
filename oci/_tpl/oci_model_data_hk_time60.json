@@ -1,58 +1,58 @@
 {
-  "action"   : "create",
-  "create"   : "database",
-  "teams"    : ["oci"],
-  "parent"   : "oci.@{model}.data.hk",
-  "database" : {
-    "name"   : "time60",
-    "label"  : "Bin Time (60s)",
-    "desc"   : "OCI @{desc} time binned (60s) housekeeping database.",
-    "format" : "{t} {hk_id} {avg} ({min}, {max})",
-    "fields" : [
-      {
-        "name" : "t_id",
-        "type" : "int(4)"
-      },
-      {
-        "name" : "t",
-        "type" : "int(8)"
-      },
-      {
-        "name" : "t_min",
-        "type" : "int(8)"
-      },
-      {
-        "name" : "t_max",
-        "type" : "int(8)"
-      },
-      {
-        "name" : "hk_id",
-        "type" : "int(4)"
-      },
-      {
-        "name" : "samples",
-        "type" : "int(4)"
-      },
-      {
-        "name" : "avg",
-        "type" : "float(8)"
-      },
-      {
-        "name" : "min",
-        "type" : "float(8)"
-      },
-      {
-        "name" : "max",
-        "type" : "float(8)"
-      },
-      {
-        "name" : "std",
-        "type" : "float(8)"
-      }
-    ],
-    "indexes" : [
-      ["t_id"],
-      ["hk_id", "t_min"]
-    ]
-  }
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.@{model}.data.hk",
+	"database" : {
+		"name"    : "time60",
+		"label"   : "Bin Time (60s)",
+		"desc"    : "OCI @{desc} time binned (60s) housekeeping database.",
+		"format"  : "{t} {hk_id} {avg} ({min}, {max})",
+		"fields"  : [
+			{
+				"name" : "t_id",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "t",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "t_min",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "t_max",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "hk_id",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "samples",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "avg",
+				"type" : "float(8)"
+			},
+			{
+				"name" : "min",
+				"type" : "float(8)"
+			},
+			{
+				"name" : "max",
+				"type" : "float(8)"
+			},
+			{
+				"name" : "std",
+				"type" : "float(8)"
+			}
+		],
+		"indexes" : [
+			["t_id"],
+			["hk_id", "t_min"]
+		]
+	}
 }

@@ -1,28 +1,28 @@
 {
-  "action"   : "create",
-  "create"   : "database",
-  "parent"   : "moma.@{model}",
-  "database" : {
-    "name"    : "alert_ignore",
-    "label"   : "Alert Ignore",
-    "desc"    : "MOMA @{desc} ignored alerts database.",
-    "format"  : "{TID} {Alert}",
-    "backup"  : true,
-    "log"     : true,
-    "track"   : true,
-    "fields"  : [
-      {
-        "name" : "TID",
-        "type" : "int(4)"
-      },
-      {
-        "name" : "Alert",
-        "type" : "int(1)"
-      }
-    ],
-    "indexes" : [
-      ["TID", "Alert"],
-      ["Alert", "TID"]
-    ]
-  }
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.@{model}",
+	"database" : {
+		"name"    : "alert_ignore",
+		"label"   : "Alert Ignore",
+		"desc"    : "MOMA @{desc} ignored alerts database.",
+		"format"  : "{TID} {Alert}",
+		"backup"  : true,
+		"log"     : true,
+		"track"   : true,
+		"fields"  : [
+			{
+				"name" : "TID",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "Alert",
+				"type" : "int(1)"
+			}
+		],
+		"indexes" : [
+			["TID", "Alert"],
+			["Alert", "TID"]
+		]
+	}
 }

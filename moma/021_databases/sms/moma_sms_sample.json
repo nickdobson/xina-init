@@ -18,14 +18,12 @@
 		"track"     : true,
 		"trash"     : true,
 		"wall"      : true,
-		"order" : [
-			[ "Name", "desc" ]
-		],
-		"fields" : [
+		"order"     : [["Name", "desc"]],
+		"fields"    : [
 			{
-				"name"  : "Sample ID",
-				"type"  : "int(4)",
-				"key"   : true
+				"name" : "Sample ID",
+				"type" : "int(4)",
+				"key"  : true
 			},
 			{
 				"name"  : "Name",
@@ -33,14 +31,14 @@
 				"index" : true
 			},
 			{
-				"name"  : "Form",
-				"type"  : "utf8string(64)",
-				"nul"   : true
+				"name" : "Form",
+				"type" : "utf8string(64)",
+				"nul"  : true
 			},
 			{
-				"name"  : "Source",
-				"type"  : "utf8string(64)",
-				"nul"   : true
+				"name" : "Source",
+				"type" : "utf8string(64)",
+				"nul"  : true
 			},
 			{
 				"name"    : "Phase",
@@ -48,57 +46,54 @@
 				"strict"  : true,
 				"def"     : "solid",
 				"options" : [
-					{ "value" : "solid" },
-					{ "value" : "gas"   },
-					{ "value" : "other" }
+					{"value" : "solid"},
+					{"value" : "gas"},
+					{"value" : "other"}
 				]
 			},
 			{
-				"name"  : "Deriv Agent",
-				"type"  : "utf8string(128)",
-				"nul"   : true
+				"name" : "Deriv Agent",
+				"type" : "utf8string(128)",
+				"nul"  : true
 			},
 			{
-				"name"  : "Deriv Agent Volume",
-				"type"  : "float(8)",
-				"nul"   : true
+				"name" : "Deriv Agent Volume",
+				"type" : "float(8)",
+				"nul"  : true
 			},
 			{
-				"name"  : "Prepared By",
-				"type"  : "utf8string(64)"
+				"name" : "Prepared By",
+				"type" : "utf8string(64)"
 			},
 			{
-				"name"  : "Prepared At",
-				"type"  : "datetime"
+				"name" : "Prepared At",
+				"type" : "datetime"
 			},
 			{
-				"name"  : "Notes",
-				"type"  : "utf8text",
-				"nul"   : true
+				"name" : "Notes",
+				"type" : "utf8text",
+				"nul"  : true
 			}
 		],
 		"databases" : [
 			{
-				"name"        : "form",
-				"label"       : "Formula",
-				"desc"        : "MOMA science sample formula database.",
-				"format"      : "{Sample ID} {Formula}",
-				"singular"    : "formula",
-				"plural"      : "formulae",
-				"event"       : true,
-				"link"        : true,
-				"log"         : true,
-				"notify"      : true,
-				"subscribe"   : true,
-				"tag"         : true,
-				"track"       : true,
-				"trash"       : true,
-				"wall"        : true,
-				"order" : [
-					[ "Sample ID", "desc" ],
-					[ "Name",      "asc"  ]
-				],
-				"fields" : [
+				"name"      : "form",
+				"label"     : "Formula",
+				"desc"      : "MOMA science sample formula database.",
+				"format"    : "{Sample ID} {Formula}",
+				"singular"  : "formula",
+				"plural"    : "formulae",
+				"event"     : true,
+				"link"      : true,
+				"log"       : true,
+				"notify"    : true,
+				"subscribe" : true,
+				"tag"       : true,
+				"track"     : true,
+				"trash"     : true,
+				"wall"      : true,
+				"order"     : [["Sample ID", "desc"], ["Name", "asc"]],
+				"fields"    : [
 					{
 						"name" : "Sample ID",
 						"type" : "int(4)",
@@ -134,11 +129,8 @@
 				"track"       : true,
 				"trash"       : true,
 				"wall"        : true,
-				"order" : [
-					[ "Sample ID", "desc" ],
-					[ "Name",      "asc"  ]
-				],
-				"fields" : [
+				"order"       : [["Sample ID", "desc"], ["Name", "asc"]],
+				"fields"      : [
 					{
 						"name" : "Sample ID",
 						"type" : "int(4)",

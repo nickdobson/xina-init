@@ -1,10 +1,10 @@
 {
-    "action" : "create",
-    "create" : "group",
-    "parent" : "moma",
-    "group"  : {
-        "name"  : "sms",
-        "label" : "SMS",
-        "desc"  : "MOMA science sample tracking group."
-    }
+	"action" : "create",
+	"create" : "group",
+	"parent" : "moma",
+	"group"  : {
+		"name"  : "sms",
+		"label" : "SMS",
+		"desc"  : "MOMA science sample tracking group."
+	}
 }

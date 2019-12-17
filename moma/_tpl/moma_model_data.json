@@ -1,11 +1,11 @@
 {
-  "action" : "create",
-  "create" : "group",
-  "teams"  : ["moma"],
-  "parent" : "moma.@{model}",
-  "group"  : {
-    "name"  : "data",
-    "label" : "Data",
-    "desc"  : "MOMA @{desc} data group."
-  }
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["moma"],
+	"parent" : "moma.@{model}",
+	"group"  : {
+		"name"  : "data",
+		"label" : "Data",
+		"desc"  : "MOMA @{desc} data group."
+	}
 }

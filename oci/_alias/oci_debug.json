@@ -1,6 +1,6 @@
 {
-  "model" : "debug",
-  "label" : "Debug Model",
-  "desc"  : "debug model",
-  "info"  : " (for testing purposes only, does not contain instrument data)"
+	"model" : "debug",
+	"label" : "Debug Model",
+	"desc"  : "debug model",
+	"info"  : " (for testing purposes only, does not contain instrument data)"
 }

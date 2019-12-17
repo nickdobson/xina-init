@@ -1,11 +1,11 @@
 {
-  "action" : "create",
-  "create" : "group",
-  "teams"  : ["oci"],
-  "parent" : "oci",
-  "group"  : {
-    "name"  : "ddc",
-    "label" : "DDC",
-    "desc"  : "OCI DDC model group."
-  }
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["oci"],
+	"parent" : "oci",
+	"group"  : {
+		"name"  : "ddc",
+		"label" : "DDC",
+		"desc"  : "OCI DDC model group."
+	}
 }

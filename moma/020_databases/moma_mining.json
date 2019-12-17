@@ -1,48 +1,48 @@
 {
-    "action"   : "create",
-    "create"   : "database",
-    "parent"   : "moma",
-    "database" : {
-        "name"   : "mining",
-        "label"  : "Mining",
-        "desc"   : "MOMA mining status database.",
-        "format" : "{status} {time} {rev}",
-        "fields" : [
-            {
-                "name"    : "status",
-                "type"    : "asciistring(8)",
-                "strict"  : true,
-                "options" : [
-                    {"value" : "enabled"},
-                    {"value" : "active"},
-                    {"value" : "disabled"},
-                    {"value" : "error"}
-                ]
-            },
-            {
-                "name" : "time",
-                "type" : "datetime"
-            },
-            {
-                "name" : "rev",
-                "type" : "int(4)",
-                "nul"  : true
-            },
-            {
-                "name" : "changes",
-                "type" : "utf8text",
-                "nul"  : true
-            },
-            {
-                "name" : "message",
-                "type" : "utf8text",
-                "nul"  : true
-            }
-        ],
-        "indexes" : [
-            ["status", "time"],
-            ["time"],
-            ["rev"]
-        ]
-    }
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma",
+	"database" : {
+		"name"    : "mining",
+		"label"   : "Mining",
+		"desc"    : "MOMA mining status database.",
+		"format"  : "{status} {time} {rev}",
+		"fields"  : [
+			{
+				"name"    : "status",
+				"type"    : "asciistring(8)",
+				"strict"  : true,
+				"options" : [
+					{"value" : "enabled"},
+					{"value" : "active"},
+					{"value" : "disabled"},
+					{"value" : "error"}
+				]
+			},
+			{
+				"name" : "time",
+				"type" : "datetime"
+			},
+			{
+				"name" : "rev",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "changes",
+				"type" : "utf8text",
+				"nul"  : true
+			},
+			{
+				"name" : "message",
+				"type" : "utf8text",
+				"nul"  : true
+			}
+		],
+		"indexes" : [
+			["status", "time"],
+			["time"],
+			["rev"]
+		]
+	}
 }

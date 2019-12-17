@@ -1,346 +1,392 @@
 {
-    "action"   : "create",
-    "create"   : "database",
-    "parent"   : "moma",
-    "database" : {
-        "name"      : "activity",
-        "label"     : "Payload Uplink Activity",
-        "desc"      : "MOMA payload uplink activity tracker.",
-        "format"    : "{ID} {Name}",
-        "singular"  : "uplink",
+  "action"   : "create",
+  "create"   : "database",
+  "parent"   : "moma",
+  "database" : {
+    "name"      : "activity",
+    "label"     : "Payload Uplink Activity",
+    "desc"      : "MOMA payload uplink activity tracker.",
+    "format"    : "{ID} {Name}",
+    "singular"  : "uplink",
+    "backup"    : true,
+    "event"     : true,
+    "link"      : true,
+    "log"       : true,
+    "notify"    : true,
+    "subscribe" : true,
+    "tag"       : true,
+    "track"     : true,
+    "trash"     : true,
+    "wall"      : true,
+    "order"     : [
+      [
+        "ID",
+        "desc"
+      ]
+    ],
+    "fields"    : [
+      {
+        "name" : "ID",
+        "type" : "int(4)",
+        "key"  : true
+      },
+      {
+        "name" : "Name",
+        "type" : "utf8string(32)"
+      },
+      {
+        "name"    : "Status",
+        "type"    : "utf8string(32)",
+        "def"     : "Incomplete",
+        "strict"  : true,
+        "options" : [
+          {
+            "value" : "0 None"
+          },
+          {
+            "value" : "1 Definition"
+          },
+          {
+            "value" : "2 Development"
+          },
+          {
+            "value" : "3 Ready for Review"
+          },
+          {
+            "value" : "4 Approved ETU"
+          },
+          {
+            "value" : "5 Approved Flight"
+          },
+          {
+            "value" : "5 Approved QSM"
+          },
+          {
+            "value" : "6 Run on Flight"
+          },
+          {
+            "value" : "6 Run on QSM"
+          }
+        ]
+      },
+      {
+        "name" : "Decommissioned",
+        "type" : "boolean",
+        "def"  : "false"
+      },
+      {
+        "name" : "Summary",
+        "type" : "utf8text",
+        "nul"  : true
+      },
+      {
+        "name" : "Duration",
+        "type" : "int(4)",
+        "meas" : "time",
+        "unit" : "s",
+        "nul"  : true
+      },
+      {
+        "name" : "Data Volume",
+        "type" : "int(4)",
+        "meas" : "quantity",
+        "unit" : "mBits",
+        "nul"  : true
+      },
+      {
+        "name" : "Energy",
+        "type" : "int(4)",
+        "meas" : "energy",
+        "unit" : "watt-hours",
+        "nul"  : true
+      },
+      {
+        "name"    : "Flight Ground",
+        "type"    : "utf8string(8)",
+        "nul"     : true,
+        "strict"  : true,
+        "options" : [
+          {
+            "value" : "Flight"
+          },
+          {
+            "value" : "Ground"
+          }
+        ]
+      },
+      {
+        "name"    : "Required Pressure",
+        "type"    : "utf8string(16)",
+        "nul"     : true,
+        "options" : [
+          {
+            "value" : "Low"
+          },
+          {
+            "value" : "Mid"
+          },
+          {
+            "value" : "High"
+          }
+        ]
+      },
+      {
+        "name" : "Gas Chromatograph",
+        "type" : "boolean",
+        "nul"  : true
+      },
+      {
+        "name" : "Laser",
+        "type" : "boolean",
+        "nul"  : true
+      },
+      {
+        "name" : "History",
+        "type" : "utf8text",
+        "nul"  : true
+      },
+      {
+        "name" : "Script Name",
+        "type" : "utf8string(32)",
+        "nul"  : true
+      },
+      {
+        "name" : "Script Version",
+        "type" : "int(4)",
+        "nul"  : true
+      },
+      {
+        "name" : "Script Checksum",
+        "type" : "utf8string(16)",
+        "unit" : "hex",
+        "nul"  : true
+      },
+      {
+        "name" : "Script Size",
+        "type" : "int(4)",
+        "unit" : "bytes",
+        "nul"  : true
+      },
+      {
+        "name" : "Library 1 Name",
+        "type" : "utf8string(32)",
+        "nul"  : true
+      },
+      {
+        "name" : "Library 1 Version",
+        "type" : "int(4)",
+        "nul"  : true
+      },
+      {
+        "name" : "Library 1 Checksum",
+        "type" : "utf8string(16)",
+        "unit" : "hex",
+        "nul"  : true
+      },
+      {
+        "name" : "Library 1 Size",
+        "type" : "int(4)",
+        "unit" : "bytes",
+        "nul"  : true
+      },
+      {
+        "name" : "Library 2 Name",
+        "type" : "utf8string(32)",
+        "nul"  : true
+      },
+      {
+        "name" : "Library 2 Version",
+        "type" : "int(4)",
+        "nul"  : true
+      },
+      {
+        "name" : "Library 2 Checksum",
+        "type" : "utf8string(16)",
+        "unit" : "hex",
+        "nul"  : true
+      },
+      {
+        "name" : "Library 2 Size",
+        "type" : "int(4)",
+        "unit" : "bytes",
+        "nul"  : true
+      },
+      {
+        "name" : "Library 3 Name",
+        "type" : "utf8string(32)",
+        "nul"  : true
+      },
+      {
+        "name" : "Library 3 Version",
+        "type" : "int(4)",
+        "nul"  : true
+      },
+      {
+        "name" : "Library 3 Checksum",
+        "type" : "utf8string(16)",
+        "unit" : "hex",
+        "nul"  : true
+      },
+      {
+        "name" : "Library 3 Size",
+        "type" : "int(4)",
+        "unit" : "bytes",
+        "nul"  : true
+      },
+      {
+        "name" : "Review Meeting Date",
+        "type" : "localdate",
+        "nul"  : true
+      },
+      {
+        "name" : "Reference Runs",
+        "type" : "utf8text",
+        "nul"  : true
+      },
+      {
+        "name" : "Rover Tasks",
+        "type" : "utf8text",
+        "nul"  : true
+      },
+      {
+        "name" : "Notes",
+        "type" : "utf8text",
+        "nul"  : true
+      },
+      {
+        "name" : "Restrictions",
+        "type" : "utf8text",
+        "nul"  : true
+      }
+    ],
+    "databases" : [
+      {
+        "name"        : "file",
+        "label"       : "File",
+        "desc"        : "MOMA payload uplink activity files.",
+        "format"      : "{ID} {Name}",
+        "file_format" : "{Name}",
+        "singular"    : "file",
+        "event"       : true,
+        "file"        : true,
+        "link"        : true,
+        "log"         : true,
+        "notify"      : true,
+        "subscribe"   : true,
+        "tag"         : true,
+        "track"       : true,
+        "trash"       : true,
+        "wall"        : true,
+        "order"       : [
+          [
+            "ID",
+            "asc"
+          ],
+          [
+            "Name",
+            "asc"
+          ]
+        ],
+        "fields"      : [
+          {
+            "name" : "ID",
+            "type" : "utf8string(4)",
+            "ref"  : "ID",
+            "key"  : true
+          },
+          {
+            "name" : "Name",
+            "type" : "utf8string(128)",
+            "key"  : true
+          },
+          {
+            "name" : "Desc",
+            "type" : "utf8string",
+            "nul"  : true
+          }
+        ]
+      },
+      {
+        "name"      : "sci_signoff",
+        "label"     : "Science Signoffs",
+        "desc"      : "MOMA activity science signoffs.",
+        "format"    : "{insert_at} {insert_by} {Notes}",
+        "singular"  : "signoff",
         "backup"    : true,
         "event"     : true,
-        "link"      : true,
         "log"       : true,
         "notify"    : true,
         "subscribe" : true,
-        "tag"       : true,
         "track"     : true,
         "trash"     : true,
         "wall"      : true,
-        "order"     : [ [ "ID", "desc" ] ],
         "fields"    : [
-            {
-                "name"    : "ID",
-                "type"    : "int(4)",
-                "key"     : true
-            },
-            {
-                "name"    : "Name",
-                "type"    : "utf8string(32)"
-            },
-            {
-                "name"    : "Status",
-                "type"    : "utf8string(32)",
-                "def"     : "Incomplete",
-                "strict"  : true,
-                "options" : [
-                    {"value" : "0 None"},
-                    {"value" : "1 Definition"},
-                    {"value" : "2 Development"},
-                    {"value" : "3 Ready for Review"},
-                    {"value" : "4 Approved ETU"},
-                    {"value" : "5 Approved Flight"},
-                    {"value" : "5 Approved QSM"},
-                    {"value" : "6 Run on Flight"},
-                    {"value" : "6 Run on QSM"}
-                ]
-            },
-            {
-                "name"    : "Decommissioned",
-                "type"    : "boolean",
-                "def"     : "false"
-            },
-            {
-                "name"    : "Summary",
-                "type"    : "utf8text",
-                "nul"     : true
-            },
-            {
-                "name"    : "Duration",
-                "type"    : "int(4)",
-                "meas"    : "time",
-                "unit"    : "s",
-                "nul"     : true
-            },
-            {
-                "name"    : "Data Volume",
-                "type"    : "int(4)",
-                "meas"    : "quantity",
-                "unit"    : "mBits",
-                "nul"     : true
-            },
-            {
-                "name"    : "Energy",
-                "type"    : "int(4)",
-                "meas"    : "energy",
-                "unit"    : "watt-hours",
-                "nul"     : true
-            },
-            {
-                "name"    : "Flight Ground",
-                "type"    : "utf8string(8)",
-                "nul"     : true,
-                "strict"  : true,
-                "options" : [ { "value" : "Flight" }, { "value" : "Ground" } ]
-            },
-            {
-                "name"    : "Required Pressure",
-                "type"    : "utf8string(16)",
-                "nul"     : true,
-                "options" : [ { "value" : "Low" }, { "value" : "Mid" }, { "value" : "High" } ]
-            },
-            {
-                "name"    : "Gas Chromatograph",
-                "type"    : "boolean",
-                "nul"     : true
-            },
-            {
-                "name"    : "Laser",
-                "type"    : "boolean",
-                "nul"     : true
-            },
-            {
-                "name"    : "History",
-                "type"    : "utf8text",
-                "nul"     : true
-            },
-            {
-                "name"    : "Script Name",
-                "type"    : "utf8string(32)",
-                "nul"     : true
-            },
-            {
-                "name"    : "Script Version",
-                "type"    : "int(4)",
-                "nul"     : true
-            },
-            {
-                "name"    : "Script Checksum",
-                "type"    : "utf8string(16)",
-                "unit"    : "hex",
-                "nul"     : true
-            },
-            {
-                "name"    : "Script Size",
-                "type"    : "int(4)",
-                "unit"    : "bytes",
-                "nul"     : true
-            },
-            {
-                "name"    : "Library 1 Name",
-                "type"    : "utf8string(32)",
-                "nul"     : true
-            },
-            {
-                "name"    : "Library 1 Version",
-                "type"    : "int(4)",
-                "nul"     : true
-            },
-            {
-                "name"    : "Library 1 Checksum",
-                "type"    : "utf8string(16)",
-                "unit"    : "hex",
-                "nul"     : true
-            },
-            {
-                "name"    : "Library 1 Size",
-                "type"    : "int(4)",
-                "unit"    : "bytes",
-                "nul"     : true
-            },
-            {
-                "name"    : "Library 2 Name",
-                "type"    : "utf8string(32)",
-                "nul"     : true
-            },
-            {
-                "name"    : "Library 2 Version",
-                "type"    : "int(4)",
-                "nul"     : true
-            },
-            {
-                "name"    : "Library 2 Checksum",
-                "type"    : "utf8string(16)",
-                "unit"    : "hex",
-                "nul"     : true
-            },
-            {
-                "name"    : "Library 2 Size",
-                "type"    : "int(4)",
-                "unit"    : "bytes",
-                "nul"     : true
-            },
-            {
-                "name"    : "Library 3 Name",
-                "type"    : "utf8string(32)",
-                "nul"     : true
-            },
-            {
-                "name"    : "Library 3 Version",
-                "type"    : "int(4)",
-                "nul"     : true
-            },
-            {
-                "name"    : "Library 3 Checksum",
-                "type"    : "utf8string(16)",
-                "unit"    : "hex",
-                "nul"     : true
-            },
-            {
-                "name"    : "Library 3 Size",
-                "type"    : "int(4)",
-                "unit"    : "bytes",
-                "nul"     : true
-            },
-            {
-                "name"    : "Review Meeting Date",
-                "type"    : "localdate",
-                "nul"     : true
-            },
-            {
-                "name"    : "Reference Runs",
-                "type"    : "utf8text",
-                "nul"     : true
-            },
-            {
-                "name"    : "Rover Tasks",
-                "type"    : "utf8text",
-                "nul"     : true
-            },
-            {
-                "name"    : "Notes",
-                "type"    : "utf8text",
-                "nul"     : true
-            },
-            {
-                "name"    : "Restrictions",
-                "type"    : "utf8text",
-                "nul"     : true
-            }
-        ],
-        "databases" : [
-            {
-                "name"        : "file",
-                "label"       : "File",
-                "desc"        : "MOMA payload uplink activity files.",
-                "format"      : "{ID} {Name}",
-                "file_format" : "{Name}",
-                "singular"    : "file",
-                "event"       : true,
-                "file"        : true,
-                "link"        : true,
-                "log"         : true,
-                "notify"      : true,
-                "subscribe"   : true,
-                "tag"         : true,
-                "track"       : true,
-                "trash"       : true,
-                "wall"        : true,
-                "order" : [
-                    [ "ID",   "asc" ],
-                    [ "Name", "asc" ]
-                ],
-                "fields" : [
-                    {
-                        "name"  : "ID",
-                        "type"  : "utf8string(4)",
-                        "ref"   : "ID",
-                        "key"   : true
-                    },
-                    {
-                        "name"  : "Name",
-                        "type"  : "utf8string(128)",
-                        "key"   : true
-                    },
-                    {
-                        "name"  : "Desc",
-                        "type"  : "utf8string",
-                        "nul"   : true
-                    }
-                ]
-            },
-            {
-                "name"      : "sci_signoff",
-                "label"     : "Science Signoffs",
-                "desc"      : "MOMA activity science signoffs.",
-                "format"    : "{insert_at} {insert_by} {Notes}",
-                "singular"  : "signoff",
-                "backup"    : true,
-                "event"     : true,
-                "log"       : true,
-                "notify"    : true,
-                "subscribe" : true,
-                "track"     : true,
-                "trash"     : true,
-                "wall"      : true,
-                "fields"    : [
-                    {
-                        "name" : "ID",
-                        "type" : "utf8string(8)",
-                        "ref"  : "ID"
-                    },
-                    {
-                        "name" : "Notes",
-                        "type" : "utf8text",
-                        "nul"  : true
-                    }
-                ]
-            },
-            {
-                "name"      : "sw_signoff",
-                "label"     : "Software Signoffs",
-                "desc"      : "MOMA activity software signoffs.",
-                "format"    : "{insert_at} {insert_by} {Notes}",
-                "singular"  : "signoff",
-                "backup"    : true,
-                "event"     : true,
-                "log"       : true,
-                "notify"    : true,
-                "subscribe" : true,
-                "track"     : true,
-                "trash"     : true,
-                "wall"      : true,
-                "fields"    : [
-                    {
-                        "name" : "ID",
-                        "type" : "utf8string(8)",
-                        "ref"  : "ID"
-                    },
-                    {
-                        "name" : "Notes",
-                        "type" : "utf8text",
-                        "nul"  : true
-                    }
-                ]
-            },
-            {
-                "name"      : "sys_signoff",
-                "label"     : "System Signoffs",
-                "desc"      : "MOMA activity system signoffs.",
-                "format"    : "{insert_at} {insert_by} {Notes}",
-                "singular"  : "signoff",
-                "backup"    : true,
-                "event"     : true,
-                "log"       : true,
-                "notify"    : true,
-                "subscribe" : true,
-                "track"     : true,
-                "trash"     : true,
-                "wall"      : true,
-                "fields"    : [
-                    {
-                        "name" : "ID",
-                        "type" : "utf8string(8)",
-                        "ref"  : "ID"
-                    },
-                    {
-                        "name" : "Notes",
-                        "type" : "utf8text",
-                        "nul"  : true
-                    }
-                ]
-            }
+          {
+            "name" : "ID",
+            "type" : "utf8string(8)",
+            "ref"  : "ID"
+          },
+          {
+            "name" : "Notes",
+            "type" : "utf8text",
+            "nul"  : true
+          }
         ]
-    }
+      },
+      {
+        "name"      : "sw_signoff",
+        "label"     : "Software Signoffs",
+        "desc"      : "MOMA activity software signoffs.",
+        "format"    : "{insert_at} {insert_by} {Notes}",
+        "singular"  : "signoff",
+        "backup"    : true,
+        "event"     : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "fields"    : [
+          {
+            "name" : "ID",
+            "type" : "utf8string(8)",
+            "ref"  : "ID"
+          },
+          {
+            "name" : "Notes",
+            "type" : "utf8text",
+            "nul"  : true
+          }
+        ]
+      },
+      {
+        "name"      : "sys_signoff",
+        "label"     : "System Signoffs",
+        "desc"      : "MOMA activity system signoffs.",
+        "format"    : "{insert_at} {insert_by} {Notes}",
+        "singular"  : "signoff",
+        "backup"    : true,
+        "event"     : true,
+        "log"       : true,
+        "notify"    : true,
+        "subscribe" : true,
+        "track"     : true,
+        "trash"     : true,
+        "wall"      : true,
+        "fields"    : [
+          {
+            "name" : "ID",
+            "type" : "utf8string(8)",
+            "ref"  : "ID"
+          },
+          {
+            "name" : "Notes",
+            "type" : "utf8text",
+            "nul"  : true
+          }
+        ]
+      }
+    ]
+  }
 }

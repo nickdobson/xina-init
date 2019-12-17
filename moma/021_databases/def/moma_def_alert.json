@@ -1,74 +1,74 @@
 {
-  "action"   : "create",
-  "create"   : "database",
-  "parent"   : "moma.def",
-  "database" : {
-    "name"      : "alert",
-    "label"     : "Alert",
-    "desc"      : "MOMA alert definitions database.",
-    "format"    : "{Alert ID} {Label}",
-    "singular"  : "alert",
-    "backup"    : true,
-    "event"     : true,
-    "link"      : true,
-    "log"       : true,
-    "notify"    : true,
-    "subscribe" : true,
-    "tag"       : true,
-    "track"     : true,
-    "trash"     : true,
-    "wall"      : true,
-    "fields"    : [
-      {
-        "name" : "Alert ID",
-        "type" : "int(4)",
-        "key"  : true
-      },
-      {
-        "name" : "Label",
-        "type" : "utf8string(64)"
-      },
-      {
-        "name" : "Description",
-        "type" : "utf8string",
-        "nul"  : true
-      },
-      {
-        "name" : "etu",
-        "type" : "boolean",
-        "key"  : true,
-        "def"  : "true"
-      },
-      {
-        "name" : "fm",
-        "type" : "boolean",
-        "key"  : true,
-        "def"  : "true"
-      },
-      {
-        "name" : "qsm",
-        "type" : "boolean",
-        "key"  : true,
-        "def"  : "true"
-      },
-      {
-        "name" : "sfm",
-        "type" : "boolean",
-        "key"  : true,
-        "def"  : "true"
-      },
-      {
-        "name" : "gcemi",
-        "type" : "boolean",
-        "key"  : true,
-        "def"  : "true"
-      },
-      {
-        "name" : "gctvac",
-        "type" : "boolean",
-        "key"  : true,
-        "def"  : "true"
-      }
-    ]
-  }
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.def",
+	"database" : {
+		"name"      : "alert",
+		"label"     : "Alert",
+		"desc"      : "MOMA alert definitions database.",
+		"format"    : "{Alert ID} {Label}",
+		"singular"  : "alert",
+		"backup"    : true,
+		"event"     : true,
+		"link"      : true,
+		"log"       : true,
+		"notify"    : true,
+		"subscribe" : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"fields"    : [
+			{
+				"name" : "Alert ID",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "Label",
+				"type" : "utf8string(64)"
+			},
+			{
+				"name" : "Description",
+				"type" : "utf8string",
+				"nul"  : true
+			},
+			{
+				"name" : "etu",
+				"type" : "boolean",
+				"key"  : true,
+				"def"  : "true"
+			},
+			{
+				"name" : "fm",
+				"type" : "boolean",
+				"key"  : true,
+				"def"  : "true"
+			},
+			{
+				"name" : "qsm",
+				"type" : "boolean",
+				"key"  : true,
+				"def"  : "true"
+			},
+			{
+				"name" : "sfm",
+				"type" : "boolean",
+				"key"  : true,
+				"def"  : "true"
+			},
+			{
+				"name" : "gcemi",
+				"type" : "boolean",
+				"key"  : true,
+				"def"  : "true"
+			},
+			{
+				"name" : "gctvac",
+				"type" : "boolean",
+				"key"  : true,
+				"def"  : "true"
+			}
+		]
+	}
 }

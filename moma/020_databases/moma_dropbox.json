@@ -1,77 +1,87 @@
 {
-    "action"   : "create",
-    "create"   : "database",
-    "parent"   : "moma",
-    "database" : {
-        "name"      : "dropbox",
-        "label"     : "Dropbox",
-        "desc"      : "MOMA dropbox.",
-        "format"    : "{Folder}",
-        "singular"  : "folder",
-        "backup"    : true,
-        "event"     : true,
-        "link"      : true,
-        "log"       : true,
-        "notify"    : true,
-        "subscribe" : true,
-        "tag"       : true,
-        "track"     : true,
-        "trash"     : true,
-        "wall"      : true,
-        "order"     : [ [ "Folder" ] ],
-        "fields"    : [
-            {
-                "name" : "Folder",
-                "type" : "utf8string(32)",
-                "key"  : true
-            },
-            {
-                "name" : "Description",
-                "type" : "utf8text",
-                "nul"  : true
-            }
+  "action"   : "create",
+  "create"   : "database",
+  "parent"   : "moma",
+  "database" : {
+    "name"      : "dropbox",
+    "label"     : "Dropbox",
+    "desc"      : "MOMA dropbox.",
+    "format"    : "{Folder}",
+    "singular"  : "folder",
+    "backup"    : true,
+    "event"     : true,
+    "link"      : true,
+    "log"       : true,
+    "notify"    : true,
+    "subscribe" : true,
+    "tag"       : true,
+    "track"     : true,
+    "trash"     : true,
+    "wall"      : true,
+    "order"     : [
+      [
+        "Folder"
+      ]
+    ],
+    "fields"    : [
+      {
+        "name" : "Folder",
+        "type" : "utf8string(32)",
+        "key"  : true
+      },
+      {
+        "name" : "Description",
+        "type" : "utf8text",
+        "nul"  : true
+      }
+    ],
+    "databases" : [
+      {
+        "name"        : "file",
+        "label"       : "File",
+        "desc"        : "MOMA dropbox files.",
+        "format"      : "{Folder} / {Name}",
+        "file_format" : "{Name}",
+        "singular"    : "file",
+        "event"       : true,
+        "file"        : true,
+        "link"        : true,
+        "log"         : true,
+        "notify"      : true,
+        "subscribe"   : true,
+        "tag"         : true,
+        "track"       : true,
+        "trash"       : true,
+        "wall"        : true,
+        "order"       : [
+          [
+            "Folder",
+            "asc"
+          ],
+          [
+            "Name",
+            "asc"
+          ]
         ],
-        "databases" : [
-            {
-                "name"        : "file",
-                "label"       : "File",
-                "desc"        : "MOMA dropbox files.",
-                "format"      : "{Folder} / {Name}",
-                "file_format" : "{Name}",
-                "singular"    : "file",
-                "event"       : true,
-                "file"        : true,
-                "link"        : true,
-                "log"         : true,
-                "notify"      : true,
-                "subscribe"   : true,
-                "tag"         : true,
-                "track"       : true,
-                "trash"       : true,
-                "wall"        : true,
-                "order" : [
-                    [ "Folder", "asc" ],
-                    [ "Name",   "asc" ]
-                ],
-                "fields" : [
-                    {
-                        "name" : "Folder",
-                        "type" : "utf8string(32)",
-                        "ref"  : "Folder",
-                        "key"  : true
-                    },
-                    {
-                        "name" : "Name",
-                        "type" : "utf8string(128)",
-                        "key"  : true
-                    },
-                    {
-                        "name" : "Description",
-                        "type" : "utf8string",
-                        "nul"  : true
-                    }
-                ]
-            }
+        "fields"      : [
+          {
+            "name" : "Folder",
+            "type" : "utf8string(32)",
+            "ref"  : "Folder",
+            "key"  : true
+          },
+          {
+            "name" : "Name",
+            "type" : "utf8string(128)",
+            "key"  : true
+          },
+          {
+            "name" : "Description",
+            "type" : "utf8string",
+            "nul"  : true
+          }
         ]
-    }
+      }
+    ]
+  }
 }

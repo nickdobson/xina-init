@@ -1,6 +1,6 @@
 {
-  "model" : "etu",
-  "label" : "ETU Model",
-  "desc"  : "ETU model",
-  "info"  : ""
+	"model" : "etu",
+	"label" : "ETU Model",
+	"desc"  : "ETU model",
+	"info"  : ""
 }

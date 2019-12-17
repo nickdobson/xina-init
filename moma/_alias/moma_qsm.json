@@ -1,5 +1,5 @@
 {
-  "model" : "qsm",
-  "label" : "QSM Model",
-  "desc"  : "QSM model"
+	"model" : "qsm",
+	"label" : "QSM Model",
+	"desc"  : "QSM model"
 }

@@ -19,19 +19,17 @@
 		"track"     : true,
 		"trash"     : true,
 		"wall"      : true,
-		"order" : [
-			[ "timestamp", "desc" ]
-		],
-		"fields" : [
+		"order"     : [["timestamp", "desc"]],
+		"fields"    : [
 			{
-				"name"  : "timestamp",
-				"type"  : "localdatetime",
-				"key"   : true
+				"name" : "timestamp",
+				"type" : "localdatetime",
+				"key"  : true
 			},
 			{
-				"name"  : "name",
-				"type"  : "asciistring(64)",
-				"key"   : true
+				"name" : "name",
+				"type" : "asciistring(64)",
+				"key"  : true
 			},
 			{
 				"name"  : "date",
@@ -45,44 +43,44 @@
 				"nul"   : true
 			},
 			{
-				"name"  : "mean",
-				"type"  : "float(8)",
-				"nul"   : true
+				"name" : "mean",
+				"type" : "float(8)",
+				"nul"  : true
 			},
 			{
-				"name"  : "min",
-				"type"  : "int(4)",
-				"nul"   : true
+				"name" : "min",
+				"type" : "int(4)",
+				"nul"  : true
 			},
 			{
-				"name"  : "max",
-				"type"  : "int(4)",
-				"nul"   : true
+				"name" : "max",
+				"type" : "int(4)",
+				"nul"  : true
 			},
 			{
-				"name"  : "std_dev",
-				"type"  : "float(8)",
-				"nul"   : true
+				"name" : "std_dev",
+				"type" : "float(8)",
+				"nul"  : true
 			},
 			{
-				"name"  : "snr",
-				"type"  : "float(8)",
-				"nul"   : true
+				"name" : "snr",
+				"type" : "float(8)",
+				"nul"  : true
 			},
 			{
-				"name"  : "enob",
-				"type"  : "float(8)",
-				"nul"   : true
+				"name" : "enob",
+				"type" : "float(8)",
+				"nul"  : true
 			},
 			{
-				"name"  : "max_neg_dev",
-				"type"  : "float(8)",
-				"nul"   : true
+				"name" : "max_neg_dev",
+				"type" : "float(8)",
+				"nul"  : true
 			},
 			{
-				"name"  : "max_pos_dev",
-				"type"  : "float(8)",
-				"nul"   : true
+				"name" : "max_pos_dev",
+				"type" : "float(8)",
+				"nul"  : true
 			}
 		],
 		"databases" : [
@@ -103,31 +101,29 @@
 				"track"       : true,
 				"trash"       : true,
 				"wall"        : true,
-				"order" : [
-					[ "timestamp",  "desc" ]
-				],
-				"fields" : [
+				"order"       : [["timestamp", "desc"]],
+				"fields"      : [
 					{
-						"name"  : "timestamp",
-						"type"  : "localdatetime",
-						"key"   : true,
-						"ref"   : "timestamp"
+						"name" : "timestamp",
+						"type" : "localdatetime",
+						"key"  : true,
+						"ref"  : "timestamp"
 					},
 					{
-						"name"  : "name",
-						"type"  : "asciistring(64)",
-						"key"   : true,
-						"ref"   : "name"
+						"name" : "name",
+						"type" : "asciistring(64)",
+						"key"  : true,
+						"ref"  : "name"
 					},
 					{
-						"name"  : "file_name",
-						"type"  : "asciistring(128)",
-						"key"   : true
+						"name" : "file_name",
+						"type" : "asciistring(128)",
+						"key"  : true
 					},
 					{
-						"name"  : "index",
-						"type"  : "int(4)",
-						"key"   : true
+						"name" : "index",
+						"type" : "int(4)",
+						"key"  : true
 					},
 					{
 						"name"  : "date",
@@ -141,44 +137,44 @@
 						"nul"   : true
 					},
 					{
-						"name"  : "mean",
-						"type"  : "float(8)",
-						"nul"   : true
+						"name" : "mean",
+						"type" : "float(8)",
+						"nul"  : true
 					},
 					{
-						"name"  : "min",
-						"type"  : "int(4)",
-						"nul"   : true
+						"name" : "min",
+						"type" : "int(4)",
+						"nul"  : true
 					},
 					{
-						"name"  : "max",
-						"type"  : "int(4)",
-						"nul"   : true
+						"name" : "max",
+						"type" : "int(4)",
+						"nul"  : true
 					},
 					{
-						"name"  : "std_dev",
-						"type"  : "float(8)",
-						"nul"   : true
+						"name" : "std_dev",
+						"type" : "float(8)",
+						"nul"  : true
 					},
 					{
-						"name"  : "snr",
-						"type"  : "float(8)",
-						"nul"   : true
+						"name" : "snr",
+						"type" : "float(8)",
+						"nul"  : true
 					},
 					{
-						"name"  : "enob",
-						"type"  : "float(8)",
-						"nul"   : true
+						"name" : "enob",
+						"type" : "float(8)",
+						"nul"  : true
 					},
 					{
-						"name"  : "max_neg_dev",
-						"type"  : "float(8)",
-						"nul"   : true
+						"name" : "max_neg_dev",
+						"type" : "float(8)",
+						"nul"  : true
 					},
 					{
-						"name"  : "max_pos_dev",
-						"type"  : "float(8)",
-						"nul"   : true
+						"name" : "max_pos_dev",
+						"type" : "float(8)",
+						"nul"  : true
 					}
 				]
 			},
@@ -199,30 +195,28 @@
 				"track"       : true,
 				"trash"       : true,
 				"wall"        : true,
-				"order" : [
-					[ "file_name",  "desc" ]
-				],
-				"fields" : [
+				"order"       : [["file_name", "desc"]],
+				"fields"      : [
 					{
-						"name"  : "timestamp",
-						"type"  : "localdatetime",
-						"key"   : true,
-						"ref"   : "timestamp"
+						"name" : "timestamp",
+						"type" : "localdatetime",
+						"key"  : true,
+						"ref"  : "timestamp"
 					},
 					{
-						"name"  : "name",
-						"type"  : "asciistring(64)",
-						"key"   : true,
-						"ref"   : "name"
+						"name" : "name",
+						"type" : "asciistring(64)",
+						"key"  : true,
+						"ref"  : "name"
 					},
 					{
-						"name"  : "file_name",
-						"type"  : "asciistring(128)",
-						"key"   : true
+						"name" : "file_name",
+						"type" : "asciistring(128)",
+						"key"  : true
 					},
 					{
-						"name"  : "date",
-						"type"  : "localdate"
+						"name" : "date",
+						"type" : "localdate"
 					}
 				]
 			}

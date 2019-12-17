@@ -1,62 +1,62 @@
 {
-  "action"   : "create",
-  "create"   : "database",
-  "parent"   : "moma.def",
-  "database" : {
-    "name"      : "mk",
-    "label"     : "Marker",
-    "desc"      : "MOMA marker definitions database.",
-    "format"    : "{Markers} {Marker Text}",
-    "singular"  : "marker",
-    "backup"    : true,
-    "event"     : true,
-    "link"      : true,
-    "log"       : true,
-    "notify"    : true,
-    "subscribe" : true,
-    "tag"       : true,
-    "track"     : true,
-    "trash"     : true,
-    "wall"      : true,
-    "fields"    : [
-      {
-        "name" : "Script",
-        "type" : "utf8string(32)"
-      },
-      {
-        "name" : "Markers",
-        "type" : "utf8string(32)",
-        "key"  : true
-      },
-      {
-        "name" : "Start",
-        "type" : "int(4)"
-      },
-      {
-        "name" : "End",
-        "type" : "int(4)",
-        "nul"  : true
-      },
-      {
-        "name" : "Offset",
-        "type" : "asciistring(32)",
-        "nul"  : true
-      },
-      {
-        "name" : "Deprecated",
-        "type" : "boolean",
-        "def"  : "false"
-      },
-      {
-        "name" : "Marker Text",
-        "type" : "utf8string",
-        "nul"  : true
-      },
-      {
-        "name" : "Notes",
-        "type" : "utf8string",
-        "nul"  : true
-      }
-    ]
-  }
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.def",
+	"database" : {
+		"name"      : "mk",
+		"label"     : "Marker",
+		"desc"      : "MOMA marker definitions database.",
+		"format"    : "{Markers} {Marker Text}",
+		"singular"  : "marker",
+		"backup"    : true,
+		"event"     : true,
+		"link"      : true,
+		"log"       : true,
+		"notify"    : true,
+		"subscribe" : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"fields"    : [
+			{
+				"name" : "Script",
+				"type" : "utf8string(32)"
+			},
+			{
+				"name" : "Markers",
+				"type" : "utf8string(32)",
+				"key"  : true
+			},
+			{
+				"name" : "Start",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "End",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Offset",
+				"type" : "asciistring(32)",
+				"nul"  : true
+			},
+			{
+				"name" : "Deprecated",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "Marker Text",
+				"type" : "utf8string",
+				"nul"  : true
+			},
+			{
+				"name" : "Notes",
+				"type" : "utf8string",
+				"nul"  : true
+			}
+		]
+	}
 }

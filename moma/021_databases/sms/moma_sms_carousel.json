@@ -18,22 +18,18 @@
 		"track"     : true,
 		"trash"     : true,
 		"wall"      : true,
-		"order" : [
-			[ "Model",      "asc"  ],
-			[ "Station ID", "asc"  ],
-			[ "Time",       "desc" ]
-		],
-		"fields" : [
+		"order"     : [["Model", "asc"], ["Station ID", "asc"], ["Time", "desc"]],
+		"fields"    : [
 			{
 				"name"    : "Model",
 				"type"    : "asciistring(8)",
 				"key"     : true,
 				"strict"  : true,
 				"options" : [
-					{ "value" : "fm_ops" },
-					{ "value" : "sfm"    },
-					{ "value" : "fm_gnd" },
-					{ "value" : "etu"    }
+					{"value" : "fm_ops"},
+					{"value" : "sfm"},
+					{"value" : "fm_gnd"},
+					{"value" : "etu"}
 				]
 			},
 			{

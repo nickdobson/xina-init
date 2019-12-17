@@ -1,221 +1,221 @@
 {
-    "action"   : "create",
-    "create"   : "database",
-    "parent"   : "moma.det",
-    "database" : {
-        "name"   : "a",
-        "label"  : "A",
-        "desc"   : "MOMA detector test stand A data.",
-        "fields" : [
-            {
-                "name" : "Timestamp",
-                "type" : "datetime",
-                "key"  : true
-            },
-            {
-                "name" : "DUT",
-                "type" : "asciistring(64)",
-                "nul"  : true
-            },
-            {
-                "name" : "Test Label",
-                "type" : "asciistring(64)",
-                "nul"  : true
-            },
-            {
-                "name" : "Test ID",
-                "type" : "int(4)",
-                "nul"  : true
-            },
-            {
-                "name" : "Iteration",
-                "type" : "int(4)",
-                "nul"  : true
-            },
-            {
-                "name" : "WOA",
-                "type" : "asciistring(64)",
-                "nul"  : true
-            },
-            {
-                "name" : "Background Gas",
-                "type" : "utf8string",
-                "nul"  : true
-            },
-            {
-                "name" : "Comments",
-                "type" : "utf8text",
-                "nul"  : true
-            },
-            {
-                "name" : "Disc",
-                "type" : "float(8)",
-                "meas" : "voltage",
-                "unit" : "V"
-            },
-            {
-                "name" : "CPS",
-                "type" : "float(8)"
-            },
-            {
-                "name" : "Count",
-                "type" : "int(8)"
-            },
-            {
-                "name" : "Test",
-                "type" : "boolean",
-                "def"  : "false"
-            },
-            {
-                "name" : "PHD",
-                "type" : "boolean",
-                "def"  : "false"
-            },
-            {
-                "name" : "Switch",
-                "type" : "boolean",
-                "def"  : "false"
-            },
-            {
-                "name" : "Stable Time",
-                "type" : "int(4)",
-                "meas" : "time",
-                "unit" : "ms",
-                "nul"  : true
-            },
-            {
-                "name" : "Count Time",
-                "type" : "int(4)",
-                "meas" : "time",
-                "unit" : "ms",
-                "nul"  : true
-            },
-            {
-                "name" : "Off Time",
-                "type" : "int(4)",
-                "meas" : "time",
-                "unit" : "ms",
-                "nul"  : true
-            },
-            {
-                "name" : "CEM On",
-                "type" : "boolean",
-                "def"  : "true"
-            },
-            {
-                "name" : "CEM Volt Set",
-                "type" : "float(8)",
-                "meas" : "voltage",
-                "unit" : "V"
-            },
-            {
-                "name" : "CEM Volt SwOff",
-                "type" : "float(8)",
-                "meas" : "voltage",
-                "unit" : "V",
-                "def"  : "0"
-            },
-            {
-                "name" : "CEM Cur Limit",
-                "type" : "float(8)",
-                "meas" : "current",
-                "unit" : "A"
-            },
-            {
-                "name" : "CEM Volt Active",
-                "type" : "float(8)",
-                "meas" : "voltage",
-                "unit" : "V"
-            },
-            {
-                "name" : "CEM Voltage",
-                "type" : "float(8)",
-                "meas" : "voltage",
-                "unit" : "V"
-            },
-            {
-                "name" : "CEM Current",
-                "type" : "float(8)",
-                "meas" : "current",
-                "unit" : "A"
-            },
-            {
-                "name" : "Dyn On",
-                "type" : "boolean",
-                "def"  : "true"
-            },
-            {
-                "name" : "Dyn Volt Set",
-                "type" : "float(8)",
-                "meas" : "voltage",
-                "unit" : "V"
-            },
-            {
-                "name" : "Dyn Volt SwOff",
-                "type" : "float(8)",
-                "meas" : "voltage",
-                "unit" : "V",
-                "def"  : "0"
-            },
-            {
-                "name" : "Dyn Cur Limit",
-                "type" : "float(8)",
-                "meas" : "current",
-                "unit" : "A",
-                "nul"  : true
-            },
-            {
-                "name" : "Dyn Volt Active",
-                "type" : "float(8)",
-                "meas" : "voltage",
-                "unit" : "V"
-            },
-            {
-                "name" : "Dyn Voltage",
-                "type" : "float(8)",
-                "meas" : "voltage",
-                "unit" : "V"
-            },
-            {
-                "name" : "Dyn Current",
-                "type" : "float(8)",
-                "meas" : "current",
-                "unit" : "A"
-            },
-            {
-                "name" : "Pressure",
-                "type" : "float(8)",
-                "meas" : "pressure",
-                "unit" : "Torr"
-            },
-            {
-                "name" : "CEM Resistance",
-                "type" : "float(8)",
-                "meas" : "resistance",
-                "unit" : "Ohm",
-                "nul"  : true
-            },
-            {
-                "name" : "Current Input",
-                "type" : "float(8)",
-                "meas" : "current",
-                "unit" : "A",
-                "nul"  : true
-            },
-            {
-                "name" : "Pre-Amp Gain",
-                "type" : "float(8)",
-                "meas" : "voltage",
-                "unit" : "V",
-                "nul"  : true
-            },
-            {
-                "name" : "Temperature",
-                "type" : "float(8)",
-                "meas" : "temperature",
-                "unit" : "C",
-                "nul"  : true
-            }
-        ]
-    }
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.det",
+	"database" : {
+		"name"   : "a",
+		"label"  : "A",
+		"desc"   : "MOMA detector test stand A data.",
+		"fields" : [
+			{
+				"name" : "Timestamp",
+				"type" : "datetime",
+				"key"  : true
+			},
+			{
+				"name" : "DUT",
+				"type" : "asciistring(64)",
+				"nul"  : true
+			},
+			{
+				"name" : "Test Label",
+				"type" : "asciistring(64)",
+				"nul"  : true
+			},
+			{
+				"name" : "Test ID",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Iteration",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "WOA",
+				"type" : "asciistring(64)",
+				"nul"  : true
+			},
+			{
+				"name" : "Background Gas",
+				"type" : "utf8string",
+				"nul"  : true
+			},
+			{
+				"name" : "Comments",
+				"type" : "utf8text",
+				"nul"  : true
+			},
+			{
+				"name" : "Disc",
+				"type" : "float(8)",
+				"meas" : "voltage",
+				"unit" : "V"
+			},
+			{
+				"name" : "CPS",
+				"type" : "float(8)"
+			},
+			{
+				"name" : "Count",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "Test",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "PHD",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "Switch",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "Stable Time",
+				"type" : "int(4)",
+				"meas" : "time",
+				"unit" : "ms",
+				"nul"  : true
+			},
+			{
+				"name" : "Count Time",
+				"type" : "int(4)",
+				"meas" : "time",
+				"unit" : "ms",
+				"nul"  : true
+			},
+			{
+				"name" : "Off Time",
+				"type" : "int(4)",
+				"meas" : "time",
+				"unit" : "ms",
+				"nul"  : true
+			},
+			{
+				"name" : "CEM On",
+				"type" : "boolean",
+				"def"  : "true"
+			},
+			{
+				"name" : "CEM Volt Set",
+				"type" : "float(8)",
+				"meas" : "voltage",
+				"unit" : "V"
+			},
+			{
+				"name" : "CEM Volt SwOff",
+				"type" : "float(8)",
+				"meas" : "voltage",
+				"unit" : "V",
+				"def"  : "0"
+			},
+			{
+				"name" : "CEM Cur Limit",
+				"type" : "float(8)",
+				"meas" : "current",
+				"unit" : "A"
+			},
+			{
+				"name" : "CEM Volt Active",
+				"type" : "float(8)",
+				"meas" : "voltage",
+				"unit" : "V"
+			},
+			{
+				"name" : "CEM Voltage",
+				"type" : "float(8)",
+				"meas" : "voltage",
+				"unit" : "V"
+			},
+			{
+				"name" : "CEM Current",
+				"type" : "float(8)",
+				"meas" : "current",
+				"unit" : "A"
+			},
+			{
+				"name" : "Dyn On",
+				"type" : "boolean",
+				"def"  : "true"
+			},
+			{
+				"name" : "Dyn Volt Set",
+				"type" : "float(8)",
+				"meas" : "voltage",
+				"unit" : "V"
+			},
+			{
+				"name" : "Dyn Volt SwOff",
+				"type" : "float(8)",
+				"meas" : "voltage",
+				"unit" : "V",
+				"def"  : "0"
+			},
+			{
+				"name" : "Dyn Cur Limit",
+				"type" : "float(8)",
+				"meas" : "current",
+				"unit" : "A",
+				"nul"  : true
+			},
+			{
+				"name" : "Dyn Volt Active",
+				"type" : "float(8)",
+				"meas" : "voltage",
+				"unit" : "V"
+			},
+			{
+				"name" : "Dyn Voltage",
+				"type" : "float(8)",
+				"meas" : "voltage",
+				"unit" : "V"
+			},
+			{
+				"name" : "Dyn Current",
+				"type" : "float(8)",
+				"meas" : "current",
+				"unit" : "A"
+			},
+			{
+				"name" : "Pressure",
+				"type" : "float(8)",
+				"meas" : "pressure",
+				"unit" : "Torr"
+			},
+			{
+				"name" : "CEM Resistance",
+				"type" : "float(8)",
+				"meas" : "resistance",
+				"unit" : "Ohm",
+				"nul"  : true
+			},
+			{
+				"name" : "Current Input",
+				"type" : "float(8)",
+				"meas" : "current",
+				"unit" : "A",
+				"nul"  : true
+			},
+			{
+				"name" : "Pre-Amp Gain",
+				"type" : "float(8)",
+				"meas" : "voltage",
+				"unit" : "V",
+				"nul"  : true
+			},
+			{
+				"name" : "Temperature",
+				"type" : "float(8)",
+				"meas" : "temperature",
+				"unit" : "C",
+				"nul"  : true
+			}
+		]
+	}
 }

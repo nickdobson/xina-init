@@ -1,108 +1,99 @@
 {
-    "action"   : "create",
-    "create"   : "database",
-    "parent"   : "moma",
-    "database" : {
-        "name"      : "micropirani_journal",
-        "label"     : "MicroPirani Journal",
-        "desc"      : "MOMA MicroPirani activity journal.",
-        "backup"    : true,
-        "event"     : true,
-        "link"      : true,
-        "log"       : true,
-        "notify"    : true,
-        "subscribe" : true,
-        "tag"       : true,
-        "track"     : true,
-        "trash"     : true,
-        "wall"      : true,
-        "objects"   : {
-            "xo_view_conf_note" : {
-                "date"      : "Date",
-                "timestamp" : "Timestamp",
-                "content"   : "Content",
-                "meta"      : [
-                    "WOA",
-                    "Proc ID",
-                    "Hw Config"
-                ]
-            },
-            "xo_view_default": {
-                "*" : "note"
-            }
-        },
-        "fields" : [
-            {
-                "name" : "Date",
-                "type" : "localdate"
-            },
-            {
-                "name" : "Timestamp",
-                "type" : "datetime",
-                "key"  :  true
-            },
-            {
-                "name" : "Content",
-                "type" : "html",
-                "nul"  : true
-            },
-            {
-                "name" : "WOA",
-                "type" : "utf8string(64)",
-                "nul"  : true
-            },
-            {
-                "name" : "Proc ID",
-                "type" : "utf8string(32)",
-                "nul"  : true
-            },
-            {
-                "name" : "Hw Config",
-                "type" : "utf8string(16)",
-                "nul"  : true
-            }
-        ],
-        "databases" : [
-            {
-                "name"        : "file",
-                "label"       : "File",
-                "desc"        : "MOMA MicroPirani activity journal file database.",
-                "format"      : "{Timestamp} {Name}",
-                "file_format" : "{Name}",
-                "singular"    : "file",
-                "event"       : true,
-                "file"        : true,
-                "link"        : true,
-                "log"         : true,
-                "notify"      : true,
-                "subscribe"   : true,
-                "tag"         : true,
-                "track"       : true,
-                "trash"       : true,
-                "wall"        : true,
-                "order" : [
-                    [ "Timestamp", "desc" ],
-                    [ "Name",      "asc"  ]
-                ],
-                "fields" : [
-                    {
-                        "name" : "Timestamp",
-                        "type" : "datetime",
-                        "ref"  : "Timestamp",
-                        "key"  : true
-                    },
-                    {
-                        "name" : "Name",
-                        "type" : "utf8string(128)",
-                        "key"  : true
-                    },
-                    {
-                        "name" : "Desc",
-                        "type" : "utf8string",
-                        "nul"  : true
-                    }
-                ]
-            }
-        ]
-    }
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma",
+	"database" : {
+		"name"      : "micropirani_journal",
+		"label"     : "MicroPirani Journal",
+		"desc"      : "MOMA MicroPirani activity journal.",
+		"backup"    : true,
+		"event"     : true,
+		"link"      : true,
+		"log"       : true,
+		"notify"    : true,
+		"subscribe" : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"objects"   : {
+			"xo_view_default"   : {"*" : "note"},
+			"xo_view_conf_note" : {
+				"date"      : "Date",
+				"timestamp" : "Timestamp",
+				"content"   : "Content",
+				"meta"      : ["WOA", "Proc ID", "Hw Config"]
+			}
+		},
+		"fields"    : [
+			{
+				"name" : "Date",
+				"type" : "localdate"
+			},
+			{
+				"name" : "Timestamp",
+				"type" : "datetime",
+				"key"  : true
+			},
+			{
+				"name" : "Content",
+				"type" : "html",
+				"nul"  : true
+			},
+			{
+				"name" : "WOA",
+				"type" : "utf8string(64)",
+				"nul"  : true
+			},
+			{
+				"name" : "Proc ID",
+				"type" : "utf8string(32)",
+				"nul"  : true
+			},
+			{
+				"name" : "Hw Config",
+				"type" : "utf8string(16)",
+				"nul"  : true
+			}
+		],
+		"databases" : [
+			{
+				"name"        : "file",
+				"label"       : "File",
+				"desc"        : "MOMA MicroPirani activity journal file database.",
+				"format"      : "{Timestamp} {Name}",
+				"file_format" : "{Name}",
+				"singular"    : "file",
+				"event"       : true,
+				"file"        : true,
+				"link"        : true,
+				"log"         : true,
+				"notify"      : true,
+				"subscribe"   : true,
+				"tag"         : true,
+				"track"       : true,
+				"trash"       : true,
+				"wall"        : true,
+				"order"       : [["Timestamp", "desc"], ["Name", "asc"]],
+				"fields"      : [
+					{
+						"name" : "Timestamp",
+						"type" : "datetime",
+						"ref"  : "Timestamp",
+						"key"  : true
+					},
+					{
+						"name" : "Name",
+						"type" : "utf8string(128)",
+						"key"  : true
+					},
+					{
+						"name" : "Desc",
+						"type" : "utf8string",
+						"nul"  : true
+					}
+				]
+			}
+		]
+	}
 }

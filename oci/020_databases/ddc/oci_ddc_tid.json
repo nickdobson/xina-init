@@ -19,15 +19,12 @@
 		"track"     : true,
 		"trash"     : true,
 		"wall"      : true,
-		"order" : [
-			[ "t_start", "desc" ],
-			[ "t_end",   "desc" ]
-		],
-		"fields" : [
+		"order"     : [["t_start", "desc"], ["t_end", "desc"]],
+		"fields"    : [
 			{
-				"name"  : "tid",
-				"type"  : "int(4)",
-				"key"   : true
+				"name" : "tid",
+				"type" : "int(4)",
+				"key"  : true
 			},
 			{
 				"name"  : "label",
@@ -60,9 +57,9 @@
 				"nul"   : true
 			},
 			{
-				"name"  : "notes",
-				"type"  : "utf8text",
-				"nul"   : true
+				"name" : "notes",
+				"type" : "utf8text",
+				"nul"  : true
 			}
 		],
 		"databases" : [
@@ -83,26 +80,23 @@
 				"track"       : true,
 				"trash"       : true,
 				"wall"        : true,
-				"order" : [
-					[ "tid",  "desc" ],
-					[ "name", "asc"  ]
-				],
-				"fields" : [
+				"order"       : [["tid", "desc"], ["name", "asc"]],
+				"fields"      : [
 					{
-						"name"  : "tid",
-						"type"  : "int(4)",
-						"ref"   : "tid",
-						"key"   : true
+						"name" : "tid",
+						"type" : "int(4)",
+						"ref"  : "tid",
+						"key"  : true
 					},
 					{
-						"name"  : "name",
-						"type"  : "utf8string(128)",
-						"key"   : true
+						"name" : "name",
+						"type" : "utf8string(128)",
+						"key"  : true
 					},
 					{
-						"name"  : "desc",
-						"type"  : "utf8string",
-						"nul"   : true
+						"name" : "desc",
+						"type" : "utf8string",
+						"nul"  : true
 					}
 				]
 			}

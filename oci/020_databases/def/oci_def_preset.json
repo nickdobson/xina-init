@@ -11,7 +11,7 @@
 		"singular" : "preset",
 		"backup"   : true,
 		"wall"     : true,
-		"order"    : [ [ "name", "asc" ] ],
+		"order"    : [["name", "asc"]],
 		"fields"   : [
 			{
 				"name" : "name",

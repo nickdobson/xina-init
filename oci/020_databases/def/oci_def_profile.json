@@ -16,7 +16,7 @@
 		"track"    : true,
 		"trash"    : true,
 		"wall"     : true,
-		"order"    : [ "name" ],
+		"order"    : ["name"],
 		"fields"   : [
 			{
 				"name" : "name",
@@ -25,11 +25,18 @@
 			},
 			{
 				"name" : "ids",
-				"type" : "asciistring"
+				"type" : "asciistring",
+				"nul"  : true
 			},
 			{
-				"name" : "ids",
-				"type" : "asciistring"
+				"name" : "raw",
+				"type" : "asciistring",
+				"nul"  : true
+			},
+			{
+				"name" : "dis",
+				"type" : "asciistring",
+				"nul"  : true
 			},
 			{
 				"name" : "columns",

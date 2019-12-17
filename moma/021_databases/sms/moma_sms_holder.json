@@ -1,101 +1,96 @@
 {
-    "action"   : "create",
-    "create"   : "database",
-    "parent"   : "moma.sms",
-    "database" : {
-        "name"      : "holder",
-        "label"     : "Holder",
-        "desc"      : "MOMA science holder database.",
-        "format"    : "{Name}",
-        "singular"  : "holder",
-        "backup"    : true,
-        "event"     : true,
-        "link"      : true,
-        "log"       : true,
-        "notify"    : true,
-        "subscribe" : true,
-        "tag"       : true,
-        "track"     : true,
-        "trash"     : true,
-        "wall"      : true,
-        "order" : [
-            [ "Name", "desc" ]
-        ],
-        "fields" : [
-            {
-                "name"  : "Holder ID",
-                "type"  : "int(4)",
-                "key"   : true
-            },
-            {
-                "name"  : "Name",
-                "type"  : "utf8string(128)",
-                "index" : true
-            },
-            {
-                "name"    : "Type",
-                "type"    : "asciistring(16)",
-                "strict"  : true,
-                "options" : [
-                    { "value" : "cup"  },
-                    { "value" : "stub" }
-                ]
-            },
-            {
-                "name"  : "Prepared By",
-                "type"  : "utf8string(64)"
-            },
-            {
-                "name"  : "Prepared At",
-                "type"  : "datetime"
-            },
-            {
-                "name"  : "Notes",
-                "type"  : "utf8text",
-                "nul"   : true
-            }
-        ],
-        "databases" : [
-            {
-                "name"        : "file",
-                "label"       : "File",
-                "desc"        : "MOMA science sample holder file database.",
-                "format"      : "{Holder ID} {Name}",
-                "file_format" : "{Name}",
-                "singular"    : "file",
-                "event"       : true,
-                "file"        : true,
-                "link"        : true,
-                "log"         : true,
-                "notify"      : true,
-                "subscribe"   : true,
-                "tag"         : true,
-                "track"       : true,
-                "trash"       : true,
-                "wall"        : true,
-                "order" : [
-                    [ "Holder ID", "desc" ],
-                    [ "Name",      "asc"  ]
-                ],
-                "fields" : [
-                    {
-                        "name" : "Holder ID",
-                        "type" : "int(4)",
-                        "ref"  : "Holder ID",
-                        "key"  : true
-                    },
-                    {
-                        "name" : "Name",
-                        "type" : "utf8string(128)",
-                        "key"  : true
-                    },
-                    {
-                        "name" : "Desc",
-                        "type" : "utf8string",
-                        "nul"  : true
-                    }
-                ]
-            }
-        ]
-    }
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.sms",
+	"database" : {
+		"name"      : "holder",
+		"label"     : "Holder",
+		"desc"      : "MOMA science holder database.",
+		"format"    : "{Name}",
+		"singular"  : "holder",
+		"backup"    : true,
+		"event"     : true,
+		"link"      : true,
+		"log"       : true,
+		"notify"    : true,
+		"subscribe" : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"order"     : [["Name", "desc"]],
+		"fields"    : [
+			{
+				"name" : "Holder ID",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name"  : "Name",
+				"type"  : "utf8string(128)",
+				"index" : true
+			},
+			{
+				"name"    : "Type",
+				"type"    : "asciistring(16)",
+				"strict"  : true,
+				"options" : [
+					{"value" : "cup"},
+					{"value" : "stub"}
+				]
+			},
+			{
+				"name" : "Prepared By",
+				"type" : "utf8string(64)"
+			},
+			{
+				"name" : "Prepared At",
+				"type" : "datetime"
+			},
+			{
+				"name" : "Notes",
+				"type" : "utf8text",
+				"nul"  : true
+			}
+		],
+		"databases" : [
+			{
+				"name"        : "file",
+				"label"       : "File",
+				"desc"        : "MOMA science sample holder file database.",
+				"format"      : "{Holder ID} {Name}",
+				"file_format" : "{Name}",
+				"singular"    : "file",
+				"event"       : true,
+				"file"        : true,
+				"link"        : true,
+				"log"         : true,
+				"notify"      : true,
+				"subscribe"   : true,
+				"tag"         : true,
+				"track"       : true,
+				"trash"       : true,
+				"wall"        : true,
+				"order"       : [["Holder ID", "desc"], ["Name", "asc"]],
+				"fields"      : [
+					{
+						"name" : "Holder ID",
+						"type" : "int(4)",
+						"ref"  : "Holder ID",
+						"key"  : true
+					},
+					{
+						"name" : "Name",
+						"type" : "utf8string(128)",
+						"key"  : true
+					},
+					{
+						"name" : "Desc",
+						"type" : "utf8string",
+						"nul"  : true
+					}
+				]
+			}
+		]
+	}
 }

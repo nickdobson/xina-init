@@ -1,6 +1,6 @@
 {
-  "model" : "fpa102",
-  "label" : "FPA SN102 Model",
-  "desc"  : "FPA SN102 model",
-  "info"  : ""
+	"model" : "fpa102",
+	"label" : "FPA SN102 Model",
+	"desc"  : "FPA SN102 model",
+	"info"  : ""
 }

@@ -1,11 +1,11 @@
 {
-  "action" : "create",
-  "create" : "group",
-  "teams"  : ["oci"],
-  "parent" : "oci.@{model}.data",
-  "group"  : {
-    "name"  : "hk",
-    "label" : "Housekeeping",
-    "desc"  : "OCI @{desc} housekeeping data group."
-  }
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["oci"],
+	"parent" : "oci.@{model}.data",
+	"group"  : {
+		"name"  : "hk",
+		"label" : "Housekeeping",
+		"desc"  : "OCI @{desc} housekeeping data group."
+	}
 }
