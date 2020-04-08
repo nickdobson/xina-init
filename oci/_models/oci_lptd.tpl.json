@@ -1,5 +1,10 @@
 {
-	"alias" : "oci/_alias/oci_lptd.json",
+	"alias" : {
+		"model" : "lptd",
+		"label" : "LPT Dry Run",
+		"desc"  : "LPT dry run",
+		"info"  : ""
+	},
 	"path"  : [
 		"oci/_tpl/oci_model.json",
 		"oci/_tpl/oci_model_tm.json",

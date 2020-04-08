@@ -356,6 +356,26 @@
 				"name" : "Coefficient 4",
 				"type" : "float(4)",
 				"nul"  : true
+			},
+			{
+				"name" : "Num Laser Shots",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Charge Control Duration",
+				"type" : "float(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Avg Laser Energy",
+				"type" : "float(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Sd Laser Energy",
+				"type" : "float(4)",
+				"nul"  : true
 			}
 		]
 	}

@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["gedi"],
+	"parent" : "gedi.@{model}.data",
+	"group"  : {
+		"name"  : "hk",
+		"label" : "Housekeeping",
+		"desc"  : "GEDI @{desc} housekeeping data group."
+	}
+}

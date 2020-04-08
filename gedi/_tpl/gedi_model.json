@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["gedi"],
+	"parent" : "gedi",
+	"group"  : {
+		"name"  : "@{model}",
+		"label" : "@{label}",
+		"desc"  : "GEDI @{desc} group@{info}."
+	}
+}

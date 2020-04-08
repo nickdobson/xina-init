@@ -1,0 +1,134 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["gedi"],
+	"parent"   : "gedi.@{model}",
+	"database" : {
+		"name"      : "tid",
+		"label"     : "TID",
+		"desc"      : "GEDI @{desc} TID database.",
+		"format"    : "{tid}-{label}",
+		"singular"  : "TID",
+		"backup"    : true,
+		"event"     : true,
+		"link"      : true,
+		"log"       : true,
+		"notify"    : true,
+		"subscribe" : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"order" : [
+			[ "t_start", "desc" ],
+			[ "t_end",   "desc" ]
+		],
+		"fields" : [
+			{
+				"name"  : "tid",
+				"type"  : "int(4)",
+				"key"   : true
+			},
+			{
+				"name"  : "label",
+				"type"  : "utf8string(64)",
+				"index" : true,
+				"nul"   : true
+			},
+			{
+				"name"  : "timestamp",
+				"type"  : "asciistring(32)",
+				"index" : true,
+				"nul"   : true
+			},
+			{
+				"name"  : "date",
+				"type"  : "localdate",
+				"index" : true,
+				"nul"   : true
+			},
+			{
+				"name"  : "t_start",
+				"type"  : "datetime",
+				"index" : true,
+				"nul"   : true
+			},
+			{
+				"name"  : "t_end",
+				"type"  : "datetime",
+				"index" : true,
+				"nul"   : true
+			},
+			{
+				"name"  : "pulse_energy_scaling",
+				"type"  : "float(8)",
+				"nul"   : true
+			},
+			{
+				"name"  : "focal_length",
+				"type"  : "float(8)",
+				"nul"   : true
+			},
+			{
+				"name"  : "laser_7_req",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "angle",
+				"unit"  : "mrads"
+			},
+			{
+				"name"  : "laser_8_req",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "length",
+				"unit"  : "in"
+			},
+			{
+				"name"  : "laser_11_req",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "percent",
+				"unit"  : "%"
+			},
+			{
+				"name"  : "laser_12_req",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "percent",
+				"unit"  : "%"
+			},
+			{
+				"name"  : "bdu_3_req",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "percent",
+				"unit"  : "%"
+			},
+			{
+				"name"  : "camera_distance",
+				"type"  : "float(8)",
+				"nul"   : true
+			},
+			{
+				"name"  : "reflectivity",
+				"type"  : "float(8)",
+				"nul"   : true
+			},
+			{
+				"name"  : "hk_points",
+				"type"  : "int(8)",
+				"nul"   : true
+			},
+			{
+				"name"  : "sci_packets",
+				"type"  : "int(8)",
+				"nul"   : true
+			},
+			{
+				"name"  : "notes",
+				"type"  : "utf8text",
+				"nul"   : true
+			}
+		]
+	}
+}

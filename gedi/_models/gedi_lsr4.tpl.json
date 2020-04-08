@@ -1,0 +1,16 @@
+{
+	"alias" : {
+		"model" : "lsr4",
+		"label" : "Laser 4",
+		"desc"  : "laser 4",
+		"info"  : ""
+	},
+	"path"  : [
+		"gedi/_tpl/gedi_model.json",
+		"gedi/_tpl/gedi_model_tid.json",
+		"gedi/_tpl/gedi_model_data.json",
+		"gedi/_tpl/gedi_model_data_hk.json",
+		"gedi/_tpl/gedi_model_data_hk_full.json",
+		"gedi/_tpl/gedi_model_data_hk_file.json"
+	]
+}

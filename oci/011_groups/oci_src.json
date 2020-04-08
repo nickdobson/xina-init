@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"parent" : "oci",
+	"group"  : {
+		"name"  : "src",
+		"label" : "Source",
+		"desc"  : "OCI data sources group."
+	}
+}

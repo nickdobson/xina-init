@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["gedi"],
+	"parent" : "gedi",
+	"group"  : {
+		"name"  : "util",
+		"label" : "Utilities",
+		"desc"  : "GEDI utility databases group."
+	}
+}

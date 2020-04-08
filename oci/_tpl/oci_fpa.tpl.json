@@ -1,0 +1,17 @@
+{
+	"path" : [
+		"oci/_tpl/oci_model.json",
+		"oci/_tpl/oci_model_journal.json",
+		"oci/_tpl/oci_model_data_tm.json",
+		"oci/_tpl/oci_model_data_tm_ins.json",
+		"oci/_tpl/oci_model_data_tm_int.json",
+		"oci/_tpl/oci_model_data_tm_intb.json",
+		"oci/_tpl/oci_model_data_tm_time.json",
+		"oci/_tpl/oci_model_data_tm_hk.json",
+		"oci/_tpl/oci_model_data_tm_hk_file.json",
+		"oci/_tpl/oci_model_data_tm_hk_full_indexed.json",
+		"oci/_tpl/oci_model_data_tm_hk_int.json",
+		"oci/_tpl/oci_model_data_tm_hk_pkg.json",
+		"oci/_tpl/oci_model_data_tm_hk_time.json"
+	]
+}

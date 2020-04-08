@@ -40,20 +40,42 @@
 			},
 			{
 				"name" : "columns",
-				"type" : "jsonobject"
+				"type" : "jsonobject",
+				"def"  : "{\"ts_utc_iso\":true}"
 			},
 			{
 				"name" : "join",
-				"type" : "boolean"
+				"type" : "boolean",
+				"def"  : "true"
 			},
 			{
-				"name" : "bin",
-				"type" : "int(4)",
+				"name" : "pkt",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "plot",
+				"type" : "jsonobject",
 				"nul"  : true
 			},
 			{
 				"name" : "markers",
 				"type" : "asciistring",
+				"nul"  : true
+			},
+			{
+				"name" : "models",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
+				"name" : "axes",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
+				"name" : "options",
+				"type" : "jsonobject",
 				"nul"  : true
 			},
 			{

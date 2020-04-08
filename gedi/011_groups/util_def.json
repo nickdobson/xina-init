@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["gedi"],
+	"parent" : "util",
+	"group"  : {
+		"name"  : "def",
+		"label" : "Definitions",
+		"desc"  : "GEDI definitions group."
+	}
+}

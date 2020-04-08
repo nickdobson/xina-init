@@ -1,5 +1,10 @@
 {
-	"alias" : "oci/_alias/oci_fm.json",
+	"alias" : {
+		"model" : "fm",
+		"label" : "Flight Model",
+		"desc"  : "flight model",
+		"info"  : ""
+	},
 	"path"  : [
 		"oci/_tpl/oci_model.json",
 		"oci/_tpl/oci_model_tm.json",

@@ -1,9 +1,0 @@
-{
-  "action" : "create",
-  "create" : "group",
-  "group"  : {
-    "name"  : "corals",
-    "label" : "CORALS",
-    "desc"  : "Primary group for the Characterization of Ocean Residues And Life Signatures (CORALS) project."
-  }
-}

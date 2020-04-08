@@ -1,0 +1,17 @@
+{
+	"alias" : {
+		"model" : "fm",
+		"label" : "Flight Model",
+		"desc"  : "flight model",
+		"info"  : ""
+	},
+	"path"  : [
+		"gedi/_tpl/gedi_model.json",
+		"gedi/_tpl/gedi_model_tid.json",
+		"gedi/_tpl/gedi_model_data.json",
+		"gedi/_tpl/gedi_model_data_hk.json",
+		"gedi/_tpl/gedi_model_data_hk_full.json",
+		"gedi/_tpl/gedi_model_data_hk_file.json",
+		"gedi/_tpl/gedi_model_data_hk_count.json"
+	]
+}

@@ -1,0 +1,51 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.@{model}.data.sci",
+	"database" : {
+		"name"    : "scan",
+		"label"   : "Scan",
+		"desc"    : "OCI @{desc} science scan database.",
+		"format"  : "{t} {hk_id} {value}",
+		"fields"  : [
+			{
+				"name" : "t",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "hk_id",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "samples",
+				"type" : "int(2)",
+				"nul"  : true
+			},
+			{
+				"name" : "avg",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "min",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "max",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "std",
+				"type" : "float(8)",
+				"nul"  : true
+			}
+		],
+		"indexes" : [
+			["t"],
+			["hk_id", "t"]
+		]
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "gedi",
+		"label"               : "GEDI",
+		"desc"                : "Primary team for the Global Ecosystem Dynamics Investigation (GEDI) instrument.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply"]
+	}
+}

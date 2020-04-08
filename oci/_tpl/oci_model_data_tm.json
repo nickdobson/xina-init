@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["oci"],
+	"parent" : "oci.@{model}.data",
+	"group"  : {
+		"name"  : "tm",
+		"label" : "Telemetry",
+		"desc"  : "OCI @{desc} telemetry data group."
+	}
+}

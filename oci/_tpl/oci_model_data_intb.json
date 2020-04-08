@@ -16,10 +16,6 @@
 		"order"   : [["t_start", "desc"]],
 		"fields"  : [
 			{
-				"name" : "t_id",
-				"type" : "int(4)"
-			},
-			{
 				"name" : "u_int_id",
 				"type" : "int(8)"
 			},
@@ -73,7 +69,6 @@
 			}
 		],
 		"indexes" : [
-			["t_id"],
 			["t_start", "t_end"],
 			["type", "t_start", "t_end"],
 			["u_int_id"],

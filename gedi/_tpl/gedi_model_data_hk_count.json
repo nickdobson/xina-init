@@ -1,0 +1,28 @@
+{
+  "action"   : "create",
+  "create"   : "database",
+  "teams"    : ["gedi"],
+  "parent"   : "gedi.@{model}.data.hk",
+  "database" : {
+    "name"    : "count",
+    "label"   : "Count",
+    "desc"    : "GEDI @{desc} housekeeping count database.",
+    "format"  : "{date} {type}",
+    "fields"  : [
+      {
+        "name" : "date",
+        "type" : "localdate",
+        "key"  : true
+      },
+      {
+        "name" : "type",
+        "type" : "asciistring(4)",
+        "key"  : true
+      },
+      {
+        "name" : "count",
+        "type" : "jsonobject"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+	"model" : "fpa_debug",
+	"label" : "FPA Debug Model",
+	"desc"  : "FPA debug model",
+	"info"  : " (for testing purposes only, does not contain instrument data)"
+}

@@ -28,6 +28,11 @@
 				"key"  : true
 			},
 			{
+				"name" : "t_id",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
 				"name" : "ts_start",
 				"type" : "datetime"
 			},
@@ -99,10 +104,11 @@
 				"nul"  : true
 			}
 		],
-		"indexes"     : [
+		"indexes" : [
 			["label"],
 			["profile", "version"],
-			["u_int_id"]
+			["u_int_id"],
+			["t_id"]
 		]
 	}
 }

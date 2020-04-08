@@ -21,8 +21,7 @@
     "fields"    : [
       {
         "name" : "Name",
-        "type" : "asciistring(128)",
-        "key"  : true
+        "type" : "asciistring(128)"
       },
       {
         "name" : "User",
@@ -71,6 +70,21 @@
       {
         "name" : "Method",
         "type" : "utf8text",
+        "nul"  : true
+      },
+      {
+        "name" : "MassCPS",
+        "type" : "jsonarray",
+        "nul"  : true
+      },
+      {
+        "name" : "Temp",
+        "type" : "jsonarray",
+        "nul"  : true
+      },
+      {
+        "name" : "Time",
+        "type" : "jsonarray",
         "nul"  : true
       },
       {

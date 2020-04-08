@@ -11,6 +11,7 @@
 		"singular" : "field",
 		"backup"   : true,
 		"link"     : true,
+		"track"    : true,
 		"wall"     : true,
 		"order"    : [["hk_id", "asc"]],
 		"fields"   : [

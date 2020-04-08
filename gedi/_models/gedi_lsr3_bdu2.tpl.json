@@ -1,0 +1,16 @@
+{
+	"alias" : {
+		"model" : "lsr3_bdu2",
+		"label" : "Laser 3 - BDU 2",
+		"desc"  : "laser 3 - BDU 2",
+		"info"  : ""
+	},
+	"path"  : [
+		"gedi/_tpl/gedi_model.json",
+		"gedi/_tpl/gedi_model_tid.json",
+		"gedi/_tpl/gedi_model_data.json",
+		"gedi/_tpl/gedi_model_data_hk.json",
+		"gedi/_tpl/gedi_model_data_hk_full.json",
+		"gedi/_tpl/gedi_model_data_hk_file.json"
+	]
+}

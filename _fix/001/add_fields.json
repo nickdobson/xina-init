@@ -1,0 +1,16 @@
+{
+	"action": "alter",
+	"alter": "database",
+	"database": "oci.fm.tm",
+	"op": "add_fields",
+	"fields": [{
+		"name" : "int_open_crc32",
+		"type" : "int(8)",
+		"nul"  : true
+	},
+		{
+			"name" : "int_closed_crc32",
+			"type" : "int(8)",
+			"nul"  : true
+		}]
+}

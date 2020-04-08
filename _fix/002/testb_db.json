@@ -1,0 +1,101 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "testb",
+	"database" : {
+		"name"     : "hk",
+		"label"    : "Housekeeping",
+		"desc"     : "OCI housekeeping definition information.",
+		"format"   : "{hk_id} {name}",
+		"singular" : "field",
+		"backup"   : true,
+		"link"     : true,
+		"wall"     : true,
+		"order"    : [["hk_id", "asc"]],
+		"fields"   : [
+			{
+				"name" : "source_id",
+				"type" : "int(1)"
+			},
+			{
+				"name" : "hk_id",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "name",
+				"type" : "asciistring(128)"
+			},
+			{
+				"name" : "measure",
+				"type" : "utf8string(32)",
+				"nul"  : true
+			},
+			{
+				"name" : "unit",
+				"type" : "utf8string(32)",
+				"nul"  : true
+			},
+			{
+				"name" : "raw_fmt",
+				"type" : "asciistring(16)",
+				"nul"  : true
+			},
+			{
+				"name" : "eng_fmt",
+				"type" : "asciistring(16)",
+				"nul"  : true
+			},
+			{
+				"name" : "sci_fmt",
+				"type" : "asciistring(16)",
+				"nul"  : true
+			},
+			{
+				"name" : "type",
+				"type" : "asciistring(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "mine_type",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "decode_type",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "bundle_id",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "discrete",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "labels",
+				"type" : "jsonobject",
+				"nul"  : true
+			},
+			{
+				"name" : "rate",
+				"type" : "float(4)",
+				"nul"  : true,
+				"meas" : "frequency",
+				"unit" : "Hz"
+			},
+			{
+				"name" : "notes",
+				"type" : "utf8text",
+				"nul"  : true
+			}
+		],
+		"indexes"  : [
+			["mine_type"],
+			["bundle_id"]
+		]
+	}
+}

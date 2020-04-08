@@ -1,0 +1,77 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : {
+		"oci" : {
+			"update" : true,
+			"insert" : true
+		}
+	},
+	"parent"   : "oci.@{model}.data.tm",
+	"database" : {
+		"name"    : "ins",
+		"label"   : "Instant",
+		"desc"    : "OCI @{desc} instant database.",
+		"format"  : "{t%*us} {pri_id},{sec_id} {content}",
+		"order"   : [["t", "desc"]],
+		"fields"  : [
+			{
+				"name" : "t_id",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "u_ins_id",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "ins_id",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "pri_id",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "sec_id",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "t",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "type",
+				"type" : "int(1)"
+			},
+			{
+				"name" : "alert",
+				"type" : "int(1)",
+				"nul"  : true
+			},
+			{
+				"name" : "level",
+				"type" : "int(1)",
+				"nul"  : true
+			},
+			{
+				"name" : "content",
+				"type" : "utf8string"
+			},
+			{
+				"name" : "meta",
+				"type" : "json",
+				"nul"  : true
+			}
+		],
+		"indexes" : [
+			["t_id"],
+			["t"],
+			["type", "t"],
+			["type", "level", "t"],
+			["u_ins_id"],
+			["ins_id"],
+			["pri_id", "sec_id"]
+		]
+	}
+}

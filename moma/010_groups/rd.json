@@ -1,0 +1,9 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"group"  : {
+		"name"  : "rd",
+		"label" : "Research and Development",
+		"desc"  : "Group for research and development projects."
+	}
+}

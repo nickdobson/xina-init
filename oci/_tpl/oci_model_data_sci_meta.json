@@ -1,0 +1,61 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.@{model}.data.sci",
+	"database" : {
+		"name"    : "meta",
+		"label"   : "Meta",
+		"desc"    : "OCI @{desc} science metadata database.",
+		"format"  : "{t} {name}",
+		"fields"  : [
+			{
+				"name" : "t",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "name",
+				"type" : "asciistring(64)"
+			},
+			{
+				"name" : "scans",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "bands",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "red",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "blue",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "pixels",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "pkt_errs",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "ln_errs",
+				"type" : "int(4)",
+				"nul"  : true
+			}
+		],
+		"indexes" : [
+			["t"],
+			["name"]
+		]
+	}
+}

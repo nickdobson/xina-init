@@ -1,0 +1,12 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"parent" : "oci",
+	"teams"  : ["oci"],
+	"alias"  : "testa",
+	"group"  : {
+		"name"  : "test",
+		"label" : "Test",
+		"desc"  : "Test group."
+	}
+}

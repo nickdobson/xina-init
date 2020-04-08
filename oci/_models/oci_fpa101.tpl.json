@@ -1,5 +1,10 @@
 {
-	"alias" : "oci/_alias/oci_fpa101.json",
+	"alias" : {
+		"model" : "fpa101",
+		"label" : "FPA SN101 Model",
+		"desc"  : "FPA SN101 model",
+		"info"  : ""
+	},
 	"path"  : [
 		"oci/_tpl/oci_model.json",
 		"oci/_tpl/oci_model_tm.json",

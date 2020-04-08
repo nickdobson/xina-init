@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["oci"],
+	"parent" : "oci.@{model}.data.tm",
+	"group"  : {
+		"name"  : "hk",
+		"label" : "Housekeeping",
+		"desc"  : "OCI @{desc} housekeeping telemetry data group."
+	}
+}

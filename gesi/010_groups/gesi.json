@@ -1,9 +1,0 @@
-{
-  "action" : "create",
-  "create" : "group",
-  "group"  : {
-    "name"  : "gesi",
-    "label" : "GESI",
-    "desc"  : "Primary group for the Goddard ElectroSpray Ionization (GESI) project."
-  }
-}

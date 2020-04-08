@@ -1,0 +1,9 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"group"  : {
+		"name"  : "testa",
+		"label" : "Test A",
+		"desc"  : "Test group A."
+	}
+}
