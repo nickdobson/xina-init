@@ -1,0 +1,30 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : { "oci": { "insert": true } },
+	"parent"   : "oci.def",
+	"database" : {
+		"name"     : "hk_track",
+		"label"    : "Housekeeping Tracking",
+		"desc"     : "OCI housekeeping usage tracking information.",
+		"format"   : "{hk_id} {insert_at} {insert_by}",
+		"singular" : "view",
+		"backup"   : true,
+		"track"    : true,
+		"order"    : [["record_id", "desc"]],
+		"fields"   : [
+			{
+				"name" : "hk_id",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "tool",
+				"type" : "asciivstring(32)",
+				"nul"  : true
+			}
+		],
+		"indexes"  : [
+			["hk_id"]
+		]
+	}
+}

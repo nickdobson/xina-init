@@ -1,0 +1,45 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.portfolio",
+	"database" : {
+		"name"      : "check",
+		"label"     : "Checklist Definitions",
+		"desc"      : "MOMA portfolio checklist definitions.",
+		"format"    : "{qid} {label}",
+		"singular"  : "check",
+		"backup"    : true,
+		"link"      : true,
+		"log"       : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"order"     : [ "qid", "label" ],
+		"fields"    : [
+			{
+				"name" : "qid",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "label",
+				"type" : "utf8string"
+			},
+			{
+				"name" : "stage",
+				"type" : "utf8string(64)"
+			},
+			{
+				"name" : "files",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
+				"name" : "deprecated",
+				"type" : "boolean",
+				"def"  : "false"
+			}
+		]
+	}
+}

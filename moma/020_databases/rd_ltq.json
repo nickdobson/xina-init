@@ -1,0 +1,136 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "rd",
+	"teams"    : ["rd"],
+	"database" : {
+		"name"        : "ltq",
+		"label"       : "LTQ",
+		"desc"        : "LTQ spectra database.",
+		"format"      : "{Sample Name} ({Laser Energy}mJ)",
+		"file_format" : "{Run ID}_{Run Number}.json",
+		"singular"    : "spectrum",
+		"plural"      : "spectra",
+		"file"        : true,
+		"link"        : true,
+		"log"         : true,
+		"track"       : true,
+		"trash"       : true,
+		"wall"        : true,
+		"order"       : [ ["Date", "desc"], ["Run ID", "asc"], ["Run Number", "asc"] ],
+		"fields"      : [
+			{
+				"name" : "Run ID",
+				"type" : "asciistring(64)",
+				"key"  : true
+			},
+			{
+				"name" : "File Name",
+				"type" : "asciistring(128)"
+			},
+			{
+				"name" : "Date",
+				"type" : "date"
+			},
+			{
+				"name" : "Instrument ID",
+				"type" : "asciistring(64)"
+			},
+			{
+				"name" : "XCalibur Version",
+				"type" : "asciistring(32)"
+			},
+			{
+				"name" : "Instrument Components",
+				"type" : "utf8text",
+				"nul"  : true
+			},
+			{
+				"name" : "Sample Name",
+				"type" : "utf8string(64)"
+			},
+			{
+				"name" : "User",
+				"type" : "utf8string(64)"
+			},
+			{
+				"name" : "Position",
+				"type" : "asciistring(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Doped",
+				"type" : "utf8text",
+				"nul"  : true
+			},
+			{
+				"name" : "Related Projects",
+				"type" : "utf8text",
+				"nul"  : true
+			},
+			{
+				"name" : "Matrix",
+				"type" : "utf8text",
+				"nul"  : true
+			},
+			{
+				"name" : "Run Number",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "Analysis Type",
+				"type" : "asciistring(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Polarity",
+				"type" : "boolean",
+				"nul"  : true
+			},
+			{
+				"name" : "Laser Energy",
+				"type" : "float(8)",
+				"meas" : "energy",
+				"unit" : "uJ",
+				"nul"  : true
+			},
+			{
+				"name" : "Mass Range Min",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Mass Range Max",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Scans per File",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Spectrum Type",
+				"type" : "utf8string(16)",
+				"nul"  : true
+			},
+			{
+				"name" : "Parent Ion",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "CID",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Comments",
+				"type" : "utf8text",
+				"nul"  : true
+			}
+		]
+	}
+}
+

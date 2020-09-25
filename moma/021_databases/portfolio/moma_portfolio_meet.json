@@ -1,0 +1,44 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.portfolio",
+	"database" : {
+		"name"      : "meet",
+		"label"     : "Meeting Definitions",
+		"desc"      : "MOMA portfolio meeting definitions.",
+		"format"    : "{mid} {label}",
+		"singular"  : "check",
+		"backup"    : true,
+		"link"      : true,
+		"log"       : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"order"     : [ "mid", "label" ],
+		"fields"    : [
+			{
+				"name" : "mid",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "label",
+				"type" : "utf8string"
+			},
+			{
+				"name" : "type",
+				"type" : "asciistring(32)"
+			},
+			{
+				"name" : "stage",
+				"type" : "utf8string(64)"
+			},
+			{
+				"name" : "deprecated",
+				"type" : "boolean",
+				"def"  : "false"
+			}
+		]
+	}
+}

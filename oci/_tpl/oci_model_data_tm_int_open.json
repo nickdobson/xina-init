@@ -27,7 +27,7 @@
 			},
 			{
 				"name" : "data",
-				"type" : "utf8string"
+				"type" : "utf8text"
 			}
 		]
 	}

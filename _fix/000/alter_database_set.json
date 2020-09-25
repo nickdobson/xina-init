@@ -1,0 +1,8 @@
+{
+	"action": "alter",
+	"alter": "database",
+	"database": "oci.etu.data.tm.limit.report",
+	"op": "set",
+	"set": {
+		"order"     : [["t", "desc"], ["hk_id", "asc"]]}
+}

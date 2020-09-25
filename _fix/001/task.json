@@ -1,0 +1,10 @@
+{
+	"action" : "run",
+	"tasks"  : [
+		{
+			"name" : "queue_demo",
+			"conf" : { "message": "Hello world!" },
+			"open" : true
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["@{project_name}"],
+	"group"  : {
+		"name"  : "@{project_name}",
+		"label" : "@{project_label}",
+		"desc"  : "Primary group for the @{project_desc} project."
+	}
+}

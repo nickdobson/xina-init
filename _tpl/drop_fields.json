@@ -1,7 +1,0 @@
-{
-    "action": "alter",
-    "alter": "database",
-    "database": "",
-    "op": "drop_fields",
-    "fields": []
-}

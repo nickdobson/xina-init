@@ -1,0 +1,7 @@
+{
+	"alias" : "dragonfly/_alias/dfly_sp.json",
+	"path"  : [
+		"_tpl/pro_cat.json",
+		"_tpl/pro_cat_journal.json"
+	]
+}

@@ -23,6 +23,10 @@
 		"oci/_tpl/oci_model_data_tm_int_open.json",
 		"oci/_tpl/oci_model_data_tm_time.json",
 
+		"oci/_tpl/oci_model_data_tm_limit.json",
+		"oci/_tpl/oci_model_data_tm_limit_report.json",
+		"oci/_tpl/oci_model_data_tm_limit_state.json",
+
 		"oci/_tpl/oci_model_data_tm_hk.json",
 
 		"oci/_tpl/oci_model_data_tm_hk_full.json",

@@ -1,0 +1,32 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["gedi"],
+	"parent"   : "fm.data.hk",
+	"database" : {
+		"name"        : "file",
+		"label"       : "File",
+		"desc"        : "GEDI flight model housekeeping file database.",
+		"format"      : "{date} {name}",
+		"file_format" : "{name}",
+		"file"        : true,
+		"fields"      : [
+			{
+				"name" : "time",
+				"type" : "datetime",
+				"key"  : true
+			},
+			{
+				"name" : "date",
+				"type" : "date"
+			},
+			{
+				"name" : "name",
+				"type" : "asciistring(16)"
+			}
+		],
+		"indexes"     : [
+			["date"]
+		]
+	}
+}

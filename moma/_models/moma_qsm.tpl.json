@@ -1,5 +1,9 @@
 {
-  "alias" : "moma/_alias/moma_qsm.json",
+  "alias" : {
+    "model" : "qsm",
+    "label" : "QSM Model",
+    "desc"  : "QSM model"
+  },
   "path"  : [
     "moma/_tpl/moma_model.json",
     "moma/_tpl/moma_model_alert_ignore.json",

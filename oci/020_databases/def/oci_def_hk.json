@@ -67,6 +67,10 @@
 				"type" : "int(4)"
 			},
 			{
+				"name" : "sci_eq_type",
+				"type" : "int(4)"
+			},
+			{
 				"name" : "bundle_id",
 				"type" : "int(4)",
 				"nul"  : true

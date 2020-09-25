@@ -1,0 +1,74 @@
+{
+	"records": {
+		"type": "where",
+		"where": {
+			"type": "is_null",
+			"e": {
+				"type": "column",
+				"database": "moma.etu.data.msg",
+				"column": "t_sclk",
+				"table": "record"
+			}
+		}
+	},
+	"database": "moma.etu.data.msg",
+	"set": {
+		"t_sclk": {
+			"type": "function",
+			"function": "ifnull",
+			"args": [
+				{
+					"type": "binary",
+					"e1": {
+						"type": "column",
+						"database": "moma.etu.data.msg",
+						"column": "t_rel",
+						"table": "record"
+					},
+					"op": "+",
+					"e2": {
+						"type": "select",
+						"select": {
+							"where": {
+								"type": "binary",
+								"e1": {
+									"type": "column",
+									"database": "moma.etu.tm",
+									"column": "TID",
+									"table": "record"
+								},
+								"op": "=",
+								"e2": {
+									"type": "column",
+									"database": "moma.etu.data.msg",
+									"column": "TID",
+									"table": "record"
+								}
+							},
+							"from": {
+								"type": "td",
+								"database": "moma.etu.tm",
+								"table": "record"
+							},
+							"columns": [
+								{
+									"e": {
+										"type": "column",
+										"database": "moma.etu.tm",
+										"column": "t_sclk_start",
+										"table": "record"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"type": "number",
+					"value": 0
+				}
+			]
+		}
+	},
+	"action": "update_expression"
+}

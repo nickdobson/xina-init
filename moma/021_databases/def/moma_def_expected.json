@@ -51,6 +51,11 @@
 				"def"  : "false"
 			},
 			{
+				"name" : "sim",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
 				"name" : "HK ID",
 				"type" : "int(4)"
 			},

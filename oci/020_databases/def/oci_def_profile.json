@@ -59,6 +59,16 @@
 				"nul"  : true
 			},
 			{
+				"name" : "trend",
+				"type" : "jsonobject",
+				"nul"  : true
+			},
+			{
+				"name" : "filter",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
 				"name" : "markers",
 				"type" : "asciistring",
 				"nul"  : true

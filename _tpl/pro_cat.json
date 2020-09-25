@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["@{project_name}"],
+	"parent" : "@{project_name}",
+	"group"  : {
+		"name"  : "@{category_name}",
+		"label" : "@{category_label}",
+		"desc"  : "@{project_desc} @{category_desc} group."
+	}
+}

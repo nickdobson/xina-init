@@ -1,0 +1,49 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.@{model}.data.hk",
+	"database" : {
+		"name"        : "trend",
+		"label"       : "Trend",
+		"desc"        : "OCI @{desc} housekeeping trend database.",
+		"file"        : true,
+		"file_format" : "{name}",
+		"format"      : "{label}",
+		"order"       : [["label", "desc"]],
+		"fields"      : [
+			{
+				"name" : "label",
+				"type" : "utf8string(64)",
+				"key"  : true
+			},
+			{
+				"name" : "name",
+				"type" : "utf8string(128)"
+			},
+			{
+				"name" : "ids",
+				"type" : "asciistring"
+			},
+			{
+				"name" : "profile",
+				"type" : "asciistring(32)",
+				"nul"  : true
+			},
+			{
+				"name" : "version",
+				"type" : "int(2)",
+				"nul"  : true
+			},
+			{
+				"name" : "desc",
+				"type" : "utf8text",
+				"nul"  : true
+			}
+		],
+		"indexes" : [
+			["label"],
+			["profile", "version"]
+		]
+	}
+}

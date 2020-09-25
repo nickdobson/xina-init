@@ -1,6 +1,7 @@
 {
 	"action"   : "create",
 	"create"   : "database",
+	"teams"    : ["moma"],
 	"parent"   : "moma.@{model}.data.sci",
 	"database" : {
 		"name"   : "scan",
@@ -307,14 +308,6 @@
 			},
 			{
 				"name" : "Dark Count Scan",
-				"type" : "boolean"
-			},
-			{
-				"name" : "GC Ion Source",
-				"type" : "boolean"
-			},
-			{
-				"name" : "LDI Ion Source",
 				"type" : "boolean"
 			},
 			{

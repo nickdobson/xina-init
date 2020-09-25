@@ -1,0 +1,194 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.portfolio",
+	"database" : {
+		"name"      : "pid",
+		"label"     : "Portfolios",
+		"desc"      : "MOMA portfolio activity manager.",
+		"format"    : "{pid} {name}",
+		"singular"  : "portfolio",
+		"backup"    : true,
+		"link"      : true,
+		"log"       : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"order"     : [ "pid", "name" ],
+		"fields"    : [
+			{
+				"name" : "pid",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "name",
+				"type" : "utf8string(64)"
+			},
+			{
+				"name" : "stage",
+				"type" : "utf8string(64)"
+			}
+		],
+		"databases" : [
+			{
+				"name"        : "file",
+				"label"       : "File",
+				"desc"        : "MOMA portfolio files.",
+				"format"      : "{pid} {name}",
+				"file_format" : "{name}",
+				"singular"    : "file",
+				"file"        : true,
+				"log"         : true,
+				"track"       : true,
+				"trash"       : true,
+				"wall"        : true,
+				"order"       : [ "pid", "name" ],
+				"fields"      : [
+					{
+						"name" : "pid",
+						"type" : "int(4)",
+						"ref"  : "pid",
+						"key"  : true
+					},
+					{
+						"name" : "name",
+						"type" : "utf8string(128)",
+						"key"  : true
+					},
+          {
+            "name" : "stage",
+            "type" : "utf8string(64)"
+          },
+					{
+						"name" : "desc",
+						"type" : "utf8string",
+						"nul"  : true
+					}
+				]
+			},
+			{
+				"name"     : "app_sci",
+				"label"    : "Science Approvals",
+				"desc"     : "MOMA portfolio science approvals.",
+				"format"   : "{pid}",
+				"singular" : "approval",
+				"backup"   : true,
+				"log"      : true,
+				"sign"     : true,
+				"track"    : true,
+				"trash"    : true,
+				"fields"   : [
+					{
+						"name" : "pid",
+						"type" : "int(4)",
+						"ref"  : "pid"
+					},
+          {
+            "name" : "stage",
+            "type" : "utf8string(64)"
+          }
+				]
+			},
+      {
+        "name"     : "app_sw",
+        "label"    : "Software Approvals",
+        "desc"     : "MOMA portfolio software approvals.",
+        "format"   : "{pid}",
+        "singular" : "approval",
+        "backup"   : true,
+        "log"      : true,
+        "sign"     : true,
+        "track"    : true,
+        "trash"    : true,
+        "fields"   : [
+          {
+            "name" : "pid",
+            "type" : "int(4)",
+            "ref"  : "pid"
+          },
+          {
+            "name" : "stage",
+            "type" : "utf8string(64)"
+          }
+        ]
+      },
+      {
+        "name"     : "app_sys",
+        "label"    : "System Approvals",
+        "desc"     : "MOMA portfolio system approvals.",
+        "format"   : "{pid}",
+        "singular" : "approval",
+        "backup"   : true,
+        "log"      : true,
+        "sign"     : true,
+        "track"    : true,
+        "trash"    : true,
+        "fields"   : [
+          {
+            "name" : "pid",
+            "type" : "int(4)",
+            "ref"  : "pid"
+          },
+          {
+            "name" : "stage",
+            "type" : "utf8string(64)"
+          }
+        ]
+      },
+      {
+        "name"     : "check",
+        "label"    : "Checklists",
+        "desc"     : "MOMA portfolio checklists.",
+        "format"   : "{pid}",
+        "singular" : "checklist",
+        "backup"   : true,
+        "log"      : true,
+        "track"    : true,
+        "trash"    : true,
+        "fields"   : [
+          {
+            "name" : "pid",
+            "type" : "int(4)",
+            "ref"  : "pid"
+          },
+          {
+            "name" : "stage",
+            "type" : "utf8string(64)"
+          },
+          {
+            "name" : "responses",
+            "type" : "jsonobject"
+          }
+        ]
+      },
+      {
+        "name"     : "meet",
+        "label"    : "Meetings",
+        "desc"     : "MOMA portfolio meetings tracker.",
+        "format"   : "{pid}",
+        "singular" : "meeting",
+        "backup"   : true,
+        "log"      : true,
+        "track"    : true,
+        "trash"    : true,
+        "fields"   : [
+          {
+            "name" : "pid",
+            "type" : "int(4)",
+            "ref"  : "pid"
+          },
+          {
+            "name" : "stage",
+            "type" : "utf8string(64)"
+          },
+          {
+            "name" : "responses",
+            "type" : "jsonobject"
+          }
+        ]
+      }
+		]
+	}
+}

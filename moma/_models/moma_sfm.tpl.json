@@ -1,5 +1,9 @@
 {
-  "alias" : "moma/_alias/moma_sfm.json",
+  "alias" : {
+    "model" : "sfm",
+    "label" : "Spare Flight Model",
+    "desc"  : "spare flight model"
+  },
   "path"  : [
     "moma/_tpl/moma_model.json",
     "moma/_tpl/moma_model_alert_ignore.json",

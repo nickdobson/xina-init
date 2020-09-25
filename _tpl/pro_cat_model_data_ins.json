@@ -1,0 +1,62 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : {
+		"@{project_name}" : {
+			"update" : true,
+			"insert" : true
+		}
+	},
+	"parent"   : "@{project_name}.@{category_name}.@{model_name}.data",
+	"database" : {
+		"name"    : "ins",
+		"label"   : "Instant",
+		"desc"    : "@{project_desc} @{category_desc} @{model_desc} instant database.",
+		"format"  : "{t%*us} {ins_id},{sec_id} {content}",
+		"order"   : [["t", "desc"]],
+		"fields"  : [
+			{
+				"name" : "u_ins_id",
+				"type" : "uuid"
+			},
+			{
+				"name" : "ins_id",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "sec_id",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "t",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "type",
+				"type" : "int(1)",
+				"def"  : "0"
+			},
+			{
+				"name" : "level",
+				"type" : "int(1)",
+				"def"  : "0"
+			},
+			{
+				"name" : "content",
+				"type" : "utf8string"
+			},
+			{
+				"name" : "meta",
+				"type" : "json",
+				"nul"  : true
+			}
+		],
+		"indexes" : [
+			["t"],
+			["type", "t"],
+			["type", "level", "t"],
+			["u_ins_id"],
+			["ins_id", "sec_id"]
+		]
+	}
+}

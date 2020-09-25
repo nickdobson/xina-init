@@ -1,0 +1,7 @@
+{
+	"alias" : "dragonfly/_alias/dfly.json",
+	"path"  : [
+		"_tpl/pro_team.json",
+		"_tpl/pro.json"
+	]
+}

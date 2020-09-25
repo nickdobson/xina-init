@@ -1,0 +1,30 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["@{project_name}"],
+	"parent"   : "@{project_name}.@{category_name}.@{model_name}.data.hk",
+	"database" : {
+		"name"    : "full",
+		"label"   : "Full",
+		"desc"    : "@{project_desc} @{category_desc} @{model_desc} full housekeeping database.",
+		"format"  : "{t} {label} {value}",
+		"fields"  : [
+			{
+				"name" : "t",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "name",
+				"type" : "asciivstring(32)"
+			},
+			{
+				"name" : "value",
+				"type" : "float(8)"
+			}
+		],
+		"indexes" : [
+			["t"],
+			["name", "t"]
+		]
+	}
+}

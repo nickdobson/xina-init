@@ -1,6 +1,7 @@
 {
 	"action"   : "create",
 	"create"   : "database",
+	"teams"    : ["moma"],
 	"parent"   : "moma.@{model}",
 	"database" : {
 		"name"   : "ql",

@@ -1,6 +1,9 @@
-
 {
-  "alias" : "moma/_alias/moma_eis.json",
+  "alias" : {
+    "model" : "eis",
+    "label" : "EIS Model",
+    "desc"  : "EIS model"
+  },
   "path"  : [
     "moma/_tpl/moma_model.json",
     "moma/_tpl/moma_model_alert_ignore.json",

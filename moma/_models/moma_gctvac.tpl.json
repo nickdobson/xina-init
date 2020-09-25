@@ -1,5 +1,9 @@
 {
-  "alias" : "moma/_alias/moma_gctvac.json",
+  "alias" : {
+    "model" : "gctvac",
+    "label" : "GC TVAC Model",
+    "desc"  : "GC TVAC model"
+  },
   "path"  : [
     "moma/_tpl/moma_model.json",
     "moma/_tpl/moma_model_alert_ignore.json",

@@ -13,8 +13,11 @@
 
 		"oci/_tpl/oci_model_data.json",
 
-		"oci/_tpl/oci_model_data_pkg.json",
 		"oci/_tpl/oci_model_data_intb.json",
+
+		"oci/_tpl/oci_model_data_hk.json",
+		"oci/_tpl/oci_model_data_hk_pkg.json",
+		"oci/_tpl/oci_model_data_hk_trend.json",
 
 		"oci/_tpl/oci_model_data_sci.json",
 		"oci/_tpl/oci_model_data_sci_meta.json",
@@ -28,6 +31,10 @@
 		"oci/_tpl/oci_model_data_tm_int_open.json",
 		"oci/_tpl/oci_model_data_tm_time.json",
 
+		"oci/_tpl/oci_model_data_tm_limit.json",
+		"oci/_tpl/oci_model_data_tm_limit_report.json",
+		"oci/_tpl/oci_model_data_tm_limit_state.json",
+
 		"oci/_tpl/oci_model_data_tm_hk.json",
 
 		"oci/_tpl/oci_model_data_tm_hk_full.json",
@@ -37,6 +44,12 @@
 		"oci/_tpl/oci_model_data_tm_hk_time600.json",
 
 		"oci/_tpl/oci_model_data_tm_hk_int.json",
-		"oci/_tpl/oci_model_data_tm_hk_int_slice.json"
+		"oci/_tpl/oci_model_data_tm_hk_int_slice.json",
+
+		"oci/_tpl/oci_model_data_tm_hk_filter.json",
+		"oci/_tpl/oci_model_data_tm_hk_filter_time60.json",
+		"oci/_tpl/oci_model_data_tm_hk_filter_time600.json",
+		"oci/_tpl/oci_model_data_tm_hk_filter_int.json",
+		"oci/_tpl/oci_model_data_tm_hk_filter_int_slice.json"
 	]
 }

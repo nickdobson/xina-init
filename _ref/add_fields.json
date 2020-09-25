@@ -1,0 +1,7 @@
+{
+	"action": "alter",
+	"alter": "database",
+	"database": "",
+	"op": "add_fields",
+	"fields": []
+}

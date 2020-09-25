@@ -1,0 +1,37 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma",
+	"teams"    : {
+		"moma" : {
+			"update" : true,
+			"insert" : true,
+			"trash"  : true
+		}
+	},
+	"database" : {
+		"name"        : "umap",
+		"label"       : "UMAP",
+		"desc"        : "OCI UMAP file database.",
+		"format"      : "{label}",
+		"file_format" : "{name}",
+		"singular"    : "file",
+		"backup"      : true,
+		"file"        : true,
+		"log"         : true,
+		"track"       : true,
+		"trash"       : true,
+		"wall"        : true,
+		"fields"      : [
+			{
+				"name" : "label",
+				"type" : "asciistring(128)",
+				"key"  : true
+			},
+			{
+				"name" : "name",
+				"type" : "asciistring(128)"
+			}
+		]
+	}
+}

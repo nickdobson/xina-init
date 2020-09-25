@@ -1,5 +1,9 @@
 {
-  "alias" : "moma/_alias/moma_etu.json",
+  "alias" : {
+    "model" : "etu",
+    "label" : "ETU Model",
+    "desc"  : "ETU model"
+  },
   "path"  : [
     "moma/_tpl/moma_model.json",
     "moma/_tpl/moma_model_alert_ignore.json",
