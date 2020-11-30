@@ -54,6 +54,16 @@
 				"def"  : "false"
 			},
 			{
+				"name" : "limit",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "pkt",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
 				"name" : "plot",
 				"type" : "jsonobject",
 				"nul"  : true

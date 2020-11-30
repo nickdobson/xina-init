@@ -1,7 +1,7 @@
 {
 	"action"   : "create",
 	"create"   : "database",
-	"parent"   : "moma",
+	"parent"   : "moma.ml",
 	"teams"    : {
 		"moma" : {
 			"update" : true,
@@ -12,7 +12,7 @@
 	"database" : {
 		"name"        : "umap",
 		"label"       : "UMAP",
-		"desc"        : "OCI UMAP file database.",
+		"desc"        : "MOMA UMAP file database.",
 		"format"      : "{label}",
 		"file_format" : "{name}",
 		"singular"    : "file",

@@ -1,0 +1,42 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.ml",
+	"teams"    : {
+		"moma" : {
+			"update" : true,
+			"insert" : true,
+			"trash"  : true
+		}
+	},
+	"database" : {
+		"name"        : "dr_model",
+		"label"       : "DR Models",
+		"desc"        : "MOMA dimensionality reduction model file database.",
+		"format"      : "{label}",
+		"file_format" : "{name}",
+		"singular"    : "file",
+		"backup"      : true,
+		"file"        : true,
+		"log"         : true,
+		"track"       : true,
+		"trash"       : true,
+		"wall"        : true,
+		"fields"      : [
+			{
+				"name" : "label",
+				"type" : "asciistring(128)",
+				"key"  : true
+			},
+			{
+				"name" : "name",
+				"type" : "asciistring(128)"
+			},
+			{
+				"name" : "meta",
+				"type" : "jsonobject",
+				"nul"  : true
+			}
+		]
+	}
+}

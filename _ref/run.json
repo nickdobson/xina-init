@@ -1,6 +1,6 @@
 {
 	"action": "run",
-	"archive": true,
+	"archive": false,
 	"tasks": [
 		{
 			"name" : "",

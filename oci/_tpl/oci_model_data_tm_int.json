@@ -13,6 +13,9 @@
 		"label"   : "Interval",
 		"desc"    : "OCI @{desc} interval database.",
 		"format"  : "{t_start%*us} {pri_id},{sec_id} {label}",
+		"backup"   : true,
+		"log"      : true,
+		"track"    : true,
 		"order"   : [["t_start", "desc"]],
 		"fields"  : [
 			{
