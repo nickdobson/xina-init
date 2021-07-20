@@ -5,17 +5,17 @@
 	"parent"   : "moma.@{model}.data.hk",
 	"database" : {
 		"name"    : "rel",
-		"label"   : "Bin Relative",
-		"desc"    : "MOMA @{desc} relative time binned housekeeping database.",
+		"label"   : "Bin 100s Relative",
+		"desc"    : "MOMA @{desc} relative 100 second time binned housekeeping database.",
 		"format"  : "{t_rel} {Data ID} {SCI Avg} ({SCI Min}, {SCI Max})",
 		"fields"  : [
 			{
 				"name" : "t_utc",
-				"type" : "int(8)"
+				"type" : "instant(us)"
 			},
 			{
 				"name" : "t_rel",
-				"type" : "int(8)"
+				"type" : "duration(us)"
 			},
 			{
 				"name" : "TID",

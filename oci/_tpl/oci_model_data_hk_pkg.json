@@ -9,17 +9,17 @@
 		"desc"        : "OCI @{desc} housekeeping package database.",
 		"file"        : true,
 		"file_format" : "{name}",
-		"format"      : "{t_start%*us} - {t_end%*us} {label}",
+		"format"      : "{t_start%iso_m} - {t_end%iso_m} {label}",
 		"order"       : [["t_start", "desc"], ["name", "asc"]],
 		"fields"      : [
 			{
 				"name" : "t_start",
-				"type" : "int(8)",
+				"type" : "instant(us)",
 				"key"  : true
 			},
 			{
 				"name" : "t_end",
-				"type" : "int(8)",
+				"type" : "instant(us)",
 				"key"  : true
 			},
 			{
@@ -34,11 +34,11 @@
 			},
 			{
 				"name" : "ts_start",
-				"type" : "datetime"
+				"type" : "instant(ms)"
 			},
 			{
 				"name" : "ts_end",
-				"type" : "datetime"
+				"type" : "instant(ms)"
 			},
 			{
 				"name" : "name",

@@ -1,0 +1,10 @@
+{
+  "alias" : {
+    "model" : "etu",
+    "label" : "ETU Model",
+    "desc"  : "ETU model"
+  },
+  "path"  : [
+    "moma/_tpl/moma_model_data_sci_sic.json"
+  ]
+}

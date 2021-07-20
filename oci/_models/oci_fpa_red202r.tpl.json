@@ -1,0 +1,25 @@
+{
+	"alias" : {
+		"model" : "fpa_red202r",
+		"label" : "FPA Red SN202 Respin Model",
+		"desc"  : "FPA red SN202 respin model",
+		"info"  : ""
+	},
+	"path"  : [
+		"oci/_tpl/oci_model.json",
+
+		"oci/_tpl/oci_model_data.json",
+
+		"oci/_tpl/oci_model_data_ins.json",
+
+		"oci/_tpl/oci_model_data_intc.json",
+		"oci/_tpl/oci_model_data_intb.json",
+		"oci/_tpl/oci_model_data_int.json",
+
+		"oci/_tpl/oci_model_data_hk.json",
+		"oci/_tpl/oci_model_data_hk_pkg.json",
+		"oci/_tpl/oci_model_data_hk_full,indexed.json",
+		"oci/_tpl/oci_model_data_hk_int.json",
+		"oci/_tpl/oci_model_data_hk_time.json"
+	]
+}

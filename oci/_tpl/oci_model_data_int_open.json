@@ -1,0 +1,34 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.@{model}.data",
+	"database" : {
+		"name"   : "int_open",
+		"label"  : "Open Intervals",
+		"desc"   : "OCI @{desc} open intervals database.",
+		"format" : "{t_id}",
+		"order"  : [["t_id", "desc"]],
+		"fields" : [
+			{
+				"name" : "t_id",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "crc32_open",
+				"type" : "int(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "crc32_close",
+				"type" : "int(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "data",
+				"type" : "utf8text"
+			}
+		]
+	}
+}

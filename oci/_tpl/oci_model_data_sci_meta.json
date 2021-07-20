@@ -11,7 +11,7 @@
 		"fields"  : [
 			{
 				"name" : "t",
-				"type" : "int(8)"
+				"type" : "instant(us)"
 			},
 			{
 				"name" : "name",

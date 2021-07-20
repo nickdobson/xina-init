@@ -1,0 +1,36 @@
+{
+  "alias" : {
+    "model" : "tb",
+    "label" : "Testbed Model",
+    "desc"  : "testbed model"
+  },
+  "path"  : [
+    "moma/_tpl/moma_model.json",
+    "moma/_tpl/moma_model_alert_ignore.json",
+    "moma/_tpl/moma_model_anno.json",
+    "moma/_tpl/moma_model_component.json",
+    "moma/_tpl/moma_model_config.json",
+    "moma/_tpl/moma_model_journal.json",
+    "moma/_tpl/moma_model_meta.json",
+    "moma/_tpl/moma_model_ql.json",
+    "moma/_tpl/moma_model_tm.json",
+    "moma/_tpl/moma_model_data.json",
+    "moma/_tpl/moma_model_data_mk.json",
+    "moma/_tpl/moma_model_data_msg.json",
+    "moma/_tpl/moma_model_data_rover.json",
+    "moma/_tpl/moma_model_data_hk.json",
+    "moma/_tpl/moma_model_data_hk_full.json",
+    "moma/_tpl/moma_model_data_hk_mk.json",
+    "moma/_tpl/moma_model_data_hk_rel.json",
+    "moma/_tpl/moma_model_data_hk_rel1.json",
+    "moma/_tpl/moma_model_data_hk_utc.json",
+    "moma/_tpl/moma_model_data_hk_utc1.json",
+    "moma/_tpl/moma_model_data_hk_tid.json",
+    "moma/_tpl/moma_model_data_sci.json",
+    "moma/_tpl/moma_model_data_sci_file.json",
+    "moma/_tpl/moma_model_data_sci_laser.json",
+    "moma/_tpl/moma_model_data_sci_ldi.json",
+    "moma/_tpl/moma_model_data_sci_scan.json",
+    "moma/_tpl/moma_model_data_sci_sic.json"
+  ]
+}

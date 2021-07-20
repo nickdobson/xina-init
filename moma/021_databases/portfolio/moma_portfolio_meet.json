@@ -7,7 +7,7 @@
 		"label"     : "Meeting Definitions",
 		"desc"      : "MOMA portfolio meeting definitions.",
 		"format"    : "{mid} {label}",
-		"singular"  : "check",
+		"singular"  : "field",
 		"backup"    : true,
 		"link"      : true,
 		"log"       : true,
@@ -38,6 +38,11 @@
 				"name" : "deprecated",
 				"type" : "boolean",
 				"def"  : "false"
+			},
+			{
+				"name" : "conf",
+				"type" : "jsonobject",
+				"nul"  : true
 			}
 		]
 	}

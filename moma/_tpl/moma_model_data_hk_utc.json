@@ -6,16 +6,16 @@
 	"database" : {
 		"name"    : "utc",
 		"label"   : "Bin UTC",
-		"desc"    : "MOMA @{desc} UTC time binned housekeeping database.",
+		"desc"    : "MOMA @{desc} UTC 100s time binned housekeeping database.",
 		"format"  : "{t_rel} {Data ID} {SCI Avg} ({SCI Min}, {SCI Max})",
 		"fields"  : [
 			{
 				"name" : "t_utc",
-				"type" : "int(8)"
+				"type" : "instant(us)"
 			},
 			{
 				"name" : "t_rel",
-				"type" : "int(8)"
+				"type" : "duration(us)"
 			},
 			{
 				"name" : "TID",

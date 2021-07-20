@@ -1,0 +1,60 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.def",
+	"database" : {
+		"name"     : "trend",
+		"label"    : "Trend",
+		"desc"     : "OCI housekeeping trending database.",
+		"format"   : "{name}",
+		"singular" : "trend",
+		"backup"   : true,
+		"log"      : true,
+		"track"    : true,
+		"trash"    : true,
+		"wall"     : true,
+		"order"    : ["name"],
+		"fields"   : [
+			{
+				"name" : "name",
+				"type" : "asciistring(32)",
+				"key"  : true
+			},
+			{
+				"name" : "profiles",
+				"type" : "set(asciistring(32))"
+			},
+			{
+				"name" : "t",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
+				"name" : "intervals",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
+				"name" : "plot",
+				"type" : "jsonobject",
+				"nul"  : true
+			},
+			{
+				"name" : "disable_filter",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "bin_count",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "desc",
+				"type" : "utf8text",
+				"nul"  : true
+			}
+		]
+	}
+}

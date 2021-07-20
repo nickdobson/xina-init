@@ -1,0 +1,21 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "dev",
+	"teams"    : ["mag"],
+	"database" : {
+		"name"   : "sign",
+		"label"  : "Sign Tests",
+		"desc"   : "Database for signature tests.",
+		"format" : "{key}",
+		"track"  : true,
+		"sign"   : true,
+		"fields" : [
+			{
+				"name" : "key",
+				"type" : "int(8)",
+				"key"  : true
+			}
+		]
+	}
+}

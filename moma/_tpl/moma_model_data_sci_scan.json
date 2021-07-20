@@ -369,6 +369,14 @@
 				"name" : "Sd Laser Energy",
 				"type" : "float(4)",
 				"nul"  : true
+			},
+			{
+				"name" : "byte_index",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "byte_len",
+				"type" : "int(4)"
 			}
 		]
 	}

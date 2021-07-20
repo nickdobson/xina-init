@@ -1,0 +1,85 @@
+{
+    "action"   : "create",
+    "create"   : "database",
+    "parent"   : "oci.debug",
+    "database" : {
+        "name"   : "types",
+        "label"  : "New Data Type Tests",
+        "desc"   : "Database for testing field types.",
+        "format" : "{key}",
+        "fields" : [
+            {
+                "name" : "key",
+                "type" : "int(8)",
+                "key" : true
+            },
+            {
+                "name" : "notification level",
+                "type" : "notification_level"
+            },
+            {
+                "name" : "notification level nullable",
+                "type" : "notification_level",
+                "nul"  : true
+            },
+            {
+                "name" : "notification type",
+                "type" : "notification_type"
+            },
+            {
+                "name" : "post level",
+                "type" : "post_level"
+            },
+            {
+                "name" : "post type",
+                "type" : "post_type"
+            },
+            {
+                "name" : "request status",
+                "type" : "request_status"
+            },
+            {
+                "name" : "subscription level",
+                "type" : "subscription_level"
+            },
+            {
+                "name" : "list(int4)",
+                "type" : "list(int(4))"
+            },
+            {
+                "name" : "set(int4)",
+                "type" : "set(int(4))"
+            },
+            {
+                "name" : "list(int4) nullable",
+                "type" : "list(int(4))",
+                "nul"  : true
+            },
+            {
+                "name" : "set(int4) nullable",
+                "type" : "set(int(4))",
+                "nul"  : true
+            },
+            {
+                "name" : "list(string)",
+                "type" : "list(utf8string(64))"
+            },
+            {
+                "name" : "set(string)",
+                "type" : "set(utf8string(64))"
+            },
+            {
+                "name" : "list(post type)",
+                "type" : "list(post_type)"
+            },
+            {
+                "name" : "set(post type)",
+                "type" : "set(post_type)"
+            },
+            {
+                "name" : "set(post level)",
+                "type" : "set(post_level)"
+            }
+        ]
+    }
+}

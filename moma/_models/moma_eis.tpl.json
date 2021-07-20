@@ -21,7 +21,9 @@
     "moma/_tpl/moma_model_data_hk_full.json",
     "moma/_tpl/moma_model_data_hk_mk.json",
     "moma/_tpl/moma_model_data_hk_rel.json",
-    "moma/_tpl/moma_model_data_hk_tid.json",
-    "moma/_tpl/moma_model_data_hk_utc.json"
+    "moma/_tpl/moma_model_data_hk_rel1.json",
+    "moma/_tpl/moma_model_data_hk_utc.json",
+    "moma/_tpl/moma_model_data_hk_utc1.json",
+    "moma/_tpl/moma_model_data_hk_tid.json"
   ]
 }

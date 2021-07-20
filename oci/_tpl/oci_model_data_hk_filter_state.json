@@ -1,0 +1,35 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.@{model}.data.hk.filter",
+	"database" : {
+		"name"        : "state",
+		"label"       : "State",
+		"desc"        : "OCI @{desc} housekeeping filter state database.",
+		"format"      : "{t_id} {filter_id}",
+		"singular"    : "state",
+		"order"       : [["t_id", "desc"], ["filter_id", "asc"]],
+		"fields"      : [
+			{
+				"name" : "t_id",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "filter_id",
+				"type" : "int(4)",
+				"key"  : true
+			},
+			{
+				"name" : "t_start",
+				"type" : "instant(us)"
+			},
+			{
+				"name" : "t_end",
+				"type" : "instant(us)",
+				"nul"  : true
+			}
+		]
+	}
+}

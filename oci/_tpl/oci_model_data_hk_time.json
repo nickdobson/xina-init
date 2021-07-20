@@ -1,0 +1,57 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.@{model}.data.hk",
+	"database" : {
+		"name"    : "time",
+		"label"   : "Bin Time",
+		"desc"    : "OCI @{desc} time binned housekeeping database.",
+		"format"  : "{t} {duration} {hk_id} {avg} ({min}, {max})",
+		"fields"  : [
+			{
+				"name" : "t",
+				"type" : "instant(us)"
+			},
+			{
+				"name" : "t_min",
+				"type" : "instant(us)"
+			},
+			{
+				"name" : "t_max",
+				"type" : "instant(us)"
+			},
+			{
+				"name" : "duration",
+				"type" : "duration(s)"
+			},
+			{
+				"name" : "hk_id",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "samples",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "avg",
+				"type" : "float(8)"
+			},
+			{
+				"name" : "min",
+				"type" : "float(8)"
+			},
+			{
+				"name" : "max",
+				"type" : "float(8)"
+			},
+			{
+				"name" : "std",
+				"type" : "float(8)"
+			}
+		],
+		"indexes" : [
+			["duration", "hk_id", "t_min"]
+		]
+	}
+}

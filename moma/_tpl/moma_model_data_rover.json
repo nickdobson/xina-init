@@ -1,0 +1,49 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["moma"],
+	"parent"   : "moma.@{model}.data",
+	"database" : {
+		"name"    : "rover",
+		"label"   : "Rover Status",
+		"desc"    : "MOMA @{desc} rover status database.",
+		"format"  : "{TID} {t_rel} {Carousel Station ID}",
+		"fields"  : [
+			{
+				"name" : "TID",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "t_utc",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "t_rel",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "Carousel Angle",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "Carousel Station ID",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "Tapping Station Permitted",
+				"type" : "boolean"
+			},
+			{
+				"name" : "Laser Fire Permitted",
+				"type" : "boolean"
+			}
+		],
+		"indexes" : [
+			["t_utc"],
+			["t_rel"],
+			["TID", "Carousel Station ID"]
+		]
+	}
+}

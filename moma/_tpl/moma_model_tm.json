@@ -541,6 +541,16 @@
 				"nul"  : true
 			},
 			{
+				"name" : "HK Bin UTC 1s",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "HK Bin Relative 1s",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
 				"name" : "HK Bin Marker",
 				"type" : "int(4)",
 				"nul"  : true

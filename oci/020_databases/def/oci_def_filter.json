@@ -35,6 +35,20 @@
 				"type" : "asciistring"
 			},
 			{
+				"name" : "shift_start_time",
+				"type" : "float(8)",
+				"nul"  : true,
+				"meas" : "time",
+				"unit" : "s"
+			},
+			{
+				"name" : "shift_end_time",
+				"type" : "float(8)",
+				"nul"  : true,
+				"meas" : "time",
+				"unit" : "s"
+			},
+			{
 				"name" : "desc",
 				"type" : "utf8text",
 				"nul"  : true

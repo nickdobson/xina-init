@@ -1,0 +1,10 @@
+{
+  "alias" : {
+    "model" : "fm",
+    "label" : "Flight Model",
+    "desc"  : "flight model"
+  },
+  "path"  : [
+    "moma/_tpl/moma_model_data_sci_sic.json"
+  ]
+}

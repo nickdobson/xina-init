@@ -79,6 +79,11 @@
 				"nul"  : true
 			},
 			{
+				"name" : "disable_filter",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
 				"name" : "markers",
 				"type" : "asciistring",
 				"nul"  : true

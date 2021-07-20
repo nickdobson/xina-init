@@ -1,0 +1,19 @@
+{
+	"alias" : [
+		"lisa/_alias/lisa_demo.json",
+		{
+			"model_name"  : "example",
+			"model_label" : "Example",
+			"model_desc"  : "example",
+			"model_info"  : ""
+		}
+	],
+	"path"  : [
+		"_tpl/pro_cat_model.json",
+		"_tpl/pro_cat_model_data.json",
+		"_tpl/pro_cat_model_data_ins.json",
+		"_tpl/pro_cat_model_data_int.json",
+		"_tpl/pro_cat_model_data_hk.json",
+		"_tpl/pro_cat_model_data_hk_full,name.json"
+	]
+}

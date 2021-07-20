@@ -12,7 +12,7 @@
 		"name"    : "intb",
 		"label"   : "Interval Backup",
 		"desc"    : "OCI @{desc} interval backup database.",
-		"format"  : "{t_start%*us} {pri_id},{sec_id} {label}",
+		"format"  : "{t_start%iso_m} {pri_id},{sec_id} {label}",
 		"order"   : [["t_start", "desc"]],
 		"fields"  : [
 			{
@@ -33,15 +33,15 @@
 			},
 			{
 				"name" : "t_start",
-				"type" : "int(8)"
+				"type" : "instant(us)"
 			},
 			{
 				"name" : "t_end",
-				"type" : "int(8)"
+				"type" : "instant(us)"
 			},
 			{
 				"name" : "duration",
-				"type" : "int(8)"
+				"type" : "duration(us)"
 			},
 			{
 				"name" : "type",

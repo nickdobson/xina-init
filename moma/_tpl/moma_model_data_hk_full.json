@@ -11,15 +11,15 @@
 		"fields"  : [
 			{
 				"name" : "t_utc",
-				"type" : "int(8)"
+				"type" : "instant(us)"
 			},
 			{
 				"name" : "t_rel",
-				"type" : "int(8)"
+				"type" : "duration(us)"
 			},
 			{
 				"name" : "dt",
-				"type" : "int(8)"
+				"type" : "duration(us)"
 			},
 			{
 				"name" : "TID",

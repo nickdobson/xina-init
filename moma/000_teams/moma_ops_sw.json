@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "moma_ops_sw",
+		"label"               : "MOMA Ops Software",
+		"desc"                : "Software approval team for MOMA operations.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply"]
+	}
+}

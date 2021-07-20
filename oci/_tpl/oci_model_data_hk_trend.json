@@ -14,25 +14,44 @@
 		"fields"      : [
 			{
 				"name" : "label",
-				"type" : "utf8string(64)",
+				"type" : "utf8vstring(64)",
 				"key"  : true
 			},
 			{
+				"name" : "trend",
+				"type" : "utf8vstring(64)"
+			},
+			{
 				"name" : "name",
-				"type" : "utf8string(128)"
+				"type" : "utf8vstring(128)"
 			},
 			{
-				"name" : "ids",
-				"type" : "asciistring"
+				"name" : "profiles",
+				"type" : "set(asciistring(32))"
 			},
 			{
-				"name" : "profile",
-				"type" : "asciistring(32)",
+				"name" : "t",
+				"type" : "jsonarray",
 				"nul"  : true
 			},
 			{
-				"name" : "version",
-				"type" : "int(2)",
+				"name" : "intervals",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
+				"name" : "plot",
+				"type" : "jsonobject",
+				"nul"  : true
+			},
+			{
+				"name" : "disable_filter",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "bin_count",
+				"type" : "int(4)",
 				"nul"  : true
 			},
 			{
@@ -43,7 +62,7 @@
 		],
 		"indexes" : [
 			["label"],
-			["profile", "version"]
+			["trend"]
 		]
 	}
 }

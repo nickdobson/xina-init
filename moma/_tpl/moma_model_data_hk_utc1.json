@@ -1,0 +1,50 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["moma"],
+	"parent"   : "moma.@{model}.data.hk",
+	"database" : {
+		"name"    : "utc1",
+		"label"   : "Bin 1s UTC",
+		"desc"    : "MOMA @{desc} UTC 1 second time binned housekeeping database.",
+		"format"  : "{t_rel} {Data ID} {SCI Avg} ({SCI Min}, {SCI Max})",
+		"fields"  : [
+			{
+				"name" : "t_utc",
+				"type" : "instant(us)"
+			},
+			{
+				"name" : "t_rel",
+				"type" : "duration(us)"
+			},
+			{
+				"name" : "TID",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "Data ID",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "Samples",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "SCI Avg",
+				"type" : "float(8)"
+			},
+			{
+				"name" : "SCI Min",
+				"type" : "float(8)"
+			},
+			{
+				"name" : "SCI Max",
+				"type" : "float(8)"
+			}
+		],
+		"indexes" : [
+			["t_utc", "Data ID", "Samples"],
+			["TID", "Data ID", "Samples"]
+		]
+	}
+}

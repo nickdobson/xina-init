@@ -22,8 +22,12 @@
 				"type" : "int(8)"
 			},
 			{
-				"name" : "Range",
-				"type" : "float(4)"
+				"name" : "Min",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "Max",
+				"type" : "int(4)"
 			},
 			{
 				"name" : "SIC",
@@ -37,7 +41,8 @@
 		],
 		"indexes" : [
 			["TID"],
-			["USID", "Range", "SIC"]
+			["USID", "Min", "Max"],
+			["Min", "Max"]
 		]
 	}
 }

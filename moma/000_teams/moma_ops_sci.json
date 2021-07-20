@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "moma_ops_sci",
+		"label"               : "MOMA Ops Science",
+		"desc"                : "Science approval team for MOMA operations.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply"]
+	}
+}

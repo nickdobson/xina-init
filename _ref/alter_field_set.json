@@ -1,0 +1,8 @@
+{
+	"action": "alter",
+	"alter": "field",
+	"database": "",
+	"field": "",
+	"op": "set",
+	"set": {}
+}

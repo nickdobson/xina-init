@@ -3,7 +3,7 @@
 	"create" : "group",
 	"group"  : {
 		"name"  : "dev",
-        "label" : "Development",
+		"label" : "Development",
 		"desc"  : "Group for development purposes."
 	}
 }

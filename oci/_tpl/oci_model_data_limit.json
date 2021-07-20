@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["oci"],
+	"parent" : "oci.@{model}.data",
+	"group"  : {
+		"name"  : "limit",
+		"label" : "Limit",
+		"desc"  : "OCI @{desc} limit telemetry data group."
+	}
+}

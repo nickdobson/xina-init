@@ -34,6 +34,11 @@
 				"nul"  : true
 			},
 			{
+				"name" : "Ignore",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
 				"name" : "Label",
 				"type" : "utf8string(64)"
 			},

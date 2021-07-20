@@ -1,0 +1,94 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : {
+		"oci" : {
+			"update" : true,
+			"insert" : true
+		}
+	},
+	"parent"   : "oci.@{model}.data",
+	"database" : {
+		"name"    : "intc",
+		"label"   : "Interval Copy",
+		"desc"    : "OCI @{desc} interval copy database.",
+		"format"  : "{t_start%iso_m} {pri_id},{sec_id} {label}",
+		"backup"   : true,
+		"log"      : true,
+		"track"    : true,
+		"order"   : [["t_start", "desc"]],
+		"fields"  : [
+			{
+				"name" : "label",
+				"type" : "utf8string(64)"
+			},
+			{
+				"name" : "pri_id",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "sec_id",
+				"type" : "int(2)"
+			},
+			{
+				"name" : "t_start",
+				"type" : "instant(us)"
+			},
+			{
+				"name" : "t_end",
+				"type" : "instant(us)"
+			},
+			{
+				"name" : "duration",
+				"type" : "duration(us)"
+			},
+			{
+				"name" : "meta",
+				"type" : "json",
+				"nul"  : true
+			},
+			{
+				"name" : "t_id_start",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "t_id_end",
+				"type" : "int(4)",
+				"nul"  : true
+			},
+			{
+				"name" : "u_int_id",
+				"type" : "int(8)",
+				"key"  : true
+ 			},
+			{
+				"name" : "int_id",
+				"type" : "int(8)"
+			},
+			{
+				"name" : "type",
+				"type" : "int(1)",
+				"def"  : "0"
+			},
+			{
+				"name" : "quality",
+				"type" : "int(1)",
+				"def"  : "0"
+			},
+			{
+				"name" : "desc",
+				"type" : "utf8text",
+				"nul"  : true
+			}
+		],
+		"indexes" : [
+			["t_id_end"],
+			["t_start", "t_end"],
+			["type", "t_start", "t_end"],
+			["u_int_id"],
+			["int_id"],
+			["pri_id", "sec_id"]
+		]
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"alias" : [
+		"dragonfly/_alias/dfly_thanos.json",
+		{
+			"model_name"  : "etu",
+			"model_label" : "ETU",
+			"model_desc"  : "ETU",
+			"model_info"  : ""
+		}
+	],
+	"path"  : [
+		"_tpl/pro_cat_model.json",
+		"_tpl/pro_cat_model_data.json",
+		"_tpl/pro_cat_model_data_ins.json",
+		"_tpl/pro_cat_model_data_int.json",
+		"_tpl/pro_cat_model_data_hk.json",
+		"_tpl/pro_cat_model_data_hk_full,name.json"
+	]
+}

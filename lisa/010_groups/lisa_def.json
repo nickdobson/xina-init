@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["lisa"],
+	"parent" : "lisa",
+	"group"  : {
+		"name"  : "def",
+		"label" : "Definitions",
+		"desc"  : "LISA definitions group."
+	}
+}

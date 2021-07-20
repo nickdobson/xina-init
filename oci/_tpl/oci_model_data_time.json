@@ -1,0 +1,29 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.@{model}.data",
+	"database" : {
+		"name"   : "time",
+		"label"  : "Time",
+		"desc"   : "OCI @{desc} time database.",
+		"format" : "{t}, g:{t_g}, s:{t_s}",
+		"fields" : [
+			{
+				"name" : "t",
+				"type" : "instant(us)",
+				"key"  : true
+			},
+			{
+				"name" : "t_g",
+				"type" : "instant(us)",
+				"nul"  : true
+			},
+			{
+				"name" : "t_s",
+				"type" : "instant(us)",
+				"nul"  : true
+			}
+		]
+	}
+}

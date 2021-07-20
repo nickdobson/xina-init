@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["dfly"],
+	"parent" : "dfly",
+	"group"  : {
+		"name"  : "def",
+		"label" : "Definitions",
+		"desc"  : "Dragonfly definitions group."
+	}
+}

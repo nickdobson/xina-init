@@ -1,0 +1,5 @@
+{
+	"action"   : "drop",
+	"drop"     : "database",
+	"database" : "moma.fm.data.sci.sic"
+}
