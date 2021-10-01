@@ -1,0 +1,42 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["@{project_name}"],
+	"parent"   : "@{project_name}.@{category_name}.@{model_name}.data.hk",
+	"database" : {
+		"name"        : "file",
+		"label"       : "File",
+		"desc"        : "@{project_desc} @{category_desc} @{model_desc} housekeeping file database.",
+		"format"      : "{t} {name}",
+		"file_format" : "{file_name}",
+		"singular"    : "file",
+		"file"        : true,
+		"fields"      : [
+			{
+				"name" : "t",
+				"type" : "instant(us)"
+			},
+			{
+				"name" : "duration",
+				"type" : "duration(us)"
+			},
+			{
+				"name" : "name",
+				"type" : "asciivstring(32)"
+			},
+			{
+				"name" : "file_name",
+				"type" : "utf8vstring(128)"
+			},
+			{
+				"name" : "meta",
+				"type" : "jsonobject",
+				"nul"  : true
+			}
+		],
+		"indexes"     : [
+			["t"],
+			["name", "t"]
+		]
+	}
+}

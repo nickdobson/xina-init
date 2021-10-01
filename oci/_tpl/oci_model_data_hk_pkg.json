@@ -10,7 +10,7 @@
 		"file"        : true,
 		"file_format" : "{name}",
 		"format"      : "{t_start%iso_m} - {t_end%iso_m} {label}",
-		"order"       : [["t_start", "desc"], ["name", "asc"]],
+		"order"       : [["generated", "desc"], ["name", "asc"]],
 		"fields"      : [
 			{
 				"name" : "t_start",
@@ -97,6 +97,10 @@
 				"name" : "version",
 				"type" : "int(2)",
 				"nul"  : true
+			},
+			{
+				"name" : "generated",
+				"type" : "instant(ms)"
 			},
 			{
 				"name" : "desc",

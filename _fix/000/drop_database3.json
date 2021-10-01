@@ -1,5 +1,0 @@
-{
-	"action"   : "drop",
-	"drop"     : "database",
-	"database" : "moma.sim.data.sci.sic"
-}

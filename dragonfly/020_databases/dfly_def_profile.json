@@ -1,0 +1,50 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["dfly"],
+	"parent"   : "dfly.def",
+	"database" : {
+		"name"     : "profile",
+		"label"    : "Profile",
+		"desc"     : "Dragonfly housekeeping profile definitions database.",
+		"format"   : "{name}",
+		"singular" : "profile",
+		"backup"   : true,
+		"link"     : true,
+		"log"      : true,
+		"tag"      : true,
+		"track"    : true,
+		"trash"    : true,
+		"fields"   : [
+			{
+				"name"  : "name",
+				"label" : "Name",
+				"type"  : "asciivstring(32)",
+				"key"   : true
+			},
+			{
+				"name"  : "notes",
+				"label" : "Notes",
+				"type"  : "utf8text",
+				"nul"   : true
+			},
+			{
+				"name"  : "models",
+				"label" : "Models",
+				"type"  : "set(asciivstring(32))",
+				"nul"   : true
+			},
+			{
+				"name"  : "data_conf",
+				"label" : "Data Conf",
+				"type"  : "jsonobject"
+			},
+			{
+				"name"  : "plot_conf",
+				"label" : "Plot Conf",
+				"type"  : "jsonobject",
+				"nul"   : true
+			}
+		]
+	}
+}

@@ -51,6 +51,16 @@
 				"nul"  : true
 			},
 			{
+				"name" : "models",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
+				"name" : "daily",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
 				"name" : "desc",
 				"type" : "utf8text",
 				"nul"  : true

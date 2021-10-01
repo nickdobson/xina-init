@@ -1,0 +1,44 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["dfly"],
+	"parent"   : "dfly.def",
+	"database" : {
+		"name"     : "plot",
+		"label"    : "Plot Conf",
+		"desc"     : "Dragonfly housekeeping plot configuration definitions database.",
+		"format"   : "{Name}",
+		"singular" : "plot conf",
+		"backup"   : true,
+		"link"     : true,
+		"log"      : true,
+		"tag"      : true,
+		"track"    : true,
+		"trash"    : true,
+		"fields"   : [
+			{
+				"name"  : "name",
+				"label" : "Name",
+				"type"  : "asciivstring(32)",
+				"key"   : true
+			},
+			{
+				"name"  : "notes",
+				"label" : "Notes",
+				"type"  : "utf8text",
+				"nul"   : true
+			},
+			{
+				"name"  : "models",
+				"label" : "Models",
+				"type"  : "set(asciivstring(32))",
+				"nul"   : true
+			},
+			{
+				"name"  : "plot_conf",
+				"label" : "Plot Conf",
+				"type"  : "jsonobject"
+			}
+		]
+	}
+}

@@ -7,7 +7,7 @@
 		"name"    : "full",
 		"label"   : "Full",
 		"desc"    : "@{project_desc} @{category_desc} @{model_desc} full housekeeping database.",
-		"format"  : "{t} {label} {value}",
+		"format"  : "{t} {name} {value}",
 		"fields"  : [
 			{
 				"name" : "t",

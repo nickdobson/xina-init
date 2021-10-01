@@ -94,6 +94,11 @@
 				"nul"  : true
 			},
 			{
+				"name" : "daily",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
 				"name" : "axes",
 				"type" : "jsonarray",
 				"nul"  : true
