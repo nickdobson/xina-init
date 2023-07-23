@@ -1,0 +1,6 @@
+{
+	"alias" : "hermes/_alias/hermes.json",
+	"path"  : [
+		"_tpl/pro_def_profile.json"
+	]
+}

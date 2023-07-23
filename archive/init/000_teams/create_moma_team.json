@@ -1,8 +1,0 @@
-{
-	"action":"create",
-	"create":"team",
-	"team": {
-		"name":"MOMA",
-		"desc":"Primary team for the Mars Organic Molecule Analyzer (MOMA) mission."
-	}
-}

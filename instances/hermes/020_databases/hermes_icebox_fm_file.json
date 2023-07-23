@@ -1,0 +1,41 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["hermes", "hermes_dev"],
+	"parent"   : "hermes.icebox.fm",
+	"database" : {
+		"name"        : "file",
+		"label"       : "Files",
+		"desc"        : "HERMES ICEBOX FM files database.",
+		"file"        : true,
+		"backup"    : true,
+		"link"      : true,
+		"log"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"file_format" : "{name}",
+		"format"      : "{name}",
+		"order"       : [["name", "desc"]],
+		"fields"      : [
+			{
+				"name"  : "name",
+				"label" : "Name",
+				"type"  : "utf8vstring(128)",
+				"key": true
+			},
+			{
+				"name"  : "desc",
+				"label" : "Description",
+				"type"  : "utf8text",
+				"nul"   : true
+			},
+			{
+				"name"  : "meta",
+				"label" : "Meta",
+				"type"  : "jsonobject",
+				"nul"   : true
+			}
+		]
+	}
+}

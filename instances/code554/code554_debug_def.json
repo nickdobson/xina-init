@@ -1,0 +1,7 @@
+{
+	"action"         : "struct_create",
+	"create"         : "def",
+	"parent"         : "code554.debug",
+	"group_teams"    : ["code554", "code554_dev"],
+	"database_teams" : ["code554", "code554_dev"]
+}

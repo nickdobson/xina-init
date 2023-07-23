@@ -1,0 +1,9 @@
+{
+	"action"         : "struct_create",
+	"create"         : "origin",
+	"model"          : "dragonsqrl.debug",
+	"name"           : "df",
+	"label"          : "Default",
+	"group_teams"    : ["dragonsqrl", "dragonsqrl_dev"],
+	"database_teams" : ["dragonsqrl", "dragonsqrl_dev"]
+}

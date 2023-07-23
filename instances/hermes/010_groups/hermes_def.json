@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["hermes"],
+	"parent" : "hermes",
+	"group"  : {
+		"name"  : "def",
+		"label" : "Definitions",
+		"desc"  : "HERMES definitions group."
+	}
+}

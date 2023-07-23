@@ -1,0 +1,9 @@
+{
+	"action" : "struct_create",
+	"create" : "category",
+	"parent" : "hermes",
+	"teams"  : ["hermes", "hermes_dev"],
+	"name"   : "icebox",
+	"label"  : "ICEBOX",
+	"desc"   : "ICEBOX"
+}

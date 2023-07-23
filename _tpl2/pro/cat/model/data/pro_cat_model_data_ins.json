@@ -14,9 +14,12 @@
 		"desc"    : "@{project_desc} @{category_desc} @{model_desc} instant database.",
 		"format"  : "{t} {p_id},{s_id} {label}",
 		"order"   : [["t", "desc"]],
+		"objects" : {
+			"xs_model_ins" : {}
+		},
 		"fields"  : [
 			{
-				"name"  : "u_id",
+				"name"  : "uuid",
 				"label" : "UUID",
 				"type"  : "uuid"
 			},
@@ -28,7 +31,7 @@
 			{
 				"name"  : "s_id",
 				"label" : "Secondary ID",
-				"type"  : "int(4)"
+				"type"  : "int(8)"
 			},
 			{
 				"name"  : "t",
@@ -72,10 +75,11 @@
 			}
 		],
 		"indexes" : [
-			["u_id"],
+			["uuid"],
 			["t"],
 			["type", "t"],
-			["p_id", "t"]
+			["p_id", "t"],
+			["label"]
 		]
 	}
 }

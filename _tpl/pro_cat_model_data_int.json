@@ -12,58 +12,80 @@
 		"name"    : "int",
 		"label"   : "Interval",
 		"desc"    : "@{project_desc} @{category_desc} @{model_desc} interval database.",
-		"format"  : "{t_start%*us} {int_id},{sec_id} {label}",
+		"format"  : "{t_start} {p_id},{s_id} {label}",
 		"order"   : [["t_start", "desc"]],
 		"fields"  : [
 			{
-				"name" : "u_int_id",
-				"type" : "uuid"
+				"name"  : "u_id",
+				"label" : "UUID",
+				"type"  : "uuid"
 			},
 			{
-				"name" : "int_id",
-				"type" : "int(8)"
+				"name"  : "p_id",
+				"label" : "Primary ID",
+				"type"  : "int(8)"
 			},
 			{
-				"name" : "sec_id",
-				"type" : "int(2)"
+				"name"  : "s_id",
+				"label" : "Secondary ID",
+				"type"  : "int(4)"
 			},
 			{
-				"name" : "t_start",
-				"type" : "int(8)"
+				"name"  : "t_start",
+				"label" : "Start Time",
+				"type"  : "instant(us)"
 			},
 			{
-				"name" : "t_end",
-				"type" : "int(8)"
+				"name"  : "t_end",
+				"label" : "End Time",
+				"type"  : "instant(us)"
 			},
 			{
-				"name" : "duration",
-				"type" : "int(8)"
+				"name"  : "duration",
+				"label" : "Duration",
+				"type"  : "duration(us)"
 			},
 			{
-				"name" : "type",
-				"type" : "int(1)",
-				"def"  : "0"
+				"name"  : "type",
+				"label" : "Type",
+				"type"  : "int(2)",
+				"def"   : "0"
 			},
 			{
-				"name" : "label",
-				"type" : "utf8string(64)"
+				"name"  : "level",
+				"label" : "Level",
+				"type"  : "int(1)",
+				"def"   : "0"
 			},
 			{
-				"name" : "desc",
-				"type" : "utf8text",
-				"nul"  : true
+				"name"  : "label",
+				"label" : "Label",
+				"type"  : "utf8vstring(128)"
 			},
 			{
-				"name" : "meta",
-				"type" : "json",
-				"nul"  : true
+				"name"  : "content",
+				"label" : "Content",
+				"type"  : "utf8text",
+				"nul"   : true
+			},
+			{
+				"name"  : "meta",
+				"label" : "Meta",
+				"type"  : "jsonobject",
+				"nul"   : true
+			},
+			{
+				"name"  : "conf",
+				"label" : "Conf",
+				"type"  : "jsonobject",
+				"nul"   : true
 			}
 		],
 		"indexes" : [
+			["u_id"],
 			["t_start", "t_end"],
 			["type", "t_start", "t_end"],
-			["u_int_id"],
-			["int_id", "sec_id"]
+			["p_id", "t_start", "t_end"]
 		]
 	}
 }

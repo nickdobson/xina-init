@@ -1,0 +1,21 @@
+{
+	"alias" : [
+		"lisa/_alias/lisa_trl.json",
+		{
+			"model_name"  : "trl4",
+			"model_label" : "TRL4",
+			"model_desc"  : "TRL4",
+			"model_info"  : ""
+		}
+	],
+	"path"  : [
+		"_tpl/pro_cat_model.json",
+		"_tpl/pro_cat_model_data.json",
+		"_tpl/pro_cat_model_data_ins.json",
+		"_tpl/pro_cat_model_data_insf.json",
+		"_tpl/pro_cat_model_data_int.json",
+		"_tpl/pro_cat_model_data_intf.json",
+		"_tpl/pro_cat_model_data_hk.json",
+		"_tpl/pro_cat_model_data_hk_full,name.json"
+	]
+}

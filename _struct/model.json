@@ -1,0 +1,14 @@
+{
+	"action"         : "struct_create",
+	"create"         : "model",
+	"parent"         : "",
+	"name"           : "",
+	"label"          : "",
+	"buff"           : true,
+	"ins"            : true,
+	"insf"           : true,
+	"int"            : true,
+	"intf"           : true,
+	"group_teams"    : ["", "_dev"],
+	"database_teams" : ["", "_dev"]
+}

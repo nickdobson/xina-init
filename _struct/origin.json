@@ -1,0 +1,11 @@
+{
+	"action"         : "struct_create",
+	"create"         : "origin",
+	"model"          : "",
+	"name"           : "",
+	"label"          : "",
+	"buff"           : true,
+	"group_teams"    : ["", "_dev"],
+	"database_teams" : ["", "_dev"],
+	"partition"      : {"from" : 2020, "to" : 2023}
+}

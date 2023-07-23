@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "code554_dev",
+		"label"               : "Code 554 Developers",
+		"desc"                : "Developer team for the Code 554 XINA instance.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply", "update", "insert", "trash"]
+	}
+}

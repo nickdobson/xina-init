@@ -1,0 +1,6 @@
+{
+"action": "model_buff_import",
+"model": "lisa.debug2.def",
+"origin":"cots",
+"$object_id": "{local}/TRL6_20220621_121533.csv"
+}

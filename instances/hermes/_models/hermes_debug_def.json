@@ -1,0 +1,7 @@
+{
+	"action"         : "struct_create",
+	"create"         : "def",
+	"parent"         : "hermes.debug",
+	"group_teams"    : ["hermes", "hermes_dev"],
+	"database_teams" : ["hermes", "hermes_dev"]
+}

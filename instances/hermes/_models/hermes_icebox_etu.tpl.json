@@ -1,0 +1,23 @@
+{
+	"alias" : [
+		"hermes/_alias/hermes_icebox.json",
+		{
+			"model_name"  : "etu",
+			"model_label" : "ETU",
+			"model_desc"  : "ETU model",
+			"model_info"  : ""
+		}
+	],
+	"path"  : [
+		"_tpl/pro_cat_model.json",
+		"hermes/_tpl/pro_cat_model_tm.json",
+		"_tpl/pro_cat_model_data.json",
+		"_tpl/pro_cat_model_data_ins.json",
+		"_tpl/pro_cat_model_data_insf.json",
+		"_tpl/pro_cat_model_data_int.json",
+		"_tpl/pro_cat_model_data_intf.json",
+		"_tpl/pro_cat_model_data_hk.json",
+		"_tpl/pro_cat_model_data_hk_full,name.json",
+		"_tpl/pro_cat_model_data_hk_file,name.json"
+	]
+}

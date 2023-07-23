@@ -1,0 +1,7 @@
+{
+	"action"         : "struct_create",
+	"create"         : "def",
+	"parent"         : "lisa2",
+	"group_teams"    : ["lisa"],
+	"database_teams" : ["lisa"]
+}

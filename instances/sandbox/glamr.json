@@ -1,0 +1,8 @@
+{
+	"action" : "struct_create",
+	"create" : "project",
+	"teams"  : ["glamr", "glamr_dev"],
+	"name"   : "glamr",
+	"label"  : "GLAMR",
+	"desc"   : "GLAMR"
+}

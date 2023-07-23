@@ -1,0 +1,591 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"parent"   : "moma.portfolio",
+	"database" : {
+		"name"      : "pid",
+		"label"     : "Portfolios",
+		"desc"      : "MOMA portfolio activity manager.",
+		"format"    : "{pid} {name}",
+		"singular"  : "portfolio",
+		"backup"    : true,
+		"link"      : true,
+		"log"       : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"order"     : [["insert_at", "desc"], "pid", "name"],
+		"fields"    : [
+			{
+				"name"  : "pid",
+				"label" : "PID",
+				"type"  : "int(4)",
+				"key"   : true
+			},
+			{
+				"name"  : "name",
+				"label" : "Name",
+				"type"  : "utf8vstring(64)"
+			},
+			{
+				"name"  : "sid",
+				"label" : "SID",
+				"type"  : "int(2)",
+				"def"   : "0"
+			},
+			{
+				"name"  : "stage",
+				"label" : "Stage",
+				"type"  : "utf8vstring(64)"
+			},
+			{
+				"name"  : "abandoned",
+				"label" : "Abandoned",
+				"type"  : "utf8text",
+				"nul"   : true
+			},
+			{
+				"name"    : "type",
+				"label"   : "Type",
+				"type"    : "asciivstring(32)",
+				"nul"     : true,
+				"strict"  : true,
+				"options" : [
+					{"value" : "GCMS"},
+					{"value" : "LDMS"},
+					{"value" : "Baseline"},
+					{"value" : "MS Functional"},
+					{"value" : "Engineering"}
+				]
+			},
+			{
+				"name"  : "context",
+				"label" : "Context",
+				"type"  : "utf8text",
+				"nul"   : true
+			},
+			{
+				"name"  : "description",
+				"label" : "Description",
+				"type"  : "utf8text",
+				"nul"   : true
+			},
+			{
+				"name"  : "heater_test",
+				"label" : "Heater Test",
+				"type"  : "boolean",
+				"nul"   : true
+			},
+			{
+				"name"  : "cdh_speed_test",
+				"label" : "CDH Speed Test",
+				"type"  : "boolean",
+				"nul"   : true
+			},
+			{
+				"name"  : "maif_test",
+				"label" : "MAIF Test",
+				"type"  : "boolean",
+				"nul"   : true
+			},
+			{
+				"name"  : "high_voltage",
+				"label" : "High Voltage",
+				"type"  : "boolean",
+				"nul"   : true
+			},
+			{
+				"name"  : "laser_test",
+				"label" : "Laser Test",
+				"type"  : "int(4)",
+				"nul"   : true,
+				"strict"  : true,
+				"options" : [
+					{"value" : "1", "desc": "EBT"},
+					{"value" : "2", "desc": "Aliveness Only"}
+				]
+			},
+			{
+				"name"  : "gc_test",
+				"label" : "GC Test",
+				"type"  : "int(4)",
+				"nul"   : true,
+				"strict"  : true,
+				"options" : [
+					{"value" : "1", "desc": "EBT"},
+					{"value" : "2", "desc": "Aliveness Only"}
+				]
+			},
+			{
+				"name"  : "seb_test",
+				"label" : "SEB Test",
+				"type"  : "int(4)",
+				"nul"   : true,
+				"strict"  : true,
+				"options" : [
+					{"value" : "1", "desc": "EBT"},
+					{"value" : "2", "desc": "Aliveness Only"}
+				]
+			},
+			{
+				"name"  : "gc_ts_test",
+				"label" : "GC TS Test",
+				"type"  : "int(4)",
+				"nul"   : true,
+				"strict"  : true,
+				"options" : [
+					{"value" : "1", "desc": "TS & Oven"},
+					{"value" : "2", "desc": "TS"},
+					{"value" : "3", "desc": "Oven"}
+				]
+			},
+			{
+				"name"  : "max_energy",
+				"label" : "Maximum Energy",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "energy",
+				"unit"  : "Wh"
+			},
+			{
+				"name"  : "max_duration",
+				"label" : "Maximum Duration",
+				"type"  : "duration(s)",
+				"nul"   : true
+			},
+			{
+				"name"  : "max_data_vol",
+				"label" : "Maximum Data Volume",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "data",
+				"unit"  : "Mbit"
+			},
+			{
+				"name"  : "min_start_temp",
+				"label" : "Minimum Start Temperature",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "temperature",
+				"unit"  : "C"
+			},
+			{
+				"name"  : "max_start_temp",
+				"label" : "Maximum Start Temperature",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "temperature",
+				"unit"  : "C"
+			},
+			{
+				"name"  : "target_samp",
+				"label" : "Target Sample",
+				"type"  : "utf8string",
+				"nul"   : true
+			},
+			{
+				"name"  : "laser_target_spots",
+				"label" : "Laser Target Spots",
+				"type"  : "jsonarray",
+				"nul"   : true
+			},
+			{
+				"name"  : "prop_sol",
+				"label" : "Proposed Sol",
+				"type"  : "int(4)",
+				"nul"   : true
+			},
+			{
+				"name"  : "prop_date",
+				"label" : "Proposed Earth Date",
+				"type"  : "instant(ms)",
+				"nul"   : true
+			},
+			{
+				"name"  : "script_notes",
+				"label" : "Script Notes",
+				"type"  : "utf8text",
+				"nul"   : true
+			},
+			{
+				"name"    : "gcms_col",
+				"label"   : "GCMS Column",
+				"type"    : "int(1)",
+				"nul"     : true,
+				"strict"  : true,
+				"options" : [
+					{"value" : "1"},
+					{"value" : "2"},
+					{"value" : "3"},
+					{"value" : "4"}
+				]
+			},
+			{
+				"name"    : "gcms_trap",
+				"label"   : "GCMS Trap",
+				"type"    : "int(1)",
+				"nul"     : true,
+				"strict"  : true,
+				"options" : [
+					{"value" : "1"},
+					{"value" : "2"}
+				]
+			},
+			{
+				"name"    : "gcms_mode",
+				"label"   : "GCMS Mode",
+				"type"    : "asciivstring(32)",
+				"nul"     : true,
+				"strict"  : true,
+				"options" : [
+					{"value" : "EGA"},
+					{"value" : "Derivitization"},
+					{"value" : "Pyrolosis"}
+				]
+			},
+			{
+				"name"  : "gcms_cup",
+				"label" : "GCMS Cup",
+				"type"  : "int(1)",
+				"nul"   : true
+			},
+			{
+				"name"  : "tb_duration",
+				"label" : "Testbed Duration",
+				"type"  : "duration(s)",
+				"nul"   : true
+			},
+			{
+				"name"  : "tb_energy",
+				"label" : "Testbed Energy",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "energy",
+				"unit"  : "Wh"
+			},
+			{
+				"name"  : "tb_data_vol",
+				"label" : "Testbed Data Volume",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "data",
+				"unit"  : "Mbit"
+			},
+			{
+				"name"  : "rover_activity",
+				"label" : "Rover Activity",
+				"type"  : "asciivstring(64)",
+				"nul"   : true
+			},
+			{
+				"name"  : "target_locs",
+				"label" : "Target Locations",
+				"type"  : "list(int(4))",
+				"nul"   : true
+			},
+			{
+				"name"  : "swis_duration",
+				"label" : "SWIS Duration",
+				"type"  : "duration(s)",
+				"nul"   : true
+			},
+			{
+				"name"  : "swis_energy",
+				"label" : "SWIS Energy",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "energy",
+				"unit"  : "Wh"
+			},
+			{
+				"name"  : "swis_data_vol",
+				"label" : "SWIS Data Volume",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "data",
+				"unit"  : "Mbit"
+			},
+			{
+				"name"  : "flight_duration",
+				"label" : "Flight Duration",
+				"type"  : "duration(s)",
+				"nul"   : true
+			},
+			{
+				"name"  : "flight_energy",
+				"label" : "Flight Energy",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "energy",
+				"unit"  : "Wh"
+			},
+			{
+				"name"  : "flight_data_vol",
+				"label" : "Flight Data Volume",
+				"type"  : "float(8)",
+				"nul"   : true,
+				"meas"  : "data",
+				"unit"  : "Mbit"
+			},
+			{
+				"name"  : "flight_success",
+				"label" : "Flight Success",
+				"type"  : "boolean",
+				"nul"   : true
+			},
+			{
+				"name"  : "sol",
+				"label" : "Sol",
+				"type"  : "int(4)",
+				"nul"   : true
+			},
+			{
+				"name"  : "sol_start_time",
+				"label" : "Sol Start Time",
+				"type"  : "asciivstring(64)",
+				"nul"   : true
+			},
+			{
+				"name"  : "sol_end_time",
+				"label" : "Sol End Time",
+				"type"  : "asciivstring(64)",
+				"nul"   : true
+			},
+			{
+				"name"  : "earth_start_time",
+				"label" : "Earth Start Time",
+				"type"  : "instant(ms)",
+				"nul"   : true
+			},
+			{
+				"name"  : "earth_end_time",
+				"label" : "Earth End Time",
+				"type"  : "instant(ms)",
+				"nul"   : true
+			},
+			{
+				"name"  : "pending_data",
+				"label" : "Pending Data",
+				"type"  : "duration(s)",
+				"nul"   : true
+			},
+			{
+				"name"  : "data_complete",
+				"label" : "Date Complete",
+				"type"  : "boolean",
+				"nul"   : true
+			},
+			{
+				"name"  : "exp_success",
+				"label" : "Experiment Success",
+				"type"  : "boolean",
+				"nul"   : true
+			}
+		],
+		"databases" : [
+			{
+				"name"        : "file",
+				"label"       : "File",
+				"desc"        : "MOMA portfolio files.",
+				"format"      : "{pid} {name}",
+				"file_format" : "{name}",
+				"singular"    : "file",
+				"file"        : true,
+				"log"         : true,
+				"track"       : true,
+				"trash"       : true,
+				"wall"        : true,
+				"order"       : ["pid", "name"],
+				"fields"      : [
+					{
+						"name"  : "pid",
+						"label" : "PID",
+						"type"  : "int(4)",
+						"ref"   : "pid",
+						"key"   : true
+					},
+					{
+						"name"  : "name",
+						"label" : "Name",
+						"type"  : "utf8string(128)",
+						"key"   : true
+					},
+					{
+						"name" : "type",
+						"type" : "utf8string(64)",
+						"nul"  : true
+					},
+					{
+						"name" : "checksum",
+						"type" : "asciistring(16)",
+						"nul"  : true
+					},
+					{
+						"name" : "tc_checksum",
+						"type" : "int(8)",
+						"nul"  : true
+					},
+					{
+						"name"    : "destination",
+						"type"    : "asciivstring(16)",
+						"nul"     : true,
+						"strict"  : true,
+						"options" : [
+							{"value" : "Memory"},
+							{"value" : "EPROM"}
+						]
+					},
+					{
+						"name" : "desc",
+						"type" : "utf8string",
+						"nul"  : true
+					}
+				]
+			},
+			{
+				"name"     : "app_sci",
+				"label"    : "Science Approvals",
+				"desc"     : "MOMA portfolio science approvals.",
+				"format"   : "{pid}",
+				"singular" : "approval",
+				"backup"   : true,
+				"log"      : true,
+				"sign"     : true,
+				"track"    : true,
+				"trash"    : true,
+				"fields"   : [
+					{
+						"name"  : "pid",
+						"label" : "PID",
+						"type"  : "int(4)",
+						"ref"   : "pid"
+					},
+					{
+						"name"  : "sid",
+						"label" : "SID",
+						"type"  : "int(2)"
+					}
+				]
+			},
+			{
+				"name"     : "app_sw",
+				"label"    : "Software Approvals",
+				"desc"     : "MOMA portfolio software approvals.",
+				"format"   : "{pid}",
+				"singular" : "approval",
+				"backup"   : true,
+				"log"      : true,
+				"sign"     : true,
+				"track"    : true,
+				"trash"    : true,
+				"fields"   : [
+					{
+						"name"  : "pid",
+						"label" : "PID",
+						"type"  : "int(4)",
+						"ref"   : "pid"
+					},
+					{
+						"name"  : "sid",
+						"label" : "SID",
+						"type"  : "int(2)"
+					}
+				]
+			},
+			{
+				"name"     : "app_sys",
+				"label"    : "System Approvals",
+				"desc"     : "MOMA portfolio system approvals.",
+				"format"   : "{pid}",
+				"singular" : "approval",
+				"backup"   : true,
+				"log"      : true,
+				"sign"     : true,
+				"track"    : true,
+				"trash"    : true,
+				"fields"   : [
+					{
+						"name"  : "pid",
+						"label" : "PID",
+						"type"  : "int(4)",
+						"ref"   : "pid"
+					},
+					{
+						"name"  : "sid",
+						"label" : "SID",
+						"type"  : "int(2)"
+					}
+				]
+			},
+			{
+				"name"     : "check",
+				"label"    : "Checklists",
+				"desc"     : "MOMA portfolio checklists.",
+				"format"   : "{pid}",
+				"singular" : "checklist",
+				"backup"   : true,
+				"log"      : true,
+				"track"    : true,
+				"trash"    : true,
+				"fields"   : [
+					{
+						"name"  : "pid",
+						"label" : "PID",
+						"type"  : "int(4)",
+						"ref"   : "pid"
+					},
+					{
+						"name"  : "sid",
+						"label" : "SID",
+						"type"  : "int(2)"
+					},
+					{
+						"name"  : "stage",
+						"label" : "Stage",
+						"type"  : "utf8vstring(64)"
+					},
+					{
+						"name"  : "responses",
+						"label" : "Responses",
+						"type"  : "jsonobject"
+					}
+				]
+			},
+			{
+				"name"     : "meet",
+				"label"    : "Meetings",
+				"desc"     : "MOMA portfolio meetings tracker.",
+				"format"   : "{pid}",
+				"singular" : "meeting",
+				"backup"   : true,
+				"log"      : true,
+				"track"    : true,
+				"trash"    : true,
+				"fields"   : [
+					{
+						"name"  : "pid",
+						"label" : "PID",
+						"type"  : "int(4)",
+						"ref"   : "pid"
+					},
+					{
+						"name"  : "sid",
+						"label" : "SID",
+						"type"  : "int(2)"
+					},
+					{
+						"name"  : "stage",
+						"label" : "Stage",
+						"type"  : "utf8vstring(64)"
+					},
+					{
+						"name"  : "responses",
+						"label" : "Responses",
+						"type"  : "jsonobject"
+					}
+				]
+			}
+		]
+	}
+}

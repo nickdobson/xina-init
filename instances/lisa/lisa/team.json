@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "lisa",
+		"label"               : "LISA",
+		"desc"                : "Primary team for the Laser Interferometer Space Antenna (LISA) project.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply"]
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"action"         : "struct_create",
+	"create"         : "def",
+	"parent"         : "lab699.debug",
+	"group_teams"    : ["lab699", "lab699_dev"],
+	"database_teams" : ["lab699", "lab699_dev"]
+}

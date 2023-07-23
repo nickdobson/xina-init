@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "moma_dev",
+		"label"               : "MOMA Developers",
+		"desc"                : "Developer team for the MOMA project.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply", "update", "insert", "trash"]
+	}
+}

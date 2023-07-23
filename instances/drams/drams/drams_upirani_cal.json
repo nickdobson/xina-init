@@ -1,0 +1,12 @@
+{
+	"action"         : "struct_create",
+	"create"         : "model",
+	"parent"         : "drams.upirani",
+	"name"           : "cal",
+	"label"          : "Calibration",
+	"desc"           : "calibration",
+	"event"          : true,
+	"eventf"         : true,
+	"group_teams"    : ["drams", "drams_dev"],
+	"database_teams" : ["drams", "drams_dev"]
+}

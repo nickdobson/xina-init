@@ -1,0 +1,8 @@
+{
+	"action" : "struct_create",
+	"create" : "project",
+	"teams"  : ["lisa", "lisa_dev"],
+	"name"   : "lisa",
+	"label"  : "LISA",
+	"desc"   : "Laser Interferometer Space Antenna (LISA)"
+}

@@ -1,0 +1,9 @@
+[
+	"hermes/_alias/hermes.json",
+	{
+		"category_name"  : "debug",
+		"category_label" : "Debug",
+		"category_desc"  : "Debug",
+		"category_info"  : ""
+	}
+]

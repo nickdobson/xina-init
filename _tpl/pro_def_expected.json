@@ -1,0 +1,78 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["@{project_name}"],
+	"parent"   : "@{project_name}.def",
+	"database" : {
+		"name"      : "expected",
+		"label"     : "Expected",
+		"desc"      : "@{project_desc} housekeeping expected values database.",
+		"format"    : "{name} {models}",
+		"singular"  : "value",
+		"backup"    : true,
+		"event"     : true,
+		"link"      : true,
+		"log"       : true,
+		"notify"    : true,
+		"subscribe" : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"fields"    : [
+			{
+				"name" : "name",
+				"label" : "Name",
+				"type" : "asciivstring(32)"
+			},
+			{
+				"name" : "models",
+				"label" : "Models",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
+				"name" : "notes",
+				"label" : "Notes",
+				"type" : "utf8string",
+				"nul"  : true
+			},
+			{
+				"name" : "red_hi",
+				"label" : "Red High",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "yellow_hi",
+				"label" : "Yellow High",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "green_hi",
+				"label" : "Green High",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "green_lo",
+				"label" : "Green Low",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "yellow_lo",
+				"label" : "Yellow Low",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "red_lo",
+				"label" : "Red Low",
+				"type" : "float(8)",
+				"nul"  : true
+			}
+		]
+	}
+}

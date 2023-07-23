@@ -1,0 +1,8 @@
+{
+	"action" : "struct_create",
+	"create" : "project",
+	"teams"  : ["code554", "code554_dev"],
+	"name"   : "code554",
+	"label"  : "Code 554",
+	"desc"   : "Code 554"
+}

@@ -1,0 +1,6 @@
+{
+	"action"     : "struct_buff_import",
+	"model"      : "drams.thanos.etu",
+	"origin"     : "df",
+	"$object_id" : "{local}/test.csv"
+}

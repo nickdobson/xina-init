@@ -1,0 +1,35 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["@{project_name}"],
+	"parent"   : "@{project_name}.@{category_name}.@{model_name}.data.@{orig_name}.mn",
+	"database" : {
+		"name"    : "df8",
+		"label"   : "Delta Float(8)",
+		"desc"    : "@{project_desc} @{category_desc} @{model_desc} @{orig_desc} delta float(8) mnemonic database.",
+		"format"  : "{t} {mn_id} {v} ({n})",
+		"fields"  : [
+			{
+				"name" : "t",
+				"type" : "instant(us)"
+			},
+			{
+				"name" : "mn_id",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "v",
+				"type" : "float(8)",
+				"nul"  : true
+			},
+			{
+				"name" : "n",
+				"type" : "int(4)"
+			}
+		],
+		"indexes" : [
+			["t"],
+			["mn_id", "t"]
+		]
+	}
+}

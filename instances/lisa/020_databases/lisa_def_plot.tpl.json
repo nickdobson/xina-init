@@ -1,0 +1,6 @@
+{
+	"alias" : "lisa/_alias/lisa.json",
+	"path"  : [
+		"_tpl/pro_def_plot.json"
+	]
+}

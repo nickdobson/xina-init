@@ -1,0 +1,64 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["@{project_name}"],
+	"parent"   : "@{project_name}.@{category_name}.@{model_name}",
+	"database" : {
+		"name"        : "buff",
+		"label"       : "Buffer Source File",
+		"desc"        : "@{project_desc} @{category_desc} @{model_desc} buffer source file database.",
+		"format"      : "{name}",
+		"file_format" : "{name}",
+		"singular"    : "file",
+		"backup"      : true,
+		"file"        : true,
+		"log"         : true,
+		"track"       : true,
+		"trash"       : true,
+		"wall"        : true,
+		"order"       : [["name", "desc"]],
+		"fields"      : [
+			{
+				"name"  : "uuid",
+				"label" : "UUID",
+				"type"  : "uuid",
+				"key"   : true
+			},
+			{
+				"name"  : "orig",
+				"label" : "Origin",
+				"type"  : "asciivstring(32)"
+			},
+			{
+				"name"  : "name",
+				"label" : "Name",
+				"type"  : "utf8vstring(128)"
+			},
+			{
+				"name"  : "t_min",
+				"label" : "Min Time",
+				"type"  : "instant(us)"
+			},
+			{
+				"name"  : "t_max",
+				"label" : "Max Time",
+				"type"  : "instant(us)"
+			},
+			{
+				"name"  : "format",
+				"label" : "Format",
+				"type"  : "asciivstring(16)"
+			},
+			{
+				"name"  : "conf",
+				"label" : "Conf",
+				"type"  : "jsonobject",
+				"nul"   : true
+			}
+		],
+		"indexes"     : [
+			["orig", "t_min", "t_max"],
+			["name"]
+		]
+	}
+}

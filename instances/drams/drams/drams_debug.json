@@ -1,0 +1,13 @@
+{
+	"action"         : "struct_create",
+	"create"         : "model",
+	"parent"         : "drams",
+	"name"           : "debug",
+	"label"          : "Debug",
+	"desc"           : "debug",
+	"event"          : true,
+	"eventf"         : true,
+	"eventfs"        : true,
+	"group_teams"    : ["drams", "drams_dev"],
+	"database_teams" : ["drams", "drams_dev"]
+}

@@ -1,0 +1,7 @@
+{
+	"alias" : "hermes/_alias/hermes_icebox.json",
+	"path"  : [
+		"_tpl/pro_cat.json",
+		"_tpl/pro_cat_journal.json"
+	]
+}

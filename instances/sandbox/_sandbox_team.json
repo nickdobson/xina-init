@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "sandbox",
+		"label"               : "Sandbox",
+		"desc"                : "Primary team for the sandbox project.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply"]
+	}
+}

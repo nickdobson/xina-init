@@ -1,0 +1,133 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["oci"],
+	"parent"   : "oci.def",
+	"database" : {
+		"name"     : "profile",
+		"label"    : "Profile",
+		"desc"     : "OCI housekeeping export profile database.",
+		"format"   : "{name}",
+		"singular" : "profile",
+		"backup"   : true,
+		"link"     : true,
+		"log"      : true,
+		"tag"      : true,
+		"track"    : true,
+		"trash"    : true,
+		"wall"     : true,
+		"order"    : ["name"],
+		"fields"   : [
+			{
+				"name" : "name",
+				"type" : "asciistring(32)",
+				"key"  : true
+			},
+			{
+				"name" : "ids",
+				"type" : "asciistring",
+				"nul"  : true
+			},
+			{
+				"name" : "raw",
+				"type" : "asciistring",
+				"nul"  : true
+			},
+			{
+				"name" : "dis",
+				"type" : "asciistring",
+				"nul"  : true
+			},
+			{
+				"name" : "columns",
+				"type" : "jsonobject",
+				"def"  : "{\"ts_utc_iso\":true}"
+			},
+			{
+				"name" : "join",
+				"type" : "boolean",
+				"def"  : "true"
+			},
+			{
+				"name" : "fill",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "pkt",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "limit",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "pkt",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "plot",
+				"type" : "jsonobject",
+				"nul"  : true
+			},
+			{
+				"name" : "trend",
+				"type" : "jsonobject",
+				"nul"  : true
+			},
+			{
+				"name" : "filter",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
+				"name" : "disable_filter",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "markers",
+				"type" : "asciistring",
+				"nul"  : true
+			},
+			{
+				"name" : "models",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
+				"name" : "daily",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "mine",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
+				"name" : "users",
+				"type" : "set(utf8vstring(128))",
+				"nul"  : true
+			},
+			{
+				"name" : "axes",
+				"type" : "jsonarray",
+				"nul"  : true
+			},
+			{
+				"name" : "options",
+				"type" : "jsonobject",
+				"nul"  : true
+			},
+			{
+				"name" : "desc",
+				"type" : "utf8text",
+				"nul"  : true
+			}
+		]
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"action"         : "struct_create",
+	"create"         : "origin",
+	"model"          : "code554.debug",
+	"name"           : "df",
+	"label"          : "Default",
+	"group_teams"    : ["code554", "code554_dev"],
+	"database_teams" : ["code554", "code554_dev"]
+}

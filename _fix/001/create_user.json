@@ -1,0 +1,11 @@
+{
+	"action": "create",
+	"create": "user",
+	"user": {
+		"username": "",
+		"read_all": true,
+		"write_all": true,
+		"first": "",
+		"last": ""
+	}
+}

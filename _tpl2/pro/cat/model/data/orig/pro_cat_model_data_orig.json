@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["@{project_name}"],
+	"parent" : "@{project_name}.@{category_name}.@{model_name}.data",
+	"group"  : {
+		"name"  : "@{orig_name}",
+		"label" : "@{orig_label}",
+		"desc"  : "@{project_desc} @{category_desc} @{model_desc} @{orig_desc} data group."
+	}
+}

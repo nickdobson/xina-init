@@ -1,0 +1,42 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : {
+		"oci" : {
+			"update" : true,
+			"insert" : true
+		}
+	},
+	"parent"   : "oci.@{model}.data",
+	"database" : {
+		"name"    : "intd",
+		"label"   : "Interval Duplicate",
+		"desc"    : "OCI @{desc} interval duplicate database.",
+		"format"  : "{dupe_t_id_end} {u_int_id}",
+		"backup"  : true,
+		"track"   : true,
+		"order"   : [["dupe_t_id_end", "desc"]],
+		"fields"  : [
+			{
+				"name" : "t_id_start",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "t_id_end",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "dupe_t_id_end",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "u_int_id",
+				"type" : "int(8)"
+ 			}
+		],
+		"indexes" : [
+			["u_int_id"],
+			["dupe_t_id_end"]
+		]
+	}
+}

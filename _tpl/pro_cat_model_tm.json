@@ -1,0 +1,33 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["@{project_name}"],
+	"parent"   : "@{project_name}.@{category_name}.@{model_name}",
+	"database" : {
+		"name"      : "tm",
+		"label"     : "Telemetry",
+		"desc"      : "@{project_desc} @{category_desc} @{model_desc} telemetry database.",
+		"format"    : "{name}",
+		"file_format" : "{name}",
+		"singular"  : "file",
+		"backup"    : true,
+		"file"      : true,
+		"link"      : true,
+		"log"       : true,
+		"tag"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"order"     : [["name", "desc"]],
+		"fields"    : [
+			{
+				"name" : "name",
+				"type" : "utf8string(128)",
+				"key"  : true
+			}
+		],
+		"indexes"   : [
+			["name"]
+		]
+	}
+}

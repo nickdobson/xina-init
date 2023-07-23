@@ -1,0 +1,215 @@
+{
+	"action": "insert",
+	"database": "lisa.debug.event",
+	"records":
+	[
+		{
+			"uuid": "e19206af-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1619708521670150,
+			"t_end": 1619709000709196,
+			"pid": 0,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Diode Only"
+		},
+		{
+			"uuid": "e19206d5-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1619709881841626,
+			"t_end": 1619710871221326,
+			"pid": 0,
+			"sid": 0,
+			"type": 1,
+			"label": "PI Curve Diode Only"
+		},
+		{
+			"uuid": "e19206de-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245452552624,
+			"t_end": 1620245625096766,
+			"pid": 1000,
+			"sid": 0,
+			"type": 2,
+			"label": "PI Curve",
+			"content": "test content"
+		},
+		{
+			"uuid": "e19206e5-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245455556012,
+			"t_end": 1620245460587031,
+			"pid": 1010,
+			"sid": 0,
+			"type": 3,
+			"label": "PI Curve Current 1.00",
+			"content": "test content"
+		},
+		{
+			"uuid": "e19206ec-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245465599570,
+			"t_end": 1620245465599570,
+			"pid": 1015,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 1.50",
+			"content": "test content"
+		},
+		{
+			"uuid": "e19206f1-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245475626878,
+			"t_end": 1620245475626878,
+			"pid": 1020,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 2.00",
+			"content": "test content"
+		},
+		{
+			"uuid": "e19206f7-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245485650463,
+			"t_end": 1620245485650463,
+			"pid": 1025,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 2.50",
+			"content": "test content"
+		},
+		{
+			"uuid": "e19206fc-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245495673554,
+			"t_end": 1620245500736101,
+			"pid": 1030,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 3.00",
+			"content": "test content"
+		},
+		{
+			"uuid": "e1920702-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245505784114,
+			"t_end": 1620245510811759,
+			"pid": 1035,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 3.50",
+			"content": "test content"
+		},
+		{
+			"uuid": "e1920707-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245515863505,
+			"t_end": 1620245520874731,
+			"pid": 1040,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 4.00",
+			"content": "test content"
+		},
+		{
+			"uuid": "e192070b-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245525887763,
+			"t_end": 1620245530897798,
+			"pid": 1045,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 4.50",
+			"content": "test content"
+		},
+		{
+			"uuid": "e1920710-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245535910771,
+			"t_end": 1620245540922519,
+			"pid": 1050,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 5.00",
+			"content": "test content"
+		},
+		{
+			"uuid": "e1920714-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245545939482,
+			"t_end": 1620245550949857,
+			"pid": 1055,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 5.50",
+			"content": "test content"
+		},
+		{
+			"uuid": "e1920719-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245555960420,
+			"t_end": 1620245560974030,
+			"pid": 1060,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 6.00",
+			"content": "test content"
+		},
+		{
+			"uuid": "e192071d-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245565985316,
+			"t_end": 1620245570998112,
+			"pid": 1065,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 6.50",
+			"content": "test content"
+		},
+		{
+			"uuid": "e1920722-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245576008117,
+			"t_end": 1620245581029720,
+			"pid": 1070,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 7.00",
+			"content": "test content"
+		},
+		{
+			"uuid": "e1920726-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245586073834,
+			"t_end": 1620245591081500,
+			"pid": 1075,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 7.50",
+			"content": "test content"
+		},
+		{
+			"uuid": "e192072b-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245596091278,
+			"t_end": 1620245601101931,
+			"pid": 1080,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 8.00",
+			"content": "test content"
+		},
+		{
+			"uuid": "e192072f-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245606112920,
+			"t_end": 1620245611135152,
+			"pid": 1085,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 8.50",
+			"content": "test content"
+		},
+		{
+			"uuid": "e1920734-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620245616148198,
+			"t_end": 1620245622089924,
+			"pid": 1090,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Current 9.00",
+			"content": "test content"
+		},
+		{
+			"uuid": "e192073a-2567-11ed-93a1-0e2f8a2e4fe5",
+			"t_start": 1620329206396121,
+			"t_end": 1620329809808272,
+			"pid": 0,
+			"sid": 0,
+			"type": 0,
+			"label": "PI Curve Diode Only",
+			"content": "test content"
+		}
+	]
+}

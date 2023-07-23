@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["@{project_name}"],
+	"parent" : "@{project_name}.@{category_name}.@{model_name}.data.@{orig_name}.mn",
+	"group"  : {
+		"name"    : "bin",
+		"label"   : "Bin",
+		"desc"    : "@{project_desc} @{category_desc} @{model_desc} @{orig_desc} mnemonic bin data group."
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"alias" : [
+		"dragonfly/_alias/dfly_upirani.json",
+		{
+			"model_name"  : "cal",
+			"model_label" : "Calibration",
+			"model_desc"  : "calibration",
+			"model_info"  : ""
+		}
+	],
+	"path"  : [
+		"_tpl/pro_cat_model.json",
+		"_tpl/pro_cat_model_data.json",
+		"_tpl/pro_cat_model_data_ins.json",
+		"_tpl/pro_cat_model_data_int.json",
+		"_tpl/pro_cat_model_data_hk.json",
+		"_tpl/pro_cat_model_data_hk_full,name.json",
+		"_tpl/pro_cat_model_data_hk_file,name.json"
+	]
+}

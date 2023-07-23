@@ -1,0 +1,9 @@
+[
+	"lisa/_alias/lisa.json",
+	{
+		"category_name"  : "debug2",
+		"category_label" : "Debug2",
+		"category_desc"  : "debug2",
+		"category_info"  : ""
+	}
+]

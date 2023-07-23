@@ -9,12 +9,14 @@
 	},
 	"parent"   : "@{project_name}.@{category_name}.@{model_name}.data",
 	"database" : {
-		"name"    : "ins",
-		"label"   : "Instant",
-		"desc"    : "@{project_desc} @{category_desc} @{model_desc} instant database.",
-		"format"  : "{t} {p_id},{s_id} {label}",
-		"order"   : [["t", "desc"]],
-		"fields"  : [
+		"name"        : "insf",
+		"label"       : "Instant Files",
+		"desc"        : "@{project_desc} @{category_desc} @{model_desc} instant files database.",
+		"file"        : true,
+		"file_format" : "{name}",
+		"format"      : "{t} {p_id},{s_id} {label}",
+		"order"       : [["t", "desc"]],
+		"fields"      : [
 			{
 				"name"  : "u_id",
 				"label" : "UUID",
@@ -48,6 +50,11 @@
 				"def"   : "0"
 			},
 			{
+				"name"  : "name",
+				"label" : "Name",
+				"type"  : "utf8vstring(128)"
+			},
+			{
 				"name"  : "label",
 				"label" : "Label",
 				"type"  : "utf8vstring(128)"
@@ -71,7 +78,7 @@
 				"nul"   : true
 			}
 		],
-		"indexes" : [
+		"indexes"     : [
 			["u_id"],
 			["t"],
 			["type", "t"],

@@ -1,0 +1,12 @@
+{
+	"action"         : "struct_create",
+	"create"         : "model",
+	"parent"         : "drams.thanos",
+	"name"           : "bb",
+	"label"          : "Breadboard",
+	"desc"           : "breadboard",
+	"event"          : true,
+	"eventf"         : true,
+	"group_teams"    : ["drams", "drams_dev"],
+	"database_teams" : ["drams", "drams_dev"]
+}

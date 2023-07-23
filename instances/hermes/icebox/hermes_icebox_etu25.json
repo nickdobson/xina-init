@@ -1,0 +1,11 @@
+{
+	"action"         : "struct_create",
+	"create"         : "model",
+	"parent"         : "hermes.icebox",
+	"name"           : "etu25",
+	"label"          : "ETU25",
+	"event"          : true,
+	"eventf"         : true,
+	"group_teams"    : ["hermes", "hermes_dev"],
+	"database_teams" : ["hermes", "hermes_dev"]
+}

@@ -1,0 +1,74 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["@{project_name}"],
+	"parent"   : "@{project_name}.@{category_name}.@{model_name}.data.@{orig_name}.mn.bin",
+	"database" : {
+		"name"    : "t60",
+		"label"   : "Time (60s)",
+		"desc"    : "@{project_desc} @{category_desc} @{model_desc} @{orig_desc} time bin (60s) mnemonic database.",
+		"format"  : "{t} {mn_id} {avg} ({min}, {max})",
+		"keyless" : true,
+		"fields"  : [
+			{
+				"name"  : "t",
+				"label" : "Start Time",
+				"type"  : "instant(us)"
+			},
+			{
+				"name"  : "t_min",
+				"label" : "Min Time",
+				"type"  : "instant(us)"
+			},
+			{
+				"name"  : "t_max",
+				"label" : "Max Time",
+				"type"  : "instant(us)"
+			},
+			{
+				"name"  : "mn_id",
+				"label" : "Mnemonic ID",
+				"type"  : "int(4)"
+			},
+			{
+				"name"  : "n",
+				"label" : "Samples",
+				"type"  : "int(4)"
+			},
+			{
+				"name"  : "avg",
+				"label" : "Average",
+				"type"  : "float(8)"
+			},
+			{
+				"name"  : "min",
+				"label" : "Min",
+				"type"  : "float(8)"
+			},
+			{
+				"name"  : "max",
+				"label" : "Max",
+				"type"  : "float(8)"
+			},
+			{
+				"name"  : "med",
+				"label" : "Median",
+				"type"  : "float(8)"
+			},
+			{
+				"name"  : "var",
+				"label" : "Variance",
+				"type"  : "float(8)"
+			},
+			{
+				"name"  : "std",
+				"label" : "Standard Deviation",
+				"type"  : "float(8)"
+			}
+		],
+		"indexes" : [
+			["t_min"],
+			["mn_id", "t_min"]
+		]
+	}
+}

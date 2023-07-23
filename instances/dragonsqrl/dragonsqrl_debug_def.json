@@ -1,0 +1,7 @@
+{
+	"action"         : "struct_create",
+	"create"         : "def",
+	"parent"         : "dragonsqrl.debug",
+	"group_teams"    : ["dragonsqrl", "dragonsqrl_dev"],
+	"database_teams" : ["dragonsqrl", "dragonsqrl_dev"]
+}

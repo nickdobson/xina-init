@@ -1,0 +1,53 @@
+{
+	"alias" : {
+		"model" : "fm_pace",
+		"label" : "Flight PACE Model",
+		"desc"  : "flight PACE model",
+		"info"  : ""
+	},
+	"path"  : [
+		"oci/_tpl/oci_model.json",
+
+		"oci/_tpl/oci_model_tm.json",
+		"oci/_tpl/oci_model_journal.json",
+
+		"oci/_tpl/oci_model_data.json",
+
+		"oci/_tpl/oci_model_data_cvt.json",
+
+		"oci/_tpl/oci_model_data_ins.json",
+
+		"oci/_tpl/oci_model_data_intc.json",
+		"oci/_tpl/oci_model_data_intb.json",
+		"oci/_tpl/oci_model_data_intd.json",
+		"oci/_tpl/oci_model_data_int.json",
+		"oci/_tpl/oci_model_data_int_open.json",
+
+		"oci/_tpl/oci_model_data_time.json",
+
+		"oci/_tpl/oci_model_data_hk.json",
+
+		"oci/_tpl/oci_model_data_hk_pkg.json",
+		"oci/_tpl/oci_model_data_hk_trend.json",
+
+		"oci/_tpl/oci_model_data_hk_full.json",
+
+		"oci/_tpl/oci_model_data_hk_time.json",
+		"oci/_tpl/oci_model_data_hk_time60.json",
+		"oci/_tpl/oci_model_data_hk_time600.json",
+
+		"oci/_tpl/oci_model_data_hk_int.json",
+		"oci/_tpl/oci_model_data_hk_int_slice.json",
+
+		"oci/_tpl/oci_model_data_hk_filter.json",
+		"oci/_tpl/oci_model_data_hk_filter_time60.json",
+		"oci/_tpl/oci_model_data_hk_filter_time600.json",
+		"oci/_tpl/oci_model_data_hk_filter_int.json",
+		"oci/_tpl/oci_model_data_hk_filter_int_slice.json",
+		"oci/_tpl/oci_model_data_hk_filter_state.json",
+
+		"oci/_tpl/oci_model_data_limit.json",
+		"oci/_tpl/oci_model_data_limit_report.json",
+		"oci/_tpl/oci_model_data_limit_state.json"
+	]
+}

@@ -1,5 +1,0 @@
-{
-	"action"   : "drop",
-	"drop"     : "database",
-	"database" : "oci.fm.data.intb"
-}

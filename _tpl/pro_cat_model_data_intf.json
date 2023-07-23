@@ -9,12 +9,14 @@
 	},
 	"parent"   : "@{project_name}.@{category_name}.@{model_name}.data",
 	"database" : {
-		"name"    : "ins",
-		"label"   : "Instant",
-		"desc"    : "@{project_desc} @{category_desc} @{model_desc} instant database.",
-		"format"  : "{t} {p_id},{s_id} {label}",
-		"order"   : [["t", "desc"]],
-		"fields"  : [
+		"name"        : "intf",
+		"label"       : "Interval Files",
+		"desc"        : "@{project_desc} @{category_desc} @{model_desc} interval files database.",
+		"file"        : true,
+		"file_format" : "{name}",
+		"format"      : "{t_start} {p_id},{s_id} {label}",
+		"order"       : [["t_start", "desc"]],
+		"fields"      : [
 			{
 				"name"  : "u_id",
 				"label" : "UUID",
@@ -31,9 +33,19 @@
 				"type"  : "int(4)"
 			},
 			{
-				"name"  : "t",
-				"label" : "Time",
+				"name"  : "t_start",
+				"label" : "Start Time",
 				"type"  : "instant(us)"
+			},
+			{
+				"name"  : "t_end",
+				"label" : "End Time",
+				"type"  : "instant(us)"
+			},
+			{
+				"name"  : "duration",
+				"label" : "Duration",
+				"type"  : "duration(us)"
 			},
 			{
 				"name"  : "type",
@@ -46,6 +58,11 @@
 				"label" : "Level",
 				"type"  : "int(1)",
 				"def"   : "0"
+			},
+			{
+				"name"  : "name",
+				"label" : "Name",
+				"type"  : "utf8vstring(128)"
 			},
 			{
 				"name"  : "label",
@@ -71,11 +88,11 @@
 				"nul"   : true
 			}
 		],
-		"indexes" : [
+		"indexes"     : [
 			["u_id"],
-			["t"],
-			["type", "t"],
-			["p_id", "t"]
+			["t_start", "t_end"],
+			["type", "t_start", "t_end"],
+			["p_id", "t_start", "t_end"]
 		]
 	}
 }

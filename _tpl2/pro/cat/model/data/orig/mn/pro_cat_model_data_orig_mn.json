@@ -1,0 +1,14 @@
+{
+	"action" : "create",
+	"create" : "group",
+	"teams"  : ["@{project_name}"],
+	"parent" : "@{project_name}.@{category_name}.@{model_name}.data.@{orig_name}",
+	"group"  : {
+		"name"    : "mn",
+		"label"   : "Mnemonic",
+		"desc"    : "@{project_desc} @{category_desc} @{model_desc} @{orig_desc} mnemonic data group.",
+		"objects" : {
+			"xs_model_mn" : {}
+		}
+	}
+}

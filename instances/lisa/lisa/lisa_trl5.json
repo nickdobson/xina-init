@@ -1,0 +1,9 @@
+{
+	"action" : "struct_create",
+	"create" : "category",
+	"parent" : "lisa",
+	"teams"  : ["lisa", "lisa_dev"],
+	"name"   : "trl5",
+	"label"  : "TRL5",
+	"desc"   : "test readiness level 5 (TRL5)"
+}

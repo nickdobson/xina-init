@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "litms",
+		"label"               : "LITMS",
+		"desc"                : "Primary team for the Linear Ion Trap Mass Spectrometer (LITMS) project.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply"]
+	}
+}

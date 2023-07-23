@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "lisa_dev",
+		"label"               : "LISA Developers",
+		"desc"                : "Developer team for the LISA project.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply", "update", "insert", "trash"]
+	}
+}

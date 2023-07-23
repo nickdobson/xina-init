@@ -1,0 +1,22 @@
+{
+	"alias" : [
+		"lisa/_alias/lisa_debug.json",
+		{
+			"model_name"  : "def",
+			"model_label" : "Default",
+			"model_desc"  : "default databases",
+			"model_info"  : ""
+		}
+	],
+	"path"  : [
+		"_tpl/pro_cat_model.json",
+		"_tpl/pro_cat_model_data.json",
+		"_tpl/pro_cat_model_data_ins.json",
+		"_tpl/pro_cat_model_data_insf.json",
+		"_tpl/pro_cat_model_data_int.json",
+		"_tpl/pro_cat_model_data_intf.json",
+		"_tpl/pro_cat_model_data_hk.json",
+		"_tpl/pro_cat_model_data_hk_full,name.json",
+		"_tpl/pro_cat_model_data_hk_file,name.json"
+	]
+}

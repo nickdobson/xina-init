@@ -1,0 +1,33 @@
+{
+	"alias" : [
+		"lisa/_alias/lisa_debug2.json",
+		{
+			"model_name"  : "def",
+			"model_label" : "Default",
+			"model_desc"  : "default databases",
+			"model_info"  : "",
+			"orig_name"   : "cots",
+			"orig_label"  : "COTS",
+			"orig_desc"   : "COTS",
+			"orig_info"   : ""
+		}
+	],
+	"path"  : [
+		"_tpl2/pro/cat/model/pro_cat_model.json",
+		"_tpl2/pro/cat/model/pro_cat_model_arch.json",
+		"_tpl2/pro/cat/model/pro_cat_model_buff.json",
+		"_tpl2/pro/cat/model/data/pro_cat_model_data.json",
+		"_tpl2/pro/cat/model/data/pro_cat_model_data_ins.json",
+		"_tpl2/pro/cat/model/data/pro_cat_model_data_insf.json",
+		"_tpl2/pro/cat/model/data/pro_cat_model_data_int.json",
+		"_tpl2/pro/cat/model/data/pro_cat_model_data_intf.json",
+		"_tpl2/pro/cat/model/data/pro_cat_model_data.json",
+		"_tpl2/pro/cat/model/data/orig/pro_cat_model_data_orig.json",
+		"_tpl2/pro/cat/model/data/orig/mn/pro_cat_model_data_orig_mn.json",
+		"_tpl2/pro/cat/model/data/orig/mn/pro_cat_model_data_orig_mn_buff.json",
+		"_tpl2/pro/cat/model/data/orig/mn/pro_cat_model_data_orig_mn_f8.json",
+		"_tpl2/pro/cat/model/data/orig/mn/bin/pro_cat_model_data_orig_mn_bin.json",
+		"_tpl2/pro/cat/model/data/orig/mn/bin/pro_cat_model_data_orig_mn_bin_t60.json",
+		"_tpl2/pro/cat/model/data/orig/mn/bin/pro_cat_model_data_orig_mn_bin_t600.json"
+	]
+}

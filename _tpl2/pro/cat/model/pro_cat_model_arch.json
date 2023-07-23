@@ -1,0 +1,141 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["@{project_name}"],
+	"parent"   : "@{project_name}.@{category_name}.@{model_name}",
+	"database" : {
+		"name"      : "arch",
+		"label"     : "Archive",
+		"desc"      : "@{project_desc} @{category_desc} @{model_desc} archive database.",
+		"format"    : "{p_id},{s_id} {label}",
+		"backup"    : true,
+		"file"      : true,
+		"link"      : true,
+		"log"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"order"     : [["name", "desc"]],
+		"fields"    : [
+			{
+				"name"  : "uuid",
+				"label" : "UUID",
+				"type"  : "uuid",
+				"key"   : true
+			},
+			{
+				"name"  : "orig",
+				"label" : "Origin",
+				"type"  : "asciivstring(32)"
+			},
+			{
+				"name"  : "p_id",
+				"label" : "Primary ID",
+				"type"  : "int(8)"
+			},
+			{
+				"name"  : "s_id",
+				"label" : "Secondary ID",
+				"type"  : "int(8)"
+			},
+			{
+				"name"  : "t_start",
+				"label" : "Start Time",
+				"type"  : "instant(us)"
+			},
+			{
+				"name"  : "t_end",
+				"label" : "End Time",
+				"type"  : "instant(us)"
+			},
+			{
+				"name"  : "t_min",
+				"label" : "Min Time",
+				"type"  : "instant(us)"
+			},
+			{
+				"name"  : "t_max",
+				"label" : "Max Time",
+				"type"  : "instant(us)"
+			},
+			{
+				"name"  : "duration",
+				"label" : "Duration",
+				"type"  : "duration(us)"
+			},
+			{
+				"name"  : "type",
+				"label" : "Type",
+				"type"  : "int(2)",
+				"def"   : "0"
+			},
+			{
+				"name"  : "level",
+				"label" : "Level",
+				"type"  : "int(1)",
+				"def"   : "0"
+			},
+			{
+				"name"  : "label",
+				"label" : "Label",
+				"type"  : "utf8vstring(128)"
+			},
+			{
+				"name"  : "content",
+				"label" : "Content",
+				"type"  : "utf8text",
+				"nul"   : true
+			},
+			{
+				"name"  : "meta",
+				"label" : "Meta",
+				"type"  : "jsonobject",
+				"nul"   : true
+			},
+			{
+				"name"  : "conf",
+				"label" : "Conf",
+				"type"  : "jsonobject",
+				"nul"   : true
+			}
+		],
+		"indexes"   : [
+			["label"],
+			["t_start", "t_end"],
+			["type", "t_start", "t_end"],
+			["p_id", "t_start", "t_end"]
+		],
+		"databases" : [
+			{
+				"name"        : "file",
+				"label"       : "File",
+				"desc"        : "@{project_desc} @{category_desc} @{model_desc} archive file database.",
+				"format"      : "{name}",
+				"file_format" : "{name}",
+				"singular"    : "file",
+				"file"        : true,
+				"log"         : true,
+				"track"       : true,
+				"trash"       : true,
+				"order"       : [["uuid", "desc"], ["name", "asc"]],
+				"fields"      : [
+					{
+						"name"  : "uuid",
+						"label" : "UUID",
+						"type"  : "uuid",
+						"ref"   : "uuid",
+						"key"   : true
+					},
+					{
+						"name" : "name",
+						"type" : "utf8vstring(128)",
+						"key"  : true
+					}
+				],
+				"indexes"   : [
+					["name"]
+				]
+			}
+		]
+	}
+}

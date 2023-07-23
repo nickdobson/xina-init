@@ -1,0 +1,9 @@
+{
+	"action"         : "struct_create",
+	"create"         : "origin",
+	"model"          : "lisa.trl4.unpro",
+	"name"           : "df",
+	"label"          : "Default",
+	"group_teams"    : ["lisa", "lisa_dev"],
+	"database_teams" : ["lisa", "lisa_dev"]
+}

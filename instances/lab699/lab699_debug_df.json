@@ -1,0 +1,9 @@
+{
+	"action"         : "struct_create",
+	"create"         : "origin",
+	"model"          : "lab699.debug",
+	"name"           : "df",
+	"label"          : "Default",
+	"group_teams"    : ["lab699", "lab699_dev"],
+	"database_teams" : ["lab699", "lab699_dev"]
+}

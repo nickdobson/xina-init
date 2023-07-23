@@ -1,0 +1,110 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["@{project_name}"],
+	"parent"   : "@{project_name}.def",
+	"database" : {
+		"name"     : "mn",
+		"label"    : "Mnemonic",
+		"desc"     : "@{project_label} mnemonic definition information.",
+		"format"   : "{mn_id} {name}",
+		"singular" : "mnemonic",
+		"backup"   : true,
+		"link"     : true,
+		"log"      : true,
+		"track"    : true,
+		"trash"    : true,
+		"wall"     : true,
+		"order"    : [["name", "asc"]],
+		"fields"   : [
+			{
+				"name"  : "mn_id",
+				"label" : "Mnemonic ID",
+				"type"  : "int(4)",
+				"key"   : true
+			},
+			{
+				"name"  : "name",
+				"label" : "Name",
+				"type"  : "utf8vstring(128)"
+			},
+			{
+				"name"  : "desc",
+				"label" : "Description",
+				"type"  : "utf8text",
+				"nul"   : true
+			},
+			{
+				"name"  : "meas",
+				"label" : "Measure",
+				"type"  : "utf8vstring(32)",
+				"nul"   : true
+			},
+			{
+				"name"  : "unit",
+				"label" : "Unit",
+				"type"  : "utf8vstring(32)",
+				"nul"   : true
+			},
+			{
+				"name"  : "state",
+				"label" : "State",
+				"type"  : "model_mn_state",
+				"def"   : "active"
+			},
+			{
+				"name"  : "origs",
+				"label" : "Origins",
+				"type"  : "jsonobject",
+				"nul"   : true
+			},
+			{
+				"name"  : "db",
+				"label" : "Database",
+				"type"  : "asciivstring(32)",
+				"nul"   : true,
+				"def"   : "f8"
+			},
+			{
+				"name"  : "bin",
+				"label" : "Bin Databases",
+				"type"  : "set(asciivstring(32))",
+				"nul"   : true
+			},
+			{
+				"name"  : "format",
+				"label" : "Format",
+				"type"  : "asciivstring(32)",
+				"nul"   : true
+			},
+			{
+				"name"  : "enum",
+				"label" : "Enumerated Values",
+				"type"  : "jsonobject",
+				"nul"   : true
+			},
+			{
+				"name"  : "labels",
+				"label" : "Value Labels",
+				"type"  : "list(jsonobject)",
+				"nul"   : true
+			},
+			{
+				"name"  : "aliases",
+				"label" : "Aliases",
+				"type"  : "set(asciivstring(128))",
+				"nul"   : true
+			},
+			{
+				"name"  : "meta",
+				"label" : "Meta",
+				"type"  : "jsonobject",
+				"nul"   : true
+			}
+		],
+		"indexes"  : [
+			["name"],
+			["state"]
+		]
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"action" : "create",
+	"create" : "team",
+	"team"   : {
+		"name"                : "hermes",
+		"label"               : "HERMES",
+		"desc"                : "Primary team for the Heliophysics Environmental and Radiation Measurement Experiment Suite (HERMES) project.",
+		"group_privileges"    : ["select", "post", "reply"],
+		"database_privileges" : ["select", "post", "reply"]
+	}
+}

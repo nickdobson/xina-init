@@ -1,0 +1,12 @@
+{
+	"alias" : "lisa/_alias/lisa.json",
+	"path"  : [
+		"_tpl2/pro/pro.json",
+		"_tpl2/pro/pro_team.json",
+		"_tpl2/pro/pro_journal.json",
+		"_tpl2/def/pro_def.json",
+		"_tpl2/def/pro_def_mn.json",
+		"_tpl2/def/pro_def_plot.json",
+		"_tpl2/def/pro_def_profile.json"
+	]
+}

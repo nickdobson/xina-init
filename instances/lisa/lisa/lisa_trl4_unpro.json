@@ -1,0 +1,12 @@
+{
+	"action"         : "struct_create",
+	"create"         : "model",
+	"parent"         : "lisa.trl4",
+	"name"           : "unpro",
+	"label"          : "uNPRO",
+	"desc"           : "micro non-planar ring oscillator (uNPRO)",
+	"event"          : true,
+	"eventf"         : true,
+	"group_teams"    : ["lisa", "lisa_dev"],
+	"database_teams" : ["lisa", "lisa_dev"]
+}

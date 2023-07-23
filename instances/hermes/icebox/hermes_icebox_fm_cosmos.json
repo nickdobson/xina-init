@@ -1,0 +1,10 @@
+{
+	"action"         : "struct_create",
+	"create"         : "origin",
+	"model"          : "hermes.icebox.fm",
+	"name"           : "cosmos",
+	"label"          : "COSMOS",
+	"buff"           : true,
+	"group_teams"    : ["hermes", "hermes_dev"],
+	"database_teams" : ["hermes", "hermes_dev"]
+}

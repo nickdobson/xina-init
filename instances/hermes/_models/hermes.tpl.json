@@ -1,0 +1,7 @@
+{
+	"alias" : "hermes/_alias/hermes.json",
+	"path"  : [
+		"_tpl/pro_team.json",
+		"_tpl/pro.json"
+	]
+}

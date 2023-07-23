@@ -1,0 +1,9 @@
+{
+	"action"         : "struct_create",
+	"create"         : "origin",
+	"model"          : "drams.upirani.cal",
+	"name"           : "ts",
+	"label"          : "Test Stand",
+	"group_teams"    : ["drams", "drams_dev"],
+	"database_teams" : ["drams", "drams_dev"]
+}

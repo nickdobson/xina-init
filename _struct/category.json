@@ -1,0 +1,8 @@
+{
+	"action" : "struct_create",
+	"create" : "category",
+	"parent" : "",
+	"teams"  : ["", "_dev"],
+	"name"   : "",
+	"label"  : ""
+}

@@ -1,0 +1,10 @@
+{
+	"action": "run",
+	"tasks"  : [
+		{
+			"name" : "struct_archive",
+			"conf" : { "origin": "sandbox.fm.tm" },
+			"archive" : true
+		}
+	]
+}

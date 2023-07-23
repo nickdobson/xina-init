@@ -1,8 +1,0 @@
-{
-	"alias" : "lisa/_alias/lisa.json",
-	"path"  : [
-		"_tpl/pro_team.json",
-		"_tpl/pro.json",
-		"_tpl/pro_journal.json"
-	]
-}

@@ -1,0 +1,67 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["drams", "drams_dev"],
+	"parent"   : "drams.def",
+	"database" : {
+		"name"      : "nominal",
+		"label"     : "Nominal ",
+		"desc"      : "DraMS nominal mnemonic values database.",
+		"format"    : "{mn_id} {color} ({min}, {max}) {label}",
+		"singular"  : "value",
+		"backup"    : true,
+		"link"      : true,
+		"log"       : true,
+		"track"     : true,
+		"trash"     : true,
+		"wall"      : true,
+		"fields"    : [
+			{
+				"name" : "mn_id",
+				"label": "Mnemonic ID",
+				"type" : "int(4)"
+			},
+			{
+				"name" : "color",
+				"label": "Color",
+				"type" : "asciistring(16)"
+			},
+			{
+				"name" : "label",
+				"label": "Label",
+				"type" : "utf8string",
+				"nul": true
+			},
+			{
+				"name" : "min",
+				"label": "Min",
+				"type" : "float(8)",
+				"nul": true
+			},
+			{
+				"name" : "max",
+				"label": "Max",
+				"type" : "float(8)",
+				"nul": true
+			},
+			{
+				"name" : "models",
+				"label": "Models",
+				"type" : "set(asciistring)",
+				"nul": true
+			},
+			{
+				"name" : "intervals",
+				"label": "Intervals",
+				"type" : "set(int(8))",
+				"nul": true
+			},
+			{
+				"name" : "desc",
+				"label": "Description",
+				"type" : "utf8text",
+				"nul": true
+			}
+		]
+	}
+}

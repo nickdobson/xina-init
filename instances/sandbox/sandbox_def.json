@@ -1,0 +1,7 @@
+{
+	"action"         : "struct_create",
+	"create"         : "def",
+	"parent"         : "sandbox",
+	"group_teams"    : ["sandbox", "sandbox_dev"],
+	"database_teams" : ["sandbox", "sandbox_dev"]
+}

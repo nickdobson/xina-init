@@ -1,0 +1,44 @@
+{
+	"action"   : "create",
+	"create"   : "database",
+	"teams"    : ["@{project_name}"],
+	"parent"   : "@{project_name}.def",
+	"database" : {
+		"name"     : "plot",
+		"label"    : "Plot Conf",
+		"desc"     : "@{project_desc} mnemonic plot configuration definitions database.",
+		"format"   : "{name}",
+		"singular" : "plot conf",
+		"backup"   : true,
+		"link"     : true,
+		"log"      : true,
+		"tag"      : true,
+		"track"    : true,
+		"trash"    : true,
+		"fields"   : [
+			{
+				"name"  : "name",
+				"label" : "Name",
+				"type"  : "asciivstring(64)",
+				"key"   : true
+			},
+			{
+				"name"  : "notes",
+				"label" : "Notes",
+				"type"  : "utf8text",
+				"nul"   : true
+			},
+			{
+				"name"  : "models",
+				"label" : "Models",
+				"type"  : "set(asciivstring(64))",
+				"nul"   : true
+			},
+			{
+				"name"  : "plot_conf",
+				"label" : "Plot Conf",
+				"type"  : "jsonobject"
+			}
+		]
+	}
+}
