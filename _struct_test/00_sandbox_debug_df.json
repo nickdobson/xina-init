@@ -1,0 +1,9 @@
+{
+	"action"         : "struct_create",
+	"create"         : "origin",
+	"model"          : "sandbox.debug_mine",
+	"name"           : "df",
+	"label"          : "Default",
+	"group_teams"    : ["sandbox", "sandbox_dev"],
+	"database_teams" : ["sandbox", "sandbox_dev"]
+}

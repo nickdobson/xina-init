@@ -1,0 +1,9 @@
+{
+	"action" : "struct_create",
+	"create" : "category",
+	"parent" : "drams",
+	"teams"  : ["drams", "drams_dev"],
+	"name"   : "wrp",
+	"label"  : "WRP",
+	"desc"   : "WRP"
+}

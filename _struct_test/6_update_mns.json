@@ -1,0 +1,6 @@
+{
+	"action": "update",
+	"database": "sandbox.debug_mine.def.mn",
+	"records": [5,6],
+	"set": {"full": "df8"}
+}

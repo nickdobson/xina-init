@@ -1,0 +1,198 @@
+{
+	"action"         : "struct_create",
+	"create"         : "event",
+	"group"         : "lab699.ltq",
+	"name"           : "spectra",
+	"label"          : "Spectra",
+	"desc"           : "spectra",
+	"singular": "spectrum",
+	"plural": "spectra",
+	"type"          : "file",
+	"teams" : ["lab699", "lab699_dev"],
+	"conf": {
+		"spectrum": {
+			"charts": {
+				"summary": {
+					"x": [
+						"t_start",
+						"$id"
+					],
+					"y": [
+						"$tic",
+						"$highestPeakMass",
+						"$highestPeakIntensity"
+					]
+				},
+				"spectrum": {
+					"x": [
+						{
+							"field": "Mass Values",
+							"label": "Mass",
+							"source": "file"
+						}
+					],
+					"y": [
+						{
+							"field": "Intensity Values",
+							"label": "Intensity",
+							"source": "file"
+						}
+					]
+				}
+			},
+			"filters": [
+				{
+					"desc": "Mass Spectra",
+					"name": "ms",
+					"color": "teal",
+					"label": "MS",
+					"checks": [
+						{
+							"field": "Analysis Type",
+							"value": "MS"
+						}
+					]
+				},
+				{
+					"desc": "Tandem Mass Spectra",
+					"name": "msms",
+					"color": "orange",
+					"label": "MSMS",
+					"checks": [
+						{
+							"field": "Analysis Type",
+							"value": "MSMS"
+						}
+					]
+				}
+			],
+			"grouping": [
+				"file_name",
+				"Source File Name",
+				"Instrument ID",
+				"Sample Name"
+			]
+		}
+	},
+	"fields"      : [
+		{
+			"name" : "Run ID",
+			"type" : "utf8vstring(128)"
+		},
+		{
+			"name" : "Source File Name",
+			"type" : "utf8vstring(128)"
+		},
+		{
+			"name" : "MZML File Name",
+			"type" : "utf8vstring(128)"
+		},
+		{
+			"name" : "Raw File Name",
+			"type" : "utf8vstring(128)"
+		},
+		{
+			"name" : "Instrument",
+			"type" : "jsonobject",
+			"nul"  : true
+		},
+		{
+			"name" : "Sample Name",
+			"type" : "utf8vstring(128)"
+		},
+		{
+			"name" : "User",
+			"type" : "utf8vstring(64)",
+			"nul"  : true
+		},
+		{
+			"name" : "Position",
+			"type" : "utf8vstring(64)",
+			"nul"  : true
+		},
+		{
+			"name" : "Doped",
+			"type" : "utf8text",
+			"nul"  : true
+		},
+		{
+			"name" : "Related Projects",
+			"type" : "utf8text",
+			"nul"  : true
+		},
+		{
+			"name" : "Matrix",
+			"type" : "utf8text",
+			"nul"  : true
+		},
+		{
+			"name" : "Run Number",
+			"type" : "int(4)",
+			"nul"  : true
+		},
+		{
+			"name" : "Analysis Type",
+			"type" : "utf8vstring(64)",
+			"nul"  : true
+		},
+		{
+			"name" : "Polarity",
+			"type" : "boolean",
+			"nul"  : true
+		},
+		{
+			"name" : "Laser Energy",
+			"type" : "float(8)",
+			"meas" : "energy",
+			"unit" : "uJ",
+			"nul"  : true
+		},
+		{
+			"name" : "Mass Range Min",
+			"type" : "float(8)",
+			"nul"  : true
+		},
+		{
+			"name" : "Mass Range Max",
+			"type" : "float(8)",
+			"nul"  : true
+		},
+		{
+			"name" : "Scans per File",
+			"type" : "int(4)",
+			"nul"  : true
+		},
+		{
+			"name" : "Spectrum Type",
+			"type" : "utf8vstring(64)",
+			"nul"  : true
+		},
+		{
+			"name" : "Parent Ion",
+			"type" : "float(8)",
+			"nul"  : true
+		},
+		{
+			"name" : "CID",
+			"type" : "int(4)",
+			"nul"  : true
+		},
+		{
+			"name" : "TIC",
+			"type" : "float(8)"
+		},
+		{
+			"name" : "Peak Intensity",
+			"type" : "float(8)"
+		},
+		{
+			"name" : "Peak Mass",
+			"type" : "float(8)"
+		},
+		{
+			"name" : "Comments",
+			"type" : "utf8text",
+			"nul"  : true
+		}
+	]
+}

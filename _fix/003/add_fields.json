@@ -1,0 +1,14 @@
+{
+	"action": "alter",
+	"alter": "database",
+	"database": "lisa.trl4.mopa.df.task.archive",
+	"op": "add_fields",
+	"fields": [
+		{
+			"name"  : "archived",
+			"label" : "Archived",
+			"type"  : "list(jsonobject)",
+			"nul"   : true
+		}
+	]
+}

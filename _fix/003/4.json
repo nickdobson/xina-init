@@ -1,0 +1,7 @@
+﻿{
+  "action": "struct_buffer_import",
+  "model": "sandbox.debug_mine",
+  "origin": "df",
+  "$object_id": "{local}/4.csv",
+  "conf": {"mode": "col"}
+}

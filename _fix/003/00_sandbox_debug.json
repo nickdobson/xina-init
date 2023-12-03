@@ -1,0 +1,13 @@
+{
+	"action"         : "struct_create",
+	"create"         : "model",
+	"parent"         : "sandbox",
+	"name"           : "debug_mine",
+	"label"          : "Debug Mining",
+	"desc"           : "mining debugging",
+	"event"          : true,
+	"eventf"         : true,
+	"eventfs"        : true,
+	"group_teams"    : ["sandbox", "sandbox_dev"],
+	"database_teams" : ["sandbox", "sandbox_dev"]
+}

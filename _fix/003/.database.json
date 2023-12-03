@@ -1,0 +1,7 @@
+{
+	"action"   : "drop",
+	"drop"     : "group",
+	"group" : "sandbox.debug_mine",
+	"drop_children": true
+
+}

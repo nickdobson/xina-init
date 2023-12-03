@@ -1,0 +1,10 @@
+{
+	"action"         : "struct_create",
+	"create"         : "model",
+	"parent"         : "lab699",
+	"name"           : "ltq",
+	"label"          : "LTQ",
+	"desc"           : "LTQ",
+	"group_teams"    : ["lab699", "lab699_dev"],
+	"database_teams" : ["lab699", "lab699_dev"]
+}

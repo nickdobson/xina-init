@@ -88,6 +88,11 @@
 				"nul"  : true
 			},
 			{
+				"name" : "ML Available",
+				"type" : "boolean",
+				"def"  : "false"
+			},
+			{
 				"name" : "Scripts",
 				"type" : "jsonarray",
 				"nul"  : true

@@ -1,0 +1,12 @@
+{
+	"action"         : "struct_create",
+	"create"         : "model",
+	"parent"         : "drams.wrp",
+	"name"           : "moma",
+	"label"          : "MOMA",
+	"desc"           : "MOMA",
+	"event"          : true,
+	"eventf"         : true,
+	"group_teams"    : ["drams", "drams_dev"],
+	"database_teams" : ["drams", "drams_dev"]
+}

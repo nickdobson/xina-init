@@ -1,0 +1,133 @@
+{
+	"action"         : "struct_create",
+	"create"         : "event",
+	"group"         : "sandbox.demo",
+	"name"           : "ltq",
+	"label"          : "LTQ",
+	"desc"           : "LTQ",
+	"singular": "spectrum",
+	"plural": "spectra",
+	"type"          : "file",
+	"teams" : ["sandbox", "sandbox_dev"],
+	"conf": {
+		"spectrum": {
+			"charts": {
+				"spectrum": {
+					"x": ["Mass Values"],
+					"y": ["Intensity Values"]
+				},
+				"grouping": [
+					"Sample Name"
+				]
+			}
+		}
+	},
+	"fields"      : [
+		{
+			"name" : "Run ID",
+			"type" : "utf8vstring(128)"
+		},
+		{
+			"name" : "Source File Name",
+			"type" : "utf8vstring(128)"
+		},
+		{
+			"name" : "Instrument ID",
+			"type" : "utf8vstring(64)"
+		},
+		{
+			"name" : "XCalibur Version",
+			"type" : "utf8vstring(64)"
+		},
+		{
+			"name" : "Instrument Components",
+			"type" : "utf8text",
+			"nul"  : true
+		},
+		{
+			"name" : "Sample Name",
+			"type" : "utf8vstring(64)"
+		},
+		{
+			"name" : "User",
+			"type" : "utf8vstring(64)"
+		},
+		{
+			"name" : "Position",
+			"type" : "utf8vstring(64)",
+			"nul"  : true
+		},
+		{
+			"name" : "Doped",
+			"type" : "utf8text",
+			"nul"  : true
+		},
+		{
+			"name" : "Related Projects",
+			"type" : "utf8text",
+			"nul"  : true
+		},
+		{
+			"name" : "Matrix",
+			"type" : "utf8text",
+			"nul"  : true
+		},
+		{
+			"name" : "Run Number",
+			"type" : "int(4)",
+			"nul"  : true
+		},
+		{
+			"name" : "Analysis Type",
+			"type" : "utf8vstring(64)",
+			"nul"  : true
+		},
+		{
+			"name" : "Polarity",
+			"type" : "boolean",
+			"nul"  : true
+		},
+		{
+			"name" : "Laser Energy",
+			"type" : "float(8)",
+			"meas" : "energy",
+			"unit" : "uJ",
+			"nul"  : true
+		},
+		{
+			"name" : "Mass Range Min",
+			"type" : "float(8)",
+			"nul"  : true
+		},
+		{
+			"name" : "Mass Range Max",
+			"type" : "float(8)",
+			"nul"  : true
+		},
+		{
+			"name" : "Scans per File",
+			"type" : "int(4)",
+			"nul"  : true
+		},
+		{
+			"name" : "Spectrum Type",
+			"type" : "utf8vstring(64)",
+			"nul"  : true
+		},
+		{
+			"name" : "Parent Ion",
+			"type" : "float(8)",
+			"nul"  : true
+		},
+		{
+			"name" : "CID",
+			"type" : "int(4)",
+			"nul"  : true
+		},
+		{
+			"name" : "Comments",
+			"type" : "utf8text",
+			"nul"  : true
+		}
+	]
+}
