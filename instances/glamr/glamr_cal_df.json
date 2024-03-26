@@ -1,9 +1,9 @@
 {
 	"action"         : "struct_create",
 	"create"         : "origin",
-	"model"          : "lisa.trl6.mopa",
+	"model"          : "glamr.cal",
 	"name"           : "df",
 	"label"          : "Default",
-	"group_teams"    : ["lisa", "lisa_dev"],
-	"database_teams" : ["lisa", "lisa_dev"]
+	"group_teams"    : ["glamr", "glamr_dev"],
+	"database_teams" : ["glamr", "glamr_dev"]
 }

@@ -1,10 +1,9 @@
 {
 	"action" : "create",
 	"create" : "team",
-	"parent" : "sam",
 	"team"   : {
-		"name"                : "dev",
-		"label"               : "Dev",
+		"name"                : "sam_dev",
+		"label"               : "SAM Dev",
 		"desc"                : "Team for active SAM developers.",
 		"database_privileges" : ["update", "insert", "trash"]
 	}

@@ -1,5 +1,0 @@
-{
-	"action"   : "drop",
-	"drop"     : "database",
-	"database" : "lab699.ltq.spectra"
-}

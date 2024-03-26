@@ -1,0 +1,13 @@
+{
+	"action"         : "struct_create",
+	"create"         : "model",
+	"parent"         : "glamr",
+	"name"           : "cal",
+	"label"          : "Cal",
+	"desc"           : "cal",
+	"event"          : true,
+	"eventf"         : true,
+	"eventfs"        : true,
+	"group_teams"    : ["glamr", "glamr_dev"],
+	"database_teams" : ["glamr", "glamr_dev"]
+}
