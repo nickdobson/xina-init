@@ -1,9 +1,9 @@
 {
   "action": "struct_create",
   "create": "origin",
-  "model": "sandbox.debug",
-  "name": "df",
-  "label": "Default",
+  "model": "oci.fm",
+  "name": "tm",
+  "label": "Telemetry",
   "group_teams": ["sandbox", "sandbox_dev"],
   "database_teams": ["sandbox", "sandbox_dev"]
 }

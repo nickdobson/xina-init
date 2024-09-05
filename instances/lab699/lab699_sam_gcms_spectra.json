@@ -1,0 +1,311 @@
+{
+  "action": "struct_create",
+  "create": "event",
+  "group": "lab699.sam.gcms",
+  "name": "spectra",
+  "label": "Spectra",
+  "desc": "spectra",
+  "singular": "spectrum",
+  "plural": "spectra",
+  "type": "file",
+  "teams": ["lab699", "lab699_dev"],
+  "conf": {
+    "spectrum": {
+      "charts": {
+        "summary": {
+          "y": [
+            "tic",
+            "highest_peak_mass",
+            "highest_peak_intensity",
+            "pressure",
+            "pyro_temp"
+          ],
+          "x": [
+            "t_start",
+            "t_end",
+            "$groupRelativeTime",
+            "spectrum",
+            "pressure",
+            "pyro_temp",
+            "$id"
+          ]
+        },
+        "spectrum": {
+          "y": [
+            {
+              "field": "Intensity Values",
+              "source": "file",
+              "label": "Intensity"
+            }
+          ],
+          "x": [
+            {
+              "field": "Mass Values",
+              "source": "file",
+              "label": "Mass"
+            }
+          ]
+        }
+      },
+      "grouping": ["sample", "sample_id", "experiment"],
+      "filters": [
+        {
+          "desc": "Aromatic",
+          "color": "pink",
+          "name": "aromatic",
+          "label": "Aromatic",
+          "checks": [
+            {
+              "field": "aromatic",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Hydrocarbon",
+          "color": "indigo",
+          "name": "hydrocarbon",
+          "label": "Hydrocarbon",
+          "checks": [
+            {
+              "field": "hydrocarbon",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Carboxylic Acid",
+          "color": "orange",
+          "name": "carboxylic_acid",
+          "label": "Carboxylic Acid",
+          "checks": [
+            {
+              "field": "carboxylic_acid",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Nitrogen-Bearing Compound",
+          "color": "blue",
+          "name": "nitrogen_bearing_compound",
+          "label": "Nitrogen",
+          "checks": [
+            {
+              "field": "nitrogen_bearing_compound",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Chlorine-Bearing Compound",
+          "color": "cyan",
+          "name": "chlorine_bearing_compound",
+          "label": "Chlorine",
+          "checks": [
+            {
+              "field": "chlorine_bearing_compound",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Sulfur-Bearing Compound",
+          "color": "yellow",
+          "name": "sulfur_bearing_compound",
+          "label": "Sulfur",
+          "checks": [
+            {
+              "field": "sulfur_bearing_compound",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Alcohol",
+          "color": "red",
+          "name": "alcohol",
+          "label": "Alcohol",
+          "checks": [
+            {
+              "field": "alcohol",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Other Oxygen-Bearing Compound",
+          "color": "green",
+          "name": "other_oxygen_bearing_compound",
+          "label": "Other Oxygen",
+          "checks": [
+            {
+              "field": "other_oxygen_bearing_compound",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Mineral",
+          "color": "teal",
+          "name": "mineral",
+          "label": "Mineral",
+          "checks": [
+            {
+              "field": "mineral",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Derivatized",
+          "color": "purple",
+          "name": "derivatized",
+          "label": "Derivatized",
+          "checks": [
+            {
+              "field": "derivatized",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Analog Sample",
+          "color": "warning",
+          "name": "analog_sample",
+          "label": "Analog",
+          "checks": [
+            {
+              "field": "analog_sample",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Blank",
+          "color": "info",
+          "name": "blank",
+          "label": "Blank",
+          "checks": [
+            {
+              "field": "blank",
+              "value": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "fields": [
+    {
+      "name": "sample_id",
+      "label": "Sample ID",
+      "type": "utf8vstring(128)"
+    },
+    {
+      "name": "spectrum",
+      "label": "Spectrum",
+      "type": "int(4)"
+    },
+    {
+      "name": "experiment",
+      "label": "Experiment",
+      "type": "utf8vstring(128)"
+    },
+    {
+      "name": "sample",
+      "label": "Sample",
+      "type": "utf8vstring(128)",
+      "nul": true
+    },
+    {
+      "name": "tic",
+      "label": "TIC",
+      "type": "float(8)"
+    },
+    {
+      "name": "highest_peak_intensity",
+      "label": "Highest Peak Intensity",
+      "type": "float(8)"
+    },
+    {
+      "name": "highest_peak_mass",
+      "label": "Highest Peak Mass",
+      "type": "float(8)"
+    },
+    {
+      "name": "pressure",
+      "label": "Pressure",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "mbar"
+    },
+    {
+      "name": "pyro_temp",
+      "label": "Pyro Temp",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "aromatic",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "hydrocarbon",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "carboxylic_acid",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "nitrogen_bearing_compound",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "chlorine_bearing_compound",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "sulfur_bearing_compound",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "alcohol",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "other_oxygen_bearing_compound",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "mineral",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "derivatized",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "analog_sample",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "blank",
+      "type": "boolean",
+      "nul": true
+    }
+  ]
+}

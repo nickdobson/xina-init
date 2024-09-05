@@ -1,0 +1,304 @@
+{
+  "action": "struct_create",
+  "create": "event",
+  "group": "lab699.sam.egams",
+  "name": "spectra",
+  "label": "Spectra",
+  "desc": "spectra",
+  "singular": "spectrum",
+  "plural": "spectra",
+  "type": "file",
+  "teams": ["lab699", "lab699_dev"],
+  "conf": {
+    "spectrum": {
+      "charts": {
+        "summary": {
+          "x": [
+            "t_start",
+            "t_end",
+            "$groupRelativeTime",
+            "spectrum",
+            "pressure",
+            "sccm",
+            "t",
+            "$id"
+          ],
+          "y": [
+            "tic",
+            "highest_peak_mass",
+            "highest_peak_intensity",
+            "pressure",
+            "sccm",
+            "t"
+          ]
+        },
+        "spectrum": {
+          "x": [
+            {
+              "field": "Mass Values",
+              "source": "file",
+              "label": "Mass"
+            }
+          ],
+          "y": [
+            {
+              "field": "Intensity Values",
+              "source": "file",
+              "label": "Intensity"
+            }
+          ]
+        }
+      },
+      "grouping": [
+        "sample",
+        "sample_id",
+        "gas",
+        "experiment",
+        "instrument_type",
+        "type"
+      ],
+      "filters": [
+        {
+          "desc": "Basalt",
+          "color": "indigo",
+          "name": "basalt",
+          "label": "Basalt",
+          "checks": [
+            {
+              "field": "basalt",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Carbonate",
+          "color": "green",
+          "name": "carbonate",
+          "label": "Carbonate",
+          "checks": [
+            {
+              "field": "carbonate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Chloride",
+          "color": "cyan",
+          "name": "chloride",
+          "label": "Chloride",
+          "checks": [
+            {
+              "field": "chloride",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Iron Oxide",
+          "color": "red",
+          "name": "iron_oxide",
+          "label": "Iron Oxide",
+          "checks": [
+            {
+              "field": "iron_oxide",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Oxalate",
+          "color": "blue",
+          "name": "oxalate",
+          "label": "Oxalate",
+          "checks": [
+            {
+              "field": "oxalate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Oxychlorine",
+          "color": "teal",
+          "name": "oxychlorine",
+          "label": "Oxychlorine",
+          "checks": [
+            {
+              "field": "oxychlorine",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Phyllosilicate",
+          "color": "pink",
+          "name": "phyllosilicate",
+          "label": "Phyllosilicate",
+          "checks": [
+            {
+              "field": "phyllosilicate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Silicate",
+          "color": "purple",
+          "name": "silicate",
+          "label": "Silicate",
+          "checks": [
+            {
+              "field": "silicate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Sulfate",
+          "color": "orange",
+          "name": "sulfate",
+          "label": "Sulfate",
+          "checks": [
+            {
+              "field": "sulfate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "Sulfide",
+          "color": "yellow",
+          "name": "sulfide",
+          "label": "Sulfide",
+          "checks": [
+            {
+              "field": "sulfide",
+              "value": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "fields": [
+    {
+      "name": "sample_id",
+      "label": "Sample ID",
+      "type": "utf8vstring(128)"
+    },
+    {
+      "name": "spectrum",
+      "label": "Spectrum",
+      "type": "int(4)"
+    },
+    {
+      "name": "experiment",
+      "label": "Experiment",
+      "type": "utf8vstring(128)"
+    },
+    {
+      "name": "instrument_type",
+      "label": "Instrument Type",
+      "type": "utf8vstring(64)",
+      "nul": true
+    },
+    {
+      "name": "sample",
+      "label": "Sample",
+      "type": "utf8vstring(128)",
+      "nul": true
+    },
+    {
+      "name": "tic",
+      "label": "TIC",
+      "type": "float(8)"
+    },
+    {
+      "name": "highest_peak_intensity",
+      "label": "Highest Peak Intensity",
+      "type": "float(8)"
+    },
+    {
+      "name": "highest_peak_mass",
+      "label": "Highest Peak Mass",
+      "type": "float(8)"
+    },
+    {
+      "name": "gas",
+      "label": "Gas",
+      "type": "utf8vstring(64)",
+      "nul": true
+    },
+    {
+      "name": "pressure",
+      "label": "Pressure",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "mbar"
+    },
+    {
+      "name": "sccm",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "sccm"
+    },
+    {
+      "name": "t",
+      "label": "T",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "kmin"
+    },
+    {
+      "name": "basalt",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "carbonate",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "chloride",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "iron_oxide",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "oxalate",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "oxychlorine",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "phyllosilicate",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "silicate",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "sulfate",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "sulfide",
+      "type": "boolean",
+      "nul": true
+    }
+  ]
+}

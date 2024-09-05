@@ -1,0 +1,7 @@
+{
+	"action"         : "struct_create",
+	"create"         : "def",
+	"parent"         : "glamr.debug",
+	"group_teams"    : ["glamr", "glamr_dev"],
+	"database_teams" : ["glamr", "glamr_dev"]
+}

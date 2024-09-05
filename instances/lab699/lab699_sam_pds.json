@@ -1,13 +1,10 @@
 {
   "action": "struct_create",
   "create": "model",
-  "parent": "lab699",
-  "name": "debug",
-  "label": "Debug",
-  "desc": "debug",
-  "event": true,
-  "eventf": true,
-  "eventfs": true,
+  "parent": "lab699.sam",
+  "name": "pds",
+  "label": "PDS",
+  "desc": "PDS",
   "group_teams": ["lab699", "lab699_dev"],
   "database_teams": ["lab699", "lab699_dev"]
 }

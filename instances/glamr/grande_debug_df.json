@@ -1,0 +1,9 @@
+{
+  "action": "struct_create",
+  "create": "origin",
+  "model": "grande.debug",
+  "name": "df",
+  "label": "Default",
+  "group_teams": ["glamr", "glamr_dev"],
+  "database_teams": ["glamr", "glamr_dev"]
+}

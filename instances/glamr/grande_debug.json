@@ -1,13 +1,13 @@
 {
   "action": "struct_create",
   "create": "model",
-  "parent": "sandbox",
+  "parent": "grande",
   "name": "debug",
   "label": "Debug",
   "desc": "debug",
   "event": true,
   "eventf": true,
   "eventfs": true,
-  "group_teams": ["sandbox", "sandbox_dev"],
-  "database_teams": ["sandbox", "sandbox_dev"]
+  "group_teams": ["glamr", "glamr_dev"],
+  "database_teams": ["glamr", "glamr_dev"]
 }

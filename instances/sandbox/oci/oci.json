@@ -1,0 +1,8 @@
+{
+  "action": "struct_create",
+  "create": "project",
+  "teams": ["sandbox", "sandbox_dev"],
+  "name": "oci",
+  "label": "OCI",
+  "desc": "OCI"
+}

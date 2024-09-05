@@ -1,0 +1,9 @@
+{
+  "action": "struct_create",
+  "create": "category",
+  "parent": "lab699",
+  "teams": ["lab699", "lab699_dev"],
+  "name": "sam",
+  "label": "SAM",
+  "desc": "SAM"
+}

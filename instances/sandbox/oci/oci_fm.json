@@ -1,13 +1,10 @@
 {
   "action": "struct_create",
   "create": "model",
-  "parent": "sandbox",
-  "name": "debug",
-  "label": "Debug",
-  "desc": "debug",
-  "event": true,
-  "eventf": true,
-  "eventfs": true,
+  "parent": "oci",
+  "name": "fm",
+  "label": "FM",
+  "desc": "flight model",
   "group_teams": ["sandbox", "sandbox_dev"],
   "database_teams": ["sandbox", "sandbox_dev"]
 }

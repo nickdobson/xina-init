@@ -1,0 +1,9 @@
+{
+	"action"         : "struct_create",
+	"create"         : "origin",
+	"model"          : "moma.wrp",
+	"name"           : "df",
+	"label"          : "Default",
+	"group_teams"    : ["moma", "moma_dev"],
+	"database_teams" : ["moma", "moma_dev"]
+}

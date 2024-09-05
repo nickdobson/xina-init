@@ -1,0 +1,872 @@
+{
+  "action": "struct_create",
+  "create": "event",
+  "group": "lab699.sam.pds",
+  "name": "spectra",
+  "label": "Spectra",
+  "desc": "spectra",
+  "singular": "spectrum",
+  "plural": "spectra",
+  "type": "file",
+  "teams": ["lab699", "lab699_dev"],
+  "conf": {
+    "spectrum": {
+      "charts": {
+        "summary": {
+          "y": [
+            "tic",
+            "highest_peak_intensity",
+            "highest_peak_mass",
+            "mid_plateau_duration",
+            "bennys_benchtop_temp",
+            "gc_a_final_plateau_duration",
+            "gc_a_pmax_mn7",
+            "gc_a_pmin_mn7",
+            "gc_a_t_peak",
+            "gc_a_t_ramp",
+            "gc_a_t_start",
+            "gc_a_tmax_mn7",
+            "gc_a_tmin_mn7",
+            "gc_b_final_plateau_duration",
+            "gc_b_pmax_mn7",
+            "gc_b_pmin_mn7",
+            "gc_b_t_peak",
+            "gc_b_t_ramp",
+            "gc_b_t_start",
+            "gc_b_tmax_mn7",
+            "gc_b_tmin_mn7",
+            "it_flash_1_tmax",
+            "it_flash_2_tmax",
+            "mid_plateau_t",
+            "sample_t_diff"
+          ],
+          "x": [
+            "t_start",
+            "t_end",
+            "$groupRelativeTime",
+            "spectrum",
+            "$id",
+            "product_creation_time",
+            "solar_longitude",
+            "bennys_benchtop_temp",
+            "gc_a_final_plateau_duration",
+            "gc_a_pmax_mn7",
+            "gc_a_pmin_mn7",
+            "gc_a_t_peak",
+            "gc_a_t_ramp",
+            "gc_a_t_start",
+            "gc_a_tmax_mn7",
+            "gc_a_tmin_mn7",
+            "gc_b_final_plateau_duration",
+            "gc_b_pmax_mn7",
+            "gc_b_pmin_mn7",
+            "gc_b_t_peak",
+            "gc_b_t_ramp",
+            "gc_b_t_start",
+            "gc_b_tmax_mn7",
+            "gc_b_tmin_mn7",
+            "it_flash_1_tmax",
+            "it_flash_2_tmax",
+            "mid_plateau_duration",
+            "mid_plateau_t",
+            "sample_t_diff"
+          ]
+        },
+        "spectrum": {
+          "y": [
+            {
+              "field": "Intensity Values",
+              "source": "file",
+              "label": "Intensity"
+            }
+          ],
+          "x": [
+            {
+              "field": "Mass Values",
+              "source": "file",
+              "label": "Mass"
+            }
+          ]
+        }
+      },
+      "grouping": [
+        "sample",
+        "experiment",
+        "eid",
+        "run",
+        "where",
+        "cup",
+        "he_tank_n",
+        "oven",
+        "date",
+        "planet_day_number",
+        "release_id"
+      ],
+      "filters": [
+        {
+          "desc": "EGAMS Amorphous",
+          "color": "warning",
+          "name": "egams_amorphous",
+          "label": "Amorphous",
+          "checks": [
+            {
+              "field": "egams_amorphous",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "EGAMS Basalt",
+          "color": "indigo",
+          "name": "egams_basalt",
+          "label": "Basalt",
+          "checks": [
+            {
+              "field": "egams_basalt",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "EGAMS Carbonate",
+          "color": "green",
+          "name": "egams_carbonate",
+          "label": "Carbonate",
+          "checks": [
+            {
+              "field": "egams_carbonate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "EGAMS Chloride",
+          "color": "cyan",
+          "name": "egams_chloride",
+          "label": "Chloride",
+          "checks": [
+            {
+              "field": "egams_chloride",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "EGAMS Fluoropatite",
+          "color": "info",
+          "name": "egams_fluoropatite",
+          "label": "Fluoropatite",
+          "checks": [
+            {
+              "field": "egams_fluoropatite",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "EGAMS Iron Oxide",
+          "color": "red",
+          "name": "egams_iron_oxide",
+          "label": "Iron Oxide",
+          "checks": [
+            {
+              "field": "egams_iron_oxide",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "EGAMS Nitrate",
+          "color": "blue",
+          "name": "egams_nitrate",
+          "label": "Nitrate",
+          "checks": [
+            {
+              "field": "egams_nitrate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "EGAMS Oxidized Organic Carbon",
+          "color": "danger",
+          "name": "egams_oxidized_organic_carbon",
+          "label": "Oxidized Organic Carbon",
+          "checks": [
+            {
+              "field": "egams_oxidized_organic_carbon",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "EGAMS Oxychlorine",
+          "color": "teal",
+          "name": "egams_oxychlorine",
+          "label": "Oxychlorine",
+          "checks": [
+            {
+              "field": "egams_oxychlorine",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "EGAMS Phyllosilicate",
+          "color": "pink",
+          "name": "egams_phyllosilicate",
+          "label": "Phyllosilicate",
+          "checks": [
+            {
+              "field": "egams_phyllosilicate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "EGAMS Silicate",
+          "color": "purple",
+          "name": "egams_silicate",
+          "label": "Silicate",
+          "checks": [
+            {
+              "field": "egams_silicate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "EGAMS Sulfate",
+          "color": "orange",
+          "name": "egams_sulfate",
+          "label": "Sulfate",
+          "checks": [
+            {
+              "field": "egams_sulfate",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "EGAMS Sulfide",
+          "color": "yellow",
+          "name": "egams_sulfide",
+          "label": "Sulfide",
+          "checks": [
+            {
+              "field": "egams_sulfide",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "GCMS Aromatic",
+          "color": "pink",
+          "name": "gcms_aromatic",
+          "label": "Aromatic",
+          "checks": [
+            {
+              "field": "gcms_aromatic",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "GCMS Hydrocarbon",
+          "color": "indigo",
+          "name": "gcms_hydrocarbon",
+          "label": "Hydrocarbon",
+          "checks": [
+            {
+              "field": "gcms_hydrocarbon",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "GCMS Nitrogen-Bearing Compound",
+          "color": "blue",
+          "name": "gcms_nitrogen_bearing_compound",
+          "label": "Nitrogen",
+          "checks": [
+            {
+              "field": "gcms_nitrogen_bearing_comp",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "GCMS Chlorine-Bearing Compound",
+          "color": "cyan",
+          "name": "gcms_chlorine_bearing_compound",
+          "label": "Chlorine",
+          "checks": [
+            {
+              "field": "gcms_chlorine_bearing_comp",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "GCMS Sulfur-Bearing Compound",
+          "color": "yellow",
+          "name": "gcms_sulfur_bearing_compound",
+          "label": "Sulfur",
+          "checks": [
+            {
+              "field": "gcms_sulfur_bearing_comp",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "GCMS Oxygen-Bearing Compound",
+          "color": "green",
+          "name": "gcms_oxygen_bearing_compound",
+          "label": "Oxygen",
+          "checks": [
+            {
+              "field": "gcms_oxygen_bearing_comp",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "GCMS Fluorine-Bearing Compound",
+          "color": "teal",
+          "name": "gcms_fluorine_bearing_compound",
+          "label": "Fluorine",
+          "checks": [
+            {
+              "field": "gcms_fluorine_bearing_comp",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "GCMS Inorganics / Volatiles",
+          "color": "orange",
+          "name": "gcms_inorganics_volatiles",
+          "label": "Inorganics / Volatiles",
+          "checks": [
+            {
+              "field": "gcms_inorganics_volatiles",
+              "value": true
+            }
+          ]
+        },
+        {
+          "desc": "GCMS Silicon-Bearing Compound",
+          "color": "purple",
+          "name": "gcms_silicon_bearing_compound",
+          "label": "Silicon",
+          "checks": [
+            {
+              "field": "gcms_silicon_bearing_comp",
+              "value": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "fields": [
+    {
+      "name": "eid",
+      "label": "EID",
+      "type": "int(4)"
+    },
+    {
+      "name": "experiment",
+      "label": "Experiment",
+      "type": "utf8vstring(128)",
+      "nul": true
+    },
+    {
+      "name": "cup",
+      "label": "Cup",
+      "type": "int(4)",
+      "nul": true
+    },
+    {
+      "name": "date",
+      "label": "Date",
+      "type": "localdate",
+      "nul": true
+    },
+    {
+      "name": "desc",
+      "label": "Description",
+      "type": "utf8text",
+      "nul": true
+    },
+    {
+      "name": "sample",
+      "label": "Sample",
+      "type": "utf8vstring(128)",
+      "nul": true
+    },
+    {
+      "name": "spectrum",
+      "label": "Spectrum",
+      "type": "int(4)"
+    },
+    {
+      "name": "where",
+      "label": "Where",
+      "type": "utf8vstring(128)",
+      "nul": true
+    },
+    {
+      "name": "run",
+      "label": "Run",
+      "type": "utf8vstring(128)",
+      "nul": true
+    },
+    {
+      "name": "sample_t_diff",
+      "label": "Sample T Diff",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "he_tank_n",
+      "label": "He Tank Number",
+      "type": "int(1)",
+      "nul": true
+    },
+    {
+      "name": "oven",
+      "label": "Oven",
+      "type": "int(1)",
+      "nul": true
+    },
+    {
+      "name": "mid_plateau_duration",
+      "label": "Mid Plateau Duration",
+      "type": "duration(s)",
+      "nul": true
+    },
+    {
+      "name": "mid_plateau_t",
+      "label": "Mid Plateau T",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "it_flash_1_tmax",
+      "label": "IT Flash 1 Tmax",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "it_flash_2_tmax",
+      "label": "IT Flash 2 Tmax",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "gc",
+      "label": "GC?",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "gc_columns_problems",
+      "label": "GC Columns Problems",
+      "type": "utf8string",
+      "nul": true
+    },
+    {
+      "name": "ega_oven_t_gcms_script_start",
+      "label": "EGA Oven Temp to GCMS per script Start",
+      "type": "utf8string",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "ega_oven_t_gcms_script_end",
+      "label": "EGA Oven Temp to GCMS per script End",
+      "type": "utf8string",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "ega_samp_t_gcms_script_start",
+      "label": "EGA Sample Temp to GCMS per script Start",
+      "type": "utf8string",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "ega_samp_t_gcms_start",
+      "label": "EGA Sample Temp to GCMS Start",
+      "type": "utf8string",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "ega_samp_t_gcms_script_end",
+      "label": "EGA Sample Temp to GCMS per script End",
+      "type": "utf8string",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "ega_samp_t_gcms_end",
+      "label": "EGA Sample Temp to GCMS End",
+      "type": "utf8string",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "ega_oven_t_tls_script_start",
+      "label": "EGA Oven Temp to TLS per script Start",
+      "type": "utf8string",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "ega_sample_t_tls_start",
+      "label": "EGA Sample Temp to TLS Start",
+      "type": "utf8string",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "ega_oven_t_tls_script_end",
+      "label": "EGA Oven Temp to TLS per script End",
+      "type": "utf8string",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "ega_sample_t_tls_end",
+      "label": "EGA Sample Temp to TLS End",
+      "type": "utf8string",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "bennys_benchtop_temp",
+      "label": "Benny's Benchtop Temp",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "comments",
+      "label": "Comments",
+      "type": "utf8text",
+      "nul": true
+    },
+
+    {
+      "name": "egams_basalt",
+      "label": "EGAMS Basalt",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "egams_carbonate",
+      "label": "EGAMS Carbonate",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "egams_chloride",
+      "label": "EGAMS Chloride",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "egams_iron_oxide",
+      "label": "EGAMS Iron Oxide",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "egams_oxidized_organic_carbon",
+      "label": "EGAMS Oxidized Organic Carbon",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "egams_oxychlorine",
+      "label": "EGAMS Oxychlorine",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "egams_phyllosilicate",
+      "label": "EGAMS Phyllosilicate",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "egams_silicate",
+      "label": "EGAMS Silicate",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "egams_sulfate",
+      "label": "EGAMS Sulfate",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "egams_sulfide",
+      "label": "EGAMS Sulfide",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "egams_nitrate",
+      "label": "EGAMS Nitrate",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "egams_amorphous",
+      "label": "EGAMS Amorphous",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "egams_fluoropatite",
+      "label": "EGAMS Fluoropatite",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "gcms_hydrocarbon",
+      "label": "GCMS Hydrocarbon",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "gcms_aromatic",
+      "label": "GCMS Aromatic",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "gcms_inorganics_volatiles",
+      "label": "GCMS Inorganics / Volatiles",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "gcms_nitrogen_bearing_comp",
+      "label": "GCMS Nitrogen Bearing Compound",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "gcms_chlorine_bearing_comp",
+      "label": "GCMS Chlorine Bearing Compound",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "gcms_sulfur_bearing_comp",
+      "label": "GCMS Sulfur Bearing Compound",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "gcms_fluorine_bearing_comp",
+      "label": "GCMS Fluorine Bearing Compound",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "gcms_oxygen_bearing_comp",
+      "label": "GCMS Oxygen Bearing Compound",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "gcms_silicon_bearing_comp",
+      "label": "GCMS Silicon Bearing Compound",
+      "type": "boolean",
+      "nul": true
+    },
+    {
+      "name": "planet_day_number",
+      "label": "Planet Day Number",
+      "type": "int(4)"
+    },
+    {
+      "name": "product_creation_time",
+      "label": "Product Creation Time",
+      "type": "instant(ms)"
+    },
+    {
+      "name": "release_id",
+      "label": "Release ID",
+      "type": "int(4)"
+    },
+    {
+      "name": "solar_longitude",
+      "label": "Solar Longitude",
+      "type": "float(8)"
+    },
+    {
+      "name": "msl_sam_experiment_desc",
+      "label": "MSL SAM Experiment Description",
+      "type": "utf8string",
+      "nul": true
+    },
+    {
+      "name": "msl_sam_gc_col_desc",
+      "label": "MSL SAM GC Column Description",
+      "type": "utf8string",
+      "nul": true
+    },
+    {
+      "name": "tic",
+      "label": "TIC",
+      "type": "float(8)"
+    },
+    {
+      "name": "highest_peak_intensity",
+      "label": "Highest Peak Intensity",
+      "type": "float(8)"
+    },
+    {
+      "name": "highest_peak_mass",
+      "label": "Highest Peak Mass",
+      "type": "float(8)"
+    },
+    {
+      "name": "gc_col_a",
+      "label": "GC Col A",
+      "type": "int(1)",
+      "nul": true
+    },
+    {
+      "name": "gc_a_t_start",
+      "label": "GC A T Start",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "gc_a_t_peak",
+      "label": "GC A T Peak",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "gc_a_t_ramp",
+      "label": "GC A T Ramp",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "/min"
+    },
+    {
+      "name": "gc_a_pmin_mn7",
+      "label": "GC A Pmin MN7",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "mbar"
+    },
+    {
+      "name": "gc_a_pmax_mn7",
+      "label": "GC A Pmax MN7",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "mbar"
+    },
+    {
+      "name": "gc_a_tmin_mn7",
+      "label": "GC A Tmin MN7",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "gc_a_tmax_mn7",
+      "label": "GC A Tmax MN7",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "gc_a_final_plateau_duration",
+      "label": "GC A Final Plateau Duration",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "s"
+    },
+    {
+      "name": "gc_col_b",
+      "label": "GC Col B",
+      "type": "int(1)",
+      "nul": true
+    },
+    {
+      "name": "gc_b_t_start",
+      "label": "GC B T Start",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "gc_b_t_peak",
+      "label": "GC B T Peak",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "gc_b_t_ramp",
+      "label": "GC B T Ramp",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "/min"
+    },
+    {
+      "name": "gc_b_pmin_mn7",
+      "label": "GC B Pmin MN7",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "mbar"
+    },
+    {
+      "name": "gc_b_pmax_mn7",
+      "label": "GC B Pmax MN7",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "mbar"
+    },
+    {
+      "name": "gc_b_tmin_mn7",
+      "label": "GC B Tmin MN7",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "gc_b_tmax_mn7",
+      "label": "GC B Tmax MN7",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "gc_b_final_plateau_duration",
+      "label": "GC B Final Plateau Duration",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "s"
+    }
+  ]
+}

@@ -1,9 +1,7 @@
 {
   "action": "struct_create",
-  "create": "origin",
-  "model": "sandbox.debug",
-  "name": "df",
-  "label": "Default",
+  "create": "def",
+  "parent": "oci",
   "group_teams": ["sandbox", "sandbox_dev"],
   "database_teams": ["sandbox", "sandbox_dev"]
 }
