@@ -5,6 +5,6 @@
   "name": "df",
   "label": "Default",
   "buffer": true,
-  "group_teams": ["lisa", "lisa_dev"],
-  "database_teams": ["lisa", "lisa_dev"]
+  "group_teams": ["sandbox", "sandbox_dev"],
+  "database_teams": ["sandbox", "sandbox_dev"]
 }

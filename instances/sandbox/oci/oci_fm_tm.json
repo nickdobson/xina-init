@@ -1,6 +1,6 @@
 {
   "action": "struct_create",
-  "create": "origin",
+  "create": "pipe",
   "model": "oci.fm",
   "name": "tm",
   "label": "Telemetry",
