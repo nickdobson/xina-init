@@ -100,6 +100,7 @@
       ],
       "grouping": [
         "t_start",
+        "group_id",
         "test_stage",
         "active_mo",
         "active_pa",
@@ -114,6 +115,12 @@
       "name": "test_stage",
       "label": "Test Stage",
       "type": "asciivstring(64)",
+      "nul": true
+    },
+    {
+      "name": "group_id",
+      "label": "Group ID",
+      "type": "asciivstring(128)",
       "nul": true
     },
     {
