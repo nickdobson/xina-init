@@ -1,0 +1,200 @@
+{
+  "action": "struct_create",
+  "create": "event",
+  "group": "lisa.debug",
+  "name": "spectra",
+  "label": "Spectra",
+  "desc": "spectra",
+  "singular": "spectrum",
+  "plural": "spectra",
+  "type": "file",
+  "teams": ["sandbox", "sandbox_dev"],
+  "conf": {
+    "spectrum": {
+      "charts": {
+        "summary": {
+          "x": [
+            "t_start",
+            "t_end",
+            "$groupRelativeTime",
+            "$groupIndex",
+            "lom_temp",
+            "pa_current_sp",
+            "$id"
+          ],
+          "y": [
+            "peak_wavelength",
+            "peak_amplitude",
+            "sidemode_lo_wavelength",
+            "sidemode_lo_amplitude",
+            "sidemode_hi_wavelength",
+            "sidemode_hi_amplitude"
+          ]
+        },
+        "spectrum": {
+          "x": [
+            {
+              "field": "Wavelength(nm)",
+              "label": "Wavelength (nm)",
+              "source": "file"
+            }
+          ],
+          "y": [
+            {
+              "field": "Amplitude(dBm)",
+              "label": "Amplitude (dBm)",
+              "source": "file"
+            }
+          ]
+        }
+      },
+      "filters": [
+        {
+          "desc": "Fast",
+          "color": "green",
+          "name": "fast",
+          "label": "Fast",
+          "checks": [
+            {
+              "field": "optical_axis",
+              "value": "fast"
+            }
+          ]
+        },
+        {
+          "desc": "Slow",
+          "color": "red",
+          "name": "slow",
+          "label": "Slow",
+          "checks": [
+            {
+              "field": "optical_axis",
+              "value": "slow"
+            }
+          ]
+        },
+        {
+          "desc": "Narrow",
+          "color": "purple",
+          "name": "narrow",
+          "label": "Narrow",
+          "checks": [
+            {
+              "field": "osa_confs",
+              "value": "narrow"
+            }
+          ]
+        },
+        {
+          "desc": "Wide",
+          "color": "orange",
+          "name": "wide",
+          "label": "Wide",
+          "checks": [
+            {
+              "field": "osa_confs",
+              "value": "wide"
+            }
+          ]
+        }
+      ],
+      "grouping": [
+        "t_start",
+        "test_stage",
+        "active_mo",
+        "active_pa",
+        "optical_axis",
+        "osa_confs",
+        "pa_current_sp"
+      ]
+    }
+  },
+  "fields": [
+    {
+      "name": "test_stage",
+      "label": "Test Stage",
+      "type": "asciivstring(64)",
+      "nul": true
+    },
+    {
+      "name": "active_mo",
+      "label": "Active MO",
+      "type": "asciivstring(8)",
+      "nul": true
+    },
+    {
+      "name": "active_pa",
+      "label": "Active PA",
+      "type": "asciivstring(8)",
+      "nul": true
+    },
+    {
+      "name": "optical_axis",
+      "label": "Optical Axis",
+      "type": "asciivstring(8)",
+      "nul": true
+    },
+    {
+      "name": "osa_confs",
+      "label": "OSA Configurations",
+      "type": "asciivstring(8)",
+      "nul": true
+    },
+    {
+      "name": "pa_current_sp",
+      "label": "PA Current Setpoint",
+      "type": "float(8)",
+      "unit": "mA",
+      "nul": true
+    },
+    {
+      "name": "lom_temp",
+      "label": "LOM Temperature",
+      "type": "float(8)",
+      "unit": "C",
+      "nul": true
+    },
+    {
+      "name": "peak_wavelength",
+      "label": "Peak Wavelength",
+      "type": "float(8)",
+      "unit": "nm",
+      "nul": true
+    },
+    {
+      "name": "peak_amplitude",
+      "label": "Peak Amplitude",
+      "type": "float(8)",
+      "unit": "dBm",
+      "nul": true
+    },
+    {
+      "name": "sidemode_lo_wavelength",
+      "label": "Sidemode Lo Wavelength",
+      "type": "float(8)",
+      "unit": "nm",
+      "nul": true
+    },
+    {
+      "name": "sidemode_lo_amplitude",
+      "label": "Sidemode Lo Amplitude",
+      "type": "float(8)",
+      "unit": "dBm",
+      "nul": true
+    },
+    {
+      "name": "sidemode_hi_wavelength",
+      "label": "Sidemode Hi Wavelength",
+      "type": "float(8)",
+      "unit": "nm",
+      "nul": true
+    },
+    {
+      "name": "sidemode_hi_amplitude",
+      "label": "Sidemode Hi Amplitude",
+      "type": "float(8)",
+      "unit": "dBm",
+      "nul": true
+    }
+  ]
+}

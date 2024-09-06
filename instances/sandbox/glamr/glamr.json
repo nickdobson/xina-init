@@ -1,10 +1,9 @@
 {
   "action": "struct_create",
-  "create": "origin",
-  "model": "oci.fm",
-  "name": "tm",
-  "label": "Telemetry",
-  "duration": 10,
+  "create": "project",
+  "name": "glamr",
+  "label": "GLAMR",
+  "desc": "GLAMR",
   "group_teams": ["sandbox", "sandbox_dev"],
   "database_teams": ["sandbox", "sandbox_dev"]
 }

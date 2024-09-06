@@ -1,0 +1,12 @@
+{
+  "action": "struct_create",
+  "create": "pipe",
+  "model": "glamr.debug",
+  "name": "df",
+  "label": "Default",
+  "buffer": true,
+  "event": true,
+  "eventf": true,
+  "group_teams": ["sandbox", "sandbox_dev"],
+  "database_teams": ["sandbox", "sandbox_dev"]
+}

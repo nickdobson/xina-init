@@ -1,10 +1,7 @@
 {
   "action": "struct_create",
-  "create": "origin",
-  "model": "oci.fm",
-  "name": "tm",
-  "label": "Telemetry",
-  "duration": 10,
+  "create": "def",
+  "parent": "lisa",
   "group_teams": ["sandbox", "sandbox_dev"],
   "database_teams": ["sandbox", "sandbox_dev"]
 }

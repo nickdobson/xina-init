@@ -1,0 +1,18 @@
+{
+  "action": "create",
+  "create": "team",
+  "team": {
+    "name": "glamr_dev",
+    "label": "GLAMR Developers",
+    "desc": "Developer team for the GLAMR project.",
+    "group_privileges": ["select", "post", "reply"],
+    "database_privileges": [
+      "select",
+      "post",
+      "reply",
+      "update",
+      "insert",
+      "trash"
+    ]
+  }
+}
