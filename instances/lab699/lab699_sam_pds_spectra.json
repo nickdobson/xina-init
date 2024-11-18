@@ -13,100 +13,46 @@
     "spectrum": {
       "charts": {
         "summary": {
-          "y": [
-            "tic",
-            "highest_peak_intensity",
-            "highest_peak_mass",
-            "mid_plateau_duration",
-            "bennys_benchtop_temp",
-            "gc_a_final_plateau_duration",
-            "gc_a_pmax_mn7",
-            "gc_a_pmin_mn7",
-            "gc_a_t_peak",
-            "gc_a_t_ramp",
-            "gc_a_t_start",
-            "gc_a_tmax_mn7",
-            "gc_a_tmin_mn7",
-            "gc_b_final_plateau_duration",
-            "gc_b_pmax_mn7",
-            "gc_b_pmin_mn7",
-            "gc_b_t_peak",
-            "gc_b_t_ramp",
-            "gc_b_t_start",
-            "gc_b_tmax_mn7",
-            "gc_b_tmin_mn7",
-            "it_flash_1_tmax",
-            "it_flash_2_tmax",
-            "mid_plateau_t",
-            "sample_t_diff"
-          ],
           "x": [
             "t_start",
             "t_end",
             "$groupRelativeTime",
+            "$groupIndex",
             "spectrum",
             "$id",
-            "product_creation_time",
-            "solar_longitude",
-            "bennys_benchtop_temp",
-            "gc_a_final_plateau_duration",
-            "gc_a_pmax_mn7",
-            "gc_a_pmin_mn7",
-            "gc_a_t_peak",
-            "gc_a_t_ramp",
-            "gc_a_t_start",
-            "gc_a_tmax_mn7",
-            "gc_a_tmin_mn7",
-            "gc_b_final_plateau_duration",
-            "gc_b_pmax_mn7",
-            "gc_b_pmin_mn7",
-            "gc_b_t_peak",
-            "gc_b_t_ramp",
-            "gc_b_t_start",
-            "gc_b_tmax_mn7",
-            "gc_b_tmin_mn7",
-            "it_flash_1_tmax",
-            "it_flash_2_tmax",
-            "mid_plateau_duration",
-            "mid_plateau_t",
-            "sample_t_diff"
+            "pyro_temp",
+            "gc_col_temp"
+          ],
+          "y": [
+            "tic",
+            "highest_peak_intensity",
+            "highest_peak_mass",
+            "min_m_z",
+            "max_m_z"
           ]
         },
         "spectrum": {
-          "y": [
-            {
-              "field": "Intensity Values",
-              "source": "file",
-              "label": "Intensity"
-            }
-          ],
           "x": [
             {
               "field": "Mass Values",
-              "source": "file",
-              "label": "Mass"
+              "label": "Mass",
+              "source": "file"
+            }
+          ],
+          "y": [
+            {
+              "field": "Intensity Values",
+              "label": "Intensity",
+              "source": "file"
             }
           ]
         }
       },
-      "grouping": [
-        "sample",
-        "experiment",
-        "eid",
-        "run",
-        "where",
-        "cup",
-        "he_tank_n",
-        "oven",
-        "date",
-        "planet_day_number",
-        "release_id"
-      ],
       "filters": [
         {
           "desc": "EGAMS Amorphous",
-          "color": "warning",
           "name": "egams_amorphous",
+          "color": "warning",
           "label": "Amorphous",
           "checks": [
             {
@@ -117,8 +63,8 @@
         },
         {
           "desc": "EGAMS Basalt",
-          "color": "indigo",
           "name": "egams_basalt",
+          "color": "indigo",
           "label": "Basalt",
           "checks": [
             {
@@ -129,8 +75,8 @@
         },
         {
           "desc": "EGAMS Carbonate",
-          "color": "green",
           "name": "egams_carbonate",
+          "color": "green",
           "label": "Carbonate",
           "checks": [
             {
@@ -141,8 +87,8 @@
         },
         {
           "desc": "EGAMS Chloride",
-          "color": "cyan",
           "name": "egams_chloride",
+          "color": "cyan",
           "label": "Chloride",
           "checks": [
             {
@@ -153,8 +99,8 @@
         },
         {
           "desc": "EGAMS Fluoropatite",
-          "color": "info",
           "name": "egams_fluoropatite",
+          "color": "info",
           "label": "Fluoropatite",
           "checks": [
             {
@@ -165,8 +111,8 @@
         },
         {
           "desc": "EGAMS Iron Oxide",
-          "color": "red",
           "name": "egams_iron_oxide",
+          "color": "red",
           "label": "Iron Oxide",
           "checks": [
             {
@@ -177,8 +123,8 @@
         },
         {
           "desc": "EGAMS Nitrate",
-          "color": "blue",
           "name": "egams_nitrate",
+          "color": "blue",
           "label": "Nitrate",
           "checks": [
             {
@@ -189,8 +135,8 @@
         },
         {
           "desc": "EGAMS Oxidized Organic Carbon",
-          "color": "danger",
           "name": "egams_oxidized_organic_carbon",
+          "color": "danger",
           "label": "Oxidized Organic Carbon",
           "checks": [
             {
@@ -201,8 +147,8 @@
         },
         {
           "desc": "EGAMS Oxychlorine",
-          "color": "teal",
           "name": "egams_oxychlorine",
+          "color": "teal",
           "label": "Oxychlorine",
           "checks": [
             {
@@ -213,8 +159,8 @@
         },
         {
           "desc": "EGAMS Phyllosilicate",
-          "color": "pink",
           "name": "egams_phyllosilicate",
+          "color": "pink",
           "label": "Phyllosilicate",
           "checks": [
             {
@@ -225,8 +171,8 @@
         },
         {
           "desc": "EGAMS Silicate",
-          "color": "purple",
           "name": "egams_silicate",
+          "color": "purple",
           "label": "Silicate",
           "checks": [
             {
@@ -237,8 +183,8 @@
         },
         {
           "desc": "EGAMS Sulfate",
-          "color": "orange",
           "name": "egams_sulfate",
+          "color": "orange",
           "label": "Sulfate",
           "checks": [
             {
@@ -249,8 +195,8 @@
         },
         {
           "desc": "EGAMS Sulfide",
-          "color": "yellow",
           "name": "egams_sulfide",
+          "color": "yellow",
           "label": "Sulfide",
           "checks": [
             {
@@ -261,8 +207,8 @@
         },
         {
           "desc": "GCMS Aromatic",
-          "color": "pink",
           "name": "gcms_aromatic",
+          "color": "pink",
           "label": "Aromatic",
           "checks": [
             {
@@ -273,8 +219,8 @@
         },
         {
           "desc": "GCMS Hydrocarbon",
-          "color": "indigo",
           "name": "gcms_hydrocarbon",
+          "color": "indigo",
           "label": "Hydrocarbon",
           "checks": [
             {
@@ -285,9 +231,9 @@
         },
         {
           "desc": "GCMS Nitrogen-Bearing Compound",
-          "color": "blue",
           "name": "gcms_nitrogen_bearing_compound",
-          "label": "Nitrogen",
+          "color": "blue",
+          "label": "Nitrogenous",
           "checks": [
             {
               "field": "gcms_nitrogen_bearing_comp",
@@ -297,9 +243,9 @@
         },
         {
           "desc": "GCMS Chlorine-Bearing Compound",
-          "color": "cyan",
           "name": "gcms_chlorine_bearing_compound",
-          "label": "Chlorine",
+          "color": "cyan",
+          "label": "Chlorinous",
           "checks": [
             {
               "field": "gcms_chlorine_bearing_comp",
@@ -309,9 +255,9 @@
         },
         {
           "desc": "GCMS Sulfur-Bearing Compound",
-          "color": "yellow",
           "name": "gcms_sulfur_bearing_compound",
-          "label": "Sulfur",
+          "color": "yellow",
+          "label": "Sulfuric",
           "checks": [
             {
               "field": "gcms_sulfur_bearing_comp",
@@ -321,9 +267,9 @@
         },
         {
           "desc": "GCMS Oxygen-Bearing Compound",
-          "color": "green",
           "name": "gcms_oxygen_bearing_compound",
-          "label": "Oxygen",
+          "color": "green",
+          "label": "Oxygenous",
           "checks": [
             {
               "field": "gcms_oxygen_bearing_comp",
@@ -333,9 +279,9 @@
         },
         {
           "desc": "GCMS Fluorine-Bearing Compound",
-          "color": "teal",
           "name": "gcms_fluorine_bearing_compound",
-          "label": "Fluorine",
+          "color": "teal",
+          "label": "Fluorinous",
           "checks": [
             {
               "field": "gcms_fluorine_bearing_comp",
@@ -345,8 +291,8 @@
         },
         {
           "desc": "GCMS Inorganics / Volatiles",
-          "color": "orange",
           "name": "gcms_inorganics_volatiles",
+          "color": "orange",
           "label": "Inorganics / Volatiles",
           "checks": [
             {
@@ -357,9 +303,9 @@
         },
         {
           "desc": "GCMS Silicon-Bearing Compound",
-          "color": "purple",
           "name": "gcms_silicon_bearing_compound",
-          "label": "Silicon",
+          "color": "purple",
+          "label": "Siliconous",
           "checks": [
             {
               "field": "gcms_silicon_bearing_comp",
@@ -367,6 +313,17 @@
             }
           ]
         }
+      ],
+      "grouping": [
+        "sample",
+        "experiment",
+        "eid",
+        "run",
+        "where",
+        "cup",
+        "oven",
+        "date",
+        "planet_day_number"
       ]
     }
   },
@@ -867,6 +824,34 @@
       "type": "float(8)",
       "nul": true,
       "unit": "s"
+    },
+    {
+      "name": "min_m_z",
+      "label": "Min m/z",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "m/z"
+    },
+    {
+      "name": "max_m_z",
+      "label": "Max m/z",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "m/z"
+    },
+    {
+      "name": "pyro_temp",
+      "label": "Pyro Temp",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
+      "name": "gc_col_temp",
+      "label": "GC Col Temp",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
     }
   ]
 }

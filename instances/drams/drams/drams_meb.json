@@ -1,9 +1,10 @@
 {
-	"action" : "struct_create",
-	"create" : "category",
-	"parent" : "drams",
-	"teams"  : ["drams", "drams_dev"],
-	"name"   : "meb",
-	"label"  : "MEB",
-	"desc"   : "MEB"
+  "action": "struct_create",
+  "create": "category",
+  "parent": "drams",
+  "name": "meb",
+  "label": "MEB",
+  "desc": "MEB",
+  "group_teams": ["drams", "drams_dev"],
+  "database_teams": ["drams", "drams_dev"]
 }

@@ -1,13 +1,12 @@
 {
-	"action"         : "struct_create",
-	"create"         : "model",
-	"parent"         : "drams",
-	"name"           : "apv",
-	"label"          : "APV",
-	"desc"           : "aperture valve",
-	"event"          : true,
-	"eventf"         : true,
-	"eventfs"        : true,
-	"group_teams"    : ["drams", "drams_dev"],
-	"database_teams" : ["drams", "drams_dev"]
+  "action": "struct_create",
+  "create": "model",
+  "parent": "drams",
+  "name": "apv",
+  "label": "APV",
+  "desc": "aperture valve",
+  "event": true,
+  "eventf": true,
+  "group_teams": ["drams", "drams_dev"],
+  "database_teams": ["drams", "drams_dev"]
 }

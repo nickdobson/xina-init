@@ -1,11 +1,11 @@
 {
-	"action" : "create",
-	"create" : "team",
-	"team"   : {
-		"name"                : "drams",
-		"label"               : "DraMS",
-		"desc"                : "Primary team for the Dragonfly Mass Spectrometer (DraMS) project.",
-		"group_privileges"    : ["select", "post", "reply"],
-		"database_privileges" : ["select", "post", "reply"]
-	}
+  "action": "create",
+  "create": "team",
+  "team": {
+    "name": "drams",
+    "label": "DraMS",
+    "desc": "Primary team for the Dragonfly Mass Spectrometer (DraMS) project.",
+    "group_privileges": ["select", "post", "reply"],
+    "database_privileges": ["select", "post", "reply"]
+  }
 }

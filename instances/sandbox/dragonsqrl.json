@@ -1,8 +1,0 @@
-{
-	"action" : "struct_create",
-	"create" : "project",
-	"teams"  : ["dragonsqrl", "dragonsqrl_dev"],
-	"name"   : "dragonsqrl",
-	"label"  : "DragonSQRL",
-	"desc"   : "DragonSQRL"
-}

@@ -1,9 +1,11 @@
 {
   "action": "struct_create",
-  "create": "origin",
+  "create": "pipe",
   "model": "grande.cal",
   "name": "df",
   "label": "Default",
+  "buffer": true,
+  "condense": true,
   "group_teams": ["glamr", "glamr_dev"],
   "database_teams": ["glamr", "glamr_dev"]
 }

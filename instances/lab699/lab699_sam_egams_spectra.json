@@ -238,6 +238,13 @@
       "unit": "mbar"
     },
     {
+      "name": "pyrolysis_temp",
+      "label": "Pyrolysis Temp",
+      "type": "float(8)",
+      "nul": true,
+      "unit": "C"
+    },
+    {
       "name": "sccm",
       "type": "float(8)",
       "nul": true,

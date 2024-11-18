@@ -50,10 +50,10 @@
       },
       "filters": [
         {
-          "desc": "Fast",
-          "color": "green",
           "name": "fast",
           "label": "Fast",
+          "desc": "Fast",
+          "color": "green",
           "checks": [
             {
               "field": "optical_axis",
@@ -62,10 +62,10 @@
           ]
         },
         {
-          "desc": "Slow",
-          "color": "red",
           "name": "slow",
           "label": "Slow",
+          "desc": "Slow",
+          "color": "red",
           "checks": [
             {
               "field": "optical_axis",
@@ -74,10 +74,10 @@
           ]
         },
         {
-          "desc": "Narrow",
-          "color": "purple",
           "name": "narrow",
           "label": "Narrow",
+          "desc": "Narrow",
+          "color": "purple",
           "checks": [
             {
               "field": "osa_confs",
@@ -86,10 +86,10 @@
           ]
         },
         {
-          "desc": "Wide",
-          "color": "orange",
           "name": "wide",
           "label": "Wide",
+          "desc": "Wide",
+          "color": "orange",
           "checks": [
             {
               "field": "osa_confs",

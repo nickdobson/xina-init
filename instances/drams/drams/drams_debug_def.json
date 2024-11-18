@@ -1,7 +1,7 @@
 {
-	"action"         : "struct_create",
-	"create"         : "def",
-	"parent"         : "drams.debug",
-	"group_teams"    : ["drams", "drams_dev"],
-	"database_teams" : ["drams", "drams_dev"]
+  "action": "struct_create",
+  "create": "def",
+  "parent": "drams.debug",
+  "group_teams": ["drams", "drams_dev"],
+  "database_teams": ["drams", "drams_dev"]
 }

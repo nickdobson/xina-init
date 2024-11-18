@@ -7,7 +7,6 @@
   "desc": "cal",
   "event": true,
   "eventf": true,
-  "eventfs": true,
   "group_teams": ["glamr", "glamr_dev"],
   "database_teams": ["glamr", "glamr_dev"]
 }

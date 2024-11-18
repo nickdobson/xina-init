@@ -1,8 +1,9 @@
 {
-	"action" : "struct_create",
-	"create" : "project",
-	"teams"  : ["drams", "drams_dev"],
-	"name"   : "drams",
-	"label"  : "DraMS",
-	"desc"   : "Dragonfly Mass Spectrometer (DraMS)"
+  "action": "struct_create",
+  "create": "project",
+  "name": "drams",
+  "label": "DraMS",
+  "desc": "Dragonfly Mass Spectrometer (DraMS)",
+  "group_teams": ["drams", "drams_dev"],
+  "database_teams": ["drams", "drams_dev"]
 }

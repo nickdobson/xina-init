@@ -1,11 +1,18 @@
 {
-	"action" : "create",
-	"create" : "team",
-	"team"   : {
-		"name"                : "drams_dev",
-		"label"               : "DraMS Developers",
-		"desc"                : "Developer team for the DraMS project.",
-		"group_privileges"    : ["select", "post", "reply"],
-		"database_privileges" : ["select", "post", "reply", "update", "insert", "trash"]
-	}
+  "action": "create",
+  "create": "team",
+  "team": {
+    "name": "drams_dev",
+    "label": "DraMS Developers",
+    "desc": "Developer team for the DraMS project.",
+    "group_privileges": ["select", "post", "reply"],
+    "database_privileges": [
+      "select",
+      "post",
+      "reply",
+      "update",
+      "insert",
+      "trash"
+    ]
+  }
 }

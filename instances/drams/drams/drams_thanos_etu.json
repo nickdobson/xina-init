@@ -1,11 +1,11 @@
 {
-	"action"         : "struct_create",
-	"create"         : "model",
-	"parent"         : "drams.thanos",
-	"name"           : "etu",
-	"label"          : "ETU",
-	"event"          : true,
-	"eventf"         : true,
-	"group_teams"    : ["drams", "drams_dev"],
-	"database_teams" : ["drams", "drams_dev"]
+  "action": "struct_create",
+  "create": "model",
+  "parent": "drams.thanos",
+  "name": "etu",
+  "label": "ETU",
+  "event": true,
+  "eventf": true,
+  "group_teams": ["drams", "drams_dev"],
+  "database_teams": ["drams", "drams_dev"]
 }

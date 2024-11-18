@@ -1,9 +1,10 @@
 {
-	"action" : "struct_create",
-	"create" : "category",
-	"parent" : "drams",
-	"teams"  : ["drams", "drams_dev"],
-	"name"   : "wrp",
-	"label"  : "WRP",
-	"desc"   : "WRP"
+  "action": "struct_create",
+  "create": "category",
+  "parent": "drams",
+  "name": "wrp",
+  "label": "WRP",
+  "desc": "WRP",
+  "group_teams": ["drams", "drams_dev"],
+  "database_teams": ["drams", "drams_dev"]
 }

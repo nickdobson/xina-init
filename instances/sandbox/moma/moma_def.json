@@ -1,10 +1,7 @@
 {
   "action": "struct_create",
-  "create": "pipe",
-  "model": "sandbox.debug",
-  "name": "df",
-  "label": "Default",
-  "buffer": true,
+  "create": "def",
+  "parent": "moma",
   "group_teams": ["sandbox", "sandbox_dev"],
   "database_teams": ["sandbox", "sandbox_dev"]
 }

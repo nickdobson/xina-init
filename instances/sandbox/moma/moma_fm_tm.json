@@ -1,10 +1,12 @@
 {
   "action": "struct_create",
   "create": "pipe",
-  "model": "sandbox.debug",
-  "name": "df",
-  "label": "Default",
-  "buffer": true,
+  "model": "moma.fm",
+  "name": "tm",
+  "label": "Telemetry",
+  "discrete": true,
+  "variable": true,
+  "event": true,
   "group_teams": ["sandbox", "sandbox_dev"],
   "database_teams": ["sandbox", "sandbox_dev"]
 }

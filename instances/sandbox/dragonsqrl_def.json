@@ -1,7 +1,0 @@
-{
-	"action"         : "struct_create",
-	"create"         : "def",
-	"parent"         : "dragonsqrl",
-	"group_teams"    : ["dragonsqrl", "dragonsqrl_dev"],
-	"database_teams" : ["dragonsqrl", "dragonsqrl_dev"]
-}

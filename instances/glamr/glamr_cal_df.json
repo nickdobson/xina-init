@@ -1,9 +1,11 @@
 {
-	"action"         : "struct_create",
-	"create"         : "origin",
-	"model"          : "glamr.cal",
-	"name"           : "df",
-	"label"          : "Default",
-	"group_teams"    : ["glamr", "glamr_dev"],
-	"database_teams" : ["glamr", "glamr_dev"]
+  "action": "struct_create",
+  "create": "pipe",
+  "model": "glamr.cal",
+  "name": "df",
+  "label": "Default",
+  "buffer": true,
+  "condense": true,
+  "group_teams": ["glamr", "glamr_dev"],
+  "database_teams": ["glamr", "glamr_dev"]
 }

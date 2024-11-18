@@ -1,9 +1,10 @@
 {
-	"action" : "struct_create",
-	"create" : "category",
-	"parent" : "drams",
-	"teams"  : ["drams", "drams_dev"],
-	"name"   : "sp",
-	"label"  : "Scroll Pump",
-	"desc"   : "scroll pump"
+  "action": "struct_create",
+  "create": "category",
+  "parent": "drams",
+  "name": "sp",
+  "label": "Scroll Pump",
+  "desc": "scroll pump",
+  "group_teams": ["drams", "drams_dev"],
+  "database_teams": ["drams", "drams_dev"]
 }
